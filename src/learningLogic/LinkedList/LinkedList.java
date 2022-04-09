@@ -23,8 +23,6 @@ public class LinkedList {
 	}
 
 	public void displayLinkedList() {
-		System.out.println("Address of head:" + head);
-		System.out.println("Address of head.next:" + head.next);
 		Node temp = head;
 
 		while (temp != null) {
@@ -126,6 +124,15 @@ public class LinkedList {
 		} else
 			System.out.println("Index is greater than size of list");;
 
+	}
+
+	public void deleteEntireLinkedlList() {
+
+		if(head==null)
+			System.out.println("Linked List is empty");
+		else 
+			head=null;
+		
 	}
 
 }

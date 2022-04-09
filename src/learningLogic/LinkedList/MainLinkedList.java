@@ -58,6 +58,9 @@ public class MainLinkedList {
 		ll.deleteNodeBasedOnLocation(7);
 		ll.displayLinkedList();
 		System.out.println();
+		System.out.println("Delete entire linkedlist:");
+		ll.deleteEntireLinkedlList();
+		ll.displayLinkedList();
 		
 
 	}
