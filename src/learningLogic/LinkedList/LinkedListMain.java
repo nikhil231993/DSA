@@ -1,10 +1,11 @@
 package learningLogic.LinkedList;
 
-public class MainLinkedList {
+
+public class LinkedListMain {
 
 	public static void main(String[] args) {
 		
-		LinkedList ll=new LinkedList();
+		LinkedListRevisionCorrect ll=new LinkedListRevisionCorrect();
 		
 		ll.insertFirst(10);
 		ll.insertFirst(5);
@@ -31,7 +32,7 @@ public class MainLinkedList {
 		ll.displayLinkedList();
 		System.out.println();
 		System.out.println("Adding node at a particular location i.e at end using location in linkedlist:");
-		ll.addAtIndex(10,10000);
+		ll.addAtIndex(10,100000);
 		ll.displayLinkedList();
 		System.out.println();
 		System.out.println("Finding a value in linkedlist:");
@@ -51,7 +52,7 @@ public class MainLinkedList {
 		ll.displayLinkedList();
 		System.out.println();
 		System.out.println("Delete at first location of node based on index in linkedlist:");
-		ll.deleteNodeBasedOnLocation(0);
+		ll.deleteNodeBasedOnLocation(1);
 		ll.displayLinkedList();
 		System.out.println();
 		System.out.println("Delete at last location of node based on index in linkedlist:");
