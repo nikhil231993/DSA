@@ -72,7 +72,6 @@ public class DoublyLinkedList {
 	public void addAtParticularPos(int pos, int value) {
 		Node node=new Node(value);
 		Node temp=head;
-		int index=0;
 		if(pos ==1) {
 			addFirst(value);
 			return;

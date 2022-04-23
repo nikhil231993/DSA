@@ -38,76 +38,88 @@ public class CircularLinkedListUsingTail {
 			System.out.print(temp.data + "-->");
 			temp = temp.next;
 		}
-		System.out.print(temp.data+"-->");
+		System.out.print(temp.data + "-->");
 		System.out.println("END");
 	}
 
 	public void addAtLast(int data) {
-		Node node =new Node(data);
-		tail.next=node;
-		node.next=head;
-		tail=node;
-		size++;	
-		
+		Node node = new Node(data);
+		tail.next = node;
+		node.next = head;
+		tail = node;
+		size++;
+
 	}
 
 	public void addAtPosition(int index, int data) {
-		if(index==1) {
+		if (index == 1) {
 			addFirst(data);
 			return;
 		}
-		if(index==size) {
+		if (index == size) {
 			addAtLast(data);
 			return;
 		}
-		Node temp=head;
-		Node node=new Node(data);
-		for(int i=1;i<index-1;i++) {
-			temp=temp.next;
+		Node temp = head;
+		Node node = new Node(data);
+		for (int i = 1; i < index - 1; i++) {
+			temp = temp.next;
 		}
-		
-		node.next=temp.next;
-		temp.next=node;
+
+		node.next = temp.next;
+		temp.next = node;
 		size++;
-	
-		
+
 	}
 
 	public void deleteAtFirst() {
-		tail.next=head.next;
-		head=head.next;
-		size--;		
+		tail.next = head.next;
+		head = head.next;
+		size--;
 	}
 
 	public void deleteAtLast() {
-		Node temp=head;
-		while(temp.next.next!=head) {
-			temp=temp.next;
-		}		
-		temp.next=head;
-		tail=temp;
-		size--;		
-		
+		Node temp = head;
+		while (temp.next.next != head) {
+			temp = temp.next;
+		}
+		temp.next = head;
+		tail = temp;
+		size--;
+
 	}
 
 	public void deleteAtLast(int index) {
-		if(index==1) {
-			deleteAtFirst();;
+		if (index == 1) {
+			deleteAtFirst();
+			;
 			return;
 		}
-		if(index==size) {
+		if (index == size) {
 			deleteAtLast();
-			return;			
+			return;
 		}
-		Node temp=head;
-		for(int i=1;i<index-1;i++) {
-			temp=temp.next;
+		Node temp = head;
+		for (int i = 1; i < index - 1; i++) {
+			temp = temp.next;
 		}
-		
-		temp.next=temp.next.next;
+
+		temp.next = temp.next.next;
 		size--;
-		
+
 	}
 
+	public int searchValue(int value) {
+
+		Node temp = head;
+		int loc = 0;
+		while (temp.next != head) {
+			loc++;
+			if (temp.data == value)
+				return loc;
+			temp = temp.next;
+		}
+		return -1;
+	}
 
 }

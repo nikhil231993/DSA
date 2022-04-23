@@ -25,6 +25,9 @@ public class CircularLinkedListUsingTailMain {
 		System.out.println("At a particular location in Linked list i.e last");
 		cll.addAtPosition(6,300);
 		cll.display();
+		System.out.println("Search 50 in Circular Linked List:");
+		int pos=cll.searchValue(50);
+		System.out.println("Value 50 found at "+ pos);
 		System.out.println("Deleting First Element in the Linked List:");
 		cll.deleteAtFirst();
 		cll.display();
