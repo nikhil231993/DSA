@@ -1,33 +1,36 @@
 package learningLogic.LinkedList;
 
-public class CircularLinkedListUsingTail {
+public class CircularDoublyLinkedListUsingTail {
 
 	private Node head;
 	private Node tail;
+
 	private int size;
 
-	class Node {
+	private class Node {
 		private int data;
 		private Node next;
+		private Node prev;
 
 		Node(int data) {
 			this.data = data;
 		}
 	}
 
-	public void addFirst(int data) {
-		Node node = new Node(data);
+	public void addFirst(int value) {
+		Node node = new Node(value);
+
+		node.next = head;
 		if (head == null) {
 			head = node;
 			tail = node;
-			node.next = head;
-			size++;
-			return;
+			head.next = head;
+		} else {
+			head.prev = node;
+			head = node;
+			tail.next = node;
 		}
 
-		node.next = head;
-		tail.next = node;
-		head = node;
 		size++;
 
 	}
@@ -44,9 +47,16 @@ public class CircularLinkedListUsingTail {
 
 	public void addAtLast(int data) {
 		Node node = new Node(data);
-		tail.next = node;
-		node.next = head;
-		tail = node;
+		if (head != null) {
+			tail.next = node;
+			node.prev = tail;
+			node.next = head;
+			tail = node;
+
+		} else {
+			addFirst(data);
+			return;
+		}
 		size++;
 
 	}
@@ -55,70 +65,87 @@ public class CircularLinkedListUsingTail {
 		if (index == 1) {
 			addFirst(data);
 			return;
-		}
-		if (index == size) {
+		} else if (index == size) {
 			addAtLast(data);
 			return;
 		}
 		Node temp = head;
 		Node node = new Node(data);
+
 		for (int i = 1; i < index - 1; i++) {
 			temp = temp.next;
 		}
 
+		node.prev = temp;
 		node.next = temp.next;
 		temp.next = node;
+		if (node.next != null)
+			node.next.prev = node;
+
 		size++;
 
 	}
 
+	public int searchValue(int value) {
+		Node temp = head;
+		int loc = 0;
+		do {
+			loc++;
+			if (temp.data == value) {
+				return loc;
+			}
+			temp = temp.next;
+		} while (temp != head);
+		return -1;
+
+	}
+
 	public void deleteAtFirst() {
+		if (head == null || tail == null) {
+			System.out.println("Doubly Linked List is empty");
+		}
+
 		tail.next = head.next;
 		head = head.next;
+		head.prev = null;
 		size--;
+
 	}
 
 	public void deleteAtLast() {
+		if (head == null || tail == null) {
+			System.out.println("Doubly Linked List is empty");
+		}
+
 		Node temp = head;
 		while (temp.next.next != head) {
 			temp = temp.next;
 		}
-		temp.next = head;
 		tail = temp;
+		tail.next = head;
 		size--;
 
 	}
 
-	public void deleteAtLast(int index) {
-		if (index == 1) {
+	public void deleteAtLoc(int index) {
+		
+		Node temp=head;
+		if(index==1) {
 			deleteAtFirst();
 			return;
 		}
-		if (index == size) {
+		else if (index ==size) {
 			deleteAtLast();
 			return;
 		}
-		Node temp = head;
-		for (int i = 1; i < index - 1; i++) {
-			temp = temp.next;
+		for(int i=1;i<index-1;i++)
+		{
+			temp=temp.next;
 		}
-
-		temp.next = temp.next.next;
+		
+		temp.next.next.prev=temp;
+		temp.next=temp.next.next;
 		size--;
-
-	}
-
-	public int searchValue(int value) {
-
-		Node temp = head;
-		int loc = 0;
-		do  {
-			loc++;
-			if (temp.data == value)
-				return loc;
-			temp = temp.next;
-		}while(temp!=head);
-		return -1;
 	}
 
 }

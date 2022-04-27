@@ -5,6 +5,8 @@ public class DoublyLinkedListMain {
 	public static void main(String[] args) {
 	DoublyLinkedList dll=new DoublyLinkedList();
 	dll.addFirst(5);
+	System.out.println("Display after adding the node at First:");
+	dll.display();
 	dll.addFirst(50);
 	dll.addFirst(500);
 	dll.addFirst(5000);
