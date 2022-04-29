@@ -26,10 +26,12 @@ public class CircularDoublyLinkedListUsingTail {
 			head = node;
 			tail = node;
 			head.next = head;
+			head.prev=tail;
 		} else {
 			head.prev = node;
 			head = node;
 			tail.next = node;
+			head.prev=tail;
 		}
 
 		size++;
@@ -53,6 +55,7 @@ public class CircularDoublyLinkedListUsingTail {
 			node.prev = tail;
 			node.next = head;
 			tail = node;
+			head.prev=tail;
 
 		} else {
 			addFirst(data);
@@ -147,6 +150,17 @@ public class CircularDoublyLinkedListUsingTail {
 		temp.next.next.prev=temp;
 		temp.next=temp.next.next;
 		size--;
+	}
+
+	public void reverseDisplayFromHead() {
+		Node temp=head;
+		do {
+			System.out.print(temp.data+"-->");
+			temp=temp.prev;
+		}while(temp!=head);
+		
+			System.out.println("START");
+		
 	}
 
 }
