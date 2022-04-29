@@ -30,6 +30,8 @@ public class CircularDoublyLinkedListUsingTailMain {
 		System.out.println("Search 50 in Circular Doubly Linked List:");
 		int pos=cdll.searchValue(50);
 		System.out.println("Value 50 found at "+ pos);
+		System.out.println("Circular Linked List Validation:");
+		cdll.reverseDisplayFromHead();
 		System.out.println("Deleting First Element in the Linked List:");
 		cdll.deleteAtFirst();
 		cdll.display();
@@ -45,6 +47,7 @@ public class CircularDoublyLinkedListUsingTailMain {
 		System.out.println("Deleting at particular position in the Linked List: last");
 		cdll.deleteAtLoc(3);
 		cdll.display();
+	
 	}
 
 }
