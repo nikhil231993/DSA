@@ -1,16 +1,16 @@
 package learningLogic.Stack;
 
-public class CustomStack {
+public class StackCustomUsingArray {
 
 	protected int[] data;
 	private int top = -1;
 	private static final int DEFAULT_SIZE = 10;
 
-	public CustomStack() {
+	public StackCustomUsingArray() {
 		this(DEFAULT_SIZE);
 	}
 
-	public CustomStack(int size) {
+	public StackCustomUsingArray(int size) {
 		this.data = new int[size];
 	}
 

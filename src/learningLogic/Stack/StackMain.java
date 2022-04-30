@@ -4,7 +4,7 @@ public class StackMain {
 
 	public static void main(String[] args) {
 
-		CustomStack stack = new DynamicStack(1);
+		StackCustomUsingArray stack = new StackDynamic(1);
 		stack.push(1);
 		stack.push(10);
 		stack.push(100);
