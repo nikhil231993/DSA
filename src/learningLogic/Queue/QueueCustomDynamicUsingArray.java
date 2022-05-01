@@ -1,6 +1,6 @@
 package learningLogic.Queue;
 
-public class CustomDynamicQueue {
+public class QueueCustomDynamicUsingArray {
 	
 	private int front=-1;
 	private int rear=-1;	
@@ -9,11 +9,11 @@ public class CustomDynamicQueue {
 	private int[] data;
 	
 
-	public CustomDynamicQueue() {
+	public QueueCustomDynamicUsingArray() {
 		this(DEFAULT_SIZE);
 	}
 
-	public CustomDynamicQueue(int size) {
+	public QueueCustomDynamicUsingArray(int size) {
 		this.data = new int[size];
 	}
 

@@ -1,9 +1,11 @@
 package learningLogic.Queue;
 
-public class QueueMain {
+public class QueueUsingLinkedListMain {
+	
+
 
 	public static void main(String[] args) {
-		QueueCustomDynamicUsingArray queue=new QueueCustomDynamicUsingArray();
+		QueueUsingLinkedList queue=new QueueUsingLinkedList();
 		System.out.println("Before adding elements :"+queue.isEmpty());
 		System.out.println("Before adding elements queueFront: ");
 		System.out.println(queue.queueFront());
@@ -38,8 +40,6 @@ public class QueueMain {
 		System.out.println(queue.queueDequeue());
 		System.out.println(queue.queueDequeue());
 		System.out.println(queue.queueDequeue());
-		System.out.println(queue.queueDequeue());//0 because its dynamic queue
-		System.out.println(queue.queueDequeue());//0 beacuse its dynamic queue
 
 		System.out.println("queueFront: ");
 		System.out.println(queue.queueFront());
@@ -47,5 +47,7 @@ public class QueueMain {
 		System.out.println(queue.isEmpty());
 
 	}
+
+
 
 }
