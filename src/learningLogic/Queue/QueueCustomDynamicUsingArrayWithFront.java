@@ -1,18 +1,18 @@
 package learningLogic.Queue;
 
-public class QueueCustomDynamicUsingArray {
+public class QueueCustomDynamicUsingArrayWithFront {
 	
 	private int rear=-1;	
-	
+	private int front=-1;
 	private static final int DEFAULT_SIZE = 5;
 	private int[] data;
 	
 
-	public QueueCustomDynamicUsingArray() {
+	public QueueCustomDynamicUsingArrayWithFront() {
 		this(DEFAULT_SIZE);
 	}
 
-	public QueueCustomDynamicUsingArray(int size) {
+	public QueueCustomDynamicUsingArrayWithFront(int size) {
 		this.data = new int[size];
 	}
 
@@ -34,12 +34,7 @@ public class QueueCustomDynamicUsingArray {
 			System.out.println("Queue is empty");
 			return -1;
 		}
-		int itemRemoved=this.data[0];
-		for(int i=0;i<this.rear;i++)
-			this.data[i]=this.data[i+1];
-	
-				
-		this.rear--;
+		int itemRemoved=this.data[++front];
 		
 		return itemRemoved;
 	}
@@ -53,7 +48,7 @@ public class QueueCustomDynamicUsingArray {
 	}
 
 	public boolean isEmpty() {
-		return rear==-1;
+		return rear==-1 || front >=rear;
 	}
 
 	public boolean isFull() {
@@ -61,9 +56,10 @@ public class QueueCustomDynamicUsingArray {
 	}
 
 	public void display() {
-		for(int i=0;i<this.rear;i++)
+		for(int i=this.front;i<this.rear;i++)
 			System.out.println(this.data[i]);
 	}
+	
 	
 
 }

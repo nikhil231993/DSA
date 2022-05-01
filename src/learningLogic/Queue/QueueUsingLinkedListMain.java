@@ -43,7 +43,6 @@ public class QueueUsingLinkedListMain {
 
 		System.out.println("queueFront: ");
 		System.out.println(queue.queueFront());
-		System.out.println(queue.isFull());
 		System.out.println(queue.isEmpty());
 
 	}

@@ -54,10 +54,6 @@ public class QueueUsingLinkedList {
 		return removedItem;
 	}
 
-	public boolean isFull() {
-		return front==rear;
-	}
-
 	public boolean isEmpty() {		
 		return rear==null;
 	}

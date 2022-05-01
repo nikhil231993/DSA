@@ -3,7 +3,7 @@ package learningLogic.Queue;
 public class QueueMain {
 
 	public static void main(String[] args) {
-		QueueCustomDynamicUsingArray queue=new QueueCustomDynamicUsingArray();
+		QueueCustomDynamicUsingArrayWithFront queue=new QueueCustomDynamicUsingArrayWithFront();
 		System.out.println("Before adding elements :"+queue.isEmpty());
 		System.out.println("Before adding elements queueFront: ");
 		System.out.println(queue.queueFront());
@@ -45,6 +45,8 @@ public class QueueMain {
 		System.out.println(queue.queueFront());
 		System.out.println(queue.isFull());
 		System.out.println(queue.isEmpty());
+		
+		queue.display();
 
 	}
 
