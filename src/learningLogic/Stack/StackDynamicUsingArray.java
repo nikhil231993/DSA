@@ -1,12 +1,12 @@
 package learningLogic.Stack;
 
-public class StackDynamic extends StackCustomUsingArray {
+public class StackDynamicUsingArray extends StackCustomUsingArray {
 
-	public StackDynamic() {
+	public StackDynamicUsingArray() {
 		super();
 	}
 
-	public StackDynamic(int size) {
+	public StackDynamicUsingArray(int size) {
 		super(size);
 	}
 
