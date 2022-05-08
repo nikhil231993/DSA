@@ -16,6 +16,8 @@ public class BinaryTreeRevisionMain {
 		bt.preOrderTraversal(bt.root);
 		System.out.println("\nPost order traversal data is : ");
 		bt.postorderTraversal(bt.root);
+		System.out.println("\nLevel order traversal data is : ");
+		bt.levelOrderTraversal(bt.root);
 	}
 
 }
