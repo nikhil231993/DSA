@@ -18,6 +18,9 @@ public class BinaryTreeRevisionMain {
 		bt.postorderTraversal(bt.root);
 		System.out.println("\nLevel order traversal data is : ");
 		bt.levelOrderTraversal(bt.root);
+		System.out.println("\nSearching value in Tree:");
+		System.out.println("\nUsing inorder traversal");
+		bt.inDepthFirstSearch(bt.root,20);
 	}
 
 }

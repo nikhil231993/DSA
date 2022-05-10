@@ -74,23 +74,40 @@ public class BinaryTreeRevision {
 	}
 
 	public void levelOrderTraversal(Node root) {
-		if(root==null) {
+		if (root == null) {
 			System.out.println("Tree is empty");
 			return;
 		}
-		Queue<Node> queue=new LinkedList<Node>();
+		Queue<Node> queue = new LinkedList<Node>();
 		queue.add(root);
-		
-		while(!queue.isEmpty()) {
-			Node temp=queue.peek();
+
+		while (!queue.isEmpty()) {
+			Node temp = queue.peek();
 			queue.remove();
-			System.out.print(temp.data+"-->");
-			if(temp.left!=null)
+			System.out.print(temp.data + "-->");
+			if (temp.left != null)
 				queue.add(temp.left);
-			if(temp.right!=null)
+			if (temp.right != null)
 				queue.add(temp.right);
 		}
-		
-		
+
+	}
+	
+	private int count=0;
+
+	public void inDepthFirstSearch(Node node, int value) {
+		if (node == null) {
+			return;
+		} else if (node != null) {
+			if (node.data == value) {
+				System.out.println("Value is found at: " + count +" and value is :"+node.data);
+				return;
+
+			}
+			count++;
+			inDepthFirstSearch(node.left, value);
+			inDepthFirstSearch(node.right, value);
+		}
+
 	}
 }
