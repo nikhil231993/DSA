@@ -21,6 +21,8 @@ public class BinaryTreeRevisionMain {
 		System.out.println("\nSearching value in Tree:");
 		System.out.println("\nUsing inorder traversal");
 		bt.inDepthFirstSearch(bt.root,20);
+		System.out.println("\nUsing Level order traversal");
+		bt.breadthFirstSearch(bt.root,50);
 	}
 
 }

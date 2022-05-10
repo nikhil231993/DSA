@@ -110,4 +110,35 @@ public class BinaryTreeRevision {
 		}
 
 	}
+
+	public void breadthFirstSearch(Node root, int value) {
+		int count=0;
+		if(root==null)
+			return;
+		else {
+			if(root.data==value)
+			{
+				System.out.println("Value is found at: " + count +" and value is :"+root.data);
+				return;
+			}
+			
+			Queue<Node> q=new LinkedList<Node>();
+			q.add(root);
+			while(!q.isEmpty()) {
+				
+				Node temp=q.peek();
+				q.remove();
+				if(temp.data==value) {
+					System.out.println("Value is found at: " + count +" and value is :"+temp.data);
+					return;
+				}
+				count++;
+				if(temp.left!=null)
+					q.add(temp.left);
+				if(temp.right!=null)
+					q.add(temp.right);
+			}
+		}
+		
+	}
 }
