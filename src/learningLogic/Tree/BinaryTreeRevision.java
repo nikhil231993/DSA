@@ -116,12 +116,6 @@ public class BinaryTreeRevision {
 		if(root==null)
 			return;
 		else {
-			if(root.data==value)
-			{
-				System.out.println("Value is found at: " + count +" and value is :"+root.data);
-				return;
-			}
-			
 			Queue<Node> q=new LinkedList<Node>();
 			q.add(root);
 			while(!q.isEmpty()) {
