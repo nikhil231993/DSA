@@ -1,9 +1,9 @@
 package learningLogic.Tree;
 
-public class BinaryTreeMain {
+public class BinaryTreeLinkedListMain {
 
 	public static void main(String[] args) {
-		BinaryTree bt = new BinaryTree();
+		BinaryTreeLinkedList bt = new BinaryTreeLinkedList();
 		bt.insert(10);
 		bt.insert(20);
 		bt.insert(30);

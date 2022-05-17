@@ -1,10 +1,10 @@
 package learningLogic.Tree;
 
-public class BinaryTreeRevisionMain {
+public class BinaryTreeLinkedListRevisionMain {
 
 	public static void main(String[] args) {
 
-		BinaryTreeRevision bt = new BinaryTreeRevision();
+		BinaryTreeLinkedListRevision bt = new BinaryTreeLinkedListRevision();
 		bt.insert(10);
 		bt.insert(20);
 		bt.insert(30);

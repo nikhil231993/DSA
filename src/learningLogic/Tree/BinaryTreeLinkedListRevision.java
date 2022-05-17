@@ -3,7 +3,7 @@ package learningLogic.Tree;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class BinaryTreeRevision {
+public class BinaryTreeLinkedListRevision {
 
 	public Node root;
 

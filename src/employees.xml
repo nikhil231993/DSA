@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<employees count="4">
+	<employee>
+		<id>2</id>
+		<firstName>Jane</firstName>
+		<lastName>Doe</lastName>
+		<income>20000.0</income>
+	</employee>
+	<employee>
+		<id>3</id>
+		<firstName>Alfred</firstName>
+		<lastName>Pennyworth</lastName>
+		<income>30000.0</income>
+	</employee>
+	<employee>
+		<id>4</id>
+		<firstName>Tony</firstName>
+		<lastName>Stark</lastName>
+		<income>40000.0</income>
+	</employee>
+	<employee>
+		<id>42</id>
+		<firstName>Foo</firstName>
+		<lastName>Bar</lastName>
+		<income>15.0</income>
+		<age>56years</age>
+		<family>
+			<firstName>Radha</firstName>
+			<lastName>Bar</lastName>
+			<relationship>15.0</relationship>
+			<age>50years</age>
+		</family>
+	</employee>
+</employees>
