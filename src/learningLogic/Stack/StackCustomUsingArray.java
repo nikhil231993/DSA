@@ -3,7 +3,7 @@ package learningLogic.Stack;
 public class StackCustomUsingArray {
 
 	protected int[] data;
-	private int top = -1;
+	protected int top = -1;
 	private static final int DEFAULT_SIZE = 10;
 
 	public StackCustomUsingArray() {

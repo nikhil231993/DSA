@@ -48,7 +48,7 @@ public class QueueCustomDynamicUsingArrayWithFront {
 	}
 
 	public boolean isEmpty() {
-		return rear==-1 || front >=rear;
+		return rear == -1;
 	}
 
 	public boolean isFull() {

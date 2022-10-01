@@ -1,9 +1,10 @@
-package learningLogic.Queue;
+package revision.queue;
 
 public class CircularQueueMain {
 
 	public static void main(String[] args) {
-		CircularQueue queue=new CircularQueue();
+		CircularQueueRevisionUsingModulo queue = new CircularQueueRevisionUsingModulo();
+
 		System.out.println("Before adding elements :"+queue.isEmpty());
 		System.out.println("Before adding elements queueFront: ");
 		System.out.println(queue.queueFront());
@@ -29,8 +30,11 @@ public class CircularQueueMain {
 		System.out.println(queue.isFull());
 		System.out.println(queue.isEmpty());
 		
-		System.out.println("**********");
+		System.out.println("*****************");
 		System.out.println(queue.queueDequeue());
+		System.out.println(queue.queueDequeue());
+		System.out.println(queue.queueDequeue());
+
 		System.out.println(queue.queueDequeue());
 		System.out.println(queue.queueDequeue());
 

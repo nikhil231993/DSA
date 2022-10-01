@@ -1,10 +1,10 @@
-package learningLogic.Stack;
+package revision.stack;
 
-public class StackMain {
+public class FixedStackUsingArrayMain {
 
 	public static void main(String[] args) {
 
-		StackCustomUsingArray stack = new StackCustomUsingArray(1);
+		FixedStack stack = new FixedStackDynamic();
 		stack.push(1);
 		stack.push(10);
 		stack.push(100);

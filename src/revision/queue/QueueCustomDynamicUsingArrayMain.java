@@ -1,9 +1,9 @@
-package learningLogic.Queue;
+package revision.queue;
 
-public class QueueMain {
+public class QueueCustomDynamicUsingArrayMain {
 
 	public static void main(String[] args) {
-		QueueCustomDynamicUsingArrayWithFront queue = new QueueCustomDynamicUsingArrayWithFront();
+		QueueCustomDynamicUsingArray queue = new QueueCustomDynamicUsingArray();
 		System.out.println("Before adding elements :"+queue.isEmpty());
 		System.out.println("Before adding elements queueFront: ");
 		System.out.println(queue.queueFront());
@@ -14,7 +14,7 @@ public class QueueMain {
 		queue.queueEnqueue(1000);
 		queue.queueEnqueue(10000);
 		queue.queueEnqueue(8);
-		queue.queueEnqueue(80);	
+		queue.queueEnqueue(80);
 		queue.queueEnqueue(800);
 		queue.queueEnqueue(809);
 		queue.queueEnqueue(808);
@@ -22,7 +22,6 @@ public class QueueMain {
 		queue.queueEnqueue(806);
 		queue.queueEnqueue(805);
 		queue.queueEnqueue(804);
-		
 
 		System.out.println(queue.queueDequeue());
 		System.out.println(queue.queueDequeue());
@@ -38,14 +37,15 @@ public class QueueMain {
 		System.out.println(queue.queueDequeue());
 		System.out.println(queue.queueDequeue());
 		System.out.println(queue.queueDequeue());
-		System.out.println(queue.queueDequeue());//0 because its dynamic queue
-		System.out.println(queue.queueDequeue());//0 beacuse its dynamic queue
+		System.out.println(queue.queueDequeue());// 0 because its dynamic queue
+		System.out.println(queue.queueDequeue());// 0 beacuse its dynamic queue
 
 		System.out.println("queueFront: ");
 		System.out.println(queue.queueFront());
 		System.out.println(queue.isFull());
 		System.out.println(queue.isEmpty());
-		
+
+		queue.queueEnqueue(804);
 		queue.display();
 
 	}

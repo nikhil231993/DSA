@@ -23,5 +23,8 @@ public class StackDynamicUsingArray extends StackCustomUsingArray {
 		super.push(value);
 
 	}
+	
+
+
 
 }
