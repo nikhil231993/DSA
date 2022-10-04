@@ -122,7 +122,9 @@ public class CircularDoublyLinkedList {
 		}
 
 		temp.next = temp.next.next;
-		temp.next.next.prev = null;
+
+		// temp.next.next.prev = null; bug found
+		temp.next.next.prev = temp;
 		head = head.next;
 		size--;
 	}
