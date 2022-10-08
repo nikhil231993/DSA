@@ -13,6 +13,7 @@ public class HeapMinMain {
 		heapMin.insert(6);
 		heapMin.insert(22);
 		heapMin.insert(9);
+		heapMin.insert(90);
 		heapMin.print();
 
 	}

@@ -18,7 +18,7 @@ public class HeapMin {
 				int temp = heap[currentPos / 2];
 				heap[currentPos / 2] = heap[currentPos];
 				heap[currentPos] = temp;
-				currentPos = currentPos / 2;
+				currentPos = currentSize / 2;
 			}
 
 		} else {
@@ -33,9 +33,11 @@ public class HeapMin {
 		for (int i = 1; i <= currentSize / 2; i++) {
 
 
-			System.out.print(
-					" PARENT : " + heap[i] + " LEFT CHILD : " + heap[2 * i] + " RIGHT CHILD :" + heap[2 * i + 1]);
-
+			System.out.print(" PARENT : " + heap[i]);
+			if (i * 2 <= currentSize)
+				System.out.print(" LEFT CHILD : " + heap[2 * i]);
+			if (i * 2 + 1 <= currentSize)
+				System.out.print(" RIGHT CHILD :" + heap[2 * i + 1]);
 
 			System.out.println();
 		}
