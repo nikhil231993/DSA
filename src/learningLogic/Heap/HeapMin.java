@@ -32,7 +32,6 @@ public class HeapMin {
 	public void print() {
 		for (int i = 1; i <= currentSize / 2; i++) {
 
-
 			System.out.print(" PARENT : " + heap[i]);
 			if (i * 2 <= currentSize)
 				System.out.print(" LEFT CHILD : " + heap[2 * i]);
@@ -41,6 +40,51 @@ public class HeapMin {
 
 			System.out.println();
 		}
+	}
+
+	public int peek() {
+		if (currentSize == 0) {
+			System.out.println("Heap is empty");
+			return -1;
+		}
+
+		return heap[1];
+	}
+
+	public int remove() {
+		int removed = heap[1];
+		heap[1] = heap[currentSize--];
+		minHeapify(1);
+		return removed;
+
+	}
+
+	private void minHeapify(int pos) {
+		int left = 2 * pos;
+		int right = 2 * pos + 1;
+		if (pos > heap.length / 2) {
+			return;
+		} else {
+
+			if (left < heap.length && right < heap.length) {
+
+				if (heap[left] < heap[right]) {
+					int temp = heap[pos];
+					heap[pos] = heap[left];
+					heap[left] = temp;
+					minHeapify(left);
+
+				} else {
+					int temp = heap[pos];
+					heap[pos] = heap[right];
+					heap[right] = temp;
+					minHeapify(right);
+				}
+			}
+			
+
+		}
+
 	}
 
 }
