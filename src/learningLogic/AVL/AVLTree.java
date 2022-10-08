@@ -118,4 +118,13 @@ public class AVLTree {
 		}
 	}
 
+	void inOrder(Node node) {
+		if (node != null) {
+
+			inOrder(node.left);
+			System.out.print(node.key + " ");
+			inOrder(node.right);
+		}
+	}
+
 }
