@@ -1,6 +1,6 @@
 package leetcode.easy;
 
-public class BuySellStockLeetcode122 {
+public class LC122BuySellStock {
 
 	public static void main(String[] args) {
 		int[] arr = new int[] { 7, 1, 5, 3, 6, 4 };

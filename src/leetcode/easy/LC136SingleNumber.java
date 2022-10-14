@@ -1,6 +1,6 @@
 package leetcode.easy;
 
-public class SingleNumberLeetcode136 {
+public class LC136SingleNumber {
 
 	public static void main(String[] args) {
 		int[] arr = new int[] { 4, 1, 2, 1, 2 };

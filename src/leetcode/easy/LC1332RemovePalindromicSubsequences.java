@@ -2,7 +2,7 @@ package leetcode.easy;
 
 import java.util.Scanner;
 
-public class RemovePalindromicSubsequencesLC1332 {
+public class LC1332RemovePalindromicSubsequences {
 
 	public static void main(String[] args) {
 

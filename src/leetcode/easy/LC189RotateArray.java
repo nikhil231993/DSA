@@ -2,7 +2,7 @@ package leetcode.easy;
 
 import java.util.Scanner;
 
-public class RotateArrayLeetcode189 {
+public class LC189RotateArray {
 
 	public static void main(String[] args) {
 		Scanner scan=new Scanner(System.in);

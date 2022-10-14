@@ -2,7 +2,7 @@ package leetcode.easy;
 
 import java.util.HashMap;
 
-public class duplicateLC219 {
+public class LC219Duplicate {
 	public static void main(String[] args) {
 
 		int[] nums = new int[] { 1, 0, 1, 1 };

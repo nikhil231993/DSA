@@ -1,6 +1,6 @@
 package leetcode.easy;
 
-public class RemoveDuplicatesFromSortedArrayLeetcode26 {
+public class LC26RemoveDuplicatesFromSortedArray {
 	public static void main(String[] args) {
 		int[] arr = new int[] { 1, 2, 2, 3, 3, 3, 4, 5, 6, 6, 7 };
 		System.out.println("Size of arr after duplicate removal is: ");

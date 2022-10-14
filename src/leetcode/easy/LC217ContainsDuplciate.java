@@ -3,7 +3,7 @@ package leetcode.easy;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 
-public class ContainsDuplciateLeetcode217 {
+public class LC217ContainsDuplciate {
 
 	public static void main(String[] args) {
 		int[] arr = new int[] { 1, 2, 3, 1 };
