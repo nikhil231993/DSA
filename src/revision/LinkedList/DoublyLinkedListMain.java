@@ -56,6 +56,11 @@ public class DoublyLinkedListMain {
 		dll.display();
 		System.out.println("Display after deleting the node at Last position in reverse:");
 		dll.reverseDisplay();
+		System.out.println("Deletion of entire DLL");
+		dll.deletEntireLinkedList();
+		dll.display();
+		dll.reverseDisplay();
+
 	}
 
 }

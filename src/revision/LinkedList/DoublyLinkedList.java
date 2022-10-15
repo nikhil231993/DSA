@@ -136,4 +136,14 @@ public class DoublyLinkedList {
 		}
 
 	}
+
+	public void deletEntireLinkedList() {
+		Node temp = head;
+		while (temp.next != null) {
+			temp.prev = null;
+			temp = temp.next;
+		}
+		head = null;
+
+	}
 }
