@@ -28,6 +28,10 @@ public class DoublyLinkedList {
 		}
 
 	public void display() {
+		if (head == null) {
+			System.out.println("Doubly Linked List is empty");
+			return;
+		}
 		Node temp = head;
 		while (temp.next != null) {
 			System.out.print(temp.data + "-->");
@@ -37,7 +41,11 @@ public class DoublyLinkedList {
 
 	}
 
-	public void reverseDsiplay() {
+	public void reverseDisplay() {
+		if (head == null) {
+			System.out.println("Doubly Linked List is empty");
+			return;
+		}
 		Node temp = head;
 		while (temp.next != null) {
 			temp = temp.next;
@@ -87,6 +95,11 @@ public class DoublyLinkedList {
 	}
 
 	public void deleteFirst() {
+
+		if (head.next == null) {
+			head = null;
+			return;
+		}
 		head.next.prev = null;
 		head = head.next;
 		size--;
