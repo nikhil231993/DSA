@@ -8,6 +8,8 @@ public class CircularLinkedListMain {
 		cll.addFirst(1);
 		System.out.println("Display after adding 1st element at first:");
 		cll.display();
+//		cll.deleteAtFirst();
+//		cll.display();
 		cll.addFirst(11);
 		System.out.println("Display after adding 2nd element at first:");
 		cll.display();

@@ -36,6 +36,10 @@ public class CircularLinkedList {
 	}
 
 	public void display() {
+		if (head == null) {
+			System.out.println("LinkedList is empty");
+			return;
+		}
 		Node temp = head;
 		while (temp.next != head) {
 			System.out.print(temp.data + "-->");
@@ -82,8 +86,15 @@ public class CircularLinkedList {
 	}
 
 	public void deleteAtFirst() {
+
+
 		if (head != null) {
 			Node temp = head;
+
+			if (head.next == head) {
+				head = null;
+				return;
+			}
 
 			while (temp.next != head) {
 				temp = temp.next;
@@ -91,7 +102,9 @@ public class CircularLinkedList {
 			temp.next = temp.next.next;
 			head = head.next;
 			size--;
-		} else {
+
+		} 
+		else {
 			System.out.println("Circular linked list is empty: ");
 		}
 	}
