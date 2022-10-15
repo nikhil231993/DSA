@@ -1,6 +1,6 @@
 package revision.stack;
 
-public class StackMainLinkedList {
+public class StackUsingLinkedListMain {
 
 	public static void main(String[] args) {
 

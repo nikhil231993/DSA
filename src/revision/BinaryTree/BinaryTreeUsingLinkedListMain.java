@@ -1,4 +1,4 @@
-package revision.Tree;
+package revision.BinaryTree;
 
 public class BinaryTreeUsingLinkedListMain {
 

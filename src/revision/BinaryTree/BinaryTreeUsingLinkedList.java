@@ -1,4 +1,4 @@
-package revision.Tree;
+package revision.BinaryTree;
 
 import java.util.LinkedList;
 import java.util.Queue;
