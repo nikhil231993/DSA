@@ -24,22 +24,26 @@ public class CircularDoublyLinkedList {
 			node.prev = head;
 			size++;
 		} else {
-			head.prev = node;
+			// head.prev = node;
 			node.next = head;
 			Node temp = head;
 			while (temp.next != head) {
 				temp = temp.next;
 			}
-			
 			temp.next = node;
+			node.prev = head.prev;
+			head.prev = node;
 			head = node;
-			node.prev = temp;
 			size++;
 		}
 
 	}
 
 	public void display() {
+		if(head==null) {
+			System.out.println("CDLL is empty");
+			return;
+		}
 		Node temp = head;
 		while (temp.next != head) {
 			System.out.print(temp.data + "-->");
@@ -102,6 +106,10 @@ public class CircularDoublyLinkedList {
 	}
 
 	public void reverseDisplayFromHead() {
+		if (head == null) {
+			System.out.println("CDLL is empty");
+			return;
+		}
 
 		Node temp = head;
 		while (temp.next != head) {
@@ -116,6 +124,13 @@ public class CircularDoublyLinkedList {
 	}
 
 	public void deleteAtFirst() {
+
+		if (head.next == head) {
+			head.prev = null;
+			head.next = null;
+			head = null;
+			return;
+		}
 		Node temp = head;
 		while (temp.next != head) {
 			temp = temp.next;
@@ -135,7 +150,7 @@ public class CircularDoublyLinkedList {
 			temp = temp.next;
 		}
 
-		head.prev = temp.next.prev;
+		head.prev = temp;
 		temp.next = head;
 		size--;
 	}
