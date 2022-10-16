@@ -12,7 +12,7 @@ public class BinarySearchTreeRevision {
 
 		if (root.data > value) {
 			root.left = insert(root.left, value);
-		} else {
+		} else if (root.data < value) {
 			root.right = insert(root.right, value);
 		}
 
