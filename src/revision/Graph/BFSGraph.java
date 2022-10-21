@@ -37,15 +37,48 @@ public class BFSGraph {
 			System.out.println();
 		}
 
-		System.out.println("BFS Traversal of Graph: ");
-		ArrayList<Integer> result = bfsTraversal(arr, n);
+		System.out.println("BFS Traversal of Connected Nodes Graph: ");
+		ArrayList<Integer> result = bfsTraversalConnectedNodes(arr, n);
 		for (Integer num : result) {
+			System.out.println(num + " ");
+		}
+
+		System.out.println("BFS Traversal of DisConnected Nodes Graph: ");
+		ArrayList<Integer> resultDisconnected = bfsTraversalDisConnectedNodes(arr, n);
+		for (Integer num : resultDisconnected) {
 			System.out.println(num + " ");
 		}
 
 	}
 
-	private ArrayList<Integer> bfsTraversal(ArrayList<ArrayList<Integer>> arr, int n) {
+	private ArrayList<Integer> bfsTraversalDisConnectedNodes(ArrayList<ArrayList<Integer>> arr, int n) {
+		ArrayList<Integer> finalBfsOrder = new ArrayList<Integer>();
+		boolean[] visited = new boolean[n + 1];
+
+//		for (int i = 1; i <= n; i++) {
+		if (visited[1] == false) {
+				Queue<Integer> q = new LinkedList();
+			q.add(1);
+			visited[1] = true;
+
+				while (!q.isEmpty()) {
+					Integer num = q.poll();
+					finalBfsOrder.add(num);
+					for (Integer it : arr.get(num)) {
+						if (visited[it] == false) {
+							visited[it] = true;
+							q.add(it);
+						}
+					}
+				}
+			}
+
+//		}
+		return finalBfsOrder;
+
+	}
+
+	private ArrayList<Integer> bfsTraversalConnectedNodes(ArrayList<ArrayList<Integer>> arr, int n) {
 		ArrayList<Integer> finalBfsOrder = new ArrayList<Integer>();
 		boolean[] visited = new boolean[n + 1];
 
