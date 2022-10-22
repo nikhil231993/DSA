@@ -55,6 +55,33 @@ public class BFSGraph {
 		ArrayList<Integer> finalBfsOrder = new ArrayList<Integer>();
 		boolean[] visited = new boolean[n + 1];
 
+		for (int i = 1; i <= n; i++) {
+		if (visited[1] == false) {
+				Queue<Integer> q = new LinkedList();
+				q.add(i);
+				visited[i] = true;
+
+				while (!q.isEmpty()) {
+					Integer num = q.poll();
+					finalBfsOrder.add(num);
+					for (Integer it : arr.get(num)) {
+						if (visited[it] == false) {
+							visited[it] = true;
+							q.add(it);
+						}
+					}
+				}
+			}
+
+		}
+		return finalBfsOrder;
+
+	}
+
+	private ArrayList<Integer> bfsTraversalConnectedNodes(ArrayList<ArrayList<Integer>> arr, int n) {
+		ArrayList<Integer> finalBfsOrder = new ArrayList<Integer>();
+		boolean[] visited = new boolean[n + 1];
+
 //		for (int i = 1; i <= n; i++) {
 		if (visited[1] == false) {
 				Queue<Integer> q = new LinkedList();
@@ -73,34 +100,7 @@ public class BFSGraph {
 				}
 			}
 
-//		}
-		return finalBfsOrder;
-
-	}
-
-	private ArrayList<Integer> bfsTraversalConnectedNodes(ArrayList<ArrayList<Integer>> arr, int n) {
-		ArrayList<Integer> finalBfsOrder = new ArrayList<Integer>();
-		boolean[] visited = new boolean[n + 1];
-
-		for (int i = 1; i <= n; i++) {
-			if (visited[i] == false) {
-				Queue<Integer> q = new LinkedList();
-				q.add(i);
-				visited[i] = true;
-
-				while (!q.isEmpty()) {
-					Integer num = q.poll();
-					finalBfsOrder.add(num);
-					for (Integer it : arr.get(num)) {
-						if (visited[it] == false) {
-							visited[it] = true;
-							q.add(it);
-						}
-					}
-				}
-			}
-
-		}
+		// }
 		return finalBfsOrder;
 
 	}

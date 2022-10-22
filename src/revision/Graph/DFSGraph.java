@@ -11,9 +11,9 @@ public class DFSGraph {
 		ArrayList<ArrayList<Integer>> arr = new ArrayList<>();
 
 		Scanner scan = new Scanner(System.in);
-		System.out.println("Enter the no of vertices: ");
+		System.out.println("Enter the number of vertices: ");
 		int n = scan.nextInt();
-		System.out.println("Entee the number of edges: ");
+		System.out.println("Enter the number of edges: ");
 		int m = scan.nextInt();
 		for (int i = 0; i < n; i++)
 			arr.add(new ArrayList<Integer>());
