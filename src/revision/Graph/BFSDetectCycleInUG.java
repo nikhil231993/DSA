@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
-public class DetectCycleInUGUsingBFS {
+public class BFSDetectCycleInUG {
 
 	class Node {
 		int first;
@@ -19,7 +19,7 @@ public class DetectCycleInUGUsingBFS {
 
 	public static void main(String[] args) {
 
-		DetectCycleInUGUsingBFS detectCycleInUG = new DetectCycleInUGUsingBFS();
+		BFSDetectCycleInUG detectCycleInUG = new BFSDetectCycleInUG();
 		detectCycleInUG.createGraph();
 
 	}
