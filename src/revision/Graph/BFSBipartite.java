@@ -47,7 +47,7 @@ public class BFSBipartite {
 			System.out.println(num + " ");
 		}
 
-		System.out.println("Detect cycle in a BFS undirected Graph: ");
+		System.out.println("Detect whether graph is bipartite or not: ");
 		System.out.println(bfsBipartite(adjList, n));
 		scan.close();
 
