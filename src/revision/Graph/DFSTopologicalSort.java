@@ -1,10 +1,10 @@
 package revision.Graph;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
+import java.util.Stack;
 
-public class DFSBipartite {
+public class DFSTopologicalSort {
 
 	public static void main(String[] args) {
 		createGraph();
@@ -28,11 +28,10 @@ public class DFSBipartite {
 			int v = scan.nextInt();
 
 			adjList.get(u).add(v);
-			adjList.get(v).add(u);
 		}
 
 		System.out.println("Printing each vertice and associated edges: ");
-		for (int i = 1; i <= n; i++) {
+		for (int i = 0; i <= n; i++) {
 			for (Integer num : adjList.get(i)) {
 				System.out.print(num + " ");
 			}
@@ -45,65 +44,62 @@ public class DFSBipartite {
 			System.out.println(num + " ");
 		}
 
-		System.out.println("Detect whether graph is bipartite or not: ");
-		System.out.println(dfsBipartite(adjList, n));
+		System.out.println("Topology in DFS: ");
+		dfsTopology(adjList, n);
 		scan.close();
 
 	}
 
-	private static boolean dfsBipartite(ArrayList<ArrayList<Integer>> adjList, int n) {
-
-		int[] colour = new int[n + 1];
-		Arrays.fill(colour, -1);
-		for (int i = 1; i <= n; i++) {
-			if (colour[i] == -1) {
-//				colour[i] = 1;
-				if (!bipartiteCheck(adjList, i, colour)) {
-					return false;
-				}
+	private static void dfsTopology(ArrayList<ArrayList<Integer>> adjList, int n) {
+		boolean visited[]=new boolean[n+1];
+		Stack<Integer> s=new Stack<Integer>();
+		for (int i = 0; i <= n; i++)
+		{
+			if(visited[i]==false) {
+				topologyRecursive(adjList, i, visited, s);
 			}
 		}
-		return true;
+		System.out.println("Topology order in DFS is: ");
+		while (!s.isEmpty()) {
+			System.out.print(s.pop() + " ");
+		}
 
 	}
 
-	private static boolean bipartiteCheck(ArrayList<ArrayList<Integer>> adjList, int i, int[] colour) {
-
-		if (colour[i] == -1)
-			colour[i] = 1;
+	private static void topologyRecursive(ArrayList<ArrayList<Integer>> adjList, int i, boolean[] visited,
+			Stack<Integer> s) {
+		visited[i] = true;
 		for (Integer it : adjList.get(i)) {
-			if (colour[it] == -1) {
-				colour[it] = 1 - colour[i];
-				if (!bipartiteCheck(adjList, it, colour))
-				return false;
-			}
-			else {
-				if (colour[it] == colour[i])
-					return false;
+			if (visited[it] == false) {
+//				visited[it] = true;
+				topologyRecursive(adjList, it, visited, s);
 			}
 		}
-		return true;
+		s.push(i);
+
 	}
 
 	private static ArrayList<Integer> dfsTraversalDisConnectedNodes(ArrayList<ArrayList<Integer>> adjList, int n) {
-		ArrayList<Integer> dfs = new ArrayList<>();
+		ArrayList<Integer> dfs = new ArrayList<Integer>();
 		boolean visited[] = new boolean[n + 1];
-		for (int i = 1; i <= n; i++) {
-			if (visited[i] == false)
-				dfsRecursive(adjList, i, visited, dfs);
+		for (int i = 0; i <= n; i++) {
+			if (visited[i] == false) {
+				dfs(dfs, adjList, i, n, visited);
+			}
 		}
 		return dfs;
 	}
 
-	private static void dfsRecursive(ArrayList<ArrayList<Integer>> adjList, int i, boolean[] visited,
-			ArrayList<Integer> dfs) {
+	private static void dfs(ArrayList<Integer> dfs, ArrayList<ArrayList<Integer>> adjList, int i, int n,
+			boolean visited[]) {
 		visited[i] = true;
 		dfs.add(i);
 		for (Integer it : adjList.get(i)) {
-			if (visited[it] == false) {
-				dfsRecursive(adjList, it, visited, dfs);
-			}
+			if (visited[it] == false)
+				// visited[it] = true;
+			dfs(dfs, adjList, it, n, visited);
 		}
+
 	}
 
 }
