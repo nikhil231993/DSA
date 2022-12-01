@@ -12,6 +12,7 @@ public class DoublyLinkedList {
 
 		Node(int data) {
 			this.data = data;
+			this.next = this.prev = null;
 		}
 	}
 

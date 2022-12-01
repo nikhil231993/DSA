@@ -66,7 +66,7 @@ public class DFSCycleDetectionInDG {
 //				Integer num = s.pop();
 //				visited[num] = 1;
 //				dfsVisited[num] = 1;
-//				for (Integer it : adjList.get(num)) {
+//				for (Integer it : adjList.get(num)) { 
 //					if (visited[it] == 0) {
 //						s.push(it);
 //					} else if (dfsVisited[it] == 1 && dfsVisited[num] == 1) {

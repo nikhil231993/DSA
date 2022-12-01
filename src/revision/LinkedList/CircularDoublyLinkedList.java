@@ -137,7 +137,7 @@ public class CircularDoublyLinkedList {
 		}
 
 		temp.next = temp.next.next;
-
+		head.next.prev = null;
 		// temp.next.next.prev = null; bug found
 		temp.next.next.prev = temp;
 		head = head.next;
@@ -149,7 +149,6 @@ public class CircularDoublyLinkedList {
 		while (temp.next.next != head) {
 			temp = temp.next;
 		}
-
 		head.prev = temp;
 		temp.next = head;
 		size--;
