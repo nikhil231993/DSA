@@ -1,16 +1,16 @@
 package revision.queue;
 
-public class QueueCustomDynamicUsingArray {
+public class QueueCustomUsingArray {
 
 	private static final int DEFAULT_SIZE = 5;
 	private int rear = -1;
 	private int[] arr;
 
-	public QueueCustomDynamicUsingArray() {
+	public QueueCustomUsingArray() {
 		this(DEFAULT_SIZE);
 	}
 
-	public QueueCustomDynamicUsingArray(int size) {
+	public QueueCustomUsingArray(int size) {
 		arr = new int[size];
 	}
 

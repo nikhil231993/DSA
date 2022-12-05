@@ -1,17 +1,17 @@
 package revision.queue;
 
-public class QueueCustomDynamicUsingArrayUsingFront {
+public class QueueCustomUsingArrayUsingFront {
 
 	private static final int DEFAULT_SIZE = 5;
 	private int rear = -1;
 	private int front = -1;
 	private int[] arr;
 
-	public QueueCustomDynamicUsingArrayUsingFront() {
+	public QueueCustomUsingArrayUsingFront() {
 		this(DEFAULT_SIZE);
 	}
 
-	public QueueCustomDynamicUsingArrayUsingFront(int size) {
+	public QueueCustomUsingArrayUsingFront(int size) {
 		arr = new int[size];
 	}
 
@@ -38,6 +38,10 @@ public class QueueCustomDynamicUsingArrayUsingFront {
 			return;
 		}
 
+		if (this.front == -1) {
+			this.front = 0;
+		}
+
 		this.arr[++this.rear] = value;
 		System.out.println(value + " added into queue ");
 
@@ -57,7 +61,7 @@ public class QueueCustomDynamicUsingArrayUsingFront {
 	}
 
 	public int queueDequeue() {
-		++this.front;
+		// ++this.front;
 
 		if (isEmpty()) {
 			System.out.println("Queue is empty. Nothing to dequeue. ");
@@ -72,7 +76,7 @@ public class QueueCustomDynamicUsingArrayUsingFront {
 		}
 	
 
-		return this.arr[this.front];
+		return this.arr[this.front++];
 	}
 
 }

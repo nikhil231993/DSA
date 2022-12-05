@@ -1,10 +1,9 @@
 package revision.queue;
 
-public class QueueCustomDynamicUsingArrayUsingFrontMain {
+public class QueueCustomUsingArrayMain {
 
 	public static void main(String[] args) {
-
-		QueueCustomDynamicUsingArrayUsingFront queue = new QueueCustomDynamicUsingArrayUsingFront(14);
+		QueueCustomUsingArray queue = new QueueCustomUsingArray();
 		System.out.println("Before adding elements :"+queue.isEmpty());
 		System.out.println("Before adding elements queueFront: ");
 		System.out.println(queue.queueFront());
