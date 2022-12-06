@@ -74,7 +74,6 @@ public class QueueCustomUsingArrayUsingFront {
 			this.rear = -1;
 			return -1;
 		}
-	
 
 		return this.arr[this.front++];
 	}

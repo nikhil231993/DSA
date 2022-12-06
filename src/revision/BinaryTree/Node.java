@@ -10,8 +10,6 @@ public class Node {
 		this.left = null;
 		this.right = null;
 		this.data = data;
-
-
 	}
 
 }
