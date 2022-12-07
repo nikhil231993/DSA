@@ -30,8 +30,17 @@ public class BinarySearchTreeMain {
 		System.out.println("Delete a node: ");
 		bst.delete(root, 5);
 		System.out.println("Tree after deletion is: ");
+		System.out.println("Inorder traversal of BST is: ");
 		bst.inorder(root);
 		System.out.println();
+		System.out.println("Preorder traversal of BST is: ");
+		bst.preorder(root);
+		System.out.println();
+		System.out.println("Postorder traversal of BST is: ");
+		bst.postorder(root);
+		System.out.println();
+		System.out.println("Levelorder traversal of BST is: ");
+		bst.levelorder(root);
 		System.out.println("Printing range: ");
 		bst.printRange(root, 3, 11);
 		System.out.println();

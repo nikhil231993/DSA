@@ -1,6 +1,9 @@
 package revision.BinarySearchTree;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
+
 
 public class BinarySearchTreeRevision {
 
@@ -24,6 +27,24 @@ public class BinarySearchTreeRevision {
 			inorder(root.left);
 			System.out.print(root.data + "-->");
 			inorder(root.right);
+		}
+
+	}
+
+	public void preorder(Node root) {
+		if (root != null) {
+			System.out.print(root.data + "-->");
+			preorder(root.left);
+			preorder(root.right);
+		}
+
+	}
+
+	public void postorder(Node root) {
+		if (root != null) {
+			postorder(root.left);
+			postorder(root.right);
+			System.out.print(root.data + "-->");
 		}
 
 	}
@@ -108,6 +129,26 @@ public class BinarySearchTreeRevision {
 			System.out.print(n + "-->");
 		}
 		System.out.println("Next Leaf is:  ");
+
+	}
+
+	public void levelorder(Node root) {
+		if(root==null)
+			return;
+		else {
+			Queue<Node> q = new LinkedList<>();
+			q.add(root);
+			while (!q.isEmpty()) {
+				Node temp = q.peek();
+				q.remove();
+				System.out.print(temp.data + "-->");
+				if (temp.left != null)
+					q.add(temp.left);
+				if (temp.right != null)
+					q.add(temp.right);
+			}
+
+		}
 
 	}
 
