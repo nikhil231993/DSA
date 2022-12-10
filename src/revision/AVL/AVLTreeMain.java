@@ -42,6 +42,9 @@ public class AVLTreeMain {
 		System.out.println();
 		System.out.println("Searching a value in a tree : ");
 		tree.breadthFirstSearch(root, 50);
+		tree.deleteNode(root, 30);
+		System.out.println("Level order traversal" + " of constructed tree after deletetion is : ");
+		tree.levelOrderTraversal(root);
 
 	}
 
