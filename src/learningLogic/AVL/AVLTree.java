@@ -9,7 +9,7 @@ public class AVLTree {
 	// A utility function to get the height of the tree
 	int height(Node N) {
 		if (N == null)
-			return 0;
+			return -1;
 
 		return N.height;
 	}
@@ -58,7 +58,7 @@ public class AVLTree {
 	// Get Balance factor of node N
 	int getBalance(Node N) {
 		if (N == null)
-			return 0;
+			return -1;
 
 		return height(N.left) - height(N.right);
 	}
