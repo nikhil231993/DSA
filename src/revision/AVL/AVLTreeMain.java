@@ -45,6 +45,12 @@ public class AVLTreeMain {
 		tree.deleteNode(root, 30);
 		System.out.println("Level order traversal" + " of constructed tree after deletetion is : ");
 		tree.levelOrderTraversal(root);
+		System.out.println();
+		System.out.println("Delete entire AVL tree : ");
+		root = tree.deleteAVLTree(root);
+		System.out.println();
+		System.out.println("Level order traversal after deleting entire AVL tree : ");
+		tree.levelOrderTraversal(root);
 
 	}
 

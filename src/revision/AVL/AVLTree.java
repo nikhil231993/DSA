@@ -187,4 +187,12 @@ public class AVLTree {
 		return node;
 	}
 
+	public Node deleteAVLTree(Node root) {
+		System.out.println(root.hashCode());
+		root = null;
+
+		return root;
+
+	}
+
 }
