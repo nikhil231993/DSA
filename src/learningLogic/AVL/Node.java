@@ -7,6 +7,7 @@ public class Node {
 
 	Node(int d) {
         key = d;
+		height = 1;
 	}
 
 }

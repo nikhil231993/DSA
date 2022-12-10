@@ -1,5 +1,8 @@
 package learningLogic.AVL;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class AVLTree {
 	Node root;
 
@@ -125,6 +128,51 @@ public class AVLTree {
 			System.out.print(node.key + " ");
 			inOrder(node.right);
 		}
+	}
+
+	public void levelOrderTraversal(Node root) {
+		if (root == null) {
+			System.out.println("Tree is empty:");
+			return;
+		}
+		Queue<Node> queue = new LinkedList<Node>();
+		queue.add(root);
+		while (!queue.isEmpty()) {
+			Node temp=queue.peek();
+			queue.remove();
+			System.out.print(temp.key + " ");
+			if(temp.left!=null)
+				queue.add(temp.left);
+			if (temp.right != null)
+				queue.add(temp.right);
+
+		}
+
+	}
+
+	public void breadthFirstSearch(Node root, int value) {
+		if (root == null) {
+			System.out.println("Tree is empty ");
+			return;
+		}
+		Queue<Node> queue = new LinkedList<Node>();
+		queue.add(root);
+		while (!queue.isEmpty()) {
+			Node temp = queue.peek();
+			queue.remove();
+			if (temp.key == value) {
+				System.out.print("Element has been found in AVL tree ");
+				return;
+			}
+
+			if (temp.left != null)
+				queue.add(temp.left);
+			if (temp.right != null)
+				queue.add(temp.right);
+
+		}
+		System.out.println("Element is not found in AVL tree ");
+
 	}
 
 }
