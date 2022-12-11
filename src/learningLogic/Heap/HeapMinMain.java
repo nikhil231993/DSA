@@ -15,9 +15,9 @@ public class HeapMinMain {
 		heapMin.insert(9);
 		heapMin.insert(90);
 		heapMin.print();
-
+		System.out.println();
 		System.out.println("Peek: " + heapMin.peek());
-		System.out.println("Removing the FRONT element: " + heapMin.remove());
+		System.out.println("Removing the FRONT element: " + heapMin.removeRecursive());
 		System.out.println("After min heapifying");
 		heapMin.print();
 
