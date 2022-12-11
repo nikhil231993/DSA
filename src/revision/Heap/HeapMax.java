@@ -28,10 +28,10 @@ public class HeapMax {
 	public void print() {
 		for (int i = 1; i <= currentLocationMax / 2; i++) {
 			System.out.print("parent: " + heap[i]);
-			if (2 * i <= heap.length) {
+			if (2 * i <= currentLocationMax) {
 				System.out.print("Left: " + heap[2 * i]);
 			}
-			if (2 * i + 1 < heap.length) {
+			if (2 * i + 1 <= currentLocationMax) {
 				System.out.print("Right: " + heap[2 * i + 1]);
 			}
 			System.out.println();
