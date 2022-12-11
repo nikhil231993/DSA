@@ -57,7 +57,7 @@ public class HeapMin {
 
 	private void minHeapify(int pos) {
 		
-		if (pos > heap.length / 2) {
+		if (pos >= currentLocation) {
 			System.out.println("We are currently at leaf node so terminating");
 			return;
 		}

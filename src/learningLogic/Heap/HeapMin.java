@@ -103,7 +103,7 @@ public class HeapMin {
 
 	private void heapifyTopToBottom(int pos) {
 
-		if (pos > heap.length / 2) {
+		if (pos >= currentPosition) {
 			System.out.println("Heaps allocated size is exceeded");
 			return;
 		}

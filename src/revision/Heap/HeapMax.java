@@ -57,7 +57,7 @@ public class HeapMax {
 
 	private void maxHeapify(int pos) {
 		
-		if (pos > heap.length / 2) {
+		if (pos > currentLocationMax) {
 			System.out.println("We are currently at leaf node so terminating");
 			return;
 		}
