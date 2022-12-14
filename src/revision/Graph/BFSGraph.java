@@ -56,7 +56,7 @@ public class BFSGraph {
 		boolean[] visited = new boolean[n + 1];
 
 		for (int i = 1; i <= n; i++) {
-		if (visited[1] == false) {
+			if (visited[i] == false) {
 				Queue<Integer> q = new LinkedList();
 				q.add(i);
 				visited[i] = true;

@@ -27,15 +27,51 @@ public class BFSGraph {
 			arr.get(u).add(v);
 			arr.get(v).add(u);
 		}
-		ArrayList<Integer> response = bfs(arr, n, m);
-		for (Integer num : response) {
+
+		System.out.println("Disconnected Graph: ");
+		ArrayList<Integer> responseBfsDisconnectedGraph = bfsDisconnectedGraph(arr, n, m);
+		for (Integer num : responseBfsDisconnectedGraph) {
 			System.out.println(num + " ");
 		}
+
+		System.out.println("Connected Graph: ");
+		ArrayList<Integer> responseBfsConnectedGraph = bfsConnectedGraph(arr, n, m);
+		for (Integer num : responseBfsConnectedGraph) {
+			System.out.println(num + " ");
+		}
+
 		printGraph(arr, n);
 		scan.close();
 	}
 
-	private ArrayList<Integer> bfs(ArrayList<ArrayList<Integer>> arr, int n, int m) {
+	private ArrayList<Integer> bfsConnectedGraph(ArrayList<ArrayList<Integer>> arr, int n, int m) {
+		
+		boolean[] visited = new boolean[n + 1];
+		ArrayList<Integer> bfs = new ArrayList<Integer>();
+		// for (int i = 1; i <= n; i++) {
+		if (visited[1] == false) {
+			visited[1] = true;
+				Queue<Integer> q=new LinkedList<Integer>();
+			q.add(1);
+				while (!q.isEmpty()) {
+					Integer num = q.poll();
+					bfs.add(num);
+					for (Integer vertex : arr.get(num)) {
+						if (visited[vertex] == false) {
+							visited[vertex] = true;
+							q.add(vertex);
+						}
+					}
+
+				}
+			}
+		// }
+
+		return bfs;
+
+	}
+
+	private ArrayList<Integer> bfsDisconnectedGraph(ArrayList<ArrayList<Integer>> arr, int n, int m) {
 
 		boolean[] visited = new boolean[n + 1];
 
@@ -64,6 +100,7 @@ public class BFSGraph {
 	}
 
 	private void printGraph(ArrayList<ArrayList<Integer>> arr, int n) {
+		System.out.println("Priting graph: ");
 		for(int i=1;i<=n;i++) {
 			System.out.print(i + " --> ");
 			for (Integer num : arr.get(i)) {

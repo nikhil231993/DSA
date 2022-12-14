@@ -15,7 +15,7 @@ public class DFSGraph {
 		int n = scan.nextInt();
 		System.out.println("Enter the number of edges: ");
 		int m = scan.nextInt();
-		for (int i = 0; i < n; i++)
+		for (int i = 0; i <= n; i++)
 			arr.add(new ArrayList<Integer>());
 
 		System.out.println("Enter the combination of edges: ");
@@ -64,7 +64,7 @@ public class DFSGraph {
 
 	private ArrayList<Integer> dfsTraversalDisConnectedNodesWithStack(ArrayList<ArrayList<Integer>> arr, int n) {
 		ArrayList<Integer> dfs = new ArrayList<>();
-		boolean visited[] = new boolean[n];
+		boolean visited[] = new boolean[n + 1];
 
 		for (int i = 0; i < n; i++) {
 			if (visited[i] == false) {
@@ -91,7 +91,7 @@ public class DFSGraph {
 
 	private ArrayList<Integer> dfsTraversalConnectedNodesWithStack(ArrayList<ArrayList<Integer>> arr, int n) {
 		ArrayList<Integer> dfs = new ArrayList<>();
-		boolean visited[] = new boolean[n];
+		boolean visited[] = new boolean[n + 1];
 		visited[0] = true;
 		Stack<Integer> stack = new Stack<>();
 		stack.push(0);
@@ -113,7 +113,7 @@ public class DFSGraph {
 
 	private ArrayList<Integer> dfsTraversalDisConnectedNodes(ArrayList<ArrayList<Integer>> arr, int n) {
 		ArrayList<Integer> dfs = new ArrayList<>();
-		boolean visited[] = new boolean[n];
+		boolean visited[] = new boolean[n + 1];
 		for (int i = 0; i < n; i++) {
 			if (visited[i] == false) {
 				recursive(arr, i, visited, dfs);
@@ -124,9 +124,9 @@ public class DFSGraph {
 	}
 
 	private ArrayList<Integer> dfsTraversalConnectedNodes(ArrayList<ArrayList<Integer>> arr, int vertex, int n) {
-		boolean visited[] = new boolean[n];
+		boolean visited[] = new boolean[n + 1];
 		ArrayList<Integer> dfs = new ArrayList<>();
-		return recursive(arr, vertex, visited, dfs);
+		return recursive(arr, 1, visited, dfs);
 	}
 
 	private ArrayList<Integer> recursive(ArrayList<ArrayList<Integer>> arr, int vertex, boolean visited[],
