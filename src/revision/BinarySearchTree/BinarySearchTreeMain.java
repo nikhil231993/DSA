@@ -46,6 +46,9 @@ public class BinarySearchTreeMain {
 		System.out.println();
 		System.out.println("Root to Leaf path: ");
 		bst.rootToLeaf(root);
+		System.out.println("Maximum depth of tree: ");
+		System.out.println(bst.maxDepth(root));
+
 	}
 
 }
