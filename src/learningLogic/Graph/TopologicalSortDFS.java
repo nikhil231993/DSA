@@ -1,10 +1,10 @@
-package revision.Graph;
+package learningLogic.Graph;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Stack;
 
-public class DFSTopologicalSort {
+public class TopologicalSortDFS {
 
 	public static void main(String[] args) {
 		createGraph();
@@ -51,16 +51,15 @@ public class DFSTopologicalSort {
 	}
 
 	private static void dfsTopology(ArrayList<ArrayList<Integer>> adjList, int n) {
-
-		Stack<Integer> s = new Stack<>();
-		boolean[] visited = new boolean[n + 1];
-		for (int i = 0; i <= n; i++) {
-			if (visited[i] == false) {
+		boolean visited[]=new boolean[n+1];
+		Stack<Integer> s=new Stack<Integer>();
+		for (int i = 0; i <= n; i++)
+		{
+			if(visited[i]==false) {
 				topologyRecursive(adjList, i, visited, s);
 			}
 		}
-
-		System.out.println("Topsort is : ");
+		System.out.println("Topology order in DFS is: ");
 		while (!s.isEmpty()) {
 			System.out.print(s.pop() + " ");
 		}
@@ -70,12 +69,14 @@ public class DFSTopologicalSort {
 	private static void topologyRecursive(ArrayList<ArrayList<Integer>> adjList, int i, boolean[] visited,
 			Stack<Integer> s) {
 		visited[i] = true;
-		for (Integer vertices : adjList.get(i)) {
-			if (visited[vertices] == false) {
-				topologyRecursive(adjList, vertices, visited, s);
+		for (Integer it : adjList.get(i)) {
+			if (visited[it] == false) {
+//				visited[it] = true;
+				topologyRecursive(adjList, it, visited, s);
 			}
 		}
 		s.push(i);
+
 	}
 
 	private static ArrayList<Integer> dfsTraversalDisConnectedNodes(ArrayList<ArrayList<Integer>> adjList, int n) {
@@ -95,7 +96,8 @@ public class DFSTopologicalSort {
 		dfs.add(i);
 		for (Integer it : adjList.get(i)) {
 			if (visited[it] == false)
-				dfs(dfs, adjList, it, n, visited);
+				// visited[it] = true;
+			dfs(dfs, adjList, it, n, visited);
 		}
 
 	}
