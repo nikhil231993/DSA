@@ -50,13 +50,8 @@ public class ShortestPathUDGWithUnitWeights {
 
 		System.out.println("Enter the destination : ");
 
-		System.out.println("BFS Traversal of DisConnected Nodes Graph: ");
-
-		System.out.println("Shortes Path : ");
+		System.out.println("Shortest Path : ");
 		shortestPath(adjList, n, src, dest);
-//		for (int num : topSort) {
-//			System.out.println(num + " ");
-//		}
 		scan.close();
 
 	}

@@ -81,7 +81,7 @@ public class ShortestPathUDGWithWeightsWithDijsktra {
 
 		PriorityQueue<NodeVertex> pq = new PriorityQueue<NodeVertex>(n, new NodeVertex());
 		pq.add(new NodeVertex(src, 0));
-		
+
 		path[src] = 0;
 
 		while (!pq.isEmpty()) {
@@ -89,7 +89,6 @@ public class ShortestPathUDGWithWeightsWithDijsktra {
 
 			for (NodeVertex vertex : adjList.get(nodeVertex.v)) {
 				if (path[nodeVertex.v] + vertex.w < path[vertex.v]) {
-					System.out.println("Hi");
 					path[vertex.v] = path[nodeVertex.v] + vertex.w;
 					pq.add(new NodeVertex(vertex.v, path[vertex.v]));
 				}
