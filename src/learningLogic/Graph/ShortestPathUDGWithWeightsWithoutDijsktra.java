@@ -62,7 +62,7 @@ public class ShortestPathUDGWithWeightsWithoutDijsktra {
 			Integer num = q.poll();
 			for (Node vertices : adjList.get(num)) {
 				if (path[num] + vertices.weight < path[vertices.v]) {
-					path[vertices.v] = vertices.weight;
+					path[vertices.v] = path[num] + vertices.weight;
 					q.add(vertices.v);
 				}
 			}
