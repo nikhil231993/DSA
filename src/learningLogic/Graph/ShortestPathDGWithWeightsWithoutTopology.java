@@ -2,24 +2,11 @@ package learningLogic.Graph;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Scanner;
-import java.util.Stack;
 
-
-class Node {
-	int v;
-	int weight;
-
-	Node(int v, int weight) {
-		this.v = v;
-		this.weight = weight;
-	}
-
-}
-
-public class ShortestPathDGWithWeights {
-
-
+public class ShortestPathDGWithWeightsWithoutTopology {
 
 	public static void main(String[] args) {
 		createGraph();
@@ -62,32 +49,23 @@ public class ShortestPathDGWithWeights {
 	}
 
 	private static void shortestPath(ArrayList<ArrayList<Node>> adjList, int n, int src, int dest) {
-		
-		Stack<Integer> s = new Stack<Integer>();
 
 		int[] path = new int[n + 1];
 		Arrays.fill(path, Integer.MAX_VALUE);
-		boolean[] visited=new boolean[n+1];
 		
-		for(int i=0;i<=n;i++) {
-			if (visited[i] == false) {
-				recursiveTopo(s, visited, adjList, i);
-			}
-		}
 		path[src] = 0;
+		Queue<Integer> q = new LinkedList<Integer>();
+		q.add(src);
 
-		while (!s.isEmpty()) {
-			int node = s.pop();
-
-			if (path[node] != Integer.MAX_VALUE) {
-				for (Node vertices : adjList.get(node)) {
-					if (path[node] + vertices.weight < path[vertices.v]) {
-						path[vertices.v] = path[node] + vertices.weight;
-					}
+		while (!q.isEmpty()) {
+			Integer num = q.poll();
+			for (Node vertices : adjList.get(num)) {
+				if (path[num] + vertices.weight < path[vertices.v]) {
+					path[vertices.v] = path[num] + vertices.weight;
+					q.add(vertices.v);
 				}
 			}
 		}
-		
 		int i = 0;
 		for (int num : path) {
 			System.out.println(i + "-->" + num + " ");
@@ -95,16 +73,6 @@ public class ShortestPathDGWithWeights {
 				System.out.println("Shortest distance from src : + " + src + " to dest : " + dest + " is : " + num);
 			i++;
 		}
-	}
-
-	private static void recursiveTopo(Stack<Integer> s, boolean[] visited, ArrayList<ArrayList<Node>> adjList, int i) {
-		visited[i] = true;
-		for (Node vertices : adjList.get(i)) {
-			if (visited[vertices.v] == false) {
-				recursiveTopo(s, visited, adjList, vertices.v);
-			}
-		}
-		s.push(i);
 
 	}
 
