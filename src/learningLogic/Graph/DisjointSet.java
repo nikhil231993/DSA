@@ -55,7 +55,7 @@ public class DisjointSet {
 			parent[pV] = pU;
 		} else {
 			parent[pV] = pU;
-			rank[pV]++;
+			rank[pU]++;
 		}
 
 	}
