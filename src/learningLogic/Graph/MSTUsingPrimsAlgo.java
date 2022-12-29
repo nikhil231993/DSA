@@ -1,11 +1,10 @@
 package learningLogic.Graph;
 
 import java.util.ArrayList;
-import java.util.PriorityQueue;
 import java.util.Scanner;
 
 
-public class MinimumSpanningTreeUsingPQ {
+public class MSTUsingPrimsAlgo {
 
 	public static void main(String[] args) {
 		createGraph();
@@ -53,19 +52,24 @@ public class MinimumSpanningTreeUsingPQ {
 
 		// take minimum value as starting node
 		key[0] = 0;
-		PriorityQueue<NodeVertex> pq = new PriorityQueue<NodeVertex>(n, new NodeVertex());
-		pq.add(new NodeVertex(0, key[0]));
 
 		for (int j = 0; j < n - 1; j++) {
-			NodeVertex min_node = pq.poll();
-			
-			mst[min_node.v] = true;
+			int min_value = Integer.MAX_VALUE;
+			int min_index=-1;
+			for(int i=0;i<n;i++) {
+				if (mst[i] == false && key[i] < min_value) {
+					min_index = i;
+					min_value = key[i];
 
-			for (Node num : adjList.get(min_node.v)) {
+				}
+			}
+			
+			mst[min_index] = true;
+
+			for (Node num : adjList.get(min_index)) {
 				if (mst[num.v] == false && num.weight < key[num.v]) {
 					key[num.v] = num.weight;
-					parent[num.v] = min_node.v;
-					pq.add(new NodeVertex(num.v, key[num.v]));
+					parent[num.v] = min_index;
 				}
 			}
 		}

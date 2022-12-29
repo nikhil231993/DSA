@@ -31,7 +31,7 @@ class Node3 implements Comparator<Node3> {
 	}
 }
 
-public class KruskalAlgorithm {
+public class MSTUsingKruskalAlgorithm {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
