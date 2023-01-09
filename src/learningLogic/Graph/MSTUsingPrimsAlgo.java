@@ -77,6 +77,7 @@ public class MSTUsingPrimsAlgo {
 		for (int i = 1; i < n; i++) {
 			System.out.println(parent[i] + " - " + i);
 		}
+		// TC:O(N square)
 
 	}
 

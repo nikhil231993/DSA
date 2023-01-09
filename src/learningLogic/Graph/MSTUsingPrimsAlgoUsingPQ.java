@@ -74,6 +74,8 @@ public class MSTUsingPrimsAlgoUsingPQ {
 			System.out.println(parent[i] + " - " + i);
 		}
 
+		// TC:O(N Log N)
+
 	}
 
 }
