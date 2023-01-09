@@ -57,6 +57,8 @@ public class ShortestPathDGWithWeightsWithTopology {
 		System.out.println("Shortes Path : ");
 		shortestPath(adjList, n, src, dest);
 
+		shortestPathPrint(adjList, n, src, dest);
+
 		scan.close();
 
 	}
@@ -95,6 +97,58 @@ public class ShortestPathDGWithWeightsWithTopology {
 				System.out.println("Shortest distance from src : + " + src + " to dest : " + dest + " is : " + num);
 			i++;
 		}
+	}
+
+	private static void shortestPathPrint(ArrayList<ArrayList<Node>> adjList, int n, int src, int dest) {
+
+		Stack<Integer> s = new Stack<Integer>();
+
+		int[] path = new int[n + 1];
+		int[] parent = new int[n + 1];
+		Arrays.fill(path, Integer.MAX_VALUE);
+		boolean[] visited = new boolean[n + 1];
+
+		for (int i = 0; i <= n; i++) {
+			if (visited[i] == false) {
+				recursiveTopo(s, visited, adjList, i);
+			}
+		}
+		path[src] = 0;
+
+		while (!s.isEmpty()) {
+			int node = s.pop();
+
+			if (path[node] != Integer.MAX_VALUE) {
+				for (Node vertices : adjList.get(node)) {
+					if (path[node] + vertices.weight < path[vertices.v]) {
+						path[vertices.v] = path[node] + vertices.weight;
+						parent[vertices.v]=node;
+					}
+				}
+			}
+		}
+
+		int i = 0;
+		for (int num : path) {
+			System.out.println(i + "-->" + num + " ");
+			if (dest == i)
+				System.out.println("Shortest distance from src : + " + src + " to dest : " + dest + " is : " + num);
+			i++;
+		}
+
+		System.out.println("Shortest path is : ");
+		Stack<Integer> st = new Stack<>();
+		st.push(dest);
+		int d = dest;
+		while (d != src) {
+			d = parent[d];
+			st.push(d);
+		}
+
+		while (!st.isEmpty()) {
+			System.out.println(st.pop());
+		}
+
 	}
 
 	private static void recursiveTopo(Stack<Integer> s, boolean[] visited, ArrayList<ArrayList<Node>> adjList, int i) {

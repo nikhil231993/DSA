@@ -1,18 +1,29 @@
 package learningLogic;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.LinkedList;
 
 public class sumTwoNumbers {
 
+	private int a;
+
 	public static void main(String[] args) {
-		
-		int arr[]= new int [] {2,7,11,15};
-		int targte=9;
-		int a[]=twoSum(arr,targte);
-		for(int aq :a)
-			System.out.println(aq);
+
+
+//		
+//		int arr[]= new int [] {2,7,11,15};
+//		int targte=9;
+//		int a[]=twoSum(arr,targte);
+//		for(int aq :a)
+//			System.out.println(aq);
+		sumTwoNumbers n = new sumTwoNumbers();
+		n.test();
+
+	}
+
+	private void test() {
+		int b = a;
+		System.out.println(b);
+		System.out.println(a);
 
 	}
 
