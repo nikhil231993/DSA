@@ -83,6 +83,8 @@ public class BellmanFordAlgorithm {
 				System.out.println(i + " " + dist[i]);
 		}
 
+		// TC:O(N square)
+
 	}
 
 

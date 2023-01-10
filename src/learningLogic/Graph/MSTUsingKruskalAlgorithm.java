@@ -86,7 +86,7 @@ public class MSTUsingKruskalAlgorithm {
 	private static int findPar(int node, int[] parent) {
 		if (node == parent[node])
 			return node;
-		return findPar(parent[node], parent);
+		return parent[node] = findPar(parent[node], parent);
 	}
 
 	private static void union(int u, int v, int[] rank, int[] parent) {
