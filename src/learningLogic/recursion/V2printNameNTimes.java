@@ -1,6 +1,6 @@
 package learningLogic.recursion;
 
-public class printNameNTimes {
+public class V2printNameNTimes {
 
 	public static void main(String[] args) {
 		recursiveName("test", 5);

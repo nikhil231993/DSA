@@ -1,6 +1,6 @@
-package learningLogic.backtracking;
+package learningLogic.recursion;
 
-public class BackTracking {
+public class V2BackTracking {
 
 	public static void main(String[] args) {
 		System.out.println("Ascending order : ");
