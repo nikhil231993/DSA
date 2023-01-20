@@ -6,7 +6,7 @@ import java.util.List;
 public class V6PrintSubsequences {
 
 	public static void main(String[] args) {
-		int[] arr = { 3, 1, 2 };
+		int[] arr = { 3, 2, 1 };
 		List<Integer> list = new ArrayList<>();
 		printSubsequence(arr, list, 0);
 
