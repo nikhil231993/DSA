@@ -1,8 +1,6 @@
 package learningLogic;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 
 public class sumTwoNumbers {
 
@@ -10,29 +8,33 @@ public class sumTwoNumbers {
 
 	public static void main(String[] args) {
 		
-		List<Object> a = new ArrayList<Object>();
-		a.add(1.0);
-		a.add(2.0);
-		a.add("");
-		a.add("String");
-		a.add(1.02136E-09);
-		a.add(5.0);
-		a.add(0);
-		a.removeIf(item -> item == null || "".equals(item) || item instanceof String);
+		String s = "Nikhil";
+		s.substring(0, 1);
+		System.out.println(s);
 
-		List<Double> list = (List) a;
-
-
-
-		System.out.println(list);
-		System.out.println(Math.min(0.5E-10, 1.02136E-09));
-
-		double x[] = new double[list.size()];
-		for (int i = 0; i < x.length; i++) {
-			x[i] = list.get(i).doubleValue();
-			System.out.println(x[i]);
-		}
-		System.out.println(getMax(x, 0, x.length - 1));
+//		List<Object> a = new ArrayList<Object>();
+//		a.add(1.0);
+//		a.add(2.0);
+//		a.add("");
+//		a.add("String");
+//		a.add(1.02136E-09);
+//		a.add(5.0);
+//		a.add(0);
+//		a.removeIf(item -> item == null || "".equals(item) || item instanceof String);
+//
+//		List<Double> list = (List) a;
+//
+//
+//
+//		System.out.println(list);
+//		System.out.println(Math.min(0.5E-10, 1.02136E-09));
+//
+//		double x[] = new double[list.size()];
+//		for (int i = 0; i < x.length; i++) {
+//			x[i] = list.get(i).doubleValue();
+//			System.out.println(x[i]);
+//		}
+//		System.out.println(getMax(x, 0, x.length - 1));
 
 //		
 //		int arr[]= new int [] {2,7,11,15};

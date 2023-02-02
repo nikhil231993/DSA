@@ -51,6 +51,8 @@ public class V16MColouringProblem {
 		int M = scan.nextInt();
 
 		System.out.println(MColoring(adjList, n, M));
+		// TC:(N raise to M)
+		// SC:O(N) color array + O(N)Recusriosn array
 		scan.close();
 
 	}
