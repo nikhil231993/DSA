@@ -2,29 +2,32 @@ package leetcode.easy;
 
 public class LC26RemoveDuplicatesFromSortedArray {
 	public static void main(String[] args) {
-		int[] arr = new int[] { 1, 2, 2, 3, 3, 3, 4, 5, 6, 6, 7 };
+		int[] arr = new int[] { 1, 1, 2 };
 		System.out.println("Size of arr after duplicate removal is: ");
-		int size = removeDuplicates(arr);
-		System.out.println(size);
-		for (int i = 0; i < size; i++)
-			System.out.println(arr[i]);
+		removeDuplicates(arr);
+		for (Integer n : arr)
+			System.out.println(n);
+//		System.out.println(size);
+//		for (int i = 0; i < size; i++)
+//			System.out.println(arr[i]);
+	}
+
+	private static void removeDuplicates(int[] arr) {
+
+		int j = 0;
+		for (int i = 1; i < arr.length; i++) {
+			if (arr[j] != arr[i]) {
+				arr[++j] = arr[i];
+			}
+		}
+
+		while (j < arr.length - 1) {
+			arr[++j] = 0;
+		}
+
 	}
 
 	// one way
-	private static int removeDuplicates(int[] arr) {
-		if (arr.length == 1) {
-			System.out.println("Array is invalid");
-			return -1;
-		}
 
-		int i = 0;
-		for (int j = 1; j < arr.length; j++) {
-			if (arr[i] != arr[j]) {
-				i++;
-				arr[i] = arr[j];
-			}
-		}
-		return (i + 1);
-	}
 
 }
