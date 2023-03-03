@@ -11,9 +11,9 @@ public class LC118PascalTriangle {
 		System.out.println("Enter the rows : ");
 		int n = scan.nextInt();
 		
-		// pascalsTriangle(n);
+		pascalsTriangle(n);
 
-		// System.out.println(pascalsTriangleList(n));
+		System.out.println(pascalsTriangleList(n));
 
 		// Best Approach
 		System.out.println(pascalsTriangleListMin(n));
@@ -36,7 +36,7 @@ public class LC118PascalTriangle {
 			}
 			re.add(r);
 
-			// SC:O(1)
+			// SC:O(n2)
 			// TC:O(n2)
 		}
 		return re;
