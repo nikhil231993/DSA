@@ -12,7 +12,7 @@ public class LC163SumClosest {
 	}
 
 	private static int closesetSum(int target, int[] nums) {
-		Arrays.sort(nums);
+		Arrays.sort(nums);// O(nlogn)
 		int diff=Integer.MAX_VALUE;
 		int ans=0;
 		for (int i = 0; i < nums.length; i++) {
@@ -35,6 +35,9 @@ public class LC163SumClosest {
 
 			}
 		}
+
+		// SC:O(1)
+		// TC:O(n2)
 		return ans;
 	}
 
