@@ -3,7 +3,7 @@ package leetcode.medium;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LC79SubsetList {
+public class LC78SubsetList {
 
 	public static void main(String[] args) {
 		int[] arr = { 3, 2, 1 };
