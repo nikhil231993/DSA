@@ -1,5 +1,4 @@
-package geeksForGeeks_1;
-
+package geeksForGeeks;
 public class inheritance {
 	
 

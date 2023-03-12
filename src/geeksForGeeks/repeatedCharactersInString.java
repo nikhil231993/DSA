@@ -1,4 +1,4 @@
-package geeksForGeeks_1;
+package geeksForGeeks;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
