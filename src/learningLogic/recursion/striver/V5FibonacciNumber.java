@@ -1,4 +1,4 @@
-package learningLogic.recursion;
+package learningLogic.recursion.striver;
 
 public class V5FibonacciNumber {
 

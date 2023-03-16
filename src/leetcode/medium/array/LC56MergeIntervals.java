@@ -35,6 +35,9 @@ public class LC56MergeIntervals {
 		res.add(new int[] { start, end });
 		return res.toArray(new int[0][]);
 
+		// SC:O(1)
+		// TC:O(n)
+
 	}
 
 }
