@@ -31,6 +31,9 @@ public class FibonaaciNumber {
 		if (n == 1 || n == 0)
 			return 1;
 		return fibo(n - 1) + fibo(n - 2);
+
+		// SC:O(n) n is the height of the tree
+		// TC:O(2 raise to n) i.e 2 raise to n nodes are there
 	}
 
 }
