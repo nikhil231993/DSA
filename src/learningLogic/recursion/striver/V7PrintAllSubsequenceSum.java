@@ -6,7 +6,7 @@ import java.util.List;
 public class V7PrintAllSubsequenceSum {
 
 	public static void main(String[] args) {
-		int[] arr = { 2, 1, 2 };
+		int[] arr = { 2, 1, 2, 0 };
 		List<Integer> list = new ArrayList<>();
 		printSubsequence(arr, list, 0, 0, 3);
 

@@ -20,10 +20,10 @@ public class V7CountSubsequenceSum {
 			return 0;
 		}
 
-		list.add(arr[i]);
+//		list.add(arr[i]);
 		s+=arr[i];
 		int l = printSubsequenceSumOnce(arr, list, i + 1, s, sum);
-		list.remove(list.size() - 1);
+//		list.remove(list.size() - 1);
 		s -= arr[i];
 		int r = printSubsequenceSumOnce(arr, list, i + 1, s, sum);
 		// TC:O(2 raised to N)

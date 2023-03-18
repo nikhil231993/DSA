@@ -23,7 +23,8 @@ public class V6PrintSubsequences {
 		list.remove(list.size() - 1);
 		printSubsequence(arr, list, i + 1);
 		// TC:O(2 raised to N)
-		// SC:O(N) as at the max we will have 3 functions in stack
+		// SC:O(N) as at the max we will have 3 functions in stack .Also N is the no of
+		// numbers in array
 	}
 
 
