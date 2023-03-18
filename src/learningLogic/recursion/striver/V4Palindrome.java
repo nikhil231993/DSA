@@ -7,23 +7,28 @@ public class V4Palindrome {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		String s = scan.nextLine();
-		palindrome(s, 0);
+
+		System.out.println(palindrome(s, 0));
 
 		scan.close();
 
 	}
 
-	private static void palindrome(String s, int pos) {
+	private static boolean palindrome(String s, int pos) {
 
 		if (pos < s.length() - 1 / 2) {
 			if (s.charAt(pos) == s.charAt(s.length() - 1 - pos)) {
-				palindrome(s, pos + 1);
+				return palindrome(s, pos + 1);
 			} else {
-				System.out.println("Not palindrome");
+				return false;
 			}
 		}
-		if (pos == s.length() - 1 / 2)
-			System.out.println("Palindrome");
+//		if (pos == s.length() - 1 / 2)
+//			System.out.println("Palindrome");
+		return true;
+
+		// SC:O(n)
+		// TC:O(n)
 
 	}
 

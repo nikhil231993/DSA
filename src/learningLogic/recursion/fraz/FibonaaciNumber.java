@@ -3,7 +3,7 @@ package learningLogic.recursion.fraz;
 public class FibonaaciNumber {
 
 	public static void main(String[] args) {
-		int n = 8;
+		int n = 4;
 
 		System.out.println(fibo(n));
 
@@ -28,8 +28,8 @@ public class FibonaaciNumber {
 	}
 
 	public static int fibo(int n) {
-		if (n == 1 || n == 0)
-			return 1;
+		if (n <= 1)
+			return n;
 		return fibo(n - 1) + fibo(n - 2);
 
 		// SC:O(n) n is the height of the tree

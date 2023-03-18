@@ -3,7 +3,7 @@ package learningLogic.recursion.striver;
 public class V4ReverseArray {
 
 	public static void main(String[] args) {
-		int[] arr = { 1, 2, 3, 4, 5 };
+		int[] arr = { 1, 2, 3, 4, 5, 4, 3, 2, 1 };
 		reverseArray(arr);
 		print(arr);
 
@@ -15,6 +15,19 @@ public class V4ReverseArray {
 		reverseArrayRecursionUsingTwoPointers(arr, 0, arr.length - 1);
 		print(arr);
 
+		System.out.println("Check if array is palindrome");
+		System.out.println(reverseArrayRecursionPalindrome(arr, 0));
+
+	}
+
+	private static boolean reverseArrayRecursionPalindrome(int[] arr, int i) {
+		if(i<arr.length-1) {
+			if(arr[i]==arr[arr.length-1-i])
+				return reverseArrayRecursionPalindrome(arr, i + 1);
+			else
+				return false;
+		}
+		return true;
 	}
 
 	private static void reverseArrayRecursionUsingTwoPointers(int[] arr, int start, int end) {
@@ -30,7 +43,7 @@ public class V4ReverseArray {
 	}
 
 	private static void reverseArrayRecursion(int[] arr, int i) {
-		if (i > (arr.length / 2) - 1)
+		if (i > (arr.length - 1) / 2)
 			return;
 
 		int temp = arr[i];
