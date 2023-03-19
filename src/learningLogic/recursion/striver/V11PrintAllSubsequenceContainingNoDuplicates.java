@@ -1,12 +1,14 @@
 package learningLogic.recursion.striver;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class V11PrintAllSubsequenceContainingNoDuplicates {
 
 	public static void main(String[] args) {
 		int[] arr = { 1, 2, 2 };
+		Arrays.sort(arr);
 		List<Integer> list = new ArrayList<>();
 		List<List<Integer>> parent = new ArrayList<List<Integer>>();
 		List<List<Integer>> parent1 = new ArrayList<List<Integer>>();
@@ -15,11 +17,11 @@ public class V11PrintAllSubsequenceContainingNoDuplicates {
 		System.out.println(parent1);
 
 	}
-	
-	private static void printSubsequence(int[] arr, List<Integer> list, int i,List<List<Integer>> parent) {
+
+	private static void printSubsequence(int[] arr, List<Integer> list, int i, List<List<Integer>> parent) {
 		if (i >= arr.length) {
 			if (!parent.contains(list)) {
-			parent.add(new ArrayList<>(list));
+				parent.add(new ArrayList<>(list));
 			}
 			return;
 		}
@@ -35,21 +37,20 @@ public class V11PrintAllSubsequenceContainingNoDuplicates {
 
 	private static void printSubsequenceWithoutDuplicates(int[] arr, List<List<Integer>> list, List<Integer> arr1,
 			int index) {
-//		if (index == arr.length) {
-			list.add(new ArrayList<>(arr1));
-//			return;
-//		}
+
+		list.add(new ArrayList<>(arr1));
+
 		for (int i = index; i < arr.length; i++) {
-			if(i>index && arr[i]==arr[i-1]) {
+			if (i > index && arr[i] == arr[i - 1]) {
 				continue;
 			}
-			
+
 			arr1.add(arr[i]);
 			printSubsequenceWithoutDuplicates(arr, list, arr1, i + 1);
-			arr1.remove(arr1.size()-1);
+			arr1.remove(arr1.size() - 1);
 		}
-		// TC:O(2 raise to n * k)
-		// SC:O(2 raise to n * k)
+		// TC:2 raise to N * t (avg length of combinations)
+		// SC:2 raise to n * k + O(n) (Auxiliary space)
 
 	}
 

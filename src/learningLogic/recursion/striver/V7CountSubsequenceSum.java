@@ -13,6 +13,11 @@ public class V7CountSubsequenceSum {
 	}
 
 	private static int printSubsequenceSumOnce(int[] arr, List<Integer> list, int i, int s, int sum) {
+		//condition not satisfied
+		//strictly doen if array conatisn positives only
+		if(s>sum)
+			return 0;
+
 		if (i == arr.length) {
 			if (s == sum) {
 				return 1;

@@ -14,7 +14,7 @@ public class V7PrintAllSubsequenceSum {
 
 	private static void printSubsequence(int[] arr, List<Integer> list, int i, int s,int sum) {
 		if (i == arr.length) {
-			if (s == sum) {
+			if (s == sum) { 
 				System.out.println(list);
 				
 			}

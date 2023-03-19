@@ -27,8 +27,9 @@ public class V10PrintAllSubsequenceSumIncreasingOrder {
 //		list.remove(list.size() - 1);
 		sum -= arr[i];
 		printSubsequence(arr, list, i + 1, sum);
-		// TC:O(2 raised to N + 2raised to N log 2 raise to N)
-		// SC:O(2N) as at the max we will have 3 functions in stack
+		// TC:O(2 raised to N + 2raised to N log (2 raise to N))
+		// SC:O(2N) as there are 8 diff combinations so with duplicates it willbe 2
+		// raise to N
 	}
 
 

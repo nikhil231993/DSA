@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class V9L40PrintElementsWithSum {
+public class V9L40PrintElementsWithSumTakingUniqueCombinations {
 
 	public static void main(String[] args) {
 		int[] arr = { 1, 2, 1, 1, 2 };
@@ -23,7 +23,7 @@ public class V9L40PrintElementsWithSum {
 			return;
 		}
 		for (int i = index; i < arr.length; i++) {
-			if(i>index && arr[i]==arr[i-1]) {
+			if (i > index && arr[i] == arr[i - 1]) {
 				continue;
 			}
 			if(arr[i]>target) {
@@ -35,7 +35,7 @@ public class V9L40PrintElementsWithSum {
 			arr1.remove(arr1.size()-1);
 		}
 
-		// TC:O(2 raise to N) * k
+		// TC:O(2 raise to N) * k when unique elements are there
 		// SC:K*x(combinations)
 
 	}
