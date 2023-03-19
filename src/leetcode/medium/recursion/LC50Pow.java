@@ -1,4 +1,4 @@
-package learningLogic.recursion.medium;
+package leetcode.medium.recursion;
 
 public class LC50Pow {
 

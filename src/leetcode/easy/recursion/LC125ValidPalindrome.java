@@ -1,4 +1,4 @@
-package learningLogic.recursion.easy;
+package leetcode.easy.recursion;
 
 public class LC125ValidPalindrome {
 
