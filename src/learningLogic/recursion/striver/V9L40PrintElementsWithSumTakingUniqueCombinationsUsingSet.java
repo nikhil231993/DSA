@@ -40,7 +40,7 @@ public class V9L40PrintElementsWithSumTakingUniqueCombinationsUsingSet {
 		// TC:O(2 raised to t) where t is no of times
 		// SC:O(k(avg length)*x(combinations)) as at the max we will have 3 functions in
 		// stack
-		// If instead of syso we use list of list then TC will be 2 raised to t *k *log
+		// If instead of syso we use set of list then TC will be 2 raised to t *k *log
 		// n as we are also putting values into a set where
 		// k is length of combination as adding into list is linear TC and not constant
 	}

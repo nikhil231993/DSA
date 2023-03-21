@@ -25,7 +25,7 @@ public class V12Permutations {
 		
 		for(int i=index;i<nums.length;i++) {
 			swap(i,index,nums);
-			permutations(nums, parentList, index + 1);
+			permutations(nums, parentList, i + 1);
 			swap(i, index, nums);
 		}
 

@@ -6,9 +6,10 @@ import java.util.List;
 public class V7CountSubsequenceSum {
 
 	public static void main(String[] args) {
-		int[] arr = { 2, 1, 2 };
+		int[] arr = { 2, 1, 0, 2 };
 		List<Integer> list = new ArrayList<>();
 		System.out.println(printSubsequenceSumOnce(arr, list, 0, 0, 3));
+
 
 	}
 
