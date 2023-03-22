@@ -28,7 +28,7 @@ public class V10PrintAllSubsequenceSumIncreasingOrder {
 		sum -= arr[i];
 		printSubsequence(arr, list, i + 1, sum);
 		// TC:O(2 raised to N + 2raised to N log (2 raise to N))
-		// SC:O(2N) as there are 8 diff combinations so with duplicates it willbe 2
+		// SC:O(2N) as there are 8 diff combinations so with duplicates it will be 2
 		// raise to N
 	}
 

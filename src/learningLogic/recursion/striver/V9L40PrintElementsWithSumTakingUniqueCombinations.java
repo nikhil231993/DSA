@@ -7,7 +7,7 @@ import java.util.List;
 public class V9L40PrintElementsWithSumTakingUniqueCombinations {
 
 	public static void main(String[] args) {
-		int[] arr = { 1, 1, 2, 2 };
+		int[] arr = { 1, 1, 1, 2, 2 };
 		List<List<Integer>> list = new ArrayList<>();
 		List<Integer> arr1 = new ArrayList<>();
 		Arrays.sort(arr);
