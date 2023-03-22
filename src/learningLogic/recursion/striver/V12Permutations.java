@@ -8,35 +8,32 @@ public class V12Permutations {
 	public static void main(String[] args) {
 		int[] nums = { 1, 2, 3 };
 		List<List<Integer>> parentList = new ArrayList<>();
-		permutations(nums, parentList, 0);
+		List<Integer> ds = new ArrayList<Integer>();
+		boolean[] flag = new boolean[nums.length];
+		permutations(nums, parentList, ds, flag);
 		System.out.println(parentList);
 
 	}
 
-	private static void permutations(int[] nums, List<List<Integer>> parentList, int index) {
-		if (index == nums.length) {
-			List<Integer> ds = new ArrayList<Integer>();
-			for (int i = 0; i < nums.length; i++) {
-				ds.add(nums[i]);
-			}
+	private static void permutations(int[] nums, List<List<Integer>> parentList, List<Integer> ds, boolean[] flag) {
+		if (ds.size() == nums.length) {
 			parentList.add(new ArrayList<Integer>(ds));
 			return;
 		}
-		
-		for(int i=index;i<nums.length;i++) {
-			swap(i,index,nums);
-			permutations(nums, parentList, i + 1);
-			swap(i, index, nums);
+
+		for (int i = 0; i < nums.length; i++) {
+			if (!flag[i]) {
+				flag[i] = true;
+				ds.add(nums[i]);
+				permutations(nums, parentList, ds, flag);
+				flag[i] = false;
+				ds.remove(ds.size() - 1);
+			}
 		}
 
-	}
-
-	private static void swap(int i, int j, int[] nums) {
-		int t = nums[i];
-		nums[i] = nums[j];
-		nums[j] = t;
+		// TC:n!*n(looping)
+		// sc:n+n withput considering stack and auxiliary space
 
 	}
-
 
 }
