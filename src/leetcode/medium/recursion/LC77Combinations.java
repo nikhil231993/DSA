@@ -13,6 +13,11 @@ public class LC77Combinations {
 		combinations(list, n, arr1, k, 1);
 		System.out.println(list);
 
+		List<List<Integer>> newList = new ArrayList<>();
+		List<Integer> arr2 = new ArrayList<>();
+		combinationsSecondApproach(newList, n, arr2, k, 1);
+		System.out.println(newList);
+
 	}
 
 	private static void combinations(List<List<Integer>> list, int n, List<Integer> arr1, int k, int index) {
@@ -28,6 +33,34 @@ public class LC77Combinations {
 			arr1.remove(arr1.size() - 1);
 
 		}
+		// SC:O(n)
+		// TC:O(2 raise to N)
+
+	}
+
+	private static void combinationsSecondApproach(List<List<Integer>> list, int n, List<Integer> arr1, int k,
+			int index) {
+
+		if (n - index + 1 < k) {
+			return;
+		}
+		if (k < 0) {
+
+			return;
+		}
+
+		if (index == n + 1) {
+		if (k == 0) {
+			list.add(new ArrayList<>(arr1));
+			}
+			return;
+		}
+
+		arr1.add(index);
+		combinationsSecondApproach(list, n, arr1, k - 1, index + 1);
+		arr1.remove(arr1.size() - 1);
+		combinationsSecondApproach(list, n, arr1, k, index + 1);
+
 		// SC:O(n)
 		// TC:O(2 raise to N)
 
