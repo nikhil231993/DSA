@@ -1,4 +1,4 @@
-package leetcode.array.easy;
+package leetcode.array.medium;
 
 public class LC733FloodFill {
 

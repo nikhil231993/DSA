@@ -1,6 +1,7 @@
 package learningLogic.recursion.striver;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class V16MColouringProblem {
@@ -49,39 +50,38 @@ public class V16MColouringProblem {
 
 		System.out.println("No of colors : ");
 		int M = scan.nextInt();
-
-		System.out.println(MColoring(adjList, n, M));
-		// TC:(N raise to M)
-		// SC:O(N) color array + O(N)Recusriosn array
+		int[] color = new int[M + 1];
+		Arrays.fill(color, 0);
+		System.out.println(MColoring(adjList, n, M, 0, color));
+		// TC:(colours raise to vertices)
+		// SC:O(N) color array + O(N)Recursion array
 		scan.close();
 
 	}
 
-	private static boolean MColoring(ArrayList<ArrayList<Integer>> adjList, int n, int m) {
-		int[] color=new int[n+1];
-		if (solve(adjList, n, m, color, 1))
-			return true;
+	private static int MColoring(ArrayList<ArrayList<Integer>> adjList, int n, int M, int node, int[] color) {
 
-		return false;
-	}
-
-	private static boolean solve(ArrayList<ArrayList<Integer>> adjList, int n, int m, int[] color, int node) {
 		if (node == n)
-			return true;
-		for(int i=1;i<=m;i++) {
-			if (isSafe(adjList, n, m, color, node, i)) {
-				color[node] = i;
-				if (solve(adjList, n, m, color, node + 1))
-					return true;
-				color[node] = 0;
+			return 1;
+
+		for (int i = 1; i <= M; i++) {
+			if (isSafe(adjList, n, i, color, node)) {
+				color[node]=i;
+				if (MColoring(adjList, n, M, node + 1, color) == 1)
+					return 1;
+
+				color[node]=0;
+
 			}
 		}
-		return false;
+
+		return 0;
+
 	}
 
-	private static boolean isSafe(ArrayList<ArrayList<Integer>> adjList, int n, int m, int[] color, int node, int i) {
+	private static boolean isSafe(ArrayList<ArrayList<Integer>> adjList, int n, int col, int[] color, int node) {
 		for (Integer it : adjList.get(node)) {
-			if (color[it] == i)
+			if (color[it] == col)
 				return false;
 		}
 		return true;
@@ -103,18 +103,17 @@ public class V16MColouringProblem {
 
 	private static boolean recursiveBipartite(ArrayList<ArrayList<Integer>> adjList, int n, int i, boolean[] visited,
 			int[] color) {
-		
+
 		for (Integer num : adjList.get(i)) {
 			if (!visited[num]) {
-				visited[num]=true;
-				color[num]=1-color[i];
+				visited[num] = true;
+				color[num] = 1 - color[i];
 				if (!recursiveBipartite(adjList, n, num, visited, color))
 					return false;
 
-			}
-			else if(color[num]==color[i]) {
+			} else if (color[num] == color[i]) {
 				return false;
-				
+
 			}
 		}
 		return true;

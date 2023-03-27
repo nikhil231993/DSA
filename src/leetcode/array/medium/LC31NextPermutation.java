@@ -3,7 +3,7 @@ package leetcode.array.medium;
 public class LC31NextPermutation {
 
 	public static void main(String[] args) {
-		int[] nums = new int[] { 1, 3, 2 };
+		int[] nums = new int[] { 1, 2, 3 };
 		nextPermutation(nums);
 		// reverseArray(nums);
 		for (Integer n : nums)
