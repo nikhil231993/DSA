@@ -10,7 +10,8 @@ public class LC1TwoSum {
 		int target = 9;
 
 		// int[] r = twoSum(nums, target);
-		int[] r = twoSumUsingMap(nums, target);
+		// int[] r = twoSumUsingMap(nums, target);
+		int[] r = twoSumBestApproach(nums, target);
 
 		for (int n : r)
 			System.out.println(n);
@@ -43,6 +44,31 @@ public class LC1TwoSum {
 
 		// SC:O(1)
 		// TC:O(n2)
+	}
+
+	// Best Approach
+	private static int[] twoSumBestApproach(int[] nums, int target) {
+		int[] result = new int[2];
+		int d = 0;
+		int t1 = 0;
+		int t2 = 1;
+		while (true) {
+			if (nums[t1] + nums[t2] == target) {
+				result[0] = t1;
+				result[1] = t2;
+				break;
+			} else if (t2 == nums.length - 1) {
+				d++;
+				t1 = 0;
+				t2 = d;
+			} else {
+				t1++;
+				t2++;
+			}
+		}
+		return result;
+		// SC:O(1)
+		// TC:O(n)
 	}
 
 }

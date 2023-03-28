@@ -11,6 +11,12 @@ public class LC1239MaximumLengthConcatenatedStringWithUniqueCharacters {
 		int len = 0;
 		int i = 0;
 		System.out.println(concat(arr, selected, i, len));
+//      Time Complexity: O(k * 2^N) [If k is the average length of string present in vector arr and for every string we are either picking it or not picking it that's why,  I think, Time Complexity is O(k* 2^N)
+//Space Complexity: O(N) [ As we are traversing through the entire arr vector so height of the tree is O(N). Also we will not count the spaces of selected vectors because they are always of 26 size so we don't need to consider their sizes as they are independent of N]//         Time Complexity: O(k * 2^N) [If k is the average length of string present in vector arr and for every string we are either picking it or not picking it that's why,  I think, Time Complexity is O(k* 2^N)
+		// Space Complexity: O(N) [ As we are traversing through the entire arr vector
+		// so height of the tree is O(N). Also we will not count the spaces of selected
+		// vectors because they are always of 26 size so we don't need to consider their
+		// sizes as they are independent of N]
 
 	}
 
