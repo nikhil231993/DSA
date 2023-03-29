@@ -7,7 +7,7 @@ public class LC1TwoSum {
 
 	public static void main(String[] args) {
 		int[] nums = new int[] { 2, 7, 11, 15 };
-		int target = 9;
+		int target = 22;
 
 		// int[] r = twoSum(nums, target);
 		// int[] r = twoSumUsingMap(nums, target);
