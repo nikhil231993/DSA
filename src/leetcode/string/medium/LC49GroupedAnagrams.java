@@ -24,7 +24,7 @@ public class LC49GroupedAnagrams {
 		for (String s : str) {
 			char[] ch = new char[26];
 			for (int i = 0; i < s.length(); i++) {
-				ch[s.charAt(i) - 'a'] = 1;
+				ch[s.charAt(i) - 'a']++;
 			}
 			String key = new String(ch);
 			if (!map.containsKey(key)) {
@@ -35,6 +35,10 @@ public class LC49GroupedAnagrams {
 		}
 		list.addAll(map.values());
 		return list;
+
+		// TC:O(NK) where N is the total no of strings and K is the avg length of each
+		// string
+		// SC:O(N)
 
 	}
 
