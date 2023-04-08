@@ -13,25 +13,18 @@ public class LC560SubarraySum {
 	}
 
 //	public static int subarraySum(int[] nums, int k) {
-//		int j = 0;
-//		int sum = 0;
-//		int count = 0;
-//		for (int i = 0; i < nums.length; i++) {
-//			if (sum + nums[i] < k) {
-//				sum += nums[i];
-//				continue;
-//			} else if (sum + nums[i] == k) {
-//				count++;
-//				sum = 0;
-//				i = j;
-//				j++;
-//			} else {
-//				i = j;
-//				sum = 0;
-//				j++;
-//			}
-//		}
-//		return count;
+//     int n = nums.length;
+	//     int count = 0;
+	//     for (int i = 0; i < n; i++) {
+	//         int sum =0;
+	//         for (int j = i; j < n; j++) {
+	//             sum = sum+nums[j];
+	//             if(sum ==k) {
+	//                 count++;
+	//             }
+	//         }
+	//     }
+	// return count;
 //
 //	}
 

@@ -14,7 +14,8 @@ public class V5FibonacciNumber {
 			return n;
 		return fibonacciNumber(n - 1) + fibonacciNumber(n - 2);
 
-		// TC:O(2 raised to N) exponential
+		//TC:O(2 raised to N) exponential like for 4 it is 9 actually but near about exponential in nature
+		//SC:O(2 raise to N) stack space
 	}
 
 }

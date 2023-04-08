@@ -4,7 +4,8 @@ public class LC1010PairOfSongs {
 
 	public static void main(String[] args) {
 		int[] time = new int[] { 60, 60, 60 };
-
+		//1st approach is n2 where we are going to loop through it
+		//Below is the best approach where we check for complement
 		System.out.println(pairDivisible(time));
 
 	}
