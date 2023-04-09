@@ -15,8 +15,8 @@ public class LC50Pow {
 		System.out.println(powBinaryExponentiationUsingBit(x, n));
 	}
 
-	private static long powBinaryExponentiationUsingBit(int x, int n) {
-		long ans = (long) 1.0;
+	private static double powBinaryExponentiationUsingBit(int x, int n) {
+		double ans = (long) 1.0;
 		if (n < 0) {
 			n = -n;
 			x = 1 / x;
@@ -33,9 +33,9 @@ public class LC50Pow {
 		return ans;
 	}
 
-	private static long powBinaryExponentiation(int x, int n) {
-		long ans = (long) 1.0;
-		long nn = (long) n;
+	private static double powBinaryExponentiation(int x, int n) {
+		double ans = (double) 1.0;
+		long nn = n;
 
 		if (nn < 0)
 			nn = -1 * nn;
@@ -51,7 +51,7 @@ public class LC50Pow {
 		}
 
 		if (n < 0)
-			ans = (long) (1) / (long) (ans);
+			ans = (double) (1) / (double) (ans);
 		return ans;
 	}
 
