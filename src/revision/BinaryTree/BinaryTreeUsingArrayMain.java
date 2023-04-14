@@ -13,19 +13,19 @@ public class BinaryTreeUsingArrayMain {
 			bt.insert(i);
 		}
 
-		// Level order Traverse
+		// Level order Traversal
 		System.out.println("\nLevel-order Traversal:");
 		bt.levelOrder();
 
-		// Pre order Traverse
+		// Pre order Traversal
 		System.out.println("\n\nPre-order Traversal:");
 		bt.preOrder(1);
 
-		// Post order Traverse
+		// Post order Traversal
 		System.out.println("\n\nPost-order Traversal:");
 		bt.postOrder(1);
 
-		// In order Traverse
+		// In order Traversal
 		System.out.println("\n\nIn-order Traversal:");
 		bt.inOrder(1);
 
