@@ -96,8 +96,51 @@ public class BinaryTreeUsingLinkedListMain {
 
 		// Boundary traversal
 		System.out.println();
-		System.out.println("Zig zag: ");
+		System.out.println("Boundary traversal: ");
 		System.out.println(bt.boundaryTraversal(bt.root));
+
+		// Vertical traversal
+		System.out.println();
+		bt.insert(60);
+		System.out.println("Vertical traversal: ");
+		System.out.println(bt.verticalTraversal(bt.root));
+
+		// Top View
+		System.out.println();
+		bt.insert(60);
+		System.out.println("Top View: ");
+		System.out.println(bt.topView(bt.root));
+
+		// Bottom View
+		System.out.println();
+		System.out.println("Bottom View: ");
+		System.out.println(bt.bottomView(bt.root));
+
+		// Right View
+		System.out.println();
+		System.out.println("Right View: ");
+		System.out.println(bt.rightViewBinaryTree(bt.root));
+
+		// Left View
+		System.out.println();
+		System.out.println("Left View: ");
+		System.out.println(bt.leftViewBinaryTree(bt.root));
+
+		// Symmetric tree
+		System.out.println();
+		System.out.println("Symmetric tree: ");
+		System.out.println(bt.isSymmetric(bt.root));
+
+		// Symmetric tree
+		System.out.println();
+		System.out.println("Root to node: ");
+		System.out.println(bt.rootToNode(bt.root, 60));
+
+		// Path sum
+		System.out.println();
+		System.out.println("Root to node: ");
+		System.out.println(bt.pathSum(bt.root, 60));
+
 
 	}
 

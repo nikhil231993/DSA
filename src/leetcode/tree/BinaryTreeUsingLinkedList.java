@@ -3,9 +3,30 @@ package leetcode.tree;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
+import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.Stack;
+import java.util.TreeMap;
 
+
+class Tuple {
+	Node node;
+	int vert;
+	int hori;
+
+	public Tuple(Node node, int vert) {
+		this.node = node;
+		this.vert = vert;
+	}
+	public Tuple(Node node, int vert, int hori) {
+		this.node = node;
+		this.vert = vert;
+		this.hori = hori;
+	}
+
+
+}
 
 public class BinaryTreeUsingLinkedList {
 
@@ -255,7 +276,7 @@ public class BinaryTreeUsingLinkedList {
 				st.push(temp.left);
 
 			// TC:O(N)
-			// SC:O(N) which is stack space in case of tre having more right nodes refer
+			// SC:O(N) which is stack space in case of tree having more right nodes refer
 			// note
 
 		}
@@ -512,6 +533,9 @@ public class BinaryTreeUsingLinkedList {
 		addLeaves(root, result);
 		rightBoundary(root, result);
 		
+		// TC:O(H)+O(N)+o(H) where H is the height of the tree which is equal to O(N)
+		// SC:O(N) only about algo complexity
+
 		return result;
 	}
 
@@ -567,5 +591,207 @@ public class BinaryTreeUsingLinkedList {
 		}
 
 	}
+
+	public List<List<Integer>> verticalTraversal(Node root) {
+		TreeMap<Integer, TreeMap<Integer, PriorityQueue<Integer>>> map = new TreeMap();
+		Queue<Tuple> q=new LinkedList<Tuple>();
+		//For root vert and hori are 0 taking it as centre
+		q.add(new Tuple(root, 0, 0));
+		
+		while(!q.isEmpty()) {
+			Tuple tuple=q.poll();
+			Node node=tuple.node;
+			int x=tuple.vert;
+			int y=tuple.hori;
+			
+			if(!map.containsKey(x)) {
+				map.put(x,new TreeMap<>());
+			}
+			
+			if(!map.get(x).containsKey(y)) {
+				map.get(x).put(y, new PriorityQueue<Integer>());
+			}
+			
+			if (node.left != null) {
+				q.offer(new Tuple(node.left, x - 1, y + 1));
+			}
+			if (node.right != null) {
+				q.offer(new Tuple(node.right, x + 1, y + 1));
+			}
+
+			map.get(x).get(y).offer(node.data);
+		}
+
+		List<List<Integer>> list = new ArrayList();
+		
+		for(TreeMap<Integer, PriorityQueue<Integer>> h:map.values()) {
+			List<Integer> l=new ArrayList<Integer>();
+			for(PriorityQueue<Integer> nodes: h.values()) {
+//				System.out.println(nodes.toString());
+				while(!nodes.isEmpty()) {
+					l.add(nodes.poll());
+				}
+			}
+			list.add(l);
+		}
+		return list;
+	}
+
+	public List<Integer> topView(Node root) {
+		Queue<Tuple> q = new LinkedList<Tuple>();
+		List<Integer> arr = new ArrayList<Integer>();
+		
+		Map<Integer, Integer> map = new TreeMap<>();
+
+		q.add(new Tuple(root, 0));
+		
+		while(!q.isEmpty()) {
+			Tuple tuple=q.poll();
+			
+			Node node=tuple.node;
+			int x=tuple.vert;
+			
+			if (map.get(x) == null) {
+				map.put(x, node.data);
+			}
+
+			if (node.left != null) {
+				q.offer(new Tuple(node.left, x - 1));
+			}
+
+			if (node.right != null) {
+				q.offer(new Tuple(node.right, x + 1));
+			}
+		}
+
+		arr.addAll(map.values());
+		return arr;
+
+		// TC:o(n)
+		// SC:o(n)
+
+		// we cannot use recursive traversal directly in this
+	}
+
+	public List<Integer> bottomView(Node root2) {
+		Queue<Tuple> q = new LinkedList<Tuple>();
+		List<Integer> arr = new ArrayList<Integer>();
+
+		Map<Integer, Integer> map = new TreeMap<>();
+
+		q.add(new Tuple(root, 0));
+
+		while (!q.isEmpty()) {
+			Tuple tuple = q.poll();
+
+			Node node = tuple.node;
+			int x = tuple.vert;
+
+			map.put(x, node.data);
+
+
+			if (node.left != null) {
+				q.offer(new Tuple(node.left, x - 1));
+			}
+
+			if (node.right != null) {
+				q.offer(new Tuple(node.right, x + 1));
+			}
+	}
+
+		arr.addAll(map.values());
+		return arr;
+
+		// TC:o(n)
+		// SC:o(n)
+	}
+
+	public List<Integer> rightViewBinaryTree(Node root) {
+
+		List<Integer> result = new ArrayList<Integer>();
+		rightView(root, result, 0);
+		return result;
+	}
+
+	private void rightView(Node root, List<Integer> result, int level) {
+		if (root == null)
+			return;
+
+		if (result.size() == level)
+			result.add(root.data);
+		
+		rightView(root.right, result, level + 1);
+		rightView(root.left, result, level + 1);
+
+	}
+
+	public List<Integer> leftViewBinaryTree(Node root) {
+		List<Integer> result = new ArrayList<Integer>();
+		leftView(root, result, 0);
+		return result;
+	}
+
+	private void leftView(Node root, List<Integer> result, int level) {
+		if (root == null)
+			return;
+		if (result.size() == level)
+			result.add(root.data);
+		leftView(root.left, result, level + 1);
+		leftView(root.right, result, level + 1);
+	}
+
+	public boolean isSymmetric(Node root) {
+
+		if (root == null)
+			return true;
+		return isSymmetry(root.left, root.right);
+
+	}
+
+	public static boolean isSymmetry(Node left, Node right) {
+		if (left == null && right == null)
+			return true;
+		if (left == null || right == null)
+			return false;
+		if (left.data != right.data)
+			return false;
+		return isSymmetry(left.left, right.right) && isSymmetry(left.right, right.left);
+		// SC:O(H) is o log n . In this case there is no skewed tree
+		// TC:o(n)
+	}
+
+	public List<Integer> rootToNode(Node root,int value) {
+		List<Integer> path = new ArrayList<Integer>();
+		if (root == null)
+			return path;
+		rootPathToNode(path, root, value);
+		return path;
+	}
+
+	private static boolean rootPathToNode(List<Integer> path, Node root, int value) {
+		if(root==null)
+			return false;
+		path.add(root.data);
+
+		if (root.data == value)
+			return true;
+		if (rootPathToNode(path, root.left, value))
+			return true;
+		if (rootPathToNode(path, root.right, value))
+			return true;
+
+		path.remove(path.size() - 1);
+		return false;
+	}
+
+	public boolean pathSum(Node root, int sum) {
+	if(root==null)
+		return false;
+		if (root.left == null && root.right == null && root.data == sum)
+			return true;
+		return pathSum(root.left, sum - root.data) || pathSum(root.right, sum - root.data);
+	}
+	
+
 
 }
