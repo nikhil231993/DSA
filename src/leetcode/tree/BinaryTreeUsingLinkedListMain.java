@@ -33,6 +33,7 @@ public class BinaryTreeUsingLinkedListMain {
 
 		// Leetcode
 		// LC 102
+		System.out.println("Level order Traversal and adding to list:");
 		List<List<Integer>> result = bt.levelOrder(bt.root);
 		System.out.println(result);
 
@@ -107,7 +108,7 @@ public class BinaryTreeUsingLinkedListMain {
 
 		// Top View
 		System.out.println();
-		bt.insert(60);
+		bt.insert(70);
 		System.out.println("Top View: ");
 		System.out.println(bt.topView(bt.root));
 
@@ -138,9 +139,32 @@ public class BinaryTreeUsingLinkedListMain {
 
 		// Path sum
 		System.out.println();
-		System.out.println("Root to node: ");
+		System.out.println("Path sum: ");
 		System.out.println(bt.pathSum(bt.root, 60));
 
+		// Max Wdith of a binary tree
+		System.out.println();
+		System.out.println("Max Width of a binary tree: ");
+		System.out.println(bt.maxWdithOfBinaryTree(bt.root));
+
+		// Children Sum Property
+		System.out.println();
+		System.out.println("Children Sum Property: ");
+		bt.childrenSumProperty(bt.root);
+
+		System.out.println("Level order Traversal and adding to list:");
+		List<List<Integer>> r = bt.levelOrder(bt.root);
+		System.out.println(r);
+
+		// Nodes at K distance from a given node
+		System.out.println();
+		System.out.println("Nodes at K distance from given node: ");
+		System.out.println(bt.NodesAtKDistanceFromGivenNode(bt.root, bt.root.left, 2));
+
+		// Burn a tree
+		System.out.println();
+		System.out.println("Burn a tree: ");
+		System.out.println(bt.burnTree(bt.root, 100));
 
 	}
 

@@ -1,6 +1,7 @@
 package leetcode.tree;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
@@ -26,6 +27,16 @@ class Tuple {
 	}
 
 
+}
+
+class Pair {
+	Node node;
+	int num;
+
+	public Pair(Node node, int num) {
+		this.node = node;
+		this.num = num;
+	}
 }
 
 public class BinaryTreeUsingLinkedList {
@@ -68,6 +79,9 @@ public class BinaryTreeUsingLinkedList {
 			inOrderTraversal(root.left);
 			System.out.print(root.data + "-->");
 			inOrderTraversal(root.right);
+
+			// TC:O(N)
+			// SC:O(H) in normal tree or O(N) in case of skewed tree
 		}
 
 	}
@@ -79,6 +93,8 @@ public class BinaryTreeUsingLinkedList {
 			System.out.print(root.data + "-->");
 			preOrderTraversal(root.left);
 			preOrderTraversal(root.right);
+			// TC:O(N)
+			// SC:O(H) in normal tree or O(N) in case of skewed tree
 		}
 
 	}
@@ -90,6 +106,8 @@ public class BinaryTreeUsingLinkedList {
 			postorderTraversal(root.left);
 			postorderTraversal(root.right);
 			System.out.print(root.data + "-->");
+			// TC:O(N)
+			// SC:O(H) in normal tree or O(N) in case of skewed tree
 		}
 
 	}
@@ -254,8 +272,8 @@ public class BinaryTreeUsingLinkedList {
 			}
 			list.add(l);
 			// TC:O(n) as we have to parse all elements
-			// SC:O(n) as we havr to store all elements also we do not consider l list as
-			// its small;
+			// SC:O(n) as we have to store all elements also we do not consider size of l
+			// list as it's small
 
 		}
 		return list;
@@ -277,7 +295,7 @@ public class BinaryTreeUsingLinkedList {
 
 			// TC:O(N)
 			// SC:O(N) which is stack space in case of tree having more right nodes refer
-			// note
+			// note or else it will be O(H)
 
 		}
 	}
@@ -299,6 +317,8 @@ public class BinaryTreeUsingLinkedList {
 			}
 		}
 		return result;
+		// TC:O(N)
+		// SC:O(H) which is stack space but in case of skewed it will be O(N)
 
 	}
 
@@ -324,6 +344,9 @@ public class BinaryTreeUsingLinkedList {
 			result.add(s2.pop().data);
 		}
 		return result;
+
+		// TC:O(N)
+		// SC:O(2N) only considering stack
 
 	}
 
@@ -791,7 +814,203 @@ public class BinaryTreeUsingLinkedList {
 			return true;
 		return pathSum(root.left, sum - root.data) || pathSum(root.right, sum - root.data);
 	}
+
+	public int maxWdithOfBinaryTree(Node root) {
+		Queue<Pair> q = new LinkedList();
+		q.add(new Pair(root, 0));
+		int max = Integer.MIN_VALUE;
+		while (!q.isEmpty()) {
+			int minid = q.peek().num;
+			int first = 0;
+			int last = 0;
+			int size = q.size();
+			for (int i = 0; i < size; i++) {
+				Node node = q.peek().node;
+				int currid = q.peek().num - minid;
+				if (i == 0)
+					first = currid;
+				if (i == size - 1)
+					last = currid;
+				
+				if(node.left!=null)
+					q.offer(new Pair(node.left, 2 * currid + 1));
+				if (node.right != null)
+					q.offer(new Pair(node.right, 2 * currid + 2));
+				q.remove();
+			}
+			max = Math.max(max, last - first + 1);
+		}
+		return max;
+
+	}
+
+	public static void childrenSumProperty(Node root) {
+		if(root==null)
+			return;
+		int childSum = 0;
+
+		if (root.left != null)
+			childSum += root.left.data;
+
+		if (root.right != null)
+			childSum += root.right.data;
+		if (childSum >= root.data)
+			root.data = childSum;
+		
+		childrenSumProperty(root.left);
+		childrenSumProperty(root.right);
+
+		int total = 0;
+		if (root.left != null)
+			total += root.left.data;
+		if (root.right != null)
+			total += root.right.data;
+
+		if (root.left != null || root.right != null)
+			root.data = total;
+
+		// TC:o(n)
+		// SC:O(H) but in case of skewed tree it will be O(N)
+	}
+
+	public List<Integer> NodesAtKDistanceFromGivenNode(Node root, Node target, int k) {
+	Map<Node, Node> parent=new HashMap();
+		parentMapping(parent, root);
+		
+		Queue<Node> q = new LinkedList();
+			q.offer(target);
+			
+			Map<Node, Boolean> visited=new HashMap();
+		visited.put(target, true);
+		int count = 0;
+		while (!q.isEmpty()) {
+			int size = q.size();
+			if (count == k)
+				break;
+			count++;
+
+			for (int i = 0; i < size; i++) {
+				Node node = q.poll();
+
+				if (node.left != null && visited.get(node.left) == null) {
+					q.offer(node.left);
+					visited.put(node.left, true);
+				}
+				
+				if(node.right!=null && visited.get(node.right)==null) {
+					q.offer(node.right);
+					visited.put(node.right, true);
+				}
+				
+				if (parent.get(node) != null && visited.get(parent.get(node)) == null) {
+					q.offer(parent.get(node));
+					visited.put(parent.get(node), true);
+				}
+			}
+		}
+
 	
+		List<Integer> result = new ArrayList();
+		while (!q.isEmpty())
+			result.add(q.poll().data);
+		return result;
+		// TC:O(N)+O(N)
+		// SC:O(N) parent+O(N) queue+o(N) visited
+		
+	}
+
+	private static void parentMapping(Map<Node, Node> parent, Node root) {
+		Queue<Node> q = new LinkedList();
+		q.offer(root);
+
+		while (!q.isEmpty()) {
+			int size = q.size();
+
+			for (int i = 0; i < size; i++) {
+				Node node = q.poll();
+
+				if (node.left != null) {
+					q.offer(node.left);
+					parent.put(node.left, node);
+				}
+				if (node.right != null) {
+					q.offer(node.right);
+					parent.put(node.right, node);
+				}
+			}
+
+		}
+		// TC:O(N)
+
+	}
+
+	public int burnTree(Node root, int start) {
+
+		Map<Node, Node> parent = new HashMap();
+		Node target = parentMapping(parent, root, start);
+
+		Queue<Node> q = new LinkedList();
+		q.offer(target);
+		Map<Node, Boolean> visited = new HashMap();
+		visited.put(target, true);
+		int max = 0;
+		while (!q.isEmpty()) {
+			int flag = 0;
+			int size = q.size();
+
+			for (int i = 0; i < size; i++) {
+				Node node = q.poll();
+				if (node.left != null && visited.get(node.left) == null) {
+					flag = 1;
+					q.offer(node.left);
+					visited.put(node.left, true);
+				}
+
+				if (node.right != null && visited.get(node.right) == null) {
+					flag = 1;
+					q.offer(node.right);
+					visited.put(node.right, true);
+				}
+
+				if (parent.get(node) != null && visited.get(parent.get(node)) == null) {
+					flag = 1;
+					q.offer(parent.get(node));
+					visited.put(parent.get(node), true);
+				}
+			}
+
+			if (flag == 1) {
+				max++;
+			}
+		}
+		return max;
+	}
+	
+	public static Node parentMapping(Map<Node, Node> parent, Node root, int start) {
+		Queue<Node> q = new LinkedList();
+		q.add(root);
+		Node temp = null;
+		while (!q.isEmpty()) {
+			int size = q.size();
+
+			for (int i = 0; i < size; i++) {
+				Node node = q.poll();
+				if (start == node.data) {
+					temp = node;
+				}
+				if (node.left != null) {
+					q.offer(node.left);
+					parent.put(node.left, node);
+				}
+
+				if (node.right != null) {
+					q.offer(node.right);
+					parent.put(node.right, node);
+				}
+			}
+		}
+		return temp;
+	}
 
 
 }
