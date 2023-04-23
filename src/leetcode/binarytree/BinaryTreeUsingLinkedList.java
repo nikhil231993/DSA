@@ -1,4 +1,4 @@
-package leetcode.tree;
+package leetcode.binarytree;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -350,7 +350,7 @@ public class BinaryTreeUsingLinkedList {
 
 	}
 
-	public List<Integer> iterativPostOrderUsing1Stack(Node root2) {
+	public List<Integer>  iterativPostOrderUsing1Stack(Node root2) {
 		Stack<Node> st = new Stack<Node>();
 		List<Integer> arr = new ArrayList<Integer>();
 		Node current = root;
@@ -690,7 +690,7 @@ public class BinaryTreeUsingLinkedList {
 		arr.addAll(map.values());
 		return arr;
 
-		// TC:o(n)
+		// TC:o(n) I feel it should be O(nlogn ) as it is treemap
 		// SC:o(n)
 
 		// we cannot use recursive traversal directly in this
@@ -856,6 +856,12 @@ public class BinaryTreeUsingLinkedList {
 			childSum += root.right.data;
 		if (childSum >= root.data)
 			root.data = childSum;
+		else{
+			if(root.left!=null)
+				root.left.data=root.data;
+			if(root.right!=null)
+				root.right.data=root.data;
+		}
 		
 		childrenSumProperty(root.left);
 		childrenSumProperty(root.right);
@@ -1013,4 +1019,37 @@ public class BinaryTreeUsingLinkedList {
 	}
 
 
+    public int countNodes(Node root) {
+
+		if(root==null)
+			return 0;
+		int leftH=leftHeight(root);
+		int rightH=rightHeight(root);
+
+		if(leftH==rightH)
+			return (1<<leftH)-1;
+
+		return 1+countNodes(root.left)+countNodes(root.right);
+
+		//TC:O(logN) square
+		//SC:O(N)
+    }
+
+	private static int rightHeight(Node root) {
+		int count=0;
+		while(root!=null){
+			count++;
+			root=root.right;
+		}
+		return count;
+	}
+
+	private static int leftHeight(Node root) {
+		int count=0;
+		while(root!=null){
+			count++;
+			root=root.left;
+		}
+		return count;
+	}
 }

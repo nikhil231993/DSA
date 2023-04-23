@@ -1,4 +1,4 @@
-package leetcode.tree;
+package leetcode.binarytree;
 
 import java.util.List;
 
@@ -11,21 +11,29 @@ public class BinaryTreeUsingLinkedListMain {
 		bt.insert(30);
 		bt.insert(40);
 		bt.insert(50);
+
 		System.out.println("In order traversal data is : ");
 		bt.inOrderTraversal(bt.root);
+
 		System.out.println("\nPre order traversal data is : ");
 		bt.preOrderTraversal(bt.root);
+
 		System.out.println("\nPost order traversal data is : ");
 		bt.postorderTraversal(bt.root);
+
 		System.out.println("\nLevel order traversal data is : ");
 		bt.levelOrderTraversal(bt.root);
+
 		System.out.println("\nSearching value in Tree:");
 		System.out.println("\nUsing inorder traversal");
 		bt.inDepthFirstSearch(bt.root, 50);
+
 		System.out.println("\nUsing Level order traversal");
 		bt.breadthFirstSearch(bt.root, 50);
-		System.out.println("Deleting a value from bianry tree: ");
+
+		System.out.println("Deleting a value from binary tree: ");
 		bt.deleteFromBinaryTree(bt.root, 20);
+
 		System.out.println("\nLevel order traversal data after replacement with deepest node is : ");
 		bt.levelOrderTraversal(bt.root);
 
@@ -37,11 +45,11 @@ public class BinaryTreeUsingLinkedListMain {
 		List<List<Integer>> result = bt.levelOrder(bt.root);
 		System.out.println(result);
 
-		// Iterative preorder trversal
+		// Iterative preorder traversal
 		System.out.println("Iterative preorder traversal");
 		bt.iterativePreOrder(bt.root);
 
-		// Iterative inorder trversal
+		// Iterative inorder traversal
 		System.out.println();
 		System.out.println("Iterative inorder traversal");
 		List<Integer> iterInOrder = bt.iterativeInOrder(bt.root);
@@ -165,6 +173,12 @@ public class BinaryTreeUsingLinkedListMain {
 		System.out.println();
 		System.out.println("Burn a tree: ");
 		System.out.println(bt.burnTree(bt.root, 100));
+
+		// Count nodes in a Binary tree
+		System.out.println();
+		System.out.println("Count nodes in a binary tree: ");
+		System.out.println(bt.countNodes(bt.root));
+
 
 	}
 
