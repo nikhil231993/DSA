@@ -9,9 +9,9 @@ import java.util.Queue;
 
 public class BinarySearchTreeRevision {
 
-	public revision.BinarySearchTree.Node insert(revision.BinarySearchTree.Node root, int value) {
+	public Node insert(Node root, int value) {
 		if (root == null) {
-			root = new revision.BinarySearchTree.Node(value);
+			root = new Node(value);
 			return root;
 		}
 
@@ -24,7 +24,7 @@ public class BinarySearchTreeRevision {
 		return root;
 	}
 
-	public void inorder(revision.BinarySearchTree.Node root) {
+	public void inorder(Node root) {
 		if (root != null) {
 			inorder(root.left);
 			System.out.print(root.data + "-->");
@@ -33,7 +33,7 @@ public class BinarySearchTreeRevision {
 
 	}
 
-	public void preorder(revision.BinarySearchTree.Node root) {
+	public void preorder(Node root) {
 		if (root != null) {
 			System.out.print(root.data + "-->");
 			preorder(root.left);
@@ -42,7 +42,7 @@ public class BinarySearchTreeRevision {
 
 	}
 
-	public void postorder(revision.BinarySearchTree.Node root) {
+	public void postorder(Node root) {
 		if (root != null) {
 			postorder(root.left);
 			postorder(root.right);
@@ -51,7 +51,7 @@ public class BinarySearchTreeRevision {
 
 	}
 
-	public boolean search(revision.BinarySearchTree.Node root, int value) {
+	public boolean search(Node root, int value) {
 
 		if (root == null)
 			return false;
@@ -63,7 +63,7 @@ public class BinarySearchTreeRevision {
 			return search(root.left, value);
 	}
 
-	public revision.BinarySearchTree.Node delete(revision.BinarySearchTree.Node root, int value) {
+	public revision.BinarySearchTree.Node delete(Node root, int value) {
 		if (root == null)
 			return null;
 		if (root.data < value) {
@@ -86,13 +86,13 @@ public class BinarySearchTreeRevision {
 
 	}
 
-	private revision.BinarySearchTree.Node inOrderSuccessor(revision.BinarySearchTree.Node root) {
+	private Node inOrderSuccessor(Node root) {
 		while (root.left != null)
 			root = root.left;
 		return root;
 	}
 
-	public void printRange(revision.BinarySearchTree.Node root, int l, int u) {
+	public void printRange(Node root, int l, int u) {
 		if(root==null)
 			return;
 		if(root.data >=l && root.data <=u) {
@@ -109,7 +109,7 @@ public class BinarySearchTreeRevision {
 
 	private ArrayList<Integer> arr = new ArrayList<Integer>();
 
-	public void rootToLeaf(revision.BinarySearchTree.Node root) {
+	public void rootToLeaf(Node root) {
 		if (root == null)
 			return;
 
@@ -134,14 +134,14 @@ public class BinarySearchTreeRevision {
 
 	}
 
-	public void levelorder(revision.BinarySearchTree.Node root) {
+	public void levelorder(Node root) {
 		if(root==null)
 			return;
 		else {
-			Queue<revision.BinarySearchTree.Node> q = new LinkedList<>();
+			Queue<Node> q = new LinkedList<>();
 			q.add(root);
 			while (!q.isEmpty()) {
-				revision.BinarySearchTree.Node temp = q.peek();
+				Node temp = q.peek();
 				q.remove();
 				System.out.print(temp.data + "-->");
 				if (temp.left != null)

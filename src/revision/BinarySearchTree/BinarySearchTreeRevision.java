@@ -13,6 +13,8 @@ public class BinarySearchTreeRevision {
 			return root;
 		}
 
+//		root.data=300;
+
 		if (root.data > value) {
 			root.left = insert(root.left, value);
 		} else if (root.data < value) {
@@ -160,4 +162,124 @@ public class BinarySearchTreeRevision {
 
 	}
 
+	public void ceil(Node root, int[] ceil,int key) {
+
+		if(root==null)
+			return;
+		if(root.data==key){
+			ceil[0]=root.data;
+			return;
+		}
+		if(root.data>key){
+			ceil[0]= root.data;
+			ceil(root.left,ceil,key);
+		}else{
+			ceil(root.right,ceil,key);
+		}
+
+	}
+
+	public int ceilIterative(Node root, int key) {
+
+		int ceil=-1;
+
+		while(root!=null){
+			if(root.data==key){
+				ceil=root.data;
+				return ceil;
+			}
+
+			if(key<root.data){
+				ceil=root.data;
+				root=root.left;
+			}else{
+				root=root.right;
+			}
+
+		}
+		return ceil;
+
+		//TC:O(logN) which is the height of the tree
+		//SC:o(log N) which is the height of the tree
+	}
+
+	public int floorIterative(Node root, int key) {
+		int floor=Integer.MAX_VALUE;
+
+		while(root!=null){
+			if(root.data==key)
+			{
+				floor= root.data;;
+				return floor;
+			}
+			if(root.data>key){
+				root=root.left;
+			}else{
+				floor=root.data;
+				root=root.right;
+			}
+
+		}
+		return floor;
+	}
+
+	public int kthSmallestElement(Node root, int k) {
+
+		if(root==null)
+			return 0;
+		int[] count=new int[1];
+		int[] value=new int[1];
+		 kSmallest(root, k, count, value);
+		 return value[0];
+	}
+
+	private void kSmallest(Node root, int k, int[] count, int[] value) {
+		if(root==null)
+			return;
+		kSmallest(root.left, k, count, value);
+		count[0]++;
+		if(count[0]==k){
+			value[0]=root.data;
+			return;
+		}
+		kSmallest(root.right,k ,count, value);
+		//TC:O(N) as we have to parse each element
+		//SC:O(N) stack space. This can be improved by using Morris Traversal
+
+	}
+
+	public int kthLargestElement(Node root, int k) {
+		int[] count=new int[1];
+		nodesCount(root,count);
+		int largest=count[0]-k+1;
+
+		int[] c=new int[1];
+		int[] val=new int[1];
+		kSmallest(root,largest,c,val);
+		return val[0];
+
+	}
+
+	private void nodesCount(Node root, int[] count) {
+		if(root==null)
+			return;
+		count[0]++;
+		nodesCount(root.left,count);
+		nodesCount(root.right,count);
+	}
+
+	public boolean validBST(Node root) {
+		if(root==null)
+			return true;
+		return isValid(root,Long.MIN_VALUE,Long.MAX_VALUE);
+	}
+
+	private boolean isValid(Node root, long minValue, long maxValue) {
+		if(root==null)
+			return true;
+		if(root.data >=maxValue || root.data<=minValue )
+			return false;
+		return isValid(root.left, minValue, root.data) && isValid(root.right , root.data, maxValue);
+		//TC:O(N) SC:O(H)
+	}
 }

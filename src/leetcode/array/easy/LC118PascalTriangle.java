@@ -45,7 +45,7 @@ public class LC118PascalTriangle {
 		int res = 1;
 		if (r > n - r)
 			r = n - r;
-
+		//Above is to avoid unwanted calculation as both will result in same answer
 		for (int i = 0; i < r; i++) {
 			res *= (n - i);
 			res /= (i + 1);
@@ -54,7 +54,6 @@ public class LC118PascalTriangle {
 		return res;
 		//TC:O(r)
 		//SC:O(1)
-
 	}
 
 	private static List<Integer> rowPascalBruteForce(int n) {
