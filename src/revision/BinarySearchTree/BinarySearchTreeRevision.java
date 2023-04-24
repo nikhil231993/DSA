@@ -200,7 +200,7 @@ public class BinarySearchTreeRevision {
 		return ceil;
 
 		//TC:O(logN) which is the height of the tree
-		//SC:o(log N) which is the height of the tree
+		//SC:O(1) as it is iterative and no extra space is required
 	}
 
 	public int floorIterative(Node root, int key) {
@@ -281,5 +281,57 @@ public class BinarySearchTreeRevision {
 			return false;
 		return isValid(root.left, minValue, root.data) && isValid(root.right , root.data, maxValue);
 		//TC:O(N) SC:O(H)
+	}
+
+	public int lcaBST(Node root, int p, int q) {
+
+		if(root==null)
+			return 0;
+
+		if(root.data < p && root.data <q)
+			return lcaBST(root.right, p, q);
+		if(root.data >p && root.data >q)
+			return lcaBST(root.left,p,q);
+
+		return root.data;
+		//TC:O(log N)
+		//TC:O(H)
+	}
+
+	public int inorderSuccessorBST(Node root, int key) {
+		if(root==null)
+			return -1;
+		int ceil=-1;
+		while(root!=null){
+			if(root.data>key){
+				ceil=root.data;
+				root=root.left;
+			}else if(root.data<key){
+				root=root.right;
+			}else{
+				root=root.right;
+			}
+		}
+		return ceil;
+		//TC:O(log n)
+		//SC:o(1)
+	}
+
+	public int inorderPredecessorBST(Node root, int key) {
+
+		if(root==null)
+			return -1;
+		int floor=-1;
+		while(root!=null){
+			if(root.data>=key)
+				root=root.left;
+			else{
+				floor=root.data;
+				root=root.right;
+			}
+		}
+		return floor;
+		//TC:O(log n)
+		//SC:o(1)
 	}
 }

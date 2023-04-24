@@ -53,6 +53,18 @@ public class BinarySearchTreeMain {
 		System.out.println("Valid BST:");
 		System.out.println(bst.validBST(root));
 
+		//LCA BST
+		System.out.println("LCA BST:");
+		System.out.println(bst.lcaBST(root,3,10));
+
+		//Inorder Successor BST
+		System.out.println("Inorder successor BST:");
+		System.out.println(bst.inorderSuccessorBST(root,6));
+
+		//Inorder Predecessor BST
+		System.out.println("Inorder predecessor BST:");
+		System.out.println(bst.inorderPredecessorBST(root,6));
+
 		System.out.println("Inorder traversal of BST is: ");
 		bst.inorder(root);
 		System.out.println();
