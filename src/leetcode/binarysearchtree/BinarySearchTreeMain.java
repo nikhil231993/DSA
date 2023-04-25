@@ -1,8 +1,5 @@
 package leetcode.binarysearchtree;
 
-import revision.BinarySearchTree.BinarySearchTreeRevision;
-import revision.BinarySearchTree.Node;
-
 public class BinarySearchTreeMain {
 
 	public static void main(String[] args) {

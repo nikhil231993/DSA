@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/binarysearchtree/BSTIterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/binarysearchtree/LargestBSTBySizeMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/binarysearchtree/RecoverBSTMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearchtree/BSTIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearchtree/BSTIterator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearchtree/BinarySearchTreeMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearchtree/BinarySearchTreeMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearchtree/BinarySearchTreeRevision.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearchtree/BinarySearchTreeRevision.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/revision/BinarySearchTree/BinarySearchTreeRevision.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/revision/BinarySearchTree/BinarySearchTreeRevision.java" afterDir="false" />
@@ -129,12 +127,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.binarysearchtree.Test" />
+    <configuration name="revision.BinarySearchTree.BinarySearchTreeMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="revision.BinarySearchTree.BinarySearchTreeMain" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.binarysearchtree.*" />
+          <option name="PATTERN" value="revision.BinarySearchTree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -145,10 +143,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.RecoverBSTMain" />
-        <item itemvalue="Application.LargestBSTBySizeMain" />
         <item itemvalue="Application.BinarySearchTreeMain" />
+        <item itemvalue="Application.revision.BinarySearchTree.BinarySearchTreeMain" />
+        <item itemvalue="Application.LargestBSTBySizeMain" />
         <item itemvalue="Application.LargestBSTMain" />
-        <item itemvalue="Application.leetcode.binarysearchtree.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -182,13 +180,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetcode/binarysearchtree/BinarySearchTreeMain.java</url>
-          <line>9</line>
+          <line>6</line>
           <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/revision/BinarySearchTree/BinarySearchTreeRevision.java</url>
-          <line>346</line>
-          <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/leetcode/binarytree/Test.java</url>

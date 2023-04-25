@@ -23,6 +23,128 @@ public class BinarySearchTreeRevision {
 		return root;
 	}
 
+	public void ceil(Node root, int[] ceil, int key) {
+
+		if(root==null)
+			return;
+		if(root.data==key){
+			ceil[0]=root.data;
+			return;
+		}
+		if(root.data>key){
+			ceil[0]= root.data;
+			ceil(root.left,ceil,key);
+		}else{
+			ceil(root.right,ceil,key);
+		}
+
+	}
+
+	public int ceilIterative(Node root, int key) {
+
+		int ceil=-1;
+
+		while(root!=null){
+			if(root.data==key){
+				ceil=root.data;
+				return ceil;
+			}
+
+			if(key<root.data){
+				ceil=root.data;
+				root=root.left;
+			}else{
+				root=root.right;
+			}
+
+		}
+		return ceil;
+
+		//TC:O(logN) which is the height of the tree
+		//SC:O(1) as it is iterative and no extra space is required
+	}
+
+	public int floorIterative(Node root, int key) {
+		int floor=Integer.MAX_VALUE;
+
+		while(root!=null){
+			if(root.data==key)
+			{
+				floor= root.data;;
+				return floor;
+			}
+			if(root.data>key){
+				root=root.left;
+			}else{
+				floor=root.data;
+				root=root.right;
+			}
+
+		}
+		return floor;
+	}
+
+	public int kthSmallestElement(Node root, int k) {
+
+		if(root==null)
+			return 0;
+		int[] count=new int[1];
+		int[] value=new int[1];
+		kSmallest(root, k, count, value);
+		return value[0];
+	}
+
+	private void kSmallest(Node root, int k, int[] count, int[] value) {
+		if(root==null)
+			return;
+		kSmallest(root.left, k, count, value);
+		count[0]++;
+		if(count[0]==k){
+			value[0]=root.data;
+			return;
+		}
+		kSmallest(root.right,k ,count, value);
+		//TC:O(N) as we have to parse each element
+		//SC:O(N) stack space. This can be improved by using Morris Traversal
+
+	}
+
+	public int kthLargestElement(Node root, int k) {
+		int[] count=new int[1];
+		nodesCount(root,count);
+		int largest=count[0]-k+1;
+
+		int[] c=new int[1];
+		int[] val=new int[1];
+		kSmallest(root,largest,c,val);
+		return val[0];
+
+	}
+
+	private void nodesCount(Node root, int[] count) {
+		if(root==null)
+			return;
+		count[0]++;
+		nodesCount(root.left,count);
+		nodesCount(root.right,count);
+	}
+
+	public boolean validBST(Node root) {
+		if(root==null)
+			return true;
+		return isValid(root,Long.MIN_VALUE,Long.MAX_VALUE);
+	}
+
+	private boolean isValid(Node root, long minValue, long maxValue) {
+		if(root==null)
+			return true;
+		if(root.data >=maxValue || root.data<=minValue )
+			return false;
+		return isValid(root.left, minValue, root.data) && isValid(root.right , root.data, maxValue);
+		//TC:O(N) SC:O(H)
+	}
+
+
 	public void inorder(Node root) {
 		if (root != null) {
 			inorder(root.left);
@@ -230,4 +352,87 @@ public class BinarySearchTreeRevision {
 		prev=root;
 		inorderRecover(root.right);
 	}
+
+	public int lcaBST(Node root, int p, int q) {
+
+		if(root==null)
+			return 0;
+
+		if(root.data < p && root.data <q)
+			return lcaBST(root.right, p, q);
+		if(root.data >p && root.data >q)
+			return lcaBST(root.left,p,q);
+
+		return root.data;
+		//TC:O(log N)
+		//TC:O(H)
+	}
+
+	public int inorderSuccessorBST(Node root, int key) {
+		if(root==null)
+			return -1;
+		int ceil=-1;
+		while(root!=null){
+			if(root.data>key){
+				ceil=root.data;
+				root=root.left;
+			}else if(root.data<key){
+				root=root.right;
+			}else{
+				root=root.right;
+			}
+		}
+		return ceil;
+		//TC:O(log n)
+		//SC:o(1)
+	}
+
+	public int inorderPredecessorBST(Node root, int key) {
+
+		if(root==null)
+			return -1;
+		int floor=-1;
+		while(root!=null){
+			if(root.data>=key)
+				root=root.left;
+			else{
+				floor=root.data;
+				root=root.right;
+			}
+		}
+		return floor;
+		//TC:O(log n)
+		//SC:o(1)
+	}
+
+	public boolean twoSumBST(Node root, int k) {
+
+		if(root==null)
+			return false;
+
+		//Create two stack using two instances of same class so virtually you are not creating two stack
+		BSTIterator left=new BSTIterator(root,false);
+		BSTIterator right=new BSTIterator(root,true);
+
+		int small=left.next();
+		int large=right.next();
+
+		while(small<large){
+			if(small+large==k)
+				return true;
+			else if(small+large>k)
+			{
+				large=right.next();
+			}else{
+				small=left.next();
+			}
+		}
+
+		return false;
+
+		//TC:O(N)
+		//SC:O(H)*2 as we create two stack. In brute force we find inorder and then use two pointer technique so there space will be O(N)
+
+	}
+
 }

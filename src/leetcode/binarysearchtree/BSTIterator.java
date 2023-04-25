@@ -1,7 +1,5 @@
 package leetcode.binarysearchtree;
 
-import revision.BinarySearchTree.Node;
-
 import java.util.Stack;
 
 public class BSTIterator {

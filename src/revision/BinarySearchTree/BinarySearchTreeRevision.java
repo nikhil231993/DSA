@@ -1,6 +1,5 @@
 package revision.BinarySearchTree;
 
-import leetcode.binarysearchtree.BSTIterator;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -338,35 +337,6 @@ public class BinarySearchTreeRevision {
 		//SC:o(1)
 	}
 
-	public boolean twoSumBST(Node root,int k) {
-
-		if(root==null)
-			return false;
-
-		//Create two stack using two instances of same class so virtually you are not creating two stack
-		BSTIterator left=new BSTIterator(root,false);
-		BSTIterator right=new BSTIterator(root,true);
-
-		int small=left.next();
-		int large=right.next();
-
-		while(small<large){
-			if(small+large==k)
-				return true;
-			else if(small+large>k)
-			{
-				large=right.next();
-			}else{
-				small=left.next();
-			}
-		}
-
-		return false;
-
-		//TC:O(N)
-		//SC:O(H)*2 as we create two stack. In brute force we find inorder and then use two pointer technique so there space will be O(N)
-
-	}
 
 	public void inorderRecoverBST(Node root, List<Integer> list) {
 
