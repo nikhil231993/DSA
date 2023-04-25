@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/leetcode/binarysearchtree/BSTIterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/binarysearchtree/LargestBSTBySizeMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/binarysearchtree/RecoverBSTMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearchtree/BinarySearchTreeMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearchtree/BinarySearchTreeMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearchtree/BinarySearchTreeRevision.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearchtree/BinarySearchTreeRevision.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/revision/BinarySearchTree/BinarySearchTreeRevision.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/revision/BinarySearchTree/BinarySearchTreeRevision.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,42 +39,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/nikhilthulaseedharan/Nikhil/DSA&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/Users/nikhilthulaseedharan/Nikhil/DSA/src/leetcode/binarysearchtree",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propCompiler"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="leetcode.binarysearchtree" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/leetcode/binarysearchtree" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="leetcode.binarysearchtree" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BinarySearchTreeMain">
+  <component name="RunManager" selected="Application.RecoverBSTMain">
     <configuration name="BinarySearchTreeMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode.binarysearchtree.BinarySearchTreeMain" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="leetcode.binarysearchtree.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BinaryTreeUsingLinkedListMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.binarytree.BinaryTreeUsingLinkedListMain" />
-      <module name="DSA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.binarytree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -93,12 +90,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.binarytree.Test" />
+    <configuration name="LargestBSTBySizeMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.binarysearchtree.LargestBSTBySizeMain" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.binarytree.*" />
+          <option name="PATTERN" value="leetcode.binarysearchtree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -106,7 +103,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="leetcode.binarysearchtree.Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="LargestBSTMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.binarysearchtree.LargestBSTMain" />
+      <module name="DSA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.binarysearchtree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RecoverBSTMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.binarysearchtree.RecoverBSTMain" />
+      <module name="DSA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.binarysearchtree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode.binarysearchtree.Test" />
       <module name="DSA" />
       <extension name="coverage">
@@ -119,26 +142,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="revision.BinarySearchTree.BinarySearchTreeMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="revision.BinarySearchTree.BinarySearchTreeMain" />
-      <module name="DSA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="revision.BinarySearchTree.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RecoverBSTMain" />
+        <item itemvalue="Application.LargestBSTBySizeMain" />
         <item itemvalue="Application.BinarySearchTreeMain" />
+        <item itemvalue="Application.LargestBSTMain" />
         <item itemvalue="Application.leetcode.binarysearchtree.Test" />
-        <item itemvalue="Application.revision.BinarySearchTree.BinarySearchTreeMain" />
-        <item itemvalue="Application.leetcode.tree.Test" />
-        <item itemvalue="Application.BinaryTreeUsingLinkedListMain" />
       </list>
     </recent_temporary>
   </component>
@@ -174,6 +184,11 @@
           <url>file://$PROJECT_DIR$/src/leetcode/binarysearchtree/BinarySearchTreeMain.java</url>
           <line>9</line>
           <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/revision/BinarySearchTree/BinarySearchTreeRevision.java</url>
+          <line>346</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/leetcode/binarytree/Test.java</url>

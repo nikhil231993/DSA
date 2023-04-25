@@ -1,9 +1,8 @@
 package leetcode.binarysearchtree;
 
-import revision.BinarySearchTree.Node;
-
 import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Queue;
 
 
@@ -63,7 +62,7 @@ public class BinarySearchTreeRevision {
 			return search(root.left, value);
 	}
 
-	public revision.BinarySearchTree.Node delete(Node root, int value) {
+	public Node delete(Node root, int value) {
 		if (root == null)
 			return null;
 		if (root.data < value) {
@@ -78,7 +77,7 @@ public class BinarySearchTreeRevision {
 			else if (root.right == null)
 				return root.left;
 
-			revision.BinarySearchTree.Node iS = inOrderSuccessor(root.right);
+			Node iS = inOrderSuccessor(root.right);
 			root.data = iS.data;
 			root.right = delete(root.right, iS.data);
 		}
@@ -162,4 +161,73 @@ public class BinarySearchTreeRevision {
 
 	}
 
+	public  int maxSumBST(Node root) {
+		return largestBSTSubtreeHelper(root).maxSize;
+	}
+
+	private  NodeValue largestBSTSubtreeHelper(Node root) {
+		// An empty tree is a BST of size 0.
+		if (root == null) {
+			return new NodeValue(Integer.MAX_VALUE, Integer.MIN_VALUE, 0);
+		}
+
+		// Get values from left and right subtree of current tree.
+		NodeValue left = largestBSTSubtreeHelper(root.left);
+		NodeValue right = largestBSTSubtreeHelper(root.right);
+
+		// Current node is greater than max in left AND smaller than min in right, it is a BST.
+		if (left.maxNode < root.data && root.data < right.minNode) {
+			// It is a BST.
+			return new NodeValue(  Math.min(root.data, left.minNode),Math.max(root.data, right.maxNode),left.maxSize + right.maxSize + 1);
+		}
+
+		// Otherwise, return [-inf, inf] so that parent can't be valid BST
+		return new NodeValue(Integer.MIN_VALUE, Integer.MAX_VALUE,
+				Math.max(left.maxSize, right.maxSize));
+	}
+
+	public void inorderRecoverBST(Node root, List<Integer> list) {
+
+		if(root==null)
+			return;
+		inorderRecoverBST(root.left,list);
+		list.add(root.data);
+		inorderRecoverBST(root.right,list);
+	}
+
+	//below elements are used to recover BST
+	private Node first;
+	private Node last;
+	private Node middle;
+	private Node prev;
+	public void recover(Node root) {
+		prev=new Node(Integer.MIN_VALUE);
+		inorderRecover(root);
+
+		if(first!=null && last!=null){
+			int t=first.data;
+			first.data=last.data;
+			last.data=t;
+		}else if(first!=null && middle!=null){
+			int t=first.data;
+			first.data=middle.data;
+			middle.data=t;
+		}
+	}
+
+	private void inorderRecover(Node root) {
+		if(root==null)
+			return;
+
+		inorderRecover(root.left);
+		if(prev!=null && root.data<prev.data){
+			if(first==null){
+				first=prev;
+				middle=root;
+			}else
+				last=root;
+		}
+		prev=root;
+		inorderRecover(root.right);
+	}
 }

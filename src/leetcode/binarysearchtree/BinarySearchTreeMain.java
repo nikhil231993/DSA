@@ -6,7 +6,7 @@ import revision.BinarySearchTree.Node;
 public class BinarySearchTreeMain {
 
 	public static void main(String[] args) {
-		revision.BinarySearchTree.BinarySearchTreeRevision bst = new BinarySearchTreeRevision();
+		BinarySearchTreeRevision bst = new BinarySearchTreeRevision();
 		Node root = null;
 		root = bst.insert(root, 8);
 //		System.out.println(root.hashCode());
@@ -64,6 +64,10 @@ public class BinarySearchTreeMain {
 		//Inorder Predecessor BST
 		System.out.println("Inorder predecessor BST:");
 		System.out.println(bst.inorderPredecessorBST(root,6));
+
+		//Two Sum BST
+		System.out.println("Two Sum BST:");
+		System.out.println(bst.twoSumBST(root,20));
 
 		System.out.println("Inorder traversal of BST is: ");
 		bst.inorder(root);

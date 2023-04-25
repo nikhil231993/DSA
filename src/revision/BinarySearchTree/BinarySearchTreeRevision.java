@@ -1,7 +1,10 @@
 package revision.BinarySearchTree;
 
+import leetcode.binarysearchtree.BSTIterator;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Queue;
 
 
@@ -333,5 +336,84 @@ public class BinarySearchTreeRevision {
 		return floor;
 		//TC:O(log n)
 		//SC:o(1)
+	}
+
+	public boolean twoSumBST(Node root,int k) {
+
+		if(root==null)
+			return false;
+
+		//Create two stack using two instances of same class so virtually you are not creating two stack
+		BSTIterator left=new BSTIterator(root,false);
+		BSTIterator right=new BSTIterator(root,true);
+
+		int small=left.next();
+		int large=right.next();
+
+		while(small<large){
+			if(small+large==k)
+				return true;
+			else if(small+large>k)
+			{
+				large=right.next();
+			}else{
+				small=left.next();
+			}
+		}
+
+		return false;
+
+		//TC:O(N)
+		//SC:O(H)*2 as we create two stack. In brute force we find inorder and then use two pointer technique so there space will be O(N)
+
+	}
+
+	public void inorderRecoverBST(Node root, List<Integer> list) {
+
+		if(root==null) return ;
+
+		inorderRecoverBST(root.left,list);
+		list.add(root.data);
+		inorderRecoverBST(root.right,list);
+	}
+
+
+	//Variables for recovering BST
+	private Node first=null;
+	private Node middle=null;
+	private Node last=null;
+	private Node prev=null;
+
+	public void recover(Node root) {
+
+		prev=new Node(Integer.MIN_VALUE);
+		inorderRecover(root);
+
+		if(first!=null && last!=null){
+			int t=first.data;
+			first.data=last.data;
+			last.data=t;
+		}else if(first!=null && middle!=null){
+			int t=first.data;
+			first.data=middle.data;
+			middle.data=t;
+		}
+	}
+
+	private void inorderRecover(Node root) {
+
+		if(root==null)
+			return;
+		inorderRecover(root.left);
+		if(prev!=null && root.data < prev.data){
+			if(first==null){
+				first=prev;
+				middle=root;
+			}else{
+				last=root;
+			}
+		}
+		prev=root;
+		inorderRecover(root.right);
 	}
 }
