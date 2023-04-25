@@ -12,7 +12,7 @@ public class BinaryTreeUsingLinkedListMain {
 		bt.insert(40);
 		bt.insert(50);
 
-		System.out.println("In order traversal data is : ");
+		System.out.println("Inorder traversal data is : ");
 		bt.inOrderTraversal(bt.root);
 
 		System.out.println("\nPre order traversal data is : ");
@@ -24,14 +24,13 @@ public class BinaryTreeUsingLinkedListMain {
 		System.out.println("\nLevel order traversal data is : ");
 		bt.levelOrderTraversal(bt.root);
 
-		System.out.println("\nSearching value in Tree:");
-		System.out.println("\nUsing inorder traversal");
+		System.out.println("\nSearching value in BT(Binary Tree) Using Inorder Traversal:");
 		bt.inDepthFirstSearch(bt.root, 50);
 
-		System.out.println("\nUsing Level order traversal");
+		System.out.println("\nSearching value in BT Using Level order Traversal");
 		bt.breadthFirstSearch(bt.root, 50);
 
-		System.out.println("Deleting a value from binary tree: ");
+		System.out.println("Deleting a value from BT: ");
 		bt.deleteFromBinaryTree(bt.root, 20);
 
 		System.out.println("\nLevel order traversal data after replacement with deepest node is : ");

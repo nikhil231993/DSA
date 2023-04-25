@@ -81,7 +81,7 @@ public class BinaryTreeUsingLinkedList {
 			inOrderTraversal(root.right);
 
 			// TC:O(N)
-			// SC:O(H) in normal tree or O(N) in case of skewed tree
+			// SC:O(H) in case of normal tree or O(N) in case of skewed tree
 		}
 
 	}
@@ -94,7 +94,7 @@ public class BinaryTreeUsingLinkedList {
 			preOrderTraversal(root.left);
 			preOrderTraversal(root.right);
 			// TC:O(N)
-			// SC:O(H) in normal tree or O(N) in case of skewed tree
+			// SC:O(H) in case of normal tree or O(N) in case of skewed tree
 		}
 
 	}
@@ -107,7 +107,7 @@ public class BinaryTreeUsingLinkedList {
 			postorderTraversal(root.right);
 			System.out.print(root.data + "-->");
 			// TC:O(N)
-			// SC:O(H) in normal tree or O(N) in case of skewed tree
+			// SC:O(H) in case of normal tree or O(N) in case of skewed tree
 		}
 
 	}
@@ -119,8 +119,7 @@ public class BinaryTreeUsingLinkedList {
 			Queue<Node> queue = new LinkedList<Node>();
 			queue.add(root);
 			while (!queue.isEmpty()) {
-				Node temp = queue.peek();
-				queue.remove();
+				Node temp = queue.poll();
 				System.out.print(temp.data + "-->");
 				if (temp.left != null)
 					queue.add(temp.left);
@@ -140,7 +139,7 @@ public class BinaryTreeUsingLinkedList {
 			pos++;
 
 			if (root.data == data) {
-				System.out.println("value is found at: " + pos);
+				System.out.println("Value is found at: " + pos);
 				return;
 			}
 			inDepthFirstSearch(root.left, data);
@@ -158,8 +157,7 @@ public class BinaryTreeUsingLinkedList {
 			int loc=0;
 			while (!queue.isEmpty()) {
 				loc++;
-				Node temp = queue.peek();
-				queue.remove();
+				Node temp = queue.poll();
 				if(temp.data==data) {
 					System.out.println("value is found at: " + loc);
 					return;
