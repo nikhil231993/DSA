@@ -54,19 +54,19 @@ public class BinaryTreeUsingLinkedListMain {
 		List<Integer> iterInOrder = bt.iterativeInOrder(bt.root);
 		System.out.println(iterInOrder);
 
-		// Iterative postorder trversal using 2 stack
+		// Iterative postorder traversal using 2 stack
 		System.out.println();
 		System.out.println("Iterative postorder traversal using two stack");
 		List<Integer> postOrder = bt.iterativPostOrder(bt.root);
 		System.out.println(postOrder);
 
-		// Iterative postorder trversal using 1 stack
+		// Iterative postorder traversal using 1 stack
 		System.out.println();
 		System.out.println("Iterative postorder traversal using one stack");
 		List<Integer> postOrderUsing1Stack = bt.iterativPostOrderUsing1Stack(bt.root);
 		System.out.println(postOrderUsing1Stack);
 
-		// Iterative preorder, inorder and postorder trversal using 1 stack
+		// Iterative preorder, inorder and postorder traversal using 1 stack
 		System.out.println();
 		System.out.println("Iterative postorder traversal using one stack");
 		List<List<Integer>> allInOne = bt.allTraversalsStack(bt.root);
@@ -94,12 +94,12 @@ public class BinaryTreeUsingLinkedListMain {
 
 		// Max Path BT
 		System.out.println();
-		System.out.println("Max Path: ");
+		System.out.println("Max Path Sum: ");
 		System.out.println(bt.maxPath(bt.root));
 
 		// Zig zag traversal
 		System.out.println();
-		System.out.println("Zig zag: ");
+		System.out.println("Zig Zag Traversal: ");
 		System.out.println(bt.zigZag(bt.root));
 
 		// Boundary traversal

@@ -270,12 +270,9 @@ public class BinaryTreeUsingLinkedList {
 			}
 			list.add(l);
 			// TC:O(n) as we have to parse all elements
-			// SC:O(n) as we have to store all elements also we do not consider size of l
-			// list as it's small
-
+			// SC:O(n) as we have to store all elements also we do not consider size of l i.e., list as it's small
 		}
 		return list;
-
 	}
 
 	public void iterativePreOrder(Node root) {
@@ -425,7 +422,7 @@ public class BinaryTreeUsingLinkedList {
 		int rightLen = maxDepthRecursive(root.right);
 		return 1 + Math.max(leftLen, rightLen);
 		// TC:O(N) as we have to travel each node
-		// SC:O(N) in case of skewed tree
+		// SC:O(H) but O(N) in case of skewed tree
 	}
 
 	public int maxDepthIterative(Node root2) {
@@ -469,7 +466,7 @@ public class BinaryTreeUsingLinkedList {
 		if (Math.abs(leftHeight - rightHeight) > 1)
 			return -1;
 		return 1 + Math.max(leftHeight, rightHeight);
-		// TC:o(n) as we have to trvese each node
+		// TC:o(n) as we have to traverse each node
 		// SC:o(n) in case of skewed tree auxiliary space will be this much
 	}
 
@@ -487,7 +484,7 @@ public class BinaryTreeUsingLinkedList {
 		diameter[0] = Math.max(left + right, diameter[0]);
 		return 1 + Math.max(left, right);
 		// TC:O(N)
-		// SC:O(N)
+		// SC:O(H) in case of normal tree but O(N) in case of skewed tree
 	}
 
 	public int maxPath(Node root2) {
@@ -503,6 +500,8 @@ public class BinaryTreeUsingLinkedList {
 		int right = Math.max(0, maxPath(root.right, max));
 		max[0] = Math.max(max[0], root.data + left + right);
 		return root.data + Math.max(left, right);
+		//TC:O(N)
+		//SC:O(H) but in case of skewed tree it is O(N)
 
 	}
 
@@ -560,7 +559,7 @@ public class BinaryTreeUsingLinkedList {
 		return result;
 	}
 
-	private void rightBoundary(Node root2, List<Integer> result) {
+	private void rightBoundary(Node root, List<Integer> result) {
 		Node current = root.right;
 		List<Integer> list = new ArrayList<Integer>();
 		while (current != null) {
