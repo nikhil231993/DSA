@@ -104,13 +104,13 @@ public class BinaryTreeUsingLinkedListMain {
 
 		// Boundary traversal
 		System.out.println();
-		System.out.println("Boundary traversal: ");
+		System.out.println("Boundary Traversal: ");
 		System.out.println(bt.boundaryTraversal(bt.root));
 
 		// Vertical traversal
 		System.out.println();
 		bt.insert(60);
-		System.out.println("Vertical traversal: ");
+		System.out.println("Vertical Traversal: ");
 		System.out.println(bt.verticalTraversal(bt.root));
 
 		// Top View
