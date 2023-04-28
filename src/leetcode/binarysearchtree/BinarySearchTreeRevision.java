@@ -217,34 +217,29 @@ public class BinarySearchTreeRevision {
 		if(root==null)
 			return;
 		if(root.data >=l && root.data <=u) {
-			printRange(root.left, l,u);
 			System.out.print(root.data + "-->");
-			printRange(root.right, l,u);
-		} else if (root.data <= l) {
-			printRange(root.left, l, u);
-		} else if (root.data >= u) {
-			printRange(root.right, l, u);
 		}
-
+			printRange(root.left, l, u);
+			printRange(root.right, l, u);
 	}
 
 	private ArrayList<Integer> arr = new ArrayList<Integer>();
 
 	public void rootToLeaf(Node root) {
+
 		if (root == null)
 			return;
 
 		arr.add(root.data);
-
-		if (root.left == null && root.right == null)
+		if (root.left == null && root.right == null) {
+			System.out.println("Leaf Path is :");
 			print(arr);
-		else {
-			rootToLeaf(root.left);
-			rootToLeaf(root.right);
 		}
+		rootToLeaf(root.left);
+		rootToLeaf(root.right);
+
 
 		arr.remove(arr.size() - 1);
-
 	}
 
 	private void print(ArrayList<Integer> arr) {
@@ -376,9 +371,7 @@ public class BinarySearchTreeRevision {
 			if(root.data>key){
 				ceil=root.data;
 				root=root.left;
-			}else if(root.data<key){
-				root=root.right;
-			}else{
+			}else if(root.data<=key){
 				root=root.right;
 			}
 		}
@@ -433,6 +426,33 @@ public class BinarySearchTreeRevision {
 		//TC:O(N)
 		//SC:O(H)*2 as we create two stack. In brute force we find inorder and then use two pointer technique so there space will be O(N)
 
+	}
+
+	public List<List<Integer>> pathSum(Node root, int targetSum) {
+
+		if(root==null)
+			return new ArrayList();
+		List<List<Integer>> arr=new ArrayList();
+		List<Integer> path=new ArrayList();
+		path(arr, root, targetSum, path);
+		return arr;
+
+	}
+
+	public static void path(List<List<Integer>> paths, Node root, int targetSum, List<Integer> path){
+		if(root==null)
+			return ;
+
+		path.add(root.data);
+		if(root.left==null && root.right==null && targetSum==root.data){
+			paths.add(new ArrayList<Integer>(path));
+			return;
+		}
+		path(paths, root.left, targetSum-root.data, path);
+		path(paths, root.right, targetSum-root.data, path);
+		path.remove(path.size()-1);
+
+		//TC:o(n) sc:o(logn)
 	}
 
 }

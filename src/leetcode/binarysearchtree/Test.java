@@ -7,6 +7,12 @@ import java.util.List;
 public class Test {
 
     public static void main(String[] args) {
+        System.out.println(10+5<<2);
+        System.out.println(10+(5<<2));
+        System.out.println(3<<1<<0);
+        System.out.println(3<<1<<1);
+        System.out.println(3<<1<<2);
+        System.out.println(20/3);
 //      Node node=new Node(10);
 //      map(node);
 //
