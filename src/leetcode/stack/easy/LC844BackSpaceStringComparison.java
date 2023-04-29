@@ -9,7 +9,31 @@ public class LC844BackSpaceStringComparison {
 		String t = "ad#c";
 		System.out.println(backspaceCompare(s, t));
 
+		//Without using extra space which is the follow up question
 
+		String firstString=backspaceCompareWithoutStack(s);
+		String secondString=backspaceCompareWithoutStack(t);
+		System.out.println(firstString.equals(secondString));
+
+	}
+
+	private static String backspaceCompareWithoutStack(String s) {
+		int len=s.length()-1;
+		int count=0;
+		StringBuilder sb=new StringBuilder();
+		for(int i=len;i>=0;i--){
+			char ch=s.charAt(i);
+			if(ch=='#'){
+				count++;
+			}else{
+				if(count>0){
+					count--;
+				}else{
+					sb.append(ch);
+				}
+			}
+		}
+		return sb.toString();
 	}
 
 	public static boolean backspaceCompare(String s, String t) {
