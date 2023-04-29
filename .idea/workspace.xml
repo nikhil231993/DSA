@@ -5,17 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/medium/CL162PeakInUnevenMountain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/medium/LC29DivideTwoIntegers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/medium/LC33SeacrhInRotatedSortedArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/medium/LC34FirstAndLastPosition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/medium/LC74SearchMatrix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/binarysearchtree/PathSum2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/stack/NextGreater.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/stack/NextMinimum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/stack/PreviousGreater.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/stack/PreviousSmaller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/easy/LC69SquareRootX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/easy/LC69SquareRootX.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearchtree/BinarySearchTreeMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearchtree/BinarySearchTreeMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearchtree/BinarySearchTreeRevision.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearchtree/BinarySearchTreeRevision.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearchtree/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearchtree/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +59,7 @@
       <recent name="leetcode.binarysearchtree" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LC29DivideTwoIntegers">
+  <component name="RunManager" selected="Application.PreviousGreater">
     <configuration name="BinomialCoefficient" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -74,19 +68,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="leetcode.easy.array.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CL162PeakInUnevenMountain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.binarysearch.medium.CL162PeakInUnevenMountain" />
-      <module name="DSA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.binarysearch.medium.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -107,12 +88,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC34FirstAndLastPosition" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.binarysearch.medium.LC34FirstAndLastPosition" />
+    <configuration name="NextGreater" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.stack.NextGreater" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.binarysearch.medium.*" />
+          <option name="PATTERN" value="leetcode.stack.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -120,12 +101,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC74SearchMatrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.binarysearch.medium.LC74SearchMatrix" />
+    <configuration name="NextMinimum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.stack.NextMinimum" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.binarysearch.medium.*" />
+          <option name="PATTERN" value="leetcode.stack.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -133,12 +114,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.binarysearchtree.Test" />
+    <configuration name="PreviousGreater" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.stack.PreviousGreater" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.binarysearchtree.*" />
+          <option name="PATTERN" value="leetcode.stack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PreviousSmaller" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.stack.PreviousSmaller" />
+      <module name="DSA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.stack.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -148,11 +142,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PreviousGreater" />
+        <item itemvalue="Application.NextGreater" />
+        <item itemvalue="Application.PreviousSmaller" />
+        <item itemvalue="Application.NextMinimum" />
         <item itemvalue="Application.LC29DivideTwoIntegers" />
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.LC74SearchMatrix" />
-        <item itemvalue="Application.CL162PeakInUnevenMountain" />
-        <item itemvalue="Application.LC34FirstAndLastPosition" />
       </list>
     </recent_temporary>
   </component>
@@ -226,6 +220,15 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/leetcode/stack/NextMinimum.java</url>
+          <line>6</line>
+          <properties class="leetcode.stack.NextMinimum" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
