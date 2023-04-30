@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/graph/G3UnweightedGraph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/graph/G10LC994RottingOranges.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/graph/G3WeightedGraph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/graph/G5BFS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/graph/G6DFS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/graph/G7LC547NumberOfProvince.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/graph/G8LC200NumberOfIslands.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/graph/G9LC733FloodFill.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G3UnweightedGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G3UnweightedGraph.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,12 +60,13 @@
       <recent name="$PROJECT_DIR$/src/leetcode/binarysearchtree" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="leetcode.graph" />
       <recent name="leetcode.stack.medium" />
       <recent name="leetcode.stack.easy" />
       <recent name="leetcode.binarysearchtree" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.G3UnweightedGraph">
+  <component name="RunManager" selected="Application.G10LC994RottingOranges">
     <configuration name="BinomialCoefficient" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -74,8 +82,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="G3UnweightedGraph" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G3UnweightedGraph" />
+    <configuration name="G10LC994RottingOranges" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G10LC994RottingOranges" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -87,12 +95,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC155StackMinWithStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.stack.medium.LC155StackMinWithStack" />
+    <configuration name="G8LC200NumberOfIslands" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G8LC200NumberOfIslands" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.stack.medium.*" />
+          <option name="PATTERN" value="leetcode.graph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -100,12 +108,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC155StackWithLInkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.stack.medium.LC155StackWithLInkedList" />
+    <configuration name="G8NumberOfIslands (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G8NumberOfIslands" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.stack.medium.*" />
+          <option name="PATTERN" value="leetcode.graph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,12 +121,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC844BackSpaceStringComparison" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.stack.easy.LC844BackSpaceStringComparison" />
+    <configuration name="G8NumberOfIslands" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G8NumberOfIslands" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.stack.easy.*" />
+          <option name="PATTERN" value="leetcode.graph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -126,12 +134,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PreviousGreater" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.stack.PreviousGreater" />
+    <configuration name="G9LC733FloodFill" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G9LC733FloodFill" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.stack.*" />
+          <option name="PATTERN" value="leetcode.graph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -141,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.G3UnweightedGraph" />
-        <item itemvalue="Application.LC844BackSpaceStringComparison" />
-        <item itemvalue="Application.LC155StackWithLInkedList" />
-        <item itemvalue="Application.LC155StackMinWithStack" />
-        <item itemvalue="Application.PreviousGreater" />
+        <item itemvalue="Application.G10LC994RottingOranges" />
+        <item itemvalue="Application.G8LC200NumberOfIslands" />
+        <item itemvalue="Application.G8NumberOfIslands (1)" />
+        <item itemvalue="Application.G9LC733FloodFill" />
+        <item itemvalue="Application.G8NumberOfIslands" />
       </list>
     </recent_temporary>
   </component>

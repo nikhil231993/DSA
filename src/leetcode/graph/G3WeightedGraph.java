@@ -3,7 +3,16 @@ package leetcode.graph;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class G3UnweightedGraph {
+class Node {
+    int v;
+    int w;
+
+    protected Node(int v, int w){
+        this.v=v;
+        this.w=w;
+    }
+}
+public class G3WeightedGraph {
 
     public static void main(String[] args) {
 
@@ -14,12 +23,12 @@ public class G3UnweightedGraph {
     private static void adjacencyList() {
 
         Scanner scan=new Scanner(System.in);
-        System.out.println("Enter no of vertex: ");
+        System.out.println("Enter no of edges: ");
         int n=scan.nextInt();
         System.out.println("Enter no of edges: ");
         int m=scan.nextInt();
 
-        ArrayList<ArrayList<Integer>> arr=new ArrayList<>();
+        ArrayList<ArrayList<Node>> arr=new ArrayList<>();
         System.out.println("Creating " +n +" List:");
         for(int i=0;i<=n;i++)
             arr.add(new ArrayList<>());
@@ -29,17 +38,25 @@ public class G3UnweightedGraph {
             System.out.println("Enter the "+ i +" edge: ");
             int u=scan.nextInt();
             int v=scan.nextInt();
-            arr.get(u).add(v);
-            arr.get(v).add(u);
+            System.out.println("Weight: ");
+            int w=scan.nextInt();
+            arr.get(u).add(new Node(v,w));
+            arr.get(v).add(new Node(u,w));
 
         }
 
         System.out.println("Adjacency List is: ");
 
         int i=0;
-        for(ArrayList<Integer> l: arr){
-            System.out.print("List: "+ i++);
-            System.out.println(l);
+        for(ArrayList<Node> l: arr){
+            System.out.print("Lists "+ i++ +" is: ");
+            System.out.println();
+            System.out.print("[");
+          for(Node node:l){
+              System.out.print("("+node.v+","+ node.w+")");
+          }
+            System.out.println("]");
+            System.out.println();
         }
         //SC:O(2*Edges)
     }
@@ -57,8 +74,10 @@ public class G3UnweightedGraph {
             System.out.println("Enter the "+ i +" edge: ");
             int u=scan.nextInt();
             int v=scan.nextInt();
-            arr[u][v]=1;
-            arr[v][u]=1;
+            System.out.println("Weight: ");
+            int w=scan.nextInt();
+            arr[u][v]=w;
+            arr[v][u]=w;
         }
 
         System.out.println("Matrix is: ");
