@@ -1,5 +1,8 @@
 package leetcode.graph;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class G9LC733FloodFill {
 
     public static void main(String[] args) {
@@ -16,6 +19,9 @@ public class G9LC733FloodFill {
 
 
         dfsTraversal(image,ans,n,m,oldColor,sr,sc,color,x_axis,y_axis);
+
+        System.out.println("Using dfs");
+
         for(int i=0;i<n;i++){
             for(int j=0;j<m;j++){
                 System.out.print(ans[i][j]);
@@ -23,7 +29,18 @@ public class G9LC733FloodFill {
             System.out.println();
         }
 
-        System.out.println("################");
+        System.out.println("USing bfs");
+
+        //By using BFS
+        int[][] ans_bfs=image;
+        bfs(image,ans,sr,sc,color,oldColor,x_axis,y_axis,n,m);
+        for(int i=0;i<n;i++){
+            for(int j=0;j<m;j++){
+                System.out.print(image[i][j]);
+            }
+            System.out.println();
+        }
+        System.out.println("Using recursion");
         //By using Recursion
         recursion(image, oldColor, n, m, sr, sc, color);
 
@@ -34,6 +51,30 @@ public class G9LC733FloodFill {
             System.out.println();
         }
     }
+
+    private static void bfs(int[][] image, int[][] ans, int sr, int sc, int color, int oldColor, int[] xAxis, int[] yAxis, int n, int m) {
+    Queue<Pair> q=new LinkedList<>();
+    q.add(new Pair(sr,sc));
+
+    ans[sr][sc]=color;
+
+    while(!q.isEmpty()){
+
+        int first=q.peek().first;
+        int second=q.peek().second;
+        for(int i=0;i<4;i++) {
+            int new_row = first + xAxis[i];
+            int new_col = second + yAxis[i];
+            q.poll();
+            if(new_col>=0 && new_col<m && new_row>=0 && new_row<n && image[new_row][new_col]==oldColor && ans[new_row][new_col]!=color) {
+            q.offer(new Pair(new_row,new_col));
+            }
+            }
+        }
+    }
+
+
+
 
     private static void dfsTraversal(int[][] image, int[][] ans, int n, int m, int oldColor, int sr, int sc, int color, int[] xAxis, int[] yAxis) {
 

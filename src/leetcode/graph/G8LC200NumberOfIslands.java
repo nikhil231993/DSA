@@ -39,7 +39,6 @@ public class G8LC200NumberOfIslands {
         int count=0;
         for(int i=0;i<n;i++){
             for(int j=0;j<m;j++){
-
                 if(grid[i][j]=='1') {
                     count++;
                     dfs(grid, n, m, i, j);
@@ -102,8 +101,8 @@ public class G8LC200NumberOfIslands {
                 }
 
             }
-            //SC:O(N square)visited matrix +O(Nsqaure) if q is fully occupied
-            //TC:O(n sq + n sq *4)
+            //SC:O(N square)visited matrix +O(N^2) if q is fully occupied
+            //TC:O(n^2 + n^2 *4)
         }
 
 

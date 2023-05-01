@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/easy/LC35InsertPosition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/medium/LC1011ShipWeights.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/medium/LC1760MinimumBallsInABag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/graph/G11DetectCycleBFS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/graph/G12DetectCycleDFS.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G10LC994RottingOranges.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G10LC994RottingOranges.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G5BFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G5BFS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G8LC200NumberOfIslands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G8LC200NumberOfIslands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G9LC733FloodFill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G9LC733FloodFill.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +64,7 @@
       <recent name="leetcode.binarysearchtree" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LC1760MinimumBallsInABag">
+  <component name="RunManager" selected="Application.G12DetectCycleDFS">
     <configuration name="BinomialCoefficient" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -77,8 +80,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="G10LC994RottingOranges" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G10LC994RottingOranges" />
+    <configuration name="G11DetectCycleBFS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G11DetectCycleBFS" />
+      <module name="DSA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.graph.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="G12DetectCycleDFS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G12DetectCycleDFS" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -103,12 +119,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC1011ShipWeights" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.binarysearch.medium.LC1011ShipWeights" />
+    <configuration name="G9LC733FloodFill" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G9LC733FloodFill" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.binarysearch.medium.*" />
+          <option name="PATTERN" value="leetcode.graph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -129,26 +145,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC35InsertPosition" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.binarysearch.easy.LC35InsertPosition" />
-      <module name="DSA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.binarysearch.easy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LC1760MinimumBallsInABag" />
-        <item itemvalue="Application.LC1011ShipWeights" />
-        <item itemvalue="Application.LC35InsertPosition" />
-        <item itemvalue="Application.G10LC994RottingOranges" />
+        <item itemvalue="Application.G12DetectCycleDFS" />
+        <item itemvalue="Application.G11DetectCycleBFS" />
         <item itemvalue="Application.G8LC200NumberOfIslands" />
+        <item itemvalue="Application.G9LC733FloodFill" />
+        <item itemvalue="Application.LC1760MinimumBallsInABag" />
       </list>
     </recent_temporary>
   </component>
@@ -204,6 +207,31 @@
           <url>file://$PROJECT_DIR$/src/leetcode/binarysearchtree/BinarySearchTreeRevision.java</url>
           <line>451</line>
           <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/graph/G11DetectCycleBFS.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/graph/G11DetectCycleBFS.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/graph/G11DetectCycleBFS.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/graph/G11DetectCycleBFS.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/graph/G12DetectCycleDFS.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="44" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/leetcode/binarytree/Test.java</url>

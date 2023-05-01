@@ -63,7 +63,7 @@ public class G10LC994RottingOranges {
 
         if(count!=freshOranges) return -1;
         return max;
-        //TC:(n*m) initila loop+o(n*m) if all oranges are fresh apart from 1st queue will run this time +O(m*n*4) for all nodes inside loop runs this time
+        //TC:(n*m) initial loop+o(n*m) if all oranges are fresh apart from 1st queue will run this time +O(m*n*4) for all nodes inside loop runs this time
         //SC:O(m*n) visited matrix +O(m*n) queue
 
     }
