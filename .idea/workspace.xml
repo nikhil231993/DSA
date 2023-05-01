@@ -5,15 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/graph/G10LC994RottingOranges.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/graph/G3WeightedGraph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/graph/G5BFS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/graph/G6DFS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/graph/G7LC547NumberOfProvince.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/graph/G8LC200NumberOfIslands.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/graph/G9LC733FloodFill.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/easy/LC35InsertPosition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/medium/LC1011ShipWeights.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/medium/LC1760MinimumBallsInABag.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G3UnweightedGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G3UnweightedGraph.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +61,7 @@
       <recent name="leetcode.binarysearchtree" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.G10LC994RottingOranges">
+  <component name="RunManager" selected="Application.LC1760MinimumBallsInABag">
     <configuration name="BinomialCoefficient" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -108,12 +103,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="G8NumberOfIslands (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G8NumberOfIslands" />
+    <configuration name="LC1011ShipWeights" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.binarysearch.medium.LC1011ShipWeights" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.graph.*" />
+          <option name="PATTERN" value="leetcode.binarysearch.medium.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,12 +116,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="G8NumberOfIslands" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G8NumberOfIslands" />
+    <configuration name="LC1760MinimumBallsInABag" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.binarysearch.medium.LC1760MinimumBallsInABag" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.graph.*" />
+          <option name="PATTERN" value="leetcode.binarysearch.medium.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -134,12 +129,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="G9LC733FloodFill" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G9LC733FloodFill" />
+    <configuration name="LC35InsertPosition" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.binarysearch.easy.LC35InsertPosition" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.graph.*" />
+          <option name="PATTERN" value="leetcode.binarysearch.easy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -149,11 +144,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LC1760MinimumBallsInABag" />
+        <item itemvalue="Application.LC1011ShipWeights" />
+        <item itemvalue="Application.LC35InsertPosition" />
         <item itemvalue="Application.G10LC994RottingOranges" />
         <item itemvalue="Application.G8LC200NumberOfIslands" />
-        <item itemvalue="Application.G8NumberOfIslands (1)" />
-        <item itemvalue="Application.G9LC733FloodFill" />
-        <item itemvalue="Application.G8NumberOfIslands" />
       </list>
     </recent_temporary>
   </component>
