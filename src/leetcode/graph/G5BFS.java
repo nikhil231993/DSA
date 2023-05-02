@@ -49,7 +49,7 @@ public class G5BFS {
         System.out.println(bfs);
 
         //SC:O(3N) for queue, bfs list and visited array (not using adjacency list as it is given)
-        //TC:O(N) for while loop + O(2E) as the for loop inside it runs for all the degrees of the node
+        //TC:O(N)outer for loop+O(N+ O(2E) for while loop and the for loop inside it runs for all the degrees of the node
     }
 
     private static void adjacencyList(List<List<Integer>> arr,int n, int m, Scanner scan) {

@@ -29,7 +29,7 @@ public class G9LC733FloodFill {
             System.out.println();
         }
 
-        System.out.println("USing bfs");
+        System.out.println("Using bfs");
 
         //By using BFS
         int[][] ans_bfs=image;
@@ -67,6 +67,7 @@ public class G9LC733FloodFill {
             int new_col = second + yAxis[i];
             q.poll();
             if(new_col>=0 && new_col<m && new_row>=0 && new_row<n && image[new_row][new_col]==oldColor && ans[new_row][new_col]!=color) {
+                ans[new_row][new_col]=color;
             q.offer(new Pair(new_row,new_col));
             }
             }
