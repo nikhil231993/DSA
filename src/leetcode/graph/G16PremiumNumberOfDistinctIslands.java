@@ -14,7 +14,7 @@ class PairG16{
 public class G16PremiumNumberOfDistinctIslands {
 
     public static void main(String[] args) {
-        int[][] grid = new int[][]{{0,1,0,1,1},{1,0,0,0,0},{0,0,0,1,1},{1,1,0,1,0}};
+        int[][] grid = new int[][]{{1,1,0,1,1},{1,0,0,0,0},{0,0,0,1,1},{1,1,0,1,0}};
         System.out.println(noOfDistinctIslandsUsingDfs(grid));
         System.out.println(noOfDistinctIslandsUsingBfs(grid));
 

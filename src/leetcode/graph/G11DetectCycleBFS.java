@@ -104,7 +104,7 @@ public class G11DetectCycleBFS {
             }
         }
 
-        //tc:o(n+2e)
+        //tc:o(n+2e)(while loop)+o(n) only 1 time it goes inside by striver
         //sc:o(n) queue+O(n) visited array
         return false;
     }

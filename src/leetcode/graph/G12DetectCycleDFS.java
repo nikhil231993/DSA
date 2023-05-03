@@ -64,7 +64,7 @@ public class G12DetectCycleDFS {
                 }
             }
         }
-        //SC:o(n) visited+o(n) worst case
+        //SC:o(n) visited + o(n) auxiliary space worst case
         //TC:O(N+2e)+O(n)
         return false;
     }

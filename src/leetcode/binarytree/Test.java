@@ -4,8 +4,8 @@ public class Test {
 //	static Node target;
 
 	public static void main(String[] args) {
-
-		System.out.println(1<<0);
+		System.out.println(-10>>>2);
+		System.out.println(Integer.toBinaryString(-10));
 //		mappping();
 //		System.out.println(target.data);
 
