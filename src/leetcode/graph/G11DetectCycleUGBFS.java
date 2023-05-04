@@ -11,7 +11,7 @@ class PairParent{
         this.parent=parent;
     }
 }
-public class G11DetectCycleBFS {
+public class G11DetectCycleUGBFS {
 
     public static void main(String[] args) {
         System.out.println("#################List Creation Start#####################");

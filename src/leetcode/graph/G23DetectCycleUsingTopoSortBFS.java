@@ -46,6 +46,8 @@ public class G23DetectCycleUsingTopoSortBFS {
             }
         }
         return list.size()<n;
+        //SC:O(N) queue+O(N) indegree +O(N)toposort
+        //TC:O(N+E)
     }
 
     private static void adjacencyList(List<List<Integer>> arr,int n, int m, Scanner scan) {

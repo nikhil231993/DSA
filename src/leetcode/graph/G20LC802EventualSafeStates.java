@@ -6,7 +6,7 @@ import java.util.List;
 public class G20LC802EventualSafeStates {
 
     public static void main(String[] args) {
-       int[][] graph =new int[][] {{1,2},{2,3},{5},{0},{5},{},{}};
+        int[][] graph =new int[][] {{1,2},{2,3},{5},{0},{5},{},{}};
         System.out.println(eventualSafeNodes(graph));
     }
 

@@ -2,7 +2,7 @@ package leetcode.graph;
 
 import java.util.*;
 
-public class G12DetectCycleDFS {
+public class G12DetectCycleUGDFS {
 
     public static void main(String[] args) {
 
