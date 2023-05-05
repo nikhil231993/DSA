@@ -5,17 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/graph/G24LC207CourseSchedule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/graph/G24LC210CourseSchedule2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/graph/G25LC802EventualSafeStatesUsingTopoSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/graph/G26AlienDictionary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/graph/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G11DetectCycleBFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G11DetectCycleUGBFS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G12DetectCycleDFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G12DetectCycleUGDFS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G20LC802EventualSafeStates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G20LC802EventualSafeStates.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G22TopoSortBFSKahnAlgo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G22TopoSortBFSKahnAlgo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G23DetectCycleUsingTopoSortBFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G23DetectCycleUsingTopoSortBFS.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,17 +33,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/nikhilthulaseedharan/Nikhil/DSA/src/leetcode/binarysearchtree&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/My_Personal_Workspace/BuildingLogic/DSA/DSA",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="leetcode.binarysearchtree" />
@@ -169,6 +159,17 @@
       <updated>1679209835549</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
