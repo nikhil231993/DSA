@@ -36,7 +36,7 @@ public class G27ShortestPathDAG {
 
 		// Convert matrix to adjList;
 		//It works for weighted, unweighted and negative weights also as there is no backward cycle
-		//in case of shorted in undirected graph negative does not work as there will infinite loop
+		//but in case of undirected graph negative weights does not work as there will infinite loop
 		
 		List<List<PairG27>> adjList=new ArrayList();
 		

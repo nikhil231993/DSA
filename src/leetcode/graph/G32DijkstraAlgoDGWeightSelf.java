@@ -2,22 +2,13 @@ package leetcode.graph;
 
 import java.util.*;
 
-class PairG32{
-    int weight;
-    int node;
-
-    public PairG32(int node,int weight){
-        this.weight=weight;
-        this.node=node;
-    }
-}
-public class G32DijkstraAlgoUGWeight {
+public class G32DijkstraAlgoDGWeightSelf {
 
     public static void main(String[] args) {
         int[][] edge = new int[][] { { 0, 2, 4 },
-                { 0, 1, 4 }, {1,2,2},{ 2, 3, 3 }, { 2, 4, 1 },
-                { 3, 5, 2 }, { 2, 5, 6 }, { 4, 5, 3 } };
-        // Dijsktra not applicable for graph with negative weights
+                { 0, 1, 1 }, {1,2,2},{ 2, 3, 3 }, { 2, 4, 1 },
+                { 3, 5, 2 }, { 2, 5, 1 }, { 4, 5, 3 } };
+
         int V=6;
         int E=8;
         int src=0;
@@ -50,7 +41,6 @@ public class G32DijkstraAlgoUGWeight {
 
         for(int i=0;i<E;i++){
             adjList.get(edge[i][0]).add(new PairG32(edge[i][1],edge[i][2]));
-            adjList.get(edge[i][1]).add(new PairG32(edge[i][0],edge[i][2]));
         }
 
 
