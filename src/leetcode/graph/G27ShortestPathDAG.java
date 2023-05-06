@@ -14,7 +14,7 @@ class PairG27 {
 		this.weight = weight;
 	}
 }
-public class G27ShortedtPathDAG {
+public class G27ShortestPathDAG {
 
 	public static void main(String[] args) {
 		// Below is with weights
@@ -29,10 +29,14 @@ public class G27ShortedtPathDAG {
 
 		int V = 6;
 		int E = 7;
-		
+
+		//Try changing the source as the stack top will not be actual src everytime. It can vary
+		// based on interviewer
 		int src = 0;
 
 		// Convert matrix to adjList;
+		//It works for weighted, unweighted and negative weights also as there is no backward cycle
+		//in case of shorted in undirected graph negative does not work as there will infinite loop
 		
 		List<List<PairG27>> adjList=new ArrayList();
 		

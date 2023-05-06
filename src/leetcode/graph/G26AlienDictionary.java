@@ -8,9 +8,16 @@ import java.util.Queue;
 public class G26AlienDictionary {
 
     public static void main(String[] args) {
-        String[] words=new String[]{"baa","abcd","abca","cab","cad"};
+        String[] words=new String[]{"wrt",
+                "wrf",
+                "er",
+                "ett",
+                "rftt"};
         int n=words.length;
         int k=5;
+        //If the value of k is 6 then it will be befdac where e can come at any place
+        //If it is not in initial order then we can find entire
+        //alphabets toposort and then find only characters we need https://leetcode.com/discuss/interview-question/248131/Microsoft-Interview-(round-1)-Alien-Dictionary
         String s=alienDictionary(words,n,k);
         System.out.println(s);
     }
