@@ -15,6 +15,16 @@ public class G6DFS {
         adjacencyList(arr,n,m,scan);
 
         dfs(arr,n,m);
+
+        //SC:O(N) dfs list+O(N) visited array+O(N) recursion stack in case of skew graph
+        //TC:o(N+2E) for 1 component
+        //TC:O(N)+O(N+2E) for multiple connected components
+        //Above is for UG graph
+
+        //For DG
+        //TC:O(N+E) for 1 component
+        //TC:O(N)+O(N+E) for multiple components
+
     }
 
     private static void dfs(List<List<Integer>> arr, int n, int m) {

@@ -7,6 +7,7 @@ public class G7LC547NumberOfProvince {
         //0--1
         //2
         //code in leetcode also runs from index as 0
+        //we can use either BFS or DFS
         int[][] matrix=new int[][]{{1,1,0},{1,1,0},{0,0,1}};
         System.out.println(findCircleNum(matrix));
 
