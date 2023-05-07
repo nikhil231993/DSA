@@ -104,16 +104,17 @@ public class G11DetectCycleUGBFS {
             }
         }
 
-        //tc:o(n+2e)(while loop)+o(n) only 1 time it goes inside by striver
-        //sc:o(n) queue+O(n) visited array
+        //TC:O(N+2E)(while loop which is BFS) + O(n) only 1 time it goes inside for each of the 3 separate components which means 3 times
+        // watch G11 19:10
+        //SC:O(N) queue+O(n) visited array
         return false;
     }
 
     private static boolean cycle(int[] visited, Queue<PairParent> q, int n, int m, List<List<Integer>> arr,int i) {
+
         q.add(new PairParent(i,-1));
         visited[i]=1;
         while(!q.isEmpty()){
-
             int node=q.peek().node;
             int parent=q.peek().parent;
             q.poll();
@@ -125,10 +126,8 @@ public class G11DetectCycleUGBFS {
                 }else if(parent!=vertex)
                     return true;
             }
-
         }
         return false;
-
     }
 
     private static void adjacencyList(List<List<Integer>> arr,int n, int m, Scanner scan) {

@@ -7,6 +7,8 @@
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G10LC994RottingOranges.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G10LC994RottingOranges.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G11DetectCycleUGBFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G11DetectCycleUGBFS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G12DetectCycleUGDFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G12DetectCycleUGDFS.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G9LC733FloodFill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G9LC733FloodFill.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

@@ -87,7 +87,7 @@ public class G9LC733FloodFill {
         }
     }
         //SC:O(m*n) recursive stack where all elements are stored in stack +O(M*N) ans matrix
-        //TC:o(m*n*4) where 4 neighbours where 4 can be avoided
+        //TC:O(m*n*4) where 4 neighbours where 4 can be avoided
 
     }
 
