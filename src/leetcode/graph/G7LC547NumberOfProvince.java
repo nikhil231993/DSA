@@ -35,9 +35,12 @@ public class G7LC547NumberOfProvince {
             }
         }
 
-        //SC:O(n) for visited array +o(n) recursion stack
+        //SC:O(n) for visited array +o(n) recursion stack for skewed
         //TC:O(n*n) as we have to parse each element in matrix
 
-        //if it was Adjacency list TC:o(N) outer loop +O(v+2e) for inner loop
+        //if it was Adjacency list TC:O(N) outer loop +O(v+2e) for inner loop
+
+        //IMP: for a graph having 5 disconnected graph  TC:O(N)+O(1)+O(1)+O(1)+O(1)+O(1)
+        //which is equal to O(N)
     }
 }

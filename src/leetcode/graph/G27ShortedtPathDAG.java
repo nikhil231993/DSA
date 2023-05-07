@@ -5,15 +5,6 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Stack;
 
-class PairG27 {
-	int node;
-	int weight;
-
-	public PairG27(int node, int weight) {
-		this.node = node;
-		this.weight = weight;
-	}
-}
 public class G27ShortedtPathDAG {
 
 	public static void main(String[] args) {
