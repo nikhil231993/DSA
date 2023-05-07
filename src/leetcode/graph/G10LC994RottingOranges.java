@@ -17,6 +17,9 @@ public class G10LC994RottingOranges {
 
     public static void main(String[] args) {
         int[][] grid = new int[][]{{2,1,1},{1,1,0},{0,1,1}};
+
+        //we can only use bfs as it needs to find the shortest distance
+
         G10LC994RottingOranges g=new G10LC994RottingOranges();
         System.out.println(g.orangesRotting(grid));
     }
@@ -63,8 +66,8 @@ public class G10LC994RottingOranges {
 
         if(count!=freshOranges) return -1;
         return max;
-        //TC:(n*m) initial loop+o(n*m) if all oranges are fresh apart from 1st queue will run this time +O(m*n*4) for all nodes inside loop runs this time
-        //SC:O(m*n) visited matrix +O(m*n) queue
+        //TC:O(n*m) initial loop to put rotten oranges into queue + O(m*n*4) for all nodes inside loop runs this time
+        //SC:O(m*n) visited matrix +O(m*n) queue where all oranges can be rotten
 
     }
 }

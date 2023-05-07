@@ -74,9 +74,6 @@ public class G9LC733FloodFill {
         }
     }
 
-
-
-
     private static void dfsTraversal(int[][] image, int[][] ans, int n, int m, int oldColor, int sr, int sc, int color, int[] xAxis, int[] yAxis) {
 
         ans[sr][sc]=color;
@@ -89,13 +86,10 @@ public class G9LC733FloodFill {
             dfsTraversal(image,ans,n,m,oldColor,new_row,new_col,color,xAxis,yAxis);
         }
     }
-
         //SC:O(m*n) recursive stack where all elements are stored in stack +O(M*N) ans matrix
         //TC:o(m*n*4) where 4 neighbours where 4 can be avoided
 
-
     }
-
 
     private static void recursion(int[][] image, int oldColor, int n, int m,int sr, int sc,int newColor) {
 
