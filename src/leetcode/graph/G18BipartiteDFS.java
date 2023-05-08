@@ -24,7 +24,7 @@ public class G18BipartiteDFS {
 
         int[] color=new int[n+1];
         Arrays.fill(color,-1);
-        //considering nodes start with index1
+        //considering nodes start with index=1
         for(int i=1;i<=n;i++){
             if(color[i]==-1){
                 color[i]=0;

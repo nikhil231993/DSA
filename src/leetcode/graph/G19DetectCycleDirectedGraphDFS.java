@@ -46,8 +46,8 @@ public class G19DetectCycleDirectedGraphDFS {
     pathVisited[i]=0;
     return false;
 
-    //TC:O(N)+O(N+2E)
-        //SC:O(2N) we can also do it with one visited arr
+        //TC:O(N)+O(N+E)
+        //SC:O(2N) we can also do it with one visited array
         //Hint: Take visited as 1 and pathVisited as 2
 
     }

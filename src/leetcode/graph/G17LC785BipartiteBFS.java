@@ -1,7 +1,5 @@
 package leetcode.graph;
 
-import revision.Graph.AdjacencyList;
-
 import java.util.*;
 
 public class G17LC785BipartiteBFS {
@@ -46,7 +44,6 @@ public class G17LC785BipartiteBFS {
 
     private static boolean bfs(int[] color,int[][] graph, int i, List<List<Integer>> adjList) {
 
-
         color[i]=0;
 
         Queue<Integer> q=new LinkedList<>();
@@ -56,15 +53,15 @@ public class G17LC785BipartiteBFS {
 
             for(Integer vertex: adjList.get(node)){
                 if(color[vertex]==-1){
-
                     color[vertex]=1-color[node];
                     q.add(vertex);
                 }else if(color[vertex]==color[node]){
                     return false;
                 }
             }
-
         }
         return true;
+        //TC:O(N+2E) while loop+O(N) outer for loop
+        //SC:O(N) color array+O(N) queue
     }
 }
