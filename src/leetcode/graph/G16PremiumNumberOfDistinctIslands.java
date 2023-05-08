@@ -17,7 +17,7 @@ public class G16PremiumNumberOfDistinctIslands {
         int[][] grid = new int[][]{{1,1,0,1,1},{1,0,0,0,0},{0,0,0,1,1},{1,1,0,1,0}};
         System.out.println(noOfDistinctIslandsUsingDfs(grid));
         System.out.println(noOfDistinctIslandsUsingBfs(grid));
-
+        //we can use both BFS and DFS
     }
 
     private static int noOfDistinctIslandsUsingBfs(int[][] grid) {
@@ -48,8 +48,6 @@ public class G16PremiumNumberOfDistinctIslands {
 
     private static void bfs(int row, int col, int[] xaxis, int[] yaxis, int[][] visited, int[][] grid, int n, int m, int ro, int co,List<String> list,Queue<PairG16> q) {
 
-
-
         while(!q.isEmpty()){
             int r=q.peek().first;
             int c=q.peek().second;
@@ -66,8 +64,6 @@ public class G16PremiumNumberOfDistinctIslands {
                 }
             }
         }
-
-
     }
 
     private static int noOfDistinctIslandsUsingDfs(int[][] grid) {
@@ -87,9 +83,7 @@ public class G16PremiumNumberOfDistinctIslands {
                 }
             }
         }
-
         return s.size();
-
     }
 
     private static void dfs(int row, int col, int n, int m, int[][] visited, int[][] grid, int[] xaxis, int[] yaxis, List<String> list,int rorigin,int corigin) {
@@ -101,10 +95,8 @@ public class G16PremiumNumberOfDistinctIslands {
         int ncol=col+yaxis[k];
         if(nrow>=0 && nrow<n && ncol>=0 && ncol<m && visited[nrow][ncol]==0&& grid[nrow][ncol]==1){
             dfs(nrow,ncol,n,m,visited,grid,xaxis,yaxis,list,rorigin,corigin);
+             }
         }
-
-
-    }
     }
 
     private static String toString(int r, int c) {

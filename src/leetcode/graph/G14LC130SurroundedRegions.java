@@ -80,7 +80,7 @@ public class G14LC130SurroundedRegions {
                 dfs(nrow, ncol, vis, mat, delrow, delcol);
             }
         }
-        //TC:O(n) boundary rows+O(n) bounday colmns+O(n^2 *4) bfs
-        //SC:O(n^2)+O(N^2)auxiliary space
+        //TC:O(N) boundary rows+O(N) boundary columns+O(N^2 *4) bfs
+        //SC:O(N^2) visited array+O(N^2)auxiliary space worst case
     }
 }
