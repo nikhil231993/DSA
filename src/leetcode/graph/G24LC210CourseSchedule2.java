@@ -8,6 +8,7 @@ import java.util.Queue;
 public class G24LC210CourseSchedule2 {
 
     public static void main(String[] args) {
+
         int[][] prerequisites=new int[][]{{0,1}};
         int numCourses=2;
 
@@ -15,6 +16,7 @@ public class G24LC210CourseSchedule2 {
        int[] result= isPossible(numCourses,prerequisites);
        for(Integer n:result)
            System.out.println(n);
+
         //TC:O(N)+O(N+E)
         //SC:O(N) queue + O(N) indegree
     }
@@ -55,8 +57,6 @@ public class G24LC210CourseSchedule2 {
                     q.offer(vertex);
                 }
             }
-
-
         }
         int[] arr=new int[topoSort.size()];
         if(topoSort.size()==numCourses)
@@ -68,6 +68,5 @@ public class G24LC210CourseSchedule2 {
         }
         else
             return new int[]{};
-
     }
 }

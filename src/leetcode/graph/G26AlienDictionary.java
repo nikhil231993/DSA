@@ -8,13 +8,20 @@ import java.util.Queue;
 public class G26AlienDictionary {
 
     public static void main(String[] args) {
-        String[] words=new String[]{"wrt",
-                "wrf",
-                "er",
-                "ett",
-                "rftt"};
+//        String[] words=new String[]{"wrt",
+//                "wrf",
+//                "er",
+//                "ett",
+//                "rftt"};
+        String[] words=new String[]{"baa",
+                "abcd",
+                "abca",
+                "cab",
+               "cad"};
         int n=words.length;
-        int k=5;
+        int k=4;
+        //int k=26;
+        //Above k is used if we are given random digits order and the first 4-5 digits
         //If the value of k is 6 then it will be befdac where e can come at any place
         //If it is not in initial order then we can find entire
         //alphabets toposort and then find only characters we need https://leetcode.com/discuss/interview-question/248131/Microsoft-Interview-(round-1)-Alien-Dictionary

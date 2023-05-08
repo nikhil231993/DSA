@@ -8,15 +8,13 @@ import java.util.Queue;
 public class G24LC207CourseSchedule {
 
     public static void main(String[] args) {
-
+        //can be done using dfs or bfs. Use toposort to detect cycle.
+        //We are using toposort with bfs as next question is based on that
         int[][] prerequisites=new int[][]{{1,0},{0,1}};
         int numCourses=2;
-
-        //can we done using dfs or bfs  toposort to detect cycle. we are using toposort as next question is based on that
         System.out.println(canFinish(numCourses,prerequisites));
         //TC:O(N)+O(N+E)
-        //SC:O(N) queue + O(N) indegree
-
+        //SC:O(N) queue + O(N) Indegree
     }
 
     public static boolean canFinish(int numCourses, int[][] prerequisites) {
