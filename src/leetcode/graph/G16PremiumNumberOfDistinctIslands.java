@@ -42,7 +42,7 @@ public class G16PremiumNumberOfDistinctIslands {
         }
         return s.size();
 
-        //TC:o(m*n)*log(m*n) outer loop+dfs O(m*n)
+        //TC:o(m*n)*log(m*n) outer loop in case of c++ has log n TC but in Java instead of log it will be O(1)+dfs O(m*n*4)
         //SC:O(n*m) visited + O(m*n) queue
     }
 
