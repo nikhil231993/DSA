@@ -69,6 +69,6 @@ public class G20LC802EventualSafeStates {
     }
 
     //TC:o(N)+O(N+E)
-    //SC:o(3N) visi,pathvis and safe +O(n) recursion stack
+    //SC:O(3N) visited array,path visited array and safe +O(N) recursion stack
 
 }

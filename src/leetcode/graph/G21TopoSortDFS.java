@@ -17,7 +17,6 @@ public class G21TopoSortDFS {
 
         adjacencyList(arr,n,m,scan);
 
-
         System.out.println("TopoSort");
 
         int[] visited=new int[n];

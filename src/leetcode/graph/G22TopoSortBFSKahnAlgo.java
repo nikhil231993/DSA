@@ -63,8 +63,6 @@ public class G22TopoSortBFSKahnAlgo {
             int u=scan.nextInt();
             int v=scan.nextInt();
             arr.get(u).add(v);
-
-
         }
 
         System.out.println("Adjacency List is: ");
