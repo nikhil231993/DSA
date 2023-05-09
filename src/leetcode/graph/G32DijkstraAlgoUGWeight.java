@@ -17,7 +17,12 @@ public class G32DijkstraAlgoUGWeight {
         int[][] edge = new int[][] { { 0, 2, 4 },
                 { 0, 1, 4 }, {1,2,2},{ 2, 3, 3 }, { 2, 4, 1 },
                 { 3, 5, 2 }, { 2, 5, 6 }, { 4, 5, 3 } };
-        // Dijsktra not applicable for graph with negative weights
+        // Dijkstra not applicable for graph with negative weights and negative cycle
+        // Below we can see in comments of the video:
+        //Ques:I just had one doubt will the T.C of the priority queue method be O(ElogE) instead of O(ElogV)
+        // as there can be more than one instance of a node in the priority queue whereas in the treeset
+        // method it will be O(ElogV)
+        //Ans: Yes
         int V=6;
         int E=8;
         int src=0;
@@ -29,17 +34,15 @@ public class G32DijkstraAlgoUGWeight {
 
         System.out.println("#########################");
 
-        //TC:ElogE as there can be more edges in PQ
+        //TC:ElogV as there can be more edges in PQ
 
         //Even with Q instead of PQ we will get answer but why PQ will be in next video?
+        //Even if we use visited array then also we will get the optimal answer
 
-        //If we use visited  array then we will not get the optimal answer
-        //Uncomment and see what happens
+        int[] arrVisited=shortestPathUsingVisited(edge,V,E,src);
 
-//        int[] arrVisited=shortestPathUsingVisited(edge,V,E,src);
-//
-//        for(Integer n: arrVisited)
-//            System.out.println(n);
+        for(Integer n: arrVisited)
+            System.out.println(n);
     }
 
     private static int[] shortestPathUsingVisited(int[][] edge, int V, int E, int src) {
@@ -60,21 +63,21 @@ public class G32DijkstraAlgoUGWeight {
 
         Arrays.fill(dist,(int)(1e9));
         dist[src]=0;
-        visited[src]=0;
 
         q.offer(new PairG32(src,0));
-
         while(!q.isEmpty()){
 
             Integer node=q.peek().node;
             Integer weight=q.peek().weight;
             q.poll();
 
+            if(visited[node]==1)
+                continue;;
+            visited[node]=1;
+
             for(PairG32 vertex:adjList.get(node)){
-                if(visited[vertex.node]==0 )
-                    if(dist[vertex.node]>dist[node]+vertex.weight){
-                    visited[vertex.node]=1;
-                    dist[vertex.node]=dist[node]+vertex.weight;
+                    if(dist[vertex.node]>weight+vertex.weight){
+                    dist[vertex.node]=weight+vertex.weight;
                     q.offer(new PairG32(vertex.node,dist[vertex.node]));
                 }
             }
@@ -91,7 +94,7 @@ public class G32DijkstraAlgoUGWeight {
             adjList.add(new ArrayList<>());
 
         for(int i=0;i<E;i++){
-                adjList.get(edge[i][0]).add(new PairG32(edge[i][1],edge[i][2]));
+            adjList.get(edge[i][0]).add(new PairG32(edge[i][1],edge[i][2]));
             adjList.get(edge[i][1]).add(new PairG32(edge[i][0],edge[i][2]));
         }
 
@@ -111,8 +114,8 @@ public class G32DijkstraAlgoUGWeight {
             q.poll();
 
             for(PairG32 vertex:adjList.get(node)){
-                if(dist[vertex.node]>dist[node]+vertex.weight){
-                    dist[vertex.node]=dist[node]+vertex.weight;
+                if(dist[vertex.node]>weight+vertex.weight){
+                    dist[vertex.node]=weight+vertex.weight;
                     q.offer(new PairG32(vertex.node,dist[vertex.node]));
                 }
             }

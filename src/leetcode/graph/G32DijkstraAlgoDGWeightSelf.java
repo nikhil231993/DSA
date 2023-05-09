@@ -9,6 +9,7 @@ public class G32DijkstraAlgoDGWeightSelf {
 //        but you must allow a vertex can be visited multiple times and that version will lose
 //        it's fast time complexity.
 //        https://stackoverflow.com/questions/13159337/why-doesnt-dijkstras-algorithm-work-for-negative-weight-edges
+        //Try changing one weight to -be and try
         int[][] edge = new int[][] { { 0, 2, 4 },
                 { 0, 1, 4 }, {1,2,2},{ 2, 3, 3 }, { 2, 4, 1 },
                 { 3, 5, 2 }, { 2, 5, 6 }, { 4, 5, 3 } };

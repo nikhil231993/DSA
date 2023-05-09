@@ -12,7 +12,7 @@ public class G35PrintShortestPathUG {
         int V=5;
         int E=6;
         int src=1;
-        int dest=0;
+        int dest=5;
 
         int[] dist=new int[V+1];
 
@@ -34,9 +34,12 @@ public class G35PrintShortestPathUG {
         Collections.reverse(pathList);
         System.out.println(pathList);
 
-//Time Complexity: O( E log(V) ) { for Dijkstra’s Algorithm } + O(V) { for backtracking in order to find the parent for each node } Where E = Number of edges and V = Number of Nodes.
+//Time Complexity: O( E log(V) ) { for Dijkstra’s Algorithm } +
+// O(V) { for backtracking in order to find the parent for each node }
+// Where E = Number of edges and V = Number of Nodes.
 //
-//Space Complexity: O( |E| + |V| ) { for priority queue and dist array } + O( |V| ) { for storing the final path } Where E = Number of edges and V = Number of Nodes.
+//Space Complexity: O( |E| + |V| ) { for priority queue and dist array } +
+// O( |V| ) { for storing the final path } Where E = Number of edges and V = Number of Nodes.
     }
 
     private static int[] shortestPath(int[][] edge, int V, int E,int src, int des,int[] dist) {
