@@ -5,12 +5,22 @@ import java.util.*;
 public class G32DijkstraAlgoDGWeightSelf {
 
     public static void main(String[] args) {
+//        You can use dijkstra's algorithm with negative edges not including negative cycle,
+//        but you must allow a vertex can be visited multiple times and that version will lose
+//        it's fast time complexity.
+//        https://stackoverflow.com/questions/13159337/why-doesnt-dijkstras-algorithm-work-for-negative-weight-edges
         int[][] edge = new int[][] { { 0, 2, 4 },
-                { 0, 1, 1 }, {1,2,2},{ 2, 3, 3 }, { 2, 4, 1 },
+                { 0, 1, 4 }, {1,2,2},{ 2, 3, 3 }, { 2, 4, 1 },
                 { 3, 5, 2 }, { 2, 5, 6 }, { 4, 5, 3 } };
 
         int V=6;
         int E=8;
+
+//        int[][] edge = new int[][] { { 0, 1, 5 },
+//                { 0, 2, 2 }, {1,2,-10}};
+//
+//        int V=3;
+//        int E=3;
         int src=0;
 
         int[] arr=shortestPath(edge,V,E,src);

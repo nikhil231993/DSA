@@ -15,6 +15,7 @@ public class G28ShortestPathUGActualWeightsSelf {
     public static void main(String[] args) {
         int V = 9, E= 10;
         //Try negative weight and see what happens
+        //In case of negative loop it will go as a negative cycle and will be infinit loop
         int[][] edges=new int[][]{{0,1,2},{0,3,1},{3,4,2},{4 ,5,1}
 ,{5, 6,6},{1,2,3},{2,6,4},{6,7,1},{7,8,1},{6,8,4}};
         int src=0;

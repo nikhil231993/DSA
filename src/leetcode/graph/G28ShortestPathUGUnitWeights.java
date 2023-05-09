@@ -7,16 +7,15 @@ public class G28ShortestPathUGUnitWeights {
 
         //IMP: we can find the shortest path for undirected unit weights with BFS as the first path
         // guarantees it is the shortest path as it goes level by level
-        //1. We can do without visited array where we do not have to check the weights
-        //2. BFS with visited array as we are not coming back to that node and shortest path will be taken
+        //Method 1. We can do without visited array where we do not have to check the weights
+        //Method 2. BFS with visited array as we are not coming back to that node and shortest path will be already taken
 
         //If we change src to which does not have adj nodes all will be -1 that is not reachable
         //Try changing V to 10 and src to 9 as none of the nodes are reachable it will return -1 for all vertexes
 
         //Below is using 1.
         int V = 9, E= 10;
-        int[][] edges=new int[][]{{0,1},{0,3},{3,4},{4 ,5}
-,{5, 6},{1,2},{2,6},{6,7},{7,8},{6,8}};
+        int[][] edges=new int[][]{{0,1},{0,3},{3,4},{4 ,5},{5, 6},{1,2},{2,6},{6,7},{7,8},{6,8}};
         int src=0;
 
         //Creating Adjacency List
