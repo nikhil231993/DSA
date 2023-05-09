@@ -6,12 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G26AlienDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G26AlienDictionary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G27ShortedtPathDAG.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G27ShortestPathDAG.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G27ShortestPathDAG.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G27ShortestPathDAGWithVisitedUnitWeightsSelf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G27ShortestPathDAGWithVisitedUnitWeightsSelf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G28ShortestPathUGActualWeightsSelf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G28ShortestPathUGActualWeightsSelf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G32DijkstraAlgoDGWeightSelf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G32DijkstraAlgoDGWeightSelf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G27ShortestPathDAGWithVisitedUnitWeightsSelf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G27ShortestPathDAGWithVisitedUnitWeightsSelfBFS.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +61,7 @@
       <recent name="leetcode.binarysearchtree" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.G27ShortestPathDAG">
+  <component name="RunManager" selected="Application.G27ShortestPathDAGWithVisitedUnitWeightsSelfBFS">
     <configuration name="BinomialCoefficient" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -107,8 +103,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="G27ShortestPathDAGWithVisitedUnitWeightsSelf" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G27ShortestPathDAGWithVisitedUnitWeightsSelf" />
+    <configuration name="G27ShortestPathDAGWithVisitedUnitWeightsSelfBFS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G27ShortestPathDAGWithVisitedUnitWeightsSelfBFS" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -148,9 +144,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.G27ShortestPathDAGWithVisitedUnitWeightsSelfBFS" />
         <item itemvalue="Application.G27ShortestPathDAG" />
         <item itemvalue="Application.G27ShortestPathDAG" />
-        <item itemvalue="Application.G27ShortestPathDAGWithVisitedUnitWeightsSelf" />
         <item itemvalue="Application.G32DijkstraAlgoDGWeightSelf" />
         <item itemvalue="Application.G28ShortestPathUGActualWeightsSelf" />
       </list>

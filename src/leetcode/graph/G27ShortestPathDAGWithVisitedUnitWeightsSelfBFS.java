@@ -2,11 +2,16 @@ package leetcode.graph;
 
 import java.util.*;
 
-public class G27ShortestPathDAGWithVisitedUnitWeightsSelf {
+public class G27ShortestPathDAGWithVisitedUnitWeightsSelfBFS {
 
 	public static void main(String[] args) {
 
-		//Below is with normal BFS
+		//Below is with normal BFS and it works as beacuse it we reach a node first time it will shortes path with unit weights
+		//but if the weight varies then we cannot use normal BFS with visited array
+		//but if we remove visisted array then it will work only in case of graphs withoiut negative weights.
+		//If negative weights are there and directed graph then it will work
+		//If negative weights are there with UG then it will not work
+
 		int V = 9, E = 10;
 		int[][] edges = new int[][]{{0, 1}, {0, 3}, {3, 4}, {4, 5}
 				, {5, 6}, {1, 2}, {2, 6}, {6, 7}, {7, 8}, {6, 8}};
