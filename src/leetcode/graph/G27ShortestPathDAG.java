@@ -16,27 +16,30 @@ class PairG27 {
 }
 public class G27ShortestPathDAG {
 
+
+	//IMP:Why toposort works?
+	//1.we go from one node to another node in an order which guarantees that previous node is processed and has shortest distance
+	//Dijkstra(ElogV) will also work to find shortest distance but it takes more time that toposort(V+E)
+	//2.Dijkstra algo is necessary for graphs which contains cycles because they can't be topologically sorted.
+	//3.Toposort works with negative weights in a DAG
 	public static void main(String[] args) {
+
 		// Below is with weights
 		int[][] edge = new int[][] { { 0, 1, 2 }, { 0, 4, 1 }, { 4, 5, 4 }, { 4, 2, 2 }, { 1, 2, 3 }, { 2, 3, 6 },
 				{ 5, 3, 1 } };
-//		int[][] edge = new int[][] { { 6, 4, 2 }, { 4, 0, 3 }, { 0, 1, 2 }, { 1, 3, 1 }, { 6, 5, 3 }, { 5, 4, 1 },
-//				{ 4, 2, 1 }, { 2, 3, 1 } };
-				
+		//int[][] edge = new int[][] { { 6, 4, 2 }, { 4, 0, 3 }, { 0, 1, 2 }, { 1, 3, 1 }, { 6, 5, 3 }, { 5, 4, 1 },
+		//{ 4, 2, 1 }, { 2, 3, 1 } };
+
 		// Below is with unit weights
-//		int[][] edge = new int[][] { { 0, 1, 1 }, { 0, 4, 1 }, { 4, 5, 1 }, { 4, 2, 1 }, { 1, 2, 1 }, { 2, 3, 1 },
-//				{ 5, 3, 1 } };
+		//int[][] edge = new int[][] { { 0, 1, 1 }, { 0, 4, 1 }, { 4, 5, 1 }, { 4, 2, 1 }, { 1, 2, 1 }, { 2, 3, 1 },
+		//{ 5, 3, 1 } };
 
 		int V = 6;
 		int E = 7;
-
-		//Try changing the source as the stack top will not be actual src everytime. It can vary
-		// based on interviewer
+		
 		int src = 0;
 
 		// Convert matrix to adjList;
-		//It works for weighted, unweighted and negative weights also as there is no backward cycle
-		//but in case of undirected graph negative weights does not work as there will infinite loop
 		
 		List<List<PairG27>> adjList=new ArrayList();
 		

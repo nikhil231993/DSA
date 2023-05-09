@@ -5,6 +5,8 @@ import java.util.*;
 public class G27ShortestPathDAGWithVisitedUnitWeightsSelf {
 
 	public static void main(String[] args) {
+
+		//Below is with normal BFS
 		int V = 9, E = 10;
 		int[][] edges = new int[][]{{0, 1}, {0, 3}, {3, 4}, {4, 5}
 				, {5, 6}, {1, 2}, {2, 6}, {6, 7}, {7, 8}, {6, 8}};

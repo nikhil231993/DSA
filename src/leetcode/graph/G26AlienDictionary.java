@@ -19,7 +19,7 @@ public class G26AlienDictionary {
                 "cab",
                "cad"};
         int n=words.length;
-        int k=4;
+        int k=4;//Try with 5
         //int k=26;
         //Above k is used if we are given random digits order and the first 4-5 digits
         //If the value of k is 6 then it will be befdac where e can come at any place
@@ -27,6 +27,13 @@ public class G26AlienDictionary {
         //alphabets toposort and then find only characters we need https://leetcode.com/discuss/interview-question/248131/Microsoft-Interview-(round-1)-Alien-Dictionary
         String s=alienDictionary(words,n,k);
         System.out.println(s);
+
+        //Time Complexity: O(N*len)+O(K+E), where N is the number of words in the dictionary,
+        // ‘len’ is the length up to the index where the first inequality occurs, K = no. of nodes, and E = no. of edges.
+        //
+        //Space Complexity: O(K) + O(K)+O(K)+O(K) ~ O(4K), O(K) for the indegree array,
+        // and O(K) for the queue data structure used in BFS(where K = no.of nodes),
+        // O(K) for the answer array and O(K) for the adjacency list used in the algorithm.
     }
 
     private static String alienDictionary(String[] words, int n, int k) {
