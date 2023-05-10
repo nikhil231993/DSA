@@ -9,7 +9,6 @@ class PairG40{
     int node;
     long distance;
 
-
     public PairG40(int node,long distance){
         this.node=node;
         this.distance=distance;

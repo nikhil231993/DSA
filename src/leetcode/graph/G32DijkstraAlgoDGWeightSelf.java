@@ -10,18 +10,18 @@ public class G32DijkstraAlgoDGWeightSelf {
 //        it's fast time complexity.
 //        https://stackoverflow.com/questions/13159337/why-doesnt-dijkstras-algorithm-work-for-negative-weight-edges
         //Try changing one weight to -be and try
-        int[][] edge = new int[][] { { 0, 2, 4 },
-                { 0, 1, 4 }, {1,2,2},{ 2, 3, 3 }, { 2, 4, 1 },
-                { 3, 5, 2 }, { 2, 5, 6 }, { 4, 5, 3 } };
-
-        int V=6;
-        int E=8;
-
-//        int[][] edge = new int[][] { { 0, 1, 5 },
-//                { 0, 2, 2 }, {1,2,-10}};
+//        int[][] edge = new int[][] { { 0, 2, 4 },
+//                { 0, 1, 4 }, {1,2,2},{ 2, 3, 3 }, { 2, 4, 1 },
+//                { 3, 5, 2 }, { 2, 5, 6 }, { 4, 5, 3 } };
 //
-//        int V=3;
-//        int E=3;
+//        int V=6;
+//        int E=8;
+
+        int[][] edge = new int[][] { { 0, 1, 5 },
+                { 0, 2, 6 }, {2,1,-3},{0,3,7},{3,2,-3}};
+
+        int V=4;
+        int E=5;
         int src=0;
 
         int[] arr=shortestPath(edge,V,E,src);
@@ -70,18 +70,15 @@ public class G32DijkstraAlgoDGWeightSelf {
             Integer node=q.peek().node;
             Integer weight=q.peek().weight;
             q.poll();
-            if(visited[node]==1) continue;;
+            if(visited[node]==1) continue;
 
             visited[node]=1;
 
             for(PairG32 vertex:adjList.get(node)) {
-//                if (visited[vertex.node] == 0) {
-                    if (dist[vertex.node] > dist[node] + vertex.weight) {
-//                        visited[vertex.node] = 1;
-                        dist[vertex.node] = dist[node] + vertex.weight;
+                    if (dist[vertex.node] > weight + vertex.weight) {
+                        dist[vertex.node] = weight + vertex.weight;
                         q.offer(new PairG32(vertex.node, dist[vertex.node]));
                     }
-//                }
             }
         }
 
@@ -115,8 +112,8 @@ public class G32DijkstraAlgoDGWeightSelf {
             q.poll();
 
             for(PairG32 vertex:adjList.get(node)){
-                if(dist[vertex.node]>dist[node]+vertex.weight){
-                    dist[vertex.node]=dist[node]+vertex.weight;
+                if(dist[vertex.node]>weight+vertex.weight){
+                    dist[vertex.node]=weight+vertex.weight;
                     q.offer(new PairG32(vertex.node,dist[vertex.node]));
                 }
             }
