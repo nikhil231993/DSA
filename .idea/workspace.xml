@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/graph/G37MaxPathMatrixSelf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/graph/G39MinimumMultiplicationToReachEnd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/graph/G40NumberOfWaysToReachDestination.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G35PrintShortestPathUG.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G35PrintShortestPathUG.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G36BinaryMaze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G36BinaryMaze.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G37LC1631AbsoluteDIffPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G37LC1631AbsoluteDIffPath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G38CheapestFlight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G38LC787CheapestFlight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +60,7 @@
       <recent name="leetcode.binarysearchtree" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.G39MinimumMultiplicationToReachEnd">
+  <component name="RunManager" selected="Application.G40NumberOfWaysToReachDestination">
     <configuration name="BinomialCoefficient" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -84,19 +78,6 @@
     </configuration>
     <configuration name="G27ShortestPathDAG" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode.graph.G27ShortestPathDAG" />
-      <module name="DSA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.graph.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="G37MaxPathMatrixSelf" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G37MaxPathMatrixSelf" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -147,6 +128,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="G40NumberOfWaysToReachDestination" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G40NumberOfWaysToReachDestination" />
+      <module name="DSA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.graph.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode.graph.Test" />
       <module name="DSA" />
@@ -162,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.G40NumberOfWaysToReachDestination" />
         <item itemvalue="Application.G39MinimumMultiplicationToReachEnd" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.G38LC787CheapestFlight" />
         <item itemvalue="Application.G38CheapestFlight" />
-        <item itemvalue="Application.G37MaxPathMatrixSelf" />
       </list>
     </recent_temporary>
   </component>
