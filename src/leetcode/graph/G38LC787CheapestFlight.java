@@ -22,17 +22,21 @@ class PairG38{
         this.distance=distance;
     }
 }
-public class G38CheapestFlight {
+public class G38LC787CheapestFlight {
 
     public static void main(String[] args) {
         int[][] flights=new int[][]{{0,1,100},{1,2,100},{0,2,500}};
+//        int[][] flights=new int[][]{{0,1,5},{1,2,5},{0,3,2},{3,1,2},{1,4,1},{4,2,1}};
+//        int V=5;
+//        int E=6;
         int V=3;
-        int E=3;
+        int E=5;
         int src=0;
         int dest=2;
         int k=1;
+//        int k=2;
 
-        System.out.println(shortestPath(flights,V,E,src,dest,k));
+        System.out.println("Shortest distance with required stop is :"+shortestPath(flights,V,E,src,dest,k));
     }
 
     private static int shortestPath(int[][] flights, int V, int E,int src, int dest, int k) {
@@ -51,7 +55,7 @@ public class G38CheapestFlight {
         Arrays.fill(dist,(int)(1e9));
 
         dist[src]=0;
-
+        //Q because stop will be same at each level
         Queue<PairG38> q=new LinkedList<>();
         q.offer(new PairG38(0,src,0));
 
@@ -61,6 +65,7 @@ public class G38CheapestFlight {
             int distance=q.peek().distance;
             q.poll();
 
+            //we can break also after below condition as then we cannot have a solution to the question
             if(stop>k) continue;
             for(PairSrcDest vertex:adjList.get(node)){
                 int destination=vertex.dest;
@@ -73,6 +78,10 @@ public class G38CheapestFlight {
                 }
             }
         }
+
+        System.out.println("All other destination shortest distance is :");
+        for(Integer n : dist)
+            System.out.println(n);
 
         if(dist[dest]==(int)(1e9))
             return -1;

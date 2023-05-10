@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/leetcode/graph/G37MaxPathMatrixSelf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/graph/G39MinimumMultiplicationToReachEnd.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G32DijkstraAlgoDGWeightSelf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G32DijkstraAlgoDGWeightSelf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G32DijkstraAlgoUGWeight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G32DijkstraAlgoUGWeight.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G35PrintShortestPathUG.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G35PrintShortestPathUG.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G36BinaryMaze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G36BinaryMaze.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G37LC1631AbsoluteDIffPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G37LC1631AbsoluteDIffPath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G38CheapestFlight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G38LC787CheapestFlight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +66,7 @@
       <recent name="leetcode.binarysearchtree" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.G35PrintShortestPathUG">
+  <component name="RunManager" selected="Application.G39MinimumMultiplicationToReachEnd">
     <configuration name="BinomialCoefficient" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -91,8 +95,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="G27ShortestPathDAGWithVisitedUnitWeightsSelfBFS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G27ShortestPathDAGWithVisitedUnitWeightsSelfBFS" />
+    <configuration name="G37MaxPathMatrixSelf" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G37MaxPathMatrixSelf" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -104,8 +108,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="G28ShortestPathUGActualWeightsSelf" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G28ShortestPathUGActualWeightsSelf" />
+    <configuration name="G38CheapestFlight" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G38CheapestFlight" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -117,8 +121,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="G32DijkstraAlgoDGWeightSelf" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G32DijkstraAlgoDGWeightSelf" />
+    <configuration name="G38LC787CheapestFlight" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G38LC787CheapestFlight" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -130,8 +134,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="G32DijkstraAlgoUGWeight" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G32DijkstraAlgoUGWeight" />
+    <configuration name="G39MinimumMultiplicationToReachEnd" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G39MinimumMultiplicationToReachEnd" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -143,8 +147,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="G35PrintShortestPathUG" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G35PrintShortestPathUG" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.graph.Test" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -158,11 +162,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.G35PrintShortestPathUG" />
-        <item itemvalue="Application.G32DijkstraAlgoDGWeightSelf" />
-        <item itemvalue="Application.G32DijkstraAlgoUGWeight" />
-        <item itemvalue="Application.G28ShortestPathUGActualWeightsSelf" />
-        <item itemvalue="Application.G27ShortestPathDAGWithVisitedUnitWeightsSelfBFS" />
+        <item itemvalue="Application.G39MinimumMultiplicationToReachEnd" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.G38LC787CheapestFlight" />
+        <item itemvalue="Application.G38CheapestFlight" />
+        <item itemvalue="Application.G37MaxPathMatrixSelf" />
       </list>
     </recent_temporary>
   </component>
@@ -257,7 +261,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetcode/graph/G35PrintShortestPathUG.java</url>
-          <line>50</line>
+          <line>51</line>
           <option name="timeStamp" value="55" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

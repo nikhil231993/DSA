@@ -26,6 +26,7 @@ public class G35PrintShortestPathUG {
 
         List<Integer> pathList=new ArrayList<>();
         int variable=dest;
+        //at max this might be a linear graph
         while(path[variable]!=variable){
             pathList.add(variable);
             variable=path[variable];
@@ -75,9 +76,9 @@ public class G35PrintShortestPathUG {
             q.poll();
 
             for (PairG32 vertex:adjList.get(node)){
-                    if(dist[vertex.node]>dist[node]+vertex.weight){
+                    if(dist[vertex.node]>weight+vertex.weight){
                         parent[vertex.node]=node;
-                        dist[vertex.node]=dist[node]+vertex.weight;
+                        dist[vertex.node]=weight+vertex.weight;
                         q.offer(new PairG32(vertex.node, dist[vertex.node]));
                     }
             }

@@ -18,11 +18,15 @@ public class G36BinaryMaze {
 
     public static void main(String[] args) {
         int[][] grid=new int[][]{{1,1,1,1},{1,1,0,1},{1,1,1,1},{1,1,0,0},{1,0,0,1}};
-        int[] source=new int[]{0,1};
-        int[] dest=new int[]{2,2};
+        int[] source=new int[]{0,0};
+        int[] dest=new int[]{1,1};
 
         int dist=shortestDistanceInMaze(grid,source,dest);
         System.out.println("Shortest Distance is: "+dist);
+
+        //Time Complexity: O( 4*N*M ) { N*M are the total cells, for each of which we also check 4 adjacent nodes for the shortest path length},
+        // Where N = No. of rows of the binary maze and M = No. of columns of the binary maze.
+        //Space Complexity: O( N*M ), Where N = No. of rows of the binary maze and M = No. of columns of the binary maze.
 
     }
 
@@ -30,7 +34,7 @@ public class G36BinaryMaze {
 
         int n=grid.length;
         int m=grid[0].length;
-    //First see if the source is same as destination then return 0 if yes
+        //First see if the source is same as destination then return 0 if yes
 
         if(source[0]==dest[0] && source[1]==dest[1]) return 0;
 
@@ -68,8 +72,8 @@ public class G36BinaryMaze {
 
                     if(nrow==dest[0]&& ncol==dest[1])
                         return dis+1;
-                    if(distance[nrow][ncol]> distance[row][col]+1){
-                        distance[nrow][ncol]=distance[row][col]+1;
+                    if(distance[nrow][ncol]> dis+1){
+                        distance[nrow][ncol]=dis+1;
                         q.offer(new PairG36(distance[nrow][ncol],nrow,ncol));
                     }
                 }

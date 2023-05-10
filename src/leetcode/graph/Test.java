@@ -6,7 +6,9 @@ import java.util.TreeSet;
 public class Test {
     public static void main(String[] args) {
 
-        System.out.println(1>>1);
+        System.out.println(6%100);
+
+//        System.out.println(1>>1);
 //        PriorityQueue<Integer> pq=new PriorityQueue<>((a,b)->b-a);
 //        pq.add(10);
 //        pq.add(2);
