@@ -21,19 +21,17 @@ public class G43SmallestDistanceNeighbours {
 		
 		
 // 		example 1
-		int n = 4;
-		int[][] edges = new int[][] { { 0, 1, 3 }, { 1, 2, 1 }, { 1, 3, 4 }, { 2, 3, 1 } };
-		int distanceThreshold = 4;
+//		int n = 4;
+//		int[][] edges = new int[][] { { 0, 1, 3 }, { 1, 2, 1 }, { 1, 3, 4 }, { 2, 3, 1 } };
+//		int distanceThreshold = 4;
 
 //		 example 2
-//		int[][] edges = new int[][] { { 0, 1, 2 }, { 0, 4, 8 }, { 1, 2, 3 }, { 1, 4, 2 }, { 2, 3, 1 }, { 3, 4, 1 } };
-//		int n = 5;
-//		int distanceThreshold = 2;
+		int[][] edges = new int[][] { { 0, 1, 2 }, { 0, 4, 8 }, { 1, 2, 3 }, { 1, 4, 2 }, { 2, 3, 1 }, { 3, 4, 1 } };
+		int n = 5;
+		int distanceThreshold = 2;
 
 		System.out.println(cityWithSmallestDistanceUsingDijkstra(n, edges, distanceThreshold));
 		System.out.println(cityWithSmallestDistance(n, edges, distanceThreshold));
-
-
 
 	}
 
@@ -45,15 +43,15 @@ public class G43SmallestDistanceNeighbours {
 		
 		// Creating Adjacency List:
 		List<List<PairG43>> adjList=new ArrayList<List<PairG43>>();
-		for(int i=0;i<n;i++) {
+		for(int i=0;i< n;i++) {
 			adjList.add(new ArrayList<PairG43>());
 		}
 		
-		for(int i=0;i<n;i++) {
+		for(int i=0;i< edges.length;i++) {
 			adjList.get(edges[i][0]).add(new PairG43(edges[i][1], edges[i][2]));
 			adjList.get(edges[i][1]).add(new PairG43(edges[i][0], edges[i][2]));	
 		}
-		
+
 		// In Dijkstra we have to just find the shortest distance between for all the
 		// nodes in a loop i.e., the only difference
 		for (int i = 0; i < n; i++) {
@@ -73,7 +71,7 @@ public class G43SmallestDistanceNeighbours {
 					int edW=vertex.dist;
 					if (distanceNode[v] > distance + edW) {
 						distanceNode[v] = distance + edW;
-						pq.offer(new PairG43(v, distanceNode[v]));
+						pq.offer(new PairG43(v, distance + edW));
 
 					}
 				}
@@ -84,8 +82,8 @@ public class G43SmallestDistanceNeighbours {
 
 //		System.out.println("Costing Matriz:");
 //
-//		for (int[] m : distList) {
-//			System.out.println(m[0] + "  " + m[1] + "  " + m[2] + "  " + m[3]);
+//		for (int[] m : costMatrix) {
+//			System.out.println(m[0] + "  " + m[1] + "  " + m[2] + "  " + m[3]+" "+m[4]);
 //			System.out.println();
 //		}
 
@@ -130,7 +128,7 @@ public class G43SmallestDistanceNeighbours {
 			costMatrix[u][v] = wt;
 			costMatrix[v][u] = wt;
 		}
-//		
+
 //		System.out.println("Print the matrix:");
 //
 //		for (int[] m : costMatrix) {
@@ -145,11 +143,11 @@ public class G43SmallestDistanceNeighbours {
 				}
 			}
 		}
-//
-//		System.out.println("After costing:");
-//
+
+		System.out.println("After costing:");
+
 //		for (int[] m : costMatrix) {
-//			System.out.println(m[0] + "  " + m[1] + "  " + m[2] + "  " + m[3]);
+//			System.out.println(m[0] + "  " + m[1] + "  " + m[2] + "  " + m[3]+" "+m[4]);
 //			System.out.println();
 //		}
 		

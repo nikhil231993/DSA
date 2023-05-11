@@ -115,7 +115,7 @@ public class G32DijkstraAlgoUGWeight {
 
             for(PairG32 vertex:adjList.get(node)){
                 if(dist[vertex.node]>weight+vertex.weight){
-                    dist[vertex.node]=weight+vertex.weight;
+                    dist[vertex.node]= +vertex.weight;
                     q.offer(new PairG32(vertex.node,dist[vertex.node]));
                 }
             }
