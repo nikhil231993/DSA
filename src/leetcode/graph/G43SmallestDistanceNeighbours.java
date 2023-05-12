@@ -42,7 +42,7 @@ public class G43SmallestDistanceNeighbours {
 		int[][] costMatrix = new int[n][n];
 		
 		// Creating Adjacency List:
-		List<List<PairG43>> adjList=new ArrayList<List<PairG43>>();
+		List<List<PairG43>> adjList=new ArrayList<>();
 		for(int i=0;i< n;i++) {
 			adjList.add(new ArrayList<PairG43>());
 		}

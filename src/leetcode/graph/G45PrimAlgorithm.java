@@ -59,7 +59,9 @@ public class G45PrimAlgorithm {
 
         PriorityQueue<PairG45> pq=new PriorityQueue<>((a,b)->(a.weight-b.weight));
         pq.add(new PairG45(0,src,-1));
+        //E
         while(!pq.isEmpty()){
+            //logE
             int weight=pq.peek().weight;
             int node=pq.peek().node;
             int parentNode=pq.peek().parent;
@@ -71,12 +73,13 @@ public class G45PrimAlgorithm {
 
             parent[node]=parentNode;
             key[node]=weight;
-
+            //E
             for(PairNodeWeight vertex:adjList.get(node)){
                 int weigh=vertex.weight;
                 int vertexAdj=vertex.node;
 
                 if(visited[vertexAdj]==0){
+                    //logE
                     pq.offer(new PairG45(weigh,vertexAdj,node));
                 }
             }
@@ -91,5 +94,7 @@ public class G45PrimAlgorithm {
         for(int num:key)
             sum+=num;
         return sum;
+        //TC:ElogE+ElogE
+        //SC:O(N) key+O(N) parent +O(2E) edges +O(N) visited
     }
 }
