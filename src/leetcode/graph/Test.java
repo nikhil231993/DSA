@@ -1,12 +1,22 @@
 package leetcode.graph;
 
+import java.util.Arrays;
 import java.util.PriorityQueue;
 import java.util.TreeSet;
 
 public class Test {
     public static void main(String[] args) {
+        int[] orig=new int[10];
+        Arrays.fill(orig,-1);
 
-        System.out.println(6%100);
+        int[] copy=orig;
+
+        copy[0]=0;
+
+        for(int i=0;i<10;i++)
+            System.out.println(orig[i]);
+
+//        System.out.println(6%100);
 
 //        System.out.println(1>>1);
 //        PriorityQueue<Integer> pq=new PriorityQueue<>((a,b)->b-a);

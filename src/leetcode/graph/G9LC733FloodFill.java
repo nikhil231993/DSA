@@ -17,39 +17,38 @@ public class G9LC733FloodFill {
         int[] x_axis=new int[]{1,0,-1,0};
         int[] y_axis=new int[]{0,-1,0,1};
 
-
-        dfsTraversal(image,ans,n,m,oldColor,sr,sc,color,x_axis,y_axis);
-
-        System.out.println("Using dfs");
-
-        for(int i=0;i<n;i++){
-            for(int j=0;j<m;j++){
-                System.out.print(ans[i][j]);
-            }
-            System.out.println();
-        }
+//        dfsTraversal(image,ans,n,m,oldColor,sr,sc,color,x_axis,y_axis);
+//
+//        System.out.println("Using dfs");
+//
+//        for(int i=0;i<n;i++){
+//            for(int j=0;j<m;j++){
+//                System.out.print(ans[i][j]);
+//            }
+//            System.out.println();
+//        }
 
         System.out.println("Using bfs");
 
         //By using BFS
         int[][] ans_bfs=image;
-        bfs(image,ans,sr,sc,color,oldColor,x_axis,y_axis,n,m);
+        bfs(image,ans_bfs,sr,sc,color,oldColor,x_axis,y_axis,n,m);
         for(int i=0;i<n;i++){
             for(int j=0;j<m;j++){
-                System.out.print(image[i][j]);
+                System.out.print(ans_bfs[i][j]);
             }
             System.out.println();
         }
-        System.out.println("Using recursion");
-        //By using Recursion
-        recursion(image, oldColor, n, m, sr, sc, color);
-
-        for(int i=0;i<n;i++){
-            for(int j=0;j<m;j++){
-                System.out.print(image[i][j]);
-            }
-            System.out.println();
-        }
+//        System.out.println("Using recursion");
+//        //By using Recursion
+//        recursion(image, oldColor, n, m, sr, sc, color);
+//
+//        for(int i=0;i<n;i++){
+//            for(int j=0;j<m;j++){
+//                System.out.print(image[i][j]);
+//            }
+//            System.out.println();
+//        }
     }
 
     private static void bfs(int[][] image, int[][] ans, int sr, int sc, int color, int oldColor, int[] xAxis, int[] yAxis, int n, int m) {
@@ -62,10 +61,10 @@ public class G9LC733FloodFill {
 
         int first=q.peek().first;
         int second=q.peek().second;
+        q.poll();
         for(int i=0;i<4;i++) {
             int new_row = first + xAxis[i];
             int new_col = second + yAxis[i];
-            q.poll();
             if(new_col>=0 && new_col<m && new_row>=0 && new_row<n && image[new_row][new_col]==oldColor && ans[new_row][new_col]!=color) {
                 ans[new_row][new_col]=color;
             q.offer(new Pair(new_row,new_col));

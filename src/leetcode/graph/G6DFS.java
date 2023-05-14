@@ -24,7 +24,6 @@ public class G6DFS {
         //For DG
         //TC:O(N+E) for 1 component
         //TC:O(N)+O(N+E) for multiple components
-
     }
 
     private static void dfs(List<List<Integer>> arr, int n, int m) {
