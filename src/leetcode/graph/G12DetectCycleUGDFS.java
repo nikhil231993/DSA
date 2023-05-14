@@ -64,9 +64,6 @@ public class G12DetectCycleUGDFS {
                 }
             }
         }
-        //SC:o(n) visited + o(n) auxiliary space worst case in case of skewed graph
-        //TC:O(N+2E) (dfs traversal)+O(n) for the for loop but it does not call dfs for each of them
-        //G12 18:00
         return false;
     }
 
@@ -82,6 +79,9 @@ public class G12DetectCycleUGDFS {
                 return true;
             }
         }
+        //SC:o(n) visited + o(n) auxiliary space worst case in case of skewed graph
+        //TC:O(N+2E) (dfs traversal)+O(n) for the for loop but it does not call dfs for each of them
+        //G12 18:00
         return false;
     }
 

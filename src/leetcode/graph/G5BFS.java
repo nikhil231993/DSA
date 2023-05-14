@@ -49,6 +49,7 @@ public class G5BFS {
 
         //SC:O(3N) for queue, bfs list and visited array (not using adjacency list as it is given)
         //TC:O(N)outer for loop+O(N+2E) for while loop and the for loop inside it runs for all the degrees of the node
+        //G7 12:53
     }
 
     private static void adjacencyList(List<List<Integer>> arr,int n, int m, Scanner scan) {
