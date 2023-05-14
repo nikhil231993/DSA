@@ -16,7 +16,6 @@ public class G17LC785BipartiteBFS {
         for(int i=0;i<n;i++)
             adjList.add(new ArrayList());
 
-
         for(int i=0;i<n;i++){
             for(int j=0;j<graph[i].length;j++){
                 adjList.get(i).add(graph[i][j]);

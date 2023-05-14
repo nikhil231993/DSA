@@ -48,7 +48,7 @@ public class G23DetectCycleUsingTopoSortBFS {
         //we don't need list to store toposort instead we can have counter inside while loop and see
         //if it is equal to the no of nodes. If equal then there are no cycle but if not then there is a cycle.
         return list.size()<n;
-        //SC:O(N) queue+O(N) indegree +O(N)toposort
+        //SC:O(N) queue+O(N) indegree +O(N) toposort
         //TC:O(N+E)
     }
 
@@ -63,7 +63,6 @@ public class G23DetectCycleUsingTopoSortBFS {
             int u=scan.nextInt();
             int v=scan.nextInt();
             arr.get(u).add(v);
-
 
         }
 
