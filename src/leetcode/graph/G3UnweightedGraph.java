@@ -46,7 +46,7 @@ public class G3UnweightedGraph {
 
     private static void adjacencyMatrix() {
         Scanner scan=new Scanner(System.in);
-        System.out.println("Enter no of edges: ");
+        System.out.println("Enter no of vertex: ");
         int n=scan.nextInt();
         System.out.println("Enter no of edges: ");
         int m=scan.nextInt();

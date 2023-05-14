@@ -2,7 +2,7 @@ package leetcode.graph;
 
 import java.util.*;
 
-public class G0MatrixToList {
+public class G0Matrixbfsdfs {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the no of Vertices");
@@ -15,34 +15,47 @@ public class G0MatrixToList {
         convertMatrixToList(matrix, adjList, n, m);
         List<Integer> bfs = new ArrayList<>();
         System.out.println("BFS Traversal");
-        System.out.println(bfs(matrix, bfs, 1));
-        List<Integer> dfs = new ArrayList<>();
         int[] visited = new int[n+1];
+        for (int i =1;i<=n;i++) {
+            if (visited[i] == 0) {
+                bfs(matrix, bfs, i, visited,n);
+            }
+        }
+        System.out.println(bfs);
+        Arrays.fill(visited, 0);
+        List<Integer> dfs = new ArrayList<>();
         System.out.println("DFS Traversal");
-        dfs(matrix, dfs, 1, visited);
+        //N
+        for (int i =1;i<=n;i++) {
+            if (visited[i] == 0) {
+                //N+2E
+                dfs(matrix, dfs, i, visited,n);
+            }
+        }
         System.out.println(dfs);
     }
 
-    private static void dfs(int[][] matrix, List<Integer> dfs, int node, int[] visited) {
+    private static void dfs(int[][] matrix, List<Integer> dfs, int node, int[] visited,int V) {
         visited[node] = 1;
         dfs.add(node);
-        for (int i = 1;i<matrix.length;i++) {
+        for (int i = 1;i<=V;i++) {
             if (matrix[node][i] == 1 && visited[i] == 0) {
-                dfs(matrix, dfs , i, visited);
+                dfs(matrix, dfs , i, visited,V);
             }
         }
+        //TC:O(N*N)
+        //SC:O(N) visited array+O(N) recursion stack
     }
 
-    private static List<Integer> bfs(int[][] matrix, List<Integer> bfs, int node) {
+    private static List<Integer> bfs(int[][] matrix, List<Integer> bfs, int node, int[] visited,int V) {
         int n = matrix.length;
         Queue<Integer> queue = new LinkedList<>();
-        int[] visited = new int[n];
         queue.add(node);
         visited[node] =1;
         while (!queue.isEmpty()) {
             int curNode = queue.poll();
             bfs.add(curNode);
-            for (int i =1;i<n; i++) {
+            for (int i =1;i<=V; i++) {
                 if (matrix[curNode][i] == 1 && visited[i] == 0) {
                     visited[i] = 1;
                     queue.add(i);
@@ -50,6 +63,9 @@ public class G0MatrixToList {
             }
         }
         return bfs;
+
+        //TC:O(N*N)
+        //SC:O(N) visited array+O(N) result array
     }
 
     private static void convertMatrixToList(int[][] matrix, List<List<Integer>> adjList, int n, int m) {
