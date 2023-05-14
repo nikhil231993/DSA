@@ -5,12 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/graph/G46UnionByRank.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/graph/G46UnionBySize.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/graph/G47KrushkalAlgorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/graph/G0MatrixToList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/graph/G48NumberOfProvincesUsingDisjointSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/graph/G49LC1319NoOfOperations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/graph/G50LC721AccountsMerge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/graph/G51NumberOfIslands2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/graph/G52LC827MakingLargeIsland.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/graph/G53LC947Stones.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/graph/G54StringConnectedComponents.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/graph/G55LC1192BridgesInGraph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/graph/G56ArticulationPoint.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G43SmallestDistanceNeighbours.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G43SmallestDistanceNeighbours.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G45PrimAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G45PrimAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G16PremiumNumberOfDistinctIslands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G16PremiumNumberOfDistinctIslands.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +70,7 @@
       <recent name="leetcode.binarysearchtree" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.G47KrushkalAlgorithm">
+  <component name="RunManager" selected="Application.G56ArticulationPoint">
     <configuration name="BinomialCoefficient" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -93,8 +99,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="G43SmallestDistanceNeighbours" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G43SmallestDistanceNeighbours" />
+    <configuration name="G52MakingLargeIsland" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G52MakingLargeIsland" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -106,8 +112,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="G45PrimAlgorithm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G45PrimAlgorithm" />
+    <configuration name="G53LC947Stones" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G53LC947Stones" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -119,8 +125,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="G46UnionByRank" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G46UnionByRank" />
+    <configuration name="G54StringConnectedComponents" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G54StringConnectedComponents" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -132,8 +138,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="G46UnionBySize" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G46UnionBySize" />
+    <configuration name="G55LC1192BridgesInGraph" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G55LC1192BridgesInGraph" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -145,8 +151,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="G47KrushkalAlgorithm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G47KrushkalAlgorithm" />
+    <configuration name="G56ArticulationPoint" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G56ArticulationPoint" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -160,11 +166,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.G47KrushkalAlgorithm" />
-        <item itemvalue="Application.G46UnionBySize" />
-        <item itemvalue="Application.G46UnionByRank" />
-        <item itemvalue="Application.G45PrimAlgorithm" />
-        <item itemvalue="Application.G43SmallestDistanceNeighbours" />
+        <item itemvalue="Application.G56ArticulationPoint" />
+        <item itemvalue="Application.G55LC1192BridgesInGraph" />
+        <item itemvalue="Application.G54StringConnectedComponents" />
+        <item itemvalue="Application.G53LC947Stones" />
+        <item itemvalue="Application.G52MakingLargeIsland" />
       </list>
     </recent_temporary>
   </component>
@@ -286,6 +292,21 @@
           <url>file://$PROJECT_DIR$/src/leetcode/graph/G47KrushkalAlgorithm.java</url>
           <line>55</line>
           <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/graph/G50LC721AccountsMerge.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/graph/G50LC721AccountsMerge.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/graph/G50LC721AccountsMerge.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="86" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/leetcode/binarytree/Test.java</url>

@@ -52,7 +52,7 @@ public class G16PremiumNumberOfDistinctIslands {
             int r=q.peek().first;
             int c=q.peek().second;
             q.poll();
-            list.add(toString(row-ro,col-co));
+            list.add(toString(r-ro,c-co));
 
             for(int k=0;k<4;k++){
                 int nrow=r+xaxis[k];
