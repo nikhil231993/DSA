@@ -36,7 +36,7 @@ public class G27ShortestPathDAG {
 
 		int V = 6;
 		int E = 7;
-		int src = 0;
+		int src = 0;//we can take any node as source and it will work as for not reachable nodes it will give 1e9
 
 		// Convert matrix to adjList;
 		
@@ -71,7 +71,7 @@ public class G27ShortestPathDAG {
 		// Time Complexity: O(N+M) {for the topological sort} + O(N+M) {for relaxation
 		// of vertices, each node and its adjacent nodes get traversed} ~ O(N+M).
 		// Where N= number of vertices and M= number of edges.
-		// O( N) {for the stack storing the topological sort} + O(N) {for storing the
+		// Space Complexity: O( N) {for the stack storing the topological sort} + O(N) {for storing the
 		// shortest distance for each node} + O(N) {for the visited array} + O( N+2M)
 		// {for the adjacency list} ~ O(N+M) .
 		// Where N= number of vertices and M= number of edges.
@@ -89,7 +89,7 @@ public class G27ShortestPathDAG {
 			}
 		}
 
-		// to set distance to -1 for which we cannot calcultae
+		// to set distance to -1 for which we cannot calculate
 		for (int i = 0; i < v; i++) {
 			if (dist[i] == 1e9)
 				dist[i] = -1;

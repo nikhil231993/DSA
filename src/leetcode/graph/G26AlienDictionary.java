@@ -19,7 +19,7 @@ public class G26AlienDictionary {
                 "cab",
                "cad"};
         int n=words.length;
-        int k=4;//Try with 5
+        int k=26;//Try with 5
         //int k=26;
         //Above k is used if we are given random digits order and the first 4-5 digits
         //If the value of k is 6 then it will be befdac where e can come at any place

@@ -74,7 +74,6 @@ public class G35PrintShortestPathUG {
             Integer node=q.peek().node;
             Integer weight=q.peek().weight;
             q.poll();
-
             for (PairG32 vertex:adjList.get(node)){
                     if(dist[vertex.node]>weight+vertex.weight){
                         parent[vertex.node]=node;

@@ -6,7 +6,8 @@ public class G27ShortestPathDAGWithVisitedUnitWeightsSelfBFS {
 
 	public static void main(String[] args) {
 
-		//Below is with normal BFS and it works as because it we reach a node first time it will shortest path with unit weights
+		//Below is with normal BFS and it works because if we reach a node first time it will shortest path with
+		//unit weights
 		//but if the weight varies then we cannot use normal BFS with visited array
 		//but if we remove visited array then it will work only in case of graphs without negative weights.
 		//If negative weights are there and directed graph then it will work
@@ -38,6 +39,7 @@ public class G27ShortestPathDAGWithVisitedUnitWeightsSelfBFS {
 
 		int[] visited=new int[V];
 		int[] dist=new int[V];
+		Arrays.fill(dist,(int)(1e9));
 
 		dist[src]=0;
 		visited[src]=1;

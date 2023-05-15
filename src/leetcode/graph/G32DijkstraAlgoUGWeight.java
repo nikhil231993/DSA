@@ -18,6 +18,7 @@ public class G32DijkstraAlgoUGWeight {
                 { 0, 1, 4 }, {1,2,2},{ 2, 3, 3 }, { 2, 4, 1 },
                 { 3, 5, 2 }, { 2, 5, 6 }, { 4, 5, 3 } };
         // Dijkstra not applicable for graph with negative weights and negative cycle
+
         // Below we can see in comments of the video:
         //Ques:I just had one doubt will the T.C of the priority queue method be O(ElogE) instead of O(ElogV)
         // as there can be more than one instance of a node in the priority queue whereas in the treeset
@@ -115,7 +116,7 @@ public class G32DijkstraAlgoUGWeight {
 
             for(PairG32 vertex:adjList.get(node)){
                 if(dist[vertex.node]>weight+vertex.weight){
-                    dist[vertex.node]= +vertex.weight;
+                    dist[vertex.node]= weight+vertex.weight;
                     q.offer(new PairG32(vertex.node,dist[vertex.node]));
                 }
             }
