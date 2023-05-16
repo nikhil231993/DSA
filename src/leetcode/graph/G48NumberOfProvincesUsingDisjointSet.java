@@ -12,7 +12,7 @@ public class G48NumberOfProvincesUsingDisjointSet {
         int rowLength=matrix.length;
         int colLength= matrix[0].length;
         int count=0;
-        //Step 1:Parse through the matrix and find the union of each cell wheer values are 1
+        //Step 1:Parse through the matrix and find the union of each cell where values are 1
 
             DisjointSetBySize ds=new DisjointSetBySize(n);
             for(int i=0;i<rowLength;i++){
@@ -29,7 +29,7 @@ public class G48NumberOfProvincesUsingDisjointSet {
                     }
             }
             return count;
-            //TC:o(n*m *4 *alpha) for matrix +O(n) no of nodes
+            //TC:o(n*m *4 *alpha) for matrix in step 1 +O(n) no of nodes for step 2
             //SC:O(N) parent+O(N) size array
         }
 }

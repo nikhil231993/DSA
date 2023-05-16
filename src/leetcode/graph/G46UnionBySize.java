@@ -61,7 +61,7 @@ public class G46UnionBySize {
         else
             System.out.println("Not same");
 
-        //Tc:log(4 alpha) for findParent +log(4 alpha) for union
+        //Tc:O(4 alpha) for findParent +O(4 alpha) for union
         //SC:O(n) rank and +o(N) parent
     }
 }

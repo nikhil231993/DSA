@@ -1,11 +1,10 @@
 package leetcode.graph;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 import java.util.Stack;
 
-public class G54StringConnectedComponents {
+public class G54StronglyConnectedComponents {
 
     public static void main(String[] args) {
         Scanner scan=new Scanner(System.in);
@@ -39,7 +38,7 @@ public class G54StringConnectedComponents {
             }
         }
 
-        //Step 3: Start parsing through stack in taking each element out of it
+        //Step 3: Start parsing through stack by taking each element out of it
 
         int[] newVisited=new int[v];
         int count=0;

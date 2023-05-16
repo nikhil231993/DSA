@@ -99,7 +99,6 @@ public class G32DijkstraAlgoUGWeight {
             adjList.get(edge[i][1]).add(new PairG32(edge[i][0],edge[i][2]));
         }
 
-
         Queue<PairG32> q=new PriorityQueue<>((a,b)->a.weight-b.weight);
         int[] dist=new int[V];
 
@@ -123,8 +122,5 @@ public class G32DijkstraAlgoUGWeight {
         }
 
         return dist;
-
-
-
     }
 }

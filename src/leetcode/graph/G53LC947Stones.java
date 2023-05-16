@@ -41,5 +41,12 @@ public class G53LC947Stones {
             }
         }
         return n-count;
+
+        //Time Complexity: O(N), where N = total no. of stones.
+        //Here we have just traversed the given stones array several times. And inside those loops, every operation
+        //is apparently taking constant time. So, the time complexity is only the time of traversal of the array.
+
+        //Space Complexity: O(2* (max row index + max column index)) for the parent and size array inside the Disjoint Set
+        // data structure.
     }
 }
