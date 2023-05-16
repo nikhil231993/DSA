@@ -64,7 +64,7 @@ public class G14LC130SurroundedRegions {
         }
     }
 
-    static void dfs(int row, int col,int vis[][],
+   public static void dfs(int row, int col,int vis[][],
                     char mat[][], int delrow[], int delcol[]) {
         vis[row][col] = 1;
         int n = mat.length;
