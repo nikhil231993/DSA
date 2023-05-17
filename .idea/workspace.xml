@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/graph/medium/G46UnionByRank.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/graph/medium/G46UnionBySize.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/graph/medium/LC1162AsFarAsLand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/graph/medium/LC1254NumberOFClosedIslands.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/graph/medium/LC959RegionCutBySlashes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/recursion/Re2PrintLinearlyFrom1toN.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/recursion/Re2PrintLinearlyFromNTo1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/recursion/Re2PrintNameNTImesUsingRecursion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/recursion/Re3Factorial.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/recursion/Re3SumOfFirstNNumbers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/recursion/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G14LC130SurroundedRegions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G14LC130SurroundedRegions.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,13 +60,14 @@
       <recent name="$PROJECT_DIR$/src/leetcode/binarysearchtree" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="leetcode.recursion" />
+      <recent name="leetcode.recursion.medium" />
       <recent name="leetcode.graph" />
       <recent name="leetcode.stack.medium" />
       <recent name="leetcode.stack.easy" />
-      <recent name="leetcode.binarysearchtree" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LC1254NumberOFClosedIslands">
+  <component name="RunManager" selected="Application.Re3Factorial">
     <configuration name="BinomialCoefficient" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -82,12 +83,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="G14LC130SurroundedRegions" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G14LC130SurroundedRegions" />
+    <configuration name="Re2PrintLinearlyFrom1toN" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.recursion.Re2PrintLinearlyFrom1toN" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.graph.*" />
+          <option name="PATTERN" value="leetcode.recursion.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -95,12 +96,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC1162AsFarAsLand" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.graph.medium.LC1162AsFarAsLand" />
+    <configuration name="Re2PrintLinearlyFromNTo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.recursion.Re2PrintLinearlyFromNTo1" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.graph.medium.*" />
+          <option name="PATTERN" value="leetcode.recursion.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -108,12 +109,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC1254NumberOFClosedIslands" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.graph.medium.LC1254NumberOFClosedIslands" />
+    <configuration name="Re3Factorial" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.recursion.Re3Factorial" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.graph.medium.*" />
+          <option name="PATTERN" value="leetcode.recursion.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,12 +122,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC743NetworkDelay" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.graph.medium.LC743NetworkDelay" />
+    <configuration name="Re3SumOfFirstNNumbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.recursion.medium.Re3SumOfFirstNNumbers" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.graph.medium.*" />
+          <option name="PATTERN" value="leetcode.recursion.medium.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -134,12 +135,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC959RegionCutBySlashes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.graph.medium.LC959RegionCutBySlashes" />
+    <configuration name="leetcode.recursion.Re3SumOfFirstNNumbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.recursion.Re3SumOfFirstNNumbers" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.graph.medium.*" />
+          <option name="PATTERN" value="leetcode.recursion.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -149,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LC1254NumberOFClosedIslands" />
-        <item itemvalue="Application.G14LC130SurroundedRegions" />
-        <item itemvalue="Application.LC743NetworkDelay" />
-        <item itemvalue="Application.LC1162AsFarAsLand" />
-        <item itemvalue="Application.LC959RegionCutBySlashes" />
+        <item itemvalue="Application.Re3Factorial" />
+        <item itemvalue="Application.leetcode.recursion.Re3SumOfFirstNNumbers" />
+        <item itemvalue="Application.Re3SumOfFirstNNumbers" />
+        <item itemvalue="Application.Re2PrintLinearlyFrom1toN" />
+        <item itemvalue="Application.Re2PrintLinearlyFromNTo1" />
       </list>
     </recent_temporary>
   </component>
