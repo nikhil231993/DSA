@@ -3,7 +3,7 @@ package learningLogic.recursion.striver;
 import java.util.ArrayList;
 import java.util.List;
 
-public class V7CountSubsequenceSum {
+public class V7SubsequenceSumCount {
 
 	public static void main(String[] args) {
 		int[] arr = { 2, 1, 0, 2 };
@@ -15,7 +15,7 @@ public class V7CountSubsequenceSum {
 
 	private static int printSubsequenceSumOnce(int[] arr, List<Integer> list, int i, int s, int sum) {
 		//condition not satisfied
-		//strictly doen if array conatisn positives only
+		//strictly done if array contains positives only
 		if(s>sum)
 			return 0;
 

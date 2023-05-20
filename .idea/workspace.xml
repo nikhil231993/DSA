@@ -5,13 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/recursion/Re2PrintLinearlyFrom1toN.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/recursion/Re2PrintLinearlyFromNTo1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/recursion/Re2PrintNameNTImesUsingRecursion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/recursion/Re3Factorial.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/recursion/Re3SumOfFirstNNumbers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/recursion/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/learningLogic/recursion/striver/V15Permutations2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/learningLogic/recursion/striver/V15PermutationsString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/learningLogic/recursion/striver/V8LC213CombinationSum3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/learningLogic/recursion/striver/V8LC77Combinations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/recursion/Re4PalindromeCheck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/recursion/Re4ReverseArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/recursion/Re5FibonacciNumber.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/learningLogic/recursion/striver/V10PrintAllSubsequenceSumIncreasingOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/learningLogic/recursion/striver/V10SubsetSum1IncreasingOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/learningLogic/recursion/striver/V11PrintAllSubsequenceContainingNoDuplicates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/learningLogic/recursion/striver/V11LC90Subset2NoDuplicates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/learningLogic/recursion/striver/V12Permutations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/learningLogic/recursion/striver/V14L13Permutations1UsingFlag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/learningLogic/recursion/striver/V13Permutations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/learningLogic/recursion/striver/V15Permutations1UsingSwap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/learningLogic/recursion/striver/V7CountSubsequenceSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/learningLogic/recursion/striver/V7SubsequenceSumCount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/learningLogic/recursion/striver/V7PrintAllSubsequenceSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/learningLogic/recursion/striver/V7SubsequenceSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/learningLogic/recursion/striver/V7PrintOneSubsequenceSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/learningLogic/recursion/striver/V7SubsequenceOneSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/learningLogic/recursion/striver/V8L39PrintElementsWithSumTakingSameNumberAgain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/learningLogic/recursion/striver/V8L39CombinationSum1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/learningLogic/recursion/striver/V9L40PrintElementsWithSumTakingUniqueCombinations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/learningLogic/recursion/striver/V9L40CombinationSum2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/learningLogic/recursion/striver/V9L40PrintElementsWithSumTakingUniqueCombinationsUsingSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/learningLogic/recursion/striver/V9L40CombinationSum2UsingSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/recursion/medium/LC78Subsets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/recursion/medium/LC78Subsets.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +79,7 @@
       <recent name="leetcode.stack.easy" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Re3Factorial">
+  <component name="RunManager" selected="Application.V15Permutations2">
     <configuration name="BinomialCoefficient" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -83,12 +95,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Re2PrintLinearlyFrom1toN" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.recursion.Re2PrintLinearlyFrom1toN" />
+    <configuration name="V11LC90Subset2NoDuplicates" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="learningLogic.recursion.striver.V11LC90Subset2NoDuplicates" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.recursion.*" />
+          <option name="PATTERN" value="learningLogic.recursion.striver.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -96,12 +108,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Re2PrintLinearlyFromNTo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.recursion.Re2PrintLinearlyFromNTo1" />
+    <configuration name="V15Permutations2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="learningLogic.recursion.striver.V15Permutations2" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.recursion.*" />
+          <option name="PATTERN" value="learningLogic.recursion.striver.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,12 +121,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Re3Factorial" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.recursion.Re3Factorial" />
+    <configuration name="V15PermutationsString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="learningLogic.recursion.striver.V15PermutationsString" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.recursion.*" />
+          <option name="PATTERN" value="learningLogic.recursion.striver.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -122,12 +134,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Re3SumOfFirstNNumbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.recursion.medium.Re3SumOfFirstNNumbers" />
+    <configuration name="V7SubsequenceSumCount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="learningLogic.recursion.striver.V7SubsequenceSumCount" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.recursion.medium.*" />
+          <option name="PATTERN" value="learningLogic.recursion.striver.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -135,12 +147,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="leetcode.recursion.Re3SumOfFirstNNumbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.recursion.Re3SumOfFirstNNumbers" />
+    <configuration name="V8LC213CombinationSum3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="learningLogic.recursion.striver.V8LC213CombinationSum3" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.recursion.*" />
+          <option name="PATTERN" value="learningLogic.recursion.striver.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -150,11 +162,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Re3Factorial" />
-        <item itemvalue="Application.leetcode.recursion.Re3SumOfFirstNNumbers" />
-        <item itemvalue="Application.Re3SumOfFirstNNumbers" />
-        <item itemvalue="Application.Re2PrintLinearlyFrom1toN" />
-        <item itemvalue="Application.Re2PrintLinearlyFromNTo1" />
+        <item itemvalue="Application.V15Permutations2" />
+        <item itemvalue="Application.V11LC90Subset2NoDuplicates" />
+        <item itemvalue="Application.V15PermutationsString" />
+        <item itemvalue="Application.V8LC213CombinationSum3" />
+        <item itemvalue="Application.V7SubsequenceSumCount" />
       </list>
     </recent_temporary>
   </component>
@@ -296,6 +308,16 @@
           <url>file://$PROJECT_DIR$/src/leetcode/graph/G0Matrixbfsdfs.java</url>
           <line>50</line>
           <option name="timeStamp" value="87" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/learningLogic/recursion/striver/V6PrintSubsequences.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="89" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/learningLogic/recursion/striver/V6PrintSubsequences.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="90" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/leetcode/binarytree/Test.java</url>

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class V10PrintAllSubsequenceSumIncreasingOrder {
+public class V10SubsetSum1IncreasingOrder {
 
 	public static void main(String[] args) {
 		int[] arr = { 3, 1, 2 };
@@ -28,7 +28,7 @@ public class V10PrintAllSubsequenceSumIncreasingOrder {
 		sum -= arr[i];
 		printSubsequence(arr, list, i + 1, sum);
 		// TC:O(2 raised to N + 2raised to N log (2 raise to N))
-		// SC:O(2N) as there are 8 diff combinations so with duplicates it will be 2
+		// SC:O( 2raise toN) as there are 8 diff combinations so with duplicates it will be 2
 		// raise to N
 	}
 

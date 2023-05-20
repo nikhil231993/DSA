@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class V9L40PrintElementsWithSumTakingUniqueCombinations {
+public class V9L40CombinationSum2 {
 
 	public static void main(String[] args) {
 		int[] arr = { 1, 1, 1, 2, 2 };

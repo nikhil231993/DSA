@@ -3,12 +3,12 @@ package learningLogic.recursion.striver;
 import java.util.ArrayList;
 import java.util.List;
 
-public class V12Permutations {
+public class V14L13Permutations1UsingFlag {
 
 	public static void main(String[] args) {
 		int[] nums = { 1, 2, 3 };
 		List<List<Integer>> parentList = new ArrayList<>();
-		List<Integer> ds = new ArrayList<Integer>();
+		List<Integer> ds = new ArrayList<>();
 		boolean[] flag = new boolean[nums.length];
 		permutations(nums, parentList, ds, flag);
 		System.out.println(parentList);
@@ -32,7 +32,7 @@ public class V12Permutations {
 		}
 
 		// TC:n!*n(looping)
-		// sc:n+n withput considering stack and auxiliary space
+		// sc:n(for ds)+n (flag array) without considering stack and auxiliary space O(n)
 
 	}
 

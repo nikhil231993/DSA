@@ -3,7 +3,7 @@ package learningLogic.recursion.striver;
 import java.util.ArrayList;
 import java.util.List;
 
-public class V13Permutations {
+public class V15Permutations1UsingSwap {
 
 	public static void main(String[] args) {
 		int[] nums = { 1, 2, 3 };
@@ -35,8 +35,9 @@ public class V13Permutations {
 		int t = nums[i];
 		nums[i] = nums[j];
 		nums[j] = t;
-
 	}
+
+	//TC same as V14 but since no flag and list used SC will be same
 
 
 }

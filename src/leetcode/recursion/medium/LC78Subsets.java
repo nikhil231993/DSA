@@ -48,7 +48,7 @@ public class LC78Subsets {
 		arrayList.remove(arrayList.size() - 1);
 		subset(list, nums, arrayList, i + 1);
 
-		// TC:2 raise to N *k taking k as avg length to put values inot List of list
+		// TC:2 raise to N *k taking k as avg length to put values into List of list
 		// SC: 2 raise to n as there are 2 raise to n subsets + o(n) auxiliary space
 
 	}

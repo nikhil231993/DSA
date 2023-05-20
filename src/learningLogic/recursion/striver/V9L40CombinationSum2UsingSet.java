@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class V9L40PrintElementsWithSumTakingUniqueCombinationsUsingSet {
+public class V9L40CombinationSum2UsingSet {
 
 	public static void main(String[] args) {
 		int[] arr = { 1, 1, 2, 2 };

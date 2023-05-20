@@ -3,12 +3,12 @@ package learningLogic.recursion.striver;
 import java.util.ArrayList;
 import java.util.List;
 
-public class V8L39PrintElementsWithSumTakingSameNumberAgain {
+public class V8L39CombinationSum1 {
 
 	public static void main(String[] args) {
-		int[] arr = { 1, 1, 2, 2 };
+		int[] arr = { 2,3,6,7 };
 		List<Integer> list = new ArrayList<>();
-		printSubsequenceSumOnce(arr, list, 0, 4);
+		printSubsequenceSumOnce(arr, list, 0, 7);
 		System.out.println("##############");
 		printSubsequenceSumOnce(arr, list, 0, 4, 0);
 
@@ -53,7 +53,7 @@ public class V8L39PrintElementsWithSumTakingSameNumberAgain {
 			sum -= arr[i];
 		}
 		printSubsequenceSumOnce(arr, list, i + 1, target, sum);
-		// TC:O(2 raised to t) where t is no of times
+		// TC:O(2 raised to t) where t is no of times*k
 		// SC:O(k(avg length)*x(combinations))
 		// If instead of syso we use list of list then TC will be 2 raised to t *k where
 		// k is length of combination as adding into list is linear TC and not constant

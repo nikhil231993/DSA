@@ -3,7 +3,7 @@ package learningLogic.recursion.striver;
 import java.util.ArrayList;
 import java.util.List;
 
-public class V7PrintOneSubsequenceSum {
+public class V7SubsequenceOneSum {
 
 	public static void main(String[] args) {
 		int[] arr = { 2, 1, 2 };

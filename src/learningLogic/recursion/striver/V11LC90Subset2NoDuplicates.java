@@ -4,15 +4,17 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class V11PrintAllSubsequenceContainingNoDuplicates {
+public class V11LC90Subset2NoDuplicates {
 
 	public static void main(String[] args) {
 		int[] arr = { 1, 2, 2 };
-		Arrays.sort(arr);
+		Arrays.sort(arr);//TC:o(nlogn)
 		List<Integer> list = new ArrayList<>();
 		List<List<Integer>> parent = new ArrayList<List<Integer>>();
 		List<List<Integer>> parent1 = new ArrayList<List<Integer>>();
+		//Brute force either put in set or use contains option
 		printSubsequence(arr, list, 0, parent);
+		//Optimized
 		printSubsequenceWithoutDuplicates(arr, parent1, list, 0);
 		System.out.println(parent1);
 
@@ -31,7 +33,7 @@ public class V11PrintAllSubsequenceContainingNoDuplicates {
 		list.remove(list.size() - 1);
 		printSubsequence(arr, list, i + 1, parent);
 
-		// TC:O(2 raised to N + k)
+		// TC:O(2 raised to N * t (avg length of combinations))
 		// SC:O(2N) as at the max we will have 3 functions in stack
 	}
 
