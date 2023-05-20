@@ -45,17 +45,13 @@ public class LC77Combinations {
 			return;
 		}
 		if (k < 0) {
-
 			return;
 		}
 
-		if (index == n + 1) {
 		if (k == 0) {
 			list.add(new ArrayList<>(arr1));
-			}
 			return;
 		}
-
 		arr1.add(index);
 		combinationsSecondApproach(list, n, arr1, k - 1, index + 1);
 		arr1.remove(arr1.size() - 1);

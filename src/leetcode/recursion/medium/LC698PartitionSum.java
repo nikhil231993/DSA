@@ -3,8 +3,8 @@ package leetcode.recursion.medium;
 public class LC698PartitionSum {
 
 	public static void main(String[] args) {
-		int[] nums = new int[] { 4, 3, 2, 2, 5, 2, 2 };
-		int k = 4;
+		int[] nums = new int[] { 2,1,4,5,6 };
+		int k = 3;
 		System.out.println(canPartitionKSubsets(nums, k));
 
 	}
@@ -24,18 +24,20 @@ public class LC698PartitionSum {
 
 	public static boolean subsets(int requiredBucketSum, int bucketSum, int i, boolean[] flag, int[] nums,
 			int bucketCount, int k) {
-		if (bucketCount == k + 1)
+		if (bucketCount == k)
 			return true;
 
-		if (bucketSum == requiredBucketSum) {
-			return subsets(requiredBucketSum, 0, 0, flag, nums, bucketCount + 1, k);
-		}
 
 		if (bucketSum > requiredBucketSum)
 			return false;
 
 		if (i >= nums.length)
 			return false;
+
+		if (bucketSum == requiredBucketSum) {
+			return subsets(requiredBucketSum, 0, 0, flag, nums, bucketCount + 1, k);
+		}
+
 
 		if (flag[i]) {
 			return subsets(requiredBucketSum, bucketSum, i + 1, flag, nums, bucketCount, k);
@@ -51,7 +53,7 @@ public class LC698PartitionSum {
 			return op1 || op2;
 		}
 
-		// TC:O(2 raise to (N(height)*k(no of subaaray)))
+		// TC:O(2 raise to (N(height)*k(no of subarray)))
 		// SC:O(N*K)
 
 	}

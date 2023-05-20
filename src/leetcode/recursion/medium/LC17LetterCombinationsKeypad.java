@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class LC17LetterCombinatiosKeypad {
+public class LC17LetterCombinationsKeypad {
 
 	public static void main(String[] args) {
 
@@ -29,17 +29,13 @@ public class LC17LetterCombinatiosKeypad {
 		if (digits.length() == 0) {
 			return new ArrayList();
 		}
-
 		List<String> list = new ArrayList();
 		String temp = "";
-
 		combination(m, list, digits, 0, temp);
 
 		// TC: 3 raise to N
-		// SC:O(N) digits length
-
+		// SC:O(N) where N is the digits length
 		return list;
-
 	}
 
 	public static void combination(Map<Character, String> m, List<String> list, String digits, int index, String temp) {
