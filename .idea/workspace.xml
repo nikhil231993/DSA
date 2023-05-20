@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/recursion/medium/LC1042FlowerPalnting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/recursion/medium/LC1042McolouringGfg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/recursion/medium/LC131PalindromePartitioning.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/recursion/hard/LC52NQueens2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/recursion/hard/LC52NQueens2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +62,7 @@
       <recent name="leetcode.stack.easy" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LC1042FlowerPalnting">
+  <component name="RunManager" selected="Application.LC131PalindromePartitioning">
     <configuration name="BinomialCoefficient" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -106,12 +104,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC212WordSearch2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.recursion.hard.LC212WordSearch2" />
+    <configuration name="LC131PalindromePartitioning" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.recursion.medium.LC131PalindromePartitioning" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.recursion.hard.*" />
+          <option name="PATTERN" value="leetcode.recursion.medium.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,12 +117,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC698PartitionSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.recursion.medium.LC698PartitionSum" />
+    <configuration name="LC212WordSearch2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.recursion.hard.LC212WordSearch2" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.recursion.medium.*" />
+          <option name="PATTERN" value="leetcode.recursion.hard.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -147,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LC131PalindromePartitioning" />
         <item itemvalue="Application.LC1042FlowerPalnting" />
         <item itemvalue="Application.LC1042McolouringGfg" />
         <item itemvalue="Application.LC212WordSearch2" />
         <item itemvalue="Application.LC79WordSearch" />
-        <item itemvalue="Application.LC698PartitionSum" />
       </list>
     </recent_temporary>
   </component>
