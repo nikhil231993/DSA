@@ -7,7 +7,7 @@ import java.util.List;
 public class LC90Subset2 {
 
 	public static void main(String[] args) {
-		int[] nums = new int[] { 0 };
+		int[] nums = new int[] { 1,1,2 };
 		List<List<Integer>> list = new ArrayList<>();
 		subsetSets(nums, list, new ArrayList(), 0);
 		Arrays.sort(nums);

@@ -6,6 +6,9 @@ import java.util.List;
 
 public class L5ListOfStudentsAnonymous {
     public static void main(String[] args) {
+
+        //we can override comparable logic by comparator
+
         List<People> list = new ArrayList<>();
         list.add(new People(100, "Nikhil", "T"));
         list.add(new People(1, "Kavya", "m"));

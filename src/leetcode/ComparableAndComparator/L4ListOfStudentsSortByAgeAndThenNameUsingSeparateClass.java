@@ -44,6 +44,8 @@ class PeopeleCompare implements Comparator<People>{
 }
 public class L4ListOfStudentsSortByAgeAndThenNameUsingSeparateClass {
 
+    //we can override comparable logic by comparator
+
     public static void main(String[] args) {
         List<People> list=new ArrayList<>();
         list.add(new People(100,"Nikhil","T"));

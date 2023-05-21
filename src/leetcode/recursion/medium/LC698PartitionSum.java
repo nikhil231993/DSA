@@ -27,7 +27,6 @@ public class LC698PartitionSum {
 		if (bucketCount == k)
 			return true;
 
-
 		if (bucketSum > requiredBucketSum)
 			return false;
 

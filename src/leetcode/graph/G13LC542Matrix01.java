@@ -74,6 +74,6 @@ public class G13LC542Matrix01 {
 
         return dist;
         //TC:O(m*n) for loop +O(m*n*4) bfs
-        //SC:O(m*n) visited array +O(m*n) queue is full incase of all elemnts are 0
+        //SC:O(m*n) visited array +O(m*n) queue is full incase of all elements are 0
     }
 }

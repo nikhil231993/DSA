@@ -29,6 +29,8 @@ public class L3ListOfStudentsSortByAgeAndThenName {
 
     public static void main(String[] args) {
 
+        //we can override comparable logic by comparator
+
         Comparator<Student>  st=new Comparator<Student>() {
             @Override
             public int compare(Student o1, Student o2) {
