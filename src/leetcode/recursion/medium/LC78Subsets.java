@@ -10,6 +10,19 @@ public class LC78Subsets {
 		int[] nums = new int[] { 5, 2, 1 };
 		List<List<Integer>> list = new ArrayList<>();
 		subset(list, nums, new ArrayList<>(), 0);
+//		Collections.sort(list,(a,b)->{
+//			int min=Math.min(a.size(),b.size());
+//			for(int i=0;i<min;i++){
+//				if(a.get(i)==b.get(i))
+//					continue;
+//				else if(a.get(i)>b.get(i))
+//					return 1;
+//			}
+//			if(a.size()>b.size())
+//				return 1;
+//			return -1;
+//		});
+		Collections.sort(list,(a,b)->a.size()-b.size());
 		System.out.println(list);
 
 		System.out.println("###########################");
@@ -26,6 +39,7 @@ public class LC78Subsets {
 			arrayList.add(sum);
 			return;
 		}
+		Collections.sort(arrayList);
 		sum += nums[i];
 		subsetSum(nums, arrayList, i + 1, sum);
 		sum -= nums[i];
