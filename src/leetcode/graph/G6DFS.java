@@ -43,12 +43,10 @@ public class G6DFS {
     }
 
     private static void dfsRecursive(List<List<Integer>> arr, ArrayList<Integer> dfs,boolean[] visited, int i) {
-
         visited[i]=true;
         dfs.add(i);
         for(Integer vertex: arr.get(i)){
             if(!visited[vertex]){
-                visited[vertex]=true;
                 dfsRecursive(arr,dfs,visited,vertex);
             }
         }

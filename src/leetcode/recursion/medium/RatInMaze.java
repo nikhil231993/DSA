@@ -24,7 +24,6 @@ public class RatInMaze {
             return ans;
         }
 
-        visited[0][0]=1;
         solve(0,0,visited, ans,n,m,"");
         return ans;
         //TC:O(4 raise to m*n)

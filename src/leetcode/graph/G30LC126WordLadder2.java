@@ -48,7 +48,6 @@ public class G30LC126WordLadder2 {
                     set.remove(s);
                 }
             }
-
             if(word.equals(endWord)){
                 if(result.size()==0){
                     result.add(individualList);
@@ -56,7 +55,6 @@ public class G30LC126WordLadder2 {
                     result.add(individualList);
                 }
             }
-
             for(int i=0;i<word.length();i++){
                 char[] replacedArray=word.toCharArray();
                 char temp=replacedArray[i];
@@ -71,10 +69,7 @@ public class G30LC126WordLadder2 {
                 }
                 replacedArray[i]=temp;
             }
-
-
         }
         return  result;
-
     }
 }

@@ -3,7 +3,7 @@ package leetcode.recursion;
 public class Re5FibonacciNumber {
 
     public static void main(String[] args) {
-        int n=9;
+        int n=5;
         System.out.println( fibonacci(n));
         System.out.println(fib(n));
     }

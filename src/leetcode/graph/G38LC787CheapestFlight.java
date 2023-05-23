@@ -30,7 +30,7 @@ public class G38LC787CheapestFlight {
 //        int V=5;
 //        int E=6;
         int V=3;
-        int E=5;
+        int E=3;
         int src=0;
         int dest=2;
         int k=1;

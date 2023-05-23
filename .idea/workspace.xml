@@ -5,17 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/recursion/hard/LC60PermutationSequence.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/recursion/medium/RatInMaze.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicproggramming/DP1Fibonacci.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicproggramming/DP2ClimbingStairs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicproggramming/DP3FrogJump.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicproggramming/DP4FrogKJumps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicproggramming/DP5MaximumNonAdjacentSum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/ComparableAndComparator/L1ListOfIntegers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/ComparableAndComparator/L1ListOfIntegers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/ComparableAndComparator/L2ListOfStrings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/ComparableAndComparator/L2ListOfStrings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/ComparableAndComparator/L3ListOfStudentsSortByAgeAndThenName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/ComparableAndComparator/L3ListOfStudentsSortByAgeAndThenName.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/ComparableAndComparator/L4ListOfStudentsSortByAgeAndThenNameUsingSeparateClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/ComparableAndComparator/L4ListOfStudentsSortByAgeAndThenNameUsingSeparateClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/ComparableAndComparator/L5ListOfStudentsAnonymous.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/ComparableAndComparator/L5ListOfStudentsAnonymous.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G13LC542Matrix01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G13LC542Matrix01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/recursion/medium/LC698PartitionSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/recursion/medium/LC698PartitionSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/recursion/medium/LC90Subset2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/recursion/medium/LC90Subset2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G11DetectCycleUGBFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G11DetectCycleUGBFS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G20LC802EventualSafeStates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G20LC802EventualSafeStates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G30LC126WordLadder2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G30LC126WordLadder2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G38LC787CheapestFlight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G38LC787CheapestFlight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G6DFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G6DFS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/recursion/Re5FibonacciNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/recursion/Re5FibonacciNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/recursion/medium/RatInMaze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/recursion/medium/RatInMaze.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +73,7 @@
       <recent name="leetcode.stack.easy" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LC60PermutationSequence">
+  <component name="RunManager" selected="Application.DP5MaximumNonAdjacentSum">
     <configuration name="BinomialCoefficient" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -87,12 +89,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="L2ListOfStrings" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.ComparableAndComparator.L2ListOfStrings" />
+    <configuration name="DP1Fibonacci" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicproggramming.DP1Fibonacci" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.ComparableAndComparator.*" />
+          <option name="PATTERN" value="leetcode.dynamicproggramming.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -100,12 +102,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="L5ListOfStudentsAnonymous" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.ComparableAndComparator.L5ListOfStudentsAnonymous" />
+    <configuration name="DP2ClimbingStairs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicproggramming.DP2ClimbingStairs" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.ComparableAndComparator.*" />
+          <option name="PATTERN" value="leetcode.dynamicproggramming.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,12 +115,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC60PermutationSequence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.recursion.hard.LC60PermutationSequence" />
+    <configuration name="DP3FrogJump" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicproggramming.DP3FrogJump" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.recursion.hard.*" />
+          <option name="PATTERN" value="leetcode.dynamicproggramming.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -126,12 +128,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC90Subset2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.recursion.medium.LC90Subset2" />
+    <configuration name="DP4FrogKJumps" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicproggramming.DP4FrogKJumps" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.recursion.medium.*" />
+          <option name="PATTERN" value="leetcode.dynamicproggramming.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -139,12 +141,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RatInMaze" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.recursion.medium.RatInMaze" />
+    <configuration name="DP5MaximumNonAdjacentSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicproggramming.DP5MaximumNonAdjacentSum" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.recursion.medium.*" />
+          <option name="PATTERN" value="leetcode.dynamicproggramming.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -154,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LC60PermutationSequence" />
-        <item itemvalue="Application.RatInMaze" />
-        <item itemvalue="Application.LC90Subset2" />
-        <item itemvalue="Application.L5ListOfStudentsAnonymous" />
-        <item itemvalue="Application.L2ListOfStrings" />
+        <item itemvalue="Application.DP5MaximumNonAdjacentSum" />
+        <item itemvalue="Application.DP4FrogKJumps" />
+        <item itemvalue="Application.DP3FrogJump" />
+        <item itemvalue="Application.DP2ClimbingStairs" />
+        <item itemvalue="Application.DP1Fibonacci" />
       </list>
     </recent_temporary>
   </component>
@@ -225,26 +227,6 @@
           <url>file://$PROJECT_DIR$/src/leetcode/binarysearchtree/BinarySearchTreeRevision.java</url>
           <line>451</line>
           <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/leetcode/graph/G11DetectCycleUGBFS.java</url>
-          <line>51</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/leetcode/graph/G11DetectCycleUGBFS.java</url>
-          <line>56</line>
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/leetcode/graph/G11DetectCycleUGBFS.java</url>
-          <line>40</line>
-          <option name="timeStamp" value="40" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/leetcode/graph/G11DetectCycleUGBFS.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="42" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetcode/graph/G12DetectCycleUGDFS.java</url>

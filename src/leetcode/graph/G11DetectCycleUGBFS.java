@@ -87,10 +87,6 @@ public class G11DetectCycleUGBFS {
              }
              System.out.println();
          }
-
-
-
-
     }
 
     private static boolean detectCycle(List<List<Integer>> arr, int n, int m) {

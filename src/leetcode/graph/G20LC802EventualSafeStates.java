@@ -32,20 +32,19 @@ public class G20LC802EventualSafeStates {
         int[] visited=new int[n+1];
         int[] pathVis=new int[n+1];
         int[] safeNodes=new int[n+1];
-     for(int i=0;i<n;i++){
-         if(visited[i]==0){
-             dfs(i,n,m,visited,pathVis,safeNodes,adjList);
-         }
-     }
+        for(int i=0;i<n;i++){
+             if(visited[i]==0){
+                 dfs(i,n,m,visited,pathVis,safeNodes,adjList);
+            }
+        }
 
-     List<Integer> safe=new ArrayList<>();
-     for(int i=0;i<n;i++){
-         if(safeNodes[i]==1){
-             safe.add(i);
-         }
-     }
-     return safe;
-
+        List<Integer> safe=new ArrayList<>();
+        for(int i=0;i<n;i++){
+            if(safeNodes[i]==1){
+                safe.add(i);
+            }
+        }
+        return safe;
     }
 
     private static boolean dfs(int i, int n, int m, int[] visited, int[] pathVis, int[] safeNodes, List<List<Integer>> adjList) {
