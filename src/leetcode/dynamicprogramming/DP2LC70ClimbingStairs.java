@@ -1,9 +1,8 @@
-package leetcode.dynamicproggramming;
+package leetcode.dynamicprogramming;
 
-import javax.sound.midi.Soundbank;
 import java.util.Arrays;
 
-public class DP2ClimbingStairs {
+public class DP2LC70ClimbingStairs {
 
     public static void main(String[] args) {
         int n=4;

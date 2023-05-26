@@ -68,10 +68,7 @@ public class G13LC542Matrix01 {
                     q.offer(new PairG13(nrow,ncol,level+1));
                 }
             }
-
-
         }
-
         return dist;
         //TC:O(m*n) for loop +O(m*n*4) bfs
         //SC:O(m*n) visited array +O(m*n) queue is full incase of all elements are 0

@@ -9,10 +9,7 @@ public class V7SubsequenceSumCount {
 		int[] arr = { 2, 1, 0, 2 };
 		List<Integer> list = new ArrayList<>();
 		System.out.println(printSubsequenceSumOnce(arr, list, 0, 0, 3));
-
-
 	}
-
 	private static int printSubsequenceSumOnce(int[] arr, List<Integer> list, int i, int s, int sum) {
 		//condition not satisfied
 		//strictly done if array contains positives only

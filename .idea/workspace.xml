@@ -5,9 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicproggramming/DP5HouseRobber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicproggramming/DP6HouseRobber2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP10LC64MinimumPathSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP11LC120Traingle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP7NinjaCoding.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP8LC62UniquePaths.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP9LC63UniquePaths2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/learningLogic/recursion/striver/V7SubsequenceSumCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/learningLogic/recursion/striver/V7SubsequenceSumCount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/dynamicproggramming/DP1Fibonacci.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP1Fibonacci.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/dynamicproggramming/DP2ClimbingStairs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP2LC70ClimbingStairs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/dynamicproggramming/DP3FrogJump.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP3FrogJump.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/dynamicproggramming/DP4FrogKJumps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP4FrogKJumps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/dynamicproggramming/DP5HouseRobber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP5LC198HouseRobber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/dynamicproggramming/DP5MaximumNonAdjacentSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP5MaximumNonAdjacentSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/dynamicproggramming/DP6HouseRobber2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP6LC213HouseRobber2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G13LC542Matrix01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G13LC542Matrix01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G32DijkstraAlgoDGWeightSelf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G32DijkstraAlgoDGWeightSelf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G36BinaryMaze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G36BinaryMaze.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G36LC1036BinaryMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G36LC1036BinaryMatrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G37LC1631AbsoluteDIffPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G37LC1631AbsoluteDIffPath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G37MaxPathMatrixSelf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G37MinPathMatrixSelf.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +80,7 @@
       <recent name="leetcode.stack.easy" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DP6HouseRobber2">
+  <component name="RunManager" selected="Application.DP11LC120Traingle">
     <configuration name="BinomialCoefficient" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -79,12 +96,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DP3FrogJump" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicproggramming.DP3FrogJump" />
+    <configuration name="DP10LC64MinimumPathSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicprogramming.DP10LC64MinimumPathSum" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.dynamicproggramming.*" />
+          <option name="PATTERN" value="leetcode.dynamicprogramming.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -92,12 +109,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DP4FrogKJumps" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicproggramming.DP4FrogKJumps" />
+    <configuration name="DP11LC120Traingle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicprogramming.DP11LC120Traingle" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.dynamicproggramming.*" />
+          <option name="PATTERN" value="leetcode.dynamicprogramming.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -105,12 +122,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DP5HouseRobber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicproggramming.DP5HouseRobber" />
+    <configuration name="DP8LC62UniquePaths" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicprogramming.DP8LC62UniquePaths" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.dynamicproggramming.*" />
+          <option name="PATTERN" value="leetcode.dynamicprogramming.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -118,12 +135,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DP5MaximumNonAdjacentSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicproggramming.DP5MaximumNonAdjacentSum" />
+    <configuration name="DP9LC63UniquePaths2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicprogramming.DP9LC63UniquePaths2" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.dynamicproggramming.*" />
+          <option name="PATTERN" value="leetcode.dynamicprogramming.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -131,12 +148,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DP6HouseRobber2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicproggramming.DP6HouseRobber2" />
+    <configuration name="G37MinPathMatrixSelf" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G37MinPathMatrixSelf" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.dynamicproggramming.*" />
+          <option name="PATTERN" value="leetcode.graph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -146,11 +163,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DP6HouseRobber2" />
-        <item itemvalue="Application.DP5HouseRobber" />
-        <item itemvalue="Application.DP5MaximumNonAdjacentSum" />
-        <item itemvalue="Application.DP4FrogKJumps" />
-        <item itemvalue="Application.DP3FrogJump" />
+        <item itemvalue="Application.DP11LC120Traingle" />
+        <item itemvalue="Application.DP10LC64MinimumPathSum" />
+        <item itemvalue="Application.G37MinPathMatrixSelf" />
+        <item itemvalue="Application.DP9LC63UniquePaths2" />
+        <item itemvalue="Application.DP8LC62UniquePaths" />
       </list>
     </recent_temporary>
   </component>

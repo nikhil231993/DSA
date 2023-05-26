@@ -66,10 +66,7 @@ public class G36LC1036BinaryMatrix {
                     }
                 }
             }
-
-
         }
-
         return -1;
     }
 }

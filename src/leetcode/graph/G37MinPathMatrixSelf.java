@@ -2,10 +2,10 @@ package leetcode.graph;
 
 import java.util.PriorityQueue;
 
-public class G37MaxPathMatrixSelf {
+public class G37MinPathMatrixSelf {
 
     public static void main(String[] args) {
-        int[][] heights = new int[][]{{2, 3, 1}, {1, 6, 2}, {1, 1, 1}};
+        int[][] heights = new int[][]{{1, 2, 3}, {4, 5, 1}, {4, 2, 1}};
         int[] source = new int[]{0, 0};
         int[] dest = new int[]{2, 2};
 

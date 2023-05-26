@@ -1,5 +1,5 @@
-package leetcode.dynamicproggramming;
-public class DP6HouseRobber2 {
+package leetcode.dynamicprogramming;
+public class DP6LC213HouseRobber2 {
 
     public static void main(String[] args) {
         int[] nums =new int[] {1,2,3,1};

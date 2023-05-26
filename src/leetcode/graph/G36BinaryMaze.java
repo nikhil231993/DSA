@@ -79,8 +79,6 @@ public class G36BinaryMaze {
                     }
                 }
             }
-
-
         }
         return -1;
     }
