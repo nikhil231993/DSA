@@ -18,7 +18,7 @@ public class DP1Fibonacci {
         //Space optimization
         System.out.println(fibSpaceOptimization(n));
         //TC:O(N)
-        //SC:O(1 )
+        //SC:O(1)
 
     }
 

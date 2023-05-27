@@ -67,7 +67,7 @@ public class DP8LC62UniquePaths {
     }
 
     private static int recursion(int m, int n) {
-        if(n==0 && m==0)
+            if(n==0 && m==0)
                  return 1;
              if(m<0 || n<0)
                  return 0;

@@ -5,26 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP10LC64MinimumPathSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP11LC120Traingle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP7NinjaCoding.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP8LC62UniquePaths.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP9LC63UniquePaths2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP12LC931MinimumFallingSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP13LC1493CherryPick2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP14SubsetEqualsTarget.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP15EqualSubsetSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP16APartitionSubsetWithMinimumDifferenceTODO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP17CountSubsetsWithSumK.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP17CountSubsetsWithSumKWithZero.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP18CountPArtitionsWithGivenDifference.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP19Knapsack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP20LC320CoinChange.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/learningLogic/recursion/striver/V7SubsequenceSumCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/learningLogic/recursion/striver/V7SubsequenceSumCount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/dynamicproggramming/DP1Fibonacci.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP1Fibonacci.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/dynamicproggramming/DP2ClimbingStairs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP2LC70ClimbingStairs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/dynamicproggramming/DP3FrogJump.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP3FrogJump.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/dynamicproggramming/DP4FrogKJumps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP4FrogKJumps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/dynamicproggramming/DP5HouseRobber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP5LC198HouseRobber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/dynamicproggramming/DP5MaximumNonAdjacentSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP5MaximumNonAdjacentSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/dynamicproggramming/DP6HouseRobber2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP6LC213HouseRobber2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G13LC542Matrix01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G13LC542Matrix01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G32DijkstraAlgoDGWeightSelf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G32DijkstraAlgoDGWeightSelf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G36BinaryMaze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G36BinaryMaze.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G36LC1036BinaryMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G36LC1036BinaryMatrix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G37LC1631AbsoluteDIffPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G37LC1631AbsoluteDIffPath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G37MaxPathMatrixSelf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G37MinPathMatrixSelf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP1Fibonacci.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP1Fibonacci.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP8LC62UniquePaths.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP8LC62UniquePaths.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/recursion/Re5FibonacciNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/recursion/Re5FibonacciNumber.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,14 +67,14 @@
       <recent name="$PROJECT_DIR$/src/leetcode/binarysearchtree" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="leetcode.dynamicprogramming" />
       <recent name="leetcode.recursion" />
       <recent name="leetcode.recursion.medium" />
       <recent name="leetcode.graph" />
       <recent name="leetcode.stack.medium" />
-      <recent name="leetcode.stack.easy" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DP11LC120Traingle">
+  <component name="RunManager" selected="Application.DP20LC320CoinChange">
     <configuration name="BinomialCoefficient" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -96,8 +90,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DP10LC64MinimumPathSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicprogramming.DP10LC64MinimumPathSum" />
+    <configuration name="DP17CountSubsetsWithSumK" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicprogramming.DP17CountSubsetsWithSumK" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -109,8 +103,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DP11LC120Traingle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicprogramming.DP11LC120Traingle" />
+    <configuration name="DP17CountSubsetsWithSumKWithZero" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicprogramming.DP17CountSubsetsWithSumKWithZero" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -122,8 +116,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DP8LC62UniquePaths" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicprogramming.DP8LC62UniquePaths" />
+    <configuration name="DP18CountPArtitionsWithGivenDifference" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicprogramming.DP18CountPArtitionsWithGivenDifference" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -135,8 +129,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DP9LC63UniquePaths2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicprogramming.DP9LC63UniquePaths2" />
+    <configuration name="DP19Knapsack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicprogramming.DP19Knapsack" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -148,12 +142,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="G37MinPathMatrixSelf" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G37MinPathMatrixSelf" />
+    <configuration name="DP20LC320CoinChange" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicprogramming.DP20LC320CoinChange" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.graph.*" />
+          <option name="PATTERN" value="leetcode.dynamicprogramming.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -163,11 +157,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DP11LC120Traingle" />
-        <item itemvalue="Application.DP10LC64MinimumPathSum" />
-        <item itemvalue="Application.G37MinPathMatrixSelf" />
-        <item itemvalue="Application.DP9LC63UniquePaths2" />
-        <item itemvalue="Application.DP8LC62UniquePaths" />
+        <item itemvalue="Application.DP20LC320CoinChange" />
+        <item itemvalue="Application.DP19Knapsack" />
+        <item itemvalue="Application.DP18CountPArtitionsWithGivenDifference" />
+        <item itemvalue="Application.DP17CountSubsetsWithSumKWithZero" />
+        <item itemvalue="Application.DP17CountSubsetsWithSumK" />
       </list>
     </recent_temporary>
   </component>
@@ -300,6 +294,16 @@
           <line>35</line>
           <option name="timeStamp" value="90" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP14SubsetEqualsTarget.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="96" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP14SubsetEqualsTarget.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="97" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/leetcode/binarytree/Test.java</url>
           <line>5</line>
@@ -344,6 +348,15 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP13LC1493CherryPick2.java</url>
+          <line>6</line>
+          <properties class="leetcode.dynamicprogramming.DP13LC1493CherryPick2" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="95" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
