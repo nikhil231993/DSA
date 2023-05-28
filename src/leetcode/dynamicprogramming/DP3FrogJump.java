@@ -48,7 +48,6 @@ public class DP3FrogJump {
                 right=prev2+Math.abs(height[i]-height[i-2]);
 
             int curr=Math.min(left,right);
-
             prev2=prev;
             prev=curr;
         }

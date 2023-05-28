@@ -24,10 +24,38 @@ public class DP8LC62UniquePaths {
                 dp1[i][j] = -1;
             }
         }
-        System.out.println( tabulation(m,n,dp1));
+        System.out.println(tabulation(m,n,dp1));
+
+        //Space optimization
+        System.out.println(space(m,n));
+    }
+
+    private static int space(int m, int n) {
+
+        int[] prev=new int[n];
+        for(int i=0;i<m;i++) {
+            int[] current=new int[n];
+            for (int j = 0; j < n; j++) {
+                if(i==0 && j==0) current[j]=1;
+                else{
+                    int left=0,up=0;
+                    if(i>0)
+                        up =prev[j];
+                    if(j>0)
+                        left=current[j-1];
+                    current[j]=up+left;
+                }
+            }
+            prev=current;
+        }
+        return prev[n-1];
+        //Recursion
+        //TC:O(m*n)
+        //SC:O(n*m) dp arrays
     }
 
     private static int tabulation(int m, int n, int[][] dp) {
+
         dp[0][0]=1;
         for(int i=0;i<m;i++) {
             for (int j = 0; j < n; j++) {
@@ -43,11 +71,9 @@ public class DP8LC62UniquePaths {
             }
         }
         return dp[m-1][n-1];
-
         //Recursion
         //TC:O(m*n)
         //SC:O(n*m) dp arrays
-
     }
 
     private static int memoization(int m, int n, int[][] dp) {
