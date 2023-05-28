@@ -6,6 +6,10 @@ public class DP2LC70ClimbingStairs {
 
     public static void main(String[] args) {
         int n=4;
+
+        //Recursion
+        System.out.println(recursion(n));
+
         //memoization
         int[] dp=new int[n+1];
         Arrays.fill(dp,-1);
@@ -24,6 +28,14 @@ public class DP2LC70ClimbingStairs {
         System.out.println(climbStairsUsingSpaceOptimization(n));
         //TC:O(N)
         //SC:O(1)
+    }
+
+    private static int recursion(int n) {
+        if(n<=0)
+            return 1;
+        return recursion(n-1)+recursion(n-2);
+        //TC:O(2 raise to N)
+        //SC:O(N) recursion stack
     }
 
     private static int climbStairsUsingSpaceOptimization(int n) {

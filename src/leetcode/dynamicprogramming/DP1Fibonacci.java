@@ -5,9 +5,13 @@ import java.util.Arrays;
 public class DP1Fibonacci {
     public static void main(String[] args) {
         int n=4;
+
+        //Recursion
+        System.out.println(recursion(n));
+
+        //Memoization method (top dow same as recursion)
         int[] dp=new int[n+1];
         Arrays.fill(dp,-1);
-        //Memoization method (top dow same as recursion)
         System.out.println(fib(dp,n));
 
         //Tabulation (Bottom up approach)
@@ -20,6 +24,14 @@ public class DP1Fibonacci {
         //TC:O(N)
         //SC:O(1)
 
+    }
+
+    private static int recursion(int n) {
+        if(n<=1)
+            return n;
+        return recursion(n-1)+recursion(n-2);
+        //TC:O(2 raise to N)
+        //SC:O(N) recursion stack
     }
 
     private static int fibSpaceOptimization(int n) {

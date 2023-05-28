@@ -5,20 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP12LC931MinimumFallingSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP13LC1493CherryPick2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP14SubsetEqualsTarget.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP15EqualSubsetSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP16APartitionSubsetWithMinimumDifferenceTODO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP17CountSubsetsWithSumK.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP17CountSubsetsWithSumKWithZero.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP18CountPArtitionsWithGivenDifference.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP19Knapsack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP20LC320CoinChange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP21LC494TargetSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP22CoinChange2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP23UnBoundedKnapsack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP24RodCutting.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP18CountPArtitionsWithGivenDifference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP18CountPartitionsWithGivenDifference.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP1Fibonacci.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP1Fibonacci.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP8LC62UniquePaths.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP8LC62UniquePaths.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/recursion/Re5FibonacciNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/recursion/Re5FibonacciNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP2LC70ClimbingStairs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP2LC70ClimbingStairs.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +68,7 @@
       <recent name="leetcode.stack.medium" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DP20LC320CoinChange">
+  <component name="RunManager" selected="Application.DP1Fibonacci">
     <configuration name="BinomialCoefficient" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -90,8 +84,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DP17CountSubsetsWithSumK" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicprogramming.DP17CountSubsetsWithSumK" />
+    <configuration name="DP1Fibonacci" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicprogramming.DP1Fibonacci" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -103,8 +97,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DP17CountSubsetsWithSumKWithZero" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicprogramming.DP17CountSubsetsWithSumKWithZero" />
+    <configuration name="DP21LC494TargetSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicprogramming.DP21LC494TargetSum" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -116,8 +110,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DP18CountPArtitionsWithGivenDifference" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicprogramming.DP18CountPArtitionsWithGivenDifference" />
+    <configuration name="DP22CoinChange2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicprogramming.DP22CoinChange2" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -129,8 +123,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DP19Knapsack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicprogramming.DP19Knapsack" />
+    <configuration name="DP23UnBoundedKnapsack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicprogramming.DP23UnBoundedKnapsack" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -142,8 +136,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DP20LC320CoinChange" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicprogramming.DP20LC320CoinChange" />
+    <configuration name="DP24RodCutting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicprogramming.DP24RodCutting" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -157,11 +151,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DP20LC320CoinChange" />
-        <item itemvalue="Application.DP19Knapsack" />
-        <item itemvalue="Application.DP18CountPArtitionsWithGivenDifference" />
-        <item itemvalue="Application.DP17CountSubsetsWithSumKWithZero" />
-        <item itemvalue="Application.DP17CountSubsetsWithSumK" />
+        <item itemvalue="Application.DP1Fibonacci" />
+        <item itemvalue="Application.DP24RodCutting" />
+        <item itemvalue="Application.DP23UnBoundedKnapsack" />
+        <item itemvalue="Application.DP22CoinChange2" />
+        <item itemvalue="Application.DP21LC494TargetSum" />
       </list>
     </recent_temporary>
   </component>

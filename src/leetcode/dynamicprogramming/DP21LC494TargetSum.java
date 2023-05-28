@@ -2,10 +2,10 @@ package leetcode.dynamicprogramming;
 
 import java.util.Arrays;
 
-public class DP18CountPArtitionsWithGivenDifference {
+public class DP21LC494TargetSum {
 
     public static void main(String[] args) {
-        int[] arr =new int[] {5,2,6,4};
+        int[] arr =new int[] {1,1,1,1,1};
         int d=3;
         int n=arr.length;
 
@@ -36,10 +36,10 @@ public class DP18CountPArtitionsWithGivenDifference {
 
     private static int memoization(int i, int sum, int[] arr, int[][] dp) {
 
-        if(sum==0) return 1;
         if(i==0)
         {
-            if(sum==arr[i])
+            if(sum==0 && arr[i]==0) return 2;
+            if(sum==0||sum==arr[i])
                 return 1;
             return 0;
         }
