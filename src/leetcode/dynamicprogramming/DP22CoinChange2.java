@@ -50,6 +50,8 @@ public class DP22CoinChange2 {
             prev=curr;
         }
         return prev[amount];
+        //TC:O(N*amount)
+        //SC:O(amount)
     }
 
     private static int tabulation(int[] coins, int amount, int[][] dp1,int n) {
@@ -71,6 +73,8 @@ public class DP22CoinChange2 {
             }
         }
         return dp1[n-1][amount];
+        //TC:O(N*amount)
+        //SC:O(n*amount)
     }
 
     private static int memoization(int index,int[] coins, int amount, int[][] dp) {
@@ -82,8 +86,6 @@ public class DP22CoinChange2 {
         }
         if(dp[index][amount]!=-1)
             return dp[index][amount];
-
-
         int np=recursion(index-1, coins, amount);
         int p=0;
         if(coins[index]<=amount)
@@ -115,14 +117,12 @@ public class DP22CoinChange2 {
             return 0;
         }
 
-
         int np=0+recursion(index-1, coins, amount);
         int p=0;
         if(coins[index]<=amount)
             p=recursion(index, coins, amount-coins[index]);
 
         return p+np;
-
         //TC:>>O(2 raise to N) or exponential
         //SC:>>O(N) i.e O(amount) which is no of combinations
     }

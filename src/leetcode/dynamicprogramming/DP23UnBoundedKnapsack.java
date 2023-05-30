@@ -18,6 +18,53 @@ public class DP23UnBoundedKnapsack {
         for(int[] r:dp)
             Arrays.fill(r,-1);
         System.out.println(memoization(n-1,W,wt,val,dp));
+
+        //Tabulation
+        int[][] dp1=new int[n][W+1];
+        System.out.println(tabulation(n,W,wt,val,dp1));
+
+        //Space
+        System.out.println(space(n,W,wt,val));
+    }
+
+    private static int space(int n, int w, int[] wt, int[] val) {
+        int[] prev=new int[w+1];
+        int[] curr=new int[w+1];
+        for(int i=0;i<=w;i++)
+            prev[i]=((int)i/wt[0])*val[0];
+
+        for(int i=1;i<n;i++){
+            for(int tar=0;tar<=w;tar++){
+                int notPick=0+prev[tar];
+
+                int pick=-(int)10e9;
+                if(wt[i]<=tar)
+                    pick=val[i]+curr[tar-wt[i]];
+
+                curr[tar]= Math.max(notPick,pick);
+            }
+            prev=curr;
+        }
+        return prev[w];
+    }
+
+    private static int tabulation(int n, int w, int[] wt, int[] val, int[][] dp1) {
+
+        for(int i=0;i<=w;i++)
+            dp1[0][i]=((int)i/wt[0])*val[0];
+
+        for(int i=1;i<n;i++){
+            for(int tar=0;tar<=w;tar++){
+                int notPick=0+dp1[i-1][tar];
+
+                int pick=-(int)10e9;
+                if(wt[i]<=tar)
+                    pick=val[i]+dp1[i][tar-wt[i]];
+
+                dp1[i][tar]= Math.max(notPick,pick);
+            }
+        }
+        return dp1[n-1][w];
     }
 
     private static int memoization(int i, int w, int[] wt, int[] val, int[][] dp) {
@@ -30,7 +77,7 @@ public class DP23UnBoundedKnapsack {
 
         int notPick=0+recursion(i-1,w,wt,val);
 
-        int pick=-(int)(1e9);
+        int pick=0;
         if(wt[i]<=w)
             pick=val[i]+recursion(i,w-wt[i],wt,val);
 
@@ -48,7 +95,7 @@ public class DP23UnBoundedKnapsack {
 
         int notPick=0+recursion(i-1,w,wt,val);
 
-        int pick=-(int)(1e9);
+        int pick=0;
         if(wt[i]<=w)
             pick=val[i]+recursion(i,w-wt[i],wt,val);
 

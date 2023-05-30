@@ -22,8 +22,6 @@ public class DP19Knapsack {
 
         //Tabulation
         int[][] dp1=new int[n][W+1];
-        for(int[] r:dp1)
-            Arrays.fill(r,-1);
         System.out.println(tabulation(n,W,wt,val,dp1));
 
         //Space
@@ -54,12 +52,16 @@ public class DP19Knapsack {
         return prev[W];
         //TC:O(N*W)
         //SC:O(W)
+
     }
 
     private static int tabulation(int n, int W, int[] wt, int[] val, int[][] dp1) {
 
-        for(int i=wt[0];i<=W;i++)
-            dp1[0][i]=val[0];
+        for(int i=0;i<=W;i++){
+            if(i>=wt[0])
+                dp1[0][i]=val[0];
+        }
+
 
         //Above is base case as we have to have minimum first no to select it
 
