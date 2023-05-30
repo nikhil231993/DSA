@@ -3,10 +3,11 @@ package leetcode.dynamicprogramming;
 import java.util.Arrays;
 
 public class DP18CountPartitionsWithGivenDifference {
+    //In this question we have numbers greater than or equal to 0
 
     public static void main(String[] args) {
-        int[] arr =new int[] {5,2,6,4};
-        int d=3;
+        int[] arr =new int[] {0,0,1};
+        int d=1;
         int n=arr.length;
 
         int totalSum=0;
@@ -32,15 +33,73 @@ public class DP18CountPartitionsWithGivenDifference {
             Arrays.fill(r,-1);
 
         System.out.println(memoization(n-1,(totalSum-d)/2,arr,dp));
+
+        //Tabulation
+        int[][] dp1=new int[n][(totalSum-d)/2+1];
+        for(int[] r:dp1)
+            Arrays.fill(r,-1);
+        System.out.println(tabulation(n,(totalSum-d)/2,arr,dp1));
+
+        System.out.println(space(n,(totalSum-d)/2,arr));
+    }
+
+    private static int space(int n, int K, int[] arr) {
+        int[] prev=new int[K+1];
+        int[] curr=new int[K+1];
+        if(arr[0]==0)
+            prev[0]=2;
+        else prev[0]=1;
+
+        if(arr[0]<=K && arr[0]!=0)
+            prev[arr[0]]=1;
+
+        for(int i=1;i<n;i++){
+            //Below we start from 0  because we removed sum of zero from base case
+            for(int target=0;target<=K;target++){
+                int np=prev[target];
+                int p=0;
+                if(arr[i]<=target)
+                    p=prev[target-arr[i]];
+                curr[target]=p+np;
+            }
+            prev=curr;
+        }
+        return prev[K];
+    }
+
+    private static int tabulation(int n, int K, int[] arr, int[][] dp1) {
+
+       //Adding same as memoization condition
+        if(arr[0]==0)
+            dp1[0][0]=2;
+        else
+            dp1[0][0]=1;
+        //Above is first base case
+
+        if(arr[0]!=0 && arr[0]<=K)
+            dp1[0][arr[0]]=1;
+        //Above is second base case
+
+        for(int i=1;i<n;i++){
+            //Below we start from 0  because we removed sum of zero from base case
+            for(int target=0;target<=K;target++){
+                int np=dp1[i-1][target];
+                int p=0;
+                if(arr[i]<=target)
+                    p=dp1[i-1][target-arr[i]];
+                dp1[i][target]=p+np;
+            }
+        }
+        return dp1[n-1][K];
     }
 
     private static int memoization(int i, int sum, int[] arr, int[][] dp) {
 
-        if(sum==0) return 1;
         if(i==0)
         {
-            if(sum==arr[i])
-                return 1;
+            if(sum==0 && arr[i]==0)
+                return 2;
+            if(sum==0 || arr[i]==sum) return 1;
             return 0;
         }
 
@@ -56,11 +115,11 @@ public class DP18CountPartitionsWithGivenDifference {
 
     private static int recursion(int i, int sum, int[] arr) {
 
-        if(sum==0) return 1;
         if(i==0)
         {
-            if(sum==arr[i])
-                return 1;
+            if(sum==0 && arr[i]==0)
+                return 2;
+            if(sum==0 || arr[i]==sum) return 1;
             return 0;
         }
         int np=recursion(i-1,sum,arr);

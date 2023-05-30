@@ -5,8 +5,8 @@ import java.util.Arrays;
 public class DP22CoinChange2 {
 
     public static void main(String[] args) {
-        int[] coins =new int[] {1,2,5};
-        int amount = 5;
+        int[] coins =new int[] {1,2,3};
+        int amount = 4;
 
         //Recursion
         System.out.println(coinChange(coins,amount));
@@ -17,6 +17,60 @@ public class DP22CoinChange2 {
         for(int[] r:dp)
             Arrays.fill(r,-1);
         System.out.println(coinChangeMemoization(coins,amount,dp));
+
+        //Tabulation
+        int[][] dp1=new int[n][amount+1];
+        for(int[] r:dp1)
+            Arrays.fill(r,0);
+        System.out.println(tabulation(coins,amount,dp1,n));
+
+        //space
+        System.out.println(space(coins,amount,n));
+
+    }
+
+    private static int space(int[] coins, int amount, int n) {
+        int[] prev=new int[amount+1];
+        int[] curr=new int[amount+1];
+        for(int t=0;t<=amount;t++){
+            if(t%coins[0]==0)
+                prev[t]=1;
+        }
+
+        for(int i=1;i<n;i++){
+            for(int target=0;target<=amount;target++){
+
+                int np=prev[ target];
+                int p=0;
+                if(coins[i]<=target)
+                    p=curr[target-coins[i]];
+
+                curr[target]=np+p;
+            }
+            prev=curr;
+        }
+        return prev[amount];
+    }
+
+    private static int tabulation(int[] coins, int amount, int[][] dp1,int n) {
+
+        for(int t=0;t<=amount;t++){
+            if(t%coins[0]==0)
+                dp1[0][t]=1;
+        }
+
+        for(int i=1;i<n;i++){
+            for(int target=0;target<=amount;target++){
+
+                int np=dp1[i-1][ target];
+                int p=0;
+                if(coins[i]<=target)
+                    p=dp1[i][target-coins[i]];
+
+                dp1[i][target]=np+p;
+            }
+        }
+        return dp1[n-1][amount];
     }
 
     private static int memoization(int index,int[] coins, int amount, int[][] dp) {
@@ -30,7 +84,7 @@ public class DP22CoinChange2 {
             return dp[index][amount];
 
 
-        int np=0+recursion(index-1, coins, amount);
+        int np=recursion(index-1, coins, amount);
         int p=0;
         if(coins[index]<=amount)
             p=recursion(index, coins, amount-coins[index]);

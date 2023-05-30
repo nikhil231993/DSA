@@ -26,6 +26,30 @@ public class DP9LC63UniquePaths2 {
             }
         }
         System.out.println( tabulation(m,n,dp1,obstacleGrid));
+
+        //Space optimization
+        System.out.println(space(n,m,obstacleGrid));
+    }
+
+    private static int space(int n, int m, int[][] obstacleGrid) {
+        int[] prev=new int[n];
+        for(int i=0;i<m;i++) {
+            int[] current=new int[4];
+            for (int j = 0; j < n; j++) {
+                if(obstacleGrid[i][j]==1) current[j]=0;
+                else if(i==0 && j==0) current[j]=1;
+                else{
+                    int left=0,up=0;
+                    if(i>0)
+                        up =prev[j];
+                    if(j>0)
+                        left=current[j-1];
+                    current[j]=up+left;
+                }
+            }
+            prev=current;
+        }
+        return prev[n-1];
     }
 
     private static int tabulation(int m, int n, int[][] dp1,int[][] obstacleGrid) {

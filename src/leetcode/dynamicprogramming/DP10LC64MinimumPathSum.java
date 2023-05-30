@@ -26,6 +26,37 @@ public class DP10LC64MinimumPathSum {
             }
         }
         System.out.println(tabulation(n, m, dp1, grid));
+
+        //Space
+        System.out.println(space(n, m, grid));
+    }
+
+    private static int space(int n, int m,int[][] grid) {
+        int[] prev=new int[n];
+
+        for (int i = 0; i < n; i++) {
+            int[] current=new int[n];
+            for (int j = 0; j < m; j++) {
+                if (i == 0 && j == 0)
+                    current[j] = grid[i][j];
+                else {
+                    int up = (int)(10e9), left = (int)(10e9);
+                    if (i > 0)
+                        up = grid[i][j] + prev[j];
+                    else
+                        up=(int)(1e9);//so that current path is neglected
+                    if (j > 0)
+                        left = grid[i][j] +current[j - 1];
+                    else
+                        left=(int)(1e9);//so that current path is neglected
+                    current[j] = Math.min(up, left);
+                }
+            }
+            prev=current;
+        }
+        return prev[m - 1];
+        //TC:O(m*n)
+        //TC:O(n) 1 D array
     }
 
     private static int tabulation(int n, int m, int[][] dp1, int[][] grid) {

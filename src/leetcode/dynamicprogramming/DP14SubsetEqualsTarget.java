@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class DP14SubsetEqualsTarget {
 
     public static void main(String[] args) {
-        int[] arr=new int[]{2,3,13,13};
+        int[] arr=new int[]{1,2,3,4};
         int n= arr.length;
         int target=4;
 
@@ -14,11 +14,62 @@ public class DP14SubsetEqualsTarget {
 
         //Memoization
         //Assuming constraints are 10 raise to 3
-        int[][] dp=new int[10^3+1][10^+1];
-        int index=dp.length;
+        int[][] dp=new int[n][target+1];
         for(int[] row:dp)
             Arrays.fill(row,-1);
         System.out.println(memoization(n-1,target,arr,dp));
+
+        //Tabulation
+          boolean[][] dp1=new boolean[n][target+1];
+          System.out.println(tabulation(n,target,dp1,arr));
+
+        //Space optimization
+        System.out.println(space(n,target,arr));
+    }
+
+    private static boolean space(int n, int k, int[] arr) {
+        boolean[] prev=new boolean[k+1];
+        boolean[] curr=new boolean[k+1];
+        for(int i=0;i<n;i++)
+           prev[0]= curr[0]=true;
+        if(arr[0]<=k)
+            prev[arr[0]]=true;
+
+        for(int i=1;i<n;i++){
+            for(int target=1;target<=k;target++){
+                boolean notpick=prev[target];
+                boolean pick=false;
+                if(arr[i]<=target)
+                    pick=prev[target-arr[i]];
+                curr[target]=notpick|| pick;
+            }
+            prev=curr;
+        }
+        return prev[k];
+    }
+
+    private static boolean tabulation(int n, int k, boolean[][] dp,int[] arr) {
+
+        for(int i=0;i<n;i++)
+            dp[i][0]=true;
+        if(arr[0]<=k)
+            dp[0][arr[0]]=true;
+
+        for(int i=1;i<n;i++){
+            for(int target=1;target<=k;target++){
+                boolean notpick=dp[i-1][target];
+                boolean pick=false;
+                if(arr[i]<=target)
+                    pick=dp[i-1][target-arr[i]];
+                dp[i][target]=notpick|| pick;
+            }
+        }
+        return dp[n-1][k];
+        //TC:O(N*target)
+        //SC:o(N*target) dp array
+
+
+
     }
 
     private static boolean memoization(int n, int target, int[] arr, int[][] dp) {

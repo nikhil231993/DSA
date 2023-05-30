@@ -27,6 +27,8 @@ public class DP15EqualSubsetSum {
         for(int[] row:dp)
             Arrays.fill(row,-1);
         System.out.println(memoization(n-1,target,arr,dp));
+
+        //Tabulation and space optimization is same as previous question.Pass target as totalSum/2 as input
     }
 
     private static boolean memoization(int n, int target, int[] arr, int[][] dp) {
