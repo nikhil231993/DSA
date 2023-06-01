@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP25LC1143LCS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP26PrinLCS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP27LongestCommonSubstring.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP28LC516LongestPalindromicSubsequence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP29LC1312MinimumInsertionsToMakePalindrome.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP19Knapsack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP19Knapsack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP22CoinChange2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP22CoinChange2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP23UnBoundedKnapsack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP23UnBoundedKnapsack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP24RodCutting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP24RodCutting.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +66,7 @@
       <recent name="leetcode.stack.medium" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DP24RodCutting">
+  <component name="RunManager" selected="Application.DP29LC1312MinimumInsertionsToMakePalindrome">
     <configuration name="BinomialCoefficient" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -81,8 +82,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DP19Knapsack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicprogramming.DP19Knapsack" />
+    <configuration name="DP26PrinLCS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicprogramming.DP26PrinLCS" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -94,8 +95,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DP20LC320CoinChange" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicprogramming.DP20LC320CoinChange" />
+    <configuration name="DP27LongestCommonSubstring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicprogramming.DP27LongestCommonSubstring" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -107,8 +108,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DP22CoinChange2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicprogramming.DP22CoinChange2" />
+    <configuration name="DP28LC516LongestPalindromicSubsequence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicprogramming.DP28LC516LongestPalindromicSubsequence" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -120,8 +121,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DP23UnBoundedKnapsack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicprogramming.DP23UnBoundedKnapsack" />
+    <configuration name="DP28LongestCommonSubstring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicprogramming.DP28LongestCommonSubstring" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -133,8 +134,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DP24RodCutting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicprogramming.DP24RodCutting" />
+    <configuration name="DP29LC1312MinimumInsertionsToMakePalindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicprogramming.DP29LC1312MinimumInsertionsToMakePalindrome" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -148,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DP24RodCutting" />
-        <item itemvalue="Application.DP23UnBoundedKnapsack" />
-        <item itemvalue="Application.DP19Knapsack" />
-        <item itemvalue="Application.DP22CoinChange2" />
-        <item itemvalue="Application.DP20LC320CoinChange" />
+        <item itemvalue="Application.DP29LC1312MinimumInsertionsToMakePalindrome" />
+        <item itemvalue="Application.DP28LC516LongestPalindromicSubsequence" />
+        <item itemvalue="Application.DP26PrinLCS" />
+        <item itemvalue="Application.DP27LongestCommonSubstring" />
+        <item itemvalue="Application.DP28LongestCommonSubstring" />
       </list>
     </recent_temporary>
   </component>
@@ -304,6 +305,11 @@
           <url>file://$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP16APartitionSubsetWithMinimumDifference.java</url>
           <line>20</line>
           <option name="timeStamp" value="103" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP26PrinLCS.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="106" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/leetcode/binarytree/Test.java</url>
