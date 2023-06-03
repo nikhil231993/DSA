@@ -27,6 +27,7 @@ public class LC49GroupedAnagrams {
 				ch[s.charAt(i) - 'a']++;
 			}
 			String key = new String(ch);
+			System.out.println(key);
 			if (!map.containsKey(key)) {
 				map.put(key, new ArrayList());
 			}

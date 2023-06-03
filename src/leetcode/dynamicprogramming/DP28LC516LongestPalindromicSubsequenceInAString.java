@@ -2,7 +2,7 @@ package leetcode.dynamicprogramming;
 
 import java.util.Arrays;
 
-public class DP28LC516LongestPalindromicSubsequence {
+public class DP28LC516LongestPalindromicSubsequenceInAString {
     public static void main(String[] args) {
     String s="bbabcbcab";
     StringBuilder sb=new StringBuilder(s);
