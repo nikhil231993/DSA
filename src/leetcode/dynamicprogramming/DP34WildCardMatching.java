@@ -1,9 +1,8 @@
 package leetcode.dynamicprogramming;
 
-import java.sql.SQLOutput;
 import java.util.Arrays;
 
-public class DP33WildCardMatching {
+public class DP34WildCardMatching {
 
     public static void main(String[] args) {
         String pattern = "*", input = "aa";

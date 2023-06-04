@@ -2,32 +2,32 @@ package leetcode.dynamicprogramming;
 
 import java.util.Arrays;
 
-public class DP36LC122 {
-
+public class DP40LC714Stock6 {
     public static void main(String[] args) {
-        int[] prices =new int[] {7,1,5,3,6,4};
+        int[] prices =new int[] {1,3,7,5,10,3};
+        int fee=3;
 
         //Recursion
-        System.out.println(recursion(prices,1,0));
+        System.out.println(recursion(prices,1,0,fee));
 
         //Memoization
         int[][] dp=new int[prices.length][2];
         for(int[] r:dp)
             Arrays.fill(r,-1);
-        System.out.println(memoization(prices,1,0,dp));
+        System.out.println(memoization(prices,1,0,dp,fee));
 
         //Tabulation
         int n=prices.length;
         int[][] dp1=new int[n+1][2];
         for(int[] r:dp1)
-            Arrays.fill(r,-1);
-        System.out.println(tabulation(prices,1,0,dp1,n));
+            Arrays.fill(r,0);
+        System.out.println(tabulation(prices,1,0,dp1,n,fee));
 
         //Space
-        System.out.println(space(prices,1,n));
+        System.out.println(space(prices,1,n,fee));
     }
 
-    private static int space(int[] prices, int buy, int n) {
+    private static int space(int[] prices, int buy, int n,int fee) {
 
         int[] ahead=new int[2];
         ahead[0]=0;
@@ -40,7 +40,7 @@ public class DP36LC122 {
                 if(by==1){
                     profit=Math.max(-prices[ind]+ahead[0],0+ahead[1]);
                 }else {
-                    profit=Math.max(prices[ind]+ahead[1], 0+ahead[0]);
+                    profit=Math.max(-fee+prices[ind]+ahead[1], 0+ahead[0]);
                 }
                 curr[by]=profit;
             }
@@ -49,7 +49,7 @@ public class DP36LC122 {
         return ahead[buy];
     }
 
-    private static int tabulation(int[] prices, int buy, int index, int[][] dp1,int n) {
+    private static int tabulation(int[] prices, int buy, int index, int[][] dp1,int n,int fee) {
 
 
         dp1[n][0]=0;
@@ -61,15 +61,15 @@ public class DP36LC122 {
                 if(by==1){
                     profit=Math.max(-prices[ind]+dp1[ind+1][0],0+dp1[ind+1][1]);
                 }else {
-                    profit=Math.max(prices[ind]+dp1[ind+1][1], 0+dp1[ind+1][0]);
+                    profit=Math.max(-fee+prices[ind]+dp1[ind+1][1], 0+dp1[ind+1][0]);
                 }
-                 dp1[ind][by]=profit;
+                dp1[ind][by]=profit;
             }
         }
         return dp1[index][buy];
     }
 
-    private static int memoization(int[] prices, int buy, int index, int[][] dp) {
+    private static int memoization(int[] prices, int buy, int index, int[][] dp,int fee) {
         if(index==prices.length)
             return 0;
 
@@ -78,36 +78,36 @@ public class DP36LC122 {
 
         int profit=0;
         if(buy==1){
-            profit=Math.max((-prices[index]+memoization(prices,0,index+1,dp)),
-                    0+memoization(prices,1,index+1,dp));
+            profit=Math.max((-prices[index]+memoization(prices,0,index+1,dp,fee)),
+                    0+memoization(prices,1,index+1,dp,fee));
         }else {
-            profit=Math.max((prices[index]+memoization(prices,1,index+1,dp)),
-                    0+memoization(prices,0,index+1,dp));
+            profit=Math.max((-fee+prices[index]+memoization(prices,1,index+1,dp,fee)),
+                    0+memoization(prices,0,index+1,dp,fee));
         }
         return dp[index][buy]=profit;
 
         //buy ==1 means u can buy
         //TC:O(N*2)
-        //SC:O(1)+O(index*buy)
+        //SC:O(N .ie recursion stack)+O(index*buy)
     }
 
-    private static int recursion(int[] prices, int buy,int index) {
+    private static int recursion(int[] prices, int buy,int index,int fee) {
 
         if(index==prices.length)
             return 0;
 
         int profit=0;
         if(buy==1){
-            profit=Math.max((-prices[index]+recursion(prices,0,index+1)),
-                    0+recursion(prices,1,index+1));
+            profit=Math.max((-prices[index]+recursion(prices,0,index+1,fee)),
+                    0+recursion(prices,1,index+1,fee));
         }else {
-            profit=Math.max((prices[index]+recursion(prices,1,index+1)),
-                    0+recursion(prices,0,index+1));
+            profit=Math.max((-fee+prices[index]+recursion(prices,1,index+1,fee)),
+                    0+recursion(prices,0,index+1,fee));
         }
         return profit;
 
         //buy ==1 means u can buy
         //TC:O(2 raise to N)
-        //SC:O(1)
+        //SC:O(N) recursion stack
     }
 }

@@ -65,6 +65,5 @@ public class DP15EqualSubsetSum {
         return notpick || pick;
         //TC:O(2 raise to N)
         //SC:O(N) auxiliary stack
-
     }
 }

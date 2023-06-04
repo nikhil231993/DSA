@@ -51,7 +51,6 @@ public class DP13LC1493CherryPick2 {
             }
         }
         return dp[i][j1][j2]= max;
-
         //TC:O(n*m*m)
         //SC:O(n)+O(n*m*m)
     }
@@ -60,7 +59,6 @@ public class DP13LC1493CherryPick2 {
 
         int n=grid.length;
         int m=grid[0].length;
-
         return recursion(0,0,m-1,grid,n,m);
 
     }
@@ -89,7 +87,6 @@ public class DP13LC1493CherryPick2 {
             }
         }
         return max;
-
         //TC:O(3 raise to N * 3 raise to N)
         //SC:o(N)
     }

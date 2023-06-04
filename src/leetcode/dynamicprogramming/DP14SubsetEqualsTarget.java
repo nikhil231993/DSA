@@ -67,9 +67,6 @@ public class DP14SubsetEqualsTarget {
         return dp[n-1][k];
         //TC:O(N*target)
         //SC:o(N*target) dp array
-
-
-
     }
 
     private static boolean memoization(int n, int target, int[] arr, int[][] dp) {
@@ -106,6 +103,5 @@ public class DP14SubsetEqualsTarget {
         return notpick || pick;
         //TC:O(2 raise to N)
         //SC:O(N) auxiliary stack
-
     }
 }

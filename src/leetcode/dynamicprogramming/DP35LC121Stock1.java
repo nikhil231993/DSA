@@ -1,8 +1,6 @@
 package leetcode.dynamicprogramming;
 
-import java.lang.management.MemoryType;
-
-public class DP53LC121BuyAndSellStock {
+public class DP35LC121Stock1 {
     public static void main(String[] args) {
         int[] prices =new int[] {7,1,5,3,6,4};
         System.out.println(solution(prices));

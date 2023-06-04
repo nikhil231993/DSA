@@ -6,7 +6,7 @@ public class DP23UnBoundedKnapsack {
 
     public static void main(String[] args) {
         int wt[] =new int[] {2,4,6};
-        int val[] =new int[] {5,11,13};
+        int val[] =new int[] {5,11 ,13};
         int W=10;
 
         //Recursion
