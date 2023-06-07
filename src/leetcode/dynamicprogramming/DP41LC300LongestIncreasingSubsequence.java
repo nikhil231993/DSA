@@ -12,11 +12,86 @@ public class DP41LC300LongestIncreasingSubsequence {
 
         //For Memoization we do a right shift for prevIndex as the prevIndex is -1 initially and we cannot
         //have such a case in dp
-
+        //Memoization
         int[][] dp=new int[n][n+1];
         for(int[] r: dp)
             Arrays.fill(r,-1);
         System.out.println(memoization(n,nums,0,-1,dp));
+
+        //Tabulation
+        int[][] dp1=new int[n+1][n+1];
+        for(int[] r: dp1)
+            Arrays.fill(r,0);
+        System.out.println(tabulation(n,nums,0,-1,dp1));
+
+        //Space
+        System.out.println(space(n,nums,0,-1,dp1));
+
+        //Different way of doing above to do it in 1 array dp
+        System.out.println(iterativeSpaceOpitmized(n,nums));
+    }
+
+    private static int iterativeSpaceOpitmized(int n, int[] nums) {
+
+        int[] dp=new int[n];
+        Arrays.fill(dp,1);
+        int max=0;
+        for(int i=0;i<n;i++){
+            for(int j=0;j<i;j++){
+                if(nums[i]>nums[j]
+                        //&& dp[j]+1>dp[i] we can also do like this or using math.max as shown below
+                ){
+                    dp[i]=Math.max(dp[j]+1,dp[i]);
+                }
+                max=Math.max(max,dp[i]);
+            }
+        }
+        return max;
+        //TC:O(N square)
+        //SC:O(N)
+        //Above solution is used to trace back the LIS
+    }
+
+    private static int space(int n, int[] nums, int index, int prevIndex, int[][] dp1) {
+        int[] ahead=new int[n+1];
+        //Above we don't have to write as we have already set everything to 0
+        for(int ind=n-1;ind>=0;ind--){
+            int[] curr=new int[n+1];
+            for(int prevI=ind-1;prevI>=-1;prevI--){
+                int np=0+ahead[prevI+1];
+                //For second param in dp will have coordinate shift
+                int p=0;
+                if(prevI==-1 || nums[ind]>nums[prevI])
+                    p=1+ahead[ind+1];
+                //For second param in dp will have coordinate shift
+               curr[prevI+1]=Math.max(np,p);
+                //TC:O(N*N)
+                //SC:O(N*N) dp array
+            }
+            ahead=curr;
+        }
+        return ahead[prevIndex+1];
+    }
+
+    private static int tabulation(int n, int[] nums, int index, int prevIndex, int[][] dp1) {
+
+        for(int j=0;j<=n;j++)
+            dp1[n][j]=0;
+        //Above we don't have to write as we have already set everything to 0
+        for(int ind=n-1;ind>=0;ind--){
+            for(int prevI=ind-1;prevI>=-1;prevI--){
+                int np=0+dp1[ind+1][prevI+1];
+                //For second param in dp will have coordinate shift
+                int p=0;
+                if(prevI==-1 || nums[ind]>nums[prevI])
+                    p=1+dp1[ind+1][ind+1];
+                //For second param in dp will have coordinate shift
+                dp1[ind][prevI+1]=Math.max(np,p);
+                //TC:O(N*N)
+                //SC:O(N*N) dp array
+            }
+        }
+        return dp1[index][prevIndex+1];
     }
 
     private static int memoization(int n, int[] nums, int index, int prevIndex, int[][] dp) {
