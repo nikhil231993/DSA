@@ -11,7 +11,7 @@ public class LC84LargestRectangleInHistogram {
 
 	}
 
-	// Using inCreasing stack approach
+	// Using increasing stack approach
 	public static int largestRectangleArea(int[] arr) {
 
 		int n = arr.length;

@@ -5,15 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP42PrintLIS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP43LISUsingBinarySearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP44LargestDivisibleSubset.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP45LC1048LongestStringChain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP46Bitonic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP46LC1671.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP47LC673NoOfLIS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP48MCM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP49MCMTabulation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP50LC1547MinimuCostCutStick.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP51LC312BurstBalloons.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP53LC132PalidromePartitioning2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP55LC85MaximumRectangleAreaWith1s.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP56LC1277CountSubmatricesWithAllOnes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP56LC221MaximalSquare.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP41LC300LongestIncreasingSubsequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP41LC300LongestIncreasingSubsequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/array/medium/LC1423MAximumPointsYouCanObtainFromCards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/medium/LC1423MaximumPointsYouCanObtainFromCards.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/array/medium/LC45JumpGame2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/medium/LC45JumpGame2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/hard/LC84LargestRectangleInHistogram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/hard/LC84LargestRectangleInHistogram.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +72,7 @@
       <recent name="leetcode.stack.medium" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DP47LC673NoOfLIS">
+  <component name="RunManager" selected="Application.DP56LC221MaximalSquare">
     <configuration name="BinomialCoefficient" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -85,8 +88,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DP43LISUsingBinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicprogramming.DP43LISUsingBinarySearch" />
+    <configuration name="DP53LC132PalidromePartitioning2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicprogramming.DP53LC132PalidromePartitioning2" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -98,8 +101,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DP45LC1048LongestStringChain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicprogramming.DP45LC1048LongestStringChain" />
+    <configuration name="DP54LC1043PartitionArrayMaximumSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicprogramming.DP54LC1043PartitionArrayMaximumSum" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -111,8 +114,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DP46LC1671" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicprogramming.DP46LC1671" />
+    <configuration name="DP55LC85MaximumRectangleAreaWith1s" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicprogramming.DP55LC85MaximumRectangleAreaWith1s" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -124,8 +127,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DP46LC1671Bitonic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicprogramming.DP46LC1671Bitonic" />
+    <configuration name="DP56LC1277CountSubmatricesWithAllOnes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicprogramming.DP56LC1277CountSubmatricesWithAllOnes" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -137,8 +140,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DP47LC673NoOfLIS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicprogramming.DP47LC673NoOfLIS" />
+    <configuration name="DP56LC221MaximalSquare" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicprogramming.DP56LC221MaximalSquare" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -152,11 +155,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DP47LC673NoOfLIS" />
-        <item itemvalue="Application.DP46LC1671" />
-        <item itemvalue="Application.DP43LISUsingBinarySearch" />
-        <item itemvalue="Application.DP46LC1671Bitonic" />
-        <item itemvalue="Application.DP45LC1048LongestStringChain" />
+        <item itemvalue="Application.DP56LC221MaximalSquare" />
+        <item itemvalue="Application.DP56LC1277CountSubmatricesWithAllOnes" />
+        <item itemvalue="Application.DP54LC1043PartitionArrayMaximumSum" />
+        <item itemvalue="Application.DP55LC85MaximumRectangleAreaWith1s" />
+        <item itemvalue="Application.DP53LC132PalidromePartitioning2" />
       </list>
     </recent_temporary>
   </component>
