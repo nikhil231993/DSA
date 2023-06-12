@@ -5,18 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP48MCM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP49MCMTabulation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP50LC1547MinimuCostCutStick.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP51LC312BurstBalloons.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP53LC132PalidromePartitioning2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP55LC85MaximumRectangleAreaWith1s.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP56LC1277CountSubmatricesWithAllOnes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP56LC221MaximalSquare.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/array/medium/LC1423MAximumPointsYouCanObtainFromCards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/medium/LC1423MaximumPointsYouCanObtainFromCards.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/array/medium/LC45JumpGame2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/medium/LC45JumpGame2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/hard/LC84LargestRectangleInHistogram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/hard/LC84LargestRectangleInHistogram.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
