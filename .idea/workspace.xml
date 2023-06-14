@@ -5,6 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/LC3LongestSubstringWithoutRepeatingCharacters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/LC424LOngestRepeatingCharacterReplacement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/LC904FruitBaskets.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/MaxConsecutiveOnes2LC485Premium.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/MaxConsecutiveOnes3LC1004.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/MaxConsecutiveOnesLC485.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +67,7 @@
       <recent name="leetcode.stack.medium" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DP56LC221MaximalSquare">
+  <component name="RunManager" selected="Application.LC424LOngestRepeatingCharacterReplacement">
     <configuration name="BinomialCoefficient" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -77,12 +83,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DP53LC132PalidromePartitioning2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicprogramming.DP53LC132PalidromePartitioning2" />
+    <configuration name="LC424LOngestRepeatingCharacterReplacement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.slidingwindowandtwopointer.LC424LOngestRepeatingCharacterReplacement" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.dynamicprogramming.*" />
+          <option name="PATTERN" value="leetcode.slidingwindowandtwopointer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -90,12 +96,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DP54LC1043PartitionArrayMaximumSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicprogramming.DP54LC1043PartitionArrayMaximumSum" />
+    <configuration name="LC904FruitBaskets" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.slidingwindowandtwopointer.LC904FruitBaskets" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.dynamicprogramming.*" />
+          <option name="PATTERN" value="leetcode.slidingwindowandtwopointer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -103,12 +109,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DP55LC85MaximumRectangleAreaWith1s" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicprogramming.DP55LC85MaximumRectangleAreaWith1s" />
+    <configuration name="MaxConsecutiveOnes2LC485Premium" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.slidingwindowandtwopointer.MaxConsecutiveOnes2LC485Premium" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.dynamicprogramming.*" />
+          <option name="PATTERN" value="leetcode.slidingwindowandtwopointer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -116,12 +122,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DP56LC1277CountSubmatricesWithAllOnes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicprogramming.DP56LC1277CountSubmatricesWithAllOnes" />
+    <configuration name="MaxConsecutiveOnes3LC1004" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.slidingwindowandtwopointer.MaxConsecutiveOnes3LC1004" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.dynamicprogramming.*" />
+          <option name="PATTERN" value="leetcode.slidingwindowandtwopointer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -129,12 +135,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DP56LC221MaximalSquare" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicprogramming.DP56LC221MaximalSquare" />
+    <configuration name="MaxConsecutiveOnesLC485" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.slidingwindowandtwopointer.MaxConsecutiveOnesLC485" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.dynamicprogramming.*" />
+          <option name="PATTERN" value="leetcode.slidingwindowandtwopointer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -144,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DP56LC221MaximalSquare" />
-        <item itemvalue="Application.DP56LC1277CountSubmatricesWithAllOnes" />
-        <item itemvalue="Application.DP54LC1043PartitionArrayMaximumSum" />
-        <item itemvalue="Application.DP55LC85MaximumRectangleAreaWith1s" />
-        <item itemvalue="Application.DP53LC132PalidromePartitioning2" />
+        <item itemvalue="Application.LC424LOngestRepeatingCharacterReplacement" />
+        <item itemvalue="Application.LC904FruitBaskets" />
+        <item itemvalue="Application.MaxConsecutiveOnes2LC485Premium" />
+        <item itemvalue="Application.MaxConsecutiveOnes3LC1004" />
+        <item itemvalue="Application.MaxConsecutiveOnesLC485" />
       </list>
     </recent_temporary>
   </component>
