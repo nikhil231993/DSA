@@ -3,7 +3,7 @@ package leetcode.slidingwindowandtwopointer;
 import java.util.HashMap;
 import java.util.Map;
 
-public class LC424LOngestRepeatingCharacterReplacement {
+public class LC424LongestRepeatingCharacterReplacement {
 
     public static void main(String[] args) {
         String s = "AABABBA";

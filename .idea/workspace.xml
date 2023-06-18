@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/LC3LongestSubstringWithoutRepeatingCharacters.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/LC424LOngestRepeatingCharacterReplacement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/LC904FruitBaskets.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/MaxConsecutiveOnes2LC485Premium.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/MaxConsecutiveOnes3LC1004.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/MaxConsecutiveOnesLC485.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/LC1248CountNumberOfNiceSubarrays.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/LC1358NoOfSubstringContainingAllCharacters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/LC525LengthContiguousSubarray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/LC930BinarySubArrayWIthSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/PremiumLOngestSubstringWithKUnqiueCharacters.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/LC424LOngestRepeatingCharacterReplacement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/LC424LongestRepeatingCharacterReplacement.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +67,7 @@
       <recent name="leetcode.stack.medium" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LC424LOngestRepeatingCharacterReplacement">
+  <component name="RunManager" selected="Application.PremiumLOngestSubstringWithKUnqiueCharacters">
     <configuration name="BinomialCoefficient" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -83,8 +83,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC424LOngestRepeatingCharacterReplacement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.slidingwindowandtwopointer.LC424LOngestRepeatingCharacterReplacement" />
+    <configuration name="LC1248CountNumberOfNiceSubarrays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.slidingwindowandtwopointer.LC1248CountNumberOfNiceSubarrays" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -96,8 +96,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC904FruitBaskets" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.slidingwindowandtwopointer.LC904FruitBaskets" />
+    <configuration name="LC1358NoOfSubstringContainingAllCharacters" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.slidingwindowandtwopointer.LC1358NoOfSubstringContainingAllCharacters" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -109,8 +109,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaxConsecutiveOnes2LC485Premium" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.slidingwindowandtwopointer.MaxConsecutiveOnes2LC485Premium" />
+    <configuration name="LC525LengthContiguousSubarray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.slidingwindowandtwopointer.LC525LengthContiguousSubarray" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -122,8 +122,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaxConsecutiveOnes3LC1004" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.slidingwindowandtwopointer.MaxConsecutiveOnes3LC1004" />
+    <configuration name="LC930BinarySubArrayWIthSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.slidingwindowandtwopointer.LC930BinarySubArrayWIthSum" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -135,8 +135,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaxConsecutiveOnesLC485" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.slidingwindowandtwopointer.MaxConsecutiveOnesLC485" />
+    <configuration name="PremiumLOngestSubstringWithKUnqiueCharacters" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.slidingwindowandtwopointer.PremiumLOngestSubstringWithKUnqiueCharacters" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -150,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LC424LOngestRepeatingCharacterReplacement" />
-        <item itemvalue="Application.LC904FruitBaskets" />
-        <item itemvalue="Application.MaxConsecutiveOnes2LC485Premium" />
-        <item itemvalue="Application.MaxConsecutiveOnes3LC1004" />
-        <item itemvalue="Application.MaxConsecutiveOnesLC485" />
+        <item itemvalue="Application.PremiumLOngestSubstringWithKUnqiueCharacters" />
+        <item itemvalue="Application.LC1358NoOfSubstringContainingAllCharacters" />
+        <item itemvalue="Application.LC930BinarySubArrayWIthSum" />
+        <item itemvalue="Application.LC1248CountNumberOfNiceSubarrays" />
+        <item itemvalue="Application.LC525LengthContiguousSubarray" />
       </list>
     </recent_temporary>
   </component>
