@@ -5,7 +5,7 @@ import java.util.HashMap;
 public class LC1358NoOfSubstringContainingAllCharacters {
 
     public static void main(String[] args) {
-        String s = "abcabc";
+        String s = "abca";
 
         System.out.println(count(s));
     }
@@ -25,9 +25,9 @@ public class LC1358NoOfSubstringContainingAllCharacters {
             while(m.getOrDefault('a',0)>0 && m.getOrDefault('b',0)>0 && m.getOrDefault('c',0)>0){
                 Character lc=s.charAt(l);
                 m.put(lc,m.get(lc)-1);
+                count+=n-r;
                 l++;
             }
-            count+=l;
             r++;
         }
         return count;

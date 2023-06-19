@@ -13,7 +13,7 @@ public class LC525LengthContiguousSubarray {
 
         //best approach
         //Step 1: convert all 0 to -1 as the sum of 1 , -1 will be 0 which means it has equal no of 0 and 1
-        //Step 2: If the sum is 0 then len is calculated as i+!
+        //Step 2: If the sum is 0 then len is calculated as i+1
         //step 3. Store only 1st occurrence of numbers in map so to get max length;
         //step 4: If map has the sum then i- map.get(sum)
         System.out.println(findMaxLength(nums));
