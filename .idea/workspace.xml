@@ -5,30 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/array/easy/LC1752CheckIfSortedArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/array/easy/LargestElementInAnArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/array/easy/LeftRotateAnArrayByKPlaces.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/array/easy/LeftRotateAnArrayByOnePlace.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/array/easy/SecondLargestAndsecondSmallest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/hard/LC76MinimumWIndowSubstring.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/hard/LC992SubarrayWithAtmostK.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/hard/LC992SubarrayWithKDifferentIntegers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/medium/LC1052GrumpyOwner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/array/easy/LC268MissingNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/array/easy/LC349IntersectionOfTwoArrays.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/array/easy/LC349UnionOfTwoArrays.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/array/easy/LC485MaxConsecutiveOnes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/LC1248CountNumberOfNiceSubarrays.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/LC1358NoOfSubstringContainingAllCharacters.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/LC3LongestSubstringWithoutRepeatingCharacters.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/LC424LongestRepeatingCharacterReplacement.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/LC525LengthContiguousSubarray.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/LC904FruitBaskets.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/LC930BinarySubArrayWIthSum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/MaxConsecutiveOnes2LC485Premium.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/MaxConsecutiveOnes3LC1004.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/MaxConsecutiveOnesLC485.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/PremiumLongestSubstringWithKUnqiueCharacters.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/hard/PremiumLongestSubstringWithKUnqiueCharacters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/hard/PremiumLongestSubstringWithKUnqiueCharacters.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/medium/LC1358NoOfSubstringContainingAllCharacters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/medium/LC1358NoOfSubstringContainingAllCharacters.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/medium/LC525LengthContiguousSubarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/medium/LC525LengthContiguousSubarray.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +66,7 @@
       <recent name="leetcode.graph" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LeftRotateAnArrayByKPlaces">
+  <component name="RunManager" selected="Application.LC485MaxConsecutiveOnes">
     <configuration name="BinomialCoefficient" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -101,12 +82,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC1052GrumpyOwner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.slidingwindowandtwopointer.medium.LC1052GrumpyOwner" />
+    <configuration name="LC268MissingNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.array.easy.LC268MissingNumber" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.slidingwindowandtwopointer.medium.*" />
+          <option name="PATTERN" value="leetcode.array.easy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -114,8 +95,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LargestElementInAnArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.array.easy.LargestElementInAnArray" />
+    <configuration name="LC349IntersectionOfTwoArrays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.array.easy.LC349IntersectionOfTwoArrays" />
+      <module name="DSA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.array.easy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LC349UnionOfTwoArrays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.array.easy.LC349UnionOfTwoArrays" />
+      <module name="DSA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.array.easy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LC485MaxConsecutiveOnes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.array.easy.LC485MaxConsecutiveOnes" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -140,39 +147,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LeftRotateAnArrayByOnePlace" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.array.easy.LeftRotateAnArrayByOnePlace" />
-      <module name="DSA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.array.easy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SecondLargestAndsecondSmallest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.array.easy.SecondLargestAndsecondSmallest" />
-      <module name="DSA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.array.easy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LC485MaxConsecutiveOnes" />
+        <item itemvalue="Application.LC268MissingNumber" />
+        <item itemvalue="Application.LC349IntersectionOfTwoArrays" />
+        <item itemvalue="Application.LC349UnionOfTwoArrays" />
         <item itemvalue="Application.LeftRotateAnArrayByKPlaces" />
-        <item itemvalue="Application.LeftRotateAnArrayByOnePlace" />
-        <item itemvalue="Application.SecondLargestAndsecondSmallest" />
-        <item itemvalue="Application.LargestElementInAnArray" />
-        <item itemvalue="Application.LC1052GrumpyOwner" />
       </list>
     </recent_temporary>
   </component>
@@ -374,6 +355,11 @@
           <url>file://$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/hard/LC76MinimumWIndowSubstring.java</url>
           <line>54</line>
           <option name="timeStamp" value="123" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/array/easy/LC349IntersectionOfTwoArrays.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="124" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/leetcode/binarytree/Test.java</url>
