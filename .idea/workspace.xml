@@ -5,11 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/array/easy/LC268MissingNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/array/easy/LC349IntersectionOfTwoArrays.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/array/easy/LC349UnionOfTwoArrays.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/array/easy/LC485MaxConsecutiveOnes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/array/easy/LongestSubarrayWithSumK.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/array/medium/LC2149SortSigns.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/array/medium/LC2149SortSignsUnequal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/array/medium/LC75SortColors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/array/medium/LeadersInArray.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/array/easy/LC136SingleNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/easy/LC136SingleNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/array/easy/LC169MajorityElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/easy/LC169MajorityElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/array/medium/LC31NextPermutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/medium/LC31NextPermutation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +70,7 @@
       <recent name="leetcode.graph" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LC485MaxConsecutiveOnes">
+  <component name="RunManager" selected="Application.LeadersInArray">
     <configuration name="BinomialCoefficient" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -82,8 +86,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC268MissingNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.array.easy.LC268MissingNumber" />
+    <configuration name="LC169MajorityElement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.array.easy.LC169MajorityElement" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -95,12 +99,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC349IntersectionOfTwoArrays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.array.easy.LC349IntersectionOfTwoArrays" />
+    <configuration name="LC2149SortSigns" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.array.medium.LC2149SortSigns" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.array.easy.*" />
+          <option name="PATTERN" value="leetcode.array.medium.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -108,12 +112,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC349UnionOfTwoArrays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.array.easy.LC349UnionOfTwoArrays" />
+    <configuration name="LC2149SortSignsUnequal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.array.medium.LC2149SortSignsUnequal" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.array.easy.*" />
+          <option name="PATTERN" value="leetcode.array.medium.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,12 +125,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC485MaxConsecutiveOnes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.array.easy.LC485MaxConsecutiveOnes" />
+    <configuration name="LC75SortColors" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.array.medium.LC75SortColors" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.array.easy.*" />
+          <option name="PATTERN" value="leetcode.array.medium.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -134,12 +138,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LeftRotateAnArrayByKPlaces" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.array.easy.LeftRotateAnArrayByKPlaces" />
+    <configuration name="LeadersInArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.array.medium.LeadersInArray" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.array.easy.*" />
+          <option name="PATTERN" value="leetcode.array.medium.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -149,11 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LC485MaxConsecutiveOnes" />
-        <item itemvalue="Application.LC268MissingNumber" />
-        <item itemvalue="Application.LC349IntersectionOfTwoArrays" />
-        <item itemvalue="Application.LC349UnionOfTwoArrays" />
-        <item itemvalue="Application.LeftRotateAnArrayByKPlaces" />
+        <item itemvalue="Application.LeadersInArray" />
+        <item itemvalue="Application.LC2149SortSignsUnequal" />
+        <item itemvalue="Application.LC2149SortSigns" />
+        <item itemvalue="Application.LC169MajorityElement" />
+        <item itemvalue="Application.LC75SortColors" />
       </list>
     </recent_temporary>
   </component>
@@ -361,6 +365,11 @@
           <line>26</line>
           <option name="timeStamp" value="124" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/array/medium/LeadersInArray.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="125" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/leetcode/binarytree/Test.java</url>
           <line>5</line>
@@ -421,5 +430,10 @@
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/learningLogic$LeadersInArray.ic" NAME="LeadersInArray Coverage Results" MODIFIED="1687583755703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>leetcode.array.medium.*</FILTER>
+    </SUITE>
   </component>
 </project>

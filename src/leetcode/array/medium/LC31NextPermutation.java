@@ -31,9 +31,7 @@ public class LC31NextPermutation {
 			swap(idx1, idx2, nums);
 			reverse(idx1 + 1, nums.length - 1, nums);
 		}
-		
-
-
+		//TC:O(3N)
 	}
 
 	private static void swap(int idx1, int idx2, int[] nums) {

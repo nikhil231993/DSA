@@ -9,10 +9,12 @@ public class LC169MajorityElement {
 		int[] nums = new int[] { 2, 2, 1, 1, 1, 2, 2 };
 		System.out.println(majorityElement(nums));
 
+		System.out.println(majorityElementOptimal(nums));
+
 	}
 	//Brute force
 
-	public int majorityElementBruteForce(int[] nums) {
+	public static int majorityElement(int[] nums) {
 		// int max=Integer.MIN_VALUE;
 		// Arrays.sort(nums);
 		// return nums[nums.length/2]; After sorting sicne element is majority in array it will be present at middle position
@@ -39,11 +41,16 @@ public class LC169MajorityElement {
 		}
 		return no;
 
+		//TC:O(N)
+		//SC:O(N)
+
 	}
 
 	//Best Approach
 
-	private static int majorityElement(int[] nums) {
+	private static int majorityElementOptimal(int[] nums) {
+
+		//Step 1: Moore's Voting Algo
 		int count = 0;
 		int maj = 0;
 		for (int i = 0; i < nums.length; i++) {
@@ -54,7 +61,21 @@ public class LC169MajorityElement {
 			else
 				count++;
 		}
-		return maj;
+
+		//Step 2: Do this only if there is no guarantee of maj element exist
+
+		int c=0;
+		for (int i=0;i<nums.length;i++){
+			if(nums[i]==maj)
+				c++;
+		}
+
+		if(c > nums.length/2)
+			return maj;
+
+		return -1;
+		//TC:O(N)
+		//SC:O(1)
 	}
 
 }
