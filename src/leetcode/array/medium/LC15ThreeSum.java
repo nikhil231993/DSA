@@ -1,20 +1,53 @@
 package leetcode.array.medium;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class LC15ThreeSum {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int[] n = new int[] { -1, 0, 1, 2, -1, -4 };
-		
+
+		//Brute
 		List<List<Integer>> r = threeSum(n);
+		System.out.println(r);
+
+		//Better
+		List<List<Integer>> re1=betterThreeSum(n);
+		System.out.println(re1);
+
+		//Optimal
 		List<List<Integer>> re = threeSumNCubeSpaceComplexity(n);
 		System.out.println(re);
 		scan.close();
+	}
+
+	private static List<List<Integer>> betterThreeSum(int[] nums) {
+
+		Set<List<Integer>> s=new HashSet<>();
+		for(int i=0;i<nums.length;i++){
+			Set<Integer> threeDigits=new HashSet<>();
+			for(int j=i+1;j<nums.length;j++){
+				int third=-(nums[i]+nums[j]);
+				if(threeDigits.contains(third)){
+					List<Integer> r=new ArrayList<>();
+					r.add(nums[i]);
+					r.add(nums[j]);
+					r.add(third);
+					Collections.sort(r);
+					s.add(r);
+				}
+				threeDigits.add(nums[j]);
+			}
+		}
+		List<List<Integer>> list=new ArrayList<>();
+
+		for(List<Integer> l: s)
+			list.add(l);
+
+		return list;
+
+		//TC:O(N square log (size of set))
 	}
 
 	private static List<List<Integer>> threeSumNCubeSpaceComplexity(int[] n) {
@@ -44,6 +77,9 @@ public class LC15ThreeSum {
 		}
 		}
 		return result;
+
+		//TC:O(n cube)
+		//SC:(no of triplets)
 	}
 
 	private static List<List<Integer>> threeSum(int[] n) {
@@ -73,6 +109,9 @@ public class LC15ThreeSum {
 			}
 		}
 		return t;
+
+		//TC:O(nlog n) for sorting + (n*n)
+		//SC:O(no of unique triplets)
 	}
 
 }

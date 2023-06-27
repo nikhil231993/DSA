@@ -26,7 +26,6 @@ public class LC2149SortSigns {
                 posIndx+=2;
             }
         }
-
         return ans;
         //TC:O(N)
         //SC:O(N)

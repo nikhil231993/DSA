@@ -22,12 +22,14 @@ public class LC48RotateImage {
 //			}
 			System.out.println();
 		}
-
 	}
 
 	private static void rotate(int[][] matrix) {
-		for (int i = 0; i < matrix.length; i++) {
-			for (int j = i; j < matrix[0].length; j++) {
+
+		//we go n-1 as the matrix will be sorted onc ewe parse that much
+		for (int i = 0; i < matrix.length-1; i++) {
+			//since diagonals remain intact we start from i+1
+			for (int j = i+1; j < matrix[0].length; j++) {
 				int temp = matrix[j][i];
 				matrix[j][i] = matrix[i][j];
 				matrix[i][j] = temp;
@@ -38,10 +40,9 @@ public class LC48RotateImage {
 				int temp = matrix[i][j];
 				matrix[i][j] = matrix[i][matrix.length - 1 - j];
 				matrix[i][matrix.length - 1 - j] = temp;
-
 			}
 		}
-
+		//TC:O(M*N)+O(M*N)
+		//SC:O(1)
 	}
-
 }

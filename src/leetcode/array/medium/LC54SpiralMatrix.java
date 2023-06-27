@@ -35,22 +35,24 @@ public class LC54SpiralMatrix {
 			}
 			right--;
 
-//			if (top <= bottom) {
+			if (top <= bottom) {
 				for (int i = right; i >= left; i--) {
 					output.add(matrix[bottom][i]);
 				}
-//			}
-			bottom--;
-//			if (left <= right) {
+				bottom--;
+			}
 
+			if (left <= right) {
 				for (int i = bottom; i >= top; i--) {
 					output.add(matrix[i][left]);
 				}
 				left++;
-//			}
+			}
+
+			// SC:O(m*n)
+			// TC:O(m*n)
+
 		}
-		// SC:O(m*n)
-		// TC:O(m*n)
 		return output;
 	}
 

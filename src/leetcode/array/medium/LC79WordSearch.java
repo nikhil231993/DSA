@@ -18,9 +18,7 @@ public class LC79WordSearch {
 				if (board[i][j] == word.charAt(0)) {
 					if (search(i, j, n, m, board, word, 0))
 						return true;
-
 				}
-					
 			}
 		}
 		return false;
