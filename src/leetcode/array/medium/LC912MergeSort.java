@@ -3,7 +3,7 @@ package leetcode.array.medium;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LC912MeregSort {
+public class LC912MergeSort {
 
     public static void main(String[] args) {
         int[] nums = new int[]{5,1,1,2,0,0};
