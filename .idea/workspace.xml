@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/heap/BuildHeap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/heap/HeapAllConcepts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/heap/MaxHeap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/heap/MaxHeapMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/heap/MinHeap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/heap/MinHeapMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/heap/HeapSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G56ArticulationPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G56ArticulationPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/revision/Heap/HeapMax.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/revision/Heap/HeapMax.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/revision/Heap/HeapMin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/revision/Heap/HeapMin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/heap/BuildHeap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/heap/BuildMinHeap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +64,7 @@
       <recent name="leetcode.graph" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BuildHeap">
+  <component name="RunManager" selected="Application.HeapSort">
     <configuration name="BinomialCoefficient" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -87,8 +80,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BuildHeap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.heap.BuildHeap" />
+    <configuration name="BuildMinHeap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.heap.BuildMinHeap" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -113,12 +106,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HeapMaxMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="revision.Heap.HeapMaxMain" />
+    <configuration name="HeapSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.heap.HeapSort" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="revision.Heap.*" />
+          <option name="PATTERN" value="leetcode.heap.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -154,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BuildHeap" />
+        <item itemvalue="Application.HeapSort" />
+        <item itemvalue="Application.BuildMinHeap" />
         <item itemvalue="Application.MinHeapAllConcepts" />
         <item itemvalue="Application.MinHeapMain" />
         <item itemvalue="Application.MaxHeapMain" />
-        <item itemvalue="Application.HeapMaxMain" />
       </list>
     </recent_temporary>
   </component>

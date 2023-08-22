@@ -1,6 +1,6 @@
 package leetcode.heap;
 
-public class BuildHeap {
+public class BuildMinHeap {
 
     public static void main(String[] args) {
         int[] arr=new int[]{9, 3, 2, 5, 4, 6, 7, 8, 1};
