@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class G56ArticulationPoint {
+public class  G56ArticulationPoint {
 
     public static void main(String[] args) {
         int n = 5;

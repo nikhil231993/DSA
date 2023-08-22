@@ -22,7 +22,7 @@ public class HeapMax {
 
 			}
 		}
-
+		//TC:O(logn)
 	}
 
 	public void print() {
@@ -79,7 +79,8 @@ public class HeapMax {
 					maxHeapify(right);
 				}
 			}
-			
+			//TC:O(logn)
+			//SC:O(logn)
 		}
 
 	}

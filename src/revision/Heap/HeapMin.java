@@ -21,6 +21,7 @@ public class HeapMin {
 				tempCurrentLocation = tempCurrentLocation / 2;
 
 			}
+			//TC:O(logn)
 		}
 
 	}
@@ -28,10 +29,10 @@ public class HeapMin {
 	public void print() {
 		for (int i = 1; i <= currentLocation / 2; i++) {
 			System.out.print("parent: " + heap[i]);
-			if (2 * i <= heap.length) {
+			if (2 * i <= currentLocation) {
 				System.out.print("Left: " + heap[2 * i]);
 			}
-			if (2 * i + 1 < heap.length) {
+			if (2 * i + 1 <= currentLocation) {
 				System.out.print("Right: " + heap[2 * i + 1]);
 			}
 			System.out.println();
@@ -79,6 +80,8 @@ public class HeapMin {
 					minHeapify(right);
 				}
 			}
+			//TC:O(logn)
+			//SC:O(logn)
 			
 		}
 
