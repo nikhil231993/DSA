@@ -18,6 +18,8 @@ public class HeapAllConcepts {
         arr[size++]=value;
         heapifyUp(size-1);
 
+        //TC:O(logn)
+
     }
 
     private void heapifyUp(int index) {
