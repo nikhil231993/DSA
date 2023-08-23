@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/heap/medium/LC347TopKFrequentElements.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/heap/easy/MinimumCostOfRopes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/heap/medium/LC215KLargestElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/heap/medium/LC215KLargestElement.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +63,7 @@
       <recent name="leetcode.graph" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LC347TopKFrequentElements">
+  <component name="RunManager" selected="Application.MinimumCostOfRopes">
     <configuration name="BinomialCoefficient" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -73,19 +72,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="leetcode.easy.array.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BuildMinHeap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.heap.BuildMinHeap" />
-      <module name="DSA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.heap.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -132,6 +118,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MinimumCostOfRopes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.heap.easy.MinimumCostOfRopes" />
+      <module name="DSA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.heap.easy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PriorityQueueClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode.heap.PriorityQueueClass" />
       <module name="DSA" />
@@ -147,11 +146,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MinimumCostOfRopes" />
         <item itemvalue="Application.LC347TopKFrequentElements" />
         <item itemvalue="Application.LC215KLargestElement" />
         <item itemvalue="Application.PriorityQueueClass" />
         <item itemvalue="Application.HeapSort" />
-        <item itemvalue="Application.BuildMinHeap" />
       </list>
     </recent_temporary>
   </component>
