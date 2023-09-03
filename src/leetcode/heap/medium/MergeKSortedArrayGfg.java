@@ -1,6 +1,5 @@
 package leetcode.heap.medium;
 
-import java.sql.Array;
 import java.util.ArrayList;
 import java.util.PriorityQueue;
 
@@ -19,7 +18,7 @@ class SubNode{
 public class MergeKSortedArrayGfg {
     public static void main(String[] args) {
 
-        int k=3;
+        int k=4;
         int[][] arr=new int[][]{{1,2,3,4},{2,2,3,4},
                 {5,5,6,6},{7,8,9,9}};
         System.out.println(mergeKArrays(arr,k));
@@ -29,7 +28,6 @@ public class MergeKSortedArrayGfg {
     {
         ArrayList<Integer> result=new ArrayList<>();
         PriorityQueue<SubNode> pq=new PriorityQueue<>((a,b)->a.val-b.val);
-
         for(int i=0;i<k;i++){
             SubNode node=new SubNode(arr[i][0],i,0);
             pq.offer(node);
