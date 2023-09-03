@@ -19,7 +19,6 @@ public class HeapAllConcepts {
         heapifyUp(size-1);
 
         //TC:O(logn)
-
     }
 
     private void heapifyUp(int index) {
@@ -28,6 +27,7 @@ public class HeapAllConcepts {
             arr[(index-1)/2]=arr[index];
             arr[index]=temp;
             index=(index-1)/2;
+            //TC:O(log n)
         }
     }
 
@@ -78,9 +78,7 @@ public class HeapAllConcepts {
             arr[index]=temp;
             heapifyTopToBottom(smallest);
         }
-
         //TC:log n
-
     }
 
     private void decreaseKey(int index, int value) {

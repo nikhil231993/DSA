@@ -25,7 +25,7 @@ public class MinimumCostOfRopes {
             pq.offer(a+b);
         }
         return cost;
-        //TC:log n
-        //SC:n
+        //TC:O(nlogn)
+        //SC:O(n)
     }
 }

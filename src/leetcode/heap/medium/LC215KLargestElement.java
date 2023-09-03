@@ -45,7 +45,7 @@ public class LC215KLargestElement {
         // Approach 3
         //Below is the best method
         //1) Create a min heap of size k
-        //2)check if size of heap > k then pop
+        //2) check if size of heap > k then pop
         //3) continue this till we have elements in array
 
         PriorityQueue<Integer> pq=new PriorityQueue<>();
@@ -56,6 +56,8 @@ public class LC215KLargestElement {
                 pq.poll();
         }
         System.out.println(pq.poll());
+        //TC:o(Nlogk)
+        //SC:O(k)
     }
 
     public static void heapify(int[] arr, int n,int i){

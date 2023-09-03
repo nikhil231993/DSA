@@ -5,12 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/heap/hard/FindMedianInAStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/heap/hard/LC295FindMedianFromDataStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/heap/medium/LC658FindKClosestElements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/heap/medium/MergeKSortedArrayGfg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/heap/codehelp/L75ConvertBSTToMinHeap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/heap/codehelp/L75IsBinaryHeap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/heap/codehelp/L75KSmallestElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/heap/codehelp/L75MergeTwoBinaryHeaps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/heap/codehelp/L76KLargestSumContiguousSubarray.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/heap/PriorityQueueClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/heap/PriorityQueueClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/heap/HeapAllConcepts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/heap/HeapAllConcepts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/heap/easy/MinimumCostOfRopes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/heap/easy/MinimumCostOfRopes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/heap/medium/LC215KLargestElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/heap/medium/LC215KLargestElement.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +70,7 @@
       <recent name="leetcode.graph" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LC295FindMedianFromDataStream">
+  <component name="RunManager" selected="Application.L76KLargestSumContiguousSubarray">
     <configuration name="BinomialCoefficient" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -83,12 +86,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FindMedianInAStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.heap.hard.FindMedianInAStream" />
+    <configuration name="L75ConvertBSTToMinHeap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.heap.codehelp.L75ConvertBSTToMinHeap" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.heap.hard.*" />
+          <option name="PATTERN" value="leetcode.heap.codehelp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -96,12 +99,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC295FindMedianFromDataStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.heap.hard.LC295FindMedianFromDataStream" />
+    <configuration name="L75IsBinaryHeap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.heap.codehelp.L75IsBinaryHeap" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.heap.hard.*" />
+          <option name="PATTERN" value="leetcode.heap.codehelp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,12 +112,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC658FindKClosestElements" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.heap.medium.LC658FindKClosestElements" />
+    <configuration name="L75KSmallestElement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.heap.codehelp.L75KSmallestElement" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.heap.medium.*" />
+          <option name="PATTERN" value="leetcode.heap.codehelp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -122,12 +125,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MergeKSortedArrayGfg" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.heap.medium.MergeKSortedArrayGfg" />
+    <configuration name="L75MergeTwoBinaryHeaps" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.heap.codehelp.L75MergeTwoBinaryHeaps" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.heap.medium.*" />
+          <option name="PATTERN" value="leetcode.heap.codehelp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -135,12 +138,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PriorityQueueClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.heap.PriorityQueueClass" />
+    <configuration name="L76KLargestSumContiguousSubarray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.heap.codehelp.L76KLargestSumContiguousSubarray" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.heap.*" />
+          <option name="PATTERN" value="leetcode.heap.codehelp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -150,11 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LC295FindMedianFromDataStream" />
-        <item itemvalue="Application.FindMedianInAStream" />
-        <item itemvalue="Application.MergeKSortedArrayGfg" />
-        <item itemvalue="Application.LC658FindKClosestElements" />
-        <item itemvalue="Application.PriorityQueueClass" />
+        <item itemvalue="Application.L76KLargestSumContiguousSubarray" />
+        <item itemvalue="Application.L75ConvertBSTToMinHeap" />
+        <item itemvalue="Application.L75MergeTwoBinaryHeaps" />
+        <item itemvalue="Application.L75KSmallestElement" />
+        <item itemvalue="Application.L75IsBinaryHeap" />
       </list>
     </recent_temporary>
   </component>
@@ -401,6 +404,21 @@
           <url>file://$PROJECT_DIR$/src/leetcode/heap/PriorityQueueClass.java</url>
           <line>25</line>
           <option name="timeStamp" value="140" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/heap/codehelp/L75IsBinaryHeap.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="141" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/heap/codehelp/L75IsBinaryHeap.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="142" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/heap/codehelp/L75IsBinaryHeap.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="144" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/leetcode/binarytree/Test.java</url>
