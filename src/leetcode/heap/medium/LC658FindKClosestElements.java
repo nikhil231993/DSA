@@ -1,6 +1,5 @@
 package leetcode.heap.medium;
 
-import java.lang.management.MemoryType;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
