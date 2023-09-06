@@ -1,6 +1,6 @@
 package leetcode.binarysearch.easy;
 
-public class LC740binarysearch {
+public class LC740BinarySearch {
 
     public static void main(String[] args) {
         int[] nums=new int[]{-1,0,3,5,9,12};
