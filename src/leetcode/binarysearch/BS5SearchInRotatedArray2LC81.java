@@ -15,12 +15,15 @@ public class BS5SearchInRotatedArray2LC81 {
     int high=n-1;
     while(low<=high){
         int mid=low+(high-low)/2;
+
         if(nums[mid]==target)
             return true;
-        else if(nums[low]==nums[mid] && nums[mid]==nums[high]){
+        if(nums[low]==nums[mid] && nums[mid]==nums[high]){
             low++;
             high--;
-        }else if(nums[low]<=nums[mid]){
+            continue;
+        }
+        if(nums[low]<=nums[mid]){
             if(target>=nums[low] && target<=nums[mid]){
                 high=mid-1;
             }else{

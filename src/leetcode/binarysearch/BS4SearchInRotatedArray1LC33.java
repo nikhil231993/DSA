@@ -19,7 +19,8 @@ public class BS4SearchInRotatedArray1LC33 {
             int mid=low+(high-low)/2;
             if(nums[mid]==target)
                 return mid;
-            else if(nums[low]<=nums[mid]){
+
+            if(nums[low]<=nums[mid]){
                 if(target>=nums[low] && target<=nums[mid]){
                     high=mid-1;
                 }else{
@@ -34,7 +35,6 @@ public class BS4SearchInRotatedArray1LC33 {
             }
         }
         return -1;
-
         //TC:O(log n)
         //SC:o(1)
     }

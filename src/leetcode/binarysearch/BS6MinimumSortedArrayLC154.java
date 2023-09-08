@@ -3,7 +3,7 @@ package leetcode.binarysearch;
 public class BS6MinimumSortedArrayLC154 {
 
     public static void main(String[] args) {
-        int[] nums=new int[]{3,3,1,3};;
+        int[] nums=new int[]{3,3,1,3};
         System.out.println(findMin(nums));
     }
 
@@ -16,12 +16,9 @@ public class BS6MinimumSortedArrayLC154 {
         while(low<=high){
             int mid=low+(high-low)/2;
 
-            //if below condition is true that means it is the pivot point and low will be the anser
-            if(nums[low]<=nums[high]){
-                ans=Math.min(ans,nums[low]);
-            }
             if(nums[low]==nums[mid] && nums[mid]==nums[high])
             {
+                ans=Math.min(ans,nums[low]);
                 low++;
                 high--;
                 continue;
@@ -36,6 +33,7 @@ public class BS6MinimumSortedArrayLC154 {
             }
         }
         return ans;
+
 
         //TC:O(n/2)
         //SC:O(1)
