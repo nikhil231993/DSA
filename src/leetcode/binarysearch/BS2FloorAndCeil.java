@@ -3,8 +3,8 @@ package leetcode.binarysearch;
 public class BS2FloorAndCeil {
 
     public static void main(String[] args) {
-        int[] arr=new int[]{10,20,30,40,50};
-        int x=30;
+        int[] arr=new int[]{2,4,6,8,8,8,11,13};
+        int x=10;
 
         System.out.println("Ceil index is: " +ceil(arr,x));
 

@@ -1,21 +1,19 @@
 package leetcode.binarysearch;
 
-public class BS3FirstAndLastPosition {
+public class BS3CountOccurences {
 
     public static void main(String[] args) {
         int[] num =new int[]{2,4,6,8,8,8,11,13};
-        int target=11;
+        int target=8;
 
         int[] result=searchRange(num,target);
 
-        for(int n:result)
-            System.out.println(n);
+            System.out.println(result[1]-result[0]+1);
     }
-
     public static int[] searchRange(int[] nums, int target) {
-    int first=firstOccurrence(nums,target);
-    int last=lastOccurrence(nums,target);
-    return new int[]{first,last};
+        int first=firstOccurrence(nums,target);
+        int last=lastOccurrence(nums,target);
+        return new int[]{first,last};
     }
 
     private static int lastOccurrence(int[] nums, int target) {
