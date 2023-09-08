@@ -1,6 +1,6 @@
 package leetcode.binarysearch;
 
-public class BS4SearchInRotatedArray1 {
+public class BS4SearchInRotatedArray1LC33 {
     public static void main(String[] args) {
         int[]  nums =new int[] {4,5,6,7,0,1,2};
         int target = 3;

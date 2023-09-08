@@ -1,6 +1,6 @@
 package leetcode.binarysearch;
 
-public class BS2InsertPosition {
+public class BS2InsertPositionLC35 {
 
     public static void main(String[] args) {
 

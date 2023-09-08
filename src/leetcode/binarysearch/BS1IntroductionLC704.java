@@ -1,5 +1,5 @@
 package leetcode.binarysearch;
-public class BS1Introduction {
+public class BS1IntroductionLC704 {
     public static void main(String[] args) {
         int[] a = {3, 4, 6, 7, 9, 12, 16, 17};
         int target = 6;

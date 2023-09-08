@@ -1,6 +1,6 @@
 package leetcode.binarysearch;
 
-public class BS3FirstAndLastPosition {
+public class BS3FirstAndLastPositionLC34 {
 
     public static void main(String[] args) {
         int[] num =new int[]{2,4,6,8,8,8,11,13};
