@@ -4,15 +4,13 @@ public class BS2LowerBound {
 
     public static void main(String[] args) {
 
-        int[] arr=new int[]{3,5,8,15,19,19};
-        int x=18;
+        int[] arr=new int[]{3,5,8,8,15,15,19,19};
+        int x=7;
 
         System.out.println(lowerBound(arr,x));
     }
 
     private static int lowerBound(int[] arr, int x) {
-        if(x>arr[arr.length-1])
-            return -1;
         int low=0;
         int ans=arr.length;//Return last hypothetical answer
         int high=arr.length-1;
