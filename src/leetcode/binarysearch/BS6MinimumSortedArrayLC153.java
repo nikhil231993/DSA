@@ -16,7 +16,7 @@ public class BS6MinimumSortedArrayLC153 {
         while(low<=high){
             int mid=low+(high-low)/2;
 
-            //if below condition is true that means it is the pivot point and low will be the anser
+            //if below condition is true that means it is the pivot point and low will be the answer
             if(nums[low]<=nums[high]){
                 ans=Math.min(ans,nums[low]);
                 break;
