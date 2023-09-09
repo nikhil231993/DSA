@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS8SingleElementInSortedArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS9FindPeakElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS10SquareRootLC69.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS6MinimumSortedArrayLC153.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS6MinimumSortedArrayLC153.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS7NoOfTimeArrayRotatedDuplicates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS7NoOfTimeArrayRotatedDuplicates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS9FindPeakElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS9FindPeakElement.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,9 +64,9 @@
       <recent name="leetcode.recursion.medium" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BS9FindPeakElement">
-    <configuration name="BS6MinimumSortedArrayLC153" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.binarysearch.BS6MinimumSortedArrayLC153" />
+  <component name="RunManager" selected="Application.BS10SquareRootLC69">
+    <configuration name="BS10SquareRootLC69" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.binarysearch.BS10SquareRootLC69" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -149,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BS10SquareRootLC69" />
         <item itemvalue="Application.BS9FindPeakElement" />
         <item itemvalue="Application.BS7NoOfTimeArrayRotatedDuplicates" />
         <item itemvalue="Application.BS8SingleElementInSortedArray" />
         <item itemvalue="Application.BS7NoOfTimeArrayRotated" />
-        <item itemvalue="Application.BS6MinimumSortedArrayLC153" />
       </list>
     </recent_temporary>
   </component>
