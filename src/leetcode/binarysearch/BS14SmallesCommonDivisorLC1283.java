@@ -12,6 +12,10 @@ public class BS14SmallesCommonDivisorLC1283 {
     }
 
     public static int smallestDivisor(int[] nums, int threshold) {
+
+        if(nums.length > threshold)// In case the elements of the array does not have  ans and threshold given is lessthan length
+            return -1;
+
         int max=Integer.MIN_VALUE;
         int n=nums.length;
         for(int i=0;i<n;i++){
