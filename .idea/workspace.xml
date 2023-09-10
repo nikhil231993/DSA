@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS17AggressiveCows.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS17MageneticBallsLC1552.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS18AllocateBooks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS19PaintersPartition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS19SplitArrayLargestSumLC410.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS16KthMissingPositiveNumberLC1539.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS16KthMissingPositiveNumberLC1539.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS1IntroductionLC704.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS1IntroductionLC704.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS2FloorAndCeil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS2FloorAndCeil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS2InsertPositionLC35.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS2InsertPositionLC35.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS2LowerBound.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS2LowerBound.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS2UpperBound.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS2UpperBound.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -435,7 +434,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetcode/binarysearch/BS2UpperBound.java</url>
-          <line>19</line>
+          <line>18</line>
           <option name="timeStamp" value="151" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

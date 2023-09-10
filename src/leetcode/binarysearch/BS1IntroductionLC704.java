@@ -10,6 +10,8 @@ public class BS1IntroductionLC704 {
             System.out.println("The target is not present.");
         else
             System.out.println("The target is at index: " + ind);
+        //TC:O(logn)
+        //SC:O(1)
 
         //Approach 2
         ind = search(a, target);
@@ -18,8 +20,8 @@ public class BS1IntroductionLC704 {
         else
             System.out.println("The target is at index: " + ind);
 
-        //TC:)(logn)
-        //SC:O(1)
+        //TC:O(log n)
+        //SC:O(log n)
 
     }
 

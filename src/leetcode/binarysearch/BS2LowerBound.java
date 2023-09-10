@@ -6,8 +6,8 @@ public class BS2LowerBound {
 
         int[] arr=new int[]{3,5,8,8,15,15,19,19};
         int x=7;
-
         System.out.println(lowerBound(arr,x));
+
     }
 
     private static int lowerBound(int[] arr, int x) {

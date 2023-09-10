@@ -6,8 +6,8 @@ public class BS2UpperBound {
 
         int[] arr=new int[]{3,5,8,9,15,19};
         int x=9;
-
         System.out.println(upperBound(arr,x));
+
     }
 
     private static int upperBound(int[] arr, int x) {
@@ -15,11 +15,9 @@ public class BS2UpperBound {
         int n=arr.length;
         int low=0;
         int high=n-1;
-
         int ans=n;
         while(low<=high){
             int mid=low+(high-low)/2;
-
             if(arr[mid]>x){
               ans=mid;
               high=mid-1;

@@ -6,8 +6,8 @@ public class BS2InsertPositionLC35 {
 
         int[] arr=new int[]{1,2,4,7};
         int x=0;
-
         System.out.println(insertPosition(arr,x));
+
     }
 
     private static int insertPosition(int[] arr, int x) {
