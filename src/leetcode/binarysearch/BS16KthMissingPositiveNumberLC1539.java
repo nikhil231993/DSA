@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.binarysearch;
 
 public class BS16KthMissingPositiveNumberLC1539 {
 
