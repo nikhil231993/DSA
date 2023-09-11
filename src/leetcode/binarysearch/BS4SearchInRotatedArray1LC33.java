@@ -5,7 +5,6 @@ public class BS4SearchInRotatedArray1LC33 {
         int[]  nums =new int[] {4,5,6,7,0,1,2};
         int target = 3;
         int pos=search(nums,target);
-
         System.out.println(pos);
     }
 
@@ -36,6 +35,6 @@ public class BS4SearchInRotatedArray1LC33 {
         }
         return -1;
         //TC:O(log n)
-        //SC:o(1)
+        //SC:O(1)
     }
 }

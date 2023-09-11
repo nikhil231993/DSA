@@ -14,7 +14,6 @@ public class BS10SquareRootLC69 {
         int ans=0;
         while(low<=high){
             int mid=low+(high-low)/2;
-
             if(x/mid<mid){
                 high=mid-1;
             }else{

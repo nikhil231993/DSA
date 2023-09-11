@@ -18,6 +18,7 @@ public class BS5SearchInRotatedArray2LC81 {
 
         if(nums[mid]==target)
             return true;
+
         if(nums[low]==nums[mid] && nums[mid]==nums[high]){
             low++;
             high--;
@@ -38,6 +39,7 @@ public class BS5SearchInRotatedArray2LC81 {
         }
     }
     return false;
-    //TC:O(n/2) in case array has many duplicates
+        //TC:O(n/2) in case array has many duplicates
+        //SC:O(1)
     }
 }

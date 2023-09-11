@@ -1,9 +1,9 @@
 package leetcode.binarysearch;
 
-public class BS6MinimumSortedArrayLC154 {
+public class BS6MinimumSortedArray1LC153 {
 
     public static void main(String[] args) {
-        int[] nums=new int[]{3,3,1,3};
+        int[] nums=new int[]{1,2,3,4,5};
         System.out.println(findMin(nums));
     }
 
@@ -16,14 +16,11 @@ public class BS6MinimumSortedArrayLC154 {
         while(low<=high){
             int mid=low+(high-low)/2;
 
-            if(nums[low]==nums[mid] && nums[mid]==nums[high])
-            {
+            //if below condition is true that means it is the pivot point and low will be the answer
+            if(nums[low]<=nums[high]){
                 ans=Math.min(ans,nums[low]);
-                low++;
-                high--;
-                continue;
+                break;
             }
-
             if(nums[low]<=nums[mid]){
                 ans=Math.min(ans,nums[low]);
                 low=mid+1;
@@ -33,10 +30,7 @@ public class BS6MinimumSortedArrayLC154 {
             }
         }
         return ans;
-
-
-        //TC:O(n/2)
+        //TC:O(log n)
         //SC:O(1)
-
     }
 }

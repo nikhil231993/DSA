@@ -24,13 +24,12 @@ public class BS8SingleElementInSortedArray {
          }
          return ans;
         //TC:O(n)
+        //SC:O(1)
     }
 
     public static int singleNonDuplicate(int[] nums) {
 
-
         //Approach 2 using binary search
-
         int n=nums.length;
         if(n == 1)
             return nums[0];
@@ -51,11 +50,9 @@ public class BS8SingleElementInSortedArray {
             }else{
                 high=mid-1;
             }
-
         }
         return -1;
-
         //TC:O(log n)
-
+        //SC:O(1)
     }
 }

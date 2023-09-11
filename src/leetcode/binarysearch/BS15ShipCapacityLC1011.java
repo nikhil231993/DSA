@@ -10,7 +10,7 @@ public class BS15ShipCapacityLC1011 {
 
     public static int shipWithinDays(int[] weights, int days) {
 
-        //Step 1: sort the array to find the max value
+        //Step 1: find the max value
         //Step 2: find the sum of the total weight of the packages
 
         int totalWeights=0;

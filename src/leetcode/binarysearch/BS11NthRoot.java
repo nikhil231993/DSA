@@ -3,7 +3,7 @@ package leetcode.binarysearch;
 public class BS11NthRoot {
 
     public static void main(String[] args) {
-       int n = 2, m = 9;
+        int n = 2, m = 9;
         System.out.println(NthRoot(n,m));
     }
 
@@ -29,8 +29,7 @@ public class BS11NthRoot {
     public static int root(int k, int n,int mid){
 
         Long ans=1l;
-        for(int i=1;i<=k;i++)
-        {
+        for(int i=1;i<=k;i++) {
             ans*=mid;
             if(ans > n)
                 return 2;
@@ -39,7 +38,7 @@ public class BS11NthRoot {
             return 1;
         return 0;
 
-        //TC:o(log m * k) for loop
-        //o(log m * log k) log k for exponential
+        //TC:O(log m * k) for loop
+        //O(log m * log k) log k for exponential
     }
 }

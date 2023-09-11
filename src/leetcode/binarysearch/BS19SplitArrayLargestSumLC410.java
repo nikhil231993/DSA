@@ -23,13 +23,11 @@ public class BS19SplitArrayLargestSumLC410 {
         int ans=0;
         while(low<=high){
             int mid=low+(high-low)/2;
-
             if(possible(mid, nums, k)){
                 high=mid-1;
                 ans=mid;
             }else
                 low=mid+1;
-
         }
         return ans;
     }
@@ -48,5 +46,6 @@ public class BS19SplitArrayLargestSumLC410 {
             return true;
         return false;
         //TC:O(log (sum-max+1))* O(n)
+        //SC:O(1)
     }
 }

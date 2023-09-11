@@ -15,11 +15,9 @@ public class BS12KokoEatingBananaLC875 {
 
         int low=1;
         int high=max;
-
         int ans=0;
         while(low<=high){
             int mid=low+(high-low)/2;
-
             int count=isPossible(mid,piles,h);
             if(count<=h){
                 ans=mid;
@@ -34,7 +32,6 @@ public class BS12KokoEatingBananaLC875 {
     private static int isPossible(int mid, int[] piles, int h) {
 
         int count=0;
-
         for(int i=0;i<piles.length;i++)
         {
             count+=Math.ceil((double)piles[i]/(double)mid);

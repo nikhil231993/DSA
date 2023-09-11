@@ -5,10 +5,7 @@ public class BS14SmallesCommonDivisorLC1283 {
     public static void main(String[] args) {
        int[] nums =new int[] {1,2,5,9};
        int threshold = 6;
-        System.out.println(smallestDivisor(nums,threshold));
-
-        //TC:O(log max-1+1)* n
-        //SC: O(1)
+       System.out.println(smallestDivisor(nums,threshold));
     }
 
     public static int smallestDivisor(int[] nums, int threshold) {
@@ -40,5 +37,7 @@ public class BS14SmallesCommonDivisorLC1283 {
             sum+=Math.ceil((double) nums[i]/mid);
         }
         return sum<=threshold;
+        //TC:O(log max-1+1)* n
+        //SC: O(1)
     }
 }

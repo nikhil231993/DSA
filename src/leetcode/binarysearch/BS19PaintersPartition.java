@@ -26,13 +26,11 @@ public class BS19PaintersPartition {
         int ans=0;
         while(low<=high){
             int mid=low+(high-low)/2;
-
             if(possible(mid, boards, k)){
                 high=mid-1;
                 ans=mid;
             }else
                 low=mid+1;
-
         }
         return ans;
     }
@@ -51,5 +49,6 @@ public class BS19PaintersPartition {
             return true;
         return false;
         //TC:O(log (sum-max+1))* O(n)
+        //SC:O(1)
     }
 }

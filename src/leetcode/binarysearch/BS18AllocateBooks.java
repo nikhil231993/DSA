@@ -20,7 +20,6 @@ public class BS18AllocateBooks {
             max=Math.max(max,num);
             sum+=num;
         }
-
         int low=max;
         int high=sum;
         int ans=0;
@@ -34,7 +33,6 @@ public class BS18AllocateBooks {
             }
         }
         return ans;
-
     }
 
     public static boolean possible(int pages, int[] arr ,int m){
@@ -47,12 +45,11 @@ public class BS18AllocateBooks {
                 count++;
                 sum=num;
             }
-
         }
         if(count<=m)
             return true;
         return false;
-
         //TC:O(log (sum-max+1))* O(n)
+        //SC:O(1)
     }
 }

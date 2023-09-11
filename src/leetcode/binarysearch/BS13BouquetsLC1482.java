@@ -45,11 +45,10 @@ public class BS13BouquetsLC1482 {
             }
         }
         noOfBouquets+=count/k;
-
         if(noOfBouquets>=m)
             return true;
         return false;
     }
-
     //TC:O(log (max-min+1)*n)
+    //SC:O(1)
 }

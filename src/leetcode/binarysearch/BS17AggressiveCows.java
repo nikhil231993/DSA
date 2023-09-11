@@ -43,7 +43,6 @@ public class BS17AggressiveCows {
             }
             if(count>=k)
                 return true;
-
         }
         return false;
     }
