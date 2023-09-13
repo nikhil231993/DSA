@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS20MinimiseMaxGasDifference.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS21MedianTwoSortedArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS22KThElementTwoSortedArrays.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS23RowsWithMaxOnes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS24SearchInSortedMatrix1LC74.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/heap/medium/LC378KthSmallestInASortedMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/heap/medium/LC378KthSmallestInASortedMatrix.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,35 +66,48 @@
       <recent name="leetcode.recursion.medium" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BS21MedianTwoSortedArray">
-    <configuration name="BS17AggressiveCows" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.binarysearch.BS17AggressiveCows" />
-      <module name="DSA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.binarysearch.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BS20MinimiseMaxGasDifference" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.binarysearch.BS20MinimiseMaxGasDifference" />
-      <module name="DSA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.binarysearch.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.BS24SearchInSortedMatrix1LC74">
     <configuration name="BS21MedianTwoSortedArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode.binarysearch.BS21MedianTwoSortedArray" />
+      <module name="DSA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.binarysearch.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BS22KThElementTwoSortedArrays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.binarysearch.BS22KThElementTwoSortedArrays" />
+      <module name="DSA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.binarysearch.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BS23RowsWithMaxOnes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.binarysearch.BS23RowsWithMaxOnes" />
+      <module name="DSA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.binarysearch.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BS24SearchInSortedMatrix1LC74" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.binarysearch.BS24SearchInSortedMatrix1LC74" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -119,8 +134,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC215KLargestElement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.heap.medium.LC215KLargestElement" />
+    <configuration name="LC658FindKClosestElements" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.heap.medium.LC658FindKClosestElements" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -132,26 +147,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC632SmallestRangeFromKList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.heap.hard.LC632SmallestRangeFromKList" />
-      <module name="DSA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.heap.hard.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BS24SearchInSortedMatrix1LC74" />
+        <item itemvalue="Application.BS23RowsWithMaxOnes" />
+        <item itemvalue="Application.BS22KThElementTwoSortedArrays" />
+        <item itemvalue="Application.LC658FindKClosestElements" />
         <item itemvalue="Application.BS21MedianTwoSortedArray" />
-        <item itemvalue="Application.LC632SmallestRangeFromKList" />
-        <item itemvalue="Application.BS20MinimiseMaxGasDifference" />
-        <item itemvalue="Application.LC215KLargestElement" />
-        <item itemvalue="Application.BS17AggressiveCows" />
       </list>
     </recent_temporary>
   </component>
@@ -458,6 +460,16 @@
           <url>file://$PROJECT_DIR$/src/leetcode/binarysearch/BS6MinimumSortedArray2LC154.java</url>
           <line>5</line>
           <option name="timeStamp" value="158" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/binarysearch/BS23RowsWithMaxOnes.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="159" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/binarysearch/BS23RowsWithMaxOnes.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="160" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/leetcode/binarytree/Test.java</url>

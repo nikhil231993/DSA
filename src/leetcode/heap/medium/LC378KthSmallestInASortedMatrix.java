@@ -9,7 +9,6 @@ public class LC378KthSmallestInASortedMatrix {
         System.out.println(kthSmallest(matrix,k));
 
         //Approach 2:
-
         System.out.println(KthSmallestUsingBinarySearch(matrix,k));
     }
 
