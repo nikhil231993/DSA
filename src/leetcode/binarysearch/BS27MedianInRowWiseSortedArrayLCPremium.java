@@ -1,6 +1,6 @@
 package leetcode.binarysearch;
 
-public class BS27MedianInRowWiseSortedArray {
+public class BS27MedianInRowWiseSortedArrayLCPremium {
 
     public static void main(String[] args) {
         int R = 3, C = 3;

@@ -9,11 +9,21 @@ public class LC1TwoSum {
 		int[] nums = new int[] { 2, 7, 11, 15 };
 		int target = 22;
 
-		// int[] r = twoSum(nums, target);
-		// int[] r = twoSumUsingMap(nums, target);
-		int[] r = twoSumBestApproach(nums, target);
-
+		//Approach 1 brute
+		int[] r = twoSum(nums, target);
 		for (int n : r)
+			System.out.println(n);
+		System.out.println("###############");
+
+		//Approach 2 better
+		int[] r1= twoSumUsingMap(nums, target);
+		for (int n : r1)
+			System.out.println(n);
+		System.out.println("###############");
+
+		//Approach 3 Optimal
+		int[] r2 = twoSumBestApproach(nums, target);
+		for (int n : r2)
 			System.out.println(n);
 
 	}
@@ -68,7 +78,7 @@ public class LC1TwoSum {
 		}
 		return result;
 		// SC:O(1)
-		// TC:O(n)
+		// TC:O(greater than n  but less than n2)
 	}
 
 }

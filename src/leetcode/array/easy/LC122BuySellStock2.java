@@ -17,6 +17,9 @@ public class LC122BuySellStock2 {
 			}
 		}
 		return profit;
+		//TC:O(n)
+		//SC:O(n)
+
 	}
 
 }

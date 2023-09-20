@@ -11,6 +11,7 @@ public class LC66PlusOne {
 
 		String c = String.valueOf(n);
 
+		//Below is just to convert a string to array
 		int[] digits = new int[c.length()];
 		int i = c.length() - 1;
 		while (n != 0 && i >= 0) {
@@ -34,14 +35,12 @@ public class LC66PlusOne {
 				return digits;
 			}
 			digits[i]=0;
-			
-
 		}
 		int[] new_number = new int[digits.length + 1];
 		new_number[0] = 1;
 		return new_number;
-
-
+		//TC:O(n)
+		//SC:O(1)
 	}
 
 }

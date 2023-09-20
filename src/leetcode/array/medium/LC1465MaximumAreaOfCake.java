@@ -2,7 +2,7 @@ package leetcode.array.medium;
 
 import java.util.Arrays;
 
-public class LC1465MAximumAreaOfCake {
+public class LC1465MaximumAreaOfCake {
 
 	public static void main(String[] args) {
 		int h = 5;
