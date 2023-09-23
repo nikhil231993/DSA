@@ -30,6 +30,7 @@ public class G11DetectCycleUGBFS {
 
         System.out.println(detectCycle(arr,n,m));
 
+        //Below does not give correct result for matrix
         System.out.println(detectCycleInMatrix(matrix,n,m));
 
     }
@@ -45,10 +46,12 @@ public class G11DetectCycleUGBFS {
                 }
         }
         return false;
+        //SC:o(n) queue+O(n) visited array
+        //TC:O(n*n)
     }
 
     private static boolean detect(int i, int[][] matrix, int n, int m, int[] visited) {
-//        visited[i]=1;
+        //visited[i]=1; we use j as the visited array here
         Queue<PairParent> q=new LinkedList<>();
         q.add(new PairParent(i,-1));
         while (!q.isEmpty()){
@@ -76,9 +79,7 @@ public class G11DetectCycleUGBFS {
                 int v=scan.nextInt();
                 matrix[u][v]=1;
                 matrix[v][u]=1;
-
             }
-
             System.out.println("Adjacency Matrix List is: ");
 
          for(int i=0;i<=n;i++){
@@ -100,7 +101,8 @@ public class G11DetectCycleUGBFS {
             }
         }
 
-        //TC:O(N+2E)(while loop which is BFS) + O(n) only 1 time it goes inside for each of the 3 separate components which means 3 times
+        //TC:O(N+2E)(while loop which is BFS) +
+        // O(N) only 1 time it goes inside for each of the 3 separate components which means 3 times
         // watch G11 19:10
         //SC:O(N) queue+O(n) visited array
         return false;

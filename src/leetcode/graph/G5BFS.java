@@ -22,7 +22,6 @@ public class G5BFS {
 
         ArrayList<Integer> bfs=new ArrayList<>();
         Queue<Integer> q=new LinkedList<>();
-
         boolean[] visited=new boolean[n+1];
 
         for(int i=1;i<=n;i++){

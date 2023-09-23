@@ -5,20 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/array/easy/LC1480RunningSumOneDArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/array/easy/LC2006PairsWithAbsoluteDifference.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/array/easy/LC509FibonacciNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/array/extra/GfgLargestElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/array/extra/GfgSecondLargestAndsecondSmallest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/array/easy/LC121BuySellStock1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/easy/LC121BuySellStock1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/array/easy/LC122BuySellStock2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/easy/LC122BuySellStock2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/array/easy/LC169MajorityElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/easy/LC169MajorityElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/array/easy/LC1TwoSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/easy/LC1TwoSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/array/easy/LC283MoveZeroes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/easy/LC283MoveZeroes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/array/easy/LC66PlusOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/easy/LC66PlusOne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/array/easy/LC724.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/easy/LC724FindPivotIndex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/array/easy/LC977SquaresOfSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/easy/LC977SquaresOfSortedArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/array/medium/LC1465MAximumAreaOfCake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/medium/LC1465MaximumAreaOfCake.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS27MedianInRowWiseSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS27MedianInRowWiseSortedArrayLCPremium.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/array/easy/LC26RemoveDuplicatesFromSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/easy/LC26RemoveDuplicatesFromSortedArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/array/easy/LC599MinimumIndexSumOfTwoLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/easy/LC599MinimumIndexSumOfTwoLists.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/array/easy/LeftRotateAnArrayByKPlaces.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/extra/LeftRotateAnArrayByKPlaces.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/array/easy/LeftRotateAnArrayByOnePlace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/extra/LeftRotateAnArrayByOnePlace.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/array/easy/LongestSubarrayWithSumK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/extra/LongestSubarrayWithSumK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/array/easy/SecondLargestAndsecondSmallest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G0Matrixbfsdfs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G0Matrixbfsdfs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G10LC994RottingOranges.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G10LC994RottingOranges.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G11DetectCycleUGBFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G11DetectCycleUGBFS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G3UnweightedGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G3UnweightedGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G3WeightedGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G3WeightedGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G5BFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G5BFS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G6DFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G6DFS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G7LC547NumberOfProvince.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G7LC547NumberOfProvince.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G9LC733FloodFill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G9LC733FloodFill.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +41,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/leetcode/graph/G5BFS.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -68,14 +75,14 @@
       <recent name="$PROJECT_DIR$/src/leetcode/binarysearchtree" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="leetcode.array.extra" />
       <recent name="leetcode.binarysearch" />
       <recent name="leetcode.slidingwindowandtwopointer.hard" />
       <recent name="leetcode.dynamicprogramming" />
       <recent name="leetcode.recursion" />
-      <recent name="leetcode.recursion.medium" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LC977SquaresOfSortedArray">
+  <component name="RunManager" selected="Application.G11DetectCycleUGBFS">
     <configuration name="BinomialCoefficient" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -91,12 +98,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC1480RunningSumOneDArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.array.easy.LC1480RunningSumOneDArray" />
+    <configuration name="G10LC994RottingOranges" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G10LC994RottingOranges" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.array.easy.*" />
+          <option name="PATTERN" value="leetcode.graph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,12 +111,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC169MajorityElement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.array.easy.LC169MajorityElement" />
+    <configuration name="G11DetectCycleUGBFS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G11DetectCycleUGBFS" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.array.easy.*" />
+          <option name="PATTERN" value="leetcode.graph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,12 +124,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC509FibonacciNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.array.easy.LC509FibonacciNumber" />
+    <configuration name="G7LC547NumberOfProvince" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G7LC547NumberOfProvince" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.array.easy.*" />
+          <option name="PATTERN" value="leetcode.graph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,12 +137,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC724FindPivotIndex" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.array.easy.LC724FindPivotIndex" />
+    <configuration name="G9LC733FloodFill" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G9LC733FloodFill" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.array.easy.*" />
+          <option name="PATTERN" value="leetcode.graph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,12 +150,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC977SquaresOfSortedArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.array.easy.LC977SquaresOfSortedArray" />
+    <configuration name="GfgSecondLargestAndsecondSmallest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.array.extra.GfgSecondLargestAndsecondSmallest" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.array.easy.*" />
+          <option name="PATTERN" value="leetcode.array.extra.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -158,11 +165,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LC977SquaresOfSortedArray" />
-        <item itemvalue="Application.LC509FibonacciNumber" />
-        <item itemvalue="Application.LC169MajorityElement" />
-        <item itemvalue="Application.LC724FindPivotIndex" />
-        <item itemvalue="Application.LC1480RunningSumOneDArray" />
+        <item itemvalue="Application.G11DetectCycleUGBFS" />
+        <item itemvalue="Application.G10LC994RottingOranges" />
+        <item itemvalue="Application.G9LC733FloodFill" />
+        <item itemvalue="Application.G7LC547NumberOfProvince" />
+        <item itemvalue="Application.GfgSecondLargestAndsecondSmallest" />
       </list>
     </recent_temporary>
   </component>
@@ -282,7 +289,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetcode/graph/G0Matrixbfsdfs.java</url>
-          <line>50</line>
+          <line>53</line>
           <option name="timeStamp" value="87" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -479,6 +486,11 @@
           <url>file://$PROJECT_DIR$/src/leetcode/binarysearch/BS23RowsWithMaxOnes.java</url>
           <line>28</line>
           <option name="timeStamp" value="160" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/graph/G7LC547NumberOfProvince.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="162" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/leetcode/binarytree/Test.java</url>

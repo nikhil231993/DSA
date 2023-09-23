@@ -13,7 +13,7 @@ public class G7LC547NumberOfProvince {
         //2
         //code in leetcode also runs from index as 0
         //we can use either BFS or DFS
-        int[][] matrix=new int[][]{{1,1,0},{1,1,0},{0,0,1}};
+        int[][] matrix=new int[][]{{1,0,0},{0,1,0},{0,0,1}};
         System.out.println("Using Adjacency Matrix :"+findCircleNum(matrix));
         System.out.println("Using Adjacency List :"+findCircleNumUsingAdjacencyList(matrix));
 
@@ -21,7 +21,7 @@ public class G7LC547NumberOfProvince {
 
     private static int findCircleNumUsingAdjacencyList(int[][] matrix) {
 
-        List<List<Integer>> adjList=new ArrayList<>();
+        ArrayList<ArrayList<Integer>> adjList=new ArrayList<>();
 
         for(int i=0;i<matrix.length;i++){
             adjList.add(new ArrayList<>());
@@ -83,7 +83,7 @@ public class G7LC547NumberOfProvince {
             }
         }
 
-        //SC:O(n) for visited array +o(n) recursion stack for skewed
+        //SC:O(n) for visited array + O(n) recursion stack for skewed
         //TC:O(n*n) as we have to parse each element in matrix
 
         //if it was Adjacency list TC:O(V) outer loop +O(V+2E) for inner loop (12:53 in video)

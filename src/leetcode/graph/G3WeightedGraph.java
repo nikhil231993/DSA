@@ -87,7 +87,7 @@ public class G3WeightedGraph {
           }
           System.out.println();
       }
-    //SC:O(n*n)
+        //SC:O(n*n)
         
     }
 }

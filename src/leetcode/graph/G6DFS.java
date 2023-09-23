@@ -16,14 +16,14 @@ public class G6DFS {
 
         dfs(arr,n,m);
 
-        //SC:O(N) dfs list+O(N) visited array+O(N) recursion stack in case of skew graph
-        //TC:o(N+2E) for 1 component
+        //SC:O(N) dfs list + O(N) visited array + O(N) recursion stack in case of skew graph
+        //TC:O(N+2E) for 1 component
         //TC:O(N)+O(N+2E) for multiple connected components
         //Above is for UG graph
 
         //For DG
         //TC:O(N+E) for 1 component
-        //TC:O(N)+O(N+E) for multiple components
+        //TC:O(N) + O(N+E) for multiple components
     }
 
     private static void dfs(List<List<Integer>> arr, int n, int m) {
@@ -32,8 +32,7 @@ public class G6DFS {
         ArrayList<Integer> dfs=new ArrayList<>();
 
         for(int i=1;i<=n;i++){
-            if(!visited[i])
-            {
+            if(!visited[i]) {
                 dfsRecursive(arr,dfs,visited,i);
             }
         }
@@ -64,7 +63,6 @@ public class G6DFS {
             int v=scan.nextInt();
             arr.get(u).add(v);
             arr.get(v).add(u);
-
         }
 
         System.out.println("Adjacency List is: ");

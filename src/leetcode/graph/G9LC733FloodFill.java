@@ -17,38 +17,42 @@ public class G9LC733FloodFill {
         int[] x_axis=new int[]{1,0,-1,0};
         int[] y_axis=new int[]{0,-1,0,1};
 
-//        dfsTraversal(image,ans,n,m,oldColor,sr,sc,color,x_axis,y_axis);
-//
-//        System.out.println("Using dfs");
-//
-//        for(int i=0;i<n;i++){
-//            for(int j=0;j<m;j++){
-//                System.out.print(ans[i][j]);
-//            }
-//            System.out.println();
-//        }
+        // Using dfs
+        dfsTraversal(image,ans,n,m,oldColor,sr,sc,color,x_axis,y_axis);
+
+        System.out.println("Using dfs");
+
+        for(int i=0;i<n;i++){
+            for(int j=0;j<m;j++){
+                System.out.print(ans[i][j]);
+            }
+            System.out.println();
+        }
 
         System.out.println("Using bfs");
 
         //By using BFS
-        int[][] ans_bfs=image;
-        bfs(image,ans_bfs,sr,sc,color,oldColor,x_axis,y_axis,n,m);
+        int[][] image1=new int[][]{{1,1,1},{1,1,0},{1,0,1}};
+        int[][] ans_bfs=image1;
+        bfs(image1,ans_bfs,sr,sc,color,oldColor,x_axis,y_axis,n,m);
         for(int i=0;i<n;i++){
             for(int j=0;j<m;j++){
                 System.out.print(ans_bfs[i][j]);
             }
             System.out.println();
         }
-//        System.out.println("Using recursion");
-//        //By using Recursion
-//        recursion(image, oldColor, n, m, sr, sc, color);
-//
-//        for(int i=0;i<n;i++){
-//            for(int j=0;j<m;j++){
-//                System.out.print(image[i][j]);
-//            }
-//            System.out.println();
-//        }
+
+        System.out.println("Using recursion");
+        //By using Recursion
+        int[][] image2=new int[][]{{1,1,1},{1,1,0},{1,0,1}};
+        recursion(image2, oldColor, n, m, sr, sc, color);
+
+        for(int i=0;i<n;i++){
+            for(int j=0;j<m;j++){
+                System.out.print(image[i][j]);
+            }
+            System.out.println();
+        }
     }
 
     private static void bfs(int[][] image, int[][] ans, int sr, int sc, int color, int oldColor, int[] xAxis, int[] yAxis, int n, int m) {
@@ -67,9 +71,12 @@ public class G9LC733FloodFill {
             int new_col = second + yAxis[i];
             if(new_col>=0 && new_col<m && new_row>=0 && new_row<n && image[new_row][new_col]==oldColor && ans[new_row][new_col]!=color) {
                 ans[new_row][new_col]=color;
-            q.offer(new Pair(new_row,new_col));
+                q.offer(new Pair(new_row,new_col));
             }
             }
+        //SC:O(M*N) ans matrix
+        //TC:O(m*n)+O(m*n*4) where 4 neighbours where 4 can be avoided
+
         }
     }
 
@@ -77,16 +84,16 @@ public class G9LC733FloodFill {
 
         ans[sr][sc]=color;
 
-    for(int i=0;i<4;i++){
-        int new_row=sr+xAxis[i];
-        int new_col=sc+yAxis[i];
+        for(int i=0;i<4;i++){
+            int new_row=sr+xAxis[i];
+            int new_col=sc+yAxis[i];
 
         if(new_col>=0 && new_col<m && new_row>=0 && new_row<n && image[new_row][new_col]==oldColor && ans[new_row][new_col]!=color){
             dfsTraversal(image,ans,n,m,oldColor,new_row,new_col,color,xAxis,yAxis);
         }
     }
         //SC:O(m*n) recursive stack where all elements are stored in stack +O(M*N) ans matrix
-        //TC:O(m*n*4) where 4 neighbours where 4 can be avoided
+        //TC:O(m*n)+O(m*n*4) where 4 neighbours where 4 can be avoided
 
     }
 

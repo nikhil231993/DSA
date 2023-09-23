@@ -31,9 +31,7 @@ public class G3UnweightedGraph {
             int v=scan.nextInt();
             arr.get(u).add(v);
             arr.get(v).add(u);
-
         }
-
         System.out.println("Adjacency List is: ");
 
         int i=0;
@@ -45,6 +43,7 @@ public class G3UnweightedGraph {
     }
 
     private static void adjacencyMatrix() {
+
         Scanner scan=new Scanner(System.in);
         System.out.println("Enter no of vertex: ");
         int n=scan.nextInt();
@@ -62,13 +61,13 @@ public class G3UnweightedGraph {
         }
 
         System.out.println("Matrix is: ");
-      for(int i=0;i<=n;i++){
+        for(int i=0;i<=n;i++){
           for(int j=0;j<=n;j++){
               System.out.print(arr[i][j]);
           }
           System.out.println();
-      }
-    //SC:O(n*n)
+        }
+        //SC:O(n*n)
         
     }
 }
