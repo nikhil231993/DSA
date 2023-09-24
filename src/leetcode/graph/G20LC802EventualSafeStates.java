@@ -37,7 +37,6 @@ public class G20LC802EventualSafeStates {
                  dfs(i,n,m,visited,pathVis,safeNodes,adjList);
             }
         }
-
         List<Integer> safe=new ArrayList<>();
         for(int i=0;i<n;i++){
             if(safeNodes[i]==1){
@@ -60,12 +59,10 @@ public class G20LC802EventualSafeStates {
             }else if(pathVis[vertex]==1){
                 return true;
             }
-
         }
         pathVis[i]=0;
         safeNodes[i]=1;
         return false;
-
         //TC:o(N)+O(N+E)
         //SC:O(3N) visited array,path visited array and safe +O(N) recursion stack
     }

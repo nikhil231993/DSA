@@ -54,8 +54,6 @@ public class G24LC207CourseSchedule {
                     q.offer(vertex);
                 }
             }
-
-
         }
         return topoSort.size()==numCourses;
     }

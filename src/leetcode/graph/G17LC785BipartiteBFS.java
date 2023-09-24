@@ -44,12 +44,10 @@ public class G17LC785BipartiteBFS {
     private static boolean bfs(int[] color,int[][] graph, int i, List<List<Integer>> adjList) {
 
         color[i]=0;
-
         Queue<Integer> q=new LinkedList<>();
         q.offer(i);
         while(!q.isEmpty()){
             Integer node=q.poll();
-
             for(Integer vertex: adjList.get(node)){
                 if(color[vertex]==-1){
                     color[vertex]=1-color[node];

@@ -22,8 +22,8 @@ public class G12DetectCycleUGDFS {
 
         System.out.println(detectCycleDfs(arr,n,m));
 
- //       Not working
-//        System.out.println(detectCycleInMatrix(matrix,n,m));
+        //Not working
+        //System.out.println(detectCycleInMatrix(matrix,n,m));
 
     }
 
@@ -79,8 +79,8 @@ public class G12DetectCycleUGDFS {
                 return true;
             }
         }
-        //SC:o(n) visited + o(n) auxiliary space worst case in case of skewed graph
-        //TC:O(N+2E) (dfs traversal)+O(n) for the for loop but it does not call dfs for each of them
+        //SC:O(N) visited + O(N) auxiliary space worst case in case of skewed graph
+        //TC:O(N+2E) (dfs traversal)+ O(N) for the for loop but it does not call dfs for each of them
         //G12 18:00
         return false;
     }
@@ -99,9 +99,7 @@ public class G12DetectCycleUGDFS {
             arr.get(v).add(u);
 
         }
-
         System.out.println("Adjacency List is: ");
-
         int i=0;
         for(List<Integer> l: arr){
             System.out.print("List: "+ i++);
@@ -120,18 +118,12 @@ public class G12DetectCycleUGDFS {
             matrix[v][u]=1;
 
         }
-
         System.out.println("Adjacency Matrix List is: ");
-
         for(int i=0;i<=n;i++){
             for(int j=0;j<=n;j++){
                 System.out.print(matrix[i][j]);
             }
             System.out.println();
         }
-
-
-
-
     }
 }

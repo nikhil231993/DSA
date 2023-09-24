@@ -26,7 +26,7 @@ public class G21TopoSortDFS {
                 topoSort(arr,n,m,visited,s,i);
             }
         }
-      List<Integer> l=new ArrayList<>();
+        List<Integer> l=new ArrayList<>();
         while(!s.isEmpty()){
             l.add(s.pop());
         }
@@ -41,7 +41,6 @@ public class G21TopoSortDFS {
                 topoSort(arr,n,m,visited,s,vertex);
         }
         s.push(i);
-
         //TC:O(N)+O(N+E)
         //SC:0(N) visited array +O(N) recursion stack
     }
@@ -58,8 +57,6 @@ public class G21TopoSortDFS {
             int u=scan.nextInt();
             int v=scan.nextInt();
             arr.get(u).add(v);
-
-
         }
 
         System.out.println("Adjacency List is: ");

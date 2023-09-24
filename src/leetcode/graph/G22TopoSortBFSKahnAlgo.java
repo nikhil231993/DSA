@@ -47,7 +47,6 @@ public class G22TopoSortBFSKahnAlgo {
             }
         }
         return list;
-
         //SC:O(N) queue+O(N) indegree +O(N)toposort
         //TC:O(N+E)
     }

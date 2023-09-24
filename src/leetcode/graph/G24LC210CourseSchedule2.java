@@ -12,7 +12,8 @@ public class G24LC210CourseSchedule2 {
         int[][] prerequisites=new int[][]{{0,1}};
         int numCourses=2;
 
-        //can we done using dfs or bfs  toposort to detect cycle. we are using toposort as next question is based on that
+        //can we done using dfs or bfs  toposort to detect cycle.
+        // we are using toposort as next question is based on that
        int[] result= isPossible(numCourses,prerequisites);
        for(Integer n:result)
            System.out.println(n);
@@ -47,6 +48,7 @@ public class G24LC210CourseSchedule2 {
         }
 
         List<Integer> topoSort=new ArrayList();
+
         while(!q.isEmpty()){
             Integer node=q.poll();
             topoSort.add(node);

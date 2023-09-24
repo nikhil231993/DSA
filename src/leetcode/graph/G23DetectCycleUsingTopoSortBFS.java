@@ -63,7 +63,6 @@ public class G23DetectCycleUsingTopoSortBFS {
             int u=scan.nextInt();
             int v=scan.nextInt();
             arr.get(u).add(v);
-
         }
 
         System.out.println("Adjacency List is: ");

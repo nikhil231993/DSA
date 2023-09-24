@@ -46,7 +46,6 @@ public class G15LC1020NumberOfEnclaves {
                 int nrow=row+xaxis[k];
                 int ncol=col+yaxis[k];
 
-
                 if(nrow>=0 && nrow<n && ncol >=0 && ncol<m && grid[nrow][ncol]==1 && visited[nrow][ncol]==0){
                     visited[nrow][ncol]=1;
                     q.offer(new PairLC1020(nrow,ncol));
@@ -64,7 +63,7 @@ public class G15LC1020NumberOfEnclaves {
         }
         return count;
 
-        //TC:O(n^2) upper for loop +O(n^2*4) whiel loop in case all elements are 1
+        //TC:O(n^2) upper for loop +O(n^2*4) while loop in case all elements are 1
         //SC:O(n^2) visited+O(n^2) queue
     }
 }

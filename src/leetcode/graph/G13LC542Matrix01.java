@@ -20,7 +20,9 @@ public class G13LC542Matrix01 {
         int[][] mat = {{0,0,0},{0,1,0},{0,0,0}};
         int n=mat.length;
         int m=mat[0].length;
+
         int[][] ma=updateMatrix(mat);
+
         for(int i=0;i<n;i++){
             for(int j=0;j<m;j++){
                 System.out.print(ma[i][j]);
@@ -42,7 +44,7 @@ public class G13LC542Matrix01 {
             for(int j=0;j<m;j++){
                 if(mat[i][j]==0){
                     visited[i][j]=1;
-                    // dist[i][j]=0;
+                    // dist[i][j]=0; This is not needed as be default values are 0
                     q.offer(new PairG13(i,j,0));
                 }
             }
@@ -56,8 +58,9 @@ public class G13LC542Matrix01 {
             int level=q.peek().dist;
 
             q.poll();
-
-            dist[row][col]=level;
+            dist[row][col]=level;//we can also write this inside if condition which is inside for loop
+            //Also we can use mat itself without using any other matrix also in that case just
+            //change dist to mat and return mat
 
             for(int i=0;i<4;i++){
                 int nrow=row+xaxis[i];
