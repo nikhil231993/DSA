@@ -11,13 +11,13 @@ public class G30LC126WordLadder2 {
         //Below solution gives TLE in Leetcode. Next solution will work on Leetcode
         System.out.println(wordLadder(beginWord,endWord,wordList));
 
-//Time Complexity and Space Complexity: It cannot be predicted for this particular algorithm because there can be
-// multiple sequences of transformation from startWord to targetWord depending upon the example,
-// so we cannot define a fixed range of time or space in which this program would run for all the test cases.
-//
-//Note: This approach/code will give TLE when solved on the Leetcode platform due to the strict time constraints
-// being put up there. So, you need to optimize it to a greater extent in order to pass all the test cases for LeetCode.
-// For the optimized approach to this question please check out the next video.
+        //Time Complexity and Space Complexity: It cannot be predicted for this particular algorithm because there can be
+        // multiple sequences of transformation from startWord to targetWord depending upon the example,
+        // so we cannot define a fixed range of time or space in which this program would run for all the test cases.
+
+        //Note: This approach/code will give TLE when solved on the Leetcode platform due to the strict time constraints
+        // being put up there. So, you need to optimize it to a greater extent in order to pass all the test cases for LeetCode.
+        // For the optimized approach to this question please check out the next video.
     }
 
     private static List<List<String>> wordLadder(String beginWord, String endWord, List<String> wordList) {
@@ -30,7 +30,7 @@ public class G30LC126WordLadder2 {
         List<String> l=new ArrayList<>();
         l.add(beginWord);
         q.offer(l);
-        int level=0;
+        int level=0;//Not needed
 
         //we can usedonlevel array also to store values added inside contains check below
 
@@ -42,12 +42,13 @@ public class G30LC126WordLadder2 {
 
             //erase all words that has been
             //used in the previous levels to transform
-            if(individualList.size()>level){
-                level++;
+//            if(individualList.size()>level){ This is not needed as when we take each entry from queue a level is already
+            //processed. Commenting these 3 lines of code passes 32/36
+//                level++;
                 for(String s:individualList){
                     set.remove(s);
                 }
-            }
+            //}
             if(word.equals(endWord)){
                 if(result.size()==0){
                     result.add(individualList);

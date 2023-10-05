@@ -19,7 +19,6 @@ public class G14LC130SurroundedRegions {
             }
             System.out.println();
         }
-
     }
 
     public static void solve(char[][] board) {

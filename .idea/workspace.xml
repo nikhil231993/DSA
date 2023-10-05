@@ -6,15 +6,27 @@
   <component name="ChangeListManager">
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G10LC994RottingOranges.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G10LC994RottingOranges.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G11DetectCycleUGBFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G11DetectCycleUGBFS.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G12DetectCycleUGDFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G12DetectCycleUGDFS.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G13LC542Matrix01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G13LC542Matrix01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G14LC130SurroundedRegions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G14LC130SurroundedRegions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G15LC1020NumberOfEnclaves.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G15LC1020NumberOfEnclaves.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G16PremiumNumberOfDistinctIslands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G16PremiumNumberOfDistinctIslands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G17LC785BipartiteBFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G17LC785BipartiteBFS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G18BipartiteDFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G18BipartiteDFS.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G19DetectCycleDirectedGraphDFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G19DetectCycleDirectedGraphDFS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G20LC802EventualSafeStates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G20LC802EventualSafeStates.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G21TopoSortDFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G21TopoSortDFS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G22TopoSortBFSKahnAlgo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G22TopoSortBFSKahnAlgo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G23DetectCycleUsingTopoSortBFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G23DetectCycleUsingTopoSortBFS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G24LC207CourseSchedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G24LC207CourseSchedule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G24LC210CourseSchedule2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G24LC210CourseSchedule2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G25LC802EventualSafeStatesUsingTopoSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G25LC802EventualSafeStatesUsingTopoSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G26AlienDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G26AlienDictionary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G27ShortestPathDAG.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G27ShortestPathDAG.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G27ShortestPathDAGWithVisitedUnitWeightsSelfBFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G27ShortestPathDAGWithVisitedUnitWeightsSelfBFS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G28ShortestPathUGActualWeightsSelf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G28ShortestPathUGActualWeightsSelf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G28ShortestPathUGUnitWeights.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G28ShortestPathUGUnitWeights.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G29LC127WordLadder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G29LC127WordLadder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G30LC126WordLadder2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G30LC126WordLadder2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G9LC733FloodFill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G9LC733FloodFill.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +86,7 @@
       <recent name="leetcode.recursion" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.G11DetectCycleUGBFS">
+  <component name="RunManager" selected="Application.G30LC126WordLadder2">
     <configuration name="BinomialCoefficient" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -90,8 +102,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="G10LC994RottingOranges" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G10LC994RottingOranges" />
+    <configuration name="G26AlienDictionary" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G26AlienDictionary" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -103,8 +115,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="G11DetectCycleUGBFS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G11DetectCycleUGBFS" />
+    <configuration name="G27ShortestPathDAG" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G27ShortestPathDAG" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -116,8 +128,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="G7LC547NumberOfProvince" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G7LC547NumberOfProvince" />
+    <configuration name="G28ShortestPathUGActualWeightsSelf" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G28ShortestPathUGActualWeightsSelf" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -129,8 +141,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="G9LC733FloodFill" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G9LC733FloodFill" />
+    <configuration name="G28ShortestPathUGUnitWeights" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G28ShortestPathUGUnitWeights" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -142,12 +154,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GfgSecondLargestAndsecondSmallest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.array.extra.GfgSecondLargestAndsecondSmallest" />
+    <configuration name="G30LC126WordLadder2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G30LC126WordLadder2" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.array.extra.*" />
+          <option name="PATTERN" value="leetcode.graph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -157,11 +169,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.G11DetectCycleUGBFS" />
-        <item itemvalue="Application.G10LC994RottingOranges" />
-        <item itemvalue="Application.G9LC733FloodFill" />
-        <item itemvalue="Application.G7LC547NumberOfProvince" />
-        <item itemvalue="Application.GfgSecondLargestAndsecondSmallest" />
+        <item itemvalue="Application.G30LC126WordLadder2" />
+        <item itemvalue="Application.G28ShortestPathUGActualWeightsSelf" />
+        <item itemvalue="Application.G28ShortestPathUGUnitWeights" />
+        <item itemvalue="Application.G27ShortestPathDAG" />
+        <item itemvalue="Application.G26AlienDictionary" />
       </list>
     </recent_temporary>
   </component>
@@ -484,6 +496,16 @@
           <line>47</line>
           <option name="timeStamp" value="162" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/graph/G26AlienDictionary.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="163" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/graph/G27ShortestPathDAG.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="164" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/leetcode/binarytree/Test.java</url>
           <line>5</line>
@@ -513,7 +535,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/leetcode/graph/G28ShortestPathUGUnitWeights.java</url>
-          <line>5</line>
+          <line>4</line>
           <properties class="leetcode.graph.G28ShortestPathUGUnitWeights" method="main">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />

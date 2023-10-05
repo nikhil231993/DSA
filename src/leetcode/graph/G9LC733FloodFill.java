@@ -34,6 +34,7 @@ public class G9LC733FloodFill {
         //By using BFS
         int[][] image1=new int[][]{{1,1,1},{1,1,0},{1,0,1}};
         int[][] ans_bfs=image1;
+
         bfs(image1,ans_bfs,sr,sc,color,oldColor,x_axis,y_axis,n,m);
         for(int i=0;i<n;i++){
             for(int j=0;j<m;j++){
@@ -45,6 +46,7 @@ public class G9LC733FloodFill {
         System.out.println("Using recursion");
         //By using Recursion
         int[][] image2=new int[][]{{1,1,1},{1,1,0},{1,0,1}};
+
         recursion(image2, oldColor, n, m, sr, sc, color);
 
         for(int i=0;i<n;i++){
@@ -76,7 +78,6 @@ public class G9LC733FloodFill {
             }
         //SC:O(M*N) ans matrix
         //TC:O(m*n)+O(m*n*4) where 4 neighbours where 4 can be avoided
-
         }
     }
 

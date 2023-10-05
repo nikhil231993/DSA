@@ -36,7 +36,7 @@ public class G27ShortestPathDAG {
 
 		int V = 6;
 		int E = 7;
-		int src = 0;//we can take any node as source and it will work as for not reachable nodes it will give 1e9
+		int src = 2;//we can take any node as source and it will work as for not reachable nodes it will give 1e9
 
 		// Convert matrix to adjList;
 		
@@ -46,8 +46,8 @@ public class G27ShortestPathDAG {
 			adjList.add(new ArrayList<PairG27>());
 		}
 		
-		for (int i = 0; i < E; i++) {
-				adjList.get(edge[i][0]).add(new PairG27(edge[i][1], edge[i][2]));
+		for (int[] r: edge) {
+				adjList.get(r[0]).add(new PairG27(r[1], r[2]));
 		}
 		// Toposort
 		int[] visited = new int[V];
@@ -57,7 +57,6 @@ public class G27ShortestPathDAG {
 				dfsTopo(adjList, V, E, st, visited, i);
 			}
 		}
-
 
 		int[] dist = new int[V];
 		Arrays.fill(dist, (int) (1e9));
@@ -104,7 +103,5 @@ public class G27ShortestPathDAG {
 			}
 		}
 		st.push(i);
-
 	}
-
 }

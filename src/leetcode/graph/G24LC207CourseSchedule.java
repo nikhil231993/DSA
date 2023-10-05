@@ -10,9 +10,11 @@ public class G24LC207CourseSchedule {
     public static void main(String[] args) {
         //can be done using dfs or bfs. Use toposort to detect cycle.
         //We are using toposort with bfs as next question is based on that
+
         int[][] prerequisites=new int[][]{{1,0},{0,1}};
         int numCourses=2;
         System.out.println(canFinish(numCourses,prerequisites));
+
         //TC:O(N)+O(N+E)
         //SC:O(N) queue + O(N) Indegree
     }

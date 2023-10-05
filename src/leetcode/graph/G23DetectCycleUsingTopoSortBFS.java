@@ -27,7 +27,6 @@ public class G23DetectCycleUsingTopoSortBFS {
                 indegree[v]++;
             }
         }
-
         Queue<Integer> q=new LinkedList<>();
         for(int i=0;i<n;i++){
             if(indegree[i]==0){

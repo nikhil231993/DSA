@@ -62,7 +62,6 @@ public class G15LC1020NumberOfEnclaves {
             }
         }
         return count;
-
         //TC:O(n^2) upper for loop +O(n^2*4) while loop in case all elements are 1
         //SC:O(n^2) visited+O(n^2) queue
     }

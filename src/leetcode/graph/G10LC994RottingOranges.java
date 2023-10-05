@@ -31,7 +31,7 @@ public class G10LC994RottingOranges {
             for(int j=0;j<m;j++){
                 if(grid[i][j]==2){
                     q.offer(new Oranges(i,j,0));
-                    visited[i][j]=2;
+            //  visited[i][j]=2; will work without this
                 }
 
                 if(grid[i][j]==1)
@@ -66,6 +66,7 @@ public class G10LC994RottingOranges {
         //TC:O(n*m) initial loop to put rotten oranges into queue+
         // O(n*m) if all oranges are fresh apart from 1st queue will run this time
         // +O(m*n*4) for all nodes inside loop runs this time
+        
         //SC:O(m*n) visited matrix +O(m*n) queue where all oranges can be rotten
 
     }

@@ -14,6 +14,7 @@ class PairG29{
 public class G29LC127WordLadder {
 
     public static void main(String[] args) {
+
         String beginWord = "hit", endWord = "cog";
         List<String> wordList = Arrays.asList("hot","dot","dog","lot","log","cog");
         System.out.println(wordLadder(beginWord,endWord,wordList));
@@ -47,7 +48,7 @@ public class G29LC127WordLadder {
             //Else parse through the word and change one letter and check if it exists in set
 
             for(int i=0;i<word.length();i++){
-                //take the char in hadn to return it back into word even though it is not needed
+                //take the char in hand to return it back into word even though it is not needed
                 char[] charArray=word.toCharArray();
                 char original=charArray[i];
                 for(char c='a';c<='z';c++){

@@ -57,8 +57,8 @@ public class G25LC802EventualSafeStatesUsingTopoSort {
         Collections.sort(safeNodes);
         return safeNodes;
 
-        //TC:o(nlogn) sorting + o(N+E)+O(n^2) for converting 2d array to adjlist
-        //SC:o(n) indegree+O(n) safenodes +O(2*n^2) adjlist and reverse list
+        //TC:O(nlogn) sorting + O(N+E)+ O(n^2) for converting 2d array to adjlist
+        //SC:O(n) indegree+ O(n) safenodes + O(2*n^2) adjlist and reverse list
         //Here extra space for adjList is used as compared previous similar question with only dfs
     }
 }

@@ -8,19 +8,19 @@ import java.util.Queue;
 public class G26AlienDictionary {
 
     public static void main(String[] args) {
-//        String[] words=new String[]{"wrt",
-//                "wrf",
-//                "er",
-//                "ett",
-//                "rftt"};
-        String[] words=new String[]{"baa",
-                "abcd",
-                "abca",
-                "cab",
-               "cad"};
+        String[] words=new String[]{"wrt",
+                "wrf",
+                "er",
+                "ett",
+                "rftt"};
+//        String[] words=new String[]{"baa",
+//                "abcd",
+//                "abca",
+//                "cab",
+//               "cad"};
         int n=words.length;
         int k=26;//Try with 5
-        //int k=26;
+
         //Above k is used if we are given random digits order and the first 4-5 digits
         //If the value of k is 6 then it will be befdac where e can come at any place
         //If it is not in initial order then we can find entire
@@ -29,7 +29,8 @@ public class G26AlienDictionary {
         System.out.println(s);
 
         //Time Complexity: O(N*len)+O(K+E), where N is the number of words in the dictionary,
-        // ‘len’ is the length up to the index where the first inequality occurs, K = no. of nodes, and E = no. of edges.
+        // ‘len’ is the length up to the index where the first inequality occurs,
+        // K = no. of nodes, and E = no. of edges.
         //
         //Space Complexity: O(K) + O(K)+O(K)+O(K) ~ O(4K), O(K) for the indegree array,
         // and O(K) for the queue data structure used in BFS(where K = no.of nodes),
@@ -57,16 +58,18 @@ public class G26AlienDictionary {
         List<Integer> list=topoSort(adList,k);
 
         String s="";
-        for(int i=0;i<list.size();i++){
-            s+=(char)(list.get(i)+(int)'a');
+        for(Integer num:list){
+            s+=(char)(num+(int)'a');
         }
         return s;
-
     }
     private static List<Integer> topoSort(List<List<Integer>> arr, int n) {
 
         int[] indegree=new int[n];
         for(int i=0;i<n;i++){
+//            if (arr.get(i).isEmpty()) {
+//                indegree[i] = Integer.MAX_VALUE;
+//            }
             for(Integer v:arr.get(i)){
                 indegree[v]++;
             }

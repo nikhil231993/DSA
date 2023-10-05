@@ -63,7 +63,6 @@ public class G19DetectCycleDirectedGraphDFS {
             int v=scan.nextInt();
             arr.get(u).add(v);
             arr.get(v).add(u);
-
         }
 
         System.out.println("Adjacency List is: ");

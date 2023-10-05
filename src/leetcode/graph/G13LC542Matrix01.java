@@ -66,7 +66,7 @@ public class G13LC542Matrix01 {
                 int nrow=row+xaxis[i];
                 int ncol=col+yaxis[i];
 
-                if(nrow>=0 && nrow< n && ncol>=0 && ncol<m && visited[nrow][ncol] !=1){
+                if(nrow>=0 && nrow< n && ncol>=0 && ncol<m && visited[nrow][ncol] ==0){
                     visited[nrow][ncol]=1;
                     q.offer(new PairG13(nrow,ncol,level+1));
                 }
