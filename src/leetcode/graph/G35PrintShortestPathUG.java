@@ -3,8 +3,8 @@ package leetcode.graph;
 import java.util.*;
 
 public class G35PrintShortestPathUG {
-
     public static void main(String[] args) {
+
         int[][] edge = new int[][] { { 1, 2, 2 },
                 { 2, 5, 5 }, {1,4,1},{ 4, 3, 3 }, { 2, 3, 4 },
                 { 3, 5, 1 }};
@@ -15,7 +15,6 @@ public class G35PrintShortestPathUG {
         int dest=5;
 
         int[] dist=new int[V+1];
-
         int[] path=shortestPath(edge,V,E,src,dest,dist);
 
         //If we are not able to reach then dest then it will 1e9
@@ -35,12 +34,12 @@ public class G35PrintShortestPathUG {
         Collections.reverse(pathList);
         System.out.println(pathList);
 
-//Time Complexity: O( E log(V) ) { for Dijkstra’s Algorithm } +
-// O(V) { for backtracking in order to find the parent for each node }
-// Where E = Number of edges and V = Number of Nodes.
-//
-//Space Complexity: O( |E| + |V| ) { for priority queue and dist array } +
-// O( |V| ) { for storing the final path } Where E = Number of edges and V = Number of Nodes.
+        //Time Complexity: O( E log(V) ) { for Dijkstra’s Algorithm } +
+        // O(V) { for backtracking in order to find the parent for each node }
+        // Where E = Number of edges and V = Number of Nodes.
+
+        //Space Complexity: O( |E| + |V| ) { for priority queue and dist array } +
+        // O( |V| ) { for storing the final path } Where E = Number of edges and V = Number of Nodes.
     }
 
     private static int[] shortestPath(int[][] edge, int V, int E,int src, int des,int[] dist) {
@@ -55,7 +54,6 @@ public class G35PrintShortestPathUG {
             adjList.get(edge[i][0]).add(new PairG32(edge[i][1],edge[i][2]));
             adjList.get(edge[i][1]).add(new PairG32(edge[i][0],edge[i][2]));
         }
-
 
         Arrays.fill(dist,(int)(1e9));
         dist[src]=0;
@@ -81,11 +79,7 @@ public class G35PrintShortestPathUG {
                         q.offer(new PairG32(vertex.node, dist[vertex.node]));
                     }
             }
-
-
         }
-
        return parent;
-
     }
 }
