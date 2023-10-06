@@ -54,7 +54,6 @@ public class G39MinimumMultiplicationToReachEnd {
             }
         }
         return -1;
-
     }
 
     public static int minimumMultiplicationsWithoutUsingDistanceArray(int[] arr, int start, int end) {

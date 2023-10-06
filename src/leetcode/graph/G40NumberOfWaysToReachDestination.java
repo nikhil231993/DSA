@@ -16,7 +16,6 @@ class PairG40{
     }
 }
 public class G40NumberOfWaysToReachDestination {
-
     //converting to long as the test case in leetocde have large values
     public static void main(String[] args) {
         int V = 7;
@@ -68,10 +67,7 @@ public class G40NumberOfWaysToReachDestination {
                     ways[vert]=(ways[vert]+ways[node])%mod;
                 }
             }
-
-
         }
         return (int)ways[n-1]%mod;
-
     }
 }

@@ -53,6 +53,6 @@ public class G41BellManFordAlgorithm {
                 return negArray;
             }
         }
-    return dist;
+         return dist;
     }
 }
