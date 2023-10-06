@@ -5,6 +5,8 @@ import java.util.PriorityQueue;
 public class G37MinPathMatrixSelf {
 
     public static void main(String[] args) {
+
+        //Below question is to include the values in each cell and find the shortest path
         int[][] heights = new int[][]{{1, 2, 3}, {4, 5, 1}, {4, 2, 1}};
         int[] source = new int[]{0, 0};
         int[] dest = new int[]{2, 2};
@@ -56,5 +58,6 @@ public class G37MinPathMatrixSelf {
             }
         }
         return -1;
+        //TC:o(ElogV) i.e O(n*m*4*log(n*m))
     }
 }

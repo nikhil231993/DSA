@@ -25,15 +25,15 @@ class PairG38{
 public class G38LC787CheapestFlight {
 
     public static void main(String[] args) {
-        int[][] flights=new int[][]{{0,1,100},{1,2,100},{0,2,500}};
-//        int[][] flights=new int[][]{{0,1,5},{1,2,5},{0,3,2},{3,1,2},{1,4,1},{4,2,1}};
-//        int V=5;
-//        int E=6;
-        int V=3;
-        int E=3;
+//        int[][] flights=new int[][]{{0,1,100},{1,2,100},{0,2,500}};
+        int[][] flights=new int[][]{{0,1,5},{1,2,5},{0,3,2},{3,1,2},{1,4,1},{4,2,1}};
+        int V=5;
+        int E=6;
+//        int V=3;
+//        int E=3;
         int src=0;
         int dest=2;
-        int k=1;
+        int k=2;
 //        int k=2;
 
         System.out.println("Shortest distance with required stop is :"+shortestPath(flights,V,E,src,dest,k));
@@ -66,19 +66,18 @@ public class G38LC787CheapestFlight {
             q.poll();
 
             //we can break also after below condition as then we cannot have a solution to the question
-            if(stop>k) continue;
+            if(stop>k) break;
             for(PairSrcDest vertex:adjList.get(node)){
                 int destination=vertex.dest;
                 int edW=vertex.distance;
 
+                //below stop<=k is not required
                 if(stop <=k && dist[destination]>edW+distance){
                     dist[destination]=edW+distance;
                     q.offer(new PairG38(stop+1,destination,edW+distance));
-
                 }
             }
         }
-
         System.out.println("All other destination shortest distance is :");
         for(Integer n : dist)
             System.out.println(n);
@@ -87,14 +86,12 @@ public class G38LC787CheapestFlight {
             return -1;
         return dist[dest];
 
-//
-//        Time Complexity: O( N ) { Additional log(N) of time eliminated here because we’re using a simple queue rather than a priority queue which is usually used in Dijkstra’s Algorithm }.
-//
+//        Time Complexity: O( N ) { Additional log(N) of time eliminated here because we’re using a simple queue
+//        rather than a priority queue which is usually used in Dijkstra’s Algorithm }.
 //        Where N = Number of flights / Number of edges.
-//
-//                Space Complexity:  O( |E| + |V| ) { for the adjacency list, priority queue, and the dist array }.
-//
-//        Where E = Number of edges (flights.size()) and V = Number of Airports.
+
+//       Space Complexity:  O( |E| + |V| ) { for the adjacency list, priority queue, and the dist array }.
+//       Where E = Number of edges (flights.size()) and V = Number of Airports.
 
 
     }

@@ -16,8 +16,8 @@ import java.util.PriorityQueue;
 public class G37LC1631AbsoluteDIffPath {
 
     public static void main(String[] args) {
-        int[][] heights = new int[][]{{1,2,2},{3,8,2},{5,3,5}};
 
+        int[][] heights = new int[][]{{1,2,2},{3,8,2},{5,3,5}};
         System.out.println(maxAbsolutPathDiff(heights));
     }
 
@@ -49,6 +49,8 @@ public class G37LC1631AbsoluteDIffPath {
             int col=pq.peek().col;
             pq.poll();
 
+            //we check the value while taking out of PQ because we might reach right corner with max values as well
+            //Try dry run with example in question and you will find out
             if(row==n-1 && col==m-1)
                 return height;
 
@@ -65,7 +67,6 @@ public class G37LC1631AbsoluteDIffPath {
                 }
             }
         }
-
         return 0;// unreachable
         //TC:o(ElogV) i.e O(n*m*4*log(n*m))
     }

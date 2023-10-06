@@ -58,12 +58,17 @@ public class G36BinaryMaze {
         //Create 4 directions
         int[] xaxis=new int[]{1,0,-1,0};
         int[] yaxis=new int[]{0,-1,0,1};
+        int[][] visited=new int[n][n];
 
         while(!q.isEmpty()){
             int dis=q.peek().dist;
             int row=q.peek().row;
             int col=q.peek().col;
             q.poll();
+
+//            if(visited[row][col]==1) This will improve the speed.
+//                continue;
+//            visited[row][col]=1;
 
             for(int k=0;k<4;k++){
                 int nrow=row+xaxis[k];

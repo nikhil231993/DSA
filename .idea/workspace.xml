@@ -6,9 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G32DijkstraAlgoDGWeightSelf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G32DijkstraAlgoDGWeightSelf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G32DijkstraAlgoUGWeight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G32DijkstraAlgoUGWeight.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G35PrintShortestPathUG.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G35PrintShortestPathUG.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G36BinaryMaze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G36BinaryMaze.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G36LC1036BinaryMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G36LC1036BinaryMatrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G37LC1631AbsoluteDIffPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G37LC1631AbsoluteDIffPath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G37MinPathMatrixSelf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G37MinPathMatrixSelf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G38LC787CheapestFlight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G38LC787CheapestFlight.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +71,7 @@
       <recent name="leetcode.recursion" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.G35PrintShortestPathUG">
+  <component name="RunManager" selected="Application.G38LC787CheapestFlight">
     <configuration name="BinomialCoefficient" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -84,8 +87,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="G28ShortestPathUGActualWeightsSelf" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G28ShortestPathUGActualWeightsSelf" />
+    <configuration name="G13LC542Matrix01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G13LC542Matrix01" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -97,21 +100,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="G30LC126WordLadder2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G30LC126WordLadder2" />
-      <module name="DSA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.graph.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="G32DijkstraAlgoDGWeightSelf" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G32DijkstraAlgoDGWeightSelf" />
+    <configuration name="G28ShortestPathUGUnitWeights" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G28ShortestPathUGUnitWeights" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -136,8 +126,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="G35PrintShortestPathUG" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G35PrintShortestPathUG" />
+    <configuration name="G37MinPathMatrixSelf" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G37MinPathMatrixSelf" />
+      <module name="DSA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.graph.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="G38LC787CheapestFlight" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G38LC787CheapestFlight" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -151,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.G35PrintShortestPathUG" />
-        <item itemvalue="Application.G32DijkstraAlgoDGWeightSelf" />
+        <item itemvalue="Application.G38LC787CheapestFlight" />
+        <item itemvalue="Application.G37MinPathMatrixSelf" />
+        <item itemvalue="Application.G28ShortestPathUGUnitWeights" />
         <item itemvalue="Application.G32DijkstraAlgoUGWeight" />
-        <item itemvalue="Application.G30LC126WordLadder2" />
-        <item itemvalue="Application.G28ShortestPathUGActualWeightsSelf" />
+        <item itemvalue="Application.G13LC542Matrix01" />
       </list>
     </recent_temporary>
   </component>
@@ -232,11 +235,6 @@
           <url>file://$PROJECT_DIR$/src/leetcode/graph/G35PrintShortestPathUG.java</url>
           <line>50</line>
           <option name="timeStamp" value="55" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/leetcode/graph/G35PrintShortestPathUG.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="62" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetcode/binarysearch/medium/LC29DivideTwoIntegers.java</url>
@@ -488,6 +486,26 @@
           <line>60</line>
           <option name="timeStamp" value="164" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/graph/G35PrintShortestPathUG.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="166" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/graph/G35PrintShortestPathUG.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="167" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/graph/G38LC787CheapestFlight.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="168" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/graph/G38LC787CheapestFlight.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="169" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/leetcode/binarytree/Test.java</url>
           <line>5</line>
@@ -523,15 +541,6 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="53" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/leetcode/graph/G35PrintShortestPathUG.java</url>
-          <line>5</line>
-          <properties class="leetcode.graph.G35PrintShortestPathUG" method="main">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="60" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP13LC1493CherryPick2.java</url>

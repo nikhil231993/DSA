@@ -39,6 +39,8 @@ public class G36LC1036BinaryMatrix {
                 distance[i][j]=(int)(1e9);
             }
         }
+        int[][] visited=new int[n][n];
+
         //Setting source distance to 0
         distance[source[0]][source[1]]=1;
 
@@ -51,12 +53,17 @@ public class G36LC1036BinaryMatrix {
             int row=q.peek().row;
             int col=q.peek().col;
             q.poll();
+//             if(visited[row][col]==1) This will improve the speed.
+//                continue;
+//            visited[row][col]=1;
 
             for(int k=0;k<8;k++){
                 int nrow=row+xaxis[k];
                 int ncol=col+yaxis[k];
 
                 if(nrow>=0 && nrow<n && ncol>=0 && ncol<m && grid[nrow][ncol]==0){
+                    //We can do below check even before above for loop.i.e., because since here the distance is
+                    //constant, whenever we reach corner that will be the fastest.
                     if(nrow==dest[0]&& ncol==dest[1]){
                         return dis+1;
                     }
