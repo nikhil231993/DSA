@@ -4,10 +4,8 @@ package leetcode.graph;
 import java.util.Arrays;
 
 class DisjointSetByRank{
-
     int[] rank=null;
     int[] parent=null;
-
     public DisjointSetByRank(int n){
         rank=new int[n+1];
         parent=new int[n+1];

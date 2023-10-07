@@ -12,14 +12,12 @@ class PairG43 {
 	public PairG43(int node, int dist) {
 		this.node = node;
 		this.dist = dist;
-
 	}
 }
 public class G43SmallestDistanceNeighbours {
 
 	public static void main(String[] args) {
-		
-		
+
 // 		example 1
 //		int n = 4;
 //		int[][] edges = new int[][] { { 0, 1, 3 }, { 1, 2, 1 }, { 1, 3, 4 }, { 2, 3, 1 } };
@@ -36,8 +34,6 @@ public class G43SmallestDistanceNeighbours {
 	}
 
 	private static int cityWithSmallestDistanceUsingDijkstra(int n, int[][] edges, int distanceThreshold) {
-		
-		
 
 		int[][] costMatrix = new int[n][n];
 		
@@ -72,16 +68,13 @@ public class G43SmallestDistanceNeighbours {
 					if (distanceNode[v] > distance + edW) {
 						distanceNode[v] = distance + edW;
 						pq.offer(new PairG43(v, distance + edW));
-
 					}
 				}
-				
 			}
 			costMatrix[i] = distanceNode;
 		}
 
-//		System.out.println("Costing Matriz:");
-//
+//		System.out.println("Costing Matrix:");
 //		for (int[] m : costMatrix) {
 //			System.out.println(m[0] + "  " + m[1] + "  " + m[2] + "  " + m[3]+" "+m[4]);
 //			System.out.println();
@@ -102,7 +95,6 @@ public class G43SmallestDistanceNeighbours {
 				count = cnt;
 			}
 		}
-
 		return maxCity;
 	}
 
@@ -116,7 +108,6 @@ public class G43SmallestDistanceNeighbours {
 				if(i==j) {
 					costMatrix[i][j]=0;
 				}
-				
 			}
 		}
 		
@@ -130,7 +121,6 @@ public class G43SmallestDistanceNeighbours {
 		}
 
 //		System.out.println("Print the matrix:");
-//
 //		for (int[] m : costMatrix) {
 //			System.out.println(m[0] + "  " + m[1] + "  " + m[2] + "  " + m[3]);
 //			System.out.println();
@@ -166,16 +156,12 @@ public class G43SmallestDistanceNeighbours {
 				count = cnt;
 			}
 		}
-
 		return maxCity;
 
-		// Time Complexity: O(V3), as we have three nested loops each running for V
-		// times,
+		// Time Complexity: O(V cube), as we have three nested loops each running for V times,
 		// where V = no. of vertices.
 
-		// Space Complexity: O(V2), where V = no. of vertices. This space complexity is
-		// due to storing the
+		// Space Complexity: O(V2), where V = no. of vertices. This space complexity is due to storing the
 		// adjacency matrix of the given graph.
 	}
-
 }

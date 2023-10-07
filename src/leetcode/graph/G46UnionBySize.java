@@ -1,11 +1,8 @@
 package leetcode.graph;
 
-import learningLogic.Graph.DisjointSet;
-
 class DisjointSetBySize{
     int[] parent=null;
     int[] size=null;
-
     public DisjointSetBySize(int n){
         parent=new int[n+1];
         size=new int[n+1];
@@ -35,8 +32,8 @@ class DisjointSetBySize{
             parent[parent_U]=parent_V;
             size[parent_V]+=size[parent_U];
         }else if(size_V<size_U){
-            parent[parent_U]=parent_V;
-            size[parent_V]+=size[parent_U];
+            parent[parent_V]=parent_U;
+            size[parent_U]+=size[parent_V];
         }else{
             parent[parent_U]=parent_V;
             size[parent_V]+=size[parent_U];
@@ -61,7 +58,7 @@ public class G46UnionBySize {
         else
             System.out.println("Not same");
 
-        //Tc:O(4 alpha) for findParent +O(4 alpha) for union
+        //TC:O(4 alpha) for findParent +O(4 alpha) for union
         //SC:O(n) rank and +o(N) parent
     }
 }

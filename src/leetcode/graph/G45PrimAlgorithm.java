@@ -6,9 +6,7 @@ import java.util.PriorityQueue;
 
 class PairNodeWeight{
     int node;
-
     int weight;
-
     public PairNodeWeight(int node, int weight){
         this.node=node;
         this.weight=weight;
@@ -18,7 +16,6 @@ class PairG45{
     int weight;
     int node;
     int parent;
-
     public PairG45(int weight, int node, int parent){
         this.weight=weight;
         this.node=node;
@@ -28,10 +25,10 @@ class PairG45{
 public class G45PrimAlgorithm {
 
     public static void main(String[] args) {
+
         int[][] edges=new int[][]{{0,1,2},{0,2,1},{1,2,1},{2,4,2},{2,3,2},{3,4,1}};
         int n=5;
         int src=2;
-
         System.out.println(minimumWeight(edges,n,src));
     }
 
@@ -43,13 +40,11 @@ public class G45PrimAlgorithm {
         for(int i=0;i<n;i++){
             adjList.add(new ArrayList<>());
         }
-
         //Adding edges
         for(int i=0;i<edges.length;i++){
             adjList.get(edges[i][0]).add(new PairNodeWeight(edges[i][1],edges[i][2]));
             adjList.get(edges[i][1]).add(new PairNodeWeight(edges[i][0],edges[i][2]));
         }
-
         //key is to store the distance
         int[] key=new int[n];
         //to store parent of each

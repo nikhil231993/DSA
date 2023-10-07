@@ -20,7 +20,6 @@ public class G41BellManFordAlgorithm {
         //SC:O(N) distance
         //Most of the questions are solved using Dijkstra but Bellman ford can be a follow up question
         //for negative weights or graphs with negative cycle
-
     }
 
     private static int[] bellManFord(int n, int e, int[][] edges,int src) {
