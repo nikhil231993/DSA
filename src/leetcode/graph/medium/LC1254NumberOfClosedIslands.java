@@ -1,6 +1,6 @@
 package leetcode.graph.medium;
 
-public class LC1254NumberOFClosedIslands {
+public class LC1254NumberOfClosedIslands {
 
     public static void main(String[] args) {
         int[][] grid =new int[][] {{1,1,1,1,1,1,1,0},{1,0,0,0,0,1,1,0},{1,0,1,0,1,1,1,0},{1,0,0,0,0,1,0,1},{1,1,1,1,1,1,1,0}};

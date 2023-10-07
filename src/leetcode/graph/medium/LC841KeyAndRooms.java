@@ -2,7 +2,7 @@ package leetcode.graph.medium;
 
 import java.util.*;
 
-public class Lc841KeyAndRooms {
+public class LC841KeyAndRooms {
 
     public static void main(String[] args) {
         //  rooms = [[1],[2],[3],[]]

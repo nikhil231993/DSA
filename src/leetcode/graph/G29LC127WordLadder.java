@@ -50,7 +50,7 @@ public class G29LC127WordLadder {
             for(int i=0;i<word.length();i++){
                 //take the char in hand to return it back into word even though it is not needed
                 char[] charArray=word.toCharArray();
-                char original=charArray[i];
+                char original=charArray[i];//This line is not needed as the actual word is not changed
                 for(char c='a';c<='z';c++){
                     charArray[i]=c;
                     String replacedString=new String(charArray);
@@ -59,7 +59,7 @@ public class G29LC127WordLadder {
                         set.remove(replacedString);
                     }
                 }
-                charArray[i]=original;
+                charArray[i]=original;//This line is not needed as the actual word is not changed
             }
         }
         return 0;//We will return 0 if we don't reach the word
