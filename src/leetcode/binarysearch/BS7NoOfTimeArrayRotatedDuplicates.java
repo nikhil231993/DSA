@@ -4,16 +4,17 @@ public class BS7NoOfTimeArrayRotatedDuplicates {
 
     public static void main(String[] args) {
 
-        int[] arr =new int[] { 1,3,5};
+        int[] arr =new int[] { 3,4,5,1,2};
         int n =arr.length;
         System.out.println(findKRotation(arr,n));
     }
 
     public static int findKRotation(int nums[], int n) {
+
         int low=0;
-        int high=nums.length-1;
+        int high=n-1;
         int ans=Integer.MAX_VALUE;
-        int index=Integer.MAX_VALUE;
+        int index=-1;
         while(low<=high){
             int mid=low+(high-low)/2;
 
@@ -51,5 +52,7 @@ public class BS7NoOfTimeArrayRotatedDuplicates {
             }
         }
         return index;
+        //TC:O(n/2)
+        //SC:O(1)
     }
 }

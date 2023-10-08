@@ -7,14 +7,10 @@ public class BS8SingleElementInSortedArray {
         int[] arr=new int[]{1,1,2,3,3,4,4,8,8};
 
         //Approach 1: Using XOR
-
         System.out.println(xor(arr));
 
         //Approach 2: Using binary search
-
         System.out.println(singleNonDuplicate(arr));
-
-
     }
 
     private static int xor(int[] nums) {

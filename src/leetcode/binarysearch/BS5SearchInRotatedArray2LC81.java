@@ -6,7 +6,6 @@ public class BS5SearchInRotatedArray2LC81 {
         int[] nums=new int[]{1};;
         int target=1;
         System.out.println(search(nums,target));
-
     }
 
     public static boolean search(int[] nums, int target) {
@@ -38,8 +37,8 @@ public class BS5SearchInRotatedArray2LC81 {
             }
         }
     }
-    return false;
-        //TC:O(n/2) in case array has many duplicates
+        return false;
+        //TC:O(n/2) in case array has many duplicates as we keep on shrinking
         //SC:O(1)
     }
 }

@@ -9,10 +9,11 @@ public class BS7NoOfTimeArrayRotated {
     }
 
     public static int findKRotation(int nums[], int n) {
+
         int low=0;
-        int high=nums.length-1;
+        int high=n-1;
         int ans=Integer.MAX_VALUE;
-        int index=Integer.MAX_VALUE;
+        int index=-1;
         while(low<=high){
             int mid=low+(high-low)/2;
 
@@ -23,7 +24,6 @@ public class BS7NoOfTimeArrayRotated {
                     break;
                 }
             }
-
             if(nums[low]<=nums[mid]){
                 if(ans>nums[low]){
                     ans=nums[low];
@@ -39,5 +39,7 @@ public class BS7NoOfTimeArrayRotated {
             }
         }
         return index;
+        //TC:O(log n)
+        //SC:O(1)
     }
 }

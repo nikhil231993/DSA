@@ -3,6 +3,7 @@ package leetcode.binarysearch;
 public class BS6MinimumSortedArray1LC153 {
 
     public static void main(String[] args) {
+
         int[] nums=new int[]{1,2,3,4,5};
         System.out.println(findMin(nums));
     }

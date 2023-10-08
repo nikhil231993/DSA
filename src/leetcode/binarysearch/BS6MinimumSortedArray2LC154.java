@@ -3,6 +3,7 @@ package leetcode.binarysearch;
 public class BS6MinimumSortedArray2LC154 {
 
     public static void main(String[] args) {
+
         int[] nums=new int[]{3,3,1,3};
         System.out.println(findMin(nums));
     }
@@ -22,8 +23,7 @@ public class BS6MinimumSortedArray2LC154 {
                 break;
             }
 
-            if(nums[low]==nums[mid] && nums[mid]==nums[high])
-            {
+            if(nums[low]==nums[mid] && nums[mid]==nums[high]){
                 ans=Math.min(ans,nums[low]);
                 low++;
                 high--;
@@ -39,10 +39,7 @@ public class BS6MinimumSortedArray2LC154 {
             }
         }
         return ans;
-
-
         //TC:O(n/2)
         //SC:O(1)
-
     }
 }
