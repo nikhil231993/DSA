@@ -5,13 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/leetcode/graph/medium/LC684RedunantConnection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G29LC127WordLadder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G29LC127WordLadder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G30LC126WordLadder2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G30LC126WordLadder2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G47KrushkalAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G47KrushkalAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS1IntroductionLC704.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS1IntroductionLC704.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS2FloorAndCeil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS2FloorAndCeil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS2InsertPositionLC35.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS2InsertPositionLC35.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS2LowerBound.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS2LowerBound.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS2UpperBound.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS2UpperBound.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS3CountOccurences.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS3CountOccurences.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS3FirstAndLastPositionLC34.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS3FirstAndLastPositionLC34.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G48NumberOfProvincesUsingDisjointSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G48NumberOfProvincesUsingDisjointSet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/medium/LC1254NumberOFClosedIslands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/medium/LC1254NumberOfClosedIslands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/medium/Lc841KeyAndRooms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/medium/LC841KeyAndRooms.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G49LC1319NoOfOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G49LC1319NoOfOperations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G50LC721AccountsMerge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G50LC721AccountsMerge.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +76,72 @@
       <recent name="leetcode.recursion" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.G47KrushkalAlgorithm">
+  <component name="RunManager" selected="Application.BS3CountOccurences">
+    <configuration name="BS1IntroductionLC704" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.binarysearch.BS1IntroductionLC704" />
+      <module name="DSA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.binarysearch.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BS2LowerBound" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.binarysearch.BS2LowerBound" />
+      <module name="DSA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.binarysearch.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BS2UpperBound" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.binarysearch.BS2UpperBound" />
+      <module name="DSA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.binarysearch.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BS3CountOccurences" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.binarysearch.BS3CountOccurences" />
+      <module name="DSA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.binarysearch.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BS3FirstAndLastPositionLC34" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.binarysearch.BS3FirstAndLastPositionLC34" />
+      <module name="DSA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.binarysearch.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BinomialCoefficient" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -87,78 +157,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="G28ShortestPathUGUnitWeights" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G28ShortestPathUGUnitWeights" />
-      <module name="DSA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.graph.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="G37MinPathMatrixSelf" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G37MinPathMatrixSelf" />
-      <module name="DSA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.graph.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="G38LC787CheapestFlight" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G38LC787CheapestFlight" />
-      <module name="DSA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.graph.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="G46UnionBySize" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G46UnionBySize" />
-      <module name="DSA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.graph.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="G47KrushkalAlgorithm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.graph.G47KrushkalAlgorithm" />
-      <module name="DSA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.graph.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.G47KrushkalAlgorithm" />
-        <item itemvalue="Application.G46UnionBySize" />
-        <item itemvalue="Application.G38LC787CheapestFlight" />
-        <item itemvalue="Application.G37MinPathMatrixSelf" />
-        <item itemvalue="Application.G28ShortestPathUGUnitWeights" />
+        <item itemvalue="Application.BS3CountOccurences" />
+        <item itemvalue="Application.BS3FirstAndLastPositionLC34" />
+        <item itemvalue="Application.BS2UpperBound" />
+        <item itemvalue="Application.BS2LowerBound" />
+        <item itemvalue="Application.BS1IntroductionLC704" />
       </list>
     </recent_temporary>
   </component>
@@ -253,17 +258,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetcode/graph/G50LC721AccountsMerge.java</url>
-          <line>49</line>
+          <line>48</line>
           <option name="timeStamp" value="80" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetcode/graph/G50LC721AccountsMerge.java</url>
-          <line>39</line>
+          <line>38</line>
           <option name="timeStamp" value="85" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetcode/graph/G50LC721AccountsMerge.java</url>
-          <line>51</line>
+          <line>50</line>
           <option name="timeStamp" value="86" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -423,12 +428,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetcode/binarysearch/BS2LowerBound.java</url>
-          <line>16</line>
+          <line>13</line>
           <option name="timeStamp" value="150" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetcode/binarysearch/BS2UpperBound.java</url>
-          <line>18</line>
+          <line>15</line>
           <option name="timeStamp" value="151" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

@@ -4,9 +4,9 @@ public class G48NumberOfProvincesUsingDisjointSet {
     public static void main(String[] args) {
         int[][] matrix=new int[][]{{1,1,0},{1,1,0},{0,0,1}};
         int n=3;
-        System.out.println("Number of provinces are: "+countProvinces(matrix,3));
+        System.out.println("Number of provinces are: "+countProvinces(matrix));
     }
-        private static int countProvinces(int[][] matrix,int n) {
+        private static int countProvinces(int[][] matrix) {
 
         int n=matrix.length;
         int m= matrix[0].length;

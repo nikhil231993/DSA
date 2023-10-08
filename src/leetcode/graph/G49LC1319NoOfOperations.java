@@ -1,10 +1,9 @@
 package leetcode.graph;
 
 public class G49LC1319NoOfOperations {
-
     public static void main(String[] args) {
-//        int n = 4;
-//        int[][] connections =new int[][] {{0,1},{0,2},{1,2}};
+//       int n = 4;
+//       int[][] connections =new int[][] {{0,1},{0,2},{1,2}};
 
         int n = 6;
         int[][] connections =new int[][] {{0,1},{0,2},{0,3},{1,2},{1,3}};
@@ -34,11 +33,15 @@ public class G49LC1319NoOfOperations {
         if(countExtraEdges>=noOfComponents-1)
             return noOfComponents-1;
         return-1;
-//Time Complexity: O(E*4α)+O(N*4α) where E = no. of edges and N = no. of nodes.
-// The first term is to calculate the number of extra edges and the second term is to count the number of components.
-// 4α is for the disjoint set operation we have used and this term is so small that it can be considered constant.
-//
-//Space Complexity: O(2N) where N = no. of nodes. 2N for the two arrays(parent and size) of size N we have
-// used inside the disjoint set.
+
+        //Time Complexity: O(E*4α)+O(N*4α) where E = no. of edges and N = no. of nodes.
+        // The first term is to calculate the number of extra edges and the second term is to count the
+        // number of components.
+        // 4α is for the disjoint set operation we have used and this term is so small that it can be
+        // considered constant.
+
+        //Space Complexity: O(2N) where N = no. of nodes. 2N for the two arrays(parent and size) of
+        // size N we have
+        // used inside the disjoint set.
     }
 }

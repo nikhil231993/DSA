@@ -1,13 +1,10 @@
 package leetcode.binarysearch;
-
 public class BS2UpperBound {
 
     public static void main(String[] args) {
-
-        int[] arr=new int[]{3,5,8,9,15,19};
-        int x=9;
+        int[] arr=new int[]{2,3,6,7,8,8,11,11,11,12};
+        int x=12;
         System.out.println(upperBound(arr,x));
-
     }
 
     private static int upperBound(int[] arr, int x) {

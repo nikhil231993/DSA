@@ -3,6 +3,7 @@ package leetcode.binarysearch;
 public class BS3CountOccurences {
 
     public static void main(String[] args) {
+
         int[] num =new int[]{2,4,6,8,8,8,11,13};
         int target=8;
         int[] result=searchRange(num,target);
@@ -24,11 +25,10 @@ public class BS3CountOccurences {
             if(nums[mid]==target) {
                 ans = mid;
                 low = mid + 1;
-            }
-            else if(nums[mid]<target){
-                low = mid + 1;
+            }else if(nums[mid]>target){
+                high = mid - 1;
             }else{
-                high=mid-1;
+                low=mid+1;
             }
         }
         return ans;
@@ -45,8 +45,7 @@ public class BS3CountOccurences {
             if(nums[mid]==target) {
                 ans = mid;
                 high = mid - 1;
-            }
-            else if(nums[mid]>target){
+            }else if(nums[mid]>target){
                 high = mid - 1;
             }else{
                 low=mid+1;

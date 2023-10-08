@@ -1,7 +1,6 @@
 package leetcode.graph;
 
 import java.util.*;
-
 public class G50LC721AccountsMerge {
     public static void main(String[] args) {
         List<List<String>> accounts = new ArrayList<List<String>>();
@@ -65,13 +64,13 @@ public class G50LC721AccountsMerge {
         }
 
         return ans;
-        //Time Complexity: O(N+E) + O(E*4ɑ) + O(N*(ElogE + E)) where N = no. of indices or nodes and E = no. of emails.
+        //Time Complexity: O(N+E) + O(E*4ɑ) + O(N*(ElogE + E)) where N = no. of indices or nodes
+        // and E = no. of emails.
         // The first term is for visiting all the emails. The second term is for merging the accounts.
         // And the third term is for sorting the emails and storing them in the answer array.
-        //
-        //Space Complexity: O(N)+ O(N) +O(2N) ~ O(N) where N = no. of nodes/indices. The first and second space is for the ‘mergedMail’ and the ‘ans’ array. The last term is for the parent and size array used inside the Disjoint set data structure.
+        //Space Complexity: O(N)+ O(N) +O(2N) ~ O(N) where N = no. of nodes/indices.
+        // The first and second space is for the ‘mergedMail’ and the ‘ans’ array.
+        // The last term is for the parent and size array used inside the Disjoint set data structure.
 
     }
-
-
 }

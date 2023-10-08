@@ -8,7 +8,6 @@ public class BS2FloorAndCeil {
         int x=10;
         System.out.println("Ceil index is: " +ceil(arr,x));
         System.out.println("floor index is: " +floorMethod(arr,x));
-
     }
 
     private static int floorMethod(int[] arr, int x) {
@@ -51,7 +50,6 @@ public class BS2FloorAndCeil {
        else return arr[ans];
         //TC:O(log n)
         //SC:O(1)
-
         //Same as lower bound problem
     }
 }

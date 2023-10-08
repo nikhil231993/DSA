@@ -1,13 +1,10 @@
 package leetcode.binarysearch;
 
 public class BS2LowerBound {
-
     public static void main(String[] args) {
-
-        int[] arr=new int[]{3,5,8,8,15,15,19,19};
-        int x=7;
+        int[] arr=new int[]{3,5,8,8,15,15,19};
+        int x=19;
         System.out.println(lowerBound(arr,x));
-
     }
 
     private static int lowerBound(int[] arr, int x) {
