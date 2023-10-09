@@ -32,8 +32,7 @@ public class BS12KokoEatingBananaLC875 {
     private static int isPossible(int mid, int[] piles, int h) {
 
         int count=0;
-        for(int i=0;i<piles.length;i++)
-        {
+        for(int i=0;i<piles.length;i++) {  //O(N)
             count+=Math.ceil((double)piles[i]/(double)mid);
         }
         return count;
@@ -44,7 +43,7 @@ public class BS12KokoEatingBananaLC875 {
         for(Integer num:piles)
             max=Math.max(max,num);
         return max;
-        //TC:O(N)* log max(element)
+        //TC:O(N)* log (max(element))
         //SC:O(1)
     }
 }
