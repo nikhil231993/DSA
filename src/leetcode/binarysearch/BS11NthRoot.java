@@ -10,7 +10,6 @@ public class BS11NthRoot {
     public static int NthRoot(int n, int m)
     {
         int low=0;
-
         int high=m;
         while(low<=high){
             int mid=low+(high-low)/2;
@@ -37,8 +36,7 @@ public class BS11NthRoot {
         if(ans==n)
             return 1;
         return 0;
-
         //TC:O(log m * k) for loop
-        //O(log m * log k) log k for exponential
+        //NOTE:O(log m * log k) .i.e, log k for power exponential method to find root
     }
 }

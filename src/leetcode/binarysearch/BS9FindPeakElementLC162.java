@@ -24,7 +24,7 @@ public class BS9FindPeakElementLC162 {
                 return mid;
             if(nums[mid]>nums[mid-1])
                 low=mid+1;
-            else
+            else  // Check here is removed from here
                 high=mid-1;
         }
         return -1;
