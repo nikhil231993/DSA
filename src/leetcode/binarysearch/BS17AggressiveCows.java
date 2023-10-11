@@ -7,7 +7,6 @@ public class BS17AggressiveCows {
     public static void main(String[] args) {
         int n=3,k=2;
         int[] arr=new int[]{1,2,3};
-
         System.out.println(aggressiveCows(arr,k));
         //TC:nlog n +log(arr[n-1]-arr[0])*O(n)
         //SC:O(1)
@@ -22,7 +21,6 @@ public class BS17AggressiveCows {
 
         while(low<=high){
             int mid=low+(high-low)/2;
-
             if(canPlace(mid, stalls, k)){
                 ans=mid;
                 low=mid+1;

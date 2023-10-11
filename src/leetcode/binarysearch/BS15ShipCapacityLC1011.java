@@ -49,7 +49,6 @@ public class BS15ShipCapacityLC1011 {
         if(count<=days)
             return true;
         return false;
-
         //TC:o(log(maxsum-min+1)*n)
         //SC:O(1)
     }

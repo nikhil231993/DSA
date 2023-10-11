@@ -3,9 +3,8 @@ package leetcode.binarysearch;
 public class BS18AllocateBooks {
 
     public static void main(String[] args) {
-        int n=5, m=4;
-        int[] arr=new int[]{25,46,28,49,24};
-
+        int n=4, m=5;
+        int[] arr=new int[]{12, 34, 67, 90};
         System.out.println(findPages(arr,n,m));
     }
 
@@ -37,13 +36,13 @@ public class BS18AllocateBooks {
 
     public static boolean possible(int pages, int[] arr ,int m){
         int count=1;
-        int sum=0;
+        int sum=arr[0];
 
-        for(Integer num: arr){
-            sum+=num;
+        for(int i=1;i<arr.length;i++){
+            sum+=arr[i];
             if(sum>pages){
                 count++;
-                sum=num;
+                sum=arr[i];
             }
         }
         if(count<=m)

@@ -34,7 +34,7 @@ public class BS14SmallesCommonDivisorLC1283 {
     public static boolean minValue(int[] nums, int mid, int threshold ){
         int sum=0;
         for(int i=0;i<nums.length;i++){
-            sum+=Math.ceil((double) nums[i]/mid);
+            sum+=Math.ceil((double) nums[i]/(double)mid);
         }
         return sum<=threshold;
         //TC:O(log max-1+1)* n
