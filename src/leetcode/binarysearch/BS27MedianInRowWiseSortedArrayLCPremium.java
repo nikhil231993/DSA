@@ -4,9 +4,17 @@ public class BS27MedianInRowWiseSortedArrayLCPremium {
 
     public static void main(String[] args) {
         int R = 3, C = 3;
-        int[][] M =new int[][] {{1, 3, 5},
-                {2, 6, 9},
-                {3, 6, 9}};
+//        int[][] M =new int[][] {{1, 5 ,7,9,11},
+//                {2,3,4,8,9},
+//                {4,11,14,19,20},
+//                {6,10,22,99,100},
+//                {4,15,17,24,28}
+//        };
+
+                int[][] M =new int[][] {{1, 2 ,3},
+                {3,3,3},
+                {3,3,9}
+        };
         System.out.println(median(M,R,C));
     }
     public static int median(int matrix[][], int R, int C) {
@@ -23,12 +31,12 @@ public class BS27MedianInRowWiseSortedArrayLCPremium {
             int mid=low+(high-low)/2;
             int no=find(matrix, mid, R, C);
             if(no<=required){
-                ans =mid;
                 low=mid+1;
-            }else
+            }else{
                 high=mid-1;
+            }
         }
-        return ans;
+        return low;
     }
 
     public static int find(int[][] matrix, int mid, int R, int C){
@@ -46,7 +54,7 @@ public class BS27MedianInRowWiseSortedArrayLCPremium {
         while(low<=high){
             int mid=low+(high-low)/2;
 
-            if(num[mid] >= target){
+             if(num[mid]>target){
                 ans= mid;
                 high=mid-1;
             }else{

@@ -6,12 +6,12 @@ public class BS26FIndPeekElement2LC1901 {
         int[][] mat =new int[][] {{10,20,15},{21,30,14},{7,16,32}};
 
         //Approach 1
-       int[] r1=findPeakGrid(mat);
-       System.out.println("Row: "+ r1[0]+" Column: "+r1[1]);
+        int[] r1=findPeakGrid(mat);
+        System.out.println("Row: "+ r1[0]+" Column: "+r1[1]);
 
+        //Approach 2
         int[] r2=findPeakGridOptimized(mat);
         System.out.println("Row: "+ r2[0]+" Column: "+r2[1]);
-
     }
 
     private static int[] findPeakGridOptimized(int[][] mat) {
@@ -37,8 +37,8 @@ public class BS26FIndPeekElement2LC1901 {
                 low=mid+1;
         }
         return new int[]{-1,-1};
-
-        //TC:O(log m * n)
+        //TC:O(log m) * O(n)
+        //SC:O(1)
     }
 
     private static int findMax(int[][] num, int col, int n, int m) {
@@ -80,5 +80,4 @@ public class BS26FIndPeekElement2LC1901 {
         //TC:o(n*m)
         //SC:O(1)
     }
-
 }

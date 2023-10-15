@@ -5,11 +5,20 @@ public class HeapAllConcepts {
     private static int[] arr=null;
     private static int size;
     private static int capacity;
-
     public HeapAllConcepts(int cap){
         capacity=cap;
         size=0;
         arr=new int[cap];
+    }
+
+    private int left(int i){
+        return 2*i+1;
+    }
+    private int right(int i){
+        return 2*i+2;
+    }
+    private int parent(int i){
+        return (i-1)/2;
     }
 
     public void insert(int value){
@@ -17,8 +26,8 @@ public class HeapAllConcepts {
             System.out.println("Heap is full");
         arr[size++]=value;
         heapifyUp(size-1);
-
         //TC:O(logn)
+        //SC:O(1) as we are using already present array.
     }
 
     private void heapifyUp(int index) {
@@ -27,7 +36,8 @@ public class HeapAllConcepts {
             arr[(index-1)/2]=arr[index];
             arr[index]=temp;
             index=(index-1)/2;
-            //TC:O(log n)
+            //TC:O(log n) .ie., Height of the tree
+            //SC:O(1) as we are using already present array.
         }
     }
 
@@ -58,7 +68,6 @@ public class HeapAllConcepts {
         arr[0]=arr[--size];
         heapifyTopToBottom(0);
         return removed;
-
         //TC:log n
     }
 
@@ -116,5 +125,4 @@ public class HeapAllConcepts {
         h.deleteKey(4);
         h.print();
     }
-
 }
