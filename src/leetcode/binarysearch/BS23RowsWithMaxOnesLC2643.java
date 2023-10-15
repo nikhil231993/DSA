@@ -3,7 +3,7 @@ package leetcode.binarysearch;
 public class BS23RowsWithMaxOnesLC2643 {
 
     public static void main(String[] args) {
-        int[][] arr=new int[][]{{0,0,0},{0,1,1}};
+        int[][] arr=new int[][]{{0,1,1},{0,1,1}};
         int n=2,m=3;
 
         //Approach 1

@@ -62,7 +62,7 @@ public class BS24SearchInSortedMatrix1LC74 {
         return false;
     }
 
-    public static boolean searchMatrix(int[][] matrix, int target) {
+    private static boolean searchMatrix(int[][] matrix, int target) {
 
         for(int i=0;i<matrix.length;i++){
             for(int j=0;j<matrix[i].length;j++){

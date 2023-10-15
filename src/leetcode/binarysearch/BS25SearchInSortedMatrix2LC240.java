@@ -4,13 +4,13 @@ public class BS25SearchInSortedMatrix2LC240 {
 
     public static void main(String[] args) {
         int[][] matrix =new int[][] {{1,4,7,11,15},{2,5,8,12,19},{3,6,9,16,22},{10,13,14,17,24},{18,21,23,26,30}};
-        int target = 5;
+        int target = 100;
 
         //Approach 1
-        //n*m traversal
+        System.out.println(searchMatrix(matrix,target));
 
         //Approach 2
-        System.out.println(searchMatrix(matrix,target));
+        System.out.println(searchMatrixUsingPartialBS(matrix,target));
 
         //Approach 3
         System.out.println(searchMatrixOptimized(matrix,target));
@@ -34,7 +34,7 @@ public class BS25SearchInSortedMatrix2LC240 {
         //SC:O(1)
     }
 
-    public static boolean searchMatrix(int[][] matrix, int target) {
+    public static boolean searchMatrixUsingPartialBS(int[][] matrix, int target) {
         int n=matrix.length;
         int m=matrix[0].length;
         for(int i=0;i<n;i++){
@@ -61,5 +61,18 @@ public class BS25SearchInSortedMatrix2LC240 {
                 high=mid-1;
         }
         return false;
+    }
+
+    private static boolean searchMatrix(int[][] matrix, int target) {
+
+        for(int i=0;i<matrix.length;i++){
+            for(int j=0;j<matrix[i].length;j++){
+                if(matrix[i][j]==target)
+                    return true;
+            }
+        }
+        return false;
+        //TC:O(n*m)
+        //SC:O(1)
     }
 }
