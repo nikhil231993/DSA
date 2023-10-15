@@ -5,6 +5,7 @@ import java.util.Arrays;
 
 public class BS19PaintersPartition {
     public static void main(String[] args) {
+
         ArrayList<Integer> nums = new ArrayList<>(Arrays.asList(7,2,5,10,8));
         int k = 2;
         System.out.println(splitArray(nums,k));

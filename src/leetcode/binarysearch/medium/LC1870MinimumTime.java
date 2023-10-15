@@ -16,7 +16,6 @@ public class LC1870MinimumTime {
 
             if(total_hour_so_far > hour) return false;
         }
-
         total_hour_so_far += dist[dist.length - 1] / speed;
         return total_hour_so_far <= hour ? true : false;
     }
@@ -24,7 +23,6 @@ public class LC1870MinimumTime {
         int low = 1;
         int high = (int)1e7;
         int ans = -1;
-
 
         while(low <= high){
             int mid = low + (high - low)/2;

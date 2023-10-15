@@ -82,7 +82,7 @@ public class BS21MedianTwoSortedArray {
         else
             return (double)(element1+element2)/2.0;
         //TC:O(n+m)
-        //SC:O(n+m)
+        //SC:O(1)
     }
 
     public static double findMedianSortedArraysBS(int[] nums1, int[] nums2) {
@@ -119,6 +119,6 @@ public class BS21MedianTwoSortedArray {
         }
         return 0.0;
         //TC:log(size small array)
-
+        //SC:O(1)
     }
 }

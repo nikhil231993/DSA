@@ -14,6 +14,7 @@ class Node{
 public class BS20MinimiseMaxGasDifference {
 
     public static void main(String[] args) {
+
         int n=5,k=6;
         int[] arr=new int[]{1,2,3,4,5,6,7};
 
@@ -54,15 +55,15 @@ public class BS20MinimiseMaxGasDifference {
 
             for(int i=0;i<arr.length-1;i++){
                 double difference=arr[i+1]-arr[i];
-                double sectionLength=difference/howMany[i];
+                double sectionLength=difference/(howMany[i]+1);
                 if(sectionLength> maxDiff){
                     maxDiff=sectionLength;
                     maxIndex=i;
                 }
             }
-
             howMany[maxIndex]++;
         }
+
         double max=Integer.MIN_VALUE;
         for(int i=0;i<arr.length-1;i++){
             double diff=arr[i+1]-arr[i];
@@ -70,7 +71,7 @@ public class BS20MinimiseMaxGasDifference {
             max=Math.max(max, ans);
         }
         return max;
-        //TC:O(k * n)+O(k)
+        //TC:O(k * n)+ O(k)
         //SC:O(1)
     }
 
@@ -93,7 +94,6 @@ public class BS20MinimiseMaxGasDifference {
 
         //TC:O( nlog n)+O(n)
         //SC:O(1)
-
     }
 
     public static int isPossible(double mid, int[] arr, int K){
@@ -116,5 +116,4 @@ public class BS20MinimiseMaxGasDifference {
         }
         return max;
     }
-
 }

@@ -12,14 +12,12 @@ public class BS22KThElementTwoSortedArrays {
 
     private static int KthElementInTwoSortedArray(int[] nums1, int[] nums2, int k) {
 
-
         int n1=nums1.length;
         int n2=nums2.length;
-
         if(n1>n2)
             return KthElementInTwoSortedArray(nums2,nums1,k);
-        int low=Math.max(0,k-n2);
-        int high=Math.min(k,n1);
+        int low=Math.max(0,k-n2);//we should at least take k-n2 if k >n1
+        int high=Math.min(k,n1);// we cannot pick entire n1 if k=2
 
         int left=k;
 
