@@ -1,7 +1,5 @@
 package leetcode.heap;
 
-import javax.lang.model.util.Elements;
-
 public class MaxHeap {
 
     int[] arr=null;

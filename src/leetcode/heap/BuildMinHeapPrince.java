@@ -1,6 +1,6 @@
 package leetcode.heap;
 
-public class BuildMinHeap {
+public class BuildMinHeapPrince {
 
     public static void main(String[] args) {
         int[] arr=new int[]{9, 3, 2, 5, 4, 6, 7, 8, 1};
@@ -12,6 +12,7 @@ public class BuildMinHeap {
         print(arr.length,arr);
 
         //Time complexity for build heap is O(n) which is as per proof
+        //SC:O(log n)
     }
 
     private static void print(int size,int[] arr){

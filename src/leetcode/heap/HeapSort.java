@@ -2,6 +2,10 @@ package leetcode.heap;
 
 public class HeapSort {
 
+    //Step 1: Build MaxHeap
+    //Step 2: Swap max element with last element
+    //Step 3: call heapify with index=0 and reduced size
+
     public static void main(String[] args) {
         int arr[] = {1, 3, 5, 4, 6, 13, 10, 9, 8, 15, 17} ;
 

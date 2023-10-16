@@ -12,7 +12,7 @@ class Pair47{
     }
 }
 
-class Edge implements  Comparable<Edge>{
+class Edge implements Comparable<Edge>{
     int wt;
     int u;
     int v;
@@ -40,8 +40,6 @@ public class G47KrushkalAlgorithm {
         int V = 5;
         int[][] edges =  {{0, 1, 2}, {0, 2, 1}, {1, 2, 1}, {2, 3, 2}, {3, 4, 1}, {4, 2, 2}};
 
-
-           
         //Creating a list of edge having wt, u, v
         //O(N+E) is TC here
         List<Edge> edgeList=new ArrayList<>();

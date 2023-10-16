@@ -1,11 +1,11 @@
 package leetcode.heap;
 
-public class HeapAllConcepts {
+public class HeapAllConceptsPrince {
 
     private static int[] arr=null;
     private static int size;
     private static int capacity;
-    public HeapAllConcepts(int cap){
+    public HeapAllConceptsPrince(int cap){
         capacity=cap;
         size=0;
         arr=new int[cap];
@@ -56,6 +56,8 @@ public class HeapAllConcepts {
         if(size==0)
             return -1;
         return arr[0];
+        //TC:O(1)
+        //SC:O(1)
     }
 
 
@@ -68,7 +70,8 @@ public class HeapAllConcepts {
         arr[0]=arr[--size];
         heapifyTopToBottom(0);
         return removed;
-        //TC:log n
+        //TC:O(log n)
+        //SC:O(log n) due recursive heap call
     }
 
     private static void heapifyTopToBottom(int index) {
@@ -87,7 +90,8 @@ public class HeapAllConcepts {
             arr[index]=temp;
             heapifyTopToBottom(smallest);
         }
-        //TC:log n
+        //TC:O(log n)
+        //SC:O(log n)
     }
 
     private void decreaseKey(int index, int value) {
@@ -95,17 +99,19 @@ public class HeapAllConcepts {
             System.out.println("Cannot insert");
         arr[index]=value;
         heapifyUp(index);
-        //TC: log n
+        //TC:O(log n)
+        //SC:O(n)
     }
 
     private void deleteKey(int index) {
         decreaseKey(index,-Integer.MIN_VALUE);
         extractMin();
-        //TC: log n
+        //TC:O(log n)
+        //SC:O(log n) for heapify call
     }
 
     public static void main(String[] args) {
-        HeapAllConcepts h=new HeapAllConcepts(10);
+        HeapAllConceptsPrince h=new HeapAllConceptsPrince(10);
         h.insert(4);
         h.insert(10);
         h.insert(2);
