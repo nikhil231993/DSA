@@ -4,8 +4,11 @@ import java.util.PriorityQueue;
 
 public class LC215KLargestElement {
     public static void main(String[] args) {
-        //Approach 1 : Using custom heap sort
 
+        //Approach 0:Sort the array and find the answer
+        //nums[n-k]
+
+        //Approach 1 : Using custom heap sort
         int[] nums = new int[]{3,2,3,1,2,4,5,5,6};
         int k = 4;
         int n=nums.length;

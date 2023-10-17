@@ -3,7 +3,6 @@ package leetcode.ComparableAndComparator;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-import java.util.SortedMap;
 
 public class L2ListOfStrings {
 
