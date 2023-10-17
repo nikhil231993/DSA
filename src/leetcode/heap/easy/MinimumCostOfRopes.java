@@ -21,7 +21,6 @@ public class MinimumCostOfRopes {
             Integer a=pq.poll();
             Integer b=pq.poll();
             cost+=a+b;
-
             pq.offer(a+b);
         }
         return cost;

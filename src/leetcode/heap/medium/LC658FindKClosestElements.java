@@ -8,9 +8,10 @@ import java.util.PriorityQueue;
 public class LC658FindKClosestElements {
 
     public static void main(String[] args) {
-      int[]  arr =new int[] {1,2,3,4,5};
-      int k = 4, x = 3;
-      //Approach 1 using heap
+       int[]  arr =new int[] {1,2,3,4,5};
+       int k = 4, x = 3;
+
+       //Approach 1 using heap
         System.out.println(findClosestElements(arr,k,x));
 
         //Approach 2 using 2 pointer
@@ -18,7 +19,6 @@ public class LC658FindKClosestElements {
 
         //Approach 3 using binary search
         System.out.println(binarySearch(arr,k,x));
-
     }
 
     private static List<Integer> binarySearch(int[] arr, int k, int x) {
@@ -48,7 +48,7 @@ public class LC658FindKClosestElements {
         int left=0;
         int right=arr.length-1;
         while(right-left>=k){
-            if(Math.abs(x-arr[left])>Math.abs(x-arr[right]))
+            if(Math.abs(arr[left]-x)>Math.abs(arr[right]-x))//we can write anyway this line as it is abs value
                 left++;
             else
                 right--;
@@ -77,14 +77,11 @@ public class LC658FindKClosestElements {
         while(!pq.isEmpty()){
             Node n=pq.poll();
             result.add(n.key);
-
         }
 
         Collections.sort(result);
         return result;
-
         //TC:O(nlogk)
         //SC:o(n) in worst case
-
     }
 }
