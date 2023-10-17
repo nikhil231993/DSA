@@ -22,8 +22,7 @@ class Edge implements Comparable<Edge>{
         this.v=v;
     }
     @Override
-    public int compareTo(Edge o) {
-        return this.wt-o.wt;
+    public int compareTo(Edge o) { return this.wt-o.wt;
     }
 }
 
