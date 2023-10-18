@@ -8,8 +8,8 @@ import java.util.PriorityQueue;
 public class LC658FindKClosestElements {
 
     public static void main(String[] args) {
-       int[]  arr =new int[] {1,3,7,10,21,23,25};
-       int k = 3, x = 23;
+       int[]  arr =new int[] {1,3,4,5,6,7,8,9,10,11,20,25};
+       int k = 3, x = 7;
 
        //Approach 1 using heap
         System.out.println(findClosestElements(arr,k,x));

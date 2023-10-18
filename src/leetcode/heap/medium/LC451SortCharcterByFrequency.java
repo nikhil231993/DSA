@@ -52,7 +52,6 @@ public class LC451SortCharcterByFrequency {
         s2 += sb.toString();
     }
         return s2;
-
         //TC:o(n)
         //SC:O(n)
     }

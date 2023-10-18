@@ -12,6 +12,7 @@ public class KthSmallestElement {
         //TC:O(nlogn)
         //SC:O(1)
 
+        //Approach 2
         int result=kSmallest(arr,k);
         System.out.println(result);
     }
@@ -24,7 +25,6 @@ public class KthSmallestElement {
                 pq.poll();
         }
         return pq.peek();
-
         //TC:O(k+(n-k)log k)
         //SC:O(k)
     }

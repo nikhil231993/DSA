@@ -1,6 +1,6 @@
 package leetcode.binarysearch;
 
-public class BS26FIndPeekElement2LC1901 {
+public class BS26FindPeekElement2LC1901 {
 
     public static void main(String[] args) {
         int[][] mat =new int[][] {{10,20,15},{21,30,14},{7,16,32}};
