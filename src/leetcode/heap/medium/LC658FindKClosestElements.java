@@ -8,8 +8,8 @@ import java.util.PriorityQueue;
 public class LC658FindKClosestElements {
 
     public static void main(String[] args) {
-       int[]  arr =new int[] {1,2,3,4,5};
-       int k = 4, x = 3;
+       int[]  arr =new int[] {1,3,7,10,21,23,25};
+       int k = 3, x = 23;
 
        //Approach 1 using heap
         System.out.println(findClosestElements(arr,k,x));
@@ -22,13 +22,14 @@ public class LC658FindKClosestElements {
     }
 
     private static List<Integer> binarySearch(int[] arr, int k, int x) {
+        //https://www.youtube.com/watch?v=o-YDQzHoaKM&ab_channel=NeetCode
 
         int left=0;
         int right=arr.length-k;
 
         while(left<right){
             int mid=left+(right-left)/2;
-            if(x-arr[mid]> arr[mid+k]-x)
+            if(x-arr[mid]>arr[mid+k]-x)
                 left=mid+1;
             else
                 right=mid;
@@ -72,13 +73,11 @@ public class LC658FindKClosestElements {
             if(pq.size()>k)
                 pq.poll();
         }
-
         List<Integer> result=new ArrayList();
         while(!pq.isEmpty()){
             Node n=pq.poll();
             result.add(n.key);
         }
-
         Collections.sort(result);
         return result;
         //TC:O(nlogk)
