@@ -3,6 +3,7 @@ package leetcode.heap;
 public class BuildMinHeapPrince {
 
     public static void main(String[] args) {
+
         int[] arr=new int[]{9, 3, 2, 5, 4, 6, 7, 8, 1};
         int lastInternalNode=arr.length/2-1;
         for(int i=lastInternalNode;i>=0;i--){
