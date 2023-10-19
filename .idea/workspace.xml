@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/heap/easy/LC703KthLargestElementInStream.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS26FIndPeekElement2LC1901.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS26FindPeekElement2LC1901.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/heap/hard/FindMedianInAStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/heap/hard/FindMedianInAStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/heap/medium/LC451SortCharcterByFrequency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/heap/medium/LC451SortCharcterByFrequency.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/heap/medium/LC658FindKClosestElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/heap/medium/LC658FindKClosestElements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/heap/medium/MergeKSortedArrayGfg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/heap/medium/MergeKSortedArrayGfg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/heap/striver/KthSmallestElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/heap/striver/KthSmallestElement.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
