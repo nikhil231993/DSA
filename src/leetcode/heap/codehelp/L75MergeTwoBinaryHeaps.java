@@ -5,7 +5,10 @@ public class L75MergeTwoBinaryHeaps {
         int n = 4, m = 3;
         int a[] =new int[] {10, 5, 6, 2};
         int b[] = new int[] {12, 7, 9};
+        //Approach 1
+        //Merge to one array and Arrays.sort()  TC:O(nlogn)
 
+        //Approach 2
         int[] result=mergeHeaps(a,b,n,m);
         for(Integer num:result)
             System.out.println(num);
@@ -22,10 +25,10 @@ public class L75MergeTwoBinaryHeaps {
         for(Integer num:b){
             arr[i++]=num;
         }
-
         buildHeap(arr,arr.length);
-
         return arr;
+        //TC:O(n)
+        //SC:O(n)
     }
 
     public static void buildHeap(int[] arr, int size){

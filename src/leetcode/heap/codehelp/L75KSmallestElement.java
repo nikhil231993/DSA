@@ -12,16 +12,9 @@ public class L75KSmallestElement {
 
         //Approach 2:
         System.out.println(KSmallest(arr,k));
-        //TC:o(Nlogk)
-        //SC:O(k)
 
         //Approach 3: Same as above but we insert in PQ only id value is smaller than the top element in
-        //max heap
         System.out.println(KSmallestOptimized(arr,k));
-        //TC:o(O(K + (n-k)*log(k)))
-        //The time complexity of this method is O(K + (n-k)*log(k)). Because we are building a max heap of k elements
-        //and then checking the remaining (n-k) elements into the top of the heap.
-        //SC:O(k)
     }
 
     private static int KSmallestOptimized(int[] arr, int k) {
@@ -31,7 +24,6 @@ public class L75KSmallestElement {
         for(int i=0;i<k;i++){
             pq.offer(arr[i]);
         }
-
         for(int i=k;i<arr.length;i++){
             if(arr[i]<pq.peek()){
                 pq.poll();
@@ -39,6 +31,11 @@ public class L75KSmallestElement {
             }
         }
         return pq.peek();
+        //max heap
+        //TC:o(O(K + (n-k)*log(k)))
+        //The time complexity of this method is O(K + (n-k)*log(k)). Because we are building a max heap of k elements
+        //and then checking the remaining (n-k) elements into the top of the heap.
+        //SC:O(k)
     }
 
     private static int KSmallest(int[] arr, int k) {
@@ -50,5 +47,7 @@ public class L75KSmallestElement {
                 pq.poll();
         }
         return pq.peek();
+        //TC:o(Nlogk)
+        //SC:O(k)
     }
 }

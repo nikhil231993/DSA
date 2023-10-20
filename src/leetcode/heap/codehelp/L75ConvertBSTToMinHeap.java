@@ -16,7 +16,7 @@ public class L75ConvertBSTToMinHeap {
         tree.root.right.right=new Node(7);
 
         //Print using level order
-        levelorder(tree.root);
+        levelOrder(tree.root);
 
         int count=countNode(tree.root);
         int[] arr=new int[count];
@@ -37,11 +37,10 @@ public class L75ConvertBSTToMinHeap {
         System.out.println();
         System.out.println("========================");
         //Print using level order
-        levelorder(tree.root);
-
+        levelOrder(tree.root);
     }
 
-    public static void levelorder(Node root) {
+    public static void levelOrder(Node root) {
         if(root==null)
             return;
         else {
@@ -67,7 +66,7 @@ public class L75ConvertBSTToMinHeap {
         preorder(root.right,arr,newIndex);
     }
 
-    private static int countNode(Node root) {
+    public static int countNode(Node root) {
         if(root==null)
             return 0;
         int left=countNode(root.left);

@@ -14,9 +14,9 @@ public class L75IsBinaryHeap {
    Node root;
     public static void main(String[] args) {
         L75IsBinaryHeap tree=new L75IsBinaryHeap();
-        tree.root=new Node(10);
-        tree.root.left=new Node(20);
-        tree.root.right=new Node(30);
+        tree.root=new Node(100);
+        tree.root.left=new Node(90);
+        tree.root.right=new Node(80);
         tree.root.left.left=new Node(40);
         tree.root.left.right=new Node(60);
 
@@ -70,7 +70,7 @@ public class L75IsBinaryHeap {
         }
     }
 
-    private static int countNode(Node root) {
+    static int countNode(Node root) {
         if(root==null)
             return 0;
         else{
