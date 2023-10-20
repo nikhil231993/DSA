@@ -27,21 +27,16 @@ public class LC506Rankings {
             pq.offer(new Node1(n1,i++));
         String[] str=new String[score.length];
         if(n>=1){
-            int key=pq.peek().key;
             int index=pq.peek().value;
             str[index]="Gold Medal";
             pq.poll();
         }
         if(n>=2){
-
-            int key1=pq.peek().key;
             int index1=pq.peek().value;
             str[index1]="Silver Medal";
             pq.poll();
         }
         if(n>=3){
-
-            int key2=pq.peek().key;
             int index2=pq.peek().value;
             str[index2]="Bronze Medal";
             pq.poll();
