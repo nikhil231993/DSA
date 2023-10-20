@@ -5,17 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/heap/codehelp/L75ConvertBSTToMaxHeap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/heap/easy/LC1337RowMin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/heap/easy/LC2016MaximumDifference.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/heap/medium/LC1054Barcodes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/heap/medium/LC1985KthLargestInteger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/heap/medium/LC2208HalfArray.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/heap/codehelp/L75ConvertBSTToMinHeap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/heap/codehelp/L75ConvertBSTToMinHeap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/heap/codehelp/L75IsBinaryHeap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/heap/codehelp/L75IsBinaryHeap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/heap/codehelp/L75KSmallestElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/heap/codehelp/L75KSmallestElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/heap/codehelp/L75MergeTwoBinaryHeaps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/heap/codehelp/L75MergeTwoBinaryHeaps.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +65,7 @@
       <recent name="leetcode.recursion" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.L75ConvertBSTToMaxHeap">
+  <component name="RunManager" selected="Application.LC506Rankings">
     <configuration name="BinomialCoefficient" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -143,12 +133,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC1054Barcodes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.heap.medium.LC1054Barcodes" />
+    <configuration name="LC506Rankings" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.heap.easy.LC506Rankings" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.heap.medium.*" />
+          <option name="PATTERN" value="leetcode.heap.easy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -158,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LC506Rankings" />
         <item itemvalue="Application.L75ConvertBSTToMaxHeap" />
         <item itemvalue="Application.L75ConvertBSTToMinHeap" />
         <item itemvalue="Application.L75IsBinaryHeap" />
         <item itemvalue="Application.L75KSmallestElement" />
-        <item itemvalue="Application.LC1054Barcodes" />
       </list>
     </recent_temporary>
   </component>
