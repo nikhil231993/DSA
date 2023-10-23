@@ -5,17 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/array/easy/LC1464MaxProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/array/easy/LC1572MatrixDiagonalSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/array/easy/LC2319MatrixDiagonal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/array/medium/LC1338ReduceArraySizeToHalf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/easy/LC1608SpecialArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/easy/LC2089FindTargetIndices.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/easy/LC278FirstBadVersion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/easy/LC367ValidPerfectSquare.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/easy/LC633SumOfSquares.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/easy/LC744SmallestLetterGreaterThanTarget.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/heap/codehelp/LC632SmallestRangeFromKList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/heap/easy/LC1338RankArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/heap/easy/MinHeapToMaxHeap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/heap/codehelp/L76KLargestSumContiguousSubarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/heap/codehelp/L76KLargestSumContiguousSubarray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/heap/codehelp/L76MergeKSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/heap/codehelp/L76MergeKSortedArray.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,36 +41,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/nikhilthulaseedharan/Nikhil/DSA/src/leetcode/slidingwindowandtwopointer/medium&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;build.tools&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/Users/nikhilthulaseedharan/Nikhil/DSA/src/leetcode/heap/codehelp",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "build.tools"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="leetcode.binarysearchtree" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/leetcode/heap/codehelp" />
       <recent name="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/medium" />
       <recent name="$PROJECT_DIR$/src/leetcode/graph/medium" />
       <recent name="$PROJECT_DIR$/src/leetcode/graph" />
       <recent name="$PROJECT_DIR$/src/leetcode/binarysearchtree" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="leetcode.heap.codehelp" />
       <recent name="leetcode.binarysearch.easy" />
       <recent name="leetcode.array.extra" />
       <recent name="leetcode.binarysearch" />
       <recent name="leetcode.slidingwindowandtwopointer.hard" />
-      <recent name="leetcode.dynamicprogramming" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LC2778SquaresSpecialElement">
+  <component name="RunManager" selected="Application.LC632SmallestRangeFromKList">
     <configuration name="BinomialCoefficient" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -84,6 +80,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="leetcode.easy.array.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LC1338RankArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.heap.easy.LC1338RankArray" />
+      <module name="DSA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.heap.easy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,25 +113,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC278FirstBadVersion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.binarysearch.easy.LC278FirstBadVersion" />
+    <configuration name="LC632SmallestRangeFromKList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.heap.codehelp.LC632SmallestRangeFromKList" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.binarysearch.easy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LC367ValidPerfectSquare" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.binarysearch.easy.LC367ValidPerfectSquare" />
-      <module name="DSA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.binarysearch.easy.*" />
+          <option name="PATTERN" value="leetcode.heap.codehelp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,12 +139,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC744SmallestLetterGreaterThanTarget" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.binarysearch.easy.LC744SmallestLetterGreaterThanTarget" />
+    <configuration name="MinHeapToMaxHeap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.heap.easy.MinHeapToMaxHeap" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.binarysearch.easy.*" />
+          <option name="PATTERN" value="leetcode.heap.easy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -158,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LC632SmallestRangeFromKList" />
+        <item itemvalue="Application.MinHeapToMaxHeap" />
+        <item itemvalue="Application.LC1338RankArray" />
         <item itemvalue="Application.LC2778SquaresSpecialElement" />
         <item itemvalue="Application.LC633SumOfSquares" />
-        <item itemvalue="Application.LC367ValidPerfectSquare" />
-        <item itemvalue="Application.LC278FirstBadVersion" />
-        <item itemvalue="Application.LC744SmallestLetterGreaterThanTarget" />
       </list>
     </recent_temporary>
   </component>

@@ -8,18 +8,14 @@ public class L76KLargestSumContiguousSubarray {
         int K = 2;
         int[] Arr =new int[] {3,2,1};
 
-        //Approach 1
+        //Approach 1 Brute force
         System.out.println(kthLargest(N,K,Arr));
 
         //Approach 2
         System.out.println(kthLargestUsingHeap(N,K,Arr));
-
     }
 
     private static int kthLargestUsingHeap(int N, int K, int[] Arr) {
-
-        int size=N*(N+1)/2;
-        int[] arr=new int[size];
 
         PriorityQueue<Integer> pq=new PriorityQueue<>();
 
@@ -33,7 +29,6 @@ public class L76KLargestSumContiguousSubarray {
             }
         }
         //O(k)
-
         return pq.peek();
         //TC:O(n square log k)
         //SC:o(k)
@@ -51,10 +46,8 @@ public class L76KLargestSumContiguousSubarray {
                 arr[k++]=sum;
             }
         }
-        //O(n2)
-
-        Arrays.sort(arr);//(n2logn2)
-
+        //O(n square)
+        Arrays.sort(arr);//(n square log n square)
         return arr[size-K];
         //TC:O(n square log n square)
         //SC:o(n square)

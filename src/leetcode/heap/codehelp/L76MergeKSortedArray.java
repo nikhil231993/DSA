@@ -33,7 +33,6 @@ public class L76MergeKSortedArray {
         int[][] arr1=new int[][]{{1,2,3,4},{2,2,3,4},
                 {5,5,6,6},{7,8,9,9}};
         System.out.println(mergeKArraysUsingHeap(arr1,k));
-
     }
 
     private static ArrayList<Integer> mergeKArraysUsingHeap(int[][] arr, int k) {
@@ -55,7 +54,6 @@ public class L76MergeKSortedArray {
             }
         }
         return result;
-
     }
 
     private static int[] mergeKArrays(int[][] arr, int k) {
@@ -70,7 +68,6 @@ public class L76MergeKSortedArray {
                 result[i++]=num;
             }
         }
-
         Arrays.sort(result);
         return result;
     }
