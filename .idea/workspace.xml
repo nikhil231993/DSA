@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/heap/codehelp/LC632SmallestRangeFromKList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/heap/easy/LC1338RankArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/heap/easy/MinHeapToMaxHeap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/array/easy/LC1512GoodPairs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/array/easy/LC1929ConcatenationArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/array/easy/LC2011PerformingOperations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/array/medium/LC1471KStrongestValues.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/array/medium/LC1833IceCreamBars.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/heap/codehelp/L76KLargestSumContiguousSubarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/heap/codehelp/L76KLargestSumContiguousSubarray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/heap/codehelp/L76MergeKSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/heap/codehelp/L76MergeKSortedArray.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +71,7 @@
       <recent name="leetcode.slidingwindowandtwopointer.hard" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LC632SmallestRangeFromKList">
+  <component name="RunManager" selected="Application.LC1471KStrongestValues">
     <configuration name="BinomialCoefficient" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -87,12 +87,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC1338RankArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.heap.easy.LC1338RankArray" />
+    <configuration name="LC1471KStrongestValues" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.array.medium.LC1471KStrongestValues" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.heap.easy.*" />
+          <option name="PATTERN" value="leetcode.array.medium.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -100,8 +100,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC2778SquaresSpecialElement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.array.easy.LC2778SquaresSpecialElement" />
+    <configuration name="LC1512GoodPairs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.array.easy.LC1512GoodPairs" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -113,12 +113,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC632SmallestRangeFromKList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.heap.codehelp.LC632SmallestRangeFromKList" />
+    <configuration name="LC1833IceCreamBars" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.array.medium.LC1833IceCreamBars" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.heap.codehelp.*" />
+          <option name="PATTERN" value="leetcode.array.medium.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -126,12 +126,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC633SumOfSquares" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.binarysearch.easy.LC633SumOfSquares" />
+    <configuration name="LC1929ConcatenationArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.array.easy.LC1929ConcatenationArray" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.binarysearch.easy.*" />
+          <option name="PATTERN" value="leetcode.array.easy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -139,12 +139,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MinHeapToMaxHeap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.heap.easy.MinHeapToMaxHeap" />
+    <configuration name="LC2011PerformingOperations" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.array.easy.LC2011PerformingOperations" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.heap.easy.*" />
+          <option name="PATTERN" value="leetcode.array.easy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -154,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LC632SmallestRangeFromKList" />
-        <item itemvalue="Application.MinHeapToMaxHeap" />
-        <item itemvalue="Application.LC1338RankArray" />
-        <item itemvalue="Application.LC2778SquaresSpecialElement" />
-        <item itemvalue="Application.LC633SumOfSquares" />
+        <item itemvalue="Application.LC1471KStrongestValues" />
+        <item itemvalue="Application.LC1833IceCreamBars" />
+        <item itemvalue="Application.LC1512GoodPairs" />
+        <item itemvalue="Application.LC2011PerformingOperations" />
+        <item itemvalue="Application.LC1929ConcatenationArray" />
       </list>
     </recent_temporary>
   </component>
