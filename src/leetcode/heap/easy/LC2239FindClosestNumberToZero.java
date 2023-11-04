@@ -1,6 +1,6 @@
 package leetcode.heap.easy;
 
-public class LC222239FindClosestNumberToZero {
+public class LC2239FindClosestNumberToZero {
 
     public static void main(String[] args) {
        int[] nums =new int[] {-4,-2,1,4,8};

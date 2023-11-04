@@ -31,7 +31,6 @@ public class LC632SmallestRangeFromKList {
 
         for(int n:res)
             System.out.println(n);
-
     }
     public static int[] smallestRange(List<List<Integer>> nums) {
         int k=nums.size();

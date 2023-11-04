@@ -11,7 +11,7 @@ public class BS27MedianInRowWiseSortedArrayLCPremium {
 //                {4,15,17,24,28}
 //        };
 
-                int[][] M =new int[][] {{1, 2 ,3},
+        int[][] M =new int[][] {{1, 2 ,3},
                 {3,3,3},
                 {3,3,9}
         };

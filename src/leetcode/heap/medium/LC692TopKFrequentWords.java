@@ -10,12 +10,22 @@ class NodeString{
         this.value=value;
     }
 }
+
+class NodeStr {
+    int count;
+    String str;
+    public NodeStr(int count, String str) {
+        this.count = count;
+        this.str = str;
+    }
+}
 public class LC692TopKFrequentWords {
 
     public static void main(String[] args) {
         String[] words =new String[] {"the","day","is","sunny","the","the","the","sunny","is","is"};
         int k = 4;
         System.out.println(topKFrequent(words,k));
+        System.out.println(topKFrequentOptimised(words,k));
     }
 
     public static List<String> topKFrequent(String[] words, int k) {
@@ -46,5 +56,27 @@ public class LC692TopKFrequentWords {
 
         //TC:O(n)+o(nlog k)
         //SC:O(k)
+    }
+
+    public static List<String> topKFrequentOptimised(String[] words, int k) {
+        Map<String, Integer> map = new HashMap<>();
+        for (String word : words) {
+            map.put(word, map.getOrDefault(word, 0) + 1);
+        }
+
+        PriorityQueue<NodeStr> pq = new PriorityQueue<>((a,b) -> a.count == b.count ? b.str.compareTo(a.str) : a.count-b.count);
+        for (Map.Entry<String, Integer> entry : map.entrySet()) {
+            pq.offer(new NodeStr(entry.getValue(), entry.getKey()));
+            if (pq.size() > k) {
+                pq.poll();
+            }
+        }
+
+        List<String> ans = new ArrayList<>();
+        while (!pq.isEmpty()) {
+            ans.add(pq.poll().str);
+        }
+        Collections.reverse(ans);
+        return ans;
     }
 }

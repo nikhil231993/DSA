@@ -19,6 +19,7 @@ public class LC451SortCharcterByFrequency {
     public static void main(String[] args) {
         String s = "Aabb";
         System.out.println(frequencySort(s));
+        System.out.println(frequencySortOptimised(s));
     }
 
     public static String frequencySort(String s) {
@@ -54,5 +55,26 @@ public class LC451SortCharcterByFrequency {
         return s2;
         //TC:o(n)
         //SC:O(n)
+    }
+
+    public static String frequencySortOptimised(String s) {
+        Map<Character, Integer> map = new HashMap<>();
+        for (int i = 0; i<s.length(); i++) {
+            Character c = s.charAt(i);
+            map.put(c, map.getOrDefault(c, 0) +1);
+        }
+        PriorityQueue<NodeCharacter> pq = new PriorityQueue<>((a,b) -> b.freq - a.freq);
+        for (Map.Entry<Character, Integer> entry : map.entrySet()) {
+            pq.offer(new NodeCharacter(entry.getValue(), entry.getKey()));
+        }
+
+        StringBuilder sb = new StringBuilder();
+        while (!pq.isEmpty()) {
+            NodeCharacter pair = pq.poll();
+            for (int i =0; i<pair.freq; i++) {
+                sb.append(pair.value);
+            }
+        }
+        return sb.toString();
     }
 }

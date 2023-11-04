@@ -31,7 +31,6 @@ public class LC632SmallestRangeFromKList {
 
         for(int n:res)
             System.out.println(n);
-
     }
     public static int[] smallestRange(List<List<Integer>> nums) {
         int k=nums.size();
@@ -68,7 +67,7 @@ public class LC632SmallestRangeFromKList {
             }
         }
         return new int[]{start,end};
-        //TC:O(n*klog k)
+        //TC:O(n*k log k)
         //SC:O(log k)
     }
 }

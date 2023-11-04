@@ -1,17 +1,41 @@
 package leetcode.math.easy;
 
+import java.util.PriorityQueue;
+
 public class LC628MaximumProductThreeNumbers {
 
 	public static void main(String[] args) {
-		int[] num = new int[] { 1, 2, 3, 4 };
-		System.out.println(maximumProduct(num));
+		int[] num = new int[] { -10, -2, -3, 4 };
 
+		//Approach 1
+		System.out.println(maximumProduct(num));
+		//Approach 2
+		System.out.println(maximumProductBetter(num));
 	}
 
-	public static int maximumProduct(int[] nums) {
+	private static int maximumProduct(int[] num) {
 
-		// 1st Approach is to use min heap and maxheap buthere it will be nlogn TC as
+		// 1st Approach is to use min heap and maxheap and minheap but there it will be nlogn TC as
 		// insertion and deletion in a heap takes log n time
+		PriorityQueue<Integer> maxHeap=new PriorityQueue<>((a,b)->b-a);
+		PriorityQueue<Integer> minHeap=new PriorityQueue<>();
+
+		for(int n:num){
+			maxHeap.offer(n);
+			minHeap.offer(n);
+		}
+
+		int max1=maxHeap.poll();
+		int max2=maxHeap.poll();
+		int max3=maxHeap.poll();
+
+		int min1=minHeap.poll();
+		int min2=minHeap.poll();
+
+		return Math.max(max1*max2*max3,max1*min1*min2);
+	}
+
+	public static int maximumProductBetter(int[] nums) {
 
 		// 2nd approach is specific to this case where we need to find only 3 no
 
@@ -43,12 +67,8 @@ public class LC628MaximumProductThreeNumbers {
 				min2 = nums[i];
 			}
 		}
-
 		return Math.max(max1 * max2 * max3, max1 * min1 * min2);
-
 		// SC:O(1)
 		// TC:O(n)
-
 	}
-
 }

@@ -3,9 +3,9 @@ package leetcode.math.easy;
 public class LC168ExcelSheetColumnTitle {
 
 	public static void main(String[] args) {
-		int columnNumber = 10;
-		System.out.println(convertToTitle(columnNumber));
 
+		int columnNumber = 674;
+		System.out.println(convertToTitle(columnNumber));
 	}
 
 	public static String convertToTitle(int columnNumber) {
@@ -16,9 +16,7 @@ public class LC168ExcelSheetColumnTitle {
 			columnNumber = (columnNumber - 1) / 26;
 		}
 		return result.reverse().toString();
-
 		// TC:log(n) base 26 as we are dividing by 26
 		// SC:log(n) base 26 as we are dividing by 26
 	}
-
 }

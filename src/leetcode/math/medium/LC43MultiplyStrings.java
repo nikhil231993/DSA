@@ -3,8 +3,8 @@ package leetcode.math.medium;
 public class LC43MultiplyStrings {
 
 	public static void main(String[] args) {
-		String num1 = "2";
-		String num2 = "3";
+		String num1 = "123";
+		String num2 = "456";
 		System.out.println(multiply(num1, num2));
 
 	}
@@ -31,8 +31,6 @@ public class LC43MultiplyStrings {
 		while (j < result.length) {
 			sb.append(result[j++]);
 		}
-
 		return sb.toString();
-
 	}
 }

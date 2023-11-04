@@ -17,8 +17,7 @@ public class LC767ReorganizeString {
             counts.put(c, counts.getOrDefault(c,0)+1);
         }
 
-        PriorityQueue<Character> pq=new PriorityQueue((a, b)->
-                counts.get(b)-counts.get(a));
+        PriorityQueue<Character> pq=new PriorityQueue((a, b)-> counts.get(b)-counts.get(a));
         pq.addAll(counts.keySet());
 
         StringBuilder sb=new StringBuilder();
@@ -45,9 +44,7 @@ public class LC767ReorganizeString {
             else
                 sb.append(last);
         }
-
         return sb.toString();
-
         //TC:o(nlogn)
         //SC:o(n) worst case
     }

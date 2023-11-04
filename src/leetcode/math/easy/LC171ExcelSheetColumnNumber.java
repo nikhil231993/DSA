@@ -6,10 +6,6 @@ public class LC171ExcelSheetColumnNumber {
 		String s="ABC";
 		System.out.println(titleToNumber(s));
 	}
-
-
-
-
 	public static int titleToNumber(String s) {
 		int result = 0;
 		for (int i = 0; i < s.length(); i++) {
@@ -18,7 +14,5 @@ public class LC171ExcelSheetColumnNumber {
 		return result;
 		// TC:O(n)
 		// SC:O(1)
-
 	}
-
 }

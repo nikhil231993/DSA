@@ -35,12 +35,10 @@ public class LC295FindMedianFromDataStream {
     }
 
     public double findMedian() {
-
         if(smaller.size()==larger.size())
             return (smaller.peek()+larger.peek())/2.0;
         else
             return smaller.peek();
-
     }
 
     public static void main(String[] args) {

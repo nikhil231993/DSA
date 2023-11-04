@@ -17,13 +17,13 @@ public class LC378KthSmallestInASortedMatrix {
         int lowest=matrix[0][0];
         int highest=matrix[size-1][size-1];
 
-        while(lowest<highest){
+        while(lowest<=highest){
             int mid=lowest+(highest-lowest)/2;
             int count= countLessOrEqual(mid,matrix,k);
             if(count<k)
                 lowest=mid+1;
             else
-                highest=mid;
+                highest=mid-1;
         }
         return lowest;
     }

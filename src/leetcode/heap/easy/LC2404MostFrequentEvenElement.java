@@ -8,6 +8,7 @@ public class LC2404MostFrequentEvenElement {
     public static void main(String[] args) {
         int[] nums =new int[] {0,1,2,2,4,4,1};
         System.out.println(mostFrequentEven(nums));
+        System.out.println(mostFrequentEvenOptimised(nums));
     }
 
     public static int mostFrequentEven(int[] nums) {
@@ -31,5 +32,22 @@ public class LC2404MostFrequentEvenElement {
         return element==Integer.MAX_VALUE?-1:element;
         //TC:O(n)
         //SC:O(n) in worst case where each element is unique
+    }
+
+    public static int mostFrequentEvenOptimised(int[] nums) {
+        Map<Integer, Integer> map = new HashMap<>();
+        int count=-1;
+        int element=Integer.MAX_VALUE;
+        for (int num : nums) {
+            if (num%2 == 0) {
+                map.put(num, map.getOrDefault(num, 0) + 1);
+                int newCount = map.get(num);
+                if (newCount > count || (newCount == count && num < element)) {
+                    count = newCount;
+                    element = num;
+                }
+            }
+        }
+        return element == Integer.MAX_VALUE ? -1 : element;
     }
 }

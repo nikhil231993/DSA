@@ -5,6 +5,7 @@ public class LC2710RemoveTrailingZeros {
     public static void main(String[] args) {
         String num = "51230100";
         System.out.println(removeTrailingZeros(num));
+        System.out.println(removeTrailingZerosOptimised(num));
     }
 
     public static  String removeTrailingZeros(String num) {
@@ -24,4 +25,12 @@ public class LC2710RemoveTrailingZeros {
         //TC:O(n)
         //SC:O(1)
     }
+    public static String removeTrailingZerosOptimised(String num) {
+        int endIndex = num.length()-1;
+        while (endIndex >= 0 && num.charAt(endIndex) == '0') {
+            endIndex--;
+        }
+        return num.substring(0, endIndex+1);
+    }
+
 }

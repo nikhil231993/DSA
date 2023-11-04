@@ -8,10 +8,8 @@ public class FindMedianInAStream {
     static PriorityQueue<Integer> larger=new PriorityQueue<>();
 
     //Function to insert heap.
-    public static void insertHeap(int x)
-    {
-        if(smaller.size()==0)
-        {
+    public static void insertHeap(int x) {
+        if(smaller.size()==0) {
             smaller.offer(x);
             return;
         }
@@ -33,14 +31,12 @@ public class FindMedianInAStream {
     }
 
     //Function to balance heaps.
-    public static void balanceHeaps()
-    {
+    public static void balanceHeaps() {
         // add your code here
     }
 
     //Function to return Median.
-    public static int getMedian()
-    {
+    public static int getMedian() {
         if(smaller.size()==larger.size())
             return (smaller.peek()+larger.peek())/2;
         else

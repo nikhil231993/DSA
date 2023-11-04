@@ -5,8 +5,9 @@ import java.util.Map;
 
 public class LC387FirstUniqueCharacterInString {
     public static void main(String[] args) {
-        String s="aabb";
+        String s="aab";
         System.out.println(firstUniqChar(s));
+        System.out.println(firstUniqCharOptimised(s));
     }
 
     public static int firstUniqChar(String s) {
@@ -26,5 +27,18 @@ public class LC387FirstUniqueCharacterInString {
         return index==Integer.MAX_VALUE?-1:index;
         //TC:O(n)
         //SC:O(n)
+    }
+
+    public static int firstUniqCharOptimised(String s) {
+        int[] count = new int[128];
+        for (char c : s.toCharArray()) {
+            count[c]++;
+        }
+        for (int i=0; i<s.length(); i++) {
+            if (count[s.charAt(i)] == 1) {
+                return i;
+            }
+        }
+        return -1;
     }
 }

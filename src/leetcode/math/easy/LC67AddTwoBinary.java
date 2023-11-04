@@ -1,12 +1,11 @@
 package leetcode.math.easy;
 
-public class LC7AddTwoBinary {
+public class LC67AddTwoBinary {
 
 	public static void main(String[] args) {
 		String a = "1010";
 		String b = "1011";
 		System.out.println(addBinary(a, b));
-
 	}
 
 	public static String addBinary(String a, String b) {
@@ -30,8 +29,7 @@ public class LC7AddTwoBinary {
 			result.append(carry);
 		}
 		return result.reverse().toString();
-		// TC:O(n) where n is the lenth of larger string
+		// TC:O(n) where n is the length of larger string
 		// SC:O(n+1) where n is the length of the larger string
 	}
-
 }

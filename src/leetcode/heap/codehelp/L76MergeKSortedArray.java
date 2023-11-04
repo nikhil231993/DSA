@@ -70,5 +70,7 @@ public class L76MergeKSortedArray {
         }
         Arrays.sort(result);
         return result;
+        //TC:O(k log k) + O(n*k -k log k)
+        //SC:O(k)
     }
 }

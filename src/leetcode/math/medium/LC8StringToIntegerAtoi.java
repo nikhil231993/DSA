@@ -1,9 +1,10 @@
 package leetcode.math.medium;
 
-public class LC8StringToInteger {
+public class LC8StringToIntegerAtoi {
 
 	public static void main(String[] args) {
-		String s = "2147483648";
+		//String s = "2147483648";
+		String s = "+1";
 		System.out.println(myAtoi(s));
 	}
 
@@ -31,7 +32,6 @@ public class LC8StringToInteger {
 				return Integer.MAX_VALUE;
 			if (sign == -1 && -1 * ans < Integer.MIN_VALUE)
 				return Integer.MIN_VALUE;
-
 			i++;
 		}
 		return (int) ans * sign;
