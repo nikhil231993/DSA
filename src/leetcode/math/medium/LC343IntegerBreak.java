@@ -3,10 +3,9 @@ package leetcode.math.medium;
 public class LC343IntegerBreak {
 
 	public static void main(String[] args) {
+
 		int n = 10;
-
 		System.out.println(integerBreak(n));
-
 	}
 
 	public static int integerBreak(int n) {
@@ -19,10 +18,7 @@ public class LC343IntegerBreak {
 			product = product * 3;
 		}
 		return n * product;
-
 		// TC:O(n)
 		// SC:O(1)
-
 	}
-
 }
