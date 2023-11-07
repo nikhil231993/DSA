@@ -5,18 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/math/hard/LC149MaxPointsInLine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/math/hard/LC224BasicCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/math/hard/LC60KthPermutationSequence.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/math/medium/LC1344AngleBetweenHandsClock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/math/medium/LC1492KthFactor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/string/easy/LC1408StringMatching.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/math/easy/LC9PalindromeNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/math/easy/LC9PalindromeNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/math/medium/LC2AddTwoNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/math/medium/LC2AddTwoNumbers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/math/medium/LC343IntegerBreak.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/math/medium/LC343IntegerBreak.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/math/medium/LC453MinimumEqual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/math/medium/LC453MinimumEqual.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/math/medium/LC593ValidSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/math/medium/LC593ValidSquare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/math/medium/LC7ReverseInteger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/math/medium/LC7ReverseInteger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/string/easy/LC14LongestCommonPrefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/easy/LC14LongestCommonPrefix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/string/easy/LC415AddTwoStrings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/easy/LC415AddTwoStrings.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +69,7 @@
       <recent name="leetcode.slidingwindowandtwopointer.hard" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LC60KthPermutationSequence">
+  <component name="RunManager" selected="Application.LC242ValidAnagram">
     <configuration name="BinomialCoefficient" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -93,12 +85,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC149MaxPointsInLine" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.math.hard.LC149MaxPointsInLine" />
+    <configuration name="LC1408StringMatching" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.string.easy.LC1408StringMatching" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.math.hard.*" />
+          <option name="PATTERN" value="leetcode.string.easy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -106,12 +98,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC224BasicCalculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.math.hard.LC224BasicCalculator" />
+    <configuration name="LC14LongestCommonPrefix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.string.easy.LC14LongestCommonPrefix" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.math.hard.*" />
+          <option name="PATTERN" value="leetcode.string.easy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,12 +111,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC453MinimumEqual" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.math.medium.LC453MinimumEqual" />
+    <configuration name="LC242ValidAnagram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.string.easy.LC242ValidAnagram" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.math.medium.*" />
+          <option name="PATTERN" value="leetcode.string.easy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -132,12 +124,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC46Permutations" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.recursion.medium.LC46Permutations" />
+    <configuration name="LC392IsSubsequence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.string.easy.LC392IsSubsequence" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.recursion.medium.*" />
+          <option name="PATTERN" value="leetcode.string.easy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -145,12 +137,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC60KthPermutationSequence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.math.hard.LC60KthPermutationSequence" />
+    <configuration name="LC415AddTwoStrings" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.string.easy.LC415AddTwoStrings" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.math.hard.*" />
+          <option name="PATTERN" value="leetcode.string.easy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -160,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LC60KthPermutationSequence" />
-        <item itemvalue="Application.LC46Permutations" />
-        <item itemvalue="Application.LC149MaxPointsInLine" />
-        <item itemvalue="Application.LC224BasicCalculator" />
-        <item itemvalue="Application.LC453MinimumEqual" />
+        <item itemvalue="Application.LC242ValidAnagram" />
+        <item itemvalue="Application.LC392IsSubsequence" />
+        <item itemvalue="Application.LC1408StringMatching" />
+        <item itemvalue="Application.LC14LongestCommonPrefix" />
+        <item itemvalue="Application.LC415AddTwoStrings" />
       </list>
     </recent_temporary>
   </component>

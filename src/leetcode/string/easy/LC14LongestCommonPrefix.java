@@ -1,12 +1,21 @@
 package leetcode.string.easy;
 
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+
 public class LC14LongestCommonPrefix {
 
 	public static void main(String[] args) {
-		String[] s = new String[] { "flower", "flow", "flight" };
-		System.out.println(longestCommonPrefix(s));
-		System.out.println(longestCommonPrefixWithWhile(s));
+		HashSet<String>set=new HashSet<>();
+		set.add("Nikhil");
+		List<String> l=new ArrayList<>(set);
 
+		String[] s = new String[] { "flower", "flow", "flight" };
+		//Approach 1
+		System.out.println(longestCommonPrefix(s));
+		//Approach 2
+		System.out.println(longestCommonPrefixWithWhile(s));
 	}
 
 	private static String longestCommonPrefixWithWhile(String[] s) {
@@ -45,5 +54,4 @@ public class LC14LongestCommonPrefix {
 		}
 		return min;
 	}
-
 }
