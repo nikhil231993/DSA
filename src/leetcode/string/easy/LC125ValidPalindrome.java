@@ -5,13 +5,14 @@ public class LC125ValidPalindrome {
 	public static void main(String[] args) {
 		String s = "A man, a plan, a canal: Panamak";
 
+		//Approach 1 using ASCII
 		System.out.println(validPalindromeBruteForce(s));
+		//Approach 2
 		System.out.println(validPalindromeInBuiltLibrary(s));
-
 	}
 
 	private static boolean validPalindromeInBuiltLibrary(String s) {
-String str = s.toLowerCase();
+		String str = s.toLowerCase();
 		
 		int start=0;
 		int end=str.length()-1;
@@ -55,5 +56,4 @@ String str = s.toLowerCase();
 		// SC:O(1)
 		// TC:O(n)
 	}
-
 }

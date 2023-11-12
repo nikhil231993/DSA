@@ -8,20 +8,19 @@ public class LC13RomanToInteger {
 	public static void main(String[] args) {
 
 		String s = "IV";
+		//Approach 1
 		System.out.println(romanToIntegerUsingMap(s));
+		//Approach 2
 		System.out.println(romanToIntegerWithoutUsingMap(s));
 
-		// SC:O(1)
-//	Symbol       Value
-//		I             1
-//		V             5
-//		X             10
-//		L             50
-//		C             100
-//		D             500
-//		M             1000
-
-
+	//	Symbol       Value
+	//		I             1
+	//		V             5
+	//		X             10
+	//		L             50
+	//		C             100
+	//		D             500
+	//		M             1000
 	}
 
 	private static int romanToIntegerWithoutUsingMap(String s) {
@@ -61,6 +60,8 @@ public class LC13RomanToInteger {
 			forward = num;
 		}
 		return sum;
+		//TC:O(n)
+		//SC:O(1)
 	}
 
 	private static int romanToIntegerUsingMap(String s) {
@@ -83,6 +84,7 @@ public class LC13RomanToInteger {
 			}
 		}
 		return sum;
+		//TC:O(n);
+		//SC:O(n)
 	}
-
 }

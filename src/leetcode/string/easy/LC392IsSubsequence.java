@@ -3,6 +3,7 @@ package leetcode.string.easy;
 public class LC392IsSubsequence {
 
     public static void main(String[] args) {
+
         String s = "abc", t = "ahbgdc";
         System.out.println(isSubsequence(s,t));
     }
@@ -24,6 +25,7 @@ public class LC392IsSubsequence {
                 return true;
         }
         return false;
-
+        //TC:0(n) where n is the length of the largest string
+        //SC:O(1)
     }
 }

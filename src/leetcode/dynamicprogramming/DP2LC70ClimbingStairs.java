@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class DP2LC70ClimbingStairs {
 
     public static void main(String[] args) {
-        int n=4;
+        int n=3;
 
         //Recursion
         System.out.println(recursion(n));
@@ -31,7 +31,9 @@ public class DP2LC70ClimbingStairs {
     }
 
     private static int recursion(int n) {
-        if(n<=0)
+        if(n==0)
+            return 1;
+        if(n==1)
             return 1;
         return recursion(n-1)+recursion(n-2);
         //TC:O(2 raise to N)

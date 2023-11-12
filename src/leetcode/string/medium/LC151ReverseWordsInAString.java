@@ -5,10 +5,13 @@ import java.util.Stack;
 public class LC151ReverseWordsInAString {
 
 	public static void main(String[] args) {
-		String s = "  hello world  ";
-		System.out.println(reverseWords(s));
-		System.out.println(reverseWordsInPlace(s));
+		String s = "      hello world  ";
 
+		//Approach 1
+		System.out.println(reverseWords(s));
+
+		//Approach 2
+		System.out.println(reverseWordsInPlace(s));
 	}
 
 	private static String reverseWordsInPlace(String s) {
@@ -25,7 +28,7 @@ public class LC151ReverseWordsInAString {
 			{
 				r=r.concat(s.substring(i+1,j+1));
 			}else {
-				r=r.concat(" "+s.substring(i+1,j+1));
+				r=r.concat(" "+s.substring(i+1,j+1));//we can also use + instead of concat
 			}
 		}
 		return r;
@@ -45,7 +48,6 @@ public class LC151ReverseWordsInAString {
 			sb.append(stack.pop()).append(" ");
 		}
 		return sb.toString().trim();
-
 		// SC:O(N-spaces)
 		// TC:O(N)
 	}

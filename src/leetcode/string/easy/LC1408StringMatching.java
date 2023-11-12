@@ -7,6 +7,7 @@ import java.util.List;
 public class LC1408StringMatching {
 
     public static void main(String[] args) {
+
         String[] words=new String[]{"mass","as","hero","superhero"};
         System.out.println(stringMatching(words));
     }
@@ -22,5 +23,6 @@ public class LC1408StringMatching {
             }
         }
         return new ArrayList<>(set);
+        //TC:O(n square)
     }
 }

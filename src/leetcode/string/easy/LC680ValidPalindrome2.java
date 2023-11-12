@@ -3,10 +3,9 @@ package leetcode.string.easy;
 public class LC680ValidPalindrome2 {
 
 	public static void main(String[] args) {
+
 		String str = "abc";
-
 		System.out.println(validPalindrome(str));
-
 	}
 
 	public static boolean validPalindrome(String s) {
@@ -17,7 +16,6 @@ public class LC680ValidPalindrome2 {
 				start++;
 				end--;
 			} else {
-
 //				return isPalindrome(s, start + 1, end) || isPalindrome(s, start, end - 1);
 				// can also be return as below
 				if (isPalindrome(s, start + 1, end))
@@ -29,6 +27,8 @@ public class LC680ValidPalindrome2 {
 			}
 		}
 		return true;
+		//TC:O(n)
+		//SC:O(1)
 	}
 
 	private static boolean isPalindrome(String s, int start, int end) {
@@ -38,8 +38,7 @@ public class LC680ValidPalindrome2 {
 				end--;
 			}else 
 				return false;
-	}
+		}
 		return true;
 	}
-
 }

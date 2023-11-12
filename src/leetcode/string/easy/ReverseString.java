@@ -18,7 +18,5 @@ public class ReverseString {
 		}
 		for (char c : arr)
 			System.out.print(c);
-
 	}
-
 }

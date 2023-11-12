@@ -7,9 +7,6 @@ import java.util.List;
 public class LC14LongestCommonPrefix {
 
 	public static void main(String[] args) {
-		HashSet<String>set=new HashSet<>();
-		set.add("Nikhil");
-		List<String> l=new ArrayList<>(set);
 
 		String[] s = new String[] { "flower", "flow", "flight" };
 		//Approach 1

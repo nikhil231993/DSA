@@ -6,12 +6,14 @@ public class LC1249MinimumRemoveToMakeValdiParenthesis {
 
 	public static void main(String[] args) {
 		String s = "lee(t(c)o)de)";
-		System.out.println(minimumRemoveUsingStack(s));
-		System.out.println(minimumRemoveWithouUsingStack(s));
 
+		//Approach 1
+		System.out.println(minimumRemoveUsingStack(s));
+		//Approach 2 Better Approach as no space is taken
+		System.out.println(minimumRemoveWithoutUsingStack(s));
 	}
 
-	private static String minimumRemoveWithouUsingStack(String s) {
+	private static String minimumRemoveWithoutUsingStack(String s) {
 		char[] ch = s.toCharArray();
 		int count = 0;
 
@@ -28,7 +30,7 @@ public class LC1249MinimumRemoveToMakeValdiParenthesis {
 		}
 
 		count = 0;
-
+		// "a(b(c)d" to handle this case
 		for (int i = s.length() - 1; i >= 0; i--) {
 			if (ch[i] == ')') {
 				count++;
@@ -46,8 +48,9 @@ public class LC1249MinimumRemoveToMakeValdiParenthesis {
 				str += ch[i];
 			}
 		}
-
 		return str;
+		//TC:O(2N)
+		//SC:O(1)
 	}
 
 	private static String minimumRemoveUsingStack(String s) {
@@ -78,10 +81,8 @@ public class LC1249MinimumRemoveToMakeValdiParenthesis {
 				str += c[i];
 			}
 		}
-
 		return str;
 		//TC:O(N)
-				//SC:O(N)
+		//SC:O(N)
 	}
-
 }

@@ -25,5 +25,7 @@ public class LC242ValidAnagram {
                 return false;
         }
         return true;
+        //TC:O(255)
+        //SC:O(255)
     }
 }

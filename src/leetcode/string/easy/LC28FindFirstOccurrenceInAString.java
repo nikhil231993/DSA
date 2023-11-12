@@ -6,8 +6,14 @@ public class LC28FindFirstOccurrenceInAString {
 		String haystack = "test";
 		String needle = "st";
 
+		//Approach 1
+		System.out.println(strStrBrute(haystack,needle));
+		//Approach 2
 		System.out.println(findOccurrence(haystack, needle));
+	}
 
+	public static int strStrBrute(String haystack, String needle) {
+		return haystack.indexOf(needle);
 	}
 
 	private static int findOccurrence(String haystack, String needle) {
@@ -22,12 +28,11 @@ public class LC28FindFirstOccurrenceInAString {
 					j++;
 					k++;
 				}
-
 				if (j == n)
 					return i;
 			}
 		}
 		return -1;
+		//TC:O(m*n)
 	}
-
 }
