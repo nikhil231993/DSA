@@ -5,41 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/string/easy/LC1021RemoveOutermostParentheses.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/string/easy/LC1207UniqueOccurences.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/string/easy/LC1768MergeAlternatively.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/string/easy/LC1903LargestOddNumberSubString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/string/easy/LC205IsomorphicStrings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/string/easy/LC345ReverseVowels.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/string/hard/LC273IntegerToEnglish.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/string/hard/LC301RemoveInvalidParentheses.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/string/hard/LC30SubstringWithConcatenation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/string/hard/LC65ValidNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/string/hard/LC76MinimumWindowSubstring.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/string/medium/LC12IntegerToRoman.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/string/medium/LC227BasicCalculator2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/string/medium/LC6ZigzagConversion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/string/easy/LC1614ValidParenthesesString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/string/easy/LC1781SumOfBeauty.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP2LC70ClimbingStairs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP2LC70ClimbingStairs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/string/easy/LC125ValidPalindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/easy/LC125ValidPalindrome.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/string/easy/LC13RomanToInteger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/easy/LC13RomanToInteger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/string/easy/LC1408StringMatching.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/easy/LC1408StringMatching.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/string/easy/LC14LongestCommonPrefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/easy/LC14LongestCommonPrefix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/string/easy/LC242ValidAnagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/easy/LC242ValidAnagram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/string/easy/LC28FindFirstOccurrenceInAString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/easy/LC28FindFirstOccurrenceInAString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/string/easy/LC392IsSubsequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/easy/LC392IsSubsequence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/string/easy/LC680ValidPalindrome2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/easy/LC680ValidPalindrome2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/string/easy/ReverseString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/easy/ReverseString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/string/easy/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/easy/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/string/medium/LC1249MinimumRemoveToMakeValdiParenthesis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/medium/LC1249MinimumRemoveToMakeValdiParenthesis.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/string/medium/LC151ReverseWordsInAString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/medium/LC151ReverseWordsInAString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/string/medium/LC227BasicCal2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/string/medium/LC22GenerateParenthesis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/medium/LC22GenerateParenthesis.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/string/medium/LC3LongestSubstringWithoutRepeatingCharacters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/medium/LC3LongestSubstringWithoutRepeatingCharacters.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/string/medium/LC49GroupedAnagrams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/medium/LC49GroupAnagrams.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/string/medium/LC5LongestPalndromicSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/medium/LC5LongestPalndromicSubstring.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/string/medium/LC71SimplifyPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/medium/LC71SimplifyPath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/string/medium/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/medium/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +68,7 @@
       <recent name="leetcode.slidingwindowandtwopointer.hard" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LC795RotateString">
+  <component name="RunManager" selected="Application.LC1781SumOfBeauty">
     <configuration name="BinomialCoefficient" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -129,8 +97,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC205IsomorphicStrings" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.string.easy.LC205IsomorphicStrings" />
+    <configuration name="LC1614ValidParenthesesString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.string.easy.LC1614ValidParenthesesString" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -142,12 +110,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC30SubstringWithConcatenation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.string.hard.LC30SubstringWithConcatenation" />
+    <configuration name="LC1781SumOfBeauty" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.string.easy.LC1781SumOfBeauty" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.string.hard.*" />
+          <option name="PATTERN" value="leetcode.string.easy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LC205IsomorphicStrings" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.string.easy.LC205IsomorphicStrings" />
+      <module name="DSA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.string.easy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -168,26 +149,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="leetcode.string.medium.Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.string.medium.Test" />
-      <module name="DSA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.string.medium.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LC1781SumOfBeauty" />
+        <item itemvalue="Application.LC1614ValidParenthesesString" />
         <item itemvalue="Application.LC795RotateString" />
         <item itemvalue="Application.LC205IsomorphicStrings" />
         <item itemvalue="Application.LC1021RemoveOutermostParentheses" />
-        <item itemvalue="Application.LC30SubstringWithConcatenation" />
-        <item itemvalue="Application.leetcode.string.medium.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -654,6 +622,11 @@
           <url>file://$PROJECT_DIR$/src/leetcode/string/easy/LC205IsomorphicStrings.java</url>
           <line>40</line>
           <option name="timeStamp" value="212" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/string/easy/LC1781SumOfBeauty.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="213" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/leetcode/binarytree/Test.java</url>
