@@ -32,5 +32,7 @@ public class LC1781SumOfBeauty {
             }
         }
         return sum;
+        //TC:O(n*n*26)
+        //TC:O(26)
     }
 }

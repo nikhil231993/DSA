@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/string/easy/LC1614ValidParenthesesString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/string/easy/LC1781SumOfBeauty.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/string/medium/LC1781SumOfBeauty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/medium/LC1781SumOfBeauty.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,11 +59,11 @@
       <recent name="$PROJECT_DIR$/src/leetcode/binarysearchtree" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="leetcode.string.medium" />
       <recent name="leetcode.heap.codehelp" />
       <recent name="leetcode.binarysearch.easy" />
       <recent name="leetcode.array.extra" />
       <recent name="leetcode.binarysearch" />
-      <recent name="leetcode.slidingwindowandtwopointer.hard" />
     </key>
   </component>
   <component name="RunManager" selected="Application.LC1781SumOfBeauty">
@@ -622,11 +620,6 @@
           <url>file://$PROJECT_DIR$/src/leetcode/string/easy/LC205IsomorphicStrings.java</url>
           <line>40</line>
           <option name="timeStamp" value="212" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/leetcode/string/easy/LC1781SumOfBeauty.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="213" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/leetcode/binarytree/Test.java</url>
