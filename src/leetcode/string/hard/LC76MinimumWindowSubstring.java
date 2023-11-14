@@ -56,7 +56,6 @@ public class LC76MinimumWindowSubstring {
             return "";
 
         return s.substring(minIndex, minIndex+len);
-
         //TC:O(2N)
         //SC:O(n) result+O(t) for map
     }

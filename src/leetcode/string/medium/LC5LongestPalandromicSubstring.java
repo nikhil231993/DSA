@@ -1,6 +1,6 @@
 package leetcode.string.medium;
 
-public class LC5LongestPalndromicSubstring {
+public class LC5LongestPalandromicSubstring {
 
 	public static void main(String[] args) {
 

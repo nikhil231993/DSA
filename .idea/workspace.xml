@@ -5,7 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/leetcode/string/medium/LC1781SumOfBeauty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/medium/LC1781SumOfBeauty.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/TwoPointer/hard/LC1610MaximumNumberOfVisiblePoints.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/TwoPointer/hard/LC2799CountCompleteSubarrays.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/TwoPointer/hard/LC992SubarrayWithKDifferentIntegers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/TwoPointer/hard/PremiumLongestSubStringWithTwoDistinctCharacters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/TwoPointer/hard/PremiumLongestSubstringWithAtmostKDistinctCharacters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/TwoPointer/medium/LC424LongestRepeatingCharacterReplacement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/TwoPointer/medium/LC75SortColors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/TwoPointer/medium/LC763PartitionLabels.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/string/easy/LC795RotateString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/easy/LC796RotateString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/string/hard/LC76MinimumWindowSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/hard/LC76MinimumWindowSubstring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/string/medium/LC5LongestPalndromicSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/medium/LC5LongestPalandromicSubstring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/string/medium/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/medium/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +39,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/leetcode/graph/G5BFS.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/leetcode/string/easy/LC796RotateString.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -59,14 +72,14 @@
       <recent name="$PROJECT_DIR$/src/leetcode/binarysearchtree" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="leetcode.TwoPointer.medium.medium" />
       <recent name="leetcode.string.medium" />
       <recent name="leetcode.heap.codehelp" />
       <recent name="leetcode.binarysearch.easy" />
       <recent name="leetcode.array.extra" />
-      <recent name="leetcode.binarysearch" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LC1781SumOfBeauty">
+  <component name="RunManager" selected="Application.LC2799CountCompleteSubarrays">
     <configuration name="BinomialCoefficient" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -82,12 +95,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC1021RemoveOutermostParentheses" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.string.easy.LC1021RemoveOutermostParentheses" />
+    <configuration name="LC1610MaximumNumberOfVisiblePoints" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.TwoPointer.medium.hard.LC1610MaximumNumberOfVisiblePoints" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.string.easy.*" />
+          <option name="PATTERN" value="leetcode.TwoPointer.medium.hard.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -95,12 +108,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC1614ValidParenthesesString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.string.easy.LC1614ValidParenthesesString" />
+    <configuration name="LC2799CountCompleteSubarrays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.TwoPointer.hard.LC2799CountCompleteSubarrays" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.string.easy.*" />
+          <option name="PATTERN" value="leetcode.TwoPointer.hard.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -108,12 +121,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC1781SumOfBeauty" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.string.easy.LC1781SumOfBeauty" />
+    <configuration name="LC992SubarrayWithKDifferentIntegers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.TwoPointer.hard.LC992SubarrayWithKDifferentIntegers" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.string.easy.*" />
+          <option name="PATTERN" value="leetcode.TwoPointer.hard.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,12 +134,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC205IsomorphicStrings" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.string.easy.LC205IsomorphicStrings" />
+    <configuration name="PremiumLongestSubStringWithTwoDistinctCharacters" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.TwoPointer.hard.PremiumLongestSubStringWithTwoDistinctCharacters" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.string.easy.*" />
+          <option name="PATTERN" value="leetcode.TwoPointer.hard.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -134,12 +147,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC795RotateString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.string.easy.LC795RotateString" />
+    <configuration name="PremiumLongestSubstringWithAtmostKDistinctCharacters" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.TwoPointer.hard.PremiumLongestSubstringWithAtmostKDistinctCharacters" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.string.easy.*" />
+          <option name="PATTERN" value="leetcode.TwoPointer.hard.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -149,11 +162,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LC1781SumOfBeauty" />
-        <item itemvalue="Application.LC1614ValidParenthesesString" />
-        <item itemvalue="Application.LC795RotateString" />
-        <item itemvalue="Application.LC205IsomorphicStrings" />
-        <item itemvalue="Application.LC1021RemoveOutermostParentheses" />
+        <item itemvalue="Application.LC2799CountCompleteSubarrays" />
+        <item itemvalue="Application.PremiumLongestSubstringWithAtmostKDistinctCharacters" />
+        <item itemvalue="Application.PremiumLongestSubStringWithTwoDistinctCharacters" />
+        <item itemvalue="Application.LC992SubarrayWithKDifferentIntegers" />
+        <item itemvalue="Application.LC1610MaximumNumberOfVisiblePoints" />
       </list>
     </recent_temporary>
   </component>
@@ -620,6 +633,16 @@
           <url>file://$PROJECT_DIR$/src/leetcode/string/easy/LC205IsomorphicStrings.java</url>
           <line>40</line>
           <option name="timeStamp" value="212" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/TwoPointer/hard/LC1610MaximumNumberOfVisiblePoints.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="214" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/TwoPointer/hard/LC992SubarrayWithKDifferentIntegers.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="215" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/leetcode/binarytree/Test.java</url>

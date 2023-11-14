@@ -1,6 +1,6 @@
 package leetcode.string.easy;
 
-public class LC795RotateString {
+public class LC796RotateString {
 
     public static void main(String[] args) {
         String s = "abcde", goal = "cdeab";
