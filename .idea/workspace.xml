@@ -5,19 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/TwoPointer/hard/LC1610MaximumNumberOfVisiblePoints.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/TwoPointer/hard/LC2799CountCompleteSubarrays.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/TwoPointer/hard/LC992SubarrayWithKDifferentIntegers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/TwoPointer/hard/PremiumLongestSubStringWithTwoDistinctCharacters.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/TwoPointer/hard/PremiumLongestSubstringWithAtmostKDistinctCharacters.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/TwoPointer/medium/LC424LongestRepeatingCharacterReplacement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/TwoPointer/medium/LC75SortColors.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/TwoPointer/medium/LC763PartitionLabels.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/TwoPointer/easy/LC2000ReversePrefixOfWord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/TwoPointer/easy/LC917ReverseLetters.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/string/easy/LC795RotateString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/easy/LC796RotateString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/string/hard/LC76MinimumWindowSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/hard/LC76MinimumWindowSubstring.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/string/medium/LC5LongestPalndromicSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/medium/LC5LongestPalandromicSubstring.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/string/medium/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/medium/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/TwoPointer/hard/LC1610MaximumNumberOfVisiblePoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/TwoPointer/hard/LC1610MaximumNumberOfVisiblePoints.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/hard/LC76MinimumWIndowSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/slidingwindow/hard/LC76MinimumWIndowSubstring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/hard/LC992SubarrayWithAtmostK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/slidingwindow/hard/LC992SubarrayWithAtmostK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/hard/LC992SubarrayWithKDifferentIntegers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/slidingwindow/hard/LC992SubarrayWithKDifferentIntegers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/hard/PremiumLongestSubstringWithKUnqiueCharacters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/slidingwindow/hard/PremiumLongestSubstringWithKUnqiueCharacters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/medium/LC1052GrumpyOwner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/slidingwindow/medium/LC1052GrumpyOwner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/medium/LC1248CountNumberOfNiceSubarrays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/slidingwindow/medium/LC1248CountNumberOfNiceSubarrays.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/medium/LC1358NoOfSubstringContainingAllCharacters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/slidingwindow/medium/LC1358NoOfSubstringContainingAllCharacters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/medium/LC3LongestSubstringWithoutRepeatingCharacters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/slidingwindow/medium/LC3LongestSubstringWithoutRepeatingCharacters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/medium/LC424LongestRepeatingCharacterReplacement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/slidingwindow/medium/LC424LongestRepeatingCharacterReplacement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/medium/LC525LengthContiguousSubarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/slidingwindow/medium/LC525LengthContiguousSubarray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/medium/LC904FruitBaskets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/slidingwindow/medium/LC904FruitBaskets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/medium/LC930BinarySubArrayWIthSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/slidingwindow/medium/LC930BinarySubArrayWIthSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/medium/MaxConsecutiveOnes2LC485Premium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/slidingwindow/medium/MaxConsecutiveOnes2LC485Premium.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/medium/MaxConsecutiveOnes3LC1004.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/slidingwindow/medium/MaxConsecutiveOnes3LC1004.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/medium/MaxConsecutiveOnesLC485.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/slidingwindow/medium/MaxConsecutiveOnesLC485.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +85,7 @@
       <recent name="leetcode.array.extra" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LC2799CountCompleteSubarrays">
+  <component name="RunManager" selected="Application.LC917ReverseLetters">
     <configuration name="BinomialCoefficient" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -95,12 +101,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC1610MaximumNumberOfVisiblePoints" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.TwoPointer.medium.hard.LC1610MaximumNumberOfVisiblePoints" />
+    <configuration name="LC2000ReversePrefixOfWord" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.TwoPointer.easy.LC2000ReversePrefixOfWord" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.TwoPointer.medium.hard.*" />
+          <option name="PATTERN" value="leetcode.TwoPointer.easy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,12 +127,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC992SubarrayWithKDifferentIntegers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.TwoPointer.hard.LC992SubarrayWithKDifferentIntegers" />
+    <configuration name="LC917ReverseLetters" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.TwoPointer.easy.LC917ReverseLetters" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.TwoPointer.hard.*" />
+          <option name="PATTERN" value="leetcode.TwoPointer.easy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -162,11 +168,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LC917ReverseLetters" />
+        <item itemvalue="Application.LC2000ReversePrefixOfWord" />
         <item itemvalue="Application.LC2799CountCompleteSubarrays" />
         <item itemvalue="Application.PremiumLongestSubstringWithAtmostKDistinctCharacters" />
         <item itemvalue="Application.PremiumLongestSubStringWithTwoDistinctCharacters" />
-        <item itemvalue="Application.LC992SubarrayWithKDifferentIntegers" />
-        <item itemvalue="Application.LC1610MaximumNumberOfVisiblePoints" />
       </list>
     </recent_temporary>
   </component>
@@ -340,22 +346,22 @@
           <option name="timeStamp" value="115" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/medium/LC1358NoOfSubstringContainingAllCharacters.java</url>
+          <url>file://$PROJECT_DIR$/src/leetcode/slidingwindow/medium/LC1358NoOfSubstringContainingAllCharacters.java</url>
           <line>20</line>
           <option name="timeStamp" value="116" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/hard/LC992SubarrayWithAtmostK.java</url>
+          <url>file://$PROJECT_DIR$/src/leetcode/slidingwindow/hard/LC992SubarrayWithAtmostK.java</url>
           <line>20</line>
           <option name="timeStamp" value="120" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/hard/LC992SubarrayWithKDifferentIntegers.java</url>
+          <url>file://$PROJECT_DIR$/src/leetcode/slidingwindow/hard/LC992SubarrayWithKDifferentIntegers.java</url>
           <line>4</line>
           <option name="timeStamp" value="121" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/hard/LC76MinimumWIndowSubstring.java</url>
+          <url>file://$PROJECT_DIR$/src/leetcode/slidingwindow/hard/LC76MinimumWIndowSubstring.java</url>
           <line>54</line>
           <option name="timeStamp" value="123" />
         </line-breakpoint>

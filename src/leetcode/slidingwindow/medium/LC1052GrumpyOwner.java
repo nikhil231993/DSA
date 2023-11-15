@@ -1,4 +1,4 @@
-package leetcode.slidingwindowandtwopointer.medium;
+package leetcode.slidingwindow.medium;
 
 public class LC1052GrumpyOwner {
 
