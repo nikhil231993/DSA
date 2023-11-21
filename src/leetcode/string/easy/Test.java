@@ -7,6 +7,8 @@ import java.util.List;
 public class Test {
 
 	public static void main(String[] args) {
+		
+		Object a=null;
 
 		System.out.println("Nikhil".substring(1));
 

@@ -32,7 +32,7 @@ public class LC2351FirstLetterToAppearTwice {
             else
                 m.put(s.charAt(i),i);
         }
-        return 'a';
+        throw new IllegalArgumentException();
         //TC:O(n) in chase all characters are unique
         //SC:O(n)
     }
