@@ -16,7 +16,7 @@ public class LC1344AngleBetweenHandsClock {
     private static double angleClockSame(int hour, int minutes) {
 
         double min_degree=minutes*6;
-        double hour_degree=(((hour+(double)minutes/60)/12)*360)%360;
+        double hour_degree=(((hour+(double)minutes/60)/12)*360);
         return Math.min(Math.abs(hour_degree-min_degree), 360-Math.abs(hour_degree-min_degree));
     }
 
