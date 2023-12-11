@@ -43,7 +43,7 @@ public class BS12KokoEatingBananaLC875 {
         for(Integer num:piles)
             max=Math.max(max,num);
         return max;
-        //TC:O(N)* log (max(element))
+        //TC:O(N)* log (max(element)) + O(N)
         //SC:O(1)
     }
 }

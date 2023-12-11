@@ -2,8 +2,8 @@ package leetcode.binarysearch;
 
 public class BS21MedianTwoSortedArray {
     public static void main(String[] args) {
-        int[] nums1 = new int[] {1,2};
-        int[] nums2 = new int[] {3,4};
+        int[] nums1 = new int[] {1,3,4,7,10,12};
+        int[] nums2 = new int[] {2,3,6,15};
 
         //Brute force
         System.out.println(findMedianSortedArrays(nums1,nums2));
@@ -43,6 +43,7 @@ public class BS21MedianTwoSortedArray {
     }
 
     public static double findMedianSortedArraysWithoutSpace(int[] nums1, int[] nums2) {
+
         int n1=nums1.length;
         int n2=nums2.length;
         int n=n1+n2;
