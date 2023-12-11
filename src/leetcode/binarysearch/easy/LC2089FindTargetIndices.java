@@ -9,7 +9,9 @@ public class LC2089FindTargetIndices {
     public static void main(String[] args) {
        int[] nums =new int[] {1,2,5,2,3};
        int target = 2;
-        System.out.println(targetIndices(nums,target));
+		System.out.println(targetIndices(nums, target));
+
+		System.out.println(targetIndicesOptimised(nums, target));
     }
 
     public static List<Integer> targetIndices(int[] nums, int target) {
@@ -21,4 +23,65 @@ public class LC2089FindTargetIndices {
         }
         return list;
     }
+
+	public static List<Integer> targetIndicesOptimised(int[] nums, int target) {
+
+		List<Integer> list = new ArrayList();
+		Arrays.sort(nums);
+		int firstPosition = -1;
+		int lastPosition = -1;
+		firstPosition = firstOccurrence(nums, target);
+		lastPosition = lastOccurrence(nums, target);
+		if (lastPosition == -1 && firstPosition == -1)
+			return list;
+		for (int i = firstPosition; i <= lastPosition; i++)
+			list.add(i);
+
+		return list;
+
+	}
+
+	private static int lastOccurrence(int[] nums, int target) {
+
+		int low = 0;
+		int high = nums.length - 1;
+		int ans = -1;
+
+		while (low <= high) {
+			int mid = low + (high - low) / 2;
+			if (nums[mid] == target) {
+				ans = mid;
+				low = mid + 1;
+			} else if (nums[mid] > target) {
+				high = mid - 1;
+			} else {
+				low = mid + 1;
+			}
+		}
+		return ans;
+		// TC:O(log n)
+		// SC:O(1)
+	}
+
+	private static int firstOccurrence(int[] nums, int target) {
+
+		int low = 0;
+		int high = nums.length - 1;
+		int ans = -1;
+
+		while (low <= high) {
+			int mid = low + (high - low) / 2;
+			if (nums[mid] == target) {
+				ans = mid;
+				high = mid - 1;
+			} else if (nums[mid] > target) {
+				high = mid - 1;
+			} else {
+				low = mid + 1;
+			}
+		}
+		return ans;
+		// TC:O(log n)
+		// SC:O(1)
+	}
 }
