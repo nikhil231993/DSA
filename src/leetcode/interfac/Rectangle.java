@@ -13,5 +13,4 @@ public interface Rectangle extends Shape {
 		System.out.println("Rectangle");
 	}
 
-
 }
