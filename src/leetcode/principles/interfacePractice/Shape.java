@@ -1,4 +1,4 @@
-package leetcode.interfac;
+package leetcode.principles.interfacePractice;
 
 public interface Shape {
 
