@@ -1,4 +1,4 @@
-package leetcode.abstraction;
+package leetcode.principles.abstraction;
 
 public class ShapeMain {
 

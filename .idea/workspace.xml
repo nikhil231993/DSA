@@ -5,23 +5,81 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/builder/example1/DellDesktopBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/builder/example1/Desktop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/builder/example1/DesktopBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/builder/example1/Director.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/builder/example1/HPDesktopBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/builder/example1/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/builder/example2/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/builder/example2/URLBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factory/Course.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factory/CourseFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factory/FactoryMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factory/LiveCourse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factory/OfflineCourse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factory/RecordedCourse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/singleton/Singleton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/singleton/SingletonMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factoryAbstract/example1/GUIFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factoryAbstract/example1/IButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factoryAbstract/example1/IFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factoryAbstract/example1/ITextBox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factoryAbstract/example1/MacButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factoryAbstract/example1/MacFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factoryAbstract/example1/MacText.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factoryAbstract/example1/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factoryAbstract/example1/WinButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factoryAbstract/example1/WinFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factoryAbstract/example1/WindowsText.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factoryAbstract/example2/FurnitureFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factoryAbstract/example2/IAlmirah.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factoryAbstract/example2/IChair.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factoryAbstract/example2/IFurnitureFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factoryAbstract/example2/ISofa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factoryAbstract/example2/ITable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factoryAbstract/example2/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factoryAbstract/example2/ModernAlmirah.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factoryAbstract/example2/ModernChair.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factoryAbstract/example2/ModernFurniture.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factoryAbstract/example2/ModernSofa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factoryAbstract/example2/ModernTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factoryAbstract/example2/TraditionalAlmirah.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factoryAbstract/example2/TraditionalChair.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factoryAbstract/example2/TraditionalFurniture.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factoryAbstract/example2/TraditionalSofa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factoryAbstract/example2/TraditionalTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factoryAbstract/example3/ConsoleDebugLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factoryAbstract/example3/ConsoleErrorLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factoryAbstract/example3/ConsoleInfoLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factoryAbstract/example3/ConsoleLoggerFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factoryAbstract/example3/DebugLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factoryAbstract/example3/ErrorLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factoryAbstract/example3/Factory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factoryAbstract/example3/FileDebugLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factoryAbstract/example3/FileErrorLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factoryAbstract/example3/FileInfoLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factoryAbstract/example3/FileLoggerFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factoryAbstract/example3/InfoLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factoryAbstract/example3/LoggerFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factoryAbstract/example3/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factoryMethod/DebugLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factoryMethod/DebugLoggerFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factoryMethod/ErrorLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factoryMethod/ErrorLoggerFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factoryMethod/ILogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factoryMethod/ILoggerFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factoryMethod/InfoLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factoryMethod/InfoLoggerFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factoryMethod/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factorySimple/DebugLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factorySimple/ErrorLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factorySimple/FactoryMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factorySimple/ILogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factorySimple/ILoggerFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/factorySimple/InfoLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/principles/InterfaceDemo/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/principles/InterfaceDemo/MainCar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/principles/InterfaceDemo/SwiftCar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/principles/abstractDemo/FourWheeler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/principles/abstractDemo/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/principles/abstractDemo/TwoWheeler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/principles/abstractDemo/Vehicle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/abstraction/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/principles/abstraction/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/abstraction/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/principles/abstraction/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/abstraction/ShapeMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/principles/abstraction/ShapeMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/abstraction/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/principles/abstraction/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/factory/Course.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/factory/CourseFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/factory/FactoryMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/factory/LiveCourse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/factory/OfflineCourse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/factory/RecordedCourse.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,27 +112,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/My_Personal_Workspace/BuildingLogic/DSA/DSA&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;build.tools&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/Users/nikhilthulaseedharan/Nikhil/DSA/src/leetcode/designPatterns/factoryAbstract/example1",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "build.tools"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="leetcode.binarysearchtree" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/leetcode/designPatterns/factoryAbstract/example1" />
       <recent name="$PROJECT_DIR$/src/leetcode/heap/codehelp" />
       <recent name="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/medium" />
       <recent name="$PROJECT_DIR$/src/leetcode/graph/medium" />
       <recent name="$PROJECT_DIR$/src/leetcode/graph" />
-      <recent name="$PROJECT_DIR$/src/leetcode/binarysearchtree" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="leetcode.TwoPointer.medium.medium" />
@@ -84,7 +142,7 @@
       <recent name="leetcode.array.extra" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.leetcode.designPatterns.builder.example2.Main">
+  <component name="RunManager" selected="Application.leetcode.designPatterns.factoryAbstract.example3.Main">
     <configuration name="BinomialCoefficient" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -101,11 +159,11 @@
       </method>
     </configuration>
     <configuration name="FactoryMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.designPatterns.factory.FactoryMain" />
+      <option name="MAIN_CLASS_NAME" value="leetcode.designPatterns.factorySimple.FactoryMain" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.designPatterns.factory.*" />
+          <option name="PATTERN" value="leetcode.designPatterns.factorySimple.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -114,11 +172,11 @@
       </method>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.principles.dependencyInversionPrinciple.Main" />
+      <option name="MAIN_CLASS_NAME" value="leetcode.designPatterns.factoryMethod.Main" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.principles.dependencyInversionPrinciple.*" />
+          <option name="PATTERN" value="leetcode.designPatterns.factoryMethod.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -126,12 +184,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SingletonMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.designPatterns.singleton.singleton.SingletonMain" />
+    <configuration name="leetcode.designPatterns.factoryAbstract.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.designPatterns.factoryAbstract.Main" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.designPatterns.singleton.singleton.*" />
+          <option name="PATTERN" value="leetcode.designPatterns.factoryAbstract.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -139,12 +197,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="leetcode.designPatterns.builder.example2.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.designPatterns.builder.example2.Main" />
+    <configuration name="leetcode.designPatterns.factoryAbstract.example2.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.designPatterns.factoryAbstract.example2.Main" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.designPatterns.builder.example2.*" />
+          <option name="PATTERN" value="leetcode.designPatterns.factoryAbstract.example2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -152,12 +210,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="leetcode.designPatterns.example1.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.designPatterns.example1.Main" />
+    <configuration name="leetcode.designPatterns.factoryAbstract.example3.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.designPatterns.factoryAbstract.example3.Main" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.designPatterns.example1.*" />
+          <option name="PATTERN" value="leetcode.designPatterns.factoryAbstract.example3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -167,11 +225,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.leetcode.designPatterns.builder.example2.Main" />
-        <item itemvalue="Application.leetcode.designPatterns.example1.Main" />
-        <item itemvalue="Application.FactoryMain" />
-        <item itemvalue="Application.SingletonMain" />
+        <item itemvalue="Application.leetcode.designPatterns.factoryAbstract.example3.Main" />
+        <item itemvalue="Application.leetcode.designPatterns.factoryAbstract.example2.Main" />
+        <item itemvalue="Application.leetcode.designPatterns.factoryAbstract.Main" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.FactoryMain" />
       </list>
     </recent_temporary>
   </component>

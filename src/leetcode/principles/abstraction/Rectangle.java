@@ -1,8 +1,8 @@
-package leetcode.abstraction;
+package leetcode.principles.abstraction;
 
 public class Rectangle extends Shape {
 
-	private int length;
+	protected int length;
 	private int breadth;
 
 	public Rectangle(String color, int length, int breadth) {
