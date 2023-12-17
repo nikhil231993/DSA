@@ -1,12 +1,12 @@
-package leetcode.designPatterns.builder.example2;
+package leetcode.designPatterns.builder.example3;
 
 public class URLBuilder {
 
-    public final String protocol;
-    public final String domain;
-    public final String port;
-    public final String pathParam;
-    public final String queryParam;
+    private final String protocol;
+    private final String domain;
+    private final String port;
+    private final String pathParam;
+    private final String queryParam;
 
     private URLBuilder(Builder builder){
         this.protocol=builder.protocol;
@@ -14,6 +14,26 @@ public class URLBuilder {
         this.port=builder.port;
         this.pathParam=builder.pathParam;
         this.queryParam=builder.queryParam;
+    }
+
+    public String getProtocol() {
+        return protocol;
+    }
+
+    public String getDomain() {
+        return domain;
+    }
+
+    public String getPort() {
+        return port;
+    }
+
+    public String getPathParam() {
+        return pathParam;
+    }
+
+    public String getQueryParam() {
+        return queryParam;
     }
 
     public static class Builder{

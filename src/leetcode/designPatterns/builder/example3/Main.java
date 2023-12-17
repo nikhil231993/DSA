@@ -1,4 +1,4 @@
-package leetcode.designPatterns.builder.example2;
+package leetcode.designPatterns.builder.example3;
 
 public class Main {
 
@@ -7,10 +7,10 @@ public class Main {
         builder.setProtocol("https://").setDomain("localhost:").setPort("7057").setPathParam("/test").setQueryParam("?v=10");
         URLBuilder urlBuilder=builder.build();
 
-        System.out.print(urlBuilder.protocol);
-        System.out.print(urlBuilder.domain);
-        System.out.print(urlBuilder.port);
-        System.out.print(urlBuilder.pathParam);
-        System.out.println(urlBuilder.queryParam);
+        System.out.print(urlBuilder.getProtocol());
+        System.out.print(urlBuilder.getDomain());
+        System.out.print(urlBuilder.getPort());
+        System.out.print(urlBuilder.getPathParam());
+        System.out.println(urlBuilder.getQueryParam());
     }
 }

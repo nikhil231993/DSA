@@ -1,4 +1,4 @@
-package leetcode.designPatterns.builder.example1;
+package leetcode.designPatterns.builder.chainingWithOutDirector;
 
 
 public class Desktop {

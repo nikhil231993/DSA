@@ -1,38 +1,45 @@
-package leetcode.designPatterns.builder.example1;
+package leetcode.designPatterns.builder.chainingWithOutDirector;
 
 public class HPDesktopBuilder extends DesktopBuilder{
     @Override
-    public void buildMonitor() {
+    public DesktopBuilder buildMonitor() {
         this.desktop.setMonitor("HP Monitor");
+        return this;
     }
 
     @Override
-    public void buildKeyBoard() {
+    public DesktopBuilder buildKeyBoard() {
         this.desktop.setKeyboard("HP KeyBoard");
+        return this;
     }
 
     @Override
-    public void buildMouse() {
+    public DesktopBuilder buildMouse() {
         this.desktop.setMouse("HP Mouse");
+        return this;
     }
 
     @Override
-    public void buildSpeaker() {
+    public DesktopBuilder buildSpeaker() {
         this.desktop.setSpeaker("HP Speaker");
+        return this;
     }
 
     @Override
-    public void buildRam() {
+    public DesktopBuilder buildRam() {
         this.desktop.setRam("HP Ram");
+        return this;
     }
 
     @Override
-    public void buildProcessor() {
+    public DesktopBuilder buildProcessor() {
         this.desktop.setProcessor("HP Processor");
+        return this;
     }
 
     @Override
-    public void buildMotherboard() {
+    public DesktopBuilder buildMotherboard() {
         this.desktop.setMotherboard("HP Motherboard");
+        return this;
     }
 }
