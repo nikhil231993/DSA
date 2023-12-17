@@ -1,4 +1,4 @@
-package leetcode.designPatterns.singleton;
+package leetcode.designPatterns.singleton.example1;
 
 public class Singleton {
 

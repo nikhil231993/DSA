@@ -5,30 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/builder/chaining/DesktopBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/builder/example3/CivilEngineer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/builder/example3/House.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/builder/example3/HouseBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/builder/example3/IceHouseBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/builder/example3/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/builder/example3/SteelHouseBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/builder/example3/WoodenHouseBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/builder/example4/CivilEngineer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/builder/example4/House.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/builder/example4/HouseBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/builder/example4/IceHouseBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/builder/example4/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/builder/example4/SteelHouseBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/builder/example4/WoodenHouseBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/prototype/Network/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/prototype/Network/NetworkDevice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/prototype/Network/Router.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/prototype/Network/Switch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/prototype/product/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/prototype/product/ProdcutPrototype.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/prototype/product/Prototype.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/singleton/example2/Singleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/singleton/example2/SingletonMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/builder/example1/DellDesktopBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/builder/chaining/DellDesktopBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/builder/example1/Desktop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/builder/chaining/Desktop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/builder/example1/DesktopBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/builder/example1/Director.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/builder/example1/HPDesktopBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/builder/chaining/HPDesktopBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/builder/example1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/builder/chaining/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/builder/example2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/builder/example2/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/builder/example2/URLBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/builder/example2/URLBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/singleton/Singleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/singleton/example1/Singleton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/singleton/SingletonMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/singleton/example1/SingletonMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +54,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/Users/nikhilthulaseedharan/Nikhil/DSA/src/leetcode/designPatterns/builder/example4",
+    "last_opened_file_path": "/Users/nikhilthulaseedharan/Nikhil/DSA/src/leetcode/designPatterns/singleton/example1",
     "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -78,11 +66,11 @@
       <recent name="leetcode.binarysearchtree" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/leetcode/designPatterns/singleton/example1" />
+      <recent name="$PROJECT_DIR$/src/leetcode/designPatterns/singleton/example2" />
+      <recent name="$PROJECT_DIR$/src/leetcode/designPatterns/prototype/product/product" />
+      <recent name="$PROJECT_DIR$/src/leetcode/designPatterns/prototype/product" />
       <recent name="$PROJECT_DIR$/src/leetcode/designPatterns/builder/example4" />
-      <recent name="$PROJECT_DIR$/src/leetcode/designPatterns/factoryAbstract/example1" />
-      <recent name="$PROJECT_DIR$/src/leetcode/heap/codehelp" />
-      <recent name="$PROJECT_DIR$/src/leetcode/slidingwindowandtwopointer/medium" />
-      <recent name="$PROJECT_DIR$/src/leetcode/graph/medium" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="leetcode.TwoPointer.medium.medium" />
@@ -92,7 +80,7 @@
       <recent name="leetcode.array.extra" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.leetcode.designPatterns.builder.chainingWithDirector.Main">
+  <component name="RunManager" selected="Application.SingletonMain">
     <configuration name="BinomialCoefficient" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -121,6 +109,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SingletonMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.designPatterns.singleton.example2.SingletonMain" />
+      <module name="DSA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.designPatterns.singleton.example2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="leetcode.designPatterns.builder.chainingWithDirector.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode.designPatterns.builder.chainingWithDirector.Main" />
       <module name="DSA" />
@@ -134,12 +135,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="leetcode.designPatterns.builder.chainingWithOutDirector.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.designPatterns.builder.chainingWithOutDirector.Main" />
+    <configuration name="leetcode.designPatterns.prototype.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.designPatterns.prototype.Main" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.designPatterns.builder.chainingWithOutDirector.*" />
+          <option name="PATTERN" value="leetcode.designPatterns.prototype.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -147,25 +148,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="leetcode.designPatterns.builder.example3.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.designPatterns.builder.example3.Main" />
+    <configuration name="leetcode.designPatterns.prototype.product.Network.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.designPatterns.prototype.product.Network.Main" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.designPatterns.builder.example3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="leetcode.designPatterns.factoryAbstract.example3.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.designPatterns.factoryAbstract.example3.Main" />
-      <module name="DSA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.designPatterns.factoryAbstract.example3.*" />
+          <option name="PATTERN" value="leetcode.designPatterns.prototype.product.Network.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -175,11 +163,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SingletonMain" />
+        <item itemvalue="Application.leetcode.designPatterns.prototype.product.Network.Main" />
+        <item itemvalue="Application.leetcode.designPatterns.prototype.Main" />
         <item itemvalue="Application.leetcode.designPatterns.builder.chainingWithDirector.Main" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.leetcode.designPatterns.builder.example3.Main" />
-        <item itemvalue="Application.leetcode.designPatterns.builder.chainingWithOutDirector.Main" />
-        <item itemvalue="Application.leetcode.designPatterns.factoryAbstract.example3.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -729,15 +717,6 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="128" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/leetcode/designPatterns/singleton/Singleton.java</url>
-          <line>10</line>
-          <properties class="leetcode.designPatterns.Singleton" method="getInstance">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="218" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
