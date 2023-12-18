@@ -3,6 +3,7 @@ package leetcode.recursion;
 public class Re2PrintLinearlyFromNTo1 {
 
     public static void main(String[] args) {
+
         recursionReverse(5,5);
         System.out.println("############");
         recursionByBackTracking(1,5);
@@ -24,7 +25,6 @@ public class Re2PrintLinearlyFromNTo1 {
             return;
         System.out.println(i);
         recursionReverse(i-1,n);
-
         //TC:O(N)
         //SC:O(N)
     }

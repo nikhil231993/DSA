@@ -3,6 +3,7 @@ package leetcode.recursion;
 public class Re3Factorial {
 
     public static void main(String[] args) {
+
         int n=5;
         System.out.println(factorialFunctional(1,5));
         factorialParamterized(1,5,1);

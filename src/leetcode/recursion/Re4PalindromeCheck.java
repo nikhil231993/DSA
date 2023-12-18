@@ -3,9 +3,9 @@ package leetcode.recursion;
 public class Re4PalindromeCheck {
 
     public static void main(String[] args) {
+
         String s="malayalama";
         System.out.println(check(0,s.length(),s));
-
     }
 
     private static boolean check(int i, int length, String s) {

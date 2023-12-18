@@ -25,13 +25,13 @@ public class V6PrintSubsequences {
 		printSubsequence(arr, list, i + 1);
 		list.remove(list.size() - 1);
 		printSubsequence(arr, list, i + 1);
-		// TC:O(2 raised to N)
+		// TC:O(2 raised to N) * N(This is for printing in case line 20 uses for loop to
+		// print)
 		// SC:O(N) as at the max we will have 3 functions in stack .Also N is the no of
 		// numbers in array
 	}
 
 	private static void printSubsequenceUsingSecondMethod(int[] arr, List<Integer> list, int index) {
-
 
 		System.out.println(list);
 
@@ -40,11 +40,9 @@ public class V6PrintSubsequences {
 			printSubsequenceUsingSecondMethod(arr, list, i + 1);
 			list.remove(list.size() - 1);
 		}
-		// TC:O(2 raised to N)
+		// TC:O(2 raised to N)* N(This is for printing in case line 20 uses for loop to
+		// print)
 		// SC:O(N) as at the max we will have 3 functions in stack .Also N is the no of
 		// numbers in array
 	}
-
-
-
 }

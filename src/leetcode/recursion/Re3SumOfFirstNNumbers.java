@@ -3,6 +3,7 @@ package leetcode.recursion;
 public class Re3SumOfFirstNNumbers {
 
     public static void main(String[] args) {
+
         int n=10;
         sumParameterized(1,0,10);
         int s=sumFunctional(1,n);
@@ -15,7 +16,6 @@ public class Re3SumOfFirstNNumbers {
             System.out.println(s);
             return;
         }
-
         sumParameterized(i+1,s+i,n);
         //TC:O(N)
         //SC:O(N)

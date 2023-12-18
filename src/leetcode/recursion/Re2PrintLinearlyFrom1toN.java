@@ -20,6 +20,7 @@ public class Re2PrintLinearlyFrom1toN {
     }
 
     private static void recursionBackTracking(int i,int n){
+
         if(i<1)
             return;
         recursionBackTracking(i-1,n);
