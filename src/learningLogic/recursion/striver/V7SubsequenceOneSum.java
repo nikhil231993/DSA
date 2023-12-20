@@ -6,13 +6,13 @@ import java.util.List;
 public class V7SubsequenceOneSum {
 
 	public static void main(String[] args) {
+
 		int[] arr = { 2, 1, 2 };
 		List<Integer> list = new ArrayList<>();
 		printSubsequenceSumOnce(arr, list, 0, 0, 3);
 		System.out.println("###################################");
 		List<Integer> newList = new ArrayList<>();
 		printSubsequenceSumOnceSecondMethod(arr, newList, 0, 0, 3);
-
 	}
 
 	private static boolean printSubsequenceSumOnce(int[] arr, List<Integer> list, int i, int s, int sum) {
@@ -58,5 +58,4 @@ public class V7SubsequenceOneSum {
 		// TC:O(2 raised to N)
 		// SC:O(N) as at the max we will have 3 functions in stack
 	}
-
 }

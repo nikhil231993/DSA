@@ -6,6 +6,7 @@ import java.util.List;
 public class V7SubsequenceSum {
 
 	public static void main(String[] args) {
+
 		int[] arr = { 2, 1, 0, 2 };
 		List<Integer> list = new ArrayList<>();
 		printSubsequence(arr, list, 0, 0, 3);
@@ -48,6 +49,5 @@ public class V7SubsequenceSum {
 			// TC:O(2 raised to N)
 			// SC:O(N) as at the max we will have 3 functions in stack
 		}
-
 	}
 }
