@@ -3,45 +3,48 @@ package leetcode.recursion.medium;
 public class LC50Pow {
 
 	public static void main(String[] args) {
-		int x = 2;
-		int n = 15;
+		double x = 2.0000;
+		int n = -2147483648;
 
-		// System.out.println(pow(x, n));
+		System.out.println(myPow(x, n));
+//
+//		System.out.println(pow(x, n));
+//
+//		System.out.println(powLog(x, n));
 
-		// System.out.println(powLog(x, n));
-
-		// System.out.println(powBinaryExponentiation(x, n));
+		System.out.println(powBinaryExponentiation(x, n));
 
 		System.out.println(powBinaryExponentiationUsingBit(x, n));
 	}
 
-	private static double powBinaryExponentiationUsingBit(int x, int n) {
-		double ans = (long) 1.0;
+	private static double powBinaryExponentiationUsingBit(double x, int n) {
+		double ans = 1.0;
+		long nn = n;
 		if (n < 0) {
-			n = -n;
+			nn = -nn;
 			x = 1 / x;
 		}
 
-		while (n > 0) {
-			if ((n & 1) != 0) {
+		while (nn > 0) {
+			if ((nn & 1) != 0) {
 				ans = ans * x;
 			}
 
 			x = x * x;
-			n = n >>> 1;
+			nn = nn >>> 1;
 		}
 		return ans;
 	}
 
-	private static double powBinaryExponentiation(int x, int n) {
-		double ans = (double) 1.0;
+	private static double powBinaryExponentiation(double x, int n) {
+		double ans = 1.0;
 		long nn = n;
 
 		if (nn < 0)
 			nn = -1 * nn;
 
 		while (nn > 0) {
-			if (n % 2 == 1) {
+			if (nn % 2 == 1) {
 				ans = ans * x;
 				nn = nn - 1;
 			} else {
@@ -55,7 +58,7 @@ public class LC50Pow {
 		return ans;
 	}
 
-	private static long powLog(int x, int n) {
+	private static double powLog(double x, int n) {
 		if(n==0)
 			return 1;
 		long temp = (long) powLog(x, n / 2);
@@ -69,7 +72,7 @@ public class LC50Pow {
 		// TC:O(log n)
 	}
 
-	private static long pow(int x, int n) {
+	private static double pow(double x, int n) {
 		if(n==0)
 			return 1;
 		return x * pow(x, n - 1);
@@ -77,7 +80,7 @@ public class LC50Pow {
 		// TC:O(n)
 	}
 
-	public double myPow(double x, int n) {
+	public static double myPow(double x, int n) {
 		if (n == 0) {
 			return 1;
 		}
