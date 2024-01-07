@@ -8,7 +8,7 @@ public class PaymentProcessor {
         this.paymentStrategy=null;
     }
 
-    public void setPaymentprocessor(String payment){
+    public void setPaymentProcessor(String payment){
         if(this.paymentStrategy!=null)
             this.paymentStrategy=null;
         this.paymentStrategy=PaymentStrategyFactory.createPaymentClient(payment);

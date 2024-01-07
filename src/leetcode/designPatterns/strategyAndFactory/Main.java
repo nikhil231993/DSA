@@ -7,13 +7,13 @@ public class Main {
         //In this the payment processor has a strategy but it is composition as the object is created inside it.
 
         PaymentProcessor paymentProcessor=new PaymentProcessor();
-        paymentProcessor.setPaymentprocessor("creditcard");
+        paymentProcessor.setPaymentProcessor("creditcard");
         paymentProcessor.paymentProcessor();
 
-        paymentProcessor.setPaymentprocessor("debitcard");
+        paymentProcessor.setPaymentProcessor("debitcard");
         paymentProcessor.paymentProcessor();
 
-        paymentProcessor.setPaymentprocessor("paypal");
+        paymentProcessor.setPaymentProcessor("paypal");
         paymentProcessor.paymentProcessor();
     }
 }

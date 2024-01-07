@@ -4,10 +4,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        LocalOrderProcessor localOrderProcessor=new LocalOrderProcessor();
+        Template localOrderProcessor=new LocalOrderProcessor();
         localOrderProcessor.processOrder();
 
-        InternationOrderProcessor internationOrderProcessor=new InternationOrderProcessor();
+        Template internationOrderProcessor=new InternationOrderProcessor();
         internationOrderProcessor.processOrder();
     }
 }

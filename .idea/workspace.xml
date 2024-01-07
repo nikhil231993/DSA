@@ -5,9 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/template/LocalOrderProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/template/Template.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/adapter/JSONAnalyticsTool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/adapter/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/adapter/XmlToJsonAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/adapter/adapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/decorator/Burger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/decorator/Decorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/decorator/ExtraCheeseDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/decorator/ExtraSauceDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/decorator/ExtraToppingsDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/decorator/FoodItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/decorator/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/decorator/Pizza.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/strategyAndFactory/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/strategyAndFactory/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/strategyAndFactory/PaymentProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/strategyAndFactory/PaymentProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/template/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/template/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +84,7 @@
       <recent name="leetcode.array.extra" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.leetcode.designPatterns.template.Main">
+  <component name="RunManager" selected="Application.leetcode.designPatterns.decorator.Main">
     <configuration name="BinomialCoefficient" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -100,12 +113,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="leetcode.designPatterns.chainOfResponsibility.example2.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.designPatterns.chainOfResponsibility.example2.Main" />
+    <configuration name="leetcode.designPatterns.adapter.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.designPatterns.adapter.Main" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.designPatterns.chainOfResponsibility.example2.*" />
+          <option name="PATTERN" value="leetcode.designPatterns.adapter.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,12 +126,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="leetcode.designPatterns.iterator.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.designPatterns.iterator.Main" />
+    <configuration name="leetcode.designPatterns.decorator.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.designPatterns.decorator.Main" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.designPatterns.iterator.*" />
+          <option name="PATTERN" value="leetcode.designPatterns.decorator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -154,11 +167,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.leetcode.designPatterns.decorator.Main" />
+        <item itemvalue="Application.leetcode.designPatterns.adapter.Main" />
         <item itemvalue="Application.leetcode.designPatterns.template.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.leetcode.designPatterns.strategy.Main" />
-        <item itemvalue="Application.leetcode.designPatterns.iterator.Main" />
-        <item itemvalue="Application.leetcode.designPatterns.chainOfResponsibility.example2.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -713,6 +726,15 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="128" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/leetcode/designPatterns/decorator/Main.java</url>
+          <line>4</line>
+          <properties class="leetcode.designPatterns.decorator.Main" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="220" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
