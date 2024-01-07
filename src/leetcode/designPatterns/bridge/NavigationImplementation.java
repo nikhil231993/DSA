@@ -1,2 +1,6 @@
-package leetcode.designPatterns.bridge;public interface NavigationImplementation {
+package leetcode.designPatterns.bridge;
+
+public interface NavigationImplementation {
+
+    void navigateTo(String destination);
 }
