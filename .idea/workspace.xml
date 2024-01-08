@@ -5,19 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/composite/Department.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/composite/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/composite/EmployeeComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/composite/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/composite/Team.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/facade/CPU.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/facade/ComputerDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/facade/ComputerSystemFacade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/facade/DiskDrive.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/facade/GPU.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/facade/Memory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/facade/NetworkInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/proxy/Image.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/proxy/ImageProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/proxy/RealImage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/bridge/AppleMaps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/bridge/AppleMaps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/bridge/GoogleMaps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/bridge/GoogleMaps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/bridge/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/bridge/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/bridge/NavigationImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/bridge/NavigationImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/bridge/NavigationSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/bridge/NavigationSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/bridge/UberEats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/bridge/UberEats.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/bridge/UberRides.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/bridge/UberRides.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
