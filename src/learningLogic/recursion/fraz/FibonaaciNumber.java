@@ -3,12 +3,11 @@ package learningLogic.recursion.fraz;
 public class FibonaaciNumber {
 
 	public static void main(String[] args) {
+
 		int n = 4;
 
 		System.out.println(fibo(n));
-
 		fibonacciSeries(n);
-
 	}
 
 	private static void fibonacciSeries(int num) {
@@ -35,5 +34,4 @@ public class FibonaaciNumber {
 		// SC:O(n) n is the height of the tree
 		// TC:O(2 raise to n) i.e 2 raise to n nodes are there
 	}
-
 }

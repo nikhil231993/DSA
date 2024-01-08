@@ -7,20 +7,24 @@ import java.util.List;
 public class V11LC90Subset2NoDuplicates {
 
 	public static void main(String[] args) {
+
 		int[] arr = { 1, 2, 2 };
 		Arrays.sort(arr);//TC:o(nlogn)
+
 		List<Integer> list = new ArrayList<>();
-		List<List<Integer>> parent = new ArrayList<List<Integer>>();
-		List<List<Integer>> parent1 = new ArrayList<List<Integer>>();
+		List<List<Integer>> parent = new ArrayList<>();
+		List<List<Integer>> parent1 = new ArrayList<>();
+
 		//Brute force either put in set or use contains option
 		printSubsequence(arr, list, 0, parent);
+
 		//Optimized
 		printSubsequenceWithoutDuplicates(arr, parent1, list, 0);
 		System.out.println(parent1);
-
 	}
 
 	private static void printSubsequence(int[] arr, List<Integer> list, int i, List<List<Integer>> parent) {
+
 		if (i >= arr.length) {
 			if (!parent.contains(list)) {
 				parent.add(new ArrayList<>(list));
@@ -53,8 +57,5 @@ public class V11LC90Subset2NoDuplicates {
 		}
 		// TC:2 raise to N * t (avg length of combinations)
 		// SC:2 raise to n * k + O(n) (Auxiliary space)
-
 	}
-
-
 }
