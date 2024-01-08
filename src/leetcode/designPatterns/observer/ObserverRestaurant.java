@@ -1,10 +1,10 @@
 package leetcode.designPatterns.observer;
 
-public class DeliveryPartnerObserver implements Observer{
+public class ObserverRestaurant implements Observer{
 
     private String name;
 
-    public DeliveryPartnerObserver(String name) {
+    public ObserverRestaurant(String name) {
         this.name = name;
     }
 
