@@ -18,6 +18,7 @@ public class LC50Pow {
 	}
 
 	private static double powBinaryExponentiationUsingBit(double x, int n) {
+
 		double ans = 1.0;
 		long nn = n;
 		if (n < 0) {
@@ -37,6 +38,7 @@ public class LC50Pow {
 	}
 
 	private static double powBinaryExponentiation(double x, int n) {
+
 		double ans = 1.0;
 		long nn = n;
 
@@ -59,6 +61,7 @@ public class LC50Pow {
 	}
 
 	private static double powLog(double x, int n) {
+
 		if(n==0)
 			return 1;
 		long temp = (long) powLog(x, n / 2);
@@ -73,6 +76,7 @@ public class LC50Pow {
 	}
 
 	private static double pow(double x, int n) {
+
 		if(n==0)
 			return 1;
 		return x * pow(x, n - 1);
@@ -81,6 +85,7 @@ public class LC50Pow {
 	}
 
 	public static double myPow(double x, int n) {
+
 		if (n == 0) {
 			return 1;
 		}
@@ -92,5 +97,4 @@ public class LC50Pow {
 		}
 		return 1/ myPow(x, -n);
 	}
-
 }
