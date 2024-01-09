@@ -64,14 +64,12 @@ public class LC47Permutations2 {
 			permutationsSecondApproach(newList, nums, index + 1);
 			swap(i, index, nums);
 		}
-
 	}
 
 	private static void swap(int i, int j, int[] nums) {
 		int temp = nums[i];
 		nums[i] = nums[j];
 		nums[j] = temp;
-
 	}
 
 	private static void permutations(List<List<Integer>> list, int[] nums, ArrayList arrayList, boolean[] flag) {
@@ -93,7 +91,5 @@ public class LC47Permutations2 {
 			flag[i]=false;
 			arrayList.remove(arrayList.size() - 1);
 		}
-
 	}
-
 }
