@@ -8,33 +8,37 @@ import java.util.Set;
 public class LC47Permutations2 {
 
 	public static void main(String[] args) {
+
 		int[] nums = new int[] { 1, 1, 2 };
 		boolean[] flag = new boolean[nums.length];
-		List<List<Integer>> list = new ArrayList<List<Integer>>();
-		permutations(list, nums, new ArrayList(), flag);
+
+		// Approach 1
+		List<List<Integer>> list = new ArrayList<>();
+		permutations(list, nums, new ArrayList<Integer>(), flag);
 		System.out.println(list);
 		
-		Set<List<Integer>> newList = new HashSet<List<Integer>>();
+		// Approach 2
+		Set<List<Integer>> newList = new HashSet<>();
 		permutationsSecondApproach(newList, nums, 0);
 		System.out.println(newList);
 
-		List<List<Integer>> newSetList = new ArrayList<List<Integer>>();
+		// Approach 3
+		List<List<Integer>> newSetList = new ArrayList<>();
 		permutationsSecondApproachUsingSet(newSetList, nums, 0);
 		System.out.println(newSetList);
-
 	}
 
 	private static void permutationsSecondApproachUsingSet(List<List<Integer>> newSetList, int[] nums, int index) {
 
 		if (index == nums.length) {
-			List<Integer> arr = new ArrayList<Integer>();
+			List<Integer> arr = new ArrayList<>();
 			for (Integer n : nums)
 				arr.add(n);
 			newSetList.add(arr);
 			return;
 		}
 
-		Set<Integer> set = new HashSet<Integer>();
+		Set<Integer> set = new HashSet<>();
 		for (int i = index; i < nums.length; i++) {
 			if (set.add(nums[i])) {
 			swap(i, index, nums);
@@ -42,7 +46,6 @@ public class LC47Permutations2 {
 			swap(i, index, nums);
 			}
 		}
-
 	}
 
 	private static void permutationsSecondApproach(Set<List<Integer>> newList, int[] nums, 
