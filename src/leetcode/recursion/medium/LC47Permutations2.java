@@ -72,15 +72,15 @@ public class LC47Permutations2 {
 		nums[j] = temp;
 	}
 
-	private static void permutations(List<List<Integer>> list, int[] nums, ArrayList arrayList, boolean[] flag) {
+	private static void permutations(List<List<Integer>> list, int[] nums, List arrayList, boolean[] flag) {
 		
 		if (arrayList.size() == nums.length) {
 			list.add(new ArrayList<Integer>(arrayList));
 			return;
 		}
 		
-
 		for(int i=0;i<nums.length;i++) {
+
 			if(flag[i]) continue;
 			if (i > 0 && nums[i] == nums[i - 1] && !flag[i - 1])
 				continue;
