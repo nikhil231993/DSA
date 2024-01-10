@@ -73,6 +73,8 @@ public class LC51NQueens {
 		}
 
 		dfs(board, queen, 0);
+		//TC:O(n*m) + O(n!) * (3n)
+		//SC:O(n*m) + O(col length) for auxiliary space
 	}
 
 	private static void dfs(char[][] board, List<List<String>> queen, int col) {
