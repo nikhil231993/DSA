@@ -33,13 +33,14 @@ public class LC51NQueens {
 		solveSecondApproach(queenSecond, board, leftRow, lowerDiagonal, upperDiagonal, 0);
 		System.out.println(queenSecond);
 
-		// TC:O(N!) as due to isSafe method only on possible places recursive call is
+		// TC:O(N!) * N (This is the for loop for construct)  as due to isSafe method only on possible places recursive call is
 		// made whereas in permutations everytime recursive call is made
 		// SC:O(N2)(space to store matrix) +O(N)(height of the recursion tree)
 	}
 
 	public static void solveSecondApproach(List<List<String>> queen, char[][] board, int[] leftRow, int[] lowerDiagonal,
 			int[] upperDiagonal, int col) {
+
 		if (col == board.length) {
 			queen.add(construct(board));
 			return;

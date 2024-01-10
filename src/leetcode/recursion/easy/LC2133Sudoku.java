@@ -3,14 +3,12 @@ package leetcode.recursion.easy;
 public class LC2133Sudoku {
 
 	public static void main(String[] args) {
+
 		int[][] matrix = new int[][] { { 1, 2, 3 }, { 3, 1, 2 }, { 2, 3, 1 } };
-		
-		// 2nd input
+
 		int[][] matrix1 = { { 1, 1, 1 }, { 1, 2, 3 }, { 1, 2, 3 } };
 
 		System.out.println(solve(matrix1));
-		// TC:O(N cube) as isValid runs inside
-		// SC:O(1) no extar space
 	}
 
 	public static boolean solve(int[][] matrix) {
@@ -22,6 +20,9 @@ public class LC2133Sudoku {
 			}
 		}
 		return true;
+
+		// TC:O(N cube) as isValid runs inside
+		// SC:O(1) no extra space
 	}
 
 	public static boolean isValid(int[][] matrix, int row, int col) {
@@ -33,5 +34,4 @@ public class LC2133Sudoku {
 		}
 		return true;
 	}
-
 }

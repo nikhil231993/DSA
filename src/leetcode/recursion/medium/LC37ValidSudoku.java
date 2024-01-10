@@ -27,6 +27,7 @@ public class LC37ValidSudoku {
 	}
 
 	public static boolean solveSudoku(char[][] board) {
+
 		for (int i = 0; i < board.length; i++) {
 			for (int j = 0; j < board[0].length; j++) {
 
@@ -40,7 +41,7 @@ public class LC37ValidSudoku {
 		}
 
 		// TC:O(N cube) as isValid runs inside
-		// SC:O(1) no extar space
+		// SC:O(1) no extra space
 		return true;
 	}
 
@@ -59,5 +60,4 @@ public class LC37ValidSudoku {
 		}
 		return true;
 	}
-
 }
