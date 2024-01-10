@@ -11,7 +11,6 @@ public class LC17LetterCombinationsKeypad {
 
 		String digits = "23";
 		System.out.println(letterCombinations(digits));
-
 	}
 
 	public static List<String> letterCombinations(String digits) {
@@ -34,7 +33,7 @@ public class LC17LetterCombinationsKeypad {
 		combination(m, list, digits, 0, temp);
 
 		// TC: 3 raise to N
-		// SC:O(N) where N is the digits length
+		// SC: O(N) where N is the digits length
 		return list;
 	}
 
@@ -44,11 +43,11 @@ public class LC17LetterCombinationsKeypad {
 			list.add(temp);
 			return;
 		}
+
 		String s = m.get(digits.charAt(index));
 
 		for (int i = 0; i < s.length(); i++) {
 			combination(m, list, digits, index + 1, temp + s.charAt(i));
 		}
 	}
-
 }

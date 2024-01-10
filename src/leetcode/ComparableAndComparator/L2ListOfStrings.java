@@ -17,7 +17,9 @@ public class L2ListOfStrings {
         //Now Collections.sort has only two parameter so it will call comparator which has compare method which needs
         //two parameters
         //and will do natural sorting
-        Collections.sort(list,(a,b)->a.length()-b.length());
+        Collections.sort(list,
+                (a,b)->a.length()-b.length()
+        );
         System.out.println(list);
 
         //we can use line 13 as well as this

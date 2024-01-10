@@ -6,6 +6,7 @@ import java.util.List;
 public class LC51NQueens {
 
 	public static void main(String[] args) {
+
 		int n = 4;
 
 		// 1st approach
@@ -16,7 +17,6 @@ public class LC51NQueens {
 		System.out.println("######################################");
 
 		// 2nd Approach
-
 		List<List<String>> queenSecond = new ArrayList();
 		char[][] board = new char[n][n];
 		int[] leftRow = new int[n];
@@ -36,7 +36,6 @@ public class LC51NQueens {
 		// TC:O(N!) as due to isSafe method only on possible places recursive call is
 		// made whereas in permutations everytime recursive call is made
 		// SC:O(N2)(space to store matrix) +O(N)(height of the recursion tree)
-
 	}
 
 	public static void solveSecondApproach(List<List<String>> queen, char[][] board, int[] leftRow, int[] lowerDiagonal,
@@ -73,12 +72,10 @@ public class LC51NQueens {
 		}
 
 		dfs(board, queen, 0);
-
 	}
 
 	private static void dfs(char[][] board, List<List<String>> queen, int col) {
 
-		
 		if (col == board.length) {
 			queen.add(construct(board));
 			return;
@@ -90,9 +87,7 @@ public class LC51NQueens {
 				dfs(board, queen, col + 1);
 				board[row][col] = '.';
 			}
-
 		}
-
 	}
 
 	private static boolean isSafe(char[][] board, int col, int row) {
@@ -135,5 +130,4 @@ public class LC51NQueens {
 		}
 		return rowFull;
 	}
-
 }

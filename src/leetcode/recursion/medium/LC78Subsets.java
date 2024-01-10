@@ -7,31 +7,59 @@ import java.util.List;
 public class LC78Subsets {
 
 	public static void main(String[] args) {
+
 		int[] nums = new int[] { 5, 2, 1 };
 		List<List<Integer>> list = new ArrayList<>();
 		subset(list, nums, new ArrayList<>(), 0);
+
+		//Below is without any of the sorting
+		//[[5, 2, 1], [5, 2], [5, 1], [5], [2, 1], [2], [1], []]
+
+		//Below is to sort using size of list first followed by numbers
+		//Result [[], [1], [2], [5], [2, 1], [5, 1], [5, 2], [5, 2, 1]]
+
 //		Collections.sort(list,(a,b)->{
 //			int min=Math.min(a.size(),b.size());
-//			for(int i=0;i<min;i++){
-//				if(a.get(i)==b.get(i))
-//					continue;
-//				else if(a.get(i)>b.get(i))
-//					return 1;
+//			if(a.size()!=b.size())
+//				return a.size()-b.size();
+//			else {
+//				for(int i=0;i<min;i++){
+//					if(a.get(i)!=b.get(i))
+//						return a.get(i)-b.get(i);
+//				}
 //			}
-//			if(a.size()>b.size())
-//				return 1;
-//			return -1;
+//			return 0;
 //		});
+
+		//Below is to sort by size of list
 		Collections.sort(list,(a,b)->a.size()-b.size());
+		//Result is [[], [5], [2], [1], [5, 2], [5, 1], [2, 1], [5, 2, 1]]
 		System.out.println(list);
 
+		//Approach 1
 		System.out.println("###########################");
 		List<Integer> sumList = new ArrayList();
 		subsetSum(nums, sumList, 0, 0);
 		Collections.sort(sumList);
 		System.out.println(sumList);
 
+		//Approach 2 : Another way using for loop
+		System.out.println("###########################");
+		List<Integer> list2 = new ArrayList();
+		subsetSumForLoop(nums, list2, 0, 0);
+		Collections.sort(list2);
+		System.out.println(list2);
+	}
 
+	private static void subsetSumForLoop(int[] nums, List<Integer> list2, int index, int sum) {
+
+		list2.add(sum);
+
+		for(int i=index; i<nums.length;i++){
+			sum+=nums[i];
+			subsetSumForLoop(nums, list2, i+1, sum);
+			sum-=nums[i];
+		}
 	}
 
 	private static void subsetSum(int[] nums, List<Integer> arrayList, int i, int sum) {
@@ -44,10 +72,10 @@ public class LC78Subsets {
 		subsetSum(nums, arrayList, i + 1, sum);
 		sum -= nums[i];
 		subsetSum(nums, arrayList, i + 1, sum);
-		// TC:2 raise to N *k taking k as avg length to put values inot List of list+2
+
+		// TC:2 raise to N * k taking k as avg length to put values into List of list+2
 		// raise to N log N for sorting the response
 		// SC: 2 raise to n as there are 2 raise to n subsets + o(n) auxiliary space
-
 	}
 
 	// Below is leetcode solution
@@ -64,7 +92,5 @@ public class LC78Subsets {
 
 		// TC:2 raise to N *k taking k as avg length to put values into List of list
 		// SC: 2 raise to n as there are 2 raise to n subsets + o(n) auxiliary space
-
 	}
-
 }

@@ -24,7 +24,7 @@ public class L5ListOfStudentsAnonymous {
 
         //Sort by name
         Collections.sort(list,(a,b)->{
-            //Strings can be compare using compareTo only
+            //Strings can be compared using compareTo only
             return a.firstName.compareTo(b.firstName);
         });
         System.out.println(list);
