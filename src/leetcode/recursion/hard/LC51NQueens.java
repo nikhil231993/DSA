@@ -62,6 +62,7 @@ public class LC51NQueens {
 	}
 
 	private static void solve(List<List<String>> queen, int n) {
+
 		char[][] board = new char[n][n];
 		int row = board.length;
 		int col = board[0].length;
@@ -91,6 +92,7 @@ public class LC51NQueens {
 	}
 
 	private static boolean isSafe(char[][] board, int col, int row) {
+
 		int dupRow = row;
 		int dupCol = col;
 		while (dupRow >= 0 && dupCol >= 0) {
@@ -116,7 +118,6 @@ public class LC51NQueens {
 			dupCol--;
 			dupRow++;
 		}
-		
 		return true;
 	}
 

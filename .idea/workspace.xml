@@ -5,21 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/recursion/medium/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/ComparableAndComparator/L2ListOfStrings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/ComparableAndComparator/L2ListOfStrings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/ComparableAndComparator/L5ListOfStudentsAnonymous.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/ComparableAndComparator/L5ListOfStudentsAnonymous.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/leetcode/recursion/hard/LC51NQueens.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/recursion/hard/LC51NQueens.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/recursion/medium/LC1239MaximumLengthConcatenatedStringWithUniqueCharacters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/recursion/medium/LC1239MaximumLengthConcatenatedStringWithUniqueCharacters.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/recursion/medium/LC17LetterCombinationsKeypad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/recursion/medium/LC17LetterCombinationsKeypad.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/recursion/medium/LC216CombinationSum3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/recursion/medium/LC216CombinationSum3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/recursion/medium/LC39CombinationSum1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/recursion/medium/LC39CombinationSum1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/recursion/medium/LC40CombinationSum2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/recursion/medium/LC40CombinationSum2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/recursion/medium/LC698PartitionSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/recursion/medium/LC698PartitionSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/recursion/medium/LC77Combinations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/recursion/medium/LC77Combinations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/recursion/medium/LC78Subsets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/recursion/medium/LC78Subsets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/recursion/medium/LC79WordSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/recursion/medium/LC79WordSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/recursion/medium/LC90Subset2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/recursion/medium/LC90Subset2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
