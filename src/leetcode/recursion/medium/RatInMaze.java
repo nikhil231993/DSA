@@ -6,14 +6,13 @@ public class RatInMaze {
 
     public static void main(String[] args) {
 
-       int N = 4;
+        int N = 4;
         int m[][] =new int[][] {{1, 0, 0, 0},
             {1, 1, 0, 1},
             {1, 1, 0, 0},
             {0, 1, 1, 1}};
 
         System.out.println(findPath(m,N));
-
     }
 
     public static ArrayList<String> findPath(int[][] m, int n) {
@@ -31,8 +30,7 @@ public class RatInMaze {
     }
 
     public static void solve(int row, int col, int[][] visited, ArrayList<String> ans,int n,int[][] m ,String path){
-        if(row==n-1 && col ==n-1)
-        {
+        if(row==n-1 && col ==n-1) {
             ans.add(path);
             return;
         }

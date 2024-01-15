@@ -5,13 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/NodeDLL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V1ConvertArrayToLInkedLIst.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V2DeletionAndInsertion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V3DoublyLinkedList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/recursion/easy/LC2133Sudoku.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/recursion/easy/LC2133Sudoku.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/recursion/hard/LC37SudokuSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/recursion/hard/LC37SudokuSolver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/recursion/hard/LC51NQueens.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/recursion/hard/LC51NQueens.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/recursion/hard/LC52NQueens2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/recursion/hard/LC52NQueens2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/recursion/medium/LC1042McolouringGfg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/recursion/medium/LC1042McolouringGfg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/recursion/medium/LC37ValidSudoku.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/recursion/medium/LC37ValidSudoku.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/math/hard/LC60KthPermutationSequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/math/hard/LC60KthPermutationSequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/recursion/medium/LC131PalindromePartitioning.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/recursion/medium/LC131PalindromePartitioning.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/recursion/medium/RatInMaze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/recursion/medium/RatInMaze.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +51,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/nikhilthulaseedharan/Nikhil/DSA/src/leetcode/designPatterns/chainOfResponsibility/example2&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/nikhilthulaseedharan/Nikhil/DSA/src/leetcode/linkedlist/easy/easy&quot;,
     &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
@@ -61,11 +63,11 @@
       <recent name="leetcode.binarysearchtree" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/leetcode/linkedlist/easy/easy" />
       <recent name="$PROJECT_DIR$/src/leetcode/designPatterns/chainOfResponsibility/example2" />
       <recent name="$PROJECT_DIR$/src/leetcode/designPatterns/chainOfResponsibility/example1" />
       <recent name="$PROJECT_DIR$/src/leetcode/designPatterns/command/document" />
       <recent name="$PROJECT_DIR$/src/leetcode/designPatterns/singleton/example1" />
-      <recent name="$PROJECT_DIR$/src/leetcode/designPatterns/singleton/example2" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="leetcode.TwoPointer.medium.medium" />
@@ -75,7 +77,7 @@
       <recent name="leetcode.array.extra" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LC37SudokuSolver">
+  <component name="RunManager" selected="Application.V3DoublyLinkedList">
     <configuration name="BinomialCoefficient" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -91,12 +93,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC37SudokuSolver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.recursion.hard.LC37SudokuSolver" />
+    <configuration name="LC60KthPermutationSequence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.math.hard.LC60KthPermutationSequence" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.recursion.hard.*" />
+          <option name="PATTERN" value="leetcode.math.hard.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,21 +106,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC51NQueens" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.recursion.hard.LC51NQueens" />
-      <module name="DSA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.recursion.hard.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LC77Combinations" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.recursion.medium.LC77Combinations" />
+    <configuration name="RatInMaze" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.recursion.medium.RatInMaze" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -130,12 +119,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC78Subsets" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.recursion.medium.LC78Subsets" />
+    <configuration name="V1ConvertArrayToLInkedLIst" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.linkedlist.striver.V1ConvertArrayToLInkedLIst" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.recursion.medium.*" />
+          <option name="PATTERN" value="leetcode.linkedlist.striver.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,12 +132,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC90Subset2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.recursion.medium.LC90Subset2" />
+    <configuration name="V2DeletionAndInsertion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.linkedlist.striver.V2DeletionAndInsertion" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.recursion.medium.*" />
+          <option name="PATTERN" value="leetcode.linkedlist.striver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="V3DoublyLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.linkedlist.striver.V3DoublyLinkedList" />
+      <module name="DSA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.linkedlist.striver.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -158,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LC37SudokuSolver" />
-        <item itemvalue="Application.LC51NQueens" />
-        <item itemvalue="Application.LC77Combinations" />
-        <item itemvalue="Application.LC90Subset2" />
-        <item itemvalue="Application.LC78Subsets" />
+        <item itemvalue="Application.V3DoublyLinkedList" />
+        <item itemvalue="Application.V2DeletionAndInsertion" />
+        <item itemvalue="Application.V1ConvertArrayToLInkedLIst" />
+        <item itemvalue="Application.LC60KthPermutationSequence" />
+        <item itemvalue="Application.RatInMaze" />
       </list>
     </recent_temporary>
   </component>
@@ -674,6 +676,26 @@
           <url>file://$PROJECT_DIR$/src/leetcode/ComparableAndComparator/L2ListOfStrings.java</url>
           <line>20</line>
           <option name="timeStamp" value="228" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/math/hard/LC60KthPermutationSequence.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="233" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/linkedlist/striver/V2DeletionAndInsertion.java</url>
+          <line>211</line>
+          <option name="timeStamp" value="234" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/linkedlist/striver/V2DeletionAndInsertion.java</url>
+          <line>215</line>
+          <option name="timeStamp" value="235" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/linkedlist/striver/V3DoublyLinkedList.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="236" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/leetcode/binarytree/Test.java</url>
