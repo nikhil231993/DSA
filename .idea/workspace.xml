@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/NodeDLL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V1ConvertArrayToLInkedLIst.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V2DeletionAndInsertion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V3DoublyLinkedList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/math/hard/LC60KthPermutationSequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/math/hard/LC60KthPermutationSequence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/recursion/medium/LC131PalindromePartitioning.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/recursion/medium/LC131PalindromePartitioning.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/recursion/medium/RatInMaze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/recursion/medium/RatInMaze.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V3DoublyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V3DoublyLinkedList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -694,7 +687,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetcode/linkedlist/striver/V3DoublyLinkedList.java</url>
-          <line>24</line>
+          <line>129</line>
           <option name="timeStamp" value="236" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
