@@ -7,7 +7,7 @@ public class V2DeletionAndInsertion {
         int[] arr=new int[]{2,1,3,8};
 
         Node head=new Node(arr[0]);
-        V1ConvertArrayToLInkedLIst.convertArrayToLinkedList(head, arr);
+        V1ConvertArrayToLinkedList.convertArrayToLinkedList(head, arr);
 
         //delete head at first
         System.out.println("Delete Head : ");
@@ -24,7 +24,7 @@ public class V2DeletionAndInsertion {
         int[] arr1=new int[]{10,20,30,40,50};
         int k=2;
         Node head1=new Node(arr1[0]);
-        V1ConvertArrayToLInkedLIst.convertArrayToLinkedList(head1, arr1);
+        V1ConvertArrayToLinkedList.convertArrayToLinkedList(head1, arr1);
         Node newHead1=deleteAtKPosition(head1,k);
         display(newHead1);
 
@@ -33,7 +33,7 @@ public class V2DeletionAndInsertion {
         int[] arr2=new int[]{10,20,30,40,50};
         int value =40;
         Node head2=new Node(arr2[0]);
-        V1ConvertArrayToLInkedLIst.convertArrayToLinkedList(head2, arr2);
+        V1ConvertArrayToLinkedList.convertArrayToLinkedList(head2, arr2);
         Node newHead2=deleteParticularValue(head2,value);
         display(newHead2);
 
@@ -43,7 +43,7 @@ public class V2DeletionAndInsertion {
         int[] arr3=new int[]{10,20,30,40,50};
         int value3 =5;
         Node head3=new Node(arr3[0]);
-        V1ConvertArrayToLInkedLIst.convertArrayToLinkedList(head3, arr3);
+        V1ConvertArrayToLinkedList.convertArrayToLinkedList(head3, arr3);
         Node newHead3=insertAtHead(head3, value3);
         display(newHead3);
 
@@ -51,7 +51,7 @@ public class V2DeletionAndInsertion {
         int[] arr4=new int[]{10,20,30,40,50};
         int value4 =500;
         Node head4=new Node(arr4[0]);
-        V1ConvertArrayToLInkedLIst.convertArrayToLinkedList(head4, arr4);
+        V1ConvertArrayToLinkedList.convertArrayToLinkedList(head4, arr4);
         Node newHead4=insertAtTail(head4, value4);
         display(newHead4);
 
@@ -60,7 +60,7 @@ public class V2DeletionAndInsertion {
         int value5 =25;
         int pos=4;
         Node head5=new Node(arr5[0]);
-        V1ConvertArrayToLInkedLIst.convertArrayToLinkedList(head5, arr5);
+        V1ConvertArrayToLinkedList.convertArrayToLinkedList(head5, arr5);
         Node newHead5=insertAtParticularPosition(head5, value5,pos);
         display(newHead5);
 
@@ -69,13 +69,13 @@ public class V2DeletionAndInsertion {
         int value6 =31;
         int before=50;
         Node head6=new Node(arr6[0]);
-        V1ConvertArrayToLInkedLIst.convertArrayToLinkedList(head6, arr6);
+        V1ConvertArrayToLinkedList.convertArrayToLinkedList(head6, arr6);
         Node newHead6=insertBeforeParticularValue(head6, value6, before);
         display(newHead6);
-
     }
 
     private static Node insertBeforeParticularValue(Node head, int value, int before) {
+
         if(head==null){
             System.out.println("Not possible");
             return null;
@@ -108,6 +108,7 @@ public class V2DeletionAndInsertion {
     }
 
     private static Node insertAtParticularPosition(Node head, int value, int k) {
+
         if(head==null){
             if(k==1){
                 return new Node(value);
@@ -151,6 +152,7 @@ public class V2DeletionAndInsertion {
     }
 
     private static Node insertAtHead(Node head, int value3) {
+
         if(head==null){
             head=new Node(value3);
         }
@@ -184,10 +186,11 @@ public class V2DeletionAndInsertion {
     }
 
     private static Node deleteAtKPosition(Node head, int k) {
+
         if(head==null)
             return null;
         if(k==1){
-            Node temp=head;
+            Node temp=head; //Not necessary
             head=head.next;
             return head;
         }
@@ -224,17 +227,17 @@ public class V2DeletionAndInsertion {
 
         if(head==null)
             return null;
-        Node temp=head; //This is not needed in java as in C++ we need to delete the temp for clearing the memory. In
-                        //garbage collector does by itself
+        Node temp=head; //This is not needed in java as in C++ we need to delete the temp for clearing the memory.
+                        // In java garbage collector does by itself
         head=head.next;
         return head;
     }
 
     public static void display(Node head){
-
-        while(head!=null){
-            System.out.println(head.data);
-            head=head.next;
+        Node temp=head;
+        while(temp!=null){
+            System.out.println(temp.data);
+            temp=temp.next;
         }
     }
 }

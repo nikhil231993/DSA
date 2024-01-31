@@ -1,6 +1,6 @@
 package leetcode.linkedlist.striver;
 
-public class V1ConvertArrayToLInkedLIst {
+public class V1ConvertArrayToLinkedList {
 
     public static void main(String[] args) {
 
@@ -29,6 +29,7 @@ public class V1ConvertArrayToLInkedLIst {
     }
 
     public static boolean searchValue(int value, Node head){
+
         Node temp=head;
         while(temp!=null) {
             if (temp.data == value)
@@ -39,6 +40,7 @@ public class V1ConvertArrayToLInkedLIst {
     }
 
     public static void convertArrayToLinkedList(Node head, int[] arr){
+
         Node temp=head;
         for(int i=1;i<arr.length;i++){
             Node n=new Node(arr[i]);
