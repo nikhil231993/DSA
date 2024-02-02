@@ -2,13 +2,17 @@ package leetcode.recursion.hard;
 
 public class LC37SudokuSolver {
 
+	//A sudoku puzzle can have multiple answers
+
 	public static void main(String[] args) {
+
 		char[][] board = new char[][] { { '5', '3', '.', '.', '7', '.', '.', '.', '.' },
 				{ '6', '.', '.', '1', '9', '5', '.', '.', '.' }, { '.', '9', '8', '.', '.', '.', '.', '6', '.' },
 				{ '8', '.', '.', '.', '6', '.', '.', '.', '3' }, { '4', '.', '.', '8', '.', '3', '.', '.', '1' },
 				{ '7', '.', '.', '.', '2', '.', '.', '.', '6' }, { '.', '6', '.', '.', '.', '.', '2', '8', '.' },
 				{ '.', '.', '.', '4', '1', '9', '.', '.', '5' }, { '.', '.', '.', '.', '8', '.', '.', '7', '9' } };
 		solve(board);
+
 		// SC:O(1) as no extra space is used
 		// TC:O(9 n2) as each column can have 9 values and there is n2 cells
 
@@ -52,5 +56,4 @@ public class LC37SudokuSolver {
 		}
 		return true;
 	}
-
 }

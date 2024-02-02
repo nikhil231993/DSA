@@ -6,6 +6,7 @@ import java.util.List;
 public class LC51NQueens {
 
 	public static void main(String[] args) {
+
 		int n = 4;
 
 		// 1st approach
@@ -16,7 +17,6 @@ public class LC51NQueens {
 		System.out.println("######################################");
 
 		// 2nd Approach
-
 		List<List<String>> queenSecond = new ArrayList();
 		char[][] board = new char[n][n];
 		int[] leftRow = new int[n];
@@ -33,14 +33,14 @@ public class LC51NQueens {
 		solveSecondApproach(queenSecond, board, leftRow, lowerDiagonal, upperDiagonal, 0);
 		System.out.println(queenSecond);
 
-		// TC:O(N!) as due to isSafe method only on possible places recursive call is
+		// TC:O(N!) * N (This is the for loop for construct)  as due to isSafe method only on possible places recursive call is
 		// made whereas in permutations everytime recursive call is made
 		// SC:O(N2)(space to store matrix) +O(N)(height of the recursion tree)
-
 	}
 
 	public static void solveSecondApproach(List<List<String>> queen, char[][] board, int[] leftRow, int[] lowerDiagonal,
 			int[] upperDiagonal, int col) {
+
 		if (col == board.length) {
 			queen.add(construct(board));
 			return;
@@ -63,6 +63,7 @@ public class LC51NQueens {
 	}
 
 	private static void solve(List<List<String>> queen, int n) {
+
 		char[][] board = new char[n][n];
 		int row = board.length;
 		int col = board[0].length;
@@ -73,12 +74,12 @@ public class LC51NQueens {
 		}
 
 		dfs(board, queen, 0);
-
+		//TC:O(n*m) + O(n!) * (3n)
+		//SC:O(n*m) + O(col length) for auxiliary space
 	}
 
 	private static void dfs(char[][] board, List<List<String>> queen, int col) {
 
-		
 		if (col == board.length) {
 			queen.add(construct(board));
 			return;
@@ -90,12 +91,11 @@ public class LC51NQueens {
 				dfs(board, queen, col + 1);
 				board[row][col] = '.';
 			}
-
 		}
-
 	}
 
 	private static boolean isSafe(char[][] board, int col, int row) {
+
 		int dupRow = row;
 		int dupCol = col;
 		while (dupRow >= 0 && dupCol >= 0) {
@@ -121,7 +121,6 @@ public class LC51NQueens {
 			dupCol--;
 			dupRow++;
 		}
-		
 		return true;
 	}
 
@@ -135,5 +134,4 @@ public class LC51NQueens {
 		}
 		return rowFull;
 	}
-
 }

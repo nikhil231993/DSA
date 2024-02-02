@@ -6,10 +6,12 @@ import java.util.List;
 public class LC60KthPermutationSequence {
 
     public static void main(String[] args) {
-        int n = 3, k = 3;
+
+        int n = 4, k = 17;
         System.out.println(getPermutation(n,k));
     }
     public static String getPermutation(int n, int k) {
+
         int fact=1;
         k=k-1;
 
@@ -28,7 +30,7 @@ public class LC60KthPermutationSequence {
             fact=fact/list.size();
         }
         return ans;
-        //TC:O(n);
+        //TC:O(n * n (where this n is for remove function) );
         //SC:O(n)
     }
 }

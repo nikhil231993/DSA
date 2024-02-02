@@ -6,6 +6,7 @@ import java.util.List;
 public class LC39CombinationSum1 {
 
 	public static void main(String[] args) {
+
 		int[] num = new int[] { 2, 3, 6, 7 };
 		int target = 7;
 		List<List<Integer>> list = new ArrayList();
@@ -15,7 +16,6 @@ public class LC39CombinationSum1 {
 		List<List<Integer>> newList = new ArrayList();
 		combinationSumSecondApproach(newList, new ArrayList<Integer>(), num, 0, target);
 		System.out.println(newList);
-
 	}
 
 	private static void combinationSum(List<List<Integer>> list, ArrayList<Integer> arrayList, int[] num, int i,
@@ -35,7 +35,6 @@ public class LC39CombinationSum1 {
 			arrayList.remove(arrayList.size() - 1);
 		}
 		combinationSum(list, arrayList, num, i + 1, target);
-
 	}
 
 	private static void combinationSumSecondApproach(List<List<Integer>> list, ArrayList<Integer> arrayList, int[] num,
@@ -58,8 +57,7 @@ public class LC39CombinationSum1 {
 			// SC:O(k(avg length)*x(combinations))
 			// If instead of syso we use list of list then TC will be 2 raised to t *k where
 			// k is length of combination as adding into list is linear TC and not constant
+			// we cannot calculate the auxiliary space as it is very uncertain
 		}
-
 	}
-
 }

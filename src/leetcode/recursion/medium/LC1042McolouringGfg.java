@@ -25,10 +25,9 @@ public class LC1042McolouringGfg {
 
         System.out.println(isGraphColouring(adjList,N,M,E,0,color));
 
-        //TC:m raise to N
+        //TC:m(colors) raise to N(places)
         //Video complexity is wrong
-        //SC:o(N) recursion stack+O(N)color array
-
+        //SC:O(N) recursion stack + O(N)color array
     }
 
     private static boolean isGraphColouring(List<List<Integer>> adjList, int n, int m, int e, int node,int[] color) {
@@ -43,7 +42,6 @@ public class LC1042McolouringGfg {
                     return true;
                 }
                 color[node]=0;
-
             }
         }
         return false;

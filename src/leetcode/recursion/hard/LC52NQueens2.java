@@ -4,11 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class LC52NQueens2 {
-	//TC:O(N! *N) as 1st column after  getting selected will have n-1 for next column and so on
+
+	//TC:O(N! *N (This is thr for loop for construct)) as 1st column after  getting selected will have n-1 for next column and so on
 	// we run the loop of n positions in each column
 	public static void main(String[] args) {
+
 		int n = 4;
 
+		//1st Approach
 		System.out.println(totalNQueens(n));
 
 		System.out.println("######################################");
@@ -29,7 +32,6 @@ public class LC52NQueens2 {
 
 		solveSecondApproach(queenSecond, board, leftRow, lowerDiagonal, upperDiagonal, 0);
 		System.out.println(queenSecond.size());
-
 	}
 
 	public static void solveSecondApproach(List<List<String>> queen, char[][] board, int[] leftRow, int[] lowerDiagonal,
@@ -68,7 +70,6 @@ public class LC52NQueens2 {
 		dfs(result, board, 0);
 
 		return result.size();
-
 	}
 
 	public static void dfs(List<List<String>> result, char[][] board, int col) {
@@ -114,9 +115,7 @@ public class LC52NQueens2 {
 			dupRow++;
 			dupCol--;
 		}
-
 		return true;
-
 	}
 
 	public static List<String> construct(char[][] board) {
@@ -128,5 +127,4 @@ public class LC52NQueens2 {
 		}
 		return l;
 	}
-
 }

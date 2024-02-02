@@ -6,8 +6,8 @@ import java.util.List;
 public class LC131PalindromePartitioning {
 
     public static void main(String[] args) {
-      String  s = "aab";
 
+      String  s = "aab";
       System.out.println(partition(s));
     }
     public static List<List<String>> partition(String s) {
@@ -16,7 +16,6 @@ public class LC131PalindromePartitioning {
         List<String> subList=new ArrayList();
         partitionFunction(subList, finalResult, s, 0);
         return finalResult;
-
     }
 
     public static void partitionFunction( List<String> subList, List<List<String>> finalResult, String s, int index){
@@ -35,6 +34,7 @@ public class LC131PalindromePartitioning {
     }
 
     public static boolean isPalindrome(int start, int end, String s){
+
         while(start<=end){
             if(s.charAt(start++)!=s.charAt(end--)){
                 return false;

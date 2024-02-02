@@ -6,6 +6,7 @@ import java.util.List;
 public class LC216CombinationSum3 {
 
 	public static void main(String[] args) {
+
 		int k = 3;
 		int target = 7;
 
@@ -16,7 +17,6 @@ public class LC216CombinationSum3 {
 		List<List<Integer>> newList = new ArrayList();
 		combinationSum3SecondApproach(newList, new ArrayList(), target, k, 1);
 		System.out.println(newList);
-
 	}
 
 	private static void combinationSum3SecondApproach(List<List<Integer>> newList, ArrayList arrayList, int target,
@@ -34,7 +34,6 @@ public class LC216CombinationSum3 {
 			combinationSum3SecondApproach(newList, arrayList, target - i, k - 1, i + 1);
 			arrayList.remove(arrayList.size() - 1);
 		}
-
 	}
 
 	private static void combinationSum3(List<List<Integer>> list, ArrayList arrayList, int target, int k, int index) {
@@ -56,5 +55,4 @@ public class LC216CombinationSum3 {
 		// TC:O(2 raise to 9 *k(avg length od combinations))
 		// SC:k*x(no of combinations)+O(n)
 	}
-
 }
