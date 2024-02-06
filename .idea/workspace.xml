@@ -5,15 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V18DeleteOccurencesFromDLL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V19FindPairsInDLL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V20RemoveDuplicatesFromSortedDLL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V21ReverseLinkedListInGroup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V22RotateLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V23MergeTwoSortedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V24FlattenLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V25MergeKSortedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/v26SortLinkedList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V2DeletionAndInsertion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V2DeletionAndInsertion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/array/easy/LC1TwoSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/easy/LC1TwoSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V24FlattenLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V24FlattenLinkedList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,7 +195,7 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetcode/array/easy/LC1TwoSum.java</url>
-          <line>8</line>
+          <line>9</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

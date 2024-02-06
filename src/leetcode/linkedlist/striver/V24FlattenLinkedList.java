@@ -12,7 +12,7 @@ public class V24FlattenLinkedList {
         t2=temp;
         while(t2!=null){
             arr.add(t2.val);
-            t2=te.child;
+            t2=t2.child;
         }
         temp=temp.next
     }
@@ -22,7 +22,7 @@ public class V24FlattenLinkedList {
         convertToLinkedList(arr){
         if(arr.size()==0)
             return null;
-        Nod n=new Node(arr[0]);
+        Node n=new Node(arr[0]);
         for(i=1->n){
             newNode=new Node(arr[i]);
             temp.child=newNode;
