@@ -1,6 +1,6 @@
 package leetcode.linkedlist.striver;
 
-public class V5AddTwoNumbers {
+public class V5AddTwoNumbersLC2 {
 
     /**
      * Definition for singly-linked list.

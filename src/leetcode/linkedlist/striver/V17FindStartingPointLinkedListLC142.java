@@ -1,6 +1,6 @@
 package leetcode.linkedlist.striver;
 
-public class V17FindStartingPointLinkedList {
+public class V17FindStartingPointLinkedListLC142 {
 
     //Approach 1: Use hashing to remember the node which I have seen first previously
 

@@ -1,6 +1,6 @@
 package leetcode.linkedlist.striver;
 
-public class V22RotateLinkedList {
+public class V22RotateLinkedListLC61 {
 
     public static void main(String[] args) {
         int[] arr=new int[]{1,2};

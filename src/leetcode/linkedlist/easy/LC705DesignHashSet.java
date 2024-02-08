@@ -4,6 +4,9 @@ import java.util.LinkedList;
 
 public class LC705DesignHashSet {
 
+	// Approach 1: Create an array of size 10 raise to 6 + 1 and set 1 to add and set to 0 when asked to remove
+	// Above approach hs issue with array size
+
 	int bucketSize = 1000;
 
 	LinkedList<Integer>[] bucket;
@@ -32,6 +35,7 @@ public class LC705DesignHashSet {
 	}
 
 	private void remove(int key) {
+
 		int i = hashFunction(key);
 
 		if (bucket[i] == null || bucket[i].indexOf(key) == -1)
@@ -48,7 +52,7 @@ public class LC705DesignHashSet {
 		return true;
 	}
 
-	// 3rd Approac
+	// 3rd Approach
 	private int getPos(int key, int index) {
 
 		if (bucket[index] == null)
@@ -61,7 +65,6 @@ public class LC705DesignHashSet {
 				return i;
 		}
 		return -1;
-
 	}
 
 	private void addWithGetPos(int key) {
@@ -75,6 +78,7 @@ public class LC705DesignHashSet {
 	}
 
 	private void removeWithGetPos(int key) {
+
 		int i = hashFunction(key);
 		int pos = getPos(key, i);
 
@@ -101,7 +105,5 @@ public class LC705DesignHashSet {
 		lc.add(1);
 		lc.remove(1);
 		System.out.println(lc.containsWithGetPos(1));
-
 	}
-
 }

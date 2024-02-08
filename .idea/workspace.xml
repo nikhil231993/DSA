@@ -5,11 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V25MergeKSortedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/v26SortLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/linkedlist/easy/LC1290BinaryNumberToInteger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/linkedlist/easy/LC203RemoveLinkedListElements.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/linkedlist/easy/LC83RemoveDuplicatesSingleLLSorted.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/linkedlist/medium/LC146LRU.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/linkedlist/medium/LC237DeleteNodeLL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/linkedlist/medium/LC82EntireDuplicateRemoval.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V26SortLinkedListLC148.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V27CloneLLWithRandomPointerLC138.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V28DesignBrowserHistoryLC1472.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/sortingtechniques/MergeSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/array/easy/LC1TwoSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/easy/LC1TwoSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V24FlattenLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V24FlattenLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/linkedlist/easy/LC705DesignHashSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/linkedlist/easy/LC705DesignHashSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/linkedlist/easy/LC706DesignHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/linkedlist/easy/LC706DesignHashMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V10Palindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V10PalindromeLC234.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V11AddOneToLL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V11AddOneToLL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V12IntersectionLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V12IntersectionLinkedListLC160.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V13MiddleOfLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V13MiddleOfLinkedListLC876.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V14LoopInLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V14LoopInLinkedListLC141.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V16DeleteMiddleLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V16DeleteMiddleLinkedListLC2095.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V17FindStartingPointLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V17FindStartingPointLinkedListLC142.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V20RemoveDuplicatesFromSortedDLL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V20RemoveDuplicatesFromSortedDLL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V21ReverseLinkedListInGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V21ReverseLinkedListInGroupLC25.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V22RotateLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V22RotateLinkedListLC61.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V23MergeTwoSortedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V23MergeTwoSortedListLC21.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V25MergeKSortedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V25MergeKSortedListLC23.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V5AddTwoNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V5AddTwoNumbersLC2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V6OddEvenLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V6OddEvenLinkedListLC328.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V9ReverseLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/V9ReverseLinkedListLC206.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/linkedlist/striver/v26SortLinkedList.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +98,7 @@
       <recent name="leetcode.array.extra" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.V22RotateLinkedList">
+  <component name="RunManager" selected="Application.Test">
     <configuration name="BinomialCoefficient" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -89,12 +114,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="V11AddOneToLL" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.linkedlist.striver.V11AddOneToLL" />
+    <configuration name="MergeSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.sortingtechniques.MergeSort" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.linkedlist.striver.*" />
+          <option name="PATTERN" value="leetcode.sortingtechniques.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -102,8 +127,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="V19FindPairsInDLL" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.linkedlist.striver.V19FindPairsInDLL" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.linkedlist.striver.Test" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -128,8 +153,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="V21ReverseLinkedListInGroup" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.linkedlist.striver.V21ReverseLinkedListInGroup" />
+    <configuration name="V21ReverseLinkedListInGroupLC25" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.linkedlist.striver.V21ReverseLinkedListInGroupLC25" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -141,8 +166,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="V22RotateLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.linkedlist.striver.V22RotateLinkedList" />
+    <configuration name="V22RotateLinkedListLC61" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.linkedlist.striver.V22RotateLinkedListLC61" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -156,11 +181,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.V22RotateLinkedList" />
-        <item itemvalue="Application.V21ReverseLinkedListInGroup" />
+        <item itemvalue="Application.Test" />
         <item itemvalue="Application.V20RemoveDuplicatesFromSortedDLL" />
-        <item itemvalue="Application.V19FindPairsInDLL" />
-        <item itemvalue="Application.V11AddOneToLL" />
+        <item itemvalue="Application.MergeSort" />
+        <item itemvalue="Application.V22RotateLinkedListLC61" />
+        <item itemvalue="Application.V21ReverseLinkedListInGroupLC25" />
       </list>
     </recent_temporary>
   </component>
@@ -694,17 +719,17 @@
           <option name="timeStamp" value="237" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/leetcode/linkedlist/striver/V10Palindrome.java</url>
+          <url>file://$PROJECT_DIR$/src/leetcode/linkedlist/striver/V10PalindromeLC234.java</url>
           <line>21</line>
           <option name="timeStamp" value="238" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/leetcode/linkedlist/striver/V10Palindrome.java</url>
+          <url>file://$PROJECT_DIR$/src/leetcode/linkedlist/striver/V10PalindromeLC234.java</url>
           <line>9</line>
           <option name="timeStamp" value="239" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/leetcode/linkedlist/striver/V10Palindrome.java</url>
+          <url>file://$PROJECT_DIR$/src/leetcode/linkedlist/striver/V10PalindromeLC234.java</url>
           <line>46</line>
           <option name="timeStamp" value="240" />
         </line-breakpoint>
@@ -714,9 +739,19 @@
           <option name="timeStamp" value="241" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/leetcode/linkedlist/striver/V22RotateLinkedList.java</url>
+          <url>file://$PROJECT_DIR$/src/leetcode/linkedlist/striver/V22RotateLinkedListLC61.java</url>
           <line>21</line>
           <option name="timeStamp" value="242" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/linkedlist/striver/Test.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="243" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/linkedlist/striver/Test.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="244" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/leetcode/binarytree/Test.java</url>

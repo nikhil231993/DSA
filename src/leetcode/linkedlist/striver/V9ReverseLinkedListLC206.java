@@ -1,6 +1,6 @@
 package leetcode.linkedlist.striver;
 
-public class V9ReverseLinkedList {
+public class V9ReverseLinkedListLC206 {
 
     //Approach 1: Take elements and put it in Stack
 

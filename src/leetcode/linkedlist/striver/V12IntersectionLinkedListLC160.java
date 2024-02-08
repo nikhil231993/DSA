@@ -1,6 +1,6 @@
 package leetcode.linkedlist.striver;
 
-public class V12IntersectionLinkedList {
+public class V12IntersectionLinkedListLC160 {
 
     //Approach 1: Put each node of one LL in HashSet and then iterate through other node and check if it exists in it.
 

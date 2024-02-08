@@ -1,6 +1,6 @@
 package leetcode.linkedlist.striver;
 
-public class V14LoopInLinkedList {
+public class V14LoopInLinkedListLC141 {
 
     //Approach 1:: Put each node in a hash and then keep on parsing and the moment we see same node we can say there is a loop
 
