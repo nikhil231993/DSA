@@ -17,6 +17,7 @@ public class BuildMinHeapPrince {
     }
 
     private static void print(int size,int[] arr){
+
         System.out.println("Heap is: ");
         for(int i=0;i<=size/2-1;i++){
             System.out.println("Parent is : "+ arr[i]);
@@ -27,6 +28,7 @@ public class BuildMinHeapPrince {
         }
     }
     private static void minHeapify(int[] arr, int n, int index) {
+
         int left=2*index+1;
         int right=2*index+2;
         int smallest=index;

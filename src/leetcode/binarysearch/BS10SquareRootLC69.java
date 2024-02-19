@@ -3,6 +3,7 @@ package leetcode.binarysearch;
 public class BS10SquareRootLC69 {
 
     public static void main(String[] args) {
+
         int x=28;
         System.out.println(mySqrt(x));
     }

@@ -3,6 +3,7 @@ package leetcode.binarysearch;
 public class BS22KThElementTwoSortedArrays {
 
     public static void main(String[] args) {
+
         int[] nums1 = new int[] {1,7,8,10};
         int[] nums2 = new int[] {2,3,5,6,9};
         int k=2;
@@ -16,7 +17,8 @@ public class BS22KThElementTwoSortedArrays {
         int n2=nums2.length;
         if(n1>n2)
             return KthElementInTwoSortedArray(nums2,nums1,k);
-        int low=Math.max(0,k-n2);//we should at least take k-n2 if k >n1
+
+        int low=Math.max(0,k-n2);//we should at least take k-n2 if k > n1
         int high=Math.min(k,n1);// we cannot pick entire n1 if k=2
 
         int left=k;

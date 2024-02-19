@@ -3,6 +3,7 @@ package leetcode.binarysearch;
 public class BS18AllocateBooks {
 
     public static void main(String[] args) {
+
         int n=4, m=5;
         int[] arr=new int[]{12, 34, 67, 90};
         System.out.println(findPages(arr,n,m));
@@ -35,6 +36,7 @@ public class BS18AllocateBooks {
     }
 
     public static boolean possible(int pages, int[] arr ,int m){
+
         int count=1;
         int sum=arr[0];
 

@@ -1,8 +1,10 @@
 package leetcode.binarysearch;
 
 import java.util.Arrays;
-public class BS17MageneticBallsLC1552 {
+public class BS17MagneticBallsLC1552 {
+
     public static void main(String[] args) {
+
        int[] position =new int[] {1,2,3,4,7};
        int m = 3;
        System.out.println(maxDistance(position,m));

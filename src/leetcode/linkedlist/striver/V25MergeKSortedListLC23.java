@@ -1,6 +1,6 @@
 package leetcode.linkedlist.striver;
 
-public class V25MergeKSortedList {
+public class V25MergeKSortedListLC23 {
 
     //Approach 1:  Parse through the lists and add it in arr. Sort it and then put back in diff array
 

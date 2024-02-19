@@ -39,6 +39,7 @@ public class BS1IntroductionLC704 {
     }
 
     public static int binarySearchRecursion(int[] nums, int low, int high, int target) {
+
         if (low > high) return -1; //Base case.
 
         // Perform the steps:
@@ -53,7 +54,7 @@ public class BS1IntroductionLC704 {
     }
 
     public static int searchRecursion(int[] nums, int target) {
+
         return binarySearchRecursion(nums, 0, nums.length - 1, target);
     }
-
 }

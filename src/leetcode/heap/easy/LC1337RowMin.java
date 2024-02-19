@@ -1,7 +1,9 @@
 package leetcode.heap.easy;
 
 import java.util.PriorityQueue;
+
 class Node{
+
     int row;
     int count;
     public Node(int row, int count){
@@ -9,8 +11,11 @@ class Node{
         this.count=count;
     }
 }
+
 public class LC1337RowMin {
+
     public static void main(String[] args) {
+
        int[][] mat = new int[][]
                {{1,1,0,0,0},
                 {1,1,1,1,0},
@@ -19,7 +24,9 @@ public class LC1337RowMin {
                             {1,1,1,1,1}};
        int k = 3;
        int[] result=kWeakestRows(mat,k);
+
        System.out.println("#########");
+
        for(Integer r: result)
            System.out.println(r);
     }
@@ -50,6 +57,7 @@ public class LC1337RowMin {
     }
 
     public static int required(int[] mat, int target){
+
         int low=0;
         int high=mat.length-1;
         while(low<=high){

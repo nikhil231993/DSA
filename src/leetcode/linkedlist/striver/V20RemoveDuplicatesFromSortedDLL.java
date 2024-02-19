@@ -5,7 +5,7 @@ public class V20RemoveDuplicatesFromSortedDLL {
     public static void main(String[] args) {
 
 
-        int[] arr=new int[]{1,1};
+        int[] arr=new int[]{1,1,2,3,3,4,5,5,6};
 
         NodeDLL head=new NodeDLL(arr[0]);
 
@@ -30,6 +30,7 @@ public class V20RemoveDuplicatesFromSortedDLL {
             temp.next=nextNode;
             if(nextNode!=null)
                 nextNode.prev=temp;
+            temp=temp.next;
         }
         //TC:O(N)
         //SC:O(1)

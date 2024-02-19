@@ -2,6 +2,7 @@ package leetcode.binarysearch;
 
 public class BS13BouquetsLC1482 {
     public static void main(String[] args) {
+
         int[] bloomDay =new int[] {7,7,7,7,12,7,7};
         int m = 2;
         int k = 3;
@@ -27,7 +28,8 @@ public class BS13BouquetsLC1482 {
             if(isPossible(bloomDay,m,k,mid)){
                 ans=mid;
                 high=mid-1;
-            }else low=mid+1;
+            }else
+                low=mid+1;
         }
         return ans;
     }
@@ -45,6 +47,7 @@ public class BS13BouquetsLC1482 {
             }
         }
         noOfBouquets+=count/k;
+
         if(noOfBouquets>=m)
             return true;
         return false;

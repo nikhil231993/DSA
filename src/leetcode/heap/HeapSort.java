@@ -7,6 +7,7 @@ public class HeapSort {
     //Step 3: call heapify with index=0 and reduced size
 
     public static void main(String[] args) {
+
         int arr[] = {1, 3, 5, 4, 6, 13, 10, 9, 8, 15, 17} ;
 
         int n = arr.length   ;
@@ -20,6 +21,7 @@ public class HeapSort {
     }
 
     private static void print(int[] arr,int n){
+
         System.out.println("Heap is: ");
         for(int i=0;i<=n/2-1;i++){
             System.out.println("Parent is : "+ arr[i]);
@@ -31,6 +33,7 @@ public class HeapSort {
     }
 
     private static void heapSort(int[] arr, int n) {
+
         buildHeap(arr,n);
         for(int i=n-1;i>0;i--){
             int temp=arr[i];
@@ -50,7 +53,8 @@ public class HeapSort {
         print(arr, n);
     }
 
-    private static void heapify(int[] arr, int index,int n) {
+    private static void heapify(int[] arr, int index, int n) {
+
         int left=2*index+1;
         int right=2*index+2;
         int largest=index;

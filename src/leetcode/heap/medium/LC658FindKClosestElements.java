@@ -8,6 +8,7 @@ import java.util.PriorityQueue;
 public class LC658FindKClosestElements {
 
     public static void main(String[] args) {
+
        int[]  arr =new int[] {1,3,4,5,6,7,8,9,10,11,20,25};
        int k = 3, x = 7;
 
@@ -68,6 +69,7 @@ public class LC658FindKClosestElements {
 
         PriorityQueue<Node> pq=new PriorityQueue<>(
                 (a,b)->a.value==b.value?b.key-a.key : b.value-a.value);
+
         for(Integer n:arr){
             pq.offer(new Node(Math.abs(x-n),n));
             if(pq.size()>k)

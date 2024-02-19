@@ -3,6 +3,7 @@ package leetcode.heap;
 public class MaxHeapMain {
 
     public static void main(String[] args) {
+
         MaxHeap maxHeap = new MaxHeap(10);
         maxHeap.insert(5);
         maxHeap.insert(3);

@@ -3,6 +3,7 @@ package leetcode.binarysearch;
 public class BS26FindPeekElement2LC1901 {
 
     public static void main(String[] args) {
+
         int[][] mat =new int[][] {{10,20,15},{21,30,14},{7,16,32}};
 
         //Approach 1
@@ -15,6 +16,7 @@ public class BS26FindPeekElement2LC1901 {
     }
 
     private static int[] findPeakGridOptimized(int[][] mat) {
+
         int n=mat.length;;
         int m=mat[0].length;
 
@@ -22,6 +24,7 @@ public class BS26FindPeekElement2LC1901 {
         int high=m-1;
 
         while(low<=high){
+
             int mid=low+(high-low)/2;
             int row=findMax(mat,mid,n,m);
             int left=-1;
@@ -42,11 +45,13 @@ public class BS26FindPeekElement2LC1901 {
     }
 
     private static int findMax(int[][] num, int col, int n, int m) {
+
         int max=Integer.MIN_VALUE;
         int maxRowIndex=Integer.MIN_VALUE;
+
         for(int i=0;i<n;i++){
-            if(num[i][col]>max)
-            {
+
+            if(num[i][col]>max) {
                 max=num[i][col];
                 maxRowIndex=i;
             }
@@ -55,11 +60,13 @@ public class BS26FindPeekElement2LC1901 {
     }
 
     public static int[] findPeakGrid(int[][] mat) {
+
         int n=mat.length;
         int m=mat[0].length;
 
         for(int i=0;i<n;i++){
             for(int j=0;j<m;j++){
+
                 int left=Integer.MIN_VALUE;
                 int right=Integer.MIN_VALUE;
                 int top=Integer.MIN_VALUE;

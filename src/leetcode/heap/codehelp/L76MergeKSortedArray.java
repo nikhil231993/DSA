@@ -9,7 +9,9 @@ class NodeValue{
     int value;
     int valueColInArr;
     int  valueRowInArr;
+
     public NodeValue(int value, int valueColInArr, int valueRowInArr){
+
         this.value=value;
         this.valueColInArr=valueColInArr;
         this.valueRowInArr=valueRowInArr;
@@ -24,10 +26,9 @@ public class L76MergeKSortedArray {
 
         //Approach 1:
         int[] r=mergeKArrays(arr,k);
+
         for(Integer num:r)
             System.out.println(num);
-        //TC:O(n*k log n*k)
-        //SC:O(n*k)
 
         //Approach 2:
         int[][] arr1=new int[][]{{1,2,3,4},{2,2,3,4},
@@ -54,9 +55,13 @@ public class L76MergeKSortedArray {
             }
         }
         return result;
+
+        //TC:O(klogk) +O(n*k -k log k)
+        //SC:k as at any moment heap has only k elements at the max
     }
 
     private static int[] mergeKArrays(int[][] arr, int k) {
+
         int size=0;
         for(int[] a:arr)
             size+=a.length;
@@ -68,9 +73,11 @@ public class L76MergeKSortedArray {
                 result[i++]=num;
             }
         }
+
         Arrays.sort(result);
         return result;
-        //TC:O(k log k) + O(n*k -k log k)
-        //SC:O(k)
+
+        //TC:O(n*k log n*k)
+        //SC:O(n*k)
     }
 }

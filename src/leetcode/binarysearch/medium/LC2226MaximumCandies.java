@@ -1,7 +1,9 @@
 package leetcode.binarysearch.medium;
 
 public class LC2226MaximumCandies{
+
     public static void main(String[] args) {
+
         int[] candies=new int[]{4,7,5};
         int k=4;
         System.out.println(maximumCandies(candies,k));

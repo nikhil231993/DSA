@@ -3,6 +3,7 @@ package leetcode.heap.easy;
 import java.util.PriorityQueue;
 
 public class MinimumCostOfRopes {
+
     public static void main(String[] args) {
 
         int[] arr=new int[]{4,3,2,6};

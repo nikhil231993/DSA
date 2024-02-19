@@ -1,6 +1,6 @@
 package leetcode.linkedlist.striver;
 
-public class V13MiddleOfLinkedList {
+public class V13MiddleOfLinkedListLC876 {
 
     //Approach 1: Count the entire length of LL and then delete the node in next parse which is at (N/2)+1;
 

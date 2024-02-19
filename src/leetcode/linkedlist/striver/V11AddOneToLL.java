@@ -58,7 +58,7 @@ public class V11AddOneToLL {
 
     private static Node firstApproach(Node head){
 
-        head=V10Palindrome.reverseHead(head);
+        head= V10PalindromeLC234.reverseHead(head);
 
         Node temp=head;
         int carry=1;
@@ -69,12 +69,12 @@ public class V11AddOneToLL {
                 carry=1;
                 temp=temp.next;
             }else{
-                return V10Palindrome.reverseHead(head);
+                return V10PalindromeLC234.reverseHead(head);
             }
         }
         if(carry==1){
             Node n=new Node(carry);
-            head=V10Palindrome.reverseHead(head);
+            head= V10PalindromeLC234.reverseHead(head);
             n.next=head;
             return n;
         }

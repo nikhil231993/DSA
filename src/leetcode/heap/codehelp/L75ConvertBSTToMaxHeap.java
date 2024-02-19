@@ -2,12 +2,14 @@ package leetcode.heap.codehelp;
 
 import static leetcode.heap.codehelp.L75ConvertBSTToMinHeap.inorder;
 import static leetcode.heap.codehelp.L75ConvertBSTToMinHeap.levelOrder;
-import static leetcode.heap.codehelp.L75IsBinaryHeap.countNode;
+import static leetcode.heap.codehelp.L75IsBinaryTreeHeap.countNode;
 
 public class L75ConvertBSTToMaxHeap {
 
     Node root;
+
     public static void main(String[] args) {
+
         L75ConvertBSTToMaxHeap l=new L75ConvertBSTToMaxHeap();
         l.root=new Node(4);
         l.root.left=new Node(2);
@@ -30,12 +32,14 @@ public class L75ConvertBSTToMaxHeap {
 
         System.out.println();
         System.out.println("========================");
+
         //Print using level order
         levelOrder(l.root);
 
     }
 
     private static void postOrder(Node root, int[] arr, int[] newIndex) {
+
         if(root==null)
             return;
         postOrder(root.left,arr,newIndex);

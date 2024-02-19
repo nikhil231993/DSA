@@ -5,6 +5,7 @@ import java.util.PriorityQueue;
 public class L75KSmallestElement {
 
     public static void main(String[] args) {
+
         int[] arr=new int[]{7,10,4,20,15,1,0};
         int k=4;
 

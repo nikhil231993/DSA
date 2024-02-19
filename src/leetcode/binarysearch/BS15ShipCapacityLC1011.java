@@ -3,6 +3,7 @@ package leetcode.binarysearch;
 public class BS15ShipCapacityLC1011 {
 
     public static void main(String[] args) {
+
        int[] weights = new int[]{1,2,3,4,5,6,7,8,9,10};
        int days = 5;
        System.out.println(shipWithinDays(weights,days));
@@ -36,6 +37,7 @@ public class BS15ShipCapacityLC1011 {
     }
 
     public static boolean isPossible(int total, int[] weights, int days){
+
         int count=1;
         int sum=0;
 

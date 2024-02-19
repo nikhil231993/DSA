@@ -3,7 +3,8 @@ package leetcode.binarysearch;
 public class BS27MedianInRowWiseSortedArrayLCPremium {
 
     public static void main(String[] args) {
-        int R = 3, C = 3;
+
+        int R = 3, C = 5;
 //        int[][] M =new int[][] {{1, 5 ,7,9,11},
 //                {2,3,4,8,9},
 //                {4,11,14,19,20},
@@ -11,13 +12,16 @@ public class BS27MedianInRowWiseSortedArrayLCPremium {
 //                {4,15,17,24,28}
 //        };
 
-        int[][] M =new int[][] {{1, 2 ,3},
-                {3,3,3},
-                {3,3,9}
-        };
+        int[][] M=new int[][]{{1,5,7,10,11},{2,3,4,5,10},{10,10,12,14,16}};
+
+//        int[][] M =new int[][] {{1, 2 ,3},
+//                {3,3,3},
+//                {3,3,9}
+//        };
         System.out.println(median(M,R,C));
     }
     public static int median(int matrix[][], int R, int C) {
+
         int low=Integer.MAX_VALUE;
         int high=Integer.MIN_VALUE;
 

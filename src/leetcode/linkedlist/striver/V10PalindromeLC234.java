@@ -1,6 +1,6 @@
 package leetcode.linkedlist.striver;
 
-public class V10Palindrome {
+public class V10PalindromeLC234 {
 
     public static void main(String[] args) {
 

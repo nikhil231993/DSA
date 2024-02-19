@@ -5,6 +5,7 @@ import java.util.Map;
 import java.util.PriorityQueue;
 
 class Node1{
+
     int value;
     int count;
     public Node1(int value, int count){
@@ -12,10 +13,13 @@ class Node1{
         this.count=count;
     }
 }
+
 public class LC1054Barcodes {
 
     public static void main(String[] args) {
+
         int[] barcodes =new int[] {1,1,1,2,2,2};
+
         int[] result=rearrangeBarcodes(barcodes);
         for(int n:result)
             System.out.println(n);
@@ -34,10 +38,13 @@ public class LC1054Barcodes {
         }
         int[] result=new int[barcodes.length];
         int i=0;
+
         while(!pq.isEmpty()){
+
             Integer num=pq.peek().value;
             Integer c=pq.peek().count;
             pq.poll();
+
             if(i>0 && num==result[i-1]){
                 Integer newNum=pq.peek().value;
                 Integer newC=pq.peek().count;

@@ -15,6 +15,7 @@ public class BS6MinimumSortedArray1LC153 {
         int high=n-1;
         int ans=Integer.MAX_VALUE;
         while(low<=high){
+
             int mid=low+(high-low)/2;
 
             //if below condition is true that means it is the pivot point and low will be the answer

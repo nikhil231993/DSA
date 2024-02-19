@@ -1,6 +1,6 @@
 package leetcode.linkedlist.striver;
 
-public class V6OddEvenLinkedList {
+public class V6OddEvenLinkedListLC328 {
 
     //Approach 1 : Create a arr and store the values in it and then retrieve it back and put it in LinkedList
     // Do eth above first for odd index and then for even. Handle last node specifically

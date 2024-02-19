@@ -14,11 +14,13 @@ public class BS8SingleElementInSortedArray {
     }
 
     private static int xor(int[] nums) {
+
              int ans=0;
          for(int i=0;i<nums.length;i++){
              ans=ans^nums[i];
          }
          return ans;
+
         //TC:O(n)
         //SC:O(1)
     }
@@ -48,6 +50,7 @@ public class BS8SingleElementInSortedArray {
             }
         }
         return -1;
+
         //TC:O(log n)
         //SC:O(1)
     }

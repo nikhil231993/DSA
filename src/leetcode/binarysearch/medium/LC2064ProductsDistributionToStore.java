@@ -3,6 +3,7 @@ package leetcode.binarysearch.medium;
 public class LC2064ProductsDistributionToStore {
 
     public static void main(String[] args) {
+
         int[] quantities=new int[]{11,6};
         int n=6;
         System.out.println(minimizedMaximum(n,quantities));
@@ -26,10 +27,10 @@ public class LC2064ProductsDistributionToStore {
             }
         }
         return ans;
-
     }
 
     public static boolean isPossible(int mid, int[] quantities, int n){
+
         int count=0;
         for(int i=0;i<quantities.length;i++){
             count+=Math.ceil((double) quantities[i]/(double)mid);
@@ -37,6 +38,7 @@ public class LC2064ProductsDistributionToStore {
         if(count<=n)
             return true;
         return  false;
+
         //TC: log (max element)* n
         //SC: O(1)
     }

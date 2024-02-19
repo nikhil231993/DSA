@@ -3,8 +3,11 @@ package leetcode.binarysearch;
 public class BS3FirstAndLastPositionLC34 {
     public static void main(String[] args) {
 
+        //Approach 1:
         //We can do below by using linear search as brute force where first and last will be -1.
         //last keeps on updating whenever we find value equal to x but first updates only 1 time using first==-1 check
+
+        //Approach 2: Best
         int[] num =new int[]{2,4,6,8,8,8,11,13};
         int target=8;
         int[] result=searchRange(num,target);
@@ -14,6 +17,7 @@ public class BS3FirstAndLastPositionLC34 {
     }
 
     public static int[] searchRange(int[] nums, int target) {
+
         int first=firstOccurrence(nums,target);
         int last=lastOccurrence(nums,target);
         return new int[]{first,last};

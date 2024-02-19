@@ -1,6 +1,6 @@
 package leetcode.linkedlist.striver;
 
-public class V16DeleteMiddleLinkedList {
+public class V16DeleteMiddleLinkedListLC2095 {
 
     //Approach 1: Traverse and count. Again traverse till the count/2 reduces to 0
 

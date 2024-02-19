@@ -3,7 +3,9 @@ package leetcode.heap.medium;
 import java.util.PriorityQueue;
 
 public class LC1962Pile {
+
     public static void main(String[] args) {
+
         int[] piles =new int[] {5,4,9};
         int k = 2;
         System.out.println(minStoneSum(piles,k));

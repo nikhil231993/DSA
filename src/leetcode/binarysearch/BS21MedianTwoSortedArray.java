@@ -1,7 +1,9 @@
 package leetcode.binarysearch;
 
 public class BS21MedianTwoSortedArray {
+
     public static void main(String[] args) {
+
         int[] nums1 = new int[] {1,3,4,7,10,12};
         int[] nums2 = new int[] {2,3,6,15};
 
@@ -14,6 +16,7 @@ public class BS21MedianTwoSortedArray {
     }
 
     public static  double findMedianSortedArrays(int[] nums1, int[] nums2) {
+
         int n1=nums1.length;
         int n2=nums2.length;
         int[] nums3=new int[n1+n2];
@@ -98,12 +101,14 @@ public class BS21MedianTwoSortedArray {
         int high=n1;
         int left=(n1+n2+1)/2;
         while(low<=high){
+
             int mid1=low+(high-low)/2;
             int mid2=left-mid1;
             int l1=Integer.MIN_VALUE;
             int l2=Integer.MIN_VALUE;
             int r1=Integer.MAX_VALUE;
             int r2=Integer.MAX_VALUE;
+
             if(mid1<n1) r1=nums1[mid1];
             if(mid2<n2) r2=nums2[mid2];
             if(mid1-1>=0) l1=nums1[mid1-1];

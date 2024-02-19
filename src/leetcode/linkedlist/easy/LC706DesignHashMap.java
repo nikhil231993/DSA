@@ -12,7 +12,6 @@ public class LC706DesignHashMap {
 		Node(int key, int value) {
 			this.key = key;
 			this.value = value;
-
 		}
 	}
 
@@ -33,6 +32,7 @@ public class LC706DesignHashMap {
 	}
 
 	public void put(int key, int value) {
+
 		int i = hashFunction(key);
 
 		if (bucket[i] == null) {
@@ -53,6 +53,7 @@ public class LC706DesignHashMap {
 	}
 
 	public int getPos(int key) {
+
 		int i = hashFunction(key);
 
 		if (bucket[i] == null)
@@ -82,6 +83,7 @@ public class LC706DesignHashMap {
 	}
 
 	public void remove(int key) {
+
 		int i = hashFunction(key);
 		int pos = getPos(key);
 		if (pos < 0)
@@ -94,6 +96,7 @@ public class LC706DesignHashMap {
 	}
 
 	public static void main(String[] args) {
+
 		LC706DesignHashMap m = new LC706DesignHashMap();
 
 		System.out.println(m.get(1));
@@ -104,5 +107,4 @@ public class LC706DesignHashMap {
 		m.put(1, 100);
 		System.out.println(m.get(1));
 	}
-
 }

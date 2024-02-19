@@ -3,6 +3,7 @@ package leetcode.binarysearch;
 public class BS16KthMissingPositiveNumberLC1539 {
 
     public static void main(String[] args) {
+
         int[] arr =new int[] {2,3,4,7,11};
         int k = 5;
 
@@ -35,6 +36,7 @@ public class BS16KthMissingPositiveNumberLC1539 {
     }
 
     public static int findKthPositive(int[] arr, int k) {
+
         for(int i=0;i<arr.length;i++){
             if(arr[i]<=k)
                 k++;
