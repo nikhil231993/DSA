@@ -3,6 +3,7 @@ package leetcode.binarysearch;
 public class BS24SearchInSortedMatrix1LC74 {
 
     public static void main(String[] args) {
+
         int[][] matrix =new int[][] {{1,3,5,7},{10,11,16,20},{23,30,34,60}};
         int target = 60;
 
@@ -17,6 +18,7 @@ public class BS24SearchInSortedMatrix1LC74 {
     }
 
     private static boolean searchMatrixUsingBinarySearch(int[][] matrix, int target) {
+
         int low=0;
         int n=matrix.length;
         int m=matrix[0].length;

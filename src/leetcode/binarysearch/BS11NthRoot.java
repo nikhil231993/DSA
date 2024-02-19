@@ -3,13 +3,14 @@ package leetcode.binarysearch;
 public class BS11NthRoot {
 
     public static void main(String[] args) {
-        int n = 2, m = 9;
+
+        int n = 3, m = 27;
         System.out.println(NthRoot(n,m));
     }
 
-    public static int NthRoot(int n, int m)
-    {
-        int low=0;
+    public static int NthRoot(int n, int m) {
+
+        int low=1;
         int high=m;
         while(low<=high){
             int mid=low+(high-low)/2;

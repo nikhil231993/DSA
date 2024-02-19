@@ -3,6 +3,7 @@ package leetcode.binarysearch.medium;
 public class LC34FirstAndLastPosition {
 
     public static void main(String[] args) {
+
         int[] nums=new int[]{5,7,7,8,8,10};
         int target=8;
         int firstPos=firstPosition(nums,target);
@@ -39,7 +40,7 @@ public class LC34FirstAndLastPosition {
             if(nums[mid]==target){
                 ans=mid;
                 low=mid+1;
-            }else if(nums[mid]< target){
+            }else if(nums[mid] < target){
                 low=mid+1;
             }else{
                 high=mid-1;

@@ -3,6 +3,7 @@ package leetcode.binarysearch;
 public class BS25SearchInSortedMatrix2LC240 {
 
     public static void main(String[] args) {
+
         int[][] matrix =new int[][] {{1,4,7,11,15},{2,5,8,12,19},{3,6,9,16,22},{10,13,14,17,24},{18,21,23,26,30}};
         int target = 100;
 
@@ -35,6 +36,7 @@ public class BS25SearchInSortedMatrix2LC240 {
     }
 
     public static boolean searchMatrixUsingPartialBS(int[][] matrix, int target) {
+
         int n=matrix.length;
         int m=matrix[0].length;
         for(int i=0;i<n;i++){
@@ -49,6 +51,7 @@ public class BS25SearchInSortedMatrix2LC240 {
     }
 
     public static boolean binarySearch(int[] num, int n, int m, int target){
+
         int low=0;
         int high=m-1;
         while(low<=high){

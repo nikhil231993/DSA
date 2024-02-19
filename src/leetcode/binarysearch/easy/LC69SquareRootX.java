@@ -3,12 +3,14 @@ package leetcode.binarysearch.easy;
 public class LC69SquareRootX {
 
     public static void main(String[] args) {
-        int x=2147395599;
+
+        int x=2147483647;
         //INT mAX VALUE=2147483647
         System.out.println(sqrt(x));
     }
 
     private static int sqrt(int x) {
+
         int low=1;
         int high=x;
         int ans=0;

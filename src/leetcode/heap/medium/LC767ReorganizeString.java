@@ -4,7 +4,9 @@ import java.util.HashMap;
 import java.util.PriorityQueue;
 
 public class LC767ReorganizeString {
+
     public static void main(String[] args) {
+
         String s ="aab";
         System.out.println(reorganizeString(s));
     }
@@ -21,6 +23,7 @@ public class LC767ReorganizeString {
         pq.addAll(counts.keySet());
 
         StringBuilder sb=new StringBuilder();
+
         while(pq.size()>1){
             Character current=pq.poll();
             Character next=pq.poll();
@@ -33,6 +36,7 @@ public class LC767ReorganizeString {
 
             if(counts.get(current)>0)
                 pq.offer(current);
+
             if(counts.get(next)>0)
                 pq.offer(next);
         }

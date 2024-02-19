@@ -3,7 +3,7 @@ package revision.queue;
 public class QueueCustomUsingArray {
 
 	private static final int DEFAULT_SIZE = 5;
-	private int rear = -1;
+	private int top = -1;
 	private int[] arr;
 
 	public QueueCustomUsingArray() {
@@ -11,15 +11,15 @@ public class QueueCustomUsingArray {
 	}
 
 	public QueueCustomUsingArray(int size) {
-		arr = new int[size];
+		this.arr = new int[size];
 	}
 
 	public boolean isEmpty() {
-		return this.rear == -1;
+		return this.top == -1;
 	}
 
 	public boolean isFull() {
-		return this.rear == this.arr.length - 1;
+		return this.top == this.arr.length - 1;
 	}
 
 	public int queueFront() {
@@ -37,9 +37,8 @@ public class QueueCustomUsingArray {
 			return;
 		}
 
-		this.arr[++this.rear] = value;
+		this.arr[++this.top] = value;
 		System.out.println(value + " added into queue ");
-
 	}
 
 	public void display() {
@@ -49,7 +48,7 @@ public class QueueCustomUsingArray {
 			return;
 		}
 		System.out.println("Value in queue from start are: ");
-		for (int i = 0; i <= rear; i++) {
+		for (int i = 0; i <= top; i++) {
 			System.out.print(arr[i] + " ");
 		}
 
@@ -63,10 +62,13 @@ public class QueueCustomUsingArray {
 		}
 		int value = this.arr[0];
 
-		for (int i = 0; i < this.rear; i++) {
+		//Remove the element from the first and move the entire array to left by one place
+		//This is if you are using only one pointer
+		for (int i = 0; i < this.top; i++) {
 			this.arr[i] = this.arr[i + 1];
 		}
-		this.rear--;
+
+		this.top--;
 
 		return value;
 	}

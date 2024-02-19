@@ -3,7 +3,9 @@ package leetcode.heap.codehelp;
 import java.util.Arrays;
 import java.util.PriorityQueue;
 public class L76KLargestSumContiguousSubarray {
+
     public static void main(String[] args) {
+
         int N = 3;
         int K = 2;
         int[] Arr =new int[] {3,2,1};
@@ -30,11 +32,13 @@ public class L76KLargestSumContiguousSubarray {
         }
         //O(k)
         return pq.peek();
+
         //TC:O(n square log k)
-        //SC:o(k)
+        //SC:O(k)
     }
 
     public static int kthLargest(int N, int K, int[] Arr) {
+
         int size=N*(N+1)/2;
         int[] arr=new int[size];
 
@@ -48,8 +52,9 @@ public class L76KLargestSumContiguousSubarray {
         }
         //O(n square)
         Arrays.sort(arr);//(n square log n square)
+
         return arr[size-K];
         //TC:O(n square log n square)
-        //SC:o(n square)
+        //SC:O(n square)
     }
 }

@@ -1,6 +1,7 @@
 package leetcode.binarysearch;
 
 import java.util.PriorityQueue;
+
 class Node{
 
     double first;
@@ -15,8 +16,8 @@ public class BS20MinimiseMaxGasDifference {
 
     public static void main(String[] args) {
 
-        int n=5,k=6;
-        int[] arr=new int[]{1,2,3,4,5,6,7};
+        int n=4,k=3;
+        int[] arr=new int[]{1,13,17,23};
 
         //Approach 1
         System.out.println(minimiseMaxDistance(arr,k));
@@ -48,7 +49,9 @@ public class BS20MinimiseMaxGasDifference {
     }
 
     public static double minimiseMaxDistance(int []arr, int k){
+
         int[] howMany=new int[arr.length-1];
+
         for(int gas=1;gas<=k;gas++){
             double maxDiff=Integer.MIN_VALUE;
             int maxIndex=Integer.MIN_VALUE;
@@ -56,7 +59,7 @@ public class BS20MinimiseMaxGasDifference {
             for(int i=0;i<arr.length-1;i++){
                 double difference=arr[i+1]-arr[i];
                 double sectionLength=difference/(howMany[i]+1);
-                if(sectionLength> maxDiff){
+                if(sectionLength > maxDiff){
                     maxDiff=sectionLength;
                     maxIndex=i;
                 }
@@ -76,6 +79,7 @@ public class BS20MinimiseMaxGasDifference {
     }
 
     public static double minimiseMaxDistanceUsingBinarySearch(int []arr, int K){
+
         double low=0;
         double high=maxValue(arr);
         double ans=0;

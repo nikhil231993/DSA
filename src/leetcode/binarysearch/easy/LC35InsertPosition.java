@@ -1,7 +1,9 @@
 package leetcode.binarysearch.easy;
 
 public class LC35InsertPosition {
+
     public static void main(String[] args) {
+
         int[] nums =new int[] {1,3,5,6};
         int target = 5;
 
@@ -27,8 +29,7 @@ public class LC35InsertPosition {
         }
         return low;
 
-        //TC:o(logn)
+        //TC:O(logn)
         //SC:O(1)
-
     }
 }

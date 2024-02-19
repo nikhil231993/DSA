@@ -5,13 +5,20 @@ import java.util.Map;
 
 public class LC387FirstUniqueCharacterInString {
     public static void main(String[] args) {
+
         String s="aab";
+
+        //Approach 1
         System.out.println(firstUniqChar(s));
+
+        //Approach 2:
         System.out.println(firstUniqCharOptimised(s));
     }
 
     public static int firstUniqChar(String s) {
+
         Map<Character, Integer> m=new HashMap();
+
         for(int i=0;i<s.length();i++){
             if(m.containsKey(s.charAt(i)))
                 m.put(s.charAt(i),-1);
@@ -25,11 +32,13 @@ public class LC387FirstUniqueCharacterInString {
                 index=map.getValue();
         }
         return index==Integer.MAX_VALUE?-1:index;
+
         //TC:O(n)
         //SC:O(n)
     }
 
     public static int firstUniqCharOptimised(String s) {
+
         int[] count = new int[128];
         for (char c : s.toCharArray()) {
             count[c]++;
@@ -40,5 +49,7 @@ public class LC387FirstUniqueCharacterInString {
             }
         }
         return -1;
+        //TC:O(n) where n is the string length + O(26)
+        //SC:O(n) where n is the unique characters in the string
     }
 }

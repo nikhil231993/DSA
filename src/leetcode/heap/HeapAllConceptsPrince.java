@@ -6,6 +6,7 @@ public class HeapAllConceptsPrince {
     private static int size;
     private static int capacity;
     public HeapAllConceptsPrince(int cap){
+
         capacity=cap;
         size=0;
         arr=new int[cap];
@@ -22,15 +23,17 @@ public class HeapAllConceptsPrince {
     }
 
     public void insert(int value){
+
         if(size==capacity)
             System.out.println("Heap is full");
         arr[size++]=value;
         heapifyUp(size-1);
-        //TC:O(logn)
+        //TC:O(log n)
         //SC:O(1) as we are using already present array.
     }
 
     private void heapifyUp(int index) {
+
         while(index!=0 && arr[(index-1)/2]>arr[index]){
             int temp=arr[(index-1)/2];
             arr[(index-1)/2]=arr[index];
@@ -42,6 +45,7 @@ public class HeapAllConceptsPrince {
     }
 
     private void print(){
+
         System.out.println("Heap is: ");
         for(int i=0;i<=size/2-1;i++){
             System.out.println("Parent is : "+ arr[i]);
@@ -53,6 +57,7 @@ public class HeapAllConceptsPrince {
     }
 
     public int getMin(){
+
         if(size==0)
             return -1;
         return arr[0];
@@ -75,6 +80,7 @@ public class HeapAllConceptsPrince {
     }
 
     private static void heapifyTopToBottom(int index) {
+
         int left=2*index+1;
         int right=2*index+2;
         int smallest=index;
@@ -95,6 +101,7 @@ public class HeapAllConceptsPrince {
     }
 
     private void decreaseKey(int index, int value) {
+
         if(index==capacity)
             System.out.println("Cannot insert");
         arr[index]=value;
@@ -104,6 +111,7 @@ public class HeapAllConceptsPrince {
     }
 
     private void deleteKey(int index) {
+
         decreaseKey(index,-Integer.MIN_VALUE);
         extractMin();
         //TC:O(log n)
@@ -111,6 +119,7 @@ public class HeapAllConceptsPrince {
     }
 
     public static void main(String[] args) {
+
         HeapAllConceptsPrince h=new HeapAllConceptsPrince(10);
         h.insert(4);
         h.insert(10);

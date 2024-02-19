@@ -2,8 +2,11 @@ package leetcode.heap.codehelp;
 
 import java.util.LinkedList;
 import java.util.Queue;
+
 public class L75ConvertBSTToMinHeap {
+
     Node root=null;
+
     public static void main(String[] args) {
 
         L75ConvertBSTToMinHeap tree=new L75ConvertBSTToMinHeap();
@@ -23,7 +26,7 @@ public class L75ConvertBSTToMinHeap {
         int[] index=new int[]{0};
 
         //Steps:
-        //1. Find inorder of BST which be default is sorted
+        //1. Find inorder of BST which by default is sorted
         //2. based on two conditions N<L and N<R which is of min heap
         // and L<R from question so the equation is N<L<R which is same as converting inorder result to preorder traversal
 
@@ -36,11 +39,13 @@ public class L75ConvertBSTToMinHeap {
 
         System.out.println();
         System.out.println("========================");
+
         //Print using level order
         levelOrder(tree.root);
     }
 
     public static void levelOrder(Node root) {
+
         if(root==null)
             return;
         else {
@@ -59,6 +64,7 @@ public class L75ConvertBSTToMinHeap {
     }
 
     private static void preorder(Node root, int[] arr, int[] newIndex) {
+
         if(root==null)
             return;
         root.value=arr[newIndex[0]++];
@@ -67,6 +73,7 @@ public class L75ConvertBSTToMinHeap {
     }
 
     public static int countNode(Node root) {
+
         if(root==null)
             return 0;
         int left=countNode(root.left);
@@ -75,6 +82,7 @@ public class L75ConvertBSTToMinHeap {
     }
 
     public static void inorder(Node root,int[] arr,int[] index){
+
         if(root==null)
             return;
         inorder(root.left,arr,index);

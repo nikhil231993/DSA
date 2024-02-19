@@ -17,20 +17,22 @@ public class CircularQueue {
 	}
 
 	public boolean isEmpty() {
+
 		if (this.rear == -1)
 			return true;
 		return false;
 	}
 
 	public boolean isFull() {
+
 		if (this.rear + 1 == this.front)
 			return true;
 		else if (this.rear == this.arr.length - 1 && this.front == 0)
 			return true;
 		else
 			return false;
-
 	}
+
 	public int queueFront() {
 		
 		if(isEmpty()) {
@@ -66,11 +68,12 @@ public class CircularQueue {
 		int removed=this.arr[this.front];
 		if(this.front == this.arr.length-1) {
 			this.front = 0;
+		}else if (this.front == this.rear) { // if there is only 1 element in Queue
+				this.front = this.rear = -1;
 		} else {
 			this.front++;
 		}
 
 		return removed;
 	}
-
 }

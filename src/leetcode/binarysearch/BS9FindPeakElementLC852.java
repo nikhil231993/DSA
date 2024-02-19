@@ -3,6 +3,7 @@ package leetcode.binarysearch;
 public class BS9FindPeakElementLC852 {
 
     public static void main(String[] args) {
+
         int[] arr=new int[]{0,10,5,2};
         System.out.println(peakIndexInMountainArray(arr));
     }

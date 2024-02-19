@@ -1,10 +1,10 @@
 package revision.queue;
 
-public class CircularQueueMain {
+public class CircularQueueUsingModuloMain {
 
 	public static void main(String[] args) {
 
-		CircularQueue queue = new CircularQueue();
+		CircularQueueUsingModulo queue = new CircularQueueUsingModulo();
 
 		System.out.println("Before adding elements :"+queue.isEmpty());
 		System.out.println("Before adding elements queueFront: ");

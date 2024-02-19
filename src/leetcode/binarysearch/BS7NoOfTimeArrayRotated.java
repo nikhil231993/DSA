@@ -3,6 +3,7 @@ package leetcode.binarysearch;
 public class BS7NoOfTimeArrayRotated {
 
     public static void main(String[] args) {
+
         int n = 13;
         int[] arr =new int[] { 66, 67, 7, 10 ,14, 19, 27, 33, 36, 40, 44, 54, 60};
         System.out.println(findKRotation(arr,n));
@@ -39,6 +40,7 @@ public class BS7NoOfTimeArrayRotated {
             }
         }
         return index;
+
         //TC:O(log n)
         //SC:O(1)
     }

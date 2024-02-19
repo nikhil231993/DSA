@@ -17,7 +17,9 @@ class NodeValue1{
     }
 }
 public class LC632SmallestRangeFromKList {
+
     public static void main(String[] args) {
+
         List<List<Integer>> arr=new ArrayList<>();
         List<Integer> a1= Arrays.asList(4, 10, 15,24,26);
         List<Integer> a2= Arrays.asList(0,9, 12, 20);
@@ -25,6 +27,9 @@ public class LC632SmallestRangeFromKList {
         arr.add(a1);
         arr.add(a2);
         arr.add(a3);
+
+        //Approach 1 : Brute force
+        // Try all ranges and compare the diff of each list
 
         //Approach 3
         int[] res=smallestRange(arr);
@@ -41,9 +46,10 @@ public class LC632SmallestRangeFromKList {
         PriorityQueue<NodeValue1> pq=new PriorityQueue<>((a, b)->a.value-b.value);
 
         for(int i=0;i<k;i++){
+
             NodeValue1 node=new NodeValue1(nums.get(i).get(0),0,i);
-            min=Math.min(min,nums.get(i).get(0));
-            max=Math.max(max,nums.get(i).get(0));
+            min=Math.min(min, node.value);
+            max=Math.max(max, node.value);
             pq.offer(node);
         }
 
@@ -51,6 +57,7 @@ public class LC632SmallestRangeFromKList {
         int end=max;
 
         while(!pq.isEmpty()){
+
             NodeValue1 temp=pq.poll();
             min=temp.value;
 
@@ -67,6 +74,7 @@ public class LC632SmallestRangeFromKList {
             }
         }
         return new int[]{start,end};
+
         //TC:O(n*k log k)
         //SC:O(log k)
     }

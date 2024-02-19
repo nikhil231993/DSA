@@ -10,6 +10,7 @@ public class BS3CountOccurences {
         System.out.println(result[1]-result[0]+1);
     }
     public static int[] searchRange(int[] nums, int target) {
+
         int first=firstOccurrence(nums,target);
         int last=lastOccurrence(nums,target);
         return new int[]{first,last};

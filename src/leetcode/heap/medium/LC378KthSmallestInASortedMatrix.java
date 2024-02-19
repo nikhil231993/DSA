@@ -1,10 +1,14 @@
 package leetcode.heap.medium;
 
 import java.util.PriorityQueue;
+
 public class LC378KthSmallestInASortedMatrix {
+
     public static void main(String[] args) {
-        int[][] matrix =new int[][] {{1,5,9},{10,11,13},{12,13,15}};
-        int k = 8;
+
+        int[][] matrix =new int[][] {{1,5,9},{10,12,13},{13,13,15}};
+        int k = 5;
+
         //Approach 1:
         System.out.println(kthSmallest(matrix,k));
 
@@ -13,6 +17,7 @@ public class LC378KthSmallestInASortedMatrix {
     }
 
     private static int KthSmallestUsingBinarySearch(int[][] matrix,int k) {
+
         int size=matrix.length;
         int lowest=matrix[0][0];
         int highest=matrix[size-1][size-1];
@@ -29,6 +34,7 @@ public class LC378KthSmallestInASortedMatrix {
     }
 
     private static int countLessOrEqual(int mid, int[][] matrix, int k) {
+
         int i=matrix.length-1;
         int j=0;
         int count=0;
@@ -59,6 +65,5 @@ public class LC378KthSmallestInASortedMatrix {
         return pq.peek();
         //TC:O(n square log k)
         //SC:O(k)
-
     }
 }

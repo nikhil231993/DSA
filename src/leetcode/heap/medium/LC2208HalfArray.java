@@ -4,6 +4,7 @@ import java.util.PriorityQueue;
 public class LC2208HalfArray {
 
     public static void main(String[] args) {
+
         int[]  nums =new int[] {5,19,8,1};
         System.out.println(halveArray(nums));
     }
@@ -29,6 +30,7 @@ public class LC2208HalfArray {
                 return count;
         }
         return 0;
-
+        //TC:O(n log n)
+        //SC:O(n)
     }
 }

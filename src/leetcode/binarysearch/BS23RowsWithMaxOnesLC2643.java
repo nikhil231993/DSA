@@ -3,6 +3,7 @@ package leetcode.binarysearch;
 public class BS23RowsWithMaxOnesLC2643 {
 
     public static void main(String[] args) {
+
         int[][] arr=new int[][]{{0,1,1},{0,1,1}};
         int n=2,m=3;
 
@@ -14,6 +15,7 @@ public class BS23RowsWithMaxOnesLC2643 {
     }
 
     private static int findInMatrix(int[][] arr, int n, int m) {
+
         int maxCount=Integer.MIN_VALUE;
         int rowIndex=-1;
         for(int i=0;i<n;i++){
@@ -34,6 +36,7 @@ public class BS23RowsWithMaxOnesLC2643 {
     }
 
     public static int rowWithMax1s(int arr[][], int n, int m) {
+
         int maxValue=0;
         int index=-1;
         for(int i=0;i<n;i++){
@@ -47,6 +50,7 @@ public class BS23RowsWithMaxOnesLC2643 {
     }
 
     public static int findSmallestOneIndex(int[] num, int m, int target){
+
         int low=0;
         int high=m-1;
         int ans=m;

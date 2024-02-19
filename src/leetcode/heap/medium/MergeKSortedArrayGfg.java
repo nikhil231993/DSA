@@ -16,6 +16,7 @@ class SubNode{
 }
 
 public class MergeKSortedArrayGfg {
+
     public static void main(String[] args) {
 
         int k=4;
@@ -32,6 +33,7 @@ public class MergeKSortedArrayGfg {
     }
 
     private static ArrayList<Integer> mergeUsingMinHeap(int[][] arr, int k) {
+
        PriorityQueue<Integer> pq=new PriorityQueue<>();
        ArrayList<Integer> list=new ArrayList<>();
         for(int i=0;i<arr.length;i++){
@@ -70,6 +72,7 @@ public class MergeKSortedArrayGfg {
         }//TC:O(k)
 
         while(!pq.isEmpty()){
+
             SubNode temp=pq.poll();
             result.add(temp.val);
             int arrPos= temp.arrPos;

@@ -1,7 +1,9 @@
 package leetcode.heap.medium;
 
 import java.util.*;
+
 class NodeString{
+
     int freq;
     String value;
 
@@ -12,6 +14,7 @@ class NodeString{
 }
 
 class NodeStr {
+
     int count;
     String str;
     public NodeStr(int count, String str) {
@@ -22,13 +25,19 @@ class NodeStr {
 public class LC692TopKFrequentWords {
 
     public static void main(String[] args) {
-        String[] words =new String[] {"the","day","is","sunny","the","the","the","sunny","is","is"};
-        int k = 4;
+
+        String[] words =new String[] {"the","day","is","sunny","the","the","the","sunny","is","is","is"};
+        int k = 3;
+
+        //Approach 1:
         System.out.println(topKFrequent(words,k));
+
+        //Approach 2:
         System.out.println(topKFrequentOptimised(words,k));
     }
 
     public static List<String> topKFrequent(String[] words, int k) {
+
         Map<String, Integer> map=new HashMap();
         for(String num:words){
             map.put(num, map.getOrDefault(num,0)+1);
@@ -48,10 +57,12 @@ public class LC692TopKFrequentWords {
             pq.poll();
             pq1.offer(new NodeString(freq, s));
         }
+
         List<String> result=new ArrayList();
         while(!pq1.isEmpty()){
             result.add(pq1.poll().value);
         }
+
         return result;
 
         //TC:O(n)+o(nlog k)
@@ -59,6 +70,7 @@ public class LC692TopKFrequentWords {
     }
 
     public static List<String> topKFrequentOptimised(String[] words, int k) {
+
         Map<String, Integer> map = new HashMap<>();
         for (String word : words) {
             map.put(word, map.getOrDefault(word, 0) + 1);
@@ -70,13 +82,17 @@ public class LC692TopKFrequentWords {
             if (pq.size() > k) {
                 pq.poll();
             }
-        }
+        } // O(n log k)
 
         List<String> ans = new ArrayList<>();
         while (!pq.isEmpty()) {
             ans.add(pq.poll().str);
         }
-        Collections.reverse(ans);
+
+        Collections.reverse(ans); //O(k log k)
         return ans;
+
+        //TC: O(n log k) + O(k log k)
+        //SC: O(2*k)
     }
 }

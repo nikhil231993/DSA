@@ -10,6 +10,7 @@ public class MinHeap {
     }
 
     public void insert(int value){
+
         if(currentLocation==arr.length){
             return;
         }
@@ -41,12 +42,14 @@ public class MinHeap {
 
 
     public int peek() {
+
         if(currentLocation==0)
             return -1;
         return arr[1];
     }
 
     public int remove() {
+
         if(currentLocation==0)
             return -1;
         int removed=arr[1];
@@ -58,6 +61,7 @@ public class MinHeap {
     }
 
     private void minHeapifyTopToBottom(int[] arr, int index) {
+
         if(index==currentLocation)
             return ;
 

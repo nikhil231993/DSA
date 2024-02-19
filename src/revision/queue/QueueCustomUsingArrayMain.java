@@ -3,7 +3,9 @@ package revision.queue;
 public class QueueCustomUsingArrayMain {
 
 	public static void main(String[] args) {
+
 		QueueCustomUsingArray queue = new QueueCustomUsingArray();
+
 		System.out.println("Before adding elements :"+queue.isEmpty());
 		System.out.println("Before adding elements queueFront: ");
 		System.out.println(queue.queueFront());
@@ -47,7 +49,6 @@ public class QueueCustomUsingArrayMain {
 
 		queue.queueEnqueue(804);
 		queue.display();
-
 	}
 
 }

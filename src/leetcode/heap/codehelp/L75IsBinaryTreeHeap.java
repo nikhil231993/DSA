@@ -1,6 +1,7 @@
 package leetcode.heap.codehelp;
 
 class Node{
+
     int value;
     Node left;
     Node right;
@@ -10,10 +11,11 @@ class Node{
         this.right=null;
     }
 }
-public class L75IsBinaryHeap {
-   Node root;
+public class L75IsBinaryTreeHeap {
+    private Node root;
     public static void main(String[] args) {
-        L75IsBinaryHeap tree=new L75IsBinaryHeap();
+
+        L75IsBinaryTreeHeap tree=new L75IsBinaryTreeHeap();
         tree.root=new Node(100);
         tree.root.left=new Node(90);
         tree.root.right=new Node(80);
@@ -34,6 +36,7 @@ public class L75IsBinaryHeap {
     }
 
     private static boolean isHeap(Node root) {
+
         if(root==null)
             return true;
         int totalNodes=countNode(root);
@@ -44,6 +47,7 @@ public class L75IsBinaryHeap {
     }
 
     private static boolean maxHeap(Node root) {
+
         if(root==null)
             return true;
         if(root.right==null && root.left==null)
@@ -71,6 +75,7 @@ public class L75IsBinaryHeap {
     }
 
     static int countNode(Node root) {
+
         if(root==null)
             return 0;
         else{

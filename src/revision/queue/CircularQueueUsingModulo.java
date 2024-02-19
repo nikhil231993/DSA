@@ -1,6 +1,6 @@
 package revision.queue;
 
-public class CircularQueueRevisionUsingModulo {
+public class CircularQueueUsingModulo {
 
 	private int[] arr;
 	int front = -1;
@@ -8,11 +8,13 @@ public class CircularQueueRevisionUsingModulo {
 
 	private static final int DEFAULT_SIZE = 5;
 
-	public CircularQueueRevisionUsingModulo() {
+	public CircularQueueUsingModulo() {
+
 		this(DEFAULT_SIZE);
 	}
 
-	public CircularQueueRevisionUsingModulo(int size) {
+	public CircularQueueUsingModulo(int size) {
+
 		this.arr = new int[size];
 	}
 
@@ -32,6 +34,7 @@ public class CircularQueueRevisionUsingModulo {
 	}
 
 	public void queueEnqueue(int value) {
+
 		if(isFull()) {
 			System.out.println("Queue is full cannot enqueue ");
 			return;
@@ -42,7 +45,6 @@ public class CircularQueueRevisionUsingModulo {
 		
 		this.rear=(this.rear+1)%this.arr.length;
 		this.arr[this.rear]=value;
-		
 	}
 
 	public boolean isFull() {
@@ -50,6 +52,7 @@ public class CircularQueueRevisionUsingModulo {
 	}
 
 	public int queueDequeue() {
+
 		if (isEmpty()) {
 			System.out.println("Cannot qeueue as the queue is empty ");
 			return -1;
@@ -61,8 +64,6 @@ public class CircularQueueRevisionUsingModulo {
 		} else {
 			front = (front + 1) % this.arr.length;
 		}
-
 		return removed;
 	}
-
 }

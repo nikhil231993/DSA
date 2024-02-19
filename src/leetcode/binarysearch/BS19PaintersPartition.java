@@ -37,6 +37,7 @@ public class BS19PaintersPartition {
     }
 
     public static boolean possible(int mid, ArrayList<Integer> a, int k) {
+
         int count = 1;
         int sum = 0;
         for (Integer num: a) {

@@ -1,15 +1,20 @@
 package leetcode.binarysearch;
 
 public class BS2LowerBound {
+
+    //Note: Smallest index/number which is greater than or equal to
+
     public static void main(String[] args) {
+
         int[] arr=new int[]{3,5,8,8,15,15,19};
         int x=19;
         System.out.println(lowerBound(arr,x));
     }
 
     private static int lowerBound(int[] arr, int x) {
+
         int low=0;
-        int ans=arr.length;//Return last hypothetical answer
+        int ans=arr.length;     //Return last hypothetical answer
         int high=arr.length-1;
         while(low<=high){
             int mid=low+(high-low)/2;

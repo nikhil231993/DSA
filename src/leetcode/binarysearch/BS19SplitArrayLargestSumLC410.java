@@ -3,12 +3,14 @@ package leetcode.binarysearch;
 public class BS19SplitArrayLargestSumLC410 {
 
     public static void main(String[] args) {
+
         int[] nums =new int[] {7,2,5,10,8};
         int k = 2;
         System.out.println(splitArray(nums,k));
     }
 
     public static int splitArray(int[] nums, int k) {
+
         int n=nums.length;
         int max=Integer.MIN_VALUE;
         int sum=0;
@@ -33,6 +35,7 @@ public class BS19SplitArrayLargestSumLC410 {
     }
 
     public static boolean possible(int mid, int[] a, int k) {
+
         int count = 1;
         int sum = 0;
         for (int i = 0; i < a.length; i++) {

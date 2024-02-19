@@ -8,6 +8,7 @@ class KthLargest {
     private int size=0;
     private PriorityQueue<Integer> pq=new PriorityQueue<>();
     public KthLargest(int k, int[] nums) {
+
         size=k;
         for(Integer n: nums){
             if(pq.size()<k)
@@ -20,6 +21,7 @@ class KthLargest {
     }
 
     public int add(int val) {
+
         if(pq.size()<size)
             pq.offer(val);
         else if(pq.size()==size && pq.peek()<=val)

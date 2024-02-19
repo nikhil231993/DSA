@@ -3,6 +3,7 @@ package leetcode.heap.medium;
 import java.util.PriorityQueue;
 
 public class LC1642FurthestBuildingYouCanReach {
+
     public static void main(String[] args) {
 
         int[] heights = new int[]{4,2,7,6,9,14,12};
@@ -12,7 +13,8 @@ public class LC1642FurthestBuildingYouCanReach {
     public static int furthestBuilding(int[] heights, int bricks, int ladders) {
 
         PriorityQueue<Integer> pq=new PriorityQueue();
-        for(int i=0;i< heights.length-1;i++){
+
+        for(int i=0;i < heights.length-1;i++){
             int gap=heights[i+1]-heights[i];
             if(gap>0)
                 pq.offer(gap);

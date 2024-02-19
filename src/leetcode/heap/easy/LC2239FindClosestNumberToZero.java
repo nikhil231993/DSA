@@ -14,14 +14,18 @@ class Node3 {
 public class LC2239FindClosestNumberToZero {
 
     public static void main(String[] args) {
+
        int[] nums =new int[] {-4,-2,1,4,8};
-       //Approach 1
+
+        //Approach 1
         System.out.println(findClosestNumber(nums));
+
         //Approach 2
         System.out.println(findClosestNumberHeap(nums));
 
     }
     public static int findClosestNumber(int[] nums) {
+
         Integer min=Integer.MAX_VALUE;
 
         int n=Integer.MIN_VALUE;;
@@ -34,11 +38,13 @@ public class LC2239FindClosestNumberToZero {
                 n=num;
             }
         return n;
+
         //TC:O(n)
         //SC:O(1)
     }
     
     public static int findClosestNumberHeap(int[] nums) {
+
         PriorityQueue<Node3> pq=new PriorityQueue<>((a,b)->
             a.diff==b.diff?a.value-b.value:b.diff-a.diff
         );

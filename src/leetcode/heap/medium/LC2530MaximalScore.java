@@ -5,10 +5,12 @@ import java.util.PriorityQueue;
 public class LC2530MaximalScore {
 
     public static void main(String[] args) {
+
        int[] nums =new int[] {10,10,10,10,10};
        int k = 5;
-        System.out.println(maxKelements(nums,k));
+       System.out.println(maxKelements(nums,k));
     }
+
     public static long maxKelements(int[] nums, int k) {
 
         PriorityQueue<Long> pq=new PriorityQueue<>((a, b)->Long.compare(b,a));

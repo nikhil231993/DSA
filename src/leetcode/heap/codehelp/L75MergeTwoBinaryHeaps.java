@@ -1,10 +1,13 @@
 package leetcode.heap.codehelp;
 
 public class L75MergeTwoBinaryHeaps {
+
     public static void main(String[] args) {
+
         int n = 4, m = 3;
         int a[] =new int[] {10, 5, 6, 2};
         int b[] = new int[] {12, 7, 9};
+
         //Approach 1
         //Merge to one array and Arrays.sort()  TC:O(nlogn)
 
@@ -17,6 +20,7 @@ public class L75MergeTwoBinaryHeaps {
     }
 
     public static int[] mergeHeaps(int[] a, int[] b, int n, int m) {
+
         int[] arr=new int[n+m];
         int i=0;
         for(Integer num: a){
@@ -32,12 +36,14 @@ public class L75MergeTwoBinaryHeaps {
     }
 
     public static void buildHeap(int[] arr, int size){
+
         for(int i=size/2-1;i>=0;i--){
             heapify(arr,size,i);
         }
     }
 
     public static void heapify(int[] arr, int size, int index){
+
         int largest=index;
         int left=2*index+1;
         int right=2*index+2;

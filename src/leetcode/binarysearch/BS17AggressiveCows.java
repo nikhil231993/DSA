@@ -5,6 +5,7 @@ import java.util.Arrays;
 public class BS17AggressiveCows {
 
     public static void main(String[] args) {
+
         int n=3,k=2;
         int[] arr=new int[]{1,2,3};
         System.out.println(aggressiveCows(arr,k));
@@ -13,6 +14,7 @@ public class BS17AggressiveCows {
     }
 
     public static int aggressiveCows(int[] stalls, int k) {
+
         Arrays.sort(stalls);
         int n=stalls.length;
         int low=1;
@@ -32,6 +34,7 @@ public class BS17AggressiveCows {
     }
 
     public static boolean canPlace(int pos, int[] stalls, int k){
+
         int count=1;
         int last=stalls[0];
         for(int i=1;i<stalls.length;i++){
