@@ -5,19 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/queue/striver/V3StackUsingOneQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/queue/striver/V3StackUsingTwoQueues.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/queue/striver/V4QueueUsingAmortisedStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/queue/striver/V4QueueUsingStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/stack/easy/LC20ValidParenthesis.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/queue/striver/QueueCustomUsingArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/queue/striver/QueueCustomUsingArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/queue/striver/QueueCustomUsingArrayUsingFront.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/queue/striver/QueueCustomUsingArrayUsingFront.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/queue/striver/QueueImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/queue/striver/V2QueueImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/striver/FixedStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/striver/FixedStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/striver/FixedStackDynamic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/striver/FixedStackDynamic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/striver/StackUsingArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/striver/V1StackUsingArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/striver/StackUsingLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/striver/StackUsingLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/easy/NextMinimum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/easy/NextSmaller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/easy/PreviousSmaller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/easy/PreviousSmaller.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,11 +44,11 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/Users/nikhilthulaseedharan/Nikhil/DSA/src/leetcode/queue/striver",
+    "last_opened_file_path": "C:/My_Personal_Workspace/BuildingLogic/DSA/DSA",
     "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "build.tools"
+    "settings.editor.selected.configurable": "editor.preferences.tabs"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -203,7 +192,7 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetcode/array/easy/LC1TwoSum.java</url>
-          <line>9</line>
+          <line>10</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -218,12 +207,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetcode/binarysearch/easy/LC69SquareRootX.java</url>
-          <line>13</line>
+          <line>15</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetcode/binarysearch/easy/LC1351CountNegativeNumbersInGrid.java</url>
-          <line>17</line>
+          <line>18</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -393,12 +382,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetcode/heap/MinHeap.java</url>
-          <line>64</line>
+          <line>68</line>
           <option name="timeStamp" value="134" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetcode/heap/HeapAllConceptsPrince.java</url>
-          <line>60</line>
+          <line>65</line>
           <option name="timeStamp" value="138" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -433,32 +422,32 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetcode/binarysearch/BS2LowerBound.java</url>
-          <line>18</line>
+          <line>23</line>
           <option name="timeStamp" value="150" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetcode/binarysearch/BS2UpperBound.java</url>
-          <line>16</line>
+          <line>17</line>
           <option name="timeStamp" value="151" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetcode/binarysearch/BS3FirstAndLastPositionLC34.java</url>
-          <line>31</line>
+          <line>35</line>
           <option name="timeStamp" value="153" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetcode/binarysearch/BS7NoOfTimeArrayRotated.java</url>
-          <line>14</line>
+          <line>15</line>
           <option name="timeStamp" value="154" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetcode/binarysearch/BS18AllocateBooks.java</url>
-          <line>22</line>
+          <line>23</line>
           <option name="timeStamp" value="156" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetcode/binarysearch/BS18AllocateBooks.java</url>
-          <line>42</line>
+          <line>44</line>
           <option name="timeStamp" value="157" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -468,7 +457,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetcode/binarysearch/BS23RowsWithMaxOnesLC2643.java</url>
-          <line>57</line>
+          <line>61</line>
           <option name="timeStamp" value="160" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -508,47 +497,47 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetcode/binarysearch/medium/LC2226MaximumCandies.java</url>
-          <line>33</line>
+          <line>35</line>
           <option name="timeStamp" value="173" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetcode/binarysearch/medium/LC2226MaximumCandies.java</url>
-          <line>25</line>
+          <line>27</line>
           <option name="timeStamp" value="174" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetcode/binarysearch/medium/LC2226MaximumCandies.java</url>
-          <line>37</line>
+          <line>39</line>
           <option name="timeStamp" value="175" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetcode/binarysearch/medium/LC1870MinimumTime.java</url>
-          <line>16</line>
+          <line>19</line>
           <option name="timeStamp" value="179" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetcode/binarysearch/BS23RowsWithMaxOnesLC2643.java</url>
-          <line>42</line>
+          <line>45</line>
           <option name="timeStamp" value="180" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetcode/binarysearch/BS27MedianInRowWiseSortedArrayLCPremium.java</url>
-          <line>34</line>
+          <line>38</line>
           <option name="timeStamp" value="183" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetcode/heap/easy/LC387FirstUniqueCharacterInString.java</url>
-          <line>21</line>
+          <line>28</line>
           <option name="timeStamp" value="186" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetcode/heap/medium/LC658FindKClosestElements.java</url>
-          <line>30</line>
+          <line>31</line>
           <option name="timeStamp" value="187" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetcode/binarysearch/easy/LC633SumOfSquares.java</url>
-          <line>17</line>
+          <line>21</line>
           <option name="timeStamp" value="190" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -558,7 +547,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetcode/heap/medium/LC1642FurthestBuildingYouCanReach.java</url>
-          <line>19</line>
+          <line>21</line>
           <option name="timeStamp" value="194" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -633,12 +622,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetcode/binarysearch/BS13BouquetsLC1482.java</url>
-          <line>27</line>
+          <line>28</line>
           <option name="timeStamp" value="216" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetcode/binarysearch/BS13BouquetsLC1482.java</url>
-          <line>40</line>
+          <line>42</line>
           <option name="timeStamp" value="217" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -723,7 +712,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetcode/binarysearch/medium/LC1870MinimumTime.java</url>
-          <line>35</line>
+          <line>39</line>
           <option name="timeStamp" value="245" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
