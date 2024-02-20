@@ -15,6 +15,7 @@ public class FixedStack {
 	}
 
 	public void push(int data) {
+
 		if (isFull()) {
 			System.out.println("Stack is full");
 		}else {
@@ -22,38 +23,38 @@ public class FixedStack {
 		}
 	}
 	
-	
 	public boolean isFull() {
+
 		if (this.top == this.arr.length - 1)
 			return true;
 		return false;
 	}
 
 	public int pop() {
+
 		int value = 0;
 		if (isEmpty()) {
 			System.out.println("Stack is empty ");
 			return -1;
 		}
-
-			value = this.arr[this.top];
-			--this.top;
-			return value;
-
+		value = this.arr[this.top];
+		--this.top;
+		return value;
 	}
 
 	public boolean isEmpty() {
+
 		if (this.top == -1)
 			return true;
 		return false;
 	}
 
 	public int peek() {
+
 		if (isEmpty()) {
 			System.out.println("Stack is empty: ");
 			return -1;
 		}
 		return this.arr[top];
 	}
-
 }

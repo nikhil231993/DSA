@@ -15,6 +15,7 @@ public class StackUsingLinkedList {
 	}
 
 	public void push(int data) {
+
 		Node node = new Node(data);
 		node.next = head;
 		head = node;
@@ -40,5 +41,4 @@ public class StackUsingLinkedList {
 		}
 		return head.data;
 	}
-
 }

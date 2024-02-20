@@ -71,7 +71,7 @@ class QueueUsingArray {
 	}
 }
 
-public class QueueImpl {
+public class V2QueueImpl {
 
 	public static void main(String[] args) {
 

@@ -23,7 +23,7 @@ class Stack {
     }
 }
 
-public class StackUsingArray {
+public class V1StackUsingArray {
 
     public static void main(String[] args) {
 
