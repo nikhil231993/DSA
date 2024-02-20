@@ -43,6 +43,7 @@ public class PreviousSmaller {
     }
 
 	private static List<Integer> leftSmaller(int n, int a[]) {
+
 		Stack<Integer> st = new Stack();
 
 		int[] ans = new int[a.length];

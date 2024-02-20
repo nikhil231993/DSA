@@ -5,8 +5,10 @@ import java.util.Stack;
 public class NextGreater {
 
     public static void main(String[] args) {
+
         int[] nums=new int[]{1,8,7,4,5,6,3,29,90};
         Stack<Integer> st=new Stack<>();
+
         findNextGreater(nums, st);
         for(int n:nums)
             System.out.println(n);
