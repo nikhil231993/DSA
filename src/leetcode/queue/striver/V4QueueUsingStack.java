@@ -45,7 +45,7 @@ class MyQueue {
     }
 }
 
-public class V4BruteQueueUsingStack {
+public class V4QueueUsingStack {
 
     public static void main(String[] args) {
 

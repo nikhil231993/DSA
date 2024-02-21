@@ -52,6 +52,7 @@ public class QueueCustomUsingArray {
 		for (int i = 0; i <= top; i++) {
 			System.out.print(arr[i] + " ");
 		}
+
 	}
 
 	public int queueDequeue() {
@@ -72,4 +73,5 @@ public class QueueCustomUsingArray {
 
 		return value;
 	}
+
 }

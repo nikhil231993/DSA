@@ -14,7 +14,6 @@ public class PreviousSmaller {
 
 		// Approach 1
         findPrevMinimumOfEachElement(nums,st);
-
         for(int n: nums)
             System.out.println(n);
 

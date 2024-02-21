@@ -23,6 +23,7 @@ public class V54TwoStack {
         if(top2-top1>1){
             arr[++top1]=num;
         }
+
     }
 
     // Push in stack 2.
@@ -31,6 +32,7 @@ public class V54TwoStack {
         if(top2-top1>1){
             arr[--top2]=num;
         }
+
     }
 
     // Pop from stack 1 and return popped element.
@@ -39,6 +41,7 @@ public class V54TwoStack {
         if(top1>-1)
             return this.arr[top1--];
         return -1;
+
     }
 
     // Pop from stack 2 and return popped element.
@@ -46,6 +49,8 @@ public class V54TwoStack {
         // Write your code here
         if(top2<size)
             return this.arr[top2++];
+
         return -1;
     }
+
 }

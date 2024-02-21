@@ -12,6 +12,7 @@ public class LC503NextGreaterElement2 {
 
 		for (int n : result)
 			System.out.println(n);
+
 	}
 
 	public static int[] nextGreaterElements(int[] nums) {

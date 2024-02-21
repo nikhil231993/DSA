@@ -13,7 +13,6 @@ public class NextSmaller {
         
 		// Approach 1
 		findNextMinimumOfEachElement(nums, new Stack<>());
-
         for(int i=0;i<nums.length;i++)
             System.out.println(nums[i]);
         

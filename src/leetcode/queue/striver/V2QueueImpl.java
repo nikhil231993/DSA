@@ -66,6 +66,7 @@ class QueueUsingArray {
 			System.out.println("Queue is Empty");
 			return -1;
 		}
+
 		return arr[this.front];
 	}
 }

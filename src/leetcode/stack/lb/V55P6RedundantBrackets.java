@@ -10,8 +10,8 @@ public class V55P6RedundantBrackets {
         System.out.println(findRedundantBrackets(s));
     }
 
-    public static boolean findRedundantBrackets(String s) {
-
+    public static boolean findRedundantBrackets(String s)
+    {
         Stack<Character> st=new Stack();
 
         for(int i=0; i<s.length(); i++){

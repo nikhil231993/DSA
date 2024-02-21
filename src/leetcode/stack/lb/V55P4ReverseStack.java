@@ -5,7 +5,6 @@ import java.util.Stack;
 public class V55P4ReverseStack {
 
     public static void reverseStack(Stack<Integer> stack) {
-
         if(stack.isEmpty())
             return;
         int num=stack.pop();
@@ -14,7 +13,6 @@ public class V55P4ReverseStack {
     }
 
     public static void insertAtBottom(Stack<Integer> st, int value){
-
         if(st.isEmpty()){
             st.push(value);
             return;

@@ -5,13 +5,13 @@ import java.util.Stack;
 public class V55P2DeleteMiddleElementFromStack {
 
     public static void deleteMiddle(Stack<Integer> inputStack, int N) {
+        // WRITE YOUR CODE HERE
 
         int[] count=new int[]{0};
         solve(inputStack, N, count);
     }
 
     public static void solve(Stack<Integer> st, int N, int[] count){
-
         if(count[0]==(N-1)/2){
             st.pop();
             return;
