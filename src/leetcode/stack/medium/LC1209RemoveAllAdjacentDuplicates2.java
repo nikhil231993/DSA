@@ -3,6 +3,7 @@ package leetcode.stack.medium;
 import java.util.Stack;
 
 class Node {
+
 	char key;
 	int value;
 
@@ -19,11 +20,10 @@ class Node {
 public class LC1209RemoveAllAdjacentDuplicates2 {
 
 	public static void main(String[] args) {
+
 		String s = "abcd";
 		int k = 2;
-
 		System.out.println(removeDuplicates(s, k));
-
 	}
 
 	public static String removeDuplicates(String s, int k) {
@@ -31,12 +31,14 @@ public class LC1209RemoveAllAdjacentDuplicates2 {
 		Stack<Node> stack = new Stack<Node>();
 
 		for (int i = 0; i < s.length(); i++) {
-			if (stack.isEmpty() || s.charAt(i) != stack.peek().key) {
-				stack.push(new Node(s.charAt(i), 1));
+
+			Character ch=s.charAt(i);
+			if (stack.isEmpty() || ch != stack.peek().key) {
+				stack.push(new Node(ch, 1));
 			} else {
 				int val = stack.peek().value;
 				stack.pop();
-				stack.push(new Node(s.charAt(i), val + 1));
+				stack.push(new Node(ch, val + 1));
 			}
 			if (stack.peek().value == k)
 				stack.pop();
@@ -53,5 +55,4 @@ public class LC1209RemoveAllAdjacentDuplicates2 {
 		}
 		return sb.reverse().toString();
 	}
-
 }

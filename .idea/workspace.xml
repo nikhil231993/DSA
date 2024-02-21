@@ -1,31 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="7c1a2b64-49c9-429c-a174-3d776581a0e8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/stack/easy/LC1047RemoveAllAdjacentDuplicates.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/queue/striver/QueueCustomUsingArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/queue/striver/QueueCustomUsingArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/queue/striver/QueueCustomUsingArrayUsingFront.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/queue/striver/QueueCustomUsingArrayUsingFront.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/queue/striver/V2QueueImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/queue/striver/V2QueueImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/queue/striver/V3StackUsingTwoQueues.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/queue/striver/V3BruteStackUsingTwoQueues.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/queue/striver/V4QueueUsingStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/queue/striver/V4BruteQueueUsingStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/easy/LC2287REarrangeCharacters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/easy/LC2287RearrangeCharacters.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/easy/NextGreater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/easy/NextGreater.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/easy/NextSmaller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/easy/NextSmaller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/easy/PreviousGreater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/easy/PreviousGreater.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/easy/PreviousSmaller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/easy/PreviousSmaller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/lb/V54TwoStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/lb/V54TwoStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/lb/V55P1ReverseStringUsingStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/lb/V55P1ReverseStringUsingStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/lb/V55P2DeleteMiddleElementFromStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/lb/V55P2DeleteMiddleElementFromStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/lb/V55P3InsertElementAtBootomOfStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/lb/V55P3InsertElementAtStackBottom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/lb/V55P4ReverseStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/lb/V55P4ReverseStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/lb/V55P5SortStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/lb/V55P5SortStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/lb/V55P6RedundantBrackets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/lb/V55P6RedundantBrackets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/medium/LC2289MakeArrayNonDecreasing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/medium/LC2289MakeArrayNonDecreasing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/medium/LC503NextGreaterElement2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/medium/LC503NextGreaterElement2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/medium/LC556NextGreaterElement3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/medium/LC556NextGreaterElement3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/striver/FixedStackUsingArrayMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/striver/FixedStackUsingArrayMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/hard/LC32LongestValidParenthesis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/hard/LC32LongestValidParenthesis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/hard/LC84LargestRectangleInHistogram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/hard/LC84LargestRectangleInHistogram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/medium/LC1209RemoveAllAdjacentDuplicates2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/medium/LC1209RemoveAllAdjacentDuplicates2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +25,10 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/leetcode/graph/G5BFS.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/leetcode/string/easy/LC796RotateString.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -62,13 +50,26 @@
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.LC503NextGreaterElement2">
-    <configuration name="LC20ValidParenthesis" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.stack.easy.LC20ValidParenthesis" />
-      <module name="learningLogic" />
+  <component name="RunManager" selected="Application.LC1047RemoveAllAdjacentDuplicates">
+    <configuration name="LC1047RemoveAllAdjacentDuplicates" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.stack.easy.LC1047RemoveAllAdjacentDuplicates" />
+      <module name="DSA" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="leetcode.stack.easy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LC1209RemoveAllAdjacentDuplicates2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.stack.medium.LC1209RemoveAllAdjacentDuplicates2" />
+      <module name="DSA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.stack.medium.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,10 +118,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LC1047RemoveAllAdjacentDuplicates" />
+        <item itemvalue="Application.LC1209RemoveAllAdjacentDuplicates2" />
         <item itemvalue="Application.LC503NextGreaterElement2" />
         <item itemvalue="Application.LC2289MakeArrayNonDecreasing" />
         <item itemvalue="Application.NextSmaller" />
-        <item itemvalue="Application.LC20ValidParenthesis" />
       </list>
     </recent_temporary>
   </component>
@@ -154,7 +156,25 @@
           <line>32</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/stack/easy/LC1047RemoveAllAdjacentDuplicates.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="259" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/stack/easy/LC1047RemoveAllAdjacentDuplicates.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="260" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/learningLogic$LeadersInArray.ic" NAME="LeadersInArray Coverage Results" MODIFIED="1687583755703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>leetcode.array.medium.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/learningLogic$BS2InsertPosition.ic" NAME="BS2InsertPosition Coverage Results" MODIFIED="1694096783565" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>leetcode.binarysearch.*</FILTER>
+    </SUITE>
   </component>
 </project>

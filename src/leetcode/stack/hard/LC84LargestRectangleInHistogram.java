@@ -6,9 +6,9 @@ import java.util.Stack;
 public class LC84LargestRectangleInHistogram {
 
 	public static void main(String[] args) {
+
 		int[] arr = new int[] { 1, 1 };
 		System.out.println(largestRectangleArea(arr));
-
 	}
 
 	// Using increasing stack approach
@@ -52,6 +52,7 @@ public class LC84LargestRectangleInHistogram {
 	// Below is easy Hello world approach
 
 	public static int largestRectangleAreaHelloWorld(int[] arr) {
+
 		int n = arr.length;
 		Stack<Integer> leftMinStack = new Stack<Integer>();
 		Stack<Integer> rightMinStack = new Stack<Integer>();

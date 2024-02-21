@@ -11,6 +11,7 @@ public class LC32LongestValidParenthesis {
     }
 
     public static int longestValidParentheses(String s) {
+
         if(s==null || s.length()<2)
             return 0;
 
