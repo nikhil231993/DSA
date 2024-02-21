@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c1a2b64-49c9-429c-a174-3d776581a0e8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/stack/easy/LC1047RemoveAllAdjacentDuplicates.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/hard/LC32LongestValidParenthesis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/hard/LC32LongestValidParenthesis.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/hard/LC84LargestRectangleInHistogram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/hard/LC84LargestRectangleInHistogram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/medium/LC1209RemoveAllAdjacentDuplicates2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/medium/LC1209RemoveAllAdjacentDuplicates2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/.idea/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,8 +65,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC2288ApplyDiscounts" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.stack.medium.LC2288ApplyDiscounts" />
+    <configuration name="LC1209RemoveAllAdjacentDuplicates2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.stack.medium.LC1209RemoveAllAdjacentDuplicates2" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -81,8 +78,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC1209RemoveAllAdjacentDuplicates2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.stack.medium.LC1209RemoveAllAdjacentDuplicates2" />
+    <configuration name="LC2288ApplyDiscounts" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.stack.medium.LC2288ApplyDiscounts" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -150,9 +147,7 @@
       <list>
         <item itemvalue="Application.LC1047RemoveAllAdjacentDuplicates" />
         <item itemvalue="Application.LC1209RemoveAllAdjacentDuplicates2" />
-        <item itemvalue="Application.LC503NextGreaterElement2" />
         <item itemvalue="Application.LC2289MakeArrayNonDecreasing" />
-        <item itemvalue="Application.NextSmaller" />
       </list>
     </recent_temporary>
   </component>
@@ -735,6 +730,16 @@
           <line>8</line>
           <option name="timeStamp" value="258" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/stack/easy/LC1047RemoveAllAdjacentDuplicates.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="259" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/stack/easy/LC1047RemoveAllAdjacentDuplicates.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="260" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/leetcode/binarytree/Test.java</url>
           <line>5</line>
@@ -806,16 +811,6 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="220" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/leetcode/stack/easy/LC1047RemoveAllAdjacentDuplicates.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="259" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/leetcode/stack/easy/LC1047RemoveAllAdjacentDuplicates.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="260" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
