@@ -5,17 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/stack/lb/V54TwoStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/stack/lb/V55P1ReverseStringUsingStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/stack/lb/V55P2DeleteMiddleElementFromStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/stack/lb/V55P3InsertElementAtBootomOfStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/stack/lb/V55P4ReverseStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/stack/lb/V55P5SortStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/stack/lb/V55P6RedundantBrackets.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/stack/lb/V56P7MinimumCostToMakeStringValid.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/stack/medium/LC2390RemoveStarsFromString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/stack/easy/LC2287REarrangeCharacters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/stack/hard/LC32LongestValidParenthesis.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/stack/medium/LC2288ApplyDiscounts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/stack/medium/LC2289MakeArrayNonDecreasing.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/medium/LC739DailyTemperatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/medium/LC739DailyTemperatures.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +73,7 @@
       <recent name="leetcode.binarysearch.easy" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LC2390RemoveStarsFromString">
+  <component name="RunManager" selected="Application.LC32LongestValidParenthesis">
     <configuration name="BinomialCoefficient" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -95,12 +89,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC1249MinimumRemoveToMakeValdiParenthesis" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.string.medium.LC1249MinimumRemoveToMakeValdiParenthesis" />
+    <configuration name="LC2288ApplyDiscounts" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.stack.medium.LC2288ApplyDiscounts" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.string.medium.*" />
+          <option name="PATTERN" value="leetcode.stack.medium.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -108,12 +102,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC20ValidParenthesis" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.stack.easy.LC20ValidParenthesis" />
+    <configuration name="LC2289MakeArrayNonDecreasing" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.stack.medium.LC2289MakeArrayNonDecreasing" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.stack.easy.*" />
+          <option name="PATTERN" value="leetcode.stack.medium.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -134,12 +128,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="V55P6RedundantBrackets" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.stack.lb.V55P6RedundantBrackets" />
+    <configuration name="LC32LongestValidParenthesis" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.stack.hard.LC32LongestValidParenthesis" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.stack.lb.*" />
+          <option name="PATTERN" value="leetcode.stack.hard.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -162,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LC32LongestValidParenthesis" />
+        <item itemvalue="Application.LC2289MakeArrayNonDecreasing" />
+        <item itemvalue="Application.LC2288ApplyDiscounts" />
         <item itemvalue="Application.LC2390RemoveStarsFromString" />
         <item itemvalue="Application.V56P7MinimumCostToMakeStringValid" />
-        <item itemvalue="Application.LC1249MinimumRemoveToMakeValdiParenthesis" />
-        <item itemvalue="Application.V55P6RedundantBrackets" />
-        <item itemvalue="Application.LC20ValidParenthesis" />
       </list>
     </recent_temporary>
   </component>
