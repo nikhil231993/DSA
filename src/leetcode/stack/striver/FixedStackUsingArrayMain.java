@@ -26,5 +26,4 @@ public class FixedStackUsingArrayMain {
 		System.out.println(stack.isEmpty());
 
 	}
-
 }

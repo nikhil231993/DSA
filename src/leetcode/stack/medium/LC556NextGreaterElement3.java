@@ -6,7 +6,6 @@ public class LC556NextGreaterElement3 {
 
 		int n = 12;
 		System.out.println(nextGreaterElement(n));
-
 	}
 
 	public static int nextGreaterElement(int n) {

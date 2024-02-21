@@ -2,7 +2,7 @@ package leetcode.stack.lb;
 
 import java.util.Stack;
 
-public class V55P3InsertElementAtBootomOfStack {
+public class V55P3InsertElementAtStackBottom {
 
     public static Stack<Integer> pushAtBottom(Stack <Integer> myStack, int x)
     {

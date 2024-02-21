@@ -1,6 +1,6 @@
 package leetcode.stack.easy;
 
-public class LC2287REarrangeCharacters {
+public class LC2287RearrangeCharacters {
 
     public static void main(String[] args) {
 
@@ -10,6 +10,7 @@ public class LC2287REarrangeCharacters {
     }
 
     public static int rearrangeCharacters(String s, String target) {
+
         int[] freqs=findFreq(s);
         int[] freqt=findFreq(target);
 

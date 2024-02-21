@@ -5,11 +5,11 @@ import java.util.Stack;
 public class V55P5SortStack {
 
     public static void sortStack(Stack<Integer> stack) {
+
         if(stack.isEmpty())
             return;
         int num=stack.pop();
         sortStack(stack);
-
         sorting(stack, num);
     }
 

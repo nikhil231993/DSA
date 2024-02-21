@@ -45,7 +45,6 @@ public class QueueCustomUsingArrayUsingFront {
 
 		this.arr[++this.rear] = value;
 		System.out.println(value + " added into queue ");
-
 	}
 
 	public void display() {
@@ -58,7 +57,6 @@ public class QueueCustomUsingArrayUsingFront {
 		for (int i = this.front; i <= rear; i++) {
 			System.out.print(arr[i] + " ");
 		}
-
 	}
 
 	public int queueDequeue() {

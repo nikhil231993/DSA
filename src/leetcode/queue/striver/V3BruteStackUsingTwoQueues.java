@@ -43,7 +43,7 @@ class MyStack {
         return q1.isEmpty();
     }
 }
-public class V3StackUsingTwoQueues {
+public class V3BruteStackUsingTwoQueues {
 
     public static void main(String[] args) {
 
