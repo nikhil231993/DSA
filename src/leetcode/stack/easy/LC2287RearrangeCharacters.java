@@ -1,6 +1,6 @@
 package leetcode.stack.easy;
 
-public class LC2287REarrangeCharacters {
+public class LC2287RearrangeCharacters {
 
     public static void main(String[] args) {
 
