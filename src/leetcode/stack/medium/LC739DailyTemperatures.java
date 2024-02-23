@@ -5,29 +5,31 @@ import java.util.Stack;
 public class LC739DailyTemperatures {
 
 	public static void main(String[] args) {
+
 		int[] temperatures =new int[] {73,74,75,71,69,72,76,73};
 		int[] result = dailyTemperatures(temperatures);
 		for (int x : result)
 			System.out.println(x);
-
 	}
 
-	public static int[] dailyTemperatures(int[] temperatures) {
-        Stack<Integer> stack=new Stack();
-        int[] ans=new int[temperatures.length];
-        for(int i=temperatures.length-1;i>=0;i--){
+    public static int[] dailyTemperatures(int[] temperatures) {
 
-            while(!stack.isEmpty() && temperatures[i]>=temperatures[stack.peek()]) {
-                    stack.peek();
-                }
-            if(!stack.isEmpty()){
-                ans[i]=stack.peek()-i;
+        int n=temperatures.length;
+
+        Stack<Integer> st=new Stack();
+        int[] ans=new int[n];
+
+        for(int i=0; i<n; i++){
+
+            while(!st.isEmpty() && temperatures[st.peek()] < temperatures[i]){
+                ans[st.peek()]=i-st.peek();
+                st.pop();
             }
-            stack.push(i);
+            st.push(i);
         }
- return ans;    
- //SC:O(n)
- //TC:O(n)   
-	}
+        return ans;
 
+        //TC:O(n)
+        //SC:O(n)
+    }
 }

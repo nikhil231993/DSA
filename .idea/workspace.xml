@@ -5,7 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72d35191-61fd-46f6-abe8-9b648fcd26f6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/leetcode/stack/easy/LC1299ReplaceElementsWithGreatestRightSide.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/stack/easy/LC682BaseBallGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/stack/medium/LC160ReversePolishNotations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/stack/medium/LC316RemoveDuplicateLetters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/stack/medium/LC395DecodeString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/stack/medium/LC402RemoveKDigits.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/stack/medium/LC581ShortestUnsortedContinuousSubarray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/stack/medium/LC856ScoreParentheses.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/stack/medium/LC946ValidateStackSequences.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/math/hard/LC224BasicCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/math/hard/LC224BasicCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/hard/LC84LargestRectangleInHistogram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/hard/LC84LargestRectangleInHistogram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/medium/LC739DailyTemperatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/medium/LC739DailyTemperatures.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/string/medium/LC227BasicCalculator2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/medium/LC227BasicCalculator2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,22 +63,9 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.V55P1ReverseStringUsingStack">
-    <configuration name="LC1047RemoveAllAdjacentDuplicates" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.stack.easy.LC1047RemoveAllAdjacentDuplicates" />
-      <module name="DSA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.easy.array.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LC1209RemoveAllAdjacentDuplicates2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.stack.medium.LC1209RemoveAllAdjacentDuplicates2" />
+  <component name="RunManager" selected="Application.LC160ReversePolishNotations">
+    <configuration name="LC160ReversePolishNotations" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.stack.medium.LC160ReversePolishNotations" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -77,8 +77,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC2289MakeArrayNonDecreasing" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.stack.medium.LC2289MakeArrayNonDecreasing" />
+    <configuration name="LC224BasicCalculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.math.hard.LC224BasicCalculator" />
+      <module name="DSA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.math.hard.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LC395DecodeString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.stack.medium.LC395DecodeString" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -90,12 +103,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="V55P1ReverseStringUsingStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.stack.lb.V55P1ReverseStringUsingStack" />
+    <configuration name="LC739DailyTemperatures" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.stack.medium.LC739DailyTemperatures" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.stack.lb.*" />
+          <option name="PATTERN" value="leetcode.stack.medium.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -103,12 +116,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="V56P7MinimumCostToMakeStringValid" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.stack.lb.V56P7MinimumCostToMakeStringValid" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.stack.Test" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.stack.lb.*" />
+          <option name="PATTERN" value="leetcode.stack.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -118,10 +131,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.V55P1ReverseStringUsingStack" />
-        <item itemvalue="Application.LC1047RemoveAllAdjacentDuplicates" />
-        <item itemvalue="Application.LC1209RemoveAllAdjacentDuplicates2" />
-        <item itemvalue="Application.LC2289MakeArrayNonDecreasing" />
+        <item itemvalue="Application.LC160ReversePolishNotations" />
+        <item itemvalue="Application.LC224BasicCalculator" />
+        <item itemvalue="Application.LC739DailyTemperatures" />
+        <item itemvalue="Application.LC395DecodeString" />
+        <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -531,7 +545,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetcode/math/hard/LC224BasicCalculator.java</url>
-          <line>18</line>
+          <line>19</line>
           <option name="timeStamp" value="200" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -713,6 +727,26 @@
           <url>file://$PROJECT_DIR$/src/leetcode/stack/easy/LC1047RemoveAllAdjacentDuplicates.java</url>
           <line>18</line>
           <option name="timeStamp" value="260" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/stack/easy/LC682BaseBallGame.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="261" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/stack/medium/LC316RemoveDuplicateLetters.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="262" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/stack/medium/LC316RemoveDuplicateLetters.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="263" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/stack/medium/LC395DecodeString.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="265" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/leetcode/binarytree/Test.java</url>

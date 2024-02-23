@@ -11,6 +11,7 @@ public class LC227BasicCalculator2 {
 	}
 
 	public static int calculate(String s) {
+
 		int length = s.length();
 		if (length == 0) return 0;
 		Stack<Integer> stack=new Stack();
