@@ -2,7 +2,7 @@ package leetcode.stack.medium;
 
 import java.util.*;
 
-public class LC160ReversePolishNotations {
+public class LC150ReversePolishNotations {
 
     public static void main(String[] args) {
 
@@ -38,7 +38,6 @@ public class LC160ReversePolishNotations {
                 st.push(Integer.valueOf(tokens[i]));
             }
         }
-
         return st.pop();
     }
 }

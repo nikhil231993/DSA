@@ -12,10 +12,10 @@ public class LC503NextGreaterElement2 {
 
 		for (int n : result)
 			System.out.println(n);
-
 	}
 
 	public static int[] nextGreaterElements(int[] nums) {
+
 		Stack<Integer> st = new Stack();
 
 		int[] ans = new int[nums.length];
@@ -30,5 +30,4 @@ public class LC503NextGreaterElement2 {
 		}
 		return ans;
 	}
-
 }

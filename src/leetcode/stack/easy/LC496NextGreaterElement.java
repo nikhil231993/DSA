@@ -15,7 +15,6 @@ public class LC496NextGreaterElement {
 
 		for (int x : arr)
 			System.out.println(x);
-
 	}
 
 	public static int[] nextGreaterElement(int[] nums1, int[] nums2) {
@@ -34,5 +33,4 @@ public class LC496NextGreaterElement {
 		}
 		return result;
 	}
-
 }

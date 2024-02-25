@@ -3,7 +3,9 @@ package leetcode.graph;
 import java.util.*;
 
 public class G0Matrixbfsdfs {
+
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the no of Vertices");
         int n = scanner.nextInt();
@@ -39,6 +41,7 @@ public class G0Matrixbfsdfs {
     }
 
     private static void dfs(int[][] matrix, List<Integer> dfs, int node, int[] visited,int V) {
+
         visited[node] = 1;
         dfs.add(node);
         for (int i = 1;i<=V;i++) {
@@ -51,6 +54,7 @@ public class G0Matrixbfsdfs {
     }
 
     private static List<Integer> bfs(int[][] matrix, List<Integer> bfs, int node, int[] visited,int V) {
+
         int n = matrix.length;
         Queue<Integer> queue = new LinkedList<>();
         queue.add(node);
@@ -72,6 +76,7 @@ public class G0Matrixbfsdfs {
     }
 
     private static void convertMatrixToList(int[][] matrix, List<List<Integer>> adjList, int n, int m) {
+
         for (int i =0;i<=n;i++) {
             adjList.add(new ArrayList<>());
         }
@@ -91,6 +96,7 @@ public class G0Matrixbfsdfs {
     }
 
     private static void createMatrix(int[][] matrix, int m, int n, Scanner scanner) {
+        
         System.out.println("Enter Edge values");
         for (int i=1; i<=m ; i++) {
             int u = scanner.nextInt();

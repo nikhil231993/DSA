@@ -5,20 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72d35191-61fd-46f6-abe8-9b648fcd26f6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/stack/easy/LC1299ReplaceElementsWithGreatestRightSide.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/stack/easy/LC682BaseBallGame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/stack/medium/LC160ReversePolishNotations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/stack/medium/LC316RemoveDuplicateLetters.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/stack/medium/LC395DecodeString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/stack/medium/LC402RemoveKDigits.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/stack/medium/LC581ShortestUnsortedContinuousSubarray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/stack/medium/LC856ScoreParentheses.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/stack/medium/LC946ValidateStackSequences.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/stack/easy/LC2696MinimumString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/stack/hw/V13InfixToPostFix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/stack/hw/V15InfixToPrefix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/stack/hw/V16EvaluatePrefixExpression.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/stack/medium/LC901StockSpan.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/math/hard/LC224BasicCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/math/hard/LC224BasicCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/hard/LC84LargestRectangleInHistogram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/hard/LC84LargestRectangleInHistogram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/medium/LC739DailyTemperatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/medium/LC739DailyTemperatures.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/string/medium/LC227BasicCalculator2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/medium/LC227BasicCalculator2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G0Matrixbfsdfs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G0Matrixbfsdfs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/easy/LC496NextGreaterElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/easy/LC496NextGreaterElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/lb/V54TwoStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/lb/V54TwoStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/lb/V55P1ReverseStringUsingStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/lb/V55P1ReverseStringUsingStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/lb/V55P2DeleteMiddleElementFromStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/lb/V55P2DeleteMiddleElementFromStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/lb/V55P3InsertElementAtBootomOfStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/lb/V55P3InsertElementAtBottomOfStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/lb/V55P4ReverseStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/lb/V55P4ReverseStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/lb/V55P5SortStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/lb/V55P5SortStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/lb/V55P6RedundantBrackets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/lb/V55P6RedundantBrackets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/lb/V56P7MinimumCostToMakeStringValid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/lb/V56P7MinimumCostToMakeStringValid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/medium/LC160ReversePolishNotations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/medium/LC150ReversePolishNotations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/medium/LC503NextGreaterElement2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/medium/LC503NextGreaterElement2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,24 +57,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/My_Personal_Workspace/BuildingLogic/DSA/DSA&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/Users/nikhilthulaseedharan/Nikhil/DSA/src/leetcode/stack/hw",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "editor.preferences.tabs"
   }
-}</component>
-  <component name="RunManager" selected="Application.LC160ReversePolishNotations">
-    <configuration name="LC160ReversePolishNotations" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.stack.medium.LC160ReversePolishNotations" />
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/leetcode/stack/hw" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="leetcode.stack.lb" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.LC2696MinimumString">
+    <configuration name="InfixToPostFix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.stack.lb.InfixToPostFix" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.stack.medium.*" />
+          <option name="PATTERN" value="leetcode.stack.lb.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -77,12 +90,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC224BasicCalculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.math.hard.LC224BasicCalculator" />
+    <configuration name="InfixToPrefix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.stack.lb.InfixToPrefix" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.math.hard.*" />
+          <option name="PATTERN" value="leetcode.stack.lb.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -90,12 +103,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC395DecodeString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.stack.medium.LC395DecodeString" />
+    <configuration name="LC2696MinimumString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.stack.easy.LC2696MinimumString" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.stack.medium.*" />
+          <option name="PATTERN" value="leetcode.stack.easy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -103,12 +116,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC739DailyTemperatures" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.stack.medium.LC739DailyTemperatures" />
+    <configuration name="V16EvaluatePrefixExpression" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.stack.hw.V16EvaluatePrefixExpression" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.stack.medium.*" />
+          <option name="PATTERN" value="leetcode.stack.hw.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -116,12 +129,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.stack.Test" />
+    <configuration name="V56P7MinimumCostToMakeStringValid" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.stack.lb.V56P7MinimumCostToMakeStringValid" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.stack.*" />
+          <option name="PATTERN" value="leetcode.stack.lb.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -131,18 +144,18 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LC160ReversePolishNotations" />
-        <item itemvalue="Application.LC224BasicCalculator" />
-        <item itemvalue="Application.LC739DailyTemperatures" />
-        <item itemvalue="Application.LC395DecodeString" />
-        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.LC2696MinimumString" />
+        <item itemvalue="Application.V56P7MinimumCostToMakeStringValid" />
+        <item itemvalue="Application.V16EvaluatePrefixExpression" />
+        <item itemvalue="Application.InfixToPrefix" />
+        <item itemvalue="Application.InfixToPostFix" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6cf72ecf-d83c-4f86-ba62-bf2d3e743027" name="Changes" comment="" />
+      <changelist id="72d35191-61fd-46f6-abe8-9b648fcd26f6" name="Changes" comment="" />
       <created>1679209835549</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -245,7 +258,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetcode/graph/G0Matrixbfsdfs.java</url>
-          <line>53</line>
+          <line>57</line>
           <option name="timeStamp" value="87" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -747,6 +760,16 @@
           <url>file://$PROJECT_DIR$/src/leetcode/stack/medium/LC395DecodeString.java</url>
           <line>34</line>
           <option name="timeStamp" value="265" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/stack/hw/V16EvaluatePrefixExpression.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="271" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/stack/lb/V56P7MinimumCostToMakeStringValid.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="272" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/leetcode/binarytree/Test.java</url>
