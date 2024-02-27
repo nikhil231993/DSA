@@ -5,25 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72d35191-61fd-46f6-abe8-9b648fcd26f6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/stack/easy/LC2696MinimumString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/stack/hw/V13InfixToPostFix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/stack/hw/V15InfixToPrefix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/stack/hw/V16EvaluatePrefixExpression.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/stack/medium/LC901StockSpan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/stack/medium/LC1081SmallestSubsequenceDistinctCharacters.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/G0Matrixbfsdfs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/G0Matrixbfsdfs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/easy/LC496NextGreaterElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/easy/LC496NextGreaterElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/lb/V54TwoStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/lb/V54TwoStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/lb/V55P1ReverseStringUsingStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/lb/V55P1ReverseStringUsingStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/lb/V55P2DeleteMiddleElementFromStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/lb/V55P2DeleteMiddleElementFromStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/lb/V55P3InsertElementAtBootomOfStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/lb/V55P3InsertElementAtBottomOfStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/lb/V55P4ReverseStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/lb/V55P4ReverseStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/lb/V55P5SortStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/lb/V55P5SortStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/lb/V55P6RedundantBrackets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/lb/V55P6RedundantBrackets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/lb/V56P7MinimumCostToMakeStringValid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/lb/V56P7MinimumCostToMakeStringValid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/medium/LC160ReversePolishNotations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/medium/LC150ReversePolishNotations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/medium/LC503NextGreaterElement2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/medium/LC503NextGreaterElement2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/hw/V13InfixToPostFix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/hw/V13InfixToPostFix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/hw/V15InfixToPrefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/hw/V15InfixToPrefix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/medium/LC2288ApplyDiscounts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/medium/LC2288ApplyDiscounts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/medium/LC402RemoveKDigits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/medium/LC402RemoveKDigits.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/medium/LC856ScoreParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/medium/LC856ScoreParentheses.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,13 +64,13 @@
       <recent name="leetcode.stack.lb" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LC2696MinimumString">
-    <configuration name="InfixToPostFix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.stack.lb.InfixToPostFix" />
+  <component name="RunManager" selected="Application.V15InfixToPrefix">
+    <configuration name="LC1081SmallestSubsequenceDistinctCharacters" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.stack.medium.LC1081SmallestSubsequenceDistinctCharacters" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.stack.lb.*" />
+          <option name="PATTERN" value="leetcode.stack.medium.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -90,12 +78,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InfixToPrefix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.stack.lb.InfixToPrefix" />
+    <configuration name="LC402RemoveKDigits" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.stack.medium.LC402RemoveKDigits" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.stack.lb.*" />
+          <option name="PATTERN" value="leetcode.stack.medium.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -103,12 +91,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC2696MinimumString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.stack.easy.LC2696MinimumString" />
+    <configuration name="LC856ScoreParentheses" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.stack.medium.LC856ScoreParentheses" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.stack.easy.*" />
+          <option name="PATTERN" value="leetcode.stack.medium.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -116,8 +104,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="V16EvaluatePrefixExpression" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.stack.hw.V16EvaluatePrefixExpression" />
+    <configuration name="V13InfixToPostFix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.stack.hw.V13InfixToPostFix" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -129,12 +117,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="V56P7MinimumCostToMakeStringValid" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.stack.lb.V56P7MinimumCostToMakeStringValid" />
+    <configuration name="V15InfixToPrefix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.stack.hw.V15InfixToPrefix" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.stack.lb.*" />
+          <option name="PATTERN" value="leetcode.stack.hw.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -144,11 +132,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LC2696MinimumString" />
-        <item itemvalue="Application.V56P7MinimumCostToMakeStringValid" />
-        <item itemvalue="Application.V16EvaluatePrefixExpression" />
-        <item itemvalue="Application.InfixToPrefix" />
-        <item itemvalue="Application.InfixToPostFix" />
+        <item itemvalue="Application.V15InfixToPrefix" />
+        <item itemvalue="Application.V13InfixToPostFix" />
+        <item itemvalue="Application.LC856ScoreParentheses" />
+        <item itemvalue="Application.LC1081SmallestSubsequenceDistinctCharacters" />
+        <item itemvalue="Application.LC402RemoveKDigits" />
       </list>
     </recent_temporary>
   </component>
@@ -770,6 +758,16 @@
           <url>file://$PROJECT_DIR$/src/leetcode/stack/lb/V56P7MinimumCostToMakeStringValid.java</url>
           <line>35</line>
           <option name="timeStamp" value="272" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/stack/medium/LC402RemoveKDigits.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="275" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/stack/medium/LC402RemoveKDigits.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="276" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/leetcode/binarytree/Test.java</url>

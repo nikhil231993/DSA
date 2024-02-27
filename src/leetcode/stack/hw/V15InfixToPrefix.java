@@ -35,12 +35,12 @@ public class V15InfixToPrefix {
                 st.pop();
             }else{
 
-                if(!st.isEmpty() && V13InfixToPostFix.prec(ch)== V13InfixToPostFix.prec(st.peek()) &&
+                if(!st.isEmpty() && V13InfixToPostFix.prec(ch) == V13InfixToPostFix.prec(st.peek()) &&
                         V13InfixToPostFix.associativity(ch)=='L') {
                     st.push(ch);
                     continue;
                 }
-                while(!st.isEmpty() && V13InfixToPostFix.prec(ch)< V13InfixToPostFix.prec(st.peek()) &&
+                while(!st.isEmpty() && V13InfixToPostFix.prec(ch) < V13InfixToPostFix.prec(st.peek()) &&
                         V13InfixToPostFix.associativity(ch)=='L') {
                     result.append(st.pop());
                 }

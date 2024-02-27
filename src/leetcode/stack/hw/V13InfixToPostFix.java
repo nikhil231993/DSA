@@ -50,6 +50,7 @@ public class V13InfixToPostFix {
     }
 
     public static int prec(char ch){
+
         if(ch=='^')
             return 3;
         else if(ch=='+' || ch=='-')

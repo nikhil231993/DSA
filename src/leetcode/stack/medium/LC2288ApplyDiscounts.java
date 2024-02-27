@@ -6,7 +6,6 @@ public class LC2288ApplyDiscounts {
 
     public static void main(String[] args) {
 
-
         String sentence = "there are $1 $2 and 5$ candies in the shop";
         int discount = 50;
         System.out.println(discountPrices(sentence, discount));

@@ -6,7 +6,7 @@ public class LC402RemoveKDigits {
 
     public static void main(String[] args) {
 
-        String num = "1432219";
+        String num = "54321";
         int k = 3;
         System.out.println(removeKdigits(num, k));
     }
