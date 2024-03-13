@@ -1,7 +1,5 @@
 package leetcode.array.easy;
 
-import java.util.HashSet;
-
 public class LC1732FindHighestAltitude {
 
     public static void main(String[] args) {
@@ -13,6 +11,7 @@ public class LC1732FindHighestAltitude {
     }
 
     public static int largestAltitude(int[] gain) {
+
         int value=0;
         int sum=0;
         for(int i=0;i<gain.length;i++){
@@ -20,5 +19,8 @@ public class LC1732FindHighestAltitude {
             value=Math.max(value, sum);
         }
         return value;
+
+		// TC:O(n)
+		// SC:O(1)
     }
 }
