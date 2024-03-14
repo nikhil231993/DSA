@@ -3,6 +3,7 @@ package leetcode.array.easy;
 public class LC121BuySellStock1 {
 
 	public static void main(String[] args) {
+
 		int[] prices = new int[] { 7, 1, 5, 3, 6, 10 };
 
 		//Approach 1
@@ -10,7 +11,6 @@ public class LC121BuySellStock1 {
 
 		//Approach 2 Optimal
 		System.out.println(maxProfit(prices));
-
 	}
 
 	private static int maxProfitBrute(int[] prices) {
@@ -28,6 +28,7 @@ public class LC121BuySellStock1 {
 	}
 
 	private static int maxProfit(int[] prices) {
+
 		int minValue = Integer.MAX_VALUE;
 		int profit = 0;
 		for (int i = 0; i < prices.length; i++) {
@@ -36,8 +37,8 @@ public class LC121BuySellStock1 {
 			profit = Math.max(prices[i] - minValue,profit);
 		}
 		return profit;
+
 		//TC:O(n)
 		//SC:O(1)
 	}
-
 }

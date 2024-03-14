@@ -1,8 +1,16 @@
 package leetcode.array.easy;
 
 public class LC1464MaxProduct {
+
     public static void main(String[] args) {
+
         int[] nums =new int[] {3,4,5,2};
+
+        //Approach 1: User two for loops TC:O(n square)
+
+        //Approach 2: Sort and use two pointers from either end TC:O(nlogn) due to sorting
+
+        //Approach 3: Optimal
         System.out.println(maxProduct(nums));
     }
 
@@ -20,5 +28,7 @@ public class LC1464MaxProduct {
         }
         return (secMax-1)*(max-1);
 
+        //TC:O(n)
+        //SC:O(1)
     }
 }

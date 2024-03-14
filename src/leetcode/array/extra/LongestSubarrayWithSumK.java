@@ -6,17 +6,20 @@ import java.util.LinkedHashMap;
 public class LongestSubarrayWithSumK {
 
     public static void main(String[] args) {
+
         int[] arr=new int[]{1,2,3,1,1,1,1,0,0,0,4,2,3,0,0,0,0,0,0,0,0};
         int k=3;
+
         //Optimal works for both positive, zeroes and negative
         //For negative numbers below code is the optimal
         System.out.println(maxLength(arr,k));
 
-        //optimal which is two pointer for positive numbers
+        //Optimal which is two pointer for positive numbers only
         System.out.println(maxLen(arr,k));
     }
 
     private static int maxLen(int[] arr, int k) {
+
         int n=arr.length;
         int r=0;
         int l=0;
@@ -38,11 +41,13 @@ public class LongestSubarrayWithSumK {
             r++;
         }
         return len;
+
         //TC:O(2N)
         //SC:O(1)
     }
 
     private static int maxLength(int[] arr,int k) {
+
         int maxLen=0;
 
         HashMap<Integer,Integer> map=new LinkedHashMap<>();

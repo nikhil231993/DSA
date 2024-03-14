@@ -10,17 +10,17 @@ public class LC56MergeIntervals {
 
 		int[][] twoDim = new int[][] { { 1, 3 }, { 2, 6 }, { 8, 10 }, { 15, 18 } };
 
-		//brute
+		//Approach 1: brute (Not needed)
 		System.out.println(merge(twoDim));
 
-		//optimal
+		//Approach 2: optimal
 		int[][] r = mergeIntervals(twoDim);
 		for (int[] n : r)
 			System.out.println(n[0] + " " + n[1]);
-		
 	}
 
 	private static List<List<Integer>> merge(int[][] twoDim) {
+
 		int n=twoDim.length;
 		Arrays.sort(twoDim, (a, b) -> a[0] - b[0]);// nlog(n)
 
@@ -42,11 +42,13 @@ public class LC56MergeIntervals {
 			ans.add(Arrays.asList(start,end));
 		}
 		return ans;
+
 		//TC:O(nlogn) +O(2n) as we are not looping through each element for inner loop
 		//SC:O(n) in case none of them are overlapping
 	}
 
 	private static int[][] mergeIntervals(int[][] twoDim) {
+
 		List<int[]> res = new ArrayList<>();
 		Arrays.sort(twoDim, (a, b) -> a[0] - b[0]);// nlog(n)
 
@@ -66,7 +68,5 @@ public class LC56MergeIntervals {
 
 		// SC:O(1)
 		// TC:O(nlogn)+o(n)
-
 	}
-
 }

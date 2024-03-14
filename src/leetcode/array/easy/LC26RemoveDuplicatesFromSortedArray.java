@@ -4,7 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class LC26RemoveDuplicatesFromSortedArray {
+
 	public static void main(String[] args) {
+
 		int[] arr1 = new int[] { 1, 1, 2 };
 
 		//Approach 1 Brute
@@ -31,6 +33,7 @@ public class LC26RemoveDuplicatesFromSortedArray {
 				list.add(arr1[i]);
 		}
 		return list.stream().mapToInt(i->i).toArray();
+
 		//SC:O(n)
 		//TC:O(1)
 	}
@@ -50,5 +53,4 @@ public class LC26RemoveDuplicatesFromSortedArray {
 		//SC:O(1) we are using existing array
 		//TC:O(n)
 	}
-
 }

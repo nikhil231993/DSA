@@ -1,7 +1,9 @@
 package leetcode.array.extra;
 
 public class GfgLargestElement {
+
     public static void main(String[] args) {
+
         int n = 5;
         int A[] =new int[] {1, 8, 7, 56, 90};
         System.out.println(largest(A,n));
@@ -13,7 +15,8 @@ public class GfgLargestElement {
         for(Integer num:arr)
             max=Math.max(max,num);
         return max;
+
+        //SC:O(1)
+        //TC:O(n)
     }
-    //SC:O(1)
-    //TC:O(n
 }

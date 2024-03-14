@@ -6,13 +6,13 @@ import java.util.List;
 public class LC2149SortSignsUnequal {
 
     public static void main(String[] args) {
+
         int[] nums=new int[] {1,2,-3,-1,-2,-3,4};
 
         sort(nums);
 
         for(int n:nums)
             System.out.println(n);
-
     }
 
     private static void sort(int[] nums) {
@@ -20,12 +20,12 @@ public class LC2149SortSignsUnequal {
         int n=nums.length;
         List<Integer> pos=new ArrayList<>();
         List<Integer> neg=new ArrayList<>();
+
         for(int i=0;i<n;i++) {
             if (nums[i] < 0)
                 neg.add(nums[i]);
             else
                 pos.add(nums[i]);
-
         }
             if(pos.size()<neg.size()){
                 for(int i=0;i<pos.size();i++){
