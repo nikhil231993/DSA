@@ -3,12 +3,14 @@ package leetcode.array.medium;
 public class LC79WordSearch {
 
 	public static void main(String[] args) {
-		char[][] board = new char[][] { { 'A', 'B', 'C', 'E' }, { 'S', 'F', 'C', 'S' }, { 'A', 'D', 'E', 'E' } };
+
+		char[][] board = new char[][] { { 'A', 'B', 'C', 'E' },
+										{ 'S', 'F', 'C', 'S' },
+										{ 'A', 'D', 'E', 'E' } };
 		String word = "ABCCED";
 		int n=board.length;
 		int m=board[0].length;
 		System.out.println(mainSearch(n, m, board, word));
-
 	}
 
 	private static boolean mainSearch(int n, int m, char[][] board, String word) {
@@ -25,6 +27,7 @@ public class LC79WordSearch {
 	}
 
 	private static boolean search(int i, int j, int n, int m, char[][] board, String word, int k) {
+
 		if (k == word.length())
 			return true;
 		if(i<0||j<0||i>=n||j>=m||board[i][j]!=word.charAt(k))

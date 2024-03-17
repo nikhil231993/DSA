@@ -7,21 +7,22 @@ public class RepeatingAndMissingNumbers {
     public static void main(String[] args) {
         int[] num=new int[]{3,1,2,5,4,6,7,5};
 
-        //Brute
+        //Approach 1: Brute
         //Using two for loops
 
-        //Better
+        //Approach 2: Better
         int[] result=brute(num);
         for(int n:result)
             System.out.println(n);
 
-        //optimal
+        //Approach 3: Optimal
         int[] result1=optimal1(num);
         for(int n:result1)
             System.out.println(n);
     }
 
     private static int[] optimal1(int[] num) {
+
         int n= num.length;
         long s=0,sn=0;
         long s2=0,s2n=0;
@@ -41,7 +42,7 @@ public class RepeatingAndMissingNumbers {
         return new int[]{(int)repeating,(int)missing};
 
         //TC:O(n)
-        //SC:O(n)
+        //SC:O(1)
     }
 
     private static int[] brute(int[] num) {

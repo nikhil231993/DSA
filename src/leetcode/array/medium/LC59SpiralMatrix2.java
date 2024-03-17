@@ -9,7 +9,6 @@ public class LC59SpiralMatrix2 {
 		for(int[] rows:r)
 			for(int col:rows)
 				System.out.println(col);
-
 	}
 
 	public static int[][] spiralOrder(int n) {
@@ -40,16 +39,15 @@ public class LC59SpiralMatrix2 {
 			}
 			bottom--;
 			if (left <= right) {
-
 				for (int i = bottom; i >= top; i--) {
 					matrix[i][left] = ++value;
 				}
 				left++;
 			}
 		}
+		return matrix;
+
 		// SC:O(m*n)
 		// TC:O(m*n)
-		return matrix;
 	}
-
 }

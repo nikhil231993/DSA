@@ -6,6 +6,7 @@ import java.util.List;
 public class LC912MergeSort {
 
     public static void main(String[] args) {
+
         int[] nums = new int[]{5,1,1,2,0,0};
         int[] result=sortArray(nums);
         for(int n: result)
@@ -19,12 +20,14 @@ public class LC912MergeSort {
     }
 
     private static void mergeSort(int[] nums, int low, int high) {
+
         if(low>=high)
             return;
         int mid=low+(high-low)/2;
         mergeSort(nums,low,mid);
         mergeSort(nums,mid+1,high);
         merge(nums,low,mid,high);
+
         //TC:O(nlogn) 2 *Log n for mergeSort func + n for merge function
         //SC:O(n) temp array
     }

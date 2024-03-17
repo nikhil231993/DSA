@@ -8,15 +8,17 @@ import java.util.Map;
 public class LC287FindTheDuplicateNumber {
 
 	public static void main(String[] args) {
-		int[] nums = new int[] { 1, 3, 4, 2, 1 };
 
-		// System.out.println(duplicateNumber(nums));
-		//Below is the best approach
+		int[] nums = new int[] { 1, 3, 4, 2, 2 };
+
+		//Other approaches are mentioned but they all need extra space
+
+		//Approach 4: Optimal Below is the best approach
 		System.out.println(duplicateNumberUsingSlowAndFast(nums));
-
 	}
 
 	private static int duplicateNumberUsingSlowAndFast(int[] nums) {
+
 		int slow = nums[0];
 		int fast = nums[0];
 
@@ -35,7 +37,6 @@ public class LC287FindTheDuplicateNumber {
 
 		// TC:O(n)
 		// SC:O(1)
-
 	}
 
 	private static int duplicateNumber(int[] nums) {
@@ -51,23 +52,20 @@ public class LC287FindTheDuplicateNumber {
 
 		// SC:O(1)
 		// TC:O(n)
-
 	}
 
 	private static int duplicateNumberWithHashSet(int[] nums) {
 
 		 HashSet<Integer> set=new LinkedHashSet();
 		 for(int n:nums){
-		         if(set.contains(n))
-		             return n;
+			 if(set.contains(n))
+				 return n;
 		     set.add(n);
 		     }
 		     return -1;
-//		SC:O(n)
-//		TC:O(n)
 
-
-
+			//SC:O(n)
+			//TC:O(n)
 	}
 
 	private static int duplicateNumberWithHashMap(int[] nums) {
@@ -78,10 +76,8 @@ public class LC287FindTheDuplicateNumber {
 		        hm.put(n, hm.getOrDefault(n,0)+1);
 		     }
 		     int num=0;
-		     for( Map.Entry<Integer,Integer> entry: hm.entrySet())
-		     {
-		         if(entry.getValue()!=1)
-		         {
+		     for( Map.Entry<Integer,Integer> entry: hm.entrySet()) {
+		         if(entry.getValue()!=1) {
 		              num= entry.getKey();
 		             break;
 		         }
@@ -89,10 +85,5 @@ public class LC287FindTheDuplicateNumber {
 		     return num;
 		//SC:O(n)
 		//TC:O(n)
-
-
-
-
 	}
-
 }

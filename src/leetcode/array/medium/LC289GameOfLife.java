@@ -3,6 +3,7 @@ package leetcode.array.medium;
 public class LC289GameOfLife {
 
 	public static void main(String[] args) {
+
 		int[][] game = new int[][] { { 0, 1, 0 }, { 0, 0, 1 }, { 1, 1, 1 }, { 0, 0, 0 } };
 		
 		int n=game.length;
@@ -12,10 +13,10 @@ public class LC289GameOfLife {
 		for (int[] row : game)
 			System.out.println(row[0] + " " + row[1] + " " + row[2]);
 		System.out.println();
-
 	}
 
 	private static void game(int[][] game, int n, int m) {
+
 		int[] x_axis = new int[] { 0, 0, 1, 1, 1, -1, -1, -1 };
 		int[] y_axis = new int[] { 1, -1, 1, 0, -1, 1, 0, -1 };
 		
@@ -48,7 +49,5 @@ public class LC289GameOfLife {
 		}
 		// SC:O(i)
 		// TC:O(n2)
-
 	}
-
 }

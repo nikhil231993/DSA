@@ -30,6 +30,7 @@ public class LC349UnionOfTwoArrays {
     }
 
 	private static int[] findUnionBrute(int n, int m, int[] arr1, int[] arr2) {
+
 		Set<Integer> s = new LinkedHashSet<>();
 		for (int i = 0; i < n; i++) {
 			s.add(arr1[i]);

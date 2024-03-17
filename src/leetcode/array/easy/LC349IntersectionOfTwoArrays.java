@@ -24,7 +24,6 @@ public class LC349IntersectionOfTwoArrays {
         int m=nums2.length;
 
 		// Approach 1 Brute
-
 		int[] ans = uniqueBrute(n, m, nums1, nums2, new ArrayList<>());
 		for (int num : ans)
 			System.out.println(num);
