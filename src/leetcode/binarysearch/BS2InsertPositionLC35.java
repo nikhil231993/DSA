@@ -23,6 +23,7 @@ public class BS2InsertPositionLC35 {
             else low=mid+1;
         }
         return ans;
+
         //TC:O(log n)
         //SC:O(1)
         //Same as lower bound problem

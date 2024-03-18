@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class BS19PaintersPartition {
+
     public static void main(String[] args) {
 
         ArrayList<Integer> nums = new ArrayList<>(Arrays.asList(7,2,5,10,8));
@@ -50,6 +51,7 @@ public class BS19PaintersPartition {
         if (count <= k)
             return true;
         return false;
+
         //TC:O(log (sum-max+1))* O(n)
         //SC:O(1)
     }

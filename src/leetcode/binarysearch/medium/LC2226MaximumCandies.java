@@ -30,6 +30,7 @@ public class LC2226MaximumCandies{
 
     }
     public static boolean isPossible(int mid, int[] candies, long n){
+
         long count=0;
         for(int i=0;i<candies.length;i++){
             count+=candies[i]/mid;

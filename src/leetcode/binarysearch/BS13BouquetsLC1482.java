@@ -1,6 +1,7 @@
 package leetcode.binarysearch;
 
 public class BS13BouquetsLC1482 {
+
     public static void main(String[] args) {
 
         int[] bloomDay =new int[] {7,7,7,7,12,7,7};
@@ -10,6 +11,7 @@ public class BS13BouquetsLC1482 {
     }
 
     public static int minDays(int[] bloomDay, int m, int k) {
+
         int n=bloomDay.length;
         if(n< m*k)
             return -1;

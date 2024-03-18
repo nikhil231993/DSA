@@ -1,7 +1,9 @@
 package leetcode.binarysearch.medium;
 
 public class LC1760MinimumBallsInABag {
+
     public static void main(String[] args) {
+
         int[] nums =new int[] {2,4,8,2};
         int maxOperations = 4;
         System.out.println(minimumSize(nums,maxOperations));
@@ -34,6 +36,7 @@ public class LC1760MinimumBallsInABag {
     }
 
     public static boolean canSplit(int mid, int[] nums, int op){
+
         int count=0;
         int operations=0;
         for(int i=0;i<nums.length;i++){

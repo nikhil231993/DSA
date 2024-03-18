@@ -5,6 +5,7 @@ public class LC374GuessHigherOrLower {
     private static int pick=1;
     public static void main(String[] args) {
 
+
         int n=2;
         System.out.println(guessNumber(n));
     }
@@ -29,6 +30,7 @@ public class LC374GuessHigherOrLower {
     }
 
     private static int guess(int mid) {
+
         if(mid>pick)
             return -1;
         else if(mid<pick)

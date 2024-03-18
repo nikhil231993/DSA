@@ -42,7 +42,8 @@ public class BS5SearchInRotatedArray2LC81 {
                 }
             }
         }
-            return false;
+		return false;
+
         //TC:O(n/2) worst case, in case array has many duplicates as we keep on shrinking
         //SC:O(1)
     }

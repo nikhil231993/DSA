@@ -1,6 +1,7 @@
 package leetcode.binarysearch;
 
 import java.util.Arrays;
+
 public class BS17MagneticBallsLC1552 {
 
     public static void main(String[] args) {
@@ -43,6 +44,7 @@ public class BS17MagneticBallsLC1552 {
                 return true;
         }
         return false;
+
         //TC:nlog n +log(arr[n-1]-arr[0])*O(n)
         //SC:O(1)
     }

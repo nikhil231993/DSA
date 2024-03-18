@@ -1,11 +1,15 @@
 package leetcode.binarysearch.easy;
 
 public class LC1608SpecialArray {
+
     public static void main(String[] args) {
+
         int[] nums =new int[] {3,5};
         System.out.println(specialArray(nums));
     }
+
     public static int specialArray(int[] nums) {
+
         int low=0;
         int high=Integer.MIN_VALUE;
 
@@ -29,6 +33,7 @@ public class LC1608SpecialArray {
     }
 
     public static int find(int mid, int[] nums){
+
         int count=0;
         for(int i=0;i<nums.length;i++){
             if(nums[i] >= mid)
@@ -36,5 +41,4 @@ public class LC1608SpecialArray {
         }
         return count;
     }
-
 }

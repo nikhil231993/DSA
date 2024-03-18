@@ -24,6 +24,7 @@ public class LC1351CountNegativeNumbersInGrid {
             }
         }
         return count;
+
         //TC:O(m+n)
         //SC:O(1)
     }

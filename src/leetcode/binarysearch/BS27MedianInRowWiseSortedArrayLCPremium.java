@@ -52,6 +52,7 @@ public class BS27MedianInRowWiseSortedArrayLCPremium {
     }
 
     public static int upperBound(int[] num, int target){
+
         int low=0;
         int high=num.length-1;
         int ans=num.length;
@@ -66,6 +67,7 @@ public class BS27MedianInRowWiseSortedArrayLCPremium {
             }
         }
         return ans;
+
         //TC:log(max-min)*R *log C
     }
 }

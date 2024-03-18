@@ -3,6 +3,7 @@ package leetcode.binarysearch.easy;
 public class LC744SmallestLetterGreaterThanTarget {
 
     public static void main(String[] args) {
+
         char[] letters =new char[] {'c','f','j'};
         char target = 'a';
         System.out.println(nextGreatestLetter(letters,target));

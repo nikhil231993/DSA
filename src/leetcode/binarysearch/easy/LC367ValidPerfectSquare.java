@@ -1,12 +1,15 @@
 package leetcode.binarysearch.easy;
 
 public class LC367ValidPerfectSquare {
+
     public static void main(String[] args) {
+
         int num=9;
         System.out.println(num);
     }
 
     public static boolean isPerfectSquare(int num) {
+
         if(num==1)
             return true;
         int low=0;

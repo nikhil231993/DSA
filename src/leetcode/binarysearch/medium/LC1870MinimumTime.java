@@ -22,6 +22,7 @@ public class LC1870MinimumTime {
         total_hour_so_far += dist[dist.length - 1] / speed;
         return total_hour_so_far <= hour ? true : false;
     }
+
     public static int minSpeedOnTime(int[] dist, double hour) {
 
         int low = 1;

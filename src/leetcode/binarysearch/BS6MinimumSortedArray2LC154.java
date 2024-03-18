@@ -39,6 +39,7 @@ public class BS6MinimumSortedArray2LC154 {
             }
         }
         return ans;
+
         //TC:O(n/2)
         //SC:O(1)
     }

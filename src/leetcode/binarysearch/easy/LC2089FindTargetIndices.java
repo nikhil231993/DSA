@@ -7,14 +7,19 @@ import java.util.List;
 public class LC2089FindTargetIndices {
 
     public static void main(String[] args) {
-       int[] nums =new int[] {1,2,5,2,3};
-       int target = 2;
+
+		int[] nums = new int[] { 1, 2, 5, 2, 3 };
+		int target = 2;
+
+		// Approach 1: Brute
 		System.out.println(targetIndices(nums, target));
 
+		// Approach 2: Better
 		System.out.println(targetIndicesOptimised(nums, target));
     }
 
     public static List<Integer> targetIndices(int[] nums, int target) {
+
         List<Integer> list=new ArrayList();
         Arrays.sort(nums);
         for(int i=0;i<nums.length;i++){
@@ -30,15 +35,16 @@ public class LC2089FindTargetIndices {
 		Arrays.sort(nums);
 		int firstPosition = -1;
 		int lastPosition = -1;
+
 		firstPosition = firstOccurrence(nums, target);
 		lastPosition = lastOccurrence(nums, target);
+
 		if (lastPosition == -1 && firstPosition == -1)
 			return list;
 		for (int i = firstPosition; i <= lastPosition; i++)
 			list.add(i);
 
 		return list;
-
 	}
 
 	private static int lastOccurrence(int[] nums, int target) {
@@ -59,6 +65,7 @@ public class LC2089FindTargetIndices {
 			}
 		}
 		return ans;
+
 		// TC:O(log n)
 		// SC:O(1)
 	}
@@ -81,6 +88,7 @@ public class LC2089FindTargetIndices {
 			}
 		}
 		return ans;
+
 		// TC:O(log n)
 		// SC:O(1)
 	}

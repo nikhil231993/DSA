@@ -3,6 +3,7 @@ package leetcode.binarysearch.medium;
 public class CL162PeakInUnevenMountain {
 
     public static void main(String[] args) {
+
         int[] num=new int[]{1,2,1,3,5,6,4};
 
         System.out.println(peak(num));

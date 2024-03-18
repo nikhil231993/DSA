@@ -30,6 +30,7 @@ public class BS20MinimiseMaxGasDifference {
     }
 
     private static double minimiseMaxDistancePriorityQueue(int[] arr, int k) {
+
         int[] howMany=new int[arr.length-1];
         PriorityQueue<Node> pq=new PriorityQueue<>((a, b)->Double.compare(b.first, a.first));
 
@@ -101,6 +102,7 @@ public class BS20MinimiseMaxGasDifference {
     }
 
     public static int isPossible(double mid, int[] arr, int K){
+
         int count=0;
         for(int i=0;i<arr.length-1;i++){
             int no=(int)((arr[i+1]-arr[i])/mid);

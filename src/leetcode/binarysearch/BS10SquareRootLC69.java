@@ -7,6 +7,7 @@ public class BS10SquareRootLC69 {
         int x=28;
         System.out.println(mySqrt(x));
     }
+
     public static int mySqrt(int x) {
 
         int low=1;
@@ -22,6 +23,7 @@ public class BS10SquareRootLC69 {
             }
         }
         return ans;
+
         //TC:O(log n)
         //SC:O(1)
     }

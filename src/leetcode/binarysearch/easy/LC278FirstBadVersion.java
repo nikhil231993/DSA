@@ -3,10 +3,13 @@ package leetcode.binarysearch.easy;
 public class LC278FirstBadVersion {
 
     public static void main(String[] args) {
+
         int n = 5, bad = 4;
         System.out.println(firstBadVersion(n));
     }
+
     public static int firstBadVersion(int n) {
+
         int low=1;
         int high=n;
         int ans=-1;
@@ -22,6 +25,7 @@ public class LC278FirstBadVersion {
     }
 
     private static boolean isBadVersion(int mid) {
+
         if(mid==3)
             return false;
         else if(mid==4)

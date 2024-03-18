@@ -1,6 +1,7 @@
 package leetcode.binarysearch;
 
 public class BS3FirstAndLastPositionLC34 {
+
     public static void main(String[] args) {
 
         //Approach 1:
@@ -63,6 +64,7 @@ public class BS3FirstAndLastPositionLC34 {
             }
         }
         return ans;
+
         //TC:O(log n)
         //SC:O(1)
     }

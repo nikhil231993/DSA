@@ -1,6 +1,7 @@
 package leetcode.binarysearch;
 
 public class BS4SearchInRotatedArray1LC33 {
+
     public static void main(String[] args) {
 
         //NOTE: Index can be found using only linear search
@@ -37,6 +38,7 @@ public class BS4SearchInRotatedArray1LC33 {
             }
         }
         return -1;
+
         //TC:O(log n)
         //SC:O(1)
     }

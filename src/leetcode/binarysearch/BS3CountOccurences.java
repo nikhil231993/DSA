@@ -9,6 +9,7 @@ public class BS3CountOccurences {
         int[] result=searchRange(num,target);
         System.out.println(result[1]-result[0]+1);
     }
+
     public static int[] searchRange(int[] nums, int target) {
 
         int first=firstOccurrence(nums,target);
@@ -33,11 +34,13 @@ public class BS3CountOccurences {
             }
         }
         return ans;
+
         //TC:O(log n)
         //SC:O(1)
     }
 
     private static int firstOccurrence(int[] nums, int target) {
+
         int low=0;
         int high=nums.length-1;
         int ans=-1;
@@ -53,6 +56,7 @@ public class BS3CountOccurences {
             }
         }
         return ans;
+
         //TC:O(log n)
         //SC:O(1)
     }

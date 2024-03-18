@@ -13,7 +13,6 @@ public class LC69SquareRootX {
 
         int low=1;
         int high=x;
-        int ans=0;
         while(low<=high){
             int mid=low+(high-low)/2;
             if(mid==x/mid)
@@ -27,6 +26,7 @@ public class LC69SquareRootX {
         }
 //        return ans;
         return low-1;
+
         //TC:o(log n)
         //sc:o(1)
         //Reason for dividing x by m is to avoid the overflow. If we want to use

@@ -3,6 +3,7 @@ package leetcode.binarysearch.medium;
 public class LC74SearchMatrix {
 
     public static void main(String[] args) {
+
         int[][] matrix=new int[][]{{1,3,5,7},{10,11,16,20},{23,30,34,60}};
         System.out.println(search(matrix,13));
     }
@@ -23,7 +24,6 @@ public class LC74SearchMatrix {
                 start=mid+1;
             }
         }
-
         return false;
     }
 }

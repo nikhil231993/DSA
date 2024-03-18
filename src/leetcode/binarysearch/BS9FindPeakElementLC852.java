@@ -26,6 +26,7 @@ public class BS9FindPeakElementLC852 {
                 high=mid-1;
         }
         return -1;
+
         //TC:O(log n)
         //SC:o(1)
     }

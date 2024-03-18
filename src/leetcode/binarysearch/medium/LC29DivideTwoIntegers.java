@@ -3,6 +3,7 @@ package leetcode.binarysearch.medium;
 public class LC29DivideTwoIntegers {
 
     public static void main(String[] args) {
+
         int dividend = 10, divisor = 3;
 
         System.out.println(divideTwoIntegers(dividend,divisor));

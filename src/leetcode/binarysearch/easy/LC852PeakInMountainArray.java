@@ -1,6 +1,7 @@
 package leetcode.binarysearch.easy;
 
 public class LC852PeakInMountainArray {
+
     public static void main(String[] args) {
 
         int[] num=new int[]{1,2,3,4,5,6,7,8,6,5,4};
@@ -23,6 +24,7 @@ public class LC852PeakInMountainArray {
             }
         }
         return left;
+
         //TC:O(logn)
     }
 }
