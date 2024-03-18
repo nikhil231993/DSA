@@ -30,10 +30,11 @@ public class LC2824CountPairsLessThanTarget {
         }
         return count;
         //TC:O(n*n)
-        //sc:O(n
+		// SC:O(n)
     }
 
     public static int countPairsPointer(List<Integer> nums, int target) {
+
         Collections.sort(nums);
         int count=0;
         int left=0;
