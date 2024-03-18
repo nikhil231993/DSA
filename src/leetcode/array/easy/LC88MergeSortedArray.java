@@ -3,14 +3,16 @@ package leetcode.array.easy;
 public class LC88MergeSortedArray {
 
     public static void main(String[] args) {
+
         int[] arr1=new int[]{1,2,3,0,0,0};
         int[] arr2=new int[]{2,5,6};
 
+        //Approach 1: Brute
         int[] result=withExtraSpace(arr1,arr2);
         for(int n:result)
             System.out.println(n);
 
-        //optimal in constant space
+        //Approach 2: Optimal in constant space
         System.out.println("#############");
         optimal(arr1,arr2);
         for(int n:arr1)
@@ -18,6 +20,7 @@ public class LC88MergeSortedArray {
     }
 
     private static void optimal(int[] arr1, int[] arr2) {
+
         int n=arr1.length;
         int m=arr2.length;
         int left=m-1;
@@ -48,6 +51,7 @@ public class LC88MergeSortedArray {
     }
 
     private static int[] withExtraSpace(int[] arr1, int[] arr2) {
+
         int n=arr1.length;
         int m=arr2.length;
         int[] r=new int[n];
@@ -56,6 +60,7 @@ public class LC88MergeSortedArray {
         int right=0;
         int index=0;
         while(left<n && right<m ){
+
             if(arr1[left]==0)
                 break;
             if(arr1[left]>=arr2[right]){
@@ -72,5 +77,8 @@ public class LC88MergeSortedArray {
             right++;
         }
         return r;
+
+        //TC:O(n+m)
+        //SC:O(n+m)
     }
 }

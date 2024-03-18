@@ -6,12 +6,12 @@ import java.util.List;
 public class LC54SpiralMatrix {
 
 	public static void main(String[] args) {
+
 		int[][] matrix = new int[][] { { 1, 2, 3, 4 }, { 5, 6, 7, 8 }, { 9, 10, 11, 12 } };
 		
 		List<Integer> r = spiralOrder(matrix);
 
 		System.out.println(r);
-
 	}
 
 	public static List<Integer> spiralOrder(int[][] matrix) {
@@ -48,12 +48,10 @@ public class LC54SpiralMatrix {
 				}
 				left++;
 			}
-
-			// SC:O(m*n)
-			// TC:O(m*n)
-
 		}
 		return output;
-	}
 
+		// SC:O(m*n)
+		// TC:O(m*n)
+	}
 }

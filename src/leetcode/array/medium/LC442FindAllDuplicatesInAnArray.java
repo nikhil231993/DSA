@@ -6,11 +6,11 @@ import java.util.List;
 public class LC442FindAllDuplicatesInAnArray {
 
 	public static void main(String[] args) {
+
 		int[] nums = new int[] { 4, 3, 2, 7, 8, 2, 3, 1 };
 		List<Integer> r = findDuplicates(nums);
 
 		System.out.println(r);
-
 	}
 
 	public static List<Integer> findDuplicates(int[] nums) {
@@ -25,5 +25,4 @@ public class LC442FindAllDuplicatesInAnArray {
 	      }
 	      return arr;
 	}
-
 }

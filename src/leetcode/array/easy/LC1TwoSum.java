@@ -38,6 +38,7 @@ public class LC1TwoSum {
 			map.put(nums[i], i);
 		}
 		return new int[] {};
+
 		// SC:O(n)
 		// TC:O(n)
 	}
@@ -61,7 +62,7 @@ public class LC1TwoSum {
 	// Best Approach
 	private static int[] twoSumBestApproach(int[] nums, int target) {
 		int[] result = new int[2];
-		int d = 0;
+		int d = 1;
 		int t1 = 0;
 		int t2 = 1;
 		while (true) {
@@ -79,7 +80,8 @@ public class LC1TwoSum {
 			}
 		}
 		return result;
+
 		// SC:O(1)
-		// TC:O(greater than n  but less than n2)
+		// TC:O(greater than n  but less than n square)
 	}
 }

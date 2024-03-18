@@ -1,6 +1,6 @@
-package leetcode.array.easy;
+package leetcode.array.medium;
 
-public class LC53MaxSubArray {
+public class LC53MaxSubArrayKadane {
 
 	public static void main(String[] args) {
 		int[] arr = new int[] { 0, 1, 3, -5, 7 };

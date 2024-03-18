@@ -5,24 +5,29 @@ import java.util.*;
 public class LC18FourSum {
 
     public static void main(String[] args) {
+
         int[] nums = {4, 3, 3, 4, 4, 2, 1, 2, 1, 1};
         int target=9;
-        //Brute
+
+        //Approach 1: Brute
         System.out.println(brute(nums,target));
 
-        //Better (This is similar to better of three sum)
+        //Approach 2: Better (This is similar to better of three sum)
         System.out.println(better(nums,target));
 
-        //Optimal (This is similar to optimal of four sum)
+        //Approach 3: Optimal (This is similar to optimal of three sum)
         System.out.println(fourSum(nums,target));
     }
 
     public static List<List<Integer>> fourSum(int[] nums, int target) {
+
         int n=nums.length;
         Arrays.sort(nums);
+
         List<List<Integer>> result=new ArrayList<>();
         for(int i=0;i<n;i++){
-            if(i==0 || i>0 && nums[i]!=nums[i-1]){
+            if(i>0 && nums[i]==nums[i-1])
+                continue;
                 for(int j=i+1;j<n;j++){
                     if(j>i+1 && nums[j]==nums[j-1])
                         continue;
@@ -30,6 +35,8 @@ public class LC18FourSum {
                     int l=n-1;
 
                     while(k<l){
+                        //Below is used because since first we add left to right and then assign to long,
+                        //before assigning to long if value exceeds integer limit it will be a
                         long sum=nums[i];
                         sum+=nums[j];
                         sum+=nums[k];
@@ -54,7 +61,6 @@ public class LC18FourSum {
                         }
                     }
                 }
-            }
         }
         return result;
 
@@ -72,6 +78,7 @@ public class LC18FourSum {
             for(int j=i+1;j<n;j++){
                 Set<Integer> fourth=new HashSet<>();
                 for(int k=j+1;k<n;k++){
+
                     int fourthNo=target-(nums[i]+nums[j]+nums[k]);
                     if(fourth.contains(fourthNo)){
                         List<Integer> ans=new ArrayList<>();
@@ -93,6 +100,7 @@ public class LC18FourSum {
     }
 
     private static List<List<Integer>> brute(int[] nums, int target) {
+
         int n=nums.length;
         Set<List<Integer>> s=new HashSet<>();
         List<List<Integer>> result=new ArrayList<>();
@@ -100,7 +108,13 @@ public class LC18FourSum {
             for(int j=i+1;j<n;j++){
                 for(int k=j+1;k<n;k++){
                     for(int l=k+1;l<n;l++){
-                        int sum=nums[i]+nums[j]+nums[k]+nums[l];
+
+                        //Below is used because since first we add left to right and then assign to long,
+                        //before assigning to long if value exceeds integer limit it will be a
+                        long sum=nums[i];
+                        sum+=nums[j];
+                        sum+=nums[k];
+                        sum+=nums[l];
 
                         if(sum==target){
                             List<Integer> l1=new ArrayList<>();

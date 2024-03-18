@@ -14,7 +14,7 @@ public class LongestSubarrayWithSumK {
         //For negative numbers below code is the optimal
         System.out.println(maxLength(arr,k));
 
-        //optimal which is two pointer for positive numbers
+        //Optimal which is two pointer for positive numbers only
         System.out.println(maxLen(arr,k));
     }
 
@@ -47,6 +47,7 @@ public class LongestSubarrayWithSumK {
     }
 
     private static int maxLength(int[] arr,int k) {
+
         int maxLen=0;
 
         HashMap<Integer,Integer> map=new LinkedHashMap<>();

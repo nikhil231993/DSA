@@ -5,19 +5,24 @@ import java.util.Arrays;
 public class LC238ProductOfArrayWithoutSelf {
 
 	public static void main(String[] args) {
+
 		int[] nums = new int[] { 1, 2, 3, 4 };
 
-		// int[] r = product(nums);
+		//Approach 1: Brute
+		int[] r1 = product(nums);
+		for (Integer n : r1)
+			System.out.println(n);
 
-		// Better Approach
-		//int[] r = productBetter(nums);
+		//Approach 2: Better
+		int[] r2 = productBetter(nums);
+		for (Integer n : r2)
+			System.out.println(n);
 
-		// in same for loop
+		//Approach 3: Optimal
 		int[] r = productBetterSameLoop(nums);
 
 		for (Integer n : r)
 			System.out.println(n);
-
 	}
 
 	private static int[] productBetterSameLoop(int[] nums) {
@@ -33,12 +38,12 @@ public class LC238ProductOfArrayWithoutSelf {
 			int j = nums.length - i - 1;
 			ans[j] *= p2;
 			p2 *= nums[j];
-
 		}
 		return ans;
 	}
 
 	private static int[] productBetter(int[] nums) {
+
 		int[] ans = new int[nums.length];
 		int p1 = 1;
 		for (int i = 0; i < nums.length; i++) {
@@ -57,6 +62,7 @@ public class LC238ProductOfArrayWithoutSelf {
 	}
 
 	private static int[] product(int[] nums) {
+
         int product=1;
 		int[] response = new int[nums.length];
         for(int i=0;i<nums.length;i++){
@@ -70,10 +76,9 @@ public class LC238ProductOfArrayWithoutSelf {
 			response[i] = product;
            
         }
-
 		return response;
-        //SC:O(1)
-		// TC:O(n2)
-	}
 
+        //SC:O(1)
+		// TC:O(n square)
+	}
 }

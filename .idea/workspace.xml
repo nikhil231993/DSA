@@ -5,13 +5,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72d35191-61fd-46f6-abe8-9b648fcd26f6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/stack/medium/LC1081SmallestSubsequenceDistinctCharacters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/array/medium/LC1248NiceSubarray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/array/medium/LC16ThreeSumClosest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/array/medium/LC525ContiguousSubarray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/array/medium/LC532KDiffPairs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/array/medium/LC55JumpGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/array/medium/LC930BinarySubarraySum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/hw/V13InfixToPostFix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/hw/V13InfixToPostFix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/hw/V15InfixToPrefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/hw/V15InfixToPrefix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/medium/LC2288ApplyDiscounts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/medium/LC2288ApplyDiscounts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/medium/LC402RemoveKDigits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/medium/LC402RemoveKDigits.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/medium/LC856ScoreParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/medium/LC856ScoreParentheses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/array/easy/LC349IntersectionOfTwoArrays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/easy/LC349IntersectionOfTwoArrays.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/array/easy/LC349UnionOfTwoArrays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/easy/LC349UnionOfTwoArrays.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/array/easy/LC53MaxSubArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/medium/LC53MaxSubArrayKadane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/array/easy/LC88MergeSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/easy/LC88MergeSortedArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/array/extra/MergeSortedArrays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/extra/MergeSortedArrays.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/array/extra/RepeatingAndMissingNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/extra/RepeatingAndMissingNumbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/array/medium/LC1010PairOfSongs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/medium/LC1010PairOfSongs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/array/medium/LC11ContainerWithMostWater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/medium/LC11ContainerWithMostWater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/array/medium/LC1423MaximumPointsYouCanObtainFromCards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/medium/LC1423MaximumPointsYouCanObtainFromCards.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/array/medium/LC1465MaximumAreaOfCake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/medium/LC1465MaximumAreaOfCake.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/array/medium/LC18FourSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/medium/LC18FourSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/array/medium/LC238ProductOfArrayWithoutSelf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/medium/LC238ProductOfArrayWithoutSelf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/array/medium/LC287FindTheDuplicateNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/medium/LC287FindTheDuplicateNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/array/medium/LC289GameOfLife.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/medium/LC289GameOfLife.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/array/medium/LC31NextPermutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/medium/LC31NextPermutation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/array/medium/LC442FindAllDuplicatesInAnArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/medium/LC442FindAllDuplicatesInAnArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/array/medium/LC45JumpGame2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/medium/LC45JumpGame2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/array/medium/LC48RotateImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/medium/LC48RotateImage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/array/medium/LC54SpiralMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/medium/LC54SpiralMatrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/array/medium/LC560SubarraySum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/medium/LC560SubarraySum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/array/medium/LC59SpiralMatrix2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/medium/LC59SpiralMatrix2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/array/medium/LC695MaxAreaOfIsland.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/medium/LC695MaxAreaOfIsland.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/array/medium/LC78SubsetList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/medium/LC78SubsetList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/array/medium/LC79WordSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/medium/LC79WordSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/array/medium/LC912MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/medium/LC912MergeSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/array/medium/NumberOfSubarraysWithXORK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/medium/NumberOfSubarraysWithXORK.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,32 +71,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/Users/nikhilthulaseedharan/Nikhil/DSA/src/leetcode/stack/hw",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "editor.preferences.tabs"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/nikhilthulaseedharan/Nikhil/DSA/src/leetcode/stack/hw&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/leetcode/stack/hw" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="leetcode.array.medium" />
       <recent name="leetcode.stack.lb" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.V15InfixToPrefix">
-    <configuration name="LC1081SmallestSubsequenceDistinctCharacters" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.stack.medium.LC1081SmallestSubsequenceDistinctCharacters" />
+  <component name="RunManager" selected="Application.LC219Duplicate">
+    <configuration name="LC2149SortSigns" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.array.medium.LC2149SortSigns" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.stack.medium.*" />
+          <option name="PATTERN" value="leetcode.array.medium.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -78,12 +105,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC402RemoveKDigits" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.stack.medium.LC402RemoveKDigits" />
+    <configuration name="LC219Duplicate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.array.easy.LC219Duplicate" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.stack.medium.*" />
+          <option name="PATTERN" value="leetcode.array.easy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -91,12 +118,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC856ScoreParentheses" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.stack.medium.LC856ScoreParentheses" />
+    <configuration name="LC78SubsetList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.array.medium.LC78SubsetList" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.stack.medium.*" />
+          <option name="PATTERN" value="leetcode.array.medium.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,12 +131,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="V13InfixToPostFix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.stack.hw.V13InfixToPostFix" />
+    <configuration name="MergeSortedArrays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.array.extra.MergeSortedArrays" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.stack.hw.*" />
+          <option name="PATTERN" value="leetcode.array.extra.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,12 +144,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="V15InfixToPrefix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.stack.hw.V15InfixToPrefix" />
+    <configuration name="NumberOfSubarraysWithXORK" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.array.medium.NumberOfSubarraysWithXORK" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.stack.hw.*" />
+          <option name="PATTERN" value="leetcode.array.medium.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -132,11 +159,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.V15InfixToPrefix" />
-        <item itemvalue="Application.V13InfixToPostFix" />
-        <item itemvalue="Application.LC856ScoreParentheses" />
-        <item itemvalue="Application.LC1081SmallestSubsequenceDistinctCharacters" />
-        <item itemvalue="Application.LC402RemoveKDigits" />
+        <item itemvalue="Application.LC219Duplicate" />
+        <item itemvalue="Application.LC2149SortSigns" />
+        <item itemvalue="Application.MergeSortedArrays" />
+        <item itemvalue="Application.NumberOfSubarraysWithXORK" />
+        <item itemvalue="Application.LC78SubsetList" />
       </list>
     </recent_temporary>
   </component>
@@ -331,27 +358,22 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetcode/array/easy/LC349IntersectionOfTwoArrays.java</url>
-          <line>26</line>
+          <line>62</line>
           <option name="timeStamp" value="124" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/leetcode/array/medium/LeadersInArray.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="125" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetcode/array/medium/LC15ThreeSum.java</url>
-          <line>27</line>
+          <line>91</line>
           <option name="timeStamp" value="127" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetcode/array/easy/LC88MergeSortedArray.java</url>
-          <line>57</line>
+          <line>61</line>
           <option name="timeStamp" value="129" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetcode/array/extra/RepeatingAndMissingNumbers.java</url>
-          <line>48</line>
+          <line>49</line>
           <option name="timeStamp" value="130" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -518,11 +540,6 @@
           <url>file://$PROJECT_DIR$/src/leetcode/binarysearch/easy/LC633SumOfSquares.java</url>
           <line>21</line>
           <option name="timeStamp" value="190" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/leetcode/array/easy/LC1470ShuffleArray.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="192" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetcode/heap/medium/LC1642FurthestBuildingYouCanReach.java</url>
@@ -768,6 +785,21 @@
           <url>file://$PROJECT_DIR$/src/leetcode/stack/medium/LC402RemoveKDigits.java</url>
           <line>19</line>
           <option name="timeStamp" value="276" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/array/medium/LeadersInArray.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="279" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/array/medium/LC238ProductOfArrayWithoutSelf.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="282" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/array/medium/LC287FindTheDuplicateNumber.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="284" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/leetcode/binarytree/Test.java</url>

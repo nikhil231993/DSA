@@ -3,8 +3,11 @@ package leetcode.array.easy;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+
 public class LC599MinimumIndexSumOfTwoLists {
+
     public static void main(String[] args) {
+
         String[] list1 = new String[]{"Shogun","Tapioca Express","Burger King","KFC"};
         String[] list2 =new String[] {"Piatti","The Grill at Torrey Pines","Hungry Hunter Steakhouse","Shogun"};
 
@@ -20,6 +23,7 @@ public class LC599MinimumIndexSumOfTwoLists {
         for(int i=0;i<list1.length;i++){
             map.put(list1[i],i);
         }
+
         List<String> result=new ArrayList();
         int min=Integer.MAX_VALUE;
         for(int i=0;i<list2.length;i++){

@@ -3,6 +3,7 @@ package leetcode.array.easy;
 public class LC724FindPivotIndex {
 
 	public static void main(String[] args) {
+
 		int[] n = new int[] { 1,7,3,6,5,6 };
 		
 		//Approach 1
@@ -17,18 +18,18 @@ public class LC724FindPivotIndex {
 		 // In this we use mathematical equation to find the solution
 		 int total=0;
 		 for(int i=0;i<nums.length;i++){
-		 total+=nums[i];
+		 	total+=nums[i];
 		 }
 
 		 int leftSum=0;
 		 for(int i=0;i<nums.length;i++){
 
 		 if(2*leftSum==total-nums[i])
-		 return i;
+		 	return i;
 		 leftSum+=nums[i];
-
 		 }
 		 return -1;
+
 		 //TC:O(n)
 		 //SC:O(1)
 	}

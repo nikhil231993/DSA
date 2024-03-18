@@ -3,14 +3,21 @@ package leetcode.array.medium;
 public class LC75SortColors {
 
     public static void main(String[] args) {
+
         int[] nums =new int[] {2,0,2,1,1,0};
+
+        //Approach 1: Sort it TC:O(nlogn)
+
+        //Approach 2: Have 3 variables along with count of 0, 1, 2 and then form an array using it. Here we need two iterations
+
+        //Approach 3: Optimal
         sort(nums);
         System.out.println("Sorted numbers are: ");
         for(int n: nums)
             System.out.println(n);
     }
 
-    //Dutch National Flag ALgo
+    //Dutch National Flag Algo
     private static void sort(int[] nums) {
 
         int low=0;

@@ -1,7 +1,9 @@
 package leetcode.array.easy;
 
 public class LC2319MatrixDiagonal {
+
     public static void main(String[] args) {
+
         int[][] matrix=new int[][]{{6,0,0,0,0,0,0,18},
                 {0,17,0,0,0,0,18,0},
                 {0,0,13,0,0,17,0,0},
@@ -13,8 +15,8 @@ public class LC2319MatrixDiagonal {
     }
 
     public static boolean checkXMatrix(int[][] grid) {
+
         int n=grid.length;
-        int mid=n/2;
         boolean countDia=true;
         boolean countNon=false;
         for(int i=0;i<grid.length;i++){
@@ -29,5 +31,8 @@ public class LC2319MatrixDiagonal {
             }
         }
         return countDia==true && countNon==false;
+
+        //TC:O(n*m)
+        //SC:O(1)
     }
 }
