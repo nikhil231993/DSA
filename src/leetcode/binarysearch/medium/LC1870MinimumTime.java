@@ -41,5 +41,8 @@ public class LC1870MinimumTime {
             }
         }
         return ans;
+
+        //TC:O(log 1e 7)
+        //SC:O(n)
     }
 }

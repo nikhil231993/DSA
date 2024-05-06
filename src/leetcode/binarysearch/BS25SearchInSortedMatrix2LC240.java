@@ -31,6 +31,7 @@ public class BS25SearchInSortedMatrix2LC240 {
             else col--;
         }
         return false;
+
         //TC:O(n+m)
         //SC:O(1)
     }

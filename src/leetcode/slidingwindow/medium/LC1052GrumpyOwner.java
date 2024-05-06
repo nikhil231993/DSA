@@ -3,6 +3,7 @@ package leetcode.slidingwindow.medium;
 public class LC1052GrumpyOwner {
 
     public static void main(String[] args) {
+
         int[] customers =new int[] {1,0,1,2,1,1,7,5};
         int[] grumpy =new int[] {0,1,0,1,0,1,0,1};
         int minutes = 3;

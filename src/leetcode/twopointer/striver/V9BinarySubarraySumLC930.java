@@ -1,9 +1,8 @@
-package leetcode.slidingwindow.medium;
+package leetcode.twopointer.striver;
 
 import java.util.HashMap;
-import java.util.LinkedHashMap;
 
-public class LC930BinarySubArrayWIthSum {
+public class V9BinarySubarraySumLC930 {
 
     public static void main(String[] args) {
 

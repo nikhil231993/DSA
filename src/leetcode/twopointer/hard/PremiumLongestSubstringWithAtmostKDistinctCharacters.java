@@ -1,18 +1,20 @@
-package leetcode.TwoPointer.hard;
+package leetcode.twopointer.hard;
 
 import java.util.HashMap;
-public class PremiumLongestSubStringWithTwoDistinctCharacters {
+
+public class PremiumLongestSubstringWithAtmostKDistinctCharacters {
 
     public static void main(String[] args) {
-        String s="ninninja";
-        System.out.println(lengthOfLongestSubstring(s));
+        String s="abcddefg";
+        int k=3;
+        System.out.println(kDistinctChars(k,s));
     }
 
-    public static int lengthOfLongestSubstring(String s) {
-        return subArrayWithAtmostTwo(s,2);
+    public static int kDistinctChars(int k, String str) {
+        return subArrayWithAtmostTwo(k, str);
     }
 
-    private static int subArrayWithAtmostTwo(String s, int k) {
+    private static int subArrayWithAtmostTwo(int k, String s) {
         HashMap<Character, Integer> map=new HashMap<>();
         int left=0;
         int right=0;

@@ -40,7 +40,7 @@ public class BS17MagneticBallsLC1552 {
                 count++;
                 last=position[i];
             }
-            if(count==m)
+            if(count>=m)
                 return true;
         }
         return false;

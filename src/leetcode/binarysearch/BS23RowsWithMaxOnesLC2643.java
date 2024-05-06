@@ -31,6 +31,7 @@ public class BS23RowsWithMaxOnesLC2643 {
             }
         }
         return rowIndex;
+
         //TC:O(n*m)
         //SC:O(1)
     }

@@ -16,7 +16,7 @@ public class BS20MinimiseMaxGasDifference {
 
     public static void main(String[] args) {
 
-        int n=4,k=3;
+        int n=4,k=5;
         int[] arr=new int[]{1,13,17,23};
 
         //Approach 1
@@ -37,6 +37,7 @@ public class BS20MinimiseMaxGasDifference {
         for(int i=0;i< arr.length-1;i++){
             pq.offer(new Node(arr[i+1]-arr[i], i));
         }
+
         for(int gas=1;gas<=k;gas++){
             Node n=pq.poll();
             int index=n.second;
@@ -45,7 +46,8 @@ public class BS20MinimiseMaxGasDifference {
             pq.offer(new Node(newSectionLength,index));
         }
         return pq.peek().first;
-        //TC:O(n logn)+O(k log (n-1))
+
+        //TC:O(n logn) + O(k log (n-1))
         //SC:O(n-1)
     }
 
@@ -75,7 +77,8 @@ public class BS20MinimiseMaxGasDifference {
             max=Math.max(max, ans);
         }
         return max;
-        //TC:O(k * n)+ O(k)
+
+        //TC:O(k * n) + O(k)
         //SC:O(1)
     }
 
@@ -86,6 +89,7 @@ public class BS20MinimiseMaxGasDifference {
         double ans=0;
         double diff=1e-6;
         while(high-low > diff){
+
             double mid=low+(high-low)/2.0;
             int count=isPossible(mid, arr, K);
             if(count>K){

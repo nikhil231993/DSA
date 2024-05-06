@@ -1,6 +1,6 @@
-package leetcode.slidingwindow.medium;
+package leetcode.twopointer.striver;
 
-public class MaxConsecutiveOnes3LC1004 {
+public class V4MaxOnesLC1004 {
 
     public static void main(String[] args) {
 

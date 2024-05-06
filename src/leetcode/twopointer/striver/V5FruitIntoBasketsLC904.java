@@ -1,10 +1,9 @@
-package leetcode.slidingwindow.medium;
+package leetcode.twopointer.striver;
 
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.LinkedHashMap;
 
-public class LC904FruitBaskets {
+public class V5FruitIntoBasketsLC904 {
 
     public static void main(String[] args) {
 

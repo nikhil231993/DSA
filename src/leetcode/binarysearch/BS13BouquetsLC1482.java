@@ -4,9 +4,9 @@ public class BS13BouquetsLC1482 {
 
     public static void main(String[] args) {
 
-        int[] bloomDay =new int[] {7,7,7,7,12,7,7};
-        int m = 2;
-        int k = 3;
+        int[] bloomDay =new int[] {1,10,3,10,2};
+        int m = 3;
+        int k = 1;
         System.out.println(minDays(bloomDay,m,k));
     }
 
@@ -54,6 +54,7 @@ public class BS13BouquetsLC1482 {
             return true;
         return false;
     }
+
     //TC:O(log (max-min+1)*n)
     //SC:O(1)
 }

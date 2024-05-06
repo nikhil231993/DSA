@@ -8,13 +8,14 @@ public class PremiumLongestSubstringWithKUnqiueCharacters {
     //GFG: https://practice.geeksforgeeks.org/problems/longest-k-unique-characters-substring0853/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=longest-k-unique-characters-substring
 
     public static void main(String[] args) {
+
         String s="aabacbebebe";
         int K = 3;
-
         System.out.println(longest(s,K));
     }
 
     private static int longest(String s, int k) {
+
         int n=s.length();
         int len=0;
         HashMap<Character,Integer> m=new HashMap<>();

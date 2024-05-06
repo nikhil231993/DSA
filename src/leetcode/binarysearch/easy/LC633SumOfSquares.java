@@ -15,7 +15,7 @@ public class LC633SumOfSquares {
         int left=0;
         long right=(long)Math.sqrt(c);
         while(left<=right){
-            long value=left*left+ right*right;
+            long value=left*left + right*right;
             if(value == c){
                 System.out.println(left);
                 System.out.println(right);
