@@ -4,32 +4,30 @@ public class LC1423MaximumPointsYouCanObtainFromCards {
 
 	public static void main(String[] args) {
 
-		int[] nums = new int[] { 1, 2, 3, 4, 5, 6, 1 };
+		int[] cardPoints =new int[] {1,2,3,4,5,6,1};
 		int k = 3;
-		System.out.println(maxPoints(nums, k));
+		System.out.println(maxPoints(cardPoints,k));
 	}
 
-	private static int maxPoints(int[] nums, int k) {
+	private static int maxPoints(int[] cardPoints, int k) {
 
-		int n=nums.length;
-		int sum=0;
-		for(int i=0;i<k;i++){
-			sum=sum+nums[i];
+		int lsum=0;
+		for(int i=0; i<k; i++){  //O(k)
+			lsum+=cardPoints[i];
 		}
 
-		int p1=k-1;
-		int p2=n-1;
-		int resultInitial=sum;
-		while(p1>=0){
-			sum=sum-nums[p1];
-			p1--;
-			sum=sum+nums[p2];
-			p2--;
-			resultInitial=Math.max(resultInitial,sum);
-		}
-		return resultInitial;
+		int maxSum=lsum;
+		int rsum=0;
 
-		//TC:O(k)+O(k)
-		//SC:O(n)
+		int l=k-1, r=cardPoints.length-1;
+		while(l>=0){  //O(k)
+			lsum-=cardPoints[l--];
+			rsum+=cardPoints[r--];
+			maxSum=Math.max(maxSum, lsum+rsum);
+		}
+		return maxSum;
+
+		//TC:O(k) + O(k)
+		//SC:O(1)
 	}
 }

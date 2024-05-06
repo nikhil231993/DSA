@@ -1,10 +1,10 @@
-package leetcode.slidingwindow.medium;
+package leetcode.twopointer.striver;
 
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.HashSet;
+import java.util.HashMap;
 
-public class LC1358NoOfSubstringContainingAllCharacters {
+public class V7SubstringContainingAllThreeCharactersLC1358 {
 
     public static void main(String[] args) {
 

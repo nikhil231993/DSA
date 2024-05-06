@@ -8,6 +8,7 @@ public class BS17AggressiveCows {
 
         int n=3,k=2;
         int[] arr=new int[]{1,2,3};
+
 		System.out.println(aggressiveCows(arr, k, n));
     }
 

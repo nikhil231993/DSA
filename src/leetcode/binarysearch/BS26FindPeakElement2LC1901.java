@@ -1,6 +1,6 @@
 package leetcode.binarysearch;
 
-public class BS26FindPeekElement2LC1901 {
+public class BS26FindPeakElement2LC1901 {
 
     public static void main(String[] args) {
 
@@ -29,10 +29,11 @@ public class BS26FindPeekElement2LC1901 {
             int row=findMax(mat,mid,n,m);
             int left=-1;
             int right=-1;
-            if(mid-1 >=0) left=mat[row][mid-1];
+
+            if(mid-1 >= 0) left=mat[row][mid-1];
             if(mid+1 < m ) right=mat[row][mid+1];
 
-            if(mat[row][mid]> left && mat[row][mid]>right){
+            if(mat[row][mid] > left && mat[row][mid] > right){
                 return new int[]{row,mid};
             }else if(mat[row][mid]<left)
                 high=mid-1;
@@ -40,6 +41,7 @@ public class BS26FindPeekElement2LC1901 {
                 low=mid+1;
         }
         return new int[]{-1,-1};
+
         //TC:O(log m) * O(n)
         //SC:O(1)
     }
@@ -71,6 +73,7 @@ public class BS26FindPeekElement2LC1901 {
                 int right=Integer.MIN_VALUE;
                 int top=Integer.MIN_VALUE;
                 int bottom=Integer.MIN_VALUE;
+
                 if(j-1>=0)
                     left=mat[i][j-1];
                 if(i+1<n)

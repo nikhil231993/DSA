@@ -1,22 +1,30 @@
-package leetcode.slidingwindow.medium;
+package leetcode.twopointer.striver;
 
 import java.util.HashMap;
-import java.util.LinkedHashMap;
 
-public class LC930BinarySubArrayWIthSum {
+public class V10NiceSubarrayLC1248 {
 
     public static void main(String[] args) {
 
-        int[] nums =new int[] {1,0,1,0,1};
+        int[] nums =new int[] {2,2,2,1,2,2,1,2,2,2};
         int  goal = 2;
 
-        //Approach 1 : Brute will be to generate all solutions
+        for(int i=0 ;i <nums.length; i++){
+            if(nums[i]%2==0)
+                nums[i]=0;
+            else
+                nums[i]=1;
+        }
+
+        //Approach 1 : Brute will be generate all solutions
 
         //Approach 2: Better
         System.out.println(numSubarraysWithSumUsingMap(nums, goal));
 
         //Approach 3: Best getting rid of space
         System.out.println(numSubarraysWithSum(nums, goal));
+
+        //if cannot be used in place of while as we will miss some count
     }
 
     private static int numSubarraysWithSum(int[] nums, int goal) {

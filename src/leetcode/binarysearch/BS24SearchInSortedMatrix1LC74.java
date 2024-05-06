@@ -33,6 +33,7 @@ public class BS24SearchInSortedMatrix1LC74 {
                 low=mid+1;
         }
         return false;
+
         //TC:O(log m*n)
         //SC:O(1)
     }
@@ -44,6 +45,7 @@ public class BS24SearchInSortedMatrix1LC74 {
                 return BS(target,matrix[i]);
         }
         return false;
+
         //TC:O(n)+log m(only once binary search is executed)
         //SC:O(1)
     }

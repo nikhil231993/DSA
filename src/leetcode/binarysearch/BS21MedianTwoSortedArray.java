@@ -7,11 +7,13 @@ public class BS21MedianTwoSortedArray {
         int[] nums1 = new int[] {1,3,4,7,10,12};
         int[] nums2 = new int[] {2,3,6,15};
 
-        //Brute force
+        //Approach 1: Brute force
         System.out.println(findMedianSortedArrays(nums1,nums2));
-        //Better
+
+        //Approach 2: Better
         System.out.println(findMedianSortedArraysWithoutSpace(nums1,nums2));
-        //Optimal
+
+        //Approach 3: Optimal
         System.out.println(findMedianSortedArraysBS(nums1,nums2));
     }
 
@@ -113,6 +115,7 @@ public class BS21MedianTwoSortedArray {
             if(mid2<n2) r2=nums2[mid2];
             if(mid1-1>=0) l1=nums1[mid1-1];
             if(mid2-1>=0) l2=nums2[mid2-1];
+
             if(l1<=r2 && l2<=r1){
                 if(n%2 == 1)
                     return Math.max(l1,l2);

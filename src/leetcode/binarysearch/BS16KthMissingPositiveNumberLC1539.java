@@ -9,6 +9,7 @@ public class BS16KthMissingPositiveNumberLC1539 {
 
         //Approach 1
         System.out.println(findKthPositive(arr,k));
+
         //Approach 2
         System.out.println(optimizedKthPositive(arr,k));
     }
