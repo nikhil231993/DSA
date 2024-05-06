@@ -40,7 +40,7 @@ public class BS14SmallesCommonDivisorLC1283 {
         }
         return sum<=threshold;
 
-        //TC:O(log max-1+1)* n
+		// TC:O(log max((arr[]))* n
         //SC: O(1)
     }
 }

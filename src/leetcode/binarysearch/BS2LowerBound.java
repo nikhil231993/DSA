@@ -6,7 +6,7 @@ public class BS2LowerBound {
 
     public static void main(String[] args) {
 
-        int[] arr=new int[]{3,5,8,8,15,15,19};
+        int[] arr=new int[]{3,5,8,15,19,19};
         int x=19;
         System.out.println(lowerBound(arr,x));
     }
@@ -22,7 +22,8 @@ public class BS2LowerBound {
                 ans=mid;
                 high=mid-1;
             }
-            else low=mid+1;
+            else 
+            	low=mid+1;
         }
         return ans;
 

@@ -28,8 +28,7 @@ public class BS15ShipCapacityLC1011 {
             if(isPossible(mid,weights,days)){
                 high=mid-1;
                 ans=mid;
-            }
-            else{
+			} else {
                 low=mid+1;
             }
         }

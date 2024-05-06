@@ -11,6 +11,7 @@ public class BS2UpperBound {
 
     private static int upperBound(int[] arr, int x) {
 
+    	//smallest number which > x
         int n=arr.length;
         int low=0;
         int high=n-1;
@@ -25,6 +26,7 @@ public class BS2UpperBound {
             }
         }
         return ans;
+        
         //TC:O(log n)
         //SC:O(1)
     }

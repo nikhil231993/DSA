@@ -49,6 +49,5 @@ public class BS12KokoEatingBananaLC875 {
         for(Integer num:piles)
             max=Math.max(max,num);
         return max;
-
     }
 }

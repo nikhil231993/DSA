@@ -8,22 +8,30 @@ public class LC852PeakInMountainArray {
         System.out.println(peak(num));
     }
 
-    private static int peak(int[] num) {
+    private static int peak(int[] arr) {
 
         //Here we need to understand that if we go to max value side we will find the peak element as it cannot be on the
         //other side which is less basically left side
 
-        int left=0;
-        int right=num.length-1;
-        while(left<=right){
-            int mid=left+(right-left)/2;
-            if(num[mid]<num[mid+1]){
-                left=mid+1;
-            }else{
-                right=mid-1;
+            int n=arr.length;
+            if(n==1)
+                return 0;
+            if(arr[0]>arr[1])
+                return 0;
+            if(arr[n-1]>arr[n-2])
+                return n-1;
+            int low=1;
+            int high=arr.length-2;
+            while(low<=high){
+                int mid=low+(high-low)/2;
+                if(arr[mid]>arr[mid-1] && arr[mid]>arr[mid+1])
+                    return mid;
+                else if(arr[mid]>arr[mid-1])
+                    low=mid+1;
+                else
+                    high=mid-1;
             }
-        }
-        return left;
+            return -1;
 
         //TC:O(logn)
     }

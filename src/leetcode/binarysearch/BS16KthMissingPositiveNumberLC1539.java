@@ -27,12 +27,15 @@ public class BS16KthMissingPositiveNumberLC1539 {
             else
                 high=mid-1;
         }
-        //TC: log n
+
         // arr[high]+more
         //more=K- missingNumber
         //missingNumber=arr[high]-high-1;
         //arr[high]-arr[high]+high+1+k
         return k+high+1;
+
+		// TC: O(log n)
+		// SC: O(n)
     }
 
     public static int findKthPositive(int[] arr, int k) {

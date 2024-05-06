@@ -12,6 +12,7 @@ public class BS2FloorAndCeil {
 
     private static int floorMethod(int[] arr, int x) {
 
+    	//largest number which <= x
         int n=arr.length;
         int low=0;
         int high=n-1;
@@ -27,7 +28,8 @@ public class BS2FloorAndCeil {
         }
             if(ans==-1)
                 return -1;
-            else return arr[ans];
+            else 
+            	return arr[ans];
 
         //TC:O(log n)
         //SC:O(1)
@@ -35,6 +37,7 @@ public class BS2FloorAndCeil {
 
     private static int ceil(int[] arr, int x) {
 
+    	//smallest number which is >=x
         int n=arr.length;
         int low=0;
         int high=n-1;
@@ -50,7 +53,8 @@ public class BS2FloorAndCeil {
         }
        if(ans==-1)
            return -1;
-       else return arr[ans];
+       else 
+    	   return arr[ans];
 
         //TC:O(log n)
         //SC:O(1)

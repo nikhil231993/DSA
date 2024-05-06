@@ -37,6 +37,7 @@ public class BS13BouquetsLC1482 {
     }
 
     public static boolean isPossible(int[] bloomDay, int m, int k, int mid){
+
         int count=0;
         int noOfBouquets=0;
 
@@ -54,6 +55,7 @@ public class BS13BouquetsLC1482 {
             return true;
         return false;
     }
+
     //TC:O(log (max-min+1)*n)
     //SC:O(1)
 }

@@ -8,15 +8,13 @@ public class BS17AggressiveCows {
 
         int n=3,k=2;
         int[] arr=new int[]{1,2,3};
-        System.out.println(aggressiveCows(arr,k));
-        //TC:nlog n +log(arr[n-1]-arr[0])*O(n)
-        //SC:O(1)
+		System.out.println(aggressiveCows(arr, k, n));
     }
 
-    public static int aggressiveCows(int[] stalls, int k) {
+	public static int aggressiveCows(int[] stalls, int k, int n) {
 
         Arrays.sort(stalls);
-        int n=stalls.length;
+
         int low=1;
         int high=stalls[n-1]-stalls[0];
         int ans=1;
@@ -31,6 +29,9 @@ public class BS17AggressiveCows {
             }
         }
         return ans;
+
+		// TC:nlog n +log(arr[n-1]-arr[0])*O(n)
+		// SC:O(1)
     }
 
     public static boolean canPlace(int pos, int[] stalls, int k){

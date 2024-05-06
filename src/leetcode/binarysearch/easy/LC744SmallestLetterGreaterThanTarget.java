@@ -24,5 +24,8 @@ public class LC744SmallestLetterGreaterThanTarget {
             }
         }
         return ans;
+        
+        //TC:O(nlogn)
+        //S:O(1)
     }
 }
