@@ -16,7 +16,8 @@ public class V11KDifferentIntegersSubarrayLC992 {
         //Approach 2: Better
         System.out.println(better(nums, k));
 
-        //it cannot be used in place of while as we will miss some count
+        //we cannot use "if" instead of "while" as in counting we will miss some subarrays. Take an example and try out
+        //Finding Longest length we can use as its to find max length
     }
 
     private static int better(int[] nums, int k) {

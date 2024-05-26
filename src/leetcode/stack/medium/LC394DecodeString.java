@@ -2,7 +2,7 @@ package leetcode.stack.medium;
 
 import java.util.Stack;
 
-public class LC395DecodeString {
+public class LC394DecodeString {
 
     public static void main(String[] args) {
 
@@ -42,6 +42,8 @@ public class LC395DecodeString {
             }
         }
         return str.toString();
-    }
 
+        //TC:O(n)
+        //SC:O(n)
+    }
 }

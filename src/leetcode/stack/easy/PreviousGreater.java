@@ -7,7 +7,12 @@ public class PreviousGreater {
     public static void main(String[] args) {
 
         int[] nums=new int[]{4,6,2,3,9,10,70,188,59,92};
+
         Stack<Integer> st=new Stack<>();
+
+        //Approach 1: Two for loops and n square
+
+        //Approach 2:
         previousGreater(nums,st);
         for(int n:nums)
             System.out.println(n);
@@ -26,5 +31,8 @@ public class PreviousGreater {
         while(!st.isEmpty()){
             nums[st.pop()]=-1;
         }
+
+        //TC:O(N + N)
+        //SC:O(N) worst case if it is an increasing array
     }
 }

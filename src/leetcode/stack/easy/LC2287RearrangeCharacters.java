@@ -10,6 +10,7 @@ public class LC2287RearrangeCharacters {
     }
 
     public static int rearrangeCharacters(String s, String target) {
+
         int[] freqs=findFreq(s);
         int[] freqt=findFreq(target);
 
@@ -22,6 +23,9 @@ public class LC2287RearrangeCharacters {
             }
         }
         return min;
+
+        //TC:O(N1+N2+N1)
+        //SC:O(N1+N2)
     }
 
     public static int[] findFreq(String s){

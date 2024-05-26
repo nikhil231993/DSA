@@ -1,4 +1,4 @@
-package leetcode.twopointer.medium;
+package leetcode.slidingwindow.easy;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -37,5 +37,8 @@ public class V55P6RedundantBrackets {
             }
         }
         return false;
+
+        //TC:O(2*N)
+        //SC:O(N)
     }
 }

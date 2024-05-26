@@ -7,7 +7,7 @@ public class LC84LargestRectangleInHistogram {
 
 	public static void main(String[] args) {
 
-		int[] arr = new int[] { 1, 1 };
+		int[] arr = new int[] { 2,1,5,6,2,3 };
 		System.out.println(largestRectangleArea(arr));
 	}
 
@@ -21,12 +21,12 @@ public class LC84LargestRectangleInHistogram {
 		int[] leftMin = new int[n];
 		int[] rightMin = new int[n];
 
-		Arrays.fill(leftMin, -1);
 		Arrays.fill(rightMin, n);
+		Arrays.fill(leftMin, -1);
 
 		// next smaller
 		for (int i = 0; i < n; i++) {
-			while (!rightMinStack.isEmpty() && arr[rightMinStack.peek()] >= arr[i]) {
+			while (!rightMinStack.isEmpty() && arr[rightMinStack.peek()] > arr[i]) {
 				int index = rightMinStack.pop();
 				rightMin[index] = i;
 			}
@@ -62,6 +62,7 @@ public class LC84LargestRectangleInHistogram {
 
 		// prev smaller
 		for (int i = 0; i < n; i++) {
+
 			while (!leftMinStack.isEmpty() && arr[leftMinStack.peek()] >= arr[i]) {
 				leftMinStack.pop();
 			}
@@ -75,6 +76,7 @@ public class LC84LargestRectangleInHistogram {
 
 		// next smaller
 		for (int i = n - 1; i >= 0; i--) {
+
 			while (!rightMinStack.isEmpty() && arr[rightMinStack.peek()] >= arr[i]) {
 				rightMinStack.pop();
 			}

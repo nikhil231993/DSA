@@ -6,8 +6,8 @@ public class LC2000ReversePrefixOfWord {
 
     public static void main(String[] args) {
 
-       String word = "abcdefd";
-       char ch = 'd';
+        String word = "abcdefd";
+        char ch = 'd';
 
         //Approach 1:
         System.out.println(reversePrefix(word,ch));

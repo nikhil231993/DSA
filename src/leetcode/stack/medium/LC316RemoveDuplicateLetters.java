@@ -36,12 +36,16 @@ public class LC316RemoveDuplicateLetters {
             }
             st.push(ch);
         }
+
         StringBuilder sb=new StringBuilder();
         for(int l: st){
             sb.append((char)(l+'a'));
         }
 
         return sb.toString();
+
+        //TC:O(n)
+        //SC:O(n+n) + last result string
     }
 }
 

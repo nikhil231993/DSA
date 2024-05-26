@@ -2,11 +2,11 @@ package leetcode.stack.lb;
 
 import java.util.Stack;
 
-public class V56P7MinimumCostToMakeStringValid {
+public class V55P7MinimumCostToMakeStringValid {
 
     public static void main(String[] args) {
 
-        String s= "{}}{";
+        String s= "}}}}}{";
         System.out.println(findMinimumCost(s));
     }
 
@@ -40,6 +40,6 @@ public class V56P7MinimumCostToMakeStringValid {
                 b++;
         }
 
-        return ((a+1)/2 + (b+1)/2);
+        return ((a+1)/2+(b+1)/2);
     }
 }

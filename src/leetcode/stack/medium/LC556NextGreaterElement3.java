@@ -4,9 +4,8 @@ public class LC556NextGreaterElement3 {
 
 	public static void main(String[] args) {
 
-		int n = 12;
+		int n = 123521;
 		System.out.println(nextGreaterElement(n));
-
 	}
 
 	public static int nextGreaterElement(int n) {
@@ -17,7 +16,7 @@ public class LC556NextGreaterElement3 {
 
 		int n1 = ch.length;
 		for (int i = n1 - 2; i >= 0; i--) {
-			if (ch[i] < ch[i + 1]) {
+			if (ch[i] < ch[i + 1]) { // first dip from the left
 				idx1 = i;
 				break;
 			}

@@ -27,7 +27,7 @@ public class LC1052GrumpyOwner {
         while(r<customers.length){
             if(grumpy[r]==1)
                 sum+=customers[r];
-            while(r-l+1==minutes){
+            while(r-l+1==minutes){ // we can use if also here tested in leetcode
                 max=Math.max(max,sum);
                 if(grumpy[l]==1){
                     sum-=customers[l];

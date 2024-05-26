@@ -10,10 +10,9 @@ public class V54TwoStack {
     // Initialize TwoStack.
     public V54TwoStack(int s) {
 
-
-        this.top1=-1;
+        this.top1= -1;
         this.top2= s;
-        this.size=s;
+        this.size= s;
         this.arr= new int[s];
     }
 
@@ -23,6 +22,7 @@ public class V54TwoStack {
         if(top2-top1>1){
             arr[++top1]=num;
         }
+        //TC:O(n)
     }
 
     // Push in stack 2.
@@ -31,6 +31,7 @@ public class V54TwoStack {
         if(top2-top1>1){
             arr[--top2]=num;
         }
+        //TC:O(n)
     }
 
     // Pop from stack 1 and return popped element.
@@ -39,7 +40,7 @@ public class V54TwoStack {
         if(top1>-1)
             return this.arr[top1--];
         return -1;
-
+        //TC:O(n)
     }
 
     // Pop from stack 2 and return popped element.
@@ -48,5 +49,6 @@ public class V54TwoStack {
         if(top2<size)
             return this.arr[top2++];
         return -1;
+        //TC:O(n)
     }
 }

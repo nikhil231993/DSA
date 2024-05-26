@@ -2,15 +2,22 @@ package leetcode.stack.hw;
 
 import java.util.Stack;
 
-public class V13InfixToPostFix {
+public class V12InfixToPostFix {
 
     public static void main(String[] args) {
 
-        String s="a+b*(c^d-e)^(f+g*h)-i";
+        String s="h^m^q^(7-4)";
         System.out.println(infixToPostfix(s));
     }
 
     public static String infixToPostfix(String exp) {
+
+        //step 1 : Print all operands or ad it to the result
+        //step 2: if stack empty add operator into stack
+        //step 3: if ch==( push it into stack
+        //step 4: if ch==). pop out elements till )
+        //step 5: if ch > st.peek() push into stack and if ch < st.peek() pop out
+        //step 6: if ch==st.peek() and precedence L of ch, pop out and  if precedence R push into stack
 
         int n=exp.length();
 
@@ -47,6 +54,9 @@ public class V13InfixToPostFix {
             result.append(st.pop());
         }
         return result.toString();
+
+        //TC:O(n)
+        //SC:O(n)
     }
 
     public static int prec(char ch){

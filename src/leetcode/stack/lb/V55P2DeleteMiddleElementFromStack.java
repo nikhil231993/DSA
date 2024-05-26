@@ -4,6 +4,24 @@ import java.util.Stack;
 
 public class V55P2DeleteMiddleElementFromStack {
 
+   // https://www.geeksforgeeks.org/problems/delete-middle-element-of-a-stack/1
+
+    public static void main(String[] args) {
+
+        Stack<Integer> st=new Stack<>();
+        st.push(5);
+        st.push(6);
+        st.push(7);
+        st.push(8);
+
+        deleteMiddle( st, st.size());
+
+        System.out.println("==================");
+
+        while(!st.isEmpty())
+            System.out.println(st.pop());
+    }
+
     public static void deleteMiddle(Stack<Integer> inputStack, int N) {
 
         int[] count=new int[]{0};
@@ -12,7 +30,7 @@ public class V55P2DeleteMiddleElementFromStack {
 
     public static void solve(Stack<Integer> st, int N, int[] count){
 
-        if(count[0]==(N-1)/2){
+        if(count[0]==N/2){
             st.pop();
             return;
         }

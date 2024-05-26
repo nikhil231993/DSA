@@ -2,7 +2,7 @@ package leetcode.twopointer.striver;
 
 import java.util.HashMap;
 
-public class V12MinimumWindowSubstring {
+public class V12MinimumWindowSubstringLC76 {
 
     public static void main(String[] args) {
 
@@ -29,7 +29,7 @@ public class V12MinimumWindowSubstring {
                 count++;
             map.put(s.charAt(right), map.getOrDefault(s.charAt(right),0)-1);
 
-            while(count==t.length()){
+            while(count==t.length()){ // while cannot be replaced with if as we have to shrink it
                 if(right-left+1<minLen){
                     minLen=right-left+1;
                     startingIndex=left;

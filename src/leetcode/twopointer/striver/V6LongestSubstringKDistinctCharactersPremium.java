@@ -7,7 +7,7 @@ public class V6LongestSubstringKDistinctCharactersPremium {
 
     public static void main(String[] args) {
 
-        String s="aabacbebebee";
+        String s="aabacbebebe";
         int K = 3;
 
         //Approach 1: Brute

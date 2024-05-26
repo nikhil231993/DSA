@@ -26,5 +26,8 @@ public class LC2390RemoveStarsFromString {
             sb.append(st.pop());
         }
         return sb.reverse().toString();
+
+        //TC:O(N)
+        //SC:O(N)
     }
 }

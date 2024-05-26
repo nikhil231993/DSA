@@ -17,13 +17,15 @@ public class V55P1ReverseStringUsingStack {
         for(int i=0; i< str.length(); i++){
             st.push(str.charAt(i));
         }
+
         StringBuilder sb=new StringBuilder();
         while(!st.isEmpty()){
             sb.append(st.pop());
         }
 
         return sb.toString();
-        //TC:O(2N)
+
+        //TC:O(2*N)
         //SC:O(N)
     }
 }

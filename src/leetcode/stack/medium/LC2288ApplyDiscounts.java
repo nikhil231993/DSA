@@ -25,6 +25,9 @@ public class LC2288ApplyDiscounts {
             ans+=" ";
         }
         return ans.substring(0, ans.length()-1);
+
+        //TC:O(n) where n is the length of str
+        //SC:O(n) where n is the length of str
     }
 
     public static boolean isValid(String str){

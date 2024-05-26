@@ -33,5 +33,4 @@ public class LC341FlattenIterator {
         return it.hasNext();
     }
     */
-
 }

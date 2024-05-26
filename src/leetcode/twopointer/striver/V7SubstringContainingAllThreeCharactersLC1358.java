@@ -23,7 +23,8 @@ public class V7SubstringContainingAllThreeCharactersLC1358 {
         //Approach 4: Using Two Pointer
         System.out.println(bestNumberOfSubstringsApproach(s));
 
-        //we cannot use two pointer approach as there is no condition to start the second loop
+        //we cannot use "if" instead of "while" as in counting we will miss some subarrays. Take an example and try out
+        //Finding Longest length we can use as its to find max length
     }
 
     private static int bestNumberOfSubstringsApproach(String s) {

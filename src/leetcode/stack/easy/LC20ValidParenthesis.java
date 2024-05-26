@@ -34,5 +34,8 @@ public class LC20ValidParenthesis {
         if(st.size()==0)
             return true;
         return false;
+
+        //TC:O(n)
+        //SC:O(n)
     }
 }

@@ -24,7 +24,6 @@ public class PreviousSmaller {
 		List<Integer> result = leftSmaller(nums1.length, nums1);
 		for (int no : result)
 			System.out.println(no);
-
     }
 
     private static void findPrevMinimumOfEachElement(int[] nums, Stack<Integer> st) {
@@ -40,6 +39,9 @@ public class PreviousSmaller {
         while (!st.isEmpty()){
             nums[st.pop()]=-1;
         }
+
+		//TC:O(N + N)
+		//SC:O(N) worst case if it is an increasing array
     }
 
 	private static List<Integer> leftSmaller(int n, int a[]) {
@@ -64,5 +66,8 @@ public class PreviousSmaller {
 
 		List<Integer> result = Arrays.stream(ans).boxed().collect(Collectors.toList());
 		return result;
+
+		//TC:O(N + N)
+		//SC:O(N) worst case if it is an increasing array
 	}
 }

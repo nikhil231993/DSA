@@ -24,13 +24,11 @@ public class V10NiceSubarrayLC1248 {
         //Approach 3: Best getting rid of space
         System.out.println(numSubarraysWithSum(nums, goal));
 
-        //if cannot be used in place of while as we will miss some count
+        //we cannot use "if" instead of "while" as in counting we will miss some subarrays. Take an example and try out
+        //Finding Longest length we can use as its to find max length
     }
 
     private static int numSubarraysWithSum(int[] nums, int goal) {
-
-        if(goal<0)
-            return 0;
 
         int atLeastGoal=numSubarraySum(nums, goal);
         int atLeastLessThanGoal=numSubarraySum(nums, goal-1);
@@ -41,6 +39,9 @@ public class V10NiceSubarrayLC1248 {
     }
 
     private static int numSubarraySum(int[] nums, int goal) {
+
+        if(goal<0)
+            return 0;
 
         int right=0, left=0, count=0,n=nums.length, sum=0;
         while(right<n){

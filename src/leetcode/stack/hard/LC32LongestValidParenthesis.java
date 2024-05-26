@@ -39,5 +39,8 @@ public class LC32LongestValidParenthesis {
             termIndex=st.pop();
         }
         return Math.max(termIndex, maxLen);
+
+        //TC:O(N) + O(k) stack size
+        //SC:O(N)
     }
 }

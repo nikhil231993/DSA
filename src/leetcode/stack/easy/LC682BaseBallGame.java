@@ -11,6 +11,7 @@ public class LC682BaseBallGame {
     }
 
     public static int calPoints(String[] operations) {
+
         Stack<String> st=new Stack();
 
         for(int i=0; i<operations.length; i++){
@@ -38,8 +39,8 @@ public class LC682BaseBallGame {
             sum+=Integer.parseInt(st.pop());
         }
         return sum;
-    }
 
-    //TC:O(n)
-    //SC:O(n)
+        //TC:O(n)
+        //SC:O(n)
+    }
 }

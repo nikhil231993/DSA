@@ -3,7 +3,9 @@ package leetcode.stack.striver;
 public class FixedStack {
 
 	protected int[] arr;
+
 	int top = -1;
+
 	private static final int DEFAULT_SIZE = 5;
 
 	public FixedStack() {

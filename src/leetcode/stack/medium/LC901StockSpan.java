@@ -1,8 +1,10 @@
 package leetcode.stack.medium;
 
+import java.util.Stack;
+
 public class LC901StockSpan {
 
-    /**
+
     class Node{
 
         public int key;
@@ -15,6 +17,7 @@ public class LC901StockSpan {
     }
 
     class StockSpanner {
+
         Stack<Node> st=new Stack();
 
         public StockSpanner() {
@@ -22,6 +25,7 @@ public class LC901StockSpan {
         }
 
         public int next(int price) {
+
             int span=1;
 
             while(!st.isEmpty() && st.peek().key<=price){
@@ -31,7 +35,5 @@ public class LC901StockSpan {
             st.push(new Node(price, span));
             return span;
         }
-
     }
-     */
 }

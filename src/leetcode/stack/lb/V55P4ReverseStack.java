@@ -8,6 +8,7 @@ public class V55P4ReverseStack {
 
         if(stack.isEmpty())
             return;
+
         int num=stack.pop();
         reverseStack(stack);
         insertAtBottom(stack, num);

@@ -17,18 +17,16 @@ public class LC1299ReplaceElementsWithGreatestRightSide {
 
         Arrays.fill(ans, -1);
 
-        int n=arr.length;
+        int n=arr.length, largest=-1;
 
-        int largest=Integer.MIN_VALUE;
         for(int i=n-1; i>=0; i--){
-            if(largest==Integer.MIN_VALUE){
-                largest=Math.max(largest, arr[i]);
-                continue;
-            } else{
-                ans[i]=largest;
-                largest=Math.max(largest, arr[i]);
-            }
+
+            ans[i]=largest;
+            largest=Math.max(largest, arr[i]);
         }
         return ans;
+
+        //TC:O(n)
+        //SC:O(1)
     }
 }

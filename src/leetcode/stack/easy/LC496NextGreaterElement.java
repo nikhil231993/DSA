@@ -32,5 +32,8 @@ public class LC496NextGreaterElement {
 			result[i] = map.getOrDefault(nums1[i], -1);
 		}
 		return result;
+
+		//TC:O(n1+n2)
+		//SC:O(stack size + map size)
 	}
 }

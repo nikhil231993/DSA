@@ -43,6 +43,7 @@ public class LC1209RemoveAllAdjacentDuplicates2 {
 			if (stack.peek().value == k)
 				stack.pop();
 		}
+
 		StringBuilder sb = new StringBuilder();
 		while (!stack.isEmpty()) {
 			char r = stack.peek().key;
@@ -54,5 +55,8 @@ public class LC1209RemoveAllAdjacentDuplicates2 {
 			}
 		}
 		return sb.reverse().toString();
+
+		//TC:O(n)
+		//SC:O(n)
 	}
 }

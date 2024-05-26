@@ -9,6 +9,9 @@ public class NextGreater {
         int[] nums=new int[]{1,8,7,4,5,6,3,29,90};
         Stack<Integer> st=new Stack<>();
 
+        //Approach 1 : Brute force with TC :O(n square)
+
+        //Approach 2:
         findNextGreater(nums, st);
         for(int n:nums)
             System.out.println(n);
@@ -27,5 +30,8 @@ public class NextGreater {
         while(!st.isEmpty()){
             nums[st.pop()]=-1;
         }
+
+        //TC:O(N + N)
+        //SC:O(N) worst case if it is an increasing array
     }
 }

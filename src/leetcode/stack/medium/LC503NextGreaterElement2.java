@@ -29,5 +29,8 @@ public class LC503NextGreaterElement2 {
 			st.push(i % nums.length);
 		}
 		return ans;
+
+		//TC:O(2 * n)
+		//SC:O(2 * n)
 	}
 }

@@ -2,23 +2,26 @@ package leetcode.stack.striver;
 
 class Stack {
 
-    int size = 10000;
-    int arr[] = new int[size];
-    int top = -1;
+    private int size = 10000;
+    private int arr[] = new int[size];
+    private int top = -1;
 
-    void push(int x) {
+    protected void push(int x) {
         top++;
         arr[top] = x;
     }
-    int pop() {
+
+    protected int pop() {
         int x = arr[top];
         top--;
         return x;
     }
-    int top() {
+
+    protected int top() {
         return arr[top];
     }
-    int size() {
+
+    protected int size() {
         return top + 1;
     }
 }

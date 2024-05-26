@@ -7,6 +7,7 @@ public class LC402RemoveKDigits {
     public static void main(String[] args) {
 
         String num = "54321";
+//        String num="1432219";
         int k = 3;
         System.out.println(removeKdigits(num, k));
     }
@@ -14,10 +15,9 @@ public class LC402RemoveKDigits {
     public static String removeKdigits(String num, int k) {
 
         int n=num.length();
-
         Stack<Character> st=new Stack();
-        int i;
-        for(i=0; i< n && k>0; i++){
+
+        for(int i=0; i< n; i++){
 
             char ch=num.charAt(i);
 
@@ -29,7 +29,6 @@ public class LC402RemoveKDigits {
             st.push(ch);
         }
 
-
         while(!st.isEmpty() && k>0){
             st.pop();
             k--;
@@ -40,10 +39,7 @@ public class LC402RemoveKDigits {
             ans=st.pop()+ans;
         }
 
-
-        ans=ans+num.substring(i, n);
-
-        i=0;
+        int i=0;
 
         while(ans.length()>i){
             if(ans.charAt(i)=='0')
@@ -53,5 +49,8 @@ public class LC402RemoveKDigits {
         }
 
         return ans.substring(i).length()==0?"0":ans.substring(i);
+
+        //TC:O(n)
+        //SC:O(n)
     }
 }

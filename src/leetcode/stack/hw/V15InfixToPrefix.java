@@ -35,18 +35,18 @@ public class V15InfixToPrefix {
                 st.pop();
             }else{
 
-                if(!st.isEmpty() && V13InfixToPostFix.prec(ch) == V13InfixToPostFix.prec(st.peek()) &&
-                        V13InfixToPostFix.associativity(ch)=='L') {
+                if(!st.isEmpty() && V12InfixToPostFix.prec(ch) == V12InfixToPostFix.prec(st.peek()) &&
+                        V12InfixToPostFix.associativity(ch)=='L') {
                     st.push(ch);
                     continue;
                 }
-                while(!st.isEmpty() && V13InfixToPostFix.prec(ch) < V13InfixToPostFix.prec(st.peek()) &&
-                        V13InfixToPostFix.associativity(ch)=='L') {
+                while(!st.isEmpty() && V12InfixToPostFix.prec(ch) < V12InfixToPostFix.prec(st.peek()) &&
+                        V12InfixToPostFix.associativity(ch)=='L') {
                     result.append(st.pop());
                 }
 
-                if(!st.isEmpty() && V13InfixToPostFix.prec(ch)== V13InfixToPostFix.prec(st.peek()) &&
-                        V13InfixToPostFix.associativity(ch)=='R'){
+                if(!st.isEmpty() && V12InfixToPostFix.prec(ch)== V12InfixToPostFix.prec(st.peek()) &&
+                        V12InfixToPostFix.associativity(ch)=='R'){
                     result.append(st.pop());
                 }
 
@@ -58,5 +58,8 @@ public class V15InfixToPrefix {
             result.append(st.pop());
 
         return result.reverse().toString();
+
+        //TC:O(n)
+        //SC:O(n)
     }
 }
