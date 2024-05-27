@@ -24,7 +24,7 @@ public class V7SubstringContainingAllThreeCharactersLC1358 {
         System.out.println(bestNumberOfSubstringsApproach(s));
 
         //we cannot use "if" instead of "while" as in counting we will miss some subarrays. Take an example and try out
-        //Finding Longest length we can use as its to find max length
+        //When we want to find longest length we can use as its to find max length
     }
 
     private static int bestNumberOfSubstringsApproach(String s) {
@@ -95,7 +95,7 @@ public class V7SubstringContainingAllThreeCharactersLC1358 {
 
                 set.add(s.charAt(j));
                 if(set.size()==3){
-                    count++; // we can add count =count+n-j and then breakout a all the strings after that also satisfy the condition
+                    count++; // we can add count =count+n-j and then breakout as all the strings after that also satisfy the condition
                 }
             }
         }

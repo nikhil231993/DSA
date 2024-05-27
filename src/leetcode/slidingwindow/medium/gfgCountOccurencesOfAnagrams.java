@@ -9,6 +9,11 @@ public class gfgCountOccurencesOfAnagrams {
         String txt = "forxxorfxdofr";
         String pat = "for";
 
+        //Approach 1: Brute using two for loops
+
+        //Approach 2: Better using while
+
+        //Approach 3: Best
         System.out.println(minWindow(pat, txt));
     }
 
@@ -26,7 +31,7 @@ public class gfgCountOccurencesOfAnagrams {
                 count++;
             map.put(txt.charAt(right), map.getOrDefault(txt.charAt(right),0)-1);
 
-            while(right-left+1==pat.length()){ //if can be used
+            if(right-left+1==pat.length()){ //while can be used but it will be better approach
                 if(count==pat.length())
                     ans++;
                 map.put(txt.charAt(left), map.get(txt.charAt(left))+1);
@@ -37,5 +42,8 @@ public class gfgCountOccurencesOfAnagrams {
             right++;
         }
         return ans;
+
+        //TC:O(n)
+        //SC:O(n)
     }
 }

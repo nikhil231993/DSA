@@ -2,65 +2,88 @@ package leetcode.slidingwindow.medium;
 
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Set;
 
 public class LC3LongestSubstringWithoutRepeatingCharacters {
 
     public static void main(String[] args) {
-        //Brute force: generate all substring using kadane's algo which is O(N cube) which Striver has done it seems
 
-        String s="takeUforward";
+        String str = "pwwkew";
 
-        //First using hashset
-        //Step 1: have l and r at start position
-        //Step 2: If set does not contain character at r add it in set and calculate len and move r by 1
-        //Step 3: If set has character present at r then delete the character at position of l and move left;
+        //Approach 1: Brute Generate all the combinations which is TC O(N square)
+        System.out.println(bruteApproach(str));
 
-        System.out.println(setCalculation(s));
+        //Approach 2: Better
+        System.out.println(lengthOfLongestSubstringUsingHashSet(str));
 
-        //Second using map to improve the TC to O(N)
-        //Step 1: Create a hashmap to store character and its position
-        //Step 2: if map contains character increase the left to present character at right +1 or left
-        //Step 3: then calculate len and increase right and add new index of present character into the map
-
-        System.out.println(mapCalculation(s));
+        //Approach 2 better
+        System.out.println(lengthOfLongestSubstringUsingMap(str));
     }
 
-    private static int mapCalculation(String s) {
+    public  static int bruteApproach(String str){
 
-        HashMap<Character,Integer> map=new HashMap<>();
-        int left=0, right=0;
-        int len=0;
+        if(str.length()==0)
+            return 0;
+        int maxans = Integer.MIN_VALUE;
+        for (int i = 0; i < str.length(); i++){ // outer loop for traversing the string
 
-        while(right<s.length()){
-            if(map.containsKey(s.charAt(right)))
-                left=Math.max(map.get(s.charAt(right))+1,left);
+            Set<Character > se = new HashSet <>();
+            for (int j = i; j < str.length(); j++) // nested loop for getting different string starting with str[i]
+            {
+                if (se.contains(str.charAt(j))) // if element if found so mark it as ans and break from the loop
+                {
+                    maxans = Math.max(maxans, j - i);
+                    break;
+                }
+                se.add(str.charAt(j));
+            }
+        }
+        return maxans;
 
-            map.put(s.charAt(right),right);
-            len=Math.max(len,right-left+1);
+        //TC:O(n square)
+        //SC:O(256)
+    }
+
+    private static int lengthOfLongestSubstringUsingMap(String s) {
+
+        HashMap<Character, Integer> m = new HashMap();
+        int left = 0;
+        int right = 0;
+        int len = 0;
+        while (right < s.length()) {
+            if (m.containsKey(s.charAt(right))) {
+                left = Math.max(m.get(s.charAt(right)) + 1, left);
+            }
+            len = Math.max(len, right - left + 1);
+            m.put(s.charAt(right), right);
             right++;
         }
         return len;
 
+        //TC:O(N)
+        //SC:O(256)
     }
 
-    private static int setCalculation(String s) {
+    public static int lengthOfLongestSubstringUsingHashSet(String s) {
 
-        HashSet<Character> hs=new HashSet<>();
+        HashSet<Character> h = new HashSet<>();
+        int left = 0;
+        int right = 0;
+        int len = 0;
+        while (right < s.length()) {
 
-        int left=0, right=0;
-        int len=0;
-        while(right<s.length()){
-            if(hs.contains(s.charAt(right))){
-                hs.remove(s.charAt(left));
-                left++;
-            }else{
-                hs.add(s.charAt(right));
-                len=Math.max(len,right-left+1);
+            if (!h.contains(s.charAt(right))) {
+                h.add(s.charAt(right));
+                len = Math.max(len, right - left + 1);
                 right++;
+            } else if (h.contains(s.charAt(right))) {
+                h.remove(s.charAt(left));
+                left++;
             }
         }
         return len;
-        //TC:O(2N)
-        //SC:O(N)
+
+        // TC:O(2N)
+        //SC:O(256)
     }
 }

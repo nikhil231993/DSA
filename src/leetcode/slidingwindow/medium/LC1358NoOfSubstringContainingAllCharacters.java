@@ -23,7 +23,8 @@ public class LC1358NoOfSubstringContainingAllCharacters {
         //Approach 4: Using Two Pointer
         System.out.println(bestNumberOfSubstringsApproach(s));
 
-        //we cannot use two pointer approach as there is no condition to start the second loop
+        //we cannot use "if" instead of "while" as in counting we will miss some subarrays. Take an example and try out
+        //When we want to find longest length we can use as its to find max length
     }
 
     private static int bestNumberOfSubstringsApproach(String s) {
@@ -94,7 +95,7 @@ public class LC1358NoOfSubstringContainingAllCharacters {
 
                 set.add(s.charAt(j));
                 if(set.size()==3){
-                    count++; // we can add count =count+n-j and then breakout a all the strings after that also satisfy the condition
+                    count++; // we can add count =count+n-j and then breakout as all the strings after that also satisfy the condition
                 }
             }
         }

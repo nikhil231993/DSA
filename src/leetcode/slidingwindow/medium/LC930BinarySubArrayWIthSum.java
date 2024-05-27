@@ -17,6 +17,9 @@ public class LC930BinarySubArrayWIthSum {
 
         //Approach 3: Best getting rid of space
         System.out.println(numSubarraysWithSum(nums, goal));
+
+        //we cannot use "if" instead of "while" as in counting we will miss some subarrays. Take an example and try out
+        //When we want to find longest length we can use as its to find max length
     }
 
     private static int numSubarraysWithSum(int[] nums, int goal) {
@@ -47,6 +50,9 @@ public class LC930BinarySubArrayWIthSum {
             right++;
         }
         return count;
+
+        //TC:O(2 *n)
+        //SC:O(n)
     }
 
     public static int numSubarraysWithSumUsingMap(int[] nums, int goal) {
@@ -57,6 +63,7 @@ public class LC930BinarySubArrayWIthSum {
         int n=nums.length;
         int sum=0;
         for(int i=0; i<n; i++){
+
             sum+=nums[i];
             if(sum==goal)
                 count++;
@@ -66,5 +73,8 @@ public class LC930BinarySubArrayWIthSum {
             map.put(sum, map.getOrDefault(sum,0)+1);
         }
         return count;
+
+        //TC:O(n) * map TC
+        //SC:O(n)
     }
 }

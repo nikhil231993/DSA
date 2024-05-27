@@ -4,40 +4,75 @@ import java.util.HashMap;
 public class LC1248CountNumberOfNiceSubarrays {
 
     public static void main(String[] args) {
-       int[] nums =new int[] {1,1,2,1,1};
-       int k = 3;
 
-        System.out.println(numberOfSubarrays(nums,k));
+        int[] nums =new int[] {2,2,2,1,2,2,1,2,2,2};
+        int  goal = 2;
 
-    }
-
-    //Step 1: change even to 0 and odd nos to 1;
-    //Step 2:then find no of sub array with sum equal to 1
-
-
-    public static int numberOfSubarrays(int[] nums, int k) {
-
-        int n=nums.length;
-
-        for(int i=0; i<n;i++){
+        for(int i=0 ;i <nums.length; i++){
             if(nums[i]%2==0)
                 nums[i]=0;
-            else if(nums[i]%2==1)
+            else
                 nums[i]=1;
         }
 
-        HashMap<Integer, Integer> m=new HashMap();
-        m.put(0,1);
-        int sum=0;
-        int count=0;
-        for(int i=0;i<n;i++){
-            sum+=nums[i];
-            if(m.containsKey(sum-k)){
-                count+=m.get(sum-k);
+        //Approach 1 : Brute will be generate all solutions
+
+        //Approach 2: Better
+        System.out.println(numSubarraysWithSumUsingMap(nums, goal));
+
+        //Approach 3: Best getting rid of space
+        System.out.println(numSubarraysWithSum(nums, goal));
+
+        //we cannot use "if" instead of "while" as in counting we will miss some subarrays. Take an example and try out
+        //When we want to find longest length we can use as its to find max length
+    }
+
+    private static int numSubarraysWithSum(int[] nums, int goal) {
+
+        int atLeastGoal=numSubarraySum(nums, goal);
+        int atLeastLessThanGoal=numSubarraySum(nums, goal-1);
+        return atLeastGoal-atLeastLessThanGoal;
+
+        //TC:O(2*2N)
+        //SC:O(1)
+    }
+
+    private static int numSubarraySum(int[] nums, int goal) {
+
+        if(goal<0)
+            return 0;
+
+        int right=0, left=0, count=0,n=nums.length, sum=0;
+        while(right<n){
+            sum+=nums[right];
+
+            while(sum>goal){
+                sum-=nums[left];
+                left++;
             }
-            m.put(sum,m.getOrDefault(sum,0)+1);
+            if(sum<=goal)
+                count+=right-left+1;
+            right++;
         }
         return count;
+    }
 
+    public static int numSubarraysWithSumUsingMap(int[] nums, int goal) {
+
+        int count=0;
+
+        HashMap<Integer, Integer> map=new HashMap<>();
+        int n=nums.length;
+        int sum=0;
+        for(int i=0; i<n; i++){
+            sum+=nums[i];
+            if(sum==goal)
+                count++;
+            if(map.containsKey(sum-goal))
+                count+=map.get(sum-goal);
+
+            map.put(sum, map.getOrDefault(sum,0)+1);
+        }
+        return count;
     }
 }

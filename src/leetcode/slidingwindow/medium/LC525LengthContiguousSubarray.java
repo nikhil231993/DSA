@@ -6,6 +6,7 @@ import java.util.LinkedHashMap;
 public class LC525LengthContiguousSubarray {
 
     public static void main(String[] args) {
+
         int[] nums=new int[]{0,1,0,1,0,0,1,0,1};
 
         //Brute force

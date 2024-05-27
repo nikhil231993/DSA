@@ -3,24 +3,23 @@ package leetcode.twopointer.hard;
 import java.util.HashMap;
 import java.util.HashSet;
 
-public class PremiumLongestSubstringWithAtmostKDistinctCharacters {
+public class PremiumLongestSubStringWithAtmostTwoDistinctCharacters {
 
     public static void main(String[] args) {
 
-        String s="abcddefg";
-        int K=3;
+        String s="ninninja";
 
         //old code no need to learn this. Learn below three approaches
-        System.out.println(kDistinctChars(K,s));
+        System.out.println(lengthOfLongestSubstring(s));
 
         //Approach 1: Brute
-        System.out.println(bruteLongest(s,K));
+        System.out.println(bruteLongest(s,2));
 
         //Approach 2: Better
-        System.out.println(betterLongest(s,K));
+        System.out.println(betterLongest(s,2));
 
         //Approach 3: Best
-        System.out.println(bestLongest(s,K));
+        System.out.println(bestLongest(s,2));
     }
 
     private static int bestLongest(String s, int k) {
@@ -97,11 +96,11 @@ public class PremiumLongestSubstringWithAtmostKDistinctCharacters {
         //SC:O(k
     }
 
-    public static int kDistinctChars(int k, String str) {
-        return subArrayWithAtmostTwo(k, str);
+    public static int lengthOfLongestSubstring(String s) {
+        return subArrayWithAtmostTwo(s,2);
     }
 
-    private static int subArrayWithAtmostTwo(int k, String s) {
+    private static int subArrayWithAtmostTwo(String s, int k) {
         HashMap<Character, Integer> map=new HashMap<>();
         int left=0;
         int right=0;

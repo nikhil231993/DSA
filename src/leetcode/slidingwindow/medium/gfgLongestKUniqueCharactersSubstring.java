@@ -13,13 +13,13 @@ public class gfgLongestKUniqueCharactersSubstring {
         //using n square
 
         //Approach 2: Better
-        // using while loop
+        // same as below but using while loop in line 42
 
         //Approach 3: Best
         System.out.println(func(s,k));
 
         //In this Longest Subarray or Substring of length == k we can do it directly
-        //i.e., we do nto have to evaluate k and k-1 as it is asking for longest
+        //i.e., we do not have to evaluate k and k-1 as it is asking for longest
         //only if we need to find no of subarray or substring of exactly k we need k or k-1
     }
 
@@ -51,5 +51,7 @@ public class gfgLongestKUniqueCharactersSubstring {
         }
         return maxLen;
 
+        //TC:O(n)
+        //SC:O(1)
     }
 }

@@ -17,7 +17,7 @@ public class V11KDifferentIntegersSubarrayLC992 {
         System.out.println(better(nums, k));
 
         //we cannot use "if" instead of "while" as in counting we will miss some subarrays. Take an example and try out
-        //Finding Longest length we can use as its to find max length
+        //When we want to find longest length we can use as its to find max length
     }
 
     private static int better(int[] nums, int k) {
@@ -36,8 +36,10 @@ public class V11KDifferentIntegersSubarrayLC992 {
         HashMap<Integer, Integer> map=new HashMap<>();
 
         while(right<n){
+
             map.put(nums[right], map.getOrDefault(nums[right],0)+1);
             while(map.size()>k){
+
                 map.put(nums[left], map.get(nums[left])-1);
                 if(map.get(nums[left])==0)
                     map.remove(nums[left]);

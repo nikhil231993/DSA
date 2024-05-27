@@ -7,6 +7,12 @@ public class LC1052GrumpyOwner {
         int[] customers =new int[] {1,0,1,2,1,1,7,5};
         int[] grumpy =new int[] {0,1,0,1,0,1,0,1};
         int minutes = 3;
+
+        //Approach 1: for loop
+
+        //Approach 2: Better using while instead of if
+
+        //Approach 3:
         System.out.println(maxCustomers(customers,grumpy,minutes));
     }
 
@@ -27,7 +33,7 @@ public class LC1052GrumpyOwner {
         while(r<customers.length){
             if(grumpy[r]==1)
                 sum+=customers[r];
-            while(r-l+1==minutes){ // we can use if also here tested in leetcode
+            if(r-l+1==minutes){ // we can use while also instead of if also here tested in leetcode
                 max=Math.max(max,sum);
                 if(grumpy[l]==1){
                     sum-=customers[l];

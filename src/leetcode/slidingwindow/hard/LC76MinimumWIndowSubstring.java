@@ -5,55 +5,44 @@ import java.util.HashMap;
 public class LC76MinimumWIndowSubstring {
 
     public static void main(String[] args) {
-        String s="ADOBECODEBANC";
-        String t="ABC";
 
-        System.out.println(minwindowsubstring(s,t));
+        String s = "ADOBECODEBANC", t = "ABC";
+
+        //Approach 1 : Brute force Generate all the combinations
+
+        //Approach 2:
+        System.out.println(minWindow(s, t));
     }
 
-    private static String minwindowsubstring(String s, String t) {
+    public static String minWindow(String s, String t) {
 
-        if(s.length() ==0 || t.length()==0 || s.length()<t.length())
-            return "";
+        int startingIndex=-1, right=0, left=0, n=s.length(), count=0;
+        Integer minLen=Integer.MAX_VALUE;
+        HashMap<Character, Integer> map=new HashMap<>();
 
-        int l=0,r=0,count=0;
-        int minLength=Integer.MAX_VALUE;
-        int startIndex=0;
-
-        HashMap<Character,Integer> m=new HashMap<>();
-
-        for(int i=0;i<t.length();i++){
-            Character tC=t.charAt(i);
-            m.put(tC,m.getOrDefault(tC,0)+1);
+        for(int i=0; i<t.length(); i++){
+            map.put(t.charAt(i), map.getOrDefault(t.charAt(i),0)+1);
         }
 
-        while(r<s.length()){
-            Character rC=s.charAt(r);
-            if(m.getOrDefault(rC,0)>0)
+        while(right<n){
+
+            if(map.getOrDefault(s.charAt(right),0)>0)
                 count++;
-            m.put(rC,m.getOrDefault(rC,0)-1);
+            map.put(s.charAt(right), map.getOrDefault(s.charAt(right),0)-1);
 
-            while(count==t.length()){
+            while(count==t.length()){// while cannot be replaced with if as we have to shrink it
 
-                if(minLength>r-l+1){
-                    minLength=r-l+1;
-                    startIndex=l;
+                if(right-left+1<minLen){
+                    minLen=right-left+1;
+                    startingIndex=left;
                 }
-                Character lC=s.charAt(l);
-                m.put(lC,m.getOrDefault(lC,0)+1);
-
-                if(m.get(lC)>0)
+                map.put(s.charAt(left), map.get(s.charAt(left))+1);
+                if(map.get(s.charAt(left))>0)
                     count--;
-                l++;
+                left++;
             }
-            r++;
+            right++;
         }
-
-        if(minLength==Integer.MAX_VALUE)
-            return "";
-
-        String result=s.substring(startIndex,minLength+startIndex);
-        return result;
-
+        return startingIndex==-1?"":s.substring(startingIndex,startingIndex+minLen);
     }
 }
