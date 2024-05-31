@@ -7,9 +7,10 @@ public class LC60KthPermutationSequence {
 
     public static void main(String[] args) {
 
-        int n = 4, k = 17;
+        int n = 4, k = 12;
         System.out.println(getPermutation(n,k));
     }
+
     public static String getPermutation(int n, int k) {
 
         int fact=1;
@@ -30,6 +31,7 @@ public class LC60KthPermutationSequence {
             fact=fact/list.size();
         }
         return ans;
+
         //TC:O(n * n (where this n is for remove function) );
         //SC:O(n)
     }

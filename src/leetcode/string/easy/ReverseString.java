@@ -3,6 +3,7 @@ package leetcode.string.easy;
 public class ReverseString {
 
 	public static void main(String[] args) {
+
 		String name = "Nikhil";
 
 		char[] arr = new char[name.length()];

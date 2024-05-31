@@ -5,6 +5,7 @@ import java.util.HashMap;
 public class LC149MaxPointsInLine {
 
     public static void main(String[] args) {
+
         int[][] points =new int[][] {{1,1},{2,2},{3,3}};
         System.out.println(maxPoints(points));
     }
@@ -15,6 +16,7 @@ public class LC149MaxPointsInLine {
         int max=0;
 
         for(int[] point1:points){
+
             HashMap<Double, Integer> map=new HashMap<>();//We need to reset map everytime or else the values will get added
             for(int[] point2: points){
                 if(point1==point2)
@@ -30,6 +32,7 @@ public class LC149MaxPointsInLine {
             }
         }
         return max+1;
+
         //TC:O(n square)
         //TC:O(n square) in case all are different
     }

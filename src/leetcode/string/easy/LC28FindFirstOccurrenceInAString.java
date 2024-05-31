@@ -3,11 +3,13 @@ package leetcode.string.easy;
 public class LC28FindFirstOccurrenceInAString {
 
 	public static void main(String[] args) {
+
 		String haystack = "test";
 		String needle = "st";
 
 		//Approach 1
 		System.out.println(strStrBrute(haystack,needle));
+
 		//Approach 2
 		System.out.println(findOccurrence(haystack, needle));
 	}
@@ -17,6 +19,7 @@ public class LC28FindFirstOccurrenceInAString {
 	}
 
 	private static int findOccurrence(String haystack, String needle) {
+
 		int h = haystack.length();
 		int n = needle.length();
 
@@ -33,6 +36,7 @@ public class LC28FindFirstOccurrenceInAString {
 			}
 		}
 		return -1;
+
 		//TC:O(m*n)
 	}
 }

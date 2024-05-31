@@ -111,7 +111,7 @@ public class V8LongestRepeatingCharacterReplacementLC424 {
                 arr[s.charAt(j)-'A']++;
                 maxFreq=Math.max(maxFreq, arr[s.charAt(j)-'A']);
 
-                if((j-i+1)-maxFreq <=k){
+                if((j-i+1)-maxFreq <= k){
                     maxLen=Math.max(maxLen, j-i+1);
                 }else
                     break;

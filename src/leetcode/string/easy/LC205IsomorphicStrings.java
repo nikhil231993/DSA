@@ -5,7 +5,8 @@ import java.util.HashMap;
 public class LC205IsomorphicStrings {
 
     public static void main(String[] args) {
-        String s = "ab", t = "aa";
+
+        String s = "cba", t = "bca";
 
         //Approach 1
         System.out.println(isIsomorphic(s,t));
@@ -31,7 +32,9 @@ public class LC205IsomorphicStrings {
             m1.put(s1,t1);
             m2.put(t1,s1);
         }
+
         return true;
+
         //TC:O(n)
         //SC:O(256 * 2)
     }
@@ -40,15 +43,21 @@ public class LC205IsomorphicStrings {
 
         int[] ch1=new int[256];
         int[] ch2=new int[256];
+
         for(int i=0;i<s.length();i++){
+
             char cha1=s.charAt(i);
             char cha2=t.charAt(i);
+            int n=cha2;
+            int n1=cha1;
             if(ch1[cha1]!=ch2[cha2])
                 return false;
-            ch1[cha1]=i+1;
-            ch2[cha2]=i+1;
+            ch1[cha1]++;
+            ch2[cha2]++;
         }
+
         return true;
+
         //TC:O(n)
         //SC:O(256 * 2)
     }

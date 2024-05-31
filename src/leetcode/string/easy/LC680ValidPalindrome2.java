@@ -27,11 +27,13 @@ public class LC680ValidPalindrome2 {
 			}
 		}
 		return true;
+
 		//TC:O(n)
 		//SC:O(1)
 	}
 
 	private static boolean isPalindrome(String s, int start, int end) {
+
 		while (start < end) {
 			if (s.charAt(start) == s.charAt(end)) {
 				start++;

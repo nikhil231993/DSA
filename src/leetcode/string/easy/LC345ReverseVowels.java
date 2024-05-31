@@ -3,11 +3,13 @@ package leetcode.string.easy;
 public class LC345ReverseVowels {
 
     public static void main(String[] args) {
+
         String s = "hello";
         System.out.println(reverseVowels(s));
     }
 
     public static String reverseVowels(String s) {
+
         char[] word = s.toCharArray();
         int start = 0;
         int end = s.length() - 1;
@@ -36,6 +38,7 @@ public class LC345ReverseVowels {
 
         String answer = new String(word);
         return answer;
+
         //TC:O(n)
         //SC:O(n)
     }

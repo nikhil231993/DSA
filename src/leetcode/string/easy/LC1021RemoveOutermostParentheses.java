@@ -3,7 +3,9 @@ package leetcode.string.easy;
 import java.util.Stack;
 
 public class LC1021RemoveOutermostParentheses {
+
     public static void main(String[] args) {
+
         String s="(()())(())";
         System.out.println(removeOuterParentheses(s));
     }
@@ -28,6 +30,7 @@ public class LC1021RemoveOutermostParentheses {
             }
         }
         return sb.toString();
+
         //TC:O(n);
         //SC:O(n) answer
     }

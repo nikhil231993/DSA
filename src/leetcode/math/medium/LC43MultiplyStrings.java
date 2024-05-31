@@ -3,13 +3,14 @@ package leetcode.math.medium;
 public class LC43MultiplyStrings {
 
 	public static void main(String[] args) {
+
 		String num1 = "123";
 		String num2 = "456";
 		System.out.println(multiply(num1, num2));
-
 	}
 
 	public static String multiply(String num1, String num2) {
+
 		if (num1.length() == 0 || num2.length() == 0)
 			return "0";
 		if (num1.equals("0") || num2.equals("0"))

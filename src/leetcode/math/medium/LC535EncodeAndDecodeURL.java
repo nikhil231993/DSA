@@ -9,10 +9,16 @@ public class LC535EncodeAndDecodeURL {
 		String longUrl = "https://leetcode.com/problems/design-tinyurl";
 		HashMap<String, String> urlMapping = new HashMap();
 		HashMap<String, String> code = new HashMap();
-		System.out.println(decode(longUrl, urlMapping, code));
+		System.out.println(encode(longUrl, urlMapping, code));
 	}
 
-	private static String decode(String longUrl,HashMap<String, String> urlMapping,HashMap<String, String> code) {
+	private static String decode(String shortUrl,HashMap<String, String> urlMapping,HashMap<String, String> code) {
+
+		return code.get(shortUrl);
+	}
+
+	private static String encode(String longUrl, HashMap<String, String> urlMapping, HashMap<String, String> code) {
+
 
 		//https://leetcode.com/problems/encode-and-decode-tinyurl/solutions/1110551/js-python-java-c-easy-map-solution-w-explanation/?orderBy=most_votes
 		if (urlMapping.containsKey(longUrl))
@@ -28,11 +34,8 @@ public class LC535EncodeAndDecodeURL {
 		return urlMapping.get(longUrl);
 	}
 
-	private static String encode(String hash, HashMap<String, String> urlMapping, HashMap<String, String> code) {
-		return code.get(hash);
-	}
-
 	private static String hashFunction() {
+
 		String s ="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 		char[] ch=new char[6];
 		for(int i=0;i<ch.length;i++) {

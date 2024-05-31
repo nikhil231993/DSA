@@ -24,6 +24,7 @@ public class LC231PowerOfTwo {
     }
 
     private static boolean isPowerOfTwo2(int n) {
+
         //We count the set bits in this approach
         //https://www.youtube.com/watch?v=OuOwshx2U70&ab_channel=AyushiSharma
         //https://www.youtube.com/watch?v=KJnhAUkxAho&ab_channel=GeeksforGeeks
@@ -40,6 +41,7 @@ public class LC231PowerOfTwo {
     }
 
     private static boolean isPowerOfTwo1(int n) {
+
         //Below method works only till 268435456 and fails after (536870912 onwards) that due to precision error
         //https://leetcode.com/problems/power-of-two/discuss/184262/Java-simple-solution-with-detailed-explaination
 
@@ -49,6 +51,7 @@ public class LC231PowerOfTwo {
     }
 
     public static boolean isPowerOfTwo(int n) {
+
         if(n<=0)
             return false;
         while(n!=1){
@@ -57,6 +60,7 @@ public class LC231PowerOfTwo {
             n=n/2;
         }
         return true;
-        //TC:O(log n) as divided by 2
+
+        //TC:O(log n) to  base 2 xas divided by 2
     }
 }

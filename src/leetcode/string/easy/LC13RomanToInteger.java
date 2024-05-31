@@ -8,8 +8,10 @@ public class LC13RomanToInteger {
 	public static void main(String[] args) {
 
 		String s = "IV";
+
 		//Approach 1
 		System.out.println(romanToIntegerUsingMap(s));
+
 		//Approach 2
 		System.out.println(romanToIntegerWithoutUsingMap(s));
 
@@ -24,6 +26,7 @@ public class LC13RomanToInteger {
 	}
 
 	private static int romanToIntegerWithoutUsingMap(String s) {
+
 		int sum = 0;
 		int num = 0;
 		int forward=0;
@@ -65,6 +68,7 @@ public class LC13RomanToInteger {
 	}
 
 	private static int romanToIntegerUsingMap(String s) {
+
 		Map<Character, Integer> keyValueMapping = new LinkedHashMap();
 		keyValueMapping.put('I', 1);
 		keyValueMapping.put('V', 5);
@@ -84,6 +88,7 @@ public class LC13RomanToInteger {
 			}
 		}
 		return sum;
+
 		//TC:O(n);
 		//SC:O(n)
 	}

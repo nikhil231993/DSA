@@ -5,10 +5,12 @@ import java.util.Arrays;
 public class LC462MinimumEqual2 {
 
 	public static void main(String[] args) {
+
 		int[] num = new int[] { 1, 3, 7, 8, 11 };
 
 		// Approach 1
 		System.out.println(minMoves(num));
+
 		// Approach 2 Best approach
 		System.out.println(minMovesBetter(num));
 	}
@@ -41,6 +43,7 @@ public class LC462MinimumEqual2 {
 			minMoves += Math.abs(nums[left++] - nums[right--]);
 		}
 		return minMoves;
+
 		// SC:O(1)
 		// TC:O(nlogn)
 	}

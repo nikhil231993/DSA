@@ -3,15 +3,18 @@ package leetcode.string.easy;
 public class LC125ValidPalindrome {
 
 	public static void main(String[] args) {
-		String s = "A man, a plan, a canal: Panamak";
+
+		String s = "1A man, a plan, a canal: Panama1";
 
 		//Approach 1 using ASCII
 		System.out.println(validPalindromeBruteForce(s));
+
 		//Approach 2
 		System.out.println(validPalindromeInBuiltLibrary(s));
 	}
 
 	private static boolean validPalindromeInBuiltLibrary(String s) {
+
 		String str = s.toLowerCase();
 		
 		int start=0;
@@ -22,15 +25,16 @@ public class LC125ValidPalindrome {
 				start++;
 			while (start < end && !Character.isLetterOrDigit(str.charAt(end)))
 				end--;
-			if (start < end && str.charAt(start) != str.charAt(end))
+			if (start < end && !(str.charAt(start) == str.charAt(end)))
 				return false;
 			start++;
 			end--;
 		}
-		return false;
+		return true;
 	}
 
 	private static boolean validPalindromeBruteForce(String s) {
+
 		String str = s.toLowerCase();
 		
 		int start=0;
@@ -53,6 +57,7 @@ public class LC125ValidPalindrome {
 			end--;
 		}
 		return true;
+
 		// SC:O(1)
 		// TC:O(n)
 	}

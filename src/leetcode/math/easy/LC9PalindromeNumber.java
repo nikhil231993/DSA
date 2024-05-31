@@ -3,10 +3,12 @@ package leetcode.math.easy;
 public class LC9PalindromeNumber {
 
 	public static void main(String[] args) {
+
 		int x = 2147447412;
 
 		//Approach 1
 		System.out.println(isPalindromeUsingString(x));
+
 		//Approach 2
 		System.out.println(isPalindrome(x));
 	}
@@ -16,6 +18,7 @@ public class LC9PalindromeNumber {
 		if(x<0) return false;
 		String str=String.valueOf(x);
 		int length=str.length();
+
 		for(int i=0;i<length/2;i++){
 			if(str.charAt(i)!=str.charAt(length-i-1))
 				return false;
@@ -24,6 +27,7 @@ public class LC9PalindromeNumber {
 	}
 
 	public static boolean isPalindrome(int x) {
+
 		if (x < 0)
 			return false;
 		int y = x;
@@ -38,6 +42,7 @@ public class LC9PalindromeNumber {
 			return true;
 		else
 			return false;
+
 		// TC:O(n) where n is the no of digits in no x
 		// SC:O(1)
 	}

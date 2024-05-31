@@ -3,6 +3,7 @@ package leetcode.string.easy;
 public class LC1768MergeAlternatively {
 
     public static void main(String[] args) {
+
         String word1 = "abc", word2 = "pqr";
         System.out.println(mergeAlternately(word1,word2));
     }
@@ -13,6 +14,7 @@ public class LC1768MergeAlternatively {
         int n2=word2.length();
         int i=0,j=0;
         StringBuilder sb=new StringBuilder();
+
         while(i<n1 && j<n2){
             sb.append(word1.charAt(i++));
             sb.append(word2.charAt(j++));
@@ -24,6 +26,7 @@ public class LC1768MergeAlternatively {
             sb.append(word2.charAt(j++));
         }
         return sb.toString();
+
         //TC:O(n+m)
         //SC:O(n+m)
     }

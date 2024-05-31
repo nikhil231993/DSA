@@ -3,11 +3,31 @@ package leetcode.math.easy;
 public class LC2119DoubleReversal {
 
     public static void main(String[] args) {
+
        int num = 526;
-       System.out.println(isSameAfterReversals(num));
+
+        //Approach 1:
+        System.out.println(isSameAfterReversals(num));
+
+        //Approach 2:
+        System.out.println(better(num));
+
+        //approach 3:
+        System.out.println(best(num));
+    }
+
+    private static boolean best(int num) {
+
+        return num==0 || num % 10 !=0;
+    }
+
+    private static boolean better(int num) {
+
+        return num==0 || !String.valueOf(num).endsWith("0");
     }
 
     public static boolean isSameAfterReversals(int num) {
+
         int n=num;
         for(int i=0;i<2;i++)
             num=reverseInteger(num);
@@ -24,6 +44,7 @@ public class LC2119DoubleReversal {
             n = n / 10;
         }
         return ans;
+
         // TC:O(n) where n is the length of the integer
         // SC:O(1)
     }

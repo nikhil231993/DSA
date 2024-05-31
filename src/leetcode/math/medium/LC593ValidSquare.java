@@ -5,6 +5,7 @@ import java.util.HashMap;
 public class LC593ValidSquare {
 
 	public static void main(String[] args) {
+
 		int[] p1 = new int[] { 0, 0 };
 		int[] p2 = new int[] { 1, 1 };
 		int[] p3 = new int[] { 1, 0 };
@@ -30,6 +31,7 @@ public class LC593ValidSquare {
 			return true;
 		else
 			return false;
+
 		// SC:O(6)
 		// TC:O(6)
 	}

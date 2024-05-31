@@ -5,15 +5,18 @@ import java.util.Stack;
 public class LC1614ValidParenthesesString {
 
     public static void main(String[] args) {
+
         String s = "(1+(2*3)+((8)/4))+1";
 
         //Approach 1
         System.out.println(maxDepth(s));
+
         //Approach 2
         System.out.println(maxDepthBetter(s));
     }
 
     public static int maxDepth(String s) {
+
         int max=Integer.MIN_VALUE;
         Stack<Character> st=new Stack();
         for(int i=0;i<s.length();i++){
@@ -30,11 +33,13 @@ public class LC1614ValidParenthesesString {
         if(max==Integer.MIN_VALUE)
             return 0;
         return max;
+
         //TC:O(n)
         //SC:O(n)
     }
 
     public static int maxDepthBetter(String s) {
+
         int max=Integer.MIN_VALUE;
         Stack<Character> st=new Stack();
         int count=0, depth=0;;
@@ -48,6 +53,7 @@ public class LC1614ValidParenthesesString {
             }
         }
         return max==Integer.MIN_VALUE?0:max;
+
         //TC:O(n)
         //SC:O(1)
     }
