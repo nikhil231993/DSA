@@ -20,6 +20,8 @@ public class LC5LongestPalandromicSubstring {
 		String sub="";
 		for(int i=0;i<n;i++){
 			int left=i, right=i;
+
+			//odd string length
 			while(left>=0 && right < n && s.charAt(left)==s.charAt(right)){
 				if(right-left+1>len){
 					len=right-left+1;
@@ -31,7 +33,7 @@ public class LC5LongestPalandromicSubstring {
 
 			left=i;
 			right=i+1;
-
+			//even string length
 			while(left>=0 && right<n && s.charAt(left)==s.charAt(right)){
 				if(right-left+1>len){
 					len=right-left+1;
@@ -42,6 +44,7 @@ public class LC5LongestPalandromicSubstring {
 			}
 		}
 		return sub;
+
 		//TC:O(n square)
 		//SC:O(n) if entire string is palindrome
 	}

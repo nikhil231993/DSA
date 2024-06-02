@@ -5,6 +5,7 @@ import java.util.Stack;
 public class LC151ReverseWordsInAString {
 
 	public static void main(String[] args) {
+
 		String s = "      hello world  ";
 
 		//Approach 1
@@ -15,26 +16,29 @@ public class LC151ReverseWordsInAString {
 	}
 
 	private static String reverseWordsInPlace(String s) {
+
 		int i = s.length() - 1;
 		int j = 0;
-		String r = "";
+		StringBuilder sb = new StringBuilder();
 		while(i>=0) {
 			while(i>=0 && s.charAt(i)==' ')
 				i--;
 			j=i;
 			while(i>=0 && s.charAt(i)!= ' ')
 				i--;
-			if(r.isEmpty())
-			{
-				r=r.concat(s.substring(i+1,j+1));
+			if(sb.length()==0) {
+				sb.append(s.substring(i+1,j+1));
 			}else {
-				r=r.concat(" "+s.substring(i+1,j+1));//we can also use + instead of concat
+				sb.append(" "+s.substring(i+1,j+1));//we can also use + instead of concat
 			}
 		}
-		return r;
+		if(sb.charAt(sb.length()-1)==' ')
+			return sb.deleteCharAt(sb.length()-1).toString();
+		return sb.toString();
 	}
 
 	public static String reverseWords(String s) {
+
 		String[] str = s.split(" ");
 		Stack<String> stack = new Stack();
 		for (int i = 0; i < str.length; i++) {

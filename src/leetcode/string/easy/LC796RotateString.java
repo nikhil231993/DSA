@@ -30,9 +30,6 @@ public class LC796RotateString {
         if(s.length() != goal.length()) {
             return false;
         }
-        if(s.length() == 0) {
-            return true;
-        }
         for(int i = 0; i < s.length(); i++) {
             if(rotateString(s, goal, i)) {
                 return true;

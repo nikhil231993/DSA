@@ -16,11 +16,11 @@ public class LC301RemoveInvalidParentheses {
         System.out.println(list);
         
         //Approach 2
-        int count1=validate(s);
-        System.out.println(removeInvalidParenthesesBetter(s,set,count));
+        System.out.println(removeInvalidParenthesesBetter(s));
     }
 
-    private static List<String> removeInvalidParenthesesBetter(String s, HashSet<String> set, int count) {
+    private static List<String> removeInvalidParenthesesBetter(String s) {
+
         List<String> res = new ArrayList<>();
 
         // sanity check
@@ -44,7 +44,7 @@ public class LC301RemoveInvalidParentheses {
                 found = true;
             }
 
-            if (found) continue;
+            if (found) continue; // if we find tru once then there is not point in reducing size further as that is the minimum
 
             // generate all possible states
             for (int i = 0; i < s.length(); i++) {
@@ -65,6 +65,7 @@ public class LC301RemoveInvalidParentheses {
     }
 
     public static void removeInvalidParentheses(String s, HashSet<String> set, int count) {
+
         if(count<0)
             return;
 

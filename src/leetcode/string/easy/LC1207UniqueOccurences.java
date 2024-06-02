@@ -48,7 +48,6 @@ public class LC1207UniqueOccurences {
                 seen.add(currValue);
             }
         }
-
         return true;
     }
 

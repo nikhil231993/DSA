@@ -6,6 +6,7 @@ import java.util.Map;
 public class LC1781SumOfBeauty {
 
     public static void main(String[] args) {
+
         String s = "aabcbaa";
         System.out.println(beautySum(s));
     }
@@ -16,8 +17,10 @@ public class LC1781SumOfBeauty {
         int sum=0;
 
         for(int i=0;i<n;i++){
+
             HashMap<Character, Integer> map=new HashMap<>();
             for(int j=i;j<n;j++){
+
                 char ch=s.charAt(j);
                 map.put(ch, map.getOrDefault(ch,0)+1);
                 int max=Integer.MIN_VALUE;
@@ -32,6 +35,7 @@ public class LC1781SumOfBeauty {
             }
         }
         return sum;
+
         //TC:O(n*n*26)
         //TC:O(26)
     }

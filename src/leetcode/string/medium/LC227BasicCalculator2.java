@@ -44,6 +44,7 @@ public class LC227BasicCalculator2 {
 			result+=stack.pop();
 		}
 		return result;
+
 		//TC:O(n)
 		//SC:O(n) in worst case where all the characters are pushed into stack
 	}

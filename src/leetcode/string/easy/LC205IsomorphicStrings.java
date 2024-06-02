@@ -46,10 +46,9 @@ public class LC205IsomorphicStrings {
 
         for(int i=0;i<s.length();i++){
 
-            char cha1=s.charAt(i);
+            char cha1=s.charAt(i);// Integer value of the character is stored in array
             char cha2=t.charAt(i);
-            int n=cha2;
-            int n1=cha1;
+
             if(ch1[cha1]!=ch2[cha2])
                 return false;
             ch1[cha1]++;

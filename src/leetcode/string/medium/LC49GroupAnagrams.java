@@ -8,6 +8,7 @@ import java.util.List;
 public class LC49GroupAnagrams {
 
 	public static void main(String[] args) {
+
 		List<String> str = Arrays.asList("eat", "tea", "tan", "ate", "nat", "bat");
 
 		//Approach 1
@@ -20,10 +21,10 @@ public class LC49GroupAnagrams {
 	}
 
 	private static List<List<String>> groupedAnagramsSUsingHash(List<String> str) {
-		List<List<String>> list = new ArrayList();
 
 		HashMap<String, List<String>> map = new HashMap();
 		for (String s : str) {
+
 			char[] ch = new char[26];
 			for (int i = 0; i < s.length(); i++) {
 				ch[s.charAt(i) - 'a']++;
@@ -36,8 +37,8 @@ public class LC49GroupAnagrams {
 			map.get(key).add(s);
 			
 		}
-		list.addAll(map.values());
-		return list;
+		return new ArrayList<>(map.values());
+
 		// TC:O(NK) where N is the total no of strings and K is the avg length of each
 		// string
 		// SC:O(N)
@@ -45,7 +46,7 @@ public class LC49GroupAnagrams {
 
 	private static List<List<String>> groupedAnagrams(List<String> str) {
 
-		List<List<String>> list = new ArrayList();
+
 		HashMap<String, List<String>> map = new HashMap();
 
 		for (String s : str) {
@@ -58,8 +59,8 @@ public class LC49GroupAnagrams {
 			}
 			map.get(sortedKey).add(s);
 		}
-		list.addAll(map.values());
-		return list;
+		return new ArrayList<>(map.values());
+
 		// TC:O(NKlogK) n total no of strings k length of each string as we are sorting
 		// the strings
 	}

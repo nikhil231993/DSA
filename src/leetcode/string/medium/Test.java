@@ -12,5 +12,10 @@ public class Test {
         String s=new String(ch);
         System.out.println(s);
 
+        StringBuilder sb=new StringBuilder().append("a");
+        for(int i=0;i<5;i++){
+            sb.append("b");
+        }
+        System.out.println(sb.toString());
     }
 }

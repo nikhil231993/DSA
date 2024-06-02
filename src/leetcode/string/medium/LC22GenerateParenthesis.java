@@ -9,8 +9,8 @@ public class LC22GenerateParenthesis {
 
 		int n = 2;
 		List<String> result = new ArrayList();
-		String s="";
-		generate(n, 0, 0, s, result);
+
+		generate(n, 0, 0, "", result);
 		System.out.println(result);
 
 		// TC:O(2 raise to n)

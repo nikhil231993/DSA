@@ -14,7 +14,7 @@ public class LC7ReverseInteger {
 		int ans = 0;
 		while (n != 0) {
 			if(ans >  Integer.MAX_VALUE/10 || ans < Integer.MIN_VALUE/10)
-				return ans;
+				return 0;
 			ans = ans * 10 + n % 10;
 			n = n / 10;
 		}

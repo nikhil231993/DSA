@@ -3,6 +3,7 @@ package leetcode.string.medium;
 public class LC6ZigzagConversion {
 
     public static void main(String[] args) {
+
         String s = "PAYPALISHIRING";
         int numRows = 3;
 

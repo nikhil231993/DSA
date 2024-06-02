@@ -2,6 +2,7 @@ package leetcode.string.medium;
 
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Set;
 
 public class LC3LongestSubstringWithoutRepeatingCharacters {
 
@@ -10,12 +11,37 @@ public class LC3LongestSubstringWithoutRepeatingCharacters {
 		String str = "pwwkew";
 
 		//Approach 1: Brute Generate all the combinations which is TC O(N square)
+		System.out.println(bruteApproach(str));
 
 		//Approach 2: Better
 		System.out.println(lengthOfLongestSubstringUsingHashSet(str));
 
-		//Approach 3: Best
+		//Approach 2 better
 		System.out.println(lengthOfLongestSubstringUsingMap(str));
+	}
+
+	public  static int bruteApproach(String str){
+
+		if(str.length()==0)
+			return 0;
+		int maxans = Integer.MIN_VALUE;
+		for (int i = 0; i < str.length(); i++){ // outer loop for traversing the string
+
+			Set<Character > se = new HashSet <>();
+			for (int j = i; j < str.length(); j++) // nested loop for getting different string starting with str[i]
+			{
+				if (se.contains(str.charAt(j))) // if element if found so mark it as ans and break from the loop
+				{
+					maxans = Math.max(maxans, j - i);
+					break;
+				}
+				se.add(str.charAt(j));
+			}
+		}
+		return maxans;
+
+		//TC:O(n square)
+		//SC:O(256)
 	}
 
 	private static int lengthOfLongestSubstringUsingMap(String s) {

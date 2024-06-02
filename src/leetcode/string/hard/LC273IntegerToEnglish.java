@@ -2,7 +2,8 @@ package leetcode.string.hard;
 
 public class LC273IntegerToEnglish {
     public static void main(String[] args) {
-        int num = 2139000000;
+
+        int num = 2130000000;
         System.out.println(numberToWords(num));
     }
 
@@ -14,21 +15,21 @@ public class LC273IntegerToEnglish {
 
         if(num==0)
             return "Zero";
-        else return convertEnglish(num, ones, tens);
+        else return convert(num, tens, ones);
     }
 
-    private static String convertEnglish(int num, String[] ones, String[] tens) {
+    public static String convert(int num, String[] tens, String[] ones){
 
-        if(num>=1000000000)
-            return convertEnglish(num/1000000000,ones,tens)+" Billion "+convertEnglish(num%1000000000,ones,tens);
-        else if(num>=1000000)
-            return convertEnglish(num/1000000,ones,tens)+ " Million "+convertEnglish(num%1000000,ones,tens);
-        else if(num>=1000)
-            return convertEnglish(num/1000,ones,tens)+ " Thousand "+convertEnglish(num%1000,ones,tens);
-        else if(num>=100)
-            return (convertEnglish(num/100,ones,tens)+" Hundred "+convertEnglish(num%100,ones,tens)).trim();
-        else if(num>=20)
-            return (tens[num/10]+" "+convertEnglish(num%10,ones,tens)).trim();
-        return ones[num];
+        if(num>=1000000000){
+            return (convert(num/1000000000,tens,ones)+" Billion "+convert(num%1000000000,tens,ones)).trim();
+        }else if(num>=1000000){
+            return (convert(num/1000000,tens,ones)+" Million "+convert(num%1000000,tens,ones)).trim();
+        }else if(num>=1000){
+            return (convert(num/1000,tens,ones)+" Thousand "+convert(num%1000,tens,ones)).trim();
+        }else if(num>=100){
+            return (convert(num/100,tens,ones)+" Hundred "+convert(num%100,tens,ones)).trim();
+        }else if(num>=20){
+            return (tens[num/10]+" "+convert(num%10,tens,ones)).trim();
+        }return ones[num];
     }
 }
