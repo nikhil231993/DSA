@@ -1,13 +1,14 @@
 package leetcode.array.medium;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class LC15ThreeSum {
 
 	public static void main(String[] args) {
 
 		Scanner scan = new Scanner(System.in);
-		int[] n = new int[] { -1, 0, 1, 2, -1, -4 };
+		int[] n = new int[] { -1, 0, 1, 2 };
 
 		//Approach 1: Brute
 		List<List<Integer>> r = threeSumBrute(n);
@@ -37,8 +38,10 @@ public class LC15ThreeSum {
 				int h = n.length - 1;
 				int sum = 0 - n[i];
 				while (l < h) {
+
 					if (n[l] + n[h] == sum) {
 						t.add(Arrays.asList(n[i], n[l], n[h]));
+
 						while (l < h && n[l] == n[l + 1])
 							l++;
 						while (l < h && n[h] == n[h - 1])
@@ -82,7 +85,7 @@ public class LC15ThreeSum {
 		List<List<Integer>> ans = new ArrayList<>(st);
 		return ans;
 
-		//TC: O(N3 * log(no. of unique triplets)), where N = size of the array.
+		//TC: O(N cube * log(no. of unique triplets)), where N = size of the array.
 		//SC: O(2 * no. of the unique triplets) as we are using a set data structure and a list to store the triplets.
 	}
 
@@ -95,10 +98,7 @@ public class LC15ThreeSum {
 			for(int j=i+1;j<nums.length;j++){
 				int third=-(nums[i]+nums[j]);
 				if(threeDigits.contains(third)){
-					List<Integer> r=new ArrayList<>();
-					r.add(nums[i]);
-					r.add(nums[j]);
-					r.add(third);
+					List<Integer> r=new ArrayList<>(Arrays.asList(nums[i], nums[j], third));
 					Collections.sort(r);
 					s.add(r);
 				}
@@ -106,9 +106,7 @@ public class LC15ThreeSum {
 			}
 		}
 
-		List<List<Integer>> ans = new ArrayList<>(s);
-
-		return ans;
+		return s.stream().collect(Collectors.toList());
 
 		//TC:O(N square log (size of set))
 		//SC:(N) for hashSet + O(2*N) list as well as set for storing data

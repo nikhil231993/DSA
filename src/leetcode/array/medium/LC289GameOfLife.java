@@ -22,18 +22,18 @@ public class LC289GameOfLife {
 		
 		for(int i=0;i<n;i++) {
 			for(int j=0;j<m;j++) {
-				int neighbour=0;
+				int live_neighbour=0;
 				for(int k=0;k<8;k++) {
 					int row = i + x_axis[k];
 					int col = j + y_axis[k];
 					
 					if ((row >= 0 && col >= 0 && row < n && col < m) && (Math.abs(game[row][col]) == 1))
-							neighbour++;
+						live_neighbour++;
 				}
 				
-				if (game[i][j] == 1 && (neighbour < 2 || neighbour > 3))
+				if (game[i][j] == 1 && (live_neighbour < 2 || live_neighbour > 3))
 					game[i][j] = -1;
-				if (game[i][j] == 0 && neighbour == 3)
+				if (game[i][j] == 0 && live_neighbour == 3)
 					game[i][j] = 2;
 
 			}
@@ -47,7 +47,8 @@ public class LC289GameOfLife {
 					game[i][j]=0;
 			}
 		}
-		// SC:O(i)
-		// TC:O(n2)
+
+		// TC:O(n square)
+		// SC:O(1)
 	}
 }

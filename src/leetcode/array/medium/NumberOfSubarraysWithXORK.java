@@ -57,11 +57,9 @@ public class NumberOfSubarraysWithXORK {
                 count+=map.get(xor^target);
             map.put(xor,map.getOrDefault(xor,0)+1);
         }
-
         return count;
 
         //TC:O(N)* time complexity of map O(1) in case of unordered map or log n (ordered map)
         //SC:O(N)
     }
-
 }

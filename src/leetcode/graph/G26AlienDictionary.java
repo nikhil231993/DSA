@@ -8,6 +8,7 @@ import java.util.Queue;
 public class G26AlienDictionary {
 
     public static void main(String[] args) {
+
         String[] words=new String[]{"wrt",
                 "wrf",
                 "er",
@@ -25,6 +26,7 @@ public class G26AlienDictionary {
         //If the value of k is 6 then it will be befdac where e can come at any place
         //If it is not in initial order then we can find entire
         //alphabets toposort and then find only characters we need https://leetcode.com/discuss/interview-question/248131/Microsoft-Interview-(round-1)-Alien-Dictionary
+
         String s=alienDictionary(words,n,k);
         System.out.println(s);
 
@@ -63,6 +65,7 @@ public class G26AlienDictionary {
         }
         return s;
     }
+
     private static List<Integer> topoSort(List<List<Integer>> arr, int n) {
 
         int[] indegree=new int[n];
@@ -81,6 +84,7 @@ public class G26AlienDictionary {
                 q.offer(i);
             }
         }
+
         List<Integer> list=new ArrayList<>();
         while(!q.isEmpty()){
             Integer node=q.poll();

@@ -5,6 +5,7 @@ import java.util.*;
 public class G32DijkstraAlgoDGWeightSelf {
 
     public static void main(String[] args) {
+
 //        You can use dijkstra's algorithm with negative edges not including negative cycle,
 //        but you must allow a vertex can be visited multiple times and that version will lose
 //        it's fast time complexity.
@@ -45,6 +46,7 @@ public class G32DijkstraAlgoDGWeightSelf {
     }
 
     private static int[] shortestPathUsingVisited(int[][] edge, int V, int E, int src) {
+
         List<List<PairG32>> adjList=new ArrayList<>();
 
         for(int i=0;i<V;i++)

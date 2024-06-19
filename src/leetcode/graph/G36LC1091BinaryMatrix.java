@@ -3,7 +3,7 @@ package leetcode.graph;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class G36LC1036BinaryMatrix {
+public class G36LC1091BinaryMatrix {
 
     public static void main(String[] args) {
 
@@ -18,6 +18,7 @@ public class G36LC1036BinaryMatrix {
     }
 
     private static int shortestDistanceInMaze(int[][] grid, int[] source, int[] dest,int n, int m) {
+
         if(grid[0][0]==1 || grid[m-1][n-1]==1) {
             return -1;
         }
@@ -75,5 +76,8 @@ public class G36LC1036BinaryMatrix {
             }
         }
         return -1;
+
+        //TC:O(ElogV) i.e O(n*m*4*log(n*m))
+        //SC:O(m*n)
     }
 }

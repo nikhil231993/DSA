@@ -9,13 +9,11 @@ public class LC1332RemovePalindromicSubsequences {
 		System.out.println("Enter string to check: ");
 		Scanner scan = new Scanner(System.in);
 		String s = scan.nextLine();
-
 		System.out.println(palindrome(s));
-
 	}
 
 	private static int palindrome(String s) {
-		// TODO Auto-generated method stub
+
 		if (s.length() == 0 || s.trim().length() == 0)
 			return 0;
 		int i=0;
@@ -27,5 +25,4 @@ public class LC1332RemovePalindromicSubsequences {
 		}
 		return 1;
 	}
-
 }

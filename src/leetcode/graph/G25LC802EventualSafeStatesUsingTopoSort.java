@@ -3,7 +3,9 @@ package leetcode.graph;
 import java.util.*;
 
 public class G25LC802EventualSafeStatesUsingTopoSort {
+
     public static void main(String[] args) {
+
         int[][] graph =new int[][] {{1,2},{2,3},{5},{0},{5},{},{}};
         System.out.println(eventualSafeNodes(graph));
     }
@@ -12,6 +14,7 @@ public class G25LC802EventualSafeStatesUsingTopoSort {
 
         List<List<Integer>> adjList=new ArrayList<>();
         List<List<Integer>> reverseAdjList=new ArrayList<>();
+
         for(int i=0;i<graph.length;i++){
             adjList.add(new ArrayList<>());
             reverseAdjList.add(new ArrayList<>());
@@ -30,8 +33,8 @@ public class G25LC802EventualSafeStatesUsingTopoSort {
         //Reverse the Adjacency List and then increase the indegree of parent of previous list
         for(int i=0;i<adjList.size();i++){
             for(Integer v:adjList.get(i)){
-            reverseAdjList.get(v).add(i);
-            indegree[i]++;
+                reverseAdjList.get(v).add(i);
+                indegree[i]++;
             }
         }
 

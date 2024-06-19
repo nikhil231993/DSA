@@ -6,22 +6,23 @@ import java.util.List;
 import java.util.Stack;
 
 class PairG27 {
-	int node;
-	int weight;
+
+	protected int node;
+	protected int weight;
 
 	public PairG27(int node, int weight) {
 		this.node = node;
 		this.weight = weight;
 	}
 }
+
 public class G27ShortestPathDAG {
 
-	//IMP:Why toposort works?
-	//1.we go from one node to another node in an order which guarantees that previous node is processed
-	// and has shortest distance
-	//Dijkstra(ElogV) will also work to find shortest distance but it takes more time that toposort(V+E)
-	//2.Dijkstra algo is necessary for graphs which contains cycles because they can't be topologically sorted.
-	//3.Toposort works with negative weights in a DAG
+		//IMP:Why toposort works?
+		//1.we go from one node to another node in an order which guarantees that previous node is processed and has shortest distance
+		//Dijkstra(ElogV) will also work to find shortest distance, but it takes more time than toposort(V+E)
+		//2.Dijkstra algo is necessary for graphs which contains cycles because they can't be topologically sorted.
+		//3.Toposort works with negative weights in a DAG
 
 	public static void main(String[] args) {
 
@@ -49,6 +50,7 @@ public class G27ShortestPathDAG {
 		for (int[] r: edge) {
 				adjList.get(r[0]).add(new PairG27(r[1], r[2]));
 		}
+
 		// Toposort
 		int[] visited = new int[V];
 		Stack<Integer> st=new Stack<>();
@@ -77,6 +79,7 @@ public class G27ShortestPathDAG {
 	}
 
 	private static void shortestDistance(int[] dist, List<List<PairG27>> adjList, int v, int e, int src,Stack<Integer> st) {
+
 		dist[src]=0;
 		while (!st.isEmpty()) {
 			Integer node = st.pop();
@@ -96,6 +99,7 @@ public class G27ShortestPathDAG {
 	}
 
 	private static void dfsTopo(List<List<PairG27>> adjList, int V, int E, Stack<Integer> st, int[] visited, int i) {
+
 		visited[i] = 1;
 		for (PairG27 vertex : adjList.get(i)) {
 			if (visited[vertex.node] == 0) {

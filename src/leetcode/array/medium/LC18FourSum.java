@@ -42,11 +42,7 @@ public class LC18FourSum {
                         sum+=nums[k];
                         sum+=nums[l];
                         if(sum==target){
-                            List<Integer> list=new ArrayList<>();
-                            list.add(nums[i]);
-                            list.add(nums[j]);
-                            list.add(nums[k]);
-                            list.add(nums[l]);
+                            List<Integer> list=new ArrayList<>(Arrays.asList(nums[i], nums[j],nums[k],nums[l]));
                             result.add(list);
                             k++;
                             l--;
@@ -81,11 +77,7 @@ public class LC18FourSum {
 
                     int fourthNo=target-(nums[i]+nums[j]+nums[k]);
                     if(fourth.contains(fourthNo)){
-                        List<Integer> ans=new ArrayList<>();
-                        ans.add(nums[i]);
-                        ans.add(nums[j]);
-                        ans.add(nums[k]);
-                        ans.add(fourthNo);
+                        List<Integer> ans=new ArrayList<>(Arrays.asList(nums[i], nums[j],nums[k],fourthNo));
                         Collections.sort(ans);
                         s.add(ans);
                     }
@@ -117,11 +109,7 @@ public class LC18FourSum {
                         sum+=nums[l];
 
                         if(sum==target){
-                            List<Integer> l1=new ArrayList<>();
-                            l1.add(nums[i]);
-                            l1.add(nums[j]);
-                            l1.add(nums[k]);
-                            l1.add(nums[l]);
+                            List<Integer> l1=new ArrayList<>(Arrays.asList(nums[i], nums[j],nums[k],nums[l]));
                             Collections.sort(l1);
                             s.add(l1);
                         }

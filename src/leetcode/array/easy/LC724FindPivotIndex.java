@@ -24,13 +24,13 @@ public class LC724FindPivotIndex {
 		 int leftSum=0;
 		 for(int i=0;i<nums.length;i++){
 
-		 if(2*leftSum==total-nums[i])
-		 	return i;
-		 leftSum+=nums[i];
+		 	if(2*leftSum==total-nums[i])
+		 		return i;
+		 	leftSum+=nums[i];
 		 }
 		 return -1;
 
-		 //TC:O(n)
+		 //TC:O(2*n)
 		 //SC:O(1)
 	}
 
@@ -39,6 +39,7 @@ public class LC724FindPivotIndex {
 		int left = 0;
 		int right = 0;
 		for (int i = 0; i < nums.length; i++) {
+
 			int j = i;
 			while (j > 0) {
 				left += nums[--j];
@@ -55,6 +56,8 @@ public class LC724FindPivotIndex {
 			}
 		}
 		return -1;
-	}
 
+		//TC:O(n square)
+		//SC:O(n
+	}
 }

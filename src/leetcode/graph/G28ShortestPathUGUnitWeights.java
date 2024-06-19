@@ -2,13 +2,14 @@ package leetcode.graph;
 
 import java.util.*;
 public class G28ShortestPathUGUnitWeights {
+
     public static void main(String[] args) {
 
         //IMP: we can find the shortest path for undirected unit weights with BFS as the first path
         // guarantees it is the shortest path as it goes level by level
         //Method 1. We can do without visited array where we do have to check the weights
         //Method 2. BFS with visited array as we are not coming back to that node and shortest path will be
-        //already taken so we do not have to check weights
+        //already taken, so we do not have to check weights
 
         //If we change src to which does not have adj nodes all will be -1 that is not reachable
         //Try changing V to 10 and src to 9 as none of the nodes are reachable it will return -1 for all vertexes

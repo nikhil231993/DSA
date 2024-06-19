@@ -12,7 +12,7 @@ public class G24LC210CourseSchedule2 {
         int[][] prerequisites=new int[][]{{0,1}};
         int numCourses=2;
 
-        //can we done using dfs or bfs  toposort to detect cycle.
+        //Can be done using dfs or bfs  toposort to detect cycle.
         // we are using toposort as next question is based on that
 
        int[] result= isPossible(numCourses,prerequisites);
@@ -22,6 +22,7 @@ public class G24LC210CourseSchedule2 {
         //TC:O(N)+O(N+E)
         //SC:O(N) queue + O(N) indegree
     }
+
     public static int[] isPossible(int numCourses, int[][] prerequisites) {
 
         List<List<Integer>> list=new ArrayList<>();

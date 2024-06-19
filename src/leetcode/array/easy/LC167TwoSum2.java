@@ -6,7 +6,7 @@ public class LC167TwoSum2 {
 
        int[] numbers =new int[] {2,7,11,15};
        int target = 9;
-        System.out.println(twoSum(numbers, target));
+       System.out.println(twoSum(numbers, target));
     }
 
     public static int[] twoSum(int[] numbers, int target) {

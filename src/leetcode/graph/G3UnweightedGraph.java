@@ -1,5 +1,6 @@
 package leetcode.graph;
 
+import java.util.List;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -35,11 +36,12 @@ public class G3UnweightedGraph {
         System.out.println("Adjacency List is: ");
 
         int i=0;
-        for(ArrayList<Integer> l: arr){
+        for(List<Integer> l: arr){
             System.out.print("List: "+ i++);
             System.out.println(l);
         }
-        //SC:O(2*Edges)
+
+        //SC:O(2*Edges) This is tp only show show space complexity
     }
 
     private static void adjacencyMatrix() {
@@ -52,6 +54,7 @@ public class G3UnweightedGraph {
 
         System.out.println("Enter the edges values: ");
         int[] [] arr=new int[n+1][n+1];
+
         for(int i=1;i<=m;i++){
             System.out.println("Enter the "+ i +" edge: ");
             int u=scan.nextInt();
@@ -67,7 +70,7 @@ public class G3UnweightedGraph {
           }
           System.out.println();
         }
-        //SC:O(n*n)
-        
+
+        //SC:O(n*n) This is tp only show show space complexity
     }
 }

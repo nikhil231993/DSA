@@ -41,10 +41,9 @@ public class LC1010PairOfSongs {
 			else {
 				count += rest[60 - value];
 			}
-
 			rest[value]++;
-
 		}
+
 		return count;
 
 		//TC:O(n)

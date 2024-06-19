@@ -8,7 +8,6 @@ public class LC78SubsetList {
 	public static void main(String[] args) {
 
 		int[] arr = { 3, 2, 1 };
-		
 		subsets(arr);
 	}
 
@@ -31,5 +30,8 @@ public class LC78SubsetList {
 		test(nums, i + 1, single, t);
 		single.remove(single.size() - 1);
 		test(nums, i + 1, single, t);
+
+		//TC:O(2 raise to n)
+		//SC:O(2 raise to n)
 	}
 }

@@ -5,6 +5,7 @@ import java.util.PriorityQueue;
 public class LC1833IceCreamBars {
 
     public static void main(String[] args) {
+
         int[] costs =new int[] {1,3,2,4,1};
         int coins = 7;
         System.out.println(maxIceCream(costs,coins));

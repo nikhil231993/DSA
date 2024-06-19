@@ -5,12 +5,14 @@ import java.util.List;
 public class BinaryTreeUsingLinkedListMain {
 
 	public static void main(String[] args) {
+
 		BinaryTreeUsingLinkedList bt = new BinaryTreeUsingLinkedList();
 		bt.insert(10);
 		bt.insert(20);
 		bt.insert(30);
 		bt.insert(40);
 		bt.insert(50);
+//		bt.insert(60);
 
 		System.out.println("Inorder traversal data is : ");
 		bt.inOrderTraversal(bt.root);
@@ -40,35 +42,36 @@ public class BinaryTreeUsingLinkedListMain {
 
 		// Leetcode
 		// LC 102
-		System.out.println("Level order Traversal and adding to list:");
-		List<List<Integer>> result = bt.levelOrder(bt.root);
-		System.out.println(result);
+		System.out.println("Level order Traversal and adding to list: ");
+		List<List<Integer>> result1 = bt.levelOrder(bt.root);
+		System.out.println(result1);
 
 		// Iterative preorder traversal
-		System.out.println("Iterative preorder traversal");
-		bt.iterativePreOrder(bt.root);
+		System.out.println("Iterative preorder traversal: ");
+		List<Integer> ans=bt.iterativePreOrder(bt.root);
+		System.out.println(ans);
 
 		// Iterative inorder traversal
 		System.out.println();
-		System.out.println("Iterative inorder traversal");
+		System.out.println("Iterative inorder traversal: ");
 		List<Integer> iterInOrder = bt.iterativeInOrder(bt.root);
 		System.out.println(iterInOrder);
 
 		// Iterative postorder traversal using 2 stack
 		System.out.println();
-		System.out.println("Iterative postorder traversal using two stack");
+		System.out.println("Iterative postorder traversal using two stack: ");
 		List<Integer> postOrder = bt.iterativPostOrder(bt.root);
 		System.out.println(postOrder);
 
 		// Iterative postorder traversal using 1 stack
 		System.out.println();
-		System.out.println("Iterative postorder traversal using one stack");
+		System.out.println("Iterative postorder traversal using one stack: ");
 		List<Integer> postOrderUsing1Stack = bt.iterativPostOrderUsing1Stack(bt.root);
 		System.out.println(postOrderUsing1Stack);
 
 		// Iterative preorder, inorder and postorder traversal using 1 stack
 		System.out.println();
-		System.out.println("Iterative postorder traversal using one stack");
+		System.out.println("Iterative preorder, inorder and postorder traversal using 1 stack: ");
 		List<List<Integer>> allInOne = bt.allTraversalsStack(bt.root);
 		System.out.println(allInOne);
 
@@ -88,6 +91,8 @@ public class BinaryTreeUsingLinkedListMain {
 		System.out.println(bt.isBalanced(bt.root));
 
 		// Diameter BT
+		//It is the longest path between any two nodes and this path
+		//does not need to pass through root
 		System.out.println();
 		System.out.println("Diameter: ");
 		System.out.println(bt.diameter(bt.root));
@@ -96,6 +101,8 @@ public class BinaryTreeUsingLinkedListMain {
 		System.out.println();
 		System.out.println("Max Path Sum: ");
 		System.out.println(bt.maxPath(bt.root));
+
+		//Same Tree Video 19 can be done using level order traversal also
 
 		// Zig zag traversal
 		System.out.println();
@@ -127,7 +134,8 @@ public class BinaryTreeUsingLinkedListMain {
 		// Right View
 		System.out.println();
 		System.out.println("Right View: ");
-		System.out.println(bt.rightViewBinaryTree(bt.root));
+		System.out.println(bt.rightViewBinaryTree(bt.root)); // we can use level order but TC is O(n)  and SC:O(n)
+		//Recursive SC is less
 
 		// Left View
 		System.out.println();
@@ -139,7 +147,7 @@ public class BinaryTreeUsingLinkedListMain {
 		System.out.println("Symmetric tree: ");
 		System.out.println(bt.isSymmetric(bt.root));
 
-		// Symmetric tree
+		// Root To Node
 		System.out.println();
 		System.out.println("Root to node: ");
 		System.out.println(bt.rootToNode(bt.root, 60));
@@ -149,7 +157,7 @@ public class BinaryTreeUsingLinkedListMain {
 		System.out.println("Path sum: ");
 		System.out.println(bt.pathSum(bt.root, 60));
 
-		// Max Wdith of a binary tree
+		// Max Width of a binary tree
 		System.out.println();
 		System.out.println("Max Width of a binary tree: ");
 		System.out.println(bt.maxWdithOfBinaryTree(bt.root));
@@ -160,8 +168,8 @@ public class BinaryTreeUsingLinkedListMain {
 		bt.childrenSumProperty(bt.root);
 
 		System.out.println("Level order Traversal and adding to list:");
-		List<List<Integer>> r = bt.levelOrder(bt.root);
-		System.out.println(r);
+		List<List<Integer>> r1= bt.levelOrder(bt.root);
+		System.out.println(r1);
 
 		// Nodes at K distance from a given node
 		System.out.println();
@@ -177,8 +185,5 @@ public class BinaryTreeUsingLinkedListMain {
 		System.out.println();
 		System.out.println("Count nodes in a binary tree: ");
 		System.out.println(bt.countNodes(bt.root));
-
-
 	}
-
 }

@@ -3,14 +3,16 @@ package leetcode.graph;
 import java.util.*;
 
 class PairG29{
-    String word;
-    int level;
+
+    protected String word;
+    protected int level;
 
     public PairG29(String word, int level){
         this.word=word;
         this.level=level;
     }
 }
+
 public class G29LC127WordLadder {
 
     public static void main(String[] args) {
@@ -24,12 +26,13 @@ public class G29LC127WordLadder {
     }
 
     public static int wordLadder(String beginWord, String endWord, List<String> wordList){
+
         //Create a set to store all the values in list so that it can be removed when it matches
         Set<String> set=new HashSet<>();
         for(String s:wordList)
             set.add(s);
 
-        //Add the begin word into queue with 1 as level of initial string is 1
+        //Add the startWord word into queue with 1 as level of initial string is 1
         Queue<PairG29> q=new LinkedList<>();
         q.offer(new PairG29(beginWord,1));
 
@@ -59,7 +62,7 @@ public class G29LC127WordLadder {
                         set.remove(replacedString);
                     }
                 }
-                charArray[i]=original;//This line is not needed as the actual word is not changed
+                charArray[i]=original; //This line is not needed as the actual word is not changed
             }
         }
         return 0;//We will return 0 if we don't reach the word

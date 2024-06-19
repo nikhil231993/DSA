@@ -44,7 +44,6 @@ public class LC31NextPermutation {
 		int temp = nums[idx1];
 		nums[idx1] = nums[idx2];
 		nums[idx2] = temp;
-
 	}
 
 	private static void reverse(int start, int end, int[] nums) {

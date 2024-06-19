@@ -22,19 +22,7 @@ public class LC485MaxConsecutiveOnes {
         }
         return max;
 
-        // int max=0;
-        // int count=0;
-        // for(int i=0;i<nums.length;i++){
-        //     if(nums[i]!=1)
-        //         count=0;
-        //     else
-        //         count++;
-        //     max=Math.max(count,max);
-
-        // }
-        // return max;
         //SC:O(1)
         //TC:O(n)
-
     }
 }

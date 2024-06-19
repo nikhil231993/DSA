@@ -49,6 +49,7 @@ public class LC767ReorganizeString {
                 sb.append(last);
         }
         return sb.toString();
+
         //TC:o(nlogn)
         //SC:o(n) worst case
     }

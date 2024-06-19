@@ -10,7 +10,6 @@ public class LC54SpiralMatrix {
 		int[][] matrix = new int[][] { { 1, 2, 3, 4 }, { 5, 6, 7, 8 }, { 9, 10, 11, 12 } };
 		
 		List<Integer> r = spiralOrder(matrix);
-
 		System.out.println(r);
 	}
 
@@ -19,12 +18,11 @@ public class LC54SpiralMatrix {
 		List<Integer> output = new ArrayList<Integer>();
 		if (matrix.length == 0)
 			return output;
-		int top = 0;
-		int left = 0;
-		int right = matrix[0].length - 1;
-		int bottom = matrix.length - 1;
+
+		int top = 0 , left=0, right = matrix[0].length - 1, bottom = matrix.length - 1;
 
 		while (top <= bottom && left <= right) {
+
 			for (int i = left; i <= right; i++) {
 				output.add(matrix[top][i]);
 			}

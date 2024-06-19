@@ -112,22 +112,20 @@ public class MergeSortedArrays {
         int k=0;
 
         while(left<n && right< m){
+
             if(arr1[left]<=arr2[right]){
-                res[k++]=arr1[left];
-                left++;
+                res[k++]=arr1[left++];
             }else{
-                res[k++]=arr2[right];
-                right++;
+                res[k++]=arr2[right++];
             }
         }
         while(left<n){
-            res[k++]=arr1[left];
-            left++;
+            res[k++]=arr1[left++];
         }
         while(right<m){
-            res[k++]=arr2[right];
-            right++;
+            res[k++]=arr2[right++];
         }
+
         for(int i=0;i<res.length;i++){
             if(i<n){
                 arr1[i]=res[i];

@@ -11,7 +11,6 @@ public class LeftRotateAnArrayByOnePlace {
         System.out.println("Rotated array is: ");
         for(int n:num)
             System.out.println(n);
-
     }
 
     private static void leftRotate(int[] num) {
@@ -21,8 +20,8 @@ public class LeftRotateAnArrayByOnePlace {
             num[i-1]=num[i];
         }
         num[num.length-1]=temp;
+
         //TC:O(N)
-        //SC:O(N) we are not using any extra array but we us existing array so
-        //it can be said as N
+        //SC:O(N) we are not using any extra array but we us existing array, so it can be said as N
     }
 }

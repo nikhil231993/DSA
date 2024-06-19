@@ -8,7 +8,7 @@ public class LC349IntersectionOfTwoArrays {
 
     public static void main(String[] args) {
 
-		// Here in Leetcode the question is about without duplicate that is why we
+		// Here in Leetcode the question is about without duplicate that is why we add
 		// conditions in line 43 and 67
 
 		// For video https://www.youtube.com/watch?v=wvcQg43_V8U we are even including
@@ -46,6 +46,7 @@ public class LC349IntersectionOfTwoArrays {
 				if ((nums1[i] == nums2[j] && visited[j] == 0)
 						&& (arrayList.isEmpty() || arrayList.get(arrayList.size() - 1) != nums1[i])) {
 					arrayList.add(nums1[i]);
+                    visited[j]=1;
 					break;
 				}
 

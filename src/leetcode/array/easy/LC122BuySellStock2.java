@@ -6,6 +6,7 @@ public class LC122BuySellStock2 {
 
 		int[] arr = new int[] { 7, 1, 2, 3, 6, 4 };
 		System.out.println("Max profit is: ");
+
 		int profit = buySellStock(arr);
 		System.out.println(profit);
 	}

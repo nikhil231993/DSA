@@ -32,7 +32,7 @@ public class LC2319MatrixDiagonal {
         }
         return countDia==true && countNon==false;
 
-        //TC:O(n*m)
+        //TC:O(n * m)
         //SC:O(1)
     }
 }

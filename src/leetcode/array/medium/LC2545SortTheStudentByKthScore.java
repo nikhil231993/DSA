@@ -4,8 +4,8 @@ import java.util.PriorityQueue;
 
 class Node2{
 
-    Integer value;
-    Integer row;
+    protected Integer value;
+    protected Integer row;
 
     public Node2(Integer value, Integer row){
         this.value=value;
@@ -32,7 +32,7 @@ public class LC2545SortTheStudentByKthScore {
 
         System.out.println("#############");
 
-        //Approach 1
+        //Approach 2
         int[][] result1=sortTheStudentsOptimal(score,k);
 
         for(int i=0;i<score.length;i++){
@@ -47,9 +47,10 @@ public class LC2545SortTheStudentByKthScore {
 
         int n=score.length;
         int[][] r=new int[n][n];
+
         PriorityQueue<int[]> pq=new PriorityQueue<>((a,b)->b[k]-a[k]);
-        for(int[] row:score)
-            pq.offer(row);
+        for(int i=0;i<n;i++)
+            pq.offer(score[i]);
 
         int i=0;
         while(!pq.isEmpty())

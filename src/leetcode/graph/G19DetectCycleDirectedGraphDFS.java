@@ -7,6 +7,7 @@ import java.util.Scanner;
 public class G19DetectCycleDirectedGraphDFS {
 
     public static void main(String[] args) {
+
         List<List<Integer>> arr=new ArrayList<>();
         Scanner scan=new Scanner(System.in);
         System.out.println("Enter no of vertex: ");
@@ -34,24 +35,26 @@ public class G19DetectCycleDirectedGraphDFS {
     }
 
     private static boolean cycle(List<List<Integer>> arr, int n, int m, int[] visited, int[] pathVisited,int i) {
-    visited[i]=1;
-    pathVisited[i]=1;
-    for(Integer vertex:arr.get(i)){
-        if(visited[vertex]==0) {
-            if (cycle(arr, n, m, visited, pathVisited, vertex))
+
+        visited[i]=1;
+        pathVisited[i]=1;
+        for(Integer vertex:arr.get(i)){
+            if(visited[vertex]==0) {
+                if (cycle(arr, n, m, visited, pathVisited, vertex))
+                    return true;
+            }else if(pathVisited[vertex]==1)
                 return true;
-        }else if(pathVisited[vertex]==1)
-            return true;
-    }
-    pathVisited[i]=0;
-    return false;
+        }
+        pathVisited[i]=0;
+        return false;
+
         //TC:O(N)+O(N+E)
         //SC:O(2N) we can also do it with one visited array
         //Hint: Take visited as 1 and pathVisited as 2
-
     }
 
     private static void adjacencyList(List<List<Integer>> arr,int n, int m, Scanner scan) {
+
         System.out.println("Creating " +n +" List:");
         for(int i=0;i<=n;i++)
             arr.add(new ArrayList<>());

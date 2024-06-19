@@ -5,6 +5,7 @@ import java.util.Arrays;
 public class RepeatingAndMissingNumbers {
 
     public static void main(String[] args) {
+
         int[] num=new int[]{3,1,2,5,4,6,7,5};
 
         //Approach 1: Brute
@@ -61,7 +62,6 @@ public class RepeatingAndMissingNumbers {
                 repeating=i;
             else if(count==0)
                 missing=i;
-
         }
         return new int[]{repeating,missing};
 

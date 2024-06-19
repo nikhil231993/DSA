@@ -21,8 +21,7 @@ public class LC525ContiguousSubarray {
         }
 
         HashMap<Integer, Integer> map=new HashMap<>();
-        int sum=0, count=0;
-        int max=0;
+        int sum=0, max=0;
         for(int i=0; i<n; i++){
             sum+=nums[i];
             if(sum==0)

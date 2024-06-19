@@ -38,8 +38,8 @@ public class LC532KDiffPairs {
                 i++;
                 j++;
 
-                while(j<n && nums[j]==nums[j-1])
-                    j++;
+            while(j<n && nums[j]==nums[j-1])
+                j++;
             }else if(nums[j]-nums[i]<k)
                 j++;
             else{

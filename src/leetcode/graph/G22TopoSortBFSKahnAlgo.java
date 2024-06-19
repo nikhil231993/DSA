@@ -5,11 +5,12 @@ import java.util.*;
 public class G22TopoSortBFSKahnAlgo {
 
     public static void main(String[] args) {
+
         List<List<Integer>> arr=new ArrayList<>();
         Scanner scan=new Scanner(System.in);
-        System.out.println("Enter no of vertex: ");
+        System.out.println("Enter no of Vertex: ");
         int n=scan.nextInt();
-        System.out.println("Enter no of edges: ");
+        System.out.println("Enter no of Edges: ");
         int m=scan.nextInt();
 
         adjacencyList(arr,n,m,scan);
@@ -37,6 +38,7 @@ public class G22TopoSortBFSKahnAlgo {
         }
         List<Integer> list=new ArrayList<>();
         while(!q.isEmpty()){
+
             Integer node=q.poll();
             list.add(node);
             for(Integer vertex:arr.get(node)){
@@ -47,11 +49,13 @@ public class G22TopoSortBFSKahnAlgo {
             }
         }
         return list;
+
         //SC:O(N) queue+O(N) indegree +O(N)toposort
         //TC:O(N+E)
     }
 
     private static void adjacencyList(List<List<Integer>> arr,int n, int m, Scanner scan) {
+
         System.out.println("Creating " +n +" List:");
         for(int i=0;i<=n;i++)
             arr.add(new ArrayList<>());

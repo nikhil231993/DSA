@@ -7,9 +7,8 @@ import java.util.PriorityQueue;
 
 class NodeRank{
 
-    int element;
-
-    int pos;
+    protected int element;
+    protected int pos;
 
     public NodeRank(int element, int pos){
         this.element=element;
@@ -30,6 +29,7 @@ public class LC1331RankTransform {
 
         System.out.println("###############");
 
+        //Approach 2
         int[] arr1 =new int[] {40,10,20,30};
         int[] r2=arrayRankTransformUsingHeap(arr1);
         for(int n:r2)

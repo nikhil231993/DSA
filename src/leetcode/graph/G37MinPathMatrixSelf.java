@@ -58,6 +58,8 @@ public class G37MinPathMatrixSelf {
             }
         }
         return -1;
-        //TC:o(ElogV) i.e O(n*m*4*log(n*m))
+
+        //TC:O(ElogV) i.e O(n*m*4*log(n*m))
+        //SC:O(m*n)
     }
 }

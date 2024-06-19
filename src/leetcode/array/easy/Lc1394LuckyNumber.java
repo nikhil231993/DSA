@@ -3,17 +3,25 @@ package leetcode.array.easy;
 public class Lc1394LuckyNumber {
 
 	public static void main(String[] args) {
-		int[] num = new int[] { 2, 2, 3, 4 };
 
-		int[] num1 = new int[500];
-
-		for (int i = 0; i < num.length; i++)
-			num1[num[i]]++;
-
-			for (int i = 0; i < num1.length; i++)
-			System.out.println(num1[i]);
-
-
+		int[] num = new int[]{2, 2, 3, 4};
+		System.out.println(findLucky(num));
 	}
 
+	public static int findLucky(int[] arr) {
+		int[] res=new int[501];
+		int max=-1;
+		for(int no:arr){
+			res[no]++;
+		}
+
+		for(int no:arr){
+			if(no==res[no])
+				max=Math.max(max,no);
+		}
+		return max;
+
+		//TC:O(n)
+		//SC:O(500)
+	}
 }

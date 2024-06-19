@@ -49,6 +49,9 @@ public class LC349UnionOfTwoArrays {
 		Arrays.sort(ans);
 
 		return ans;
+
+		//TC:O(n log n) as log n is the time taken to add element in worst case + O(n log n) for sorting
+		//SC:O(n) + O(n) set and array space
 	}
 
 	private static int[] findUnion(int n, int m, int[] arr1, int[] arr2, List<Integer> list) {

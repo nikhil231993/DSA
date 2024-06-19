@@ -4,16 +4,20 @@ import java.util.Arrays;
 import java.util.PriorityQueue;
 
 class Node1{
-    int key;
-    int diff;
+
+    protected int key;
+    protected int diff;
+
     public Node1(int key, int diff){
         this.key=key;
         this.diff=diff;
     }
 }
+
 public class LC1471KStrongestValues {
 
     public static void main(String[] args) {
+
         int[] arr =new int[] {1,2,3,4,5};
         int k = 2;
         int[] result=getStrongest(arr,k);

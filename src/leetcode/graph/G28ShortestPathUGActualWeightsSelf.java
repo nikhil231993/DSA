@@ -3,16 +3,20 @@ package leetcode.graph;
 import java.util.*;
 
 class PairG28{
-    int node;
-    int weight;
+
+    protected int node;
+    protected int weight;
 
     public PairG28(int node, int weight){
         this.node=node;
         this.weight=weight;
     }
 }
+
 public class G28ShortestPathUGActualWeightsSelf {
+
     public static void main(String[] args) {
+
         int V = 9, E= 10;
         //Try negative weight and see what happens
         //In case of negative loop it will go as a negative cycle and will be infinite loop

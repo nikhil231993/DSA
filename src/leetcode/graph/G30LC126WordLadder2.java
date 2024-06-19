@@ -5,6 +5,7 @@ import java.util.*;
 public class G30LC126WordLadder2 {
 
     public static void main(String[] args) {
+
         String beginWord = "hit", endWord = "cog";
         List<String> wordList = Arrays.asList("hot","dot","dog","lot","log","cog");
 
@@ -42,12 +43,12 @@ public class G30LC126WordLadder2 {
 
             //erase all words that has been
             //used in the previous levels to transform
-//            if(individualList.size()>level){ This is not needed as when we take each entry from queue a level is already
+            //if(individualList.size()>level){ This is not needed as when we take each entry from queue a level is already
             //processed. Commenting these 3 lines of code passes 32/36
-//                level++;
-                for(String s:individualList){
-                    set.remove(s);
-                }
+            //level++;
+            for(String s:individualList){
+                set.remove(s);
+            }
             //}
             if(word.equals(endWord)){
                 if(result.size()==0){
@@ -56,6 +57,7 @@ public class G30LC126WordLadder2 {
                     result.add(individualList);
                 }
             }
+
             for(int i=0;i<word.length();i++){
                 char[] replacedArray=word.toCharArray();
                 char temp=replacedArray[i];//This line is not needed as the actual word is not changed

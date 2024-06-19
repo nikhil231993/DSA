@@ -52,7 +52,5 @@ public class BinaryTreeUsingArrayMain {
 		// Delete the entire Tree
 		System.out.println("\n\nDeleting the entire Tree...");
 		bt.deleteTree();
-
 	}
-
 }

@@ -10,15 +10,14 @@ public class LC169MajorityElement {
 
 		int[] nums = new int[] { 2, 2, 1, 1, 1, 2, 2 };
 
-		//Approach 1
+		//Approach 1:
 		System.out.println(majorityElementBrute(nums));
 
-		//Approach 2
+		//Approach 2:
 		System.out.println(majorityElement(nums));
 
-		//Approach 3 Optimal
+		//Approach 3: Optimal
 		System.out.println(majorityElementOptimal(nums));
-
 	}
 
 	private static int majorityElementBrute(int[] nums) {
@@ -45,7 +44,7 @@ public class LC169MajorityElement {
 		}
 		int no=0;
 		for(Map.Entry<Integer,Integer> entry : map.entrySet()){
-			if(entry.getValue()>=size+1){
+			if(entry.getValue() >= size+1){
 				no=entry.getKey();
 			}
 		}

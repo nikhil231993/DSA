@@ -19,6 +19,7 @@ public class GfgSecondLargestAndSecondSmallest {
         Integer secondSmallest=Integer.MAX_VALUE;
 
         for(int i=0; i<nums.length; i++){
+
             if(nums[i]>max){
                 secondMax=max;
                 max=nums[i];

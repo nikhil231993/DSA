@@ -28,8 +28,10 @@ public class LC695MaxAreaOfIsland {
 
 		if (i >= grid.length || i < 0 || j < 0 || j >= grid[0].length)
 			return area;
+
 		if (grid[i][j] == 0)
 			return area;
+
 		area++;
 		grid[i][j] = 0;
 		area = calculateArea(grid, area, i + 1, j);

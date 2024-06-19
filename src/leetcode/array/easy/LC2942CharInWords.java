@@ -20,5 +20,8 @@ public class LC2942CharInWords {
                 list.add(i);
         }
         return list;
+
+        //TC:O(n) and TC of indexOf function
+        //SC:O(1)
     }
 }

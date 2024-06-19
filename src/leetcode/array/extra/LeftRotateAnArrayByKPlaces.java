@@ -8,7 +8,7 @@ public class LeftRotateAnArrayByKPlaces {
         int k=2;
         leftRotate(num,k);
 
-        System.out.println("Left rotated array by k places is: ");
+        System.out.println("Left Rotated array by k places is: ");
         for(int n:num)
             System.out.println(n);
 
@@ -16,7 +16,7 @@ public class LeftRotateAnArrayByKPlaces {
         int k1=2;
         rightRotate(num1,k1);
 
-        System.out.println("Right rotated array by k places is: ");
+        System.out.println("Right Rotated array by k places is: ");
         for(int n:num1)
             System.out.println(n);
     }

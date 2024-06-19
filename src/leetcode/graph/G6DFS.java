@@ -5,6 +5,7 @@ import java.util.*;
 public class G6DFS {
 
     public static void main(String[] args) {
+
         List<List<Integer>> arr=new ArrayList<>();
         Scanner scan=new Scanner(System.in);
         System.out.println("Enter no of vertex: ");
@@ -42,6 +43,7 @@ public class G6DFS {
     }
 
     private static void dfsRecursive(List<List<Integer>> arr, ArrayList<Integer> dfs,boolean[] visited, int i) {
+
         visited[i]=true;
         dfs.add(i);
         for(Integer vertex: arr.get(i)){
@@ -52,6 +54,7 @@ public class G6DFS {
     }
 
     private static void adjacencyList(List<List<Integer>> arr,int n, int m, Scanner scan) {
+
         System.out.println("Creating " +n +" List:");
         for(int i=0;i<=n;i++)
             arr.add(new ArrayList<>());

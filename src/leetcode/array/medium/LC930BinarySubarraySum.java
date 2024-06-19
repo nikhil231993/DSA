@@ -31,5 +31,8 @@ public class LC930BinarySubarraySum {
             m.put(sum,m.getOrDefault(sum,0)+1);
         }
         return count;
+
+        //TC:O(n)
+        //SC:O(n)
     }
 }

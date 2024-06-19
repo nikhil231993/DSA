@@ -7,14 +7,19 @@ import java.util.Map;
 public class LC136SingleNumber {
 
 	public static void main(String[] args) {
+
 		int[] arr = new int[] { 4, 1, 2, 1, 2 };
 
-		System.out.println(singleNumber(arr));
+		//Approach 1: Using Map
 		System.out.println(singleNumberUsingMap(arr));
+
+		//Approach 2: Constant space
+		System.out.println(singleNumber(arr));
 	}
 
 	private static Integer singleNumberUsingMap(int[] arr) {
-		HashMap<Integer, Integer> map = new LinkedHashMap<Integer, Integer>();
+
+		HashMap<Integer, Integer> map = new LinkedHashMap();
 		for (Integer num : arr) {
 			if (map.containsKey(num))
 				map.put(num, map.get(num) + 1);
@@ -27,6 +32,7 @@ public class LC136SingleNumber {
 				return m.getKey();
 
 		return -1;
+
 		//TC:O(N/2+1)
 		//SC:O(N/2+1)
 	}
@@ -40,7 +46,6 @@ public class LC136SingleNumber {
 		return result;
 
 		//TC:O(N)
-		//SC:O(!)
+		//SC:O(1)
 	}
-
 }

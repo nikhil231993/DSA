@@ -6,7 +6,7 @@ public class G12DetectCycleUGDFS {
 
     public static void main(String[] args) {
 
-        System.out.println("#################List Creation Start#####################");
+        System.out.println("################# List Creation Start #####################");
         List<List<Integer>> arr=new ArrayList<>();
         Scanner scan=new Scanner(System.in);
         System.out.println("Enter no of vertex: ");
@@ -18,13 +18,12 @@ public class G12DetectCycleUGDFS {
         //Adjacency Matrix
         int[][] matrix=new int[n+1][n+1];
         adjacencyMatrix(matrix,n,m,scan);
-        System.out.println("################List Creation End#####################");
+        System.out.println("################ List Creation End #####################");
 
         System.out.println(detectCycleDfs(arr,n,m));
 
         //Not working
         //System.out.println(detectCycleInMatrix(matrix,n,m));
-
     }
 
     private static boolean detectCycleInMatrix(int[][] matrix, int n, int m) {
@@ -56,6 +55,7 @@ public class G12DetectCycleUGDFS {
 
 
     private static boolean detectCycleDfs(List<List<Integer>> arr, int n, int m) {
+
         int[] visited=new int[n+1];
         for(int i=1;i<=n;i++){
             if(visited[i]==0){

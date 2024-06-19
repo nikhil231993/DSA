@@ -5,6 +5,7 @@ import java.util.*;
 public class G23DetectCycleUsingTopoSortBFS {
 
     public static void main(String[] args) {
+
         List<List<Integer>> arr=new ArrayList<>();
         Scanner scan=new Scanner(System.in);
         System.out.println("Enter no of vertex: ");
@@ -27,6 +28,7 @@ public class G23DetectCycleUsingTopoSortBFS {
                 indegree[v]++;
             }
         }
+
         Queue<Integer> q=new LinkedList<>();
         for(int i=0;i<n;i++){
             if(indegree[i]==0){
@@ -44,14 +46,17 @@ public class G23DetectCycleUsingTopoSortBFS {
                 }
             }
         }
+
         //we don't need list to store toposort instead we can have counter inside while loop and see
         //if it is equal to the no of nodes. If equal then there are no cycle but if not then there is a cycle.
         return list.size()<n;
+
         //SC:O(N) queue+O(N) indegree +O(N) toposort
         //TC:O(N+E)
     }
 
     private static void adjacencyList(List<List<Integer>> arr,int n, int m, Scanner scan) {
+
         System.out.println("Creating " +n +" List:");
         for(int i=0;i<=n;i++)
             arr.add(new ArrayList<>());

@@ -3,10 +3,10 @@ package leetcode.array.medium;
 public class LC53MaxSubArrayKadane {
 
 	public static void main(String[] args) {
+
 		int[] arr = new int[] { 0, 1, 3, -5, 7 };
 		System.out.println(maxSubArray(arr));
-//TC:O(n)
-//SC:O(1)
+
 	}
 
 	private static int maxSubArray(int[] arr) {
@@ -23,6 +23,8 @@ public class LC53MaxSubArrayKadane {
 				sum = 0;
 		}
 		return currentMaxSum;
-	}
 
+		//TC:O(n)
+		//SC:O(1)
+	}
 }

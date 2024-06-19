@@ -6,6 +6,7 @@ public class LC232QueueUsingStackAmortized {
 
     Stack<Integer> input=new Stack<>();
     Stack<Integer> output=new Stack<>();
+
     public LC232QueueUsingStackAmortized() {
 
     }
@@ -15,6 +16,7 @@ public class LC232QueueUsingStackAmortized {
     }
 
     public int pop() {
+
         if(!output.isEmpty())
             return output.pop();
         else{
@@ -26,6 +28,7 @@ public class LC232QueueUsingStackAmortized {
     }
 
     public int peek() {
+
         if(!output.isEmpty())
             return output.peek();
         else{

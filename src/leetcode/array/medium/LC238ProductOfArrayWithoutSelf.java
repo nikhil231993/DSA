@@ -26,6 +26,7 @@ public class LC238ProductOfArrayWithoutSelf {
 	}
 
 	private static int[] productBetterSameLoop(int[] nums) {
+
 		int[] ans = new int[nums.length];
 		Arrays.fill(ans, 1);
 		int p1=1;
@@ -57,6 +58,7 @@ public class LC238ProductOfArrayWithoutSelf {
 			p2 *= nums[i];
 		}
 		return ans;
+
 		// SC:O(n)
 		// TC:O(n)
 	}
@@ -79,6 +81,6 @@ public class LC238ProductOfArrayWithoutSelf {
 		return response;
 
         //SC:O(1)
-		// TC:O(n square)
+		//TC:O(n square)
 	}
 }

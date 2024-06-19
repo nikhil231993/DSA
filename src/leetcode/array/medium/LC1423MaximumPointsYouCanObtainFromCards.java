@@ -12,7 +12,7 @@ public class LC1423MaximumPointsYouCanObtainFromCards {
 	private static int maxPoints(int[] cardPoints, int k) {
 
 		int lsum=0;
-		for(int i=0; i<k; i++){  //O(k)
+		for(int i=0; i<k; i++){    //O(k)
 			lsum+=cardPoints[i];
 		}
 

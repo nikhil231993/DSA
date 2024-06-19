@@ -28,8 +28,8 @@ public class LC1480RunningSumOneDArray {
         }
         return result;
 
-        //SC:O(n)
         //TC:O(n)
+        //SC:O(n)
     }
 
     public static void runningSum(int[] nums) {

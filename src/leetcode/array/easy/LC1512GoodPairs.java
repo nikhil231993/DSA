@@ -6,7 +6,7 @@ public class LC1512GoodPairs {
 
     public static void main(String[] args) {
         
-       int[] nums =new int[] {1,2,3,1,1,3};
+       int[] nums =new int[] {5,5,5,5,5};
        
        //Approach 1: Brute
        System.out.println(numIdenticalPairs(nums));
@@ -30,7 +30,6 @@ public class LC1512GoodPairs {
             if(map.containsKey(nums[i]))
                 count+=map.get(nums[i]);
             map.put(nums[i], map.getOrDefault(nums[i],0)+1);
-
         }
         return count;
 

@@ -4,7 +4,7 @@ public class LC509FibonacciNumber {
 
     public static void main(String[] args) {
 
-        int n=8;
+        int n=3;
         //Approach 1 recursion
         System.out.println(fibUsingRecursion(n));
 

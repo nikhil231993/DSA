@@ -8,7 +8,7 @@ public class LC1464MaxProduct {
 
         //Approach 1: User two for loops TC:O(n square)
 
-        //Approach 2: Sort and use two pointers from either end TC:O(nlogn) due to sorting
+        //Approach 2: Sort and use last two values from TC:O(nlogn) due to sorting
 
         //Approach 3: Optimal
         System.out.println(maxProduct(nums));

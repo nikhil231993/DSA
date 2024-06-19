@@ -12,8 +12,8 @@ public class LC1732FindHighestAltitude {
 
     public static int largestAltitude(int[] gain) {
 
-        int value=0;
-        int sum=0;
+        int value=0, sum=0;
+
         for(int i=0;i<gain.length;i++){
             sum+=gain[i];
             value=Math.max(value, sum);

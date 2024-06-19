@@ -3,18 +3,21 @@ package leetcode.graph;
 import java.util.*;
 
 class PairParent{
-    int node;
-    int parent;
+
+    protected int node;
+    protected int parent;
 
     public PairParent(int node, int parent){
         this.node=node;
         this.parent=parent;
     }
 }
+
 public class G11DetectCycleUGBFS {
 
     public static void main(String[] args) {
-        System.out.println("#################List Creation Start#####################");
+
+        System.out.println("################# List Creation Start #####################");
         List<List<Integer>> arr=new ArrayList<>();
         Scanner scan=new Scanner(System.in);
         System.out.println("Enter no of vertex: ");
@@ -26,34 +29,36 @@ public class G11DetectCycleUGBFS {
         //Adjacency Matrix
         int[][] matrix=new int[n+1][n+1];
         adjacencyMatrix(matrix,n,m,scan);
-        System.out.println("################List Creation End#####################");
+        System.out.println("################ List Creation End #####################");
 
         System.out.println(detectCycle(arr,n,m));
 
         //Below does not give correct result for matrix
         System.out.println(detectCycleInMatrix(matrix,n,m));
-
     }
 
     private static boolean detectCycleInMatrix(int[][] matrix, int n, int m) {
 
         int[] visited=new int[n+1];
         for(int i=0;i<=n;i++){
-                if(visited[i]==0){
-                    if(detect(i,matrix,n,m,visited)){
-                        return true;
-                    }
+            if(visited[i]==0){
+                if(detect(i,matrix,n,m,visited)){
+                    return true;
                 }
+            }
         }
         return false;
+
         //SC:o(n) queue+O(n) visited array
         //TC:O(n*n)
     }
 
     private static boolean detect(int i, int[][] matrix, int n, int m, int[] visited) {
+
         //visited[i]=1; we use j as the visited array here
         Queue<PairParent> q=new LinkedList<>();
         q.add(new PairParent(i,-1));
+
         while (!q.isEmpty()){
             int node=q.peek().node;
             int parent=q.peek().parent;
@@ -112,6 +117,7 @@ public class G11DetectCycleUGBFS {
 
         q.add(new PairParent(i,-1));
         visited[i]=1;
+
         while(!q.isEmpty()){
             int node=q.peek().node;
             int parent=q.peek().parent;

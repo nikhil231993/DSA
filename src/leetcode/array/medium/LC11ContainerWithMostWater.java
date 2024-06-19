@@ -5,7 +5,6 @@ public class LC11ContainerWithMostWater {
 	public static void main(String[] args) {
 
 		int[] height = new int[] { 1, 8, 6, 2, 5, 4, 8, 3, 7 };
-
 		System.out.println(container(height));
 	}
 
@@ -26,7 +25,7 @@ public class LC11ContainerWithMostWater {
 
 		return vol;
 
-		// SC:O(1)
 		// TC:O(n)
+		// SC:O(1)
 	}
 }

@@ -25,11 +25,14 @@ public class LC268MissingNumber {
 			num ^= nums[i];
 		}
 		return num;
+
+        //TC:O(n)
+        //SC:O(n)
 	}
 
 	private static int xor(int[] num) {
 
-    //This is better in case of large numbers as it can not cross the large number
+        //This is better in case of large numbers as it cannot cross the large number
         int XOR1=0;
         int XOR2=0;
         for(int i=0;i<num.length;i++){
@@ -39,6 +42,9 @@ public class LC268MissingNumber {
         XOR2=XOR2^num.length;
 
         return  XOR1^XOR2;
+
+        //TC:O(n)
+        //SC:O(n)
     }
 
     public static int missingNumber(int[] nums) {

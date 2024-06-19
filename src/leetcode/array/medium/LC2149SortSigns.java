@@ -6,16 +6,16 @@ public class LC2149SortSigns {
 
     public static void main(String[] args) {
 
-       int[] nums =new int[] {3,1,-2,-5,2,-4};
+        int[] nums =new int[] {3,1,-2,-5,2,-4};
 
-       //Approach 1: Take 2 arrays and run loop
+        //Approach 1: Take 2 arrays and run loop
         int[] result=rearrangebySign(nums, nums.length);
         for(int n:result)
             System.out.println(n);
 
         System.out.println("##################");
 
-       //Approach 2: Optimal
+        //Approach 2: Optimal
         int[] res=rearrangeArray(nums);
         for(int n:res)
             System.out.println(n);

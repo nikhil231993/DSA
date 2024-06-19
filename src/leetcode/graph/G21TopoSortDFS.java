@@ -8,11 +8,14 @@ import java.util.Stack;
 public class G21TopoSortDFS {
 
     public static void main(String[] args) {
+
+        //It only exists only in DAG
+
         List<List<Integer>> arr=new ArrayList<>();
         Scanner scan=new Scanner(System.in);
-        System.out.println("Enter no of vertex: ");
+        System.out.println("Enter no of Vertex: ");
         int n=scan.nextInt();
-        System.out.println("Enter no of edges: ");
+        System.out.println("Enter no of Edges: ");
         int m=scan.nextInt();
 
         adjacencyList(arr,n,m,scan);
@@ -26,6 +29,7 @@ public class G21TopoSortDFS {
                 topoSort(arr,n,m,visited,s,i);
             }
         }
+
         List<Integer> l=new ArrayList<>();
         while(!s.isEmpty()){
             l.add(s.pop());
@@ -41,12 +45,13 @@ public class G21TopoSortDFS {
                 topoSort(arr,n,m,visited,s,vertex);
         }
         s.push(i);
+
         //TC:O(N)+O(N+E)
         //SC:0(N) visited array +O(N) recursion stack
     }
 
-
     private static void adjacencyList(List<List<Integer>> arr,int n, int m, Scanner scan) {
+
         System.out.println("Creating " +n +" List:");
         for(int i=0;i<=n;i++)
             arr.add(new ArrayList<>());

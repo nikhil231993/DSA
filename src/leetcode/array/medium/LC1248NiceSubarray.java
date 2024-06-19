@@ -40,5 +40,8 @@ public class LC1248NiceSubarray {
             m.put(sum,m.getOrDefault(sum,0)+1);
         }
         return count;
+
+        //TC:O(n)
+        //SC:O(n)
     }
 }

@@ -3,20 +3,24 @@ package leetcode.graph;
 import java.util.*;
 
 class PairG32{
-    int weight;
-    int node;
+
+    protected int weight;
+    protected int node;
 
     public PairG32(int node,int weight){
         this.weight=weight;
         this.node=node;
     }
 }
+
 public class G32DijkstraAlgoUGWeight {
 
     public static void main(String[] args) {
+
         int[][] edge = new int[][] { { 0, 2, 4 },
                 { 0, 1, 4 }, {1,2,2},{ 2, 3, 3 }, { 2, 4, 1 },
                 { 3, 5, 2 }, { 2, 5, 6 }, { 4, 5, 3 } };
+
         // Dijkstra not applicable for graph with negative weights and negative cycle
 
         // Below we can see in comments of the video G-33:
@@ -24,6 +28,8 @@ public class G32DijkstraAlgoUGWeight {
         // as there can be more than one instance of a node in the priority queue whereas in the treeset
         // method it will be O(ElogV)
         //Ans: Yes
+        // Also in here we use (v * ((pop vertex from min heap) + no of edges on each vertex *push into PQ) Here it is V* because we parse everything in for loop also which is present inside
+        //TC  if we use Queue instead of priority queue will be EV
         int V=6;
         int E=8;
         int src=0;

@@ -6,9 +6,16 @@ public class LC1470ShuffleArray {
 
        int[] nums =new int[] {2,5,1,3,4,7};
        int n = 3;
+
+       //Approach 1
        int[] r=shuffle(nums,n);
        for(int n1:r)
            System.out.println(n1);
+
+       //Approach 2
+        int[] r1=shuffleBetter(nums,n);
+        for(int n1:r1)
+            System.out.println(n1);
     }
 
     public static int[] shuffle(int[] nums, int n) {
@@ -38,6 +45,17 @@ public class LC1470ShuffleArray {
                 result[k++] = temp1[j++];
                 flag = 0;
             }
+        }
+        return result;
+    }
+
+    public static int[] shuffleBetter(int[] nums, int n) {
+
+        int[] result= new int[2*n];
+        int i=0,j=n,k=0;
+        while(i<n && j<2*n){
+            result[k++]=nums[i++];
+            result[k++]=nums[j++];
         }
         return result;
     }

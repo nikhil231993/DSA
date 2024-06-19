@@ -9,6 +9,7 @@ public class LC20ValidParenthesis {
 	}
 
 	private static boolean validParen(String s) {
+
 		Stack<Character> stack = new Stack();
 		for (int i = 0; i < s.length(); i++) {
 			if (s.charAt(i) == '(')
@@ -24,5 +25,8 @@ public class LC20ValidParenthesis {
 			return false;
 		
 		return true;
+
+		//TC:O(n)
+		//SC:O(n)
 	}
 }

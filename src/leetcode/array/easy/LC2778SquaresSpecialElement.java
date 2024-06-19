@@ -4,7 +4,7 @@ public class LC2778SquaresSpecialElement {
 
     public static void main(String[] args) {
 
-        //Index is the only issue
+        //Index is the only issue as the array starts with 1 index
        int[] nums =new int[] {2,7,1,19,18,3};
        System.out.println(sumOfSquares(nums));
     }

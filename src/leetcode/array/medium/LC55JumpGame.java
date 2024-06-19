@@ -10,9 +10,10 @@ public class LC55JumpGame {
 
     public static boolean canJump(int[] nums) {
 
-        int goal=nums.length-1;
+        int n=nums.length;
+        int goal=n-1;
 
-        for(int i=nums.length-1; i>=0; i--){
+        for(int i=n-1; i>=0; i--){
             if(nums[i]+i>=goal)
                 goal=i;
         }

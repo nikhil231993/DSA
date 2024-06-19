@@ -5,16 +5,19 @@ import java.util.*;
 public class G5BFS {
 
     public static void main(String[] args) {
-        System.out.println("#################List Creation Start#####################");
+
+        System.out.println("################# List Creation Start #####################");
         List<List<Integer>> arr=new ArrayList<>();
         Scanner scan=new Scanner(System.in);
-        System.out.println("Enter no of vertex: ");
+        System.out.println("Enter no of Vertex: ");
         int n=scan.nextInt();
-        System.out.println("Enter no of edges: ");
+        System.out.println("Enter no of Edges: ");
         int m=scan.nextInt();
-        adjacencyList(arr,n,m,scan);
-        System.out.println("################List Creation End#####################");
 
+        System.out.println("Below Adjacency list is for undirected: ");
+        adjacencyList(arr,n,m,scan);
+
+        System.out.println("################ List Creation End #####################");
         bfs(arr,n,m);
     }
 
@@ -33,8 +36,7 @@ public class G5BFS {
                     Integer vertex=q.poll();
                     bfs.add(vertex);
                     for(Integer v: arr.get(vertex)){
-                        if(!visited[v])
-                        {
+                        if(!visited[v]) {
                             q.add(v);
                             visited[v]=true;
                         }
@@ -47,11 +49,12 @@ public class G5BFS {
         System.out.println(bfs);
 
         //SC:O(3N) for queue, bfs list and visited array (not using adjacency list as it is given)
-        //TC:O(N)outer for loop+O(N+2E) for while loop and the for loop inside it runs for all the degrees of the node
+        //TC:O(N)outer for loop + O(N+2E) for while loop and the for loop inside it runs for all the degrees of the node
         //G7 12:53
     }
 
     private static void adjacencyList(List<List<Integer>> arr,int n, int m, Scanner scan) {
+
         System.out.println("Creating " +n +" List:");
         for(int i=0;i<=n;i++)
             arr.add(new ArrayList<>());
@@ -64,7 +67,6 @@ public class G5BFS {
             int v=scan.nextInt();
             arr.get(u).add(v);
             arr.get(v).add(u);
-
         }
 
         System.out.println("Adjacency List is: ");

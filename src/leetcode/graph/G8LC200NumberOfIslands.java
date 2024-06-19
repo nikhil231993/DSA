@@ -4,13 +4,16 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 class Pair{
-    int first;
-    int second;
+
+    protected int first;
+    protected int second;
+
     public Pair(int first, int second){
         this.first=first;
         this.second=second;
     }
 }
+
 public class G8LC200NumberOfIslands {
 
     public static void main(String[] args) {
@@ -38,6 +41,7 @@ public class G8LC200NumberOfIslands {
     }
 
     private int numIslandsUsingDfs(char[][] grid) {
+
         int n=grid.length;
         int m=grid[0].length;
         int[][] visited=new int[n][m];
@@ -74,6 +78,7 @@ public class G8LC200NumberOfIslands {
         
         int n= grid.length;;
         int m=grid[0].length;
+
         if(n==0)
             return 0;
         int count=0;
@@ -104,6 +109,7 @@ public class G8LC200NumberOfIslands {
     }
 
     public int numIslandsUsingBfs(char[][] grid) {
+
         int n=grid.length;
         int m=grid[0].length;
         int[][] visited=new int[n][m];
@@ -144,7 +150,8 @@ public class G8LC200NumberOfIslands {
                     visited[neigh_row][neigh_col]=1;
                 }
             }
-            //SC:O(N^2) visited matrix +O(N^2) if queue is fully occupied
+
+            //SC:O(N^2) visited matrix + xO(N^2) if queue is fully occupied
             //TC:O(n^2 outer for loop + n^2 *4 inner bfs into 4 sides) i.e.,O(n^2+ n^2 *4)
         }
     }

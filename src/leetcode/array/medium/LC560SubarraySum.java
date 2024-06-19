@@ -21,18 +21,18 @@ public class LC560SubarraySum {
 
 	public static int subarraySum(int[] nums, int k) {
 
-     int n = nums.length;
-	     int count = 0;
-	     for (int i = 0; i < n; i++) {
-	         int sum =0;
-	         for (int j = i; j < n; j++) {
-	             sum = sum+nums[j];
-	             if(sum ==k) {
-	                 count++;
-	             }
-	         }
-	     }
-	 return count;
+		 int n = nums.length;
+		 int count = 0;
+		 for (int i = 0; i < n; i++) {
+			 int sum =0;
+			 for (int j = i; j < n; j++) {
+				 sum = sum+nums[j];
+				 if(sum ==k) {
+					 count++;
+				 }
+			 }
+		 }
+		 return count;
 
 		 //TC:O(n square)
 		 //SC:O(1)
@@ -52,10 +52,7 @@ public class LC560SubarraySum {
 			if (m.containsKey(sum - k)) {
 				count += m.get(sum - k);
 			}
-			if (m.containsKey(sum))
-				m.put(sum, m.get(sum) + 1);
-			else
-				m.put(sum, 1);
+			m.put(sum, m.getOrDefault(sum,0)+1);
 		}
 		return count;
 

@@ -34,8 +34,8 @@ public class LC26RemoveDuplicatesFromSortedArray {
 		}
 		return list.stream().mapToInt(i->i).toArray();
 
-		//SC:O(n)
 		//TC:O(1)
+		//SC:O(n)
 	}
 
 	private static void removeDuplicates(int[] arr) {
@@ -50,7 +50,7 @@ public class LC26RemoveDuplicatesFromSortedArray {
 			arr[++j] = 0;
 		}
 
-		//SC:O(1) we are using existing array
 		//TC:O(n)
+		//SC:O(1) we are using existing array
 	}
 }

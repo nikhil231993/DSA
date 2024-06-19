@@ -28,7 +28,7 @@ public class LC912MergeSort {
         mergeSort(nums,mid+1,high);
         merge(nums,low,mid,high);
 
-        //TC:O(nlogn) 2 *Log n for mergeSort func + n for merge function
+        //TC:O(nlogn)    2 *Log n for mergeSort func + n for merge function
         //SC:O(n) temp array
     }
 

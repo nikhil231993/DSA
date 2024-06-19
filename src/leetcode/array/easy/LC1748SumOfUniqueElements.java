@@ -10,6 +10,7 @@ public class LC1748SumOfUniqueElements {
 	}
 
 	public static int sumOfUnique(int[] nums) {
+
 		int[] counts = new int[101];
 		for (int num : nums)
 			counts[num]++;
@@ -19,9 +20,8 @@ public class LC1748SumOfUniqueElements {
 				sum += i;
 		}
 		return sum;
+
 		// SC:O(n)
 		// TC:O(n)
-
 	}
-
 }

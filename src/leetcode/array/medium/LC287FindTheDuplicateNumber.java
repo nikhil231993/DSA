@@ -70,19 +70,20 @@ public class LC287FindTheDuplicateNumber {
 
 	private static int duplicateNumberWithHashMap(int[] nums) {
 
-		   HashMap<Integer,Integer> hm=new HashMap<Integer,Integer>();
+	     HashMap<Integer,Integer> hm=new HashMap<Integer,Integer>();
 
-		     for(int n:nums){
-		        hm.put(n, hm.getOrDefault(n,0)+1);
-		     }
-		     int num=0;
-		     for( Map.Entry<Integer,Integer> entry: hm.entrySet()) {
-		         if(entry.getValue()!=1) {
-		              num= entry.getKey();
-		             break;
-		         }
-		     }
-		     return num;
+		 for(int n:nums){
+			hm.put(n, hm.getOrDefault(n,0)+1);
+		 }
+		 int num=0;
+		 for( Map.Entry<Integer,Integer> entry: hm.entrySet()) {
+			 if(entry.getValue()!=1) {
+				  num= entry.getKey();
+				 break;
+			 }
+		 }
+		 return num;
+
 		//SC:O(n)
 		//TC:O(n)
 	}

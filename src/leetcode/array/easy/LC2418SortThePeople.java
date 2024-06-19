@@ -46,7 +46,7 @@ public class LC2418SortThePeople {
         }
         return result;
 
-        //TC:O(nlogn)
+        //TC:O(n log n)
         //SC:O(n)
     }
 }

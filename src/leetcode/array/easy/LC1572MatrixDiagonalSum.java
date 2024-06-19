@@ -7,7 +7,27 @@ public class LC1572MatrixDiagonalSum {
         int[][] mat =new int[][] {{1,2,3},
                 {4,5,6},
                 {7,8,9}};
+
+        //Approach 1
         System.out.println(diagonalSum(mat));
+
+        //Approach 2
+        System.out.println(diagonalSumOptimal(mat));
+    }
+
+    private static int diagonalSumOptimal(int[][] mat) {
+
+        int n=mat.length;
+        int sum=0, mid=n/2;
+        for(int i=0;i<mat.length;i++){
+            sum+=mat[i][i]+mat[i][n-1-i];
+        }
+        if(n%2 ==1)
+            return sum-mat[mid][mid];
+        return sum;
+
+        //TC:O(n)
+        //SC:O(1)
     }
 
     public static int diagonalSum(int[][] mat) {
@@ -21,6 +41,7 @@ public class LC1572MatrixDiagonalSum {
                 }
             }
         }
+
         return sum;
 
         //TC:O(n*m)

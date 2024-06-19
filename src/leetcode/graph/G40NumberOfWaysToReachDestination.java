@@ -6,8 +6,9 @@ import java.util.List;
 import java.util.PriorityQueue;
 
 class PairG40{
-    int node;
-    long distance;
+
+    protected int node;
+    protected long distance;
 
     public PairG40(int node,long distance){
         this.node=node;
@@ -15,9 +16,12 @@ class PairG40{
 
     }
 }
+
 public class G40NumberOfWaysToReachDestination {
+
     //converting to long as the test case in leetocde have large values
     public static void main(String[] args) {
+
         int V = 7;
         int[][] roads =new int[][] {{0,6,7},{0,1,2},{1,2,3},{1,3,3},{6,3,3},{3,5,1},{6,5,1},{2,5,1},{0,4,5},{4,6,2}};
         System.out.println(countPaths(V,roads));

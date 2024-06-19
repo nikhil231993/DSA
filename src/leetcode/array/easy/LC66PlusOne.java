@@ -22,6 +22,7 @@ public class LC66PlusOne {
 			i--;
 		}
 
+		//Approach
 		int[] result = plusOne(digits);
 		for (int k = 0; k < result.length; k++)
 			System.out.println(result[k]);
@@ -44,5 +45,4 @@ public class LC66PlusOne {
 		//TC:O(n)
 		//SC:O(1)
 	}
-
 }

@@ -25,6 +25,7 @@ public class LC48RotateImage {
 
 		//we go n-1 as the matrix will be sorted once we parse that much
 		for (int i = 0; i < matrix.length-1; i++) {
+
 			//since diagonals remain intact we start from i+1
 			for (int j = i+1; j < matrix[0].length; j++) {
 				int temp = matrix[j][i];

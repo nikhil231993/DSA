@@ -1,11 +1,12 @@
 package leetcode.graph;
 
 import java.util.PriorityQueue;
+
  class PairG37{
 
-    int diff;
-    int row;
-    int col;
+    protected int diff;
+    protected int row;
+    protected int col;
 
     public PairG37(int diff, int row, int col){
         this.diff=diff;
@@ -13,6 +14,7 @@ import java.util.PriorityQueue;
         this.col=col;
     }
 }
+
 public class G37LC1631AbsoluteDIffPath {
 
     public static void main(String[] args) {
@@ -68,6 +70,8 @@ public class G37LC1631AbsoluteDIffPath {
             }
         }
         return 0;// unreachable
-        //TC:o(ElogV) i.e O(n*m*4*log(n*m))
+
+        //TC:O(ElogV) i.e O(n*m*4*log(n*m))
+        //SC:O(m*n)
     }
 }

@@ -6,9 +6,10 @@ import java.util.Queue;
 
 public class BinaryTreeUsingLinkedList {
 
-	Node root;
+	protected Node root;
 
 	public void insert(int data) {
+
 		Node node = new Node(data);
 		if (root == null) {
 			root = node;
@@ -38,6 +39,7 @@ public class BinaryTreeUsingLinkedList {
 	}
 
 	public void inOrderTraversal(Node root) {
+
 		if (root == null)
 			return;
 		else {
@@ -45,10 +47,10 @@ public class BinaryTreeUsingLinkedList {
 			System.out.print(root.data + "-->");
 			inOrderTraversal(root.right);
 		}
-
 	}
 
 	public void preOrderTraversal(Node root) {
+
 		if (root == null)
 			return;
 		else {
@@ -56,10 +58,10 @@ public class BinaryTreeUsingLinkedList {
 			preOrderTraversal(root.left);
 			preOrderTraversal(root.right);
 		}
-
 	}
 
 	public void postorderTraversal(Node root) {
+
 		if (root == null)
 			return;
 		else {
@@ -67,15 +69,17 @@ public class BinaryTreeUsingLinkedList {
 			postorderTraversal(root.right);
 			System.out.print(root.data + "-->");
 		}
-
 	}
 
 	public void levelOrderTraversal(Node root) {
+
 		if (root == null) {
 			return;
 		} else {
+
 			Queue<Node> queue = new LinkedList<Node>();
 			queue.add(root);
+
 			while (!queue.isEmpty()) {
 				Node temp = queue.peek();
 				queue.remove();
@@ -84,30 +88,31 @@ public class BinaryTreeUsingLinkedList {
 					queue.add(temp.left);
 				if (temp.right != null)
 					queue.add(temp.right);
-
 			}
 		}
-
 	}
 
 	private int pos = 0;
-	public void inDepthFirstSearch(Node root, int data) {
+	public boolean inDepthFirstSearch(Node root, int data) {
+
 		if (root == null) {
-			return;
+			return false;
 		} else {
 			pos++;
-
 			if (root.data == data) {
 				System.out.println("value is found at: " + pos);
-				return;
+				return true;
 			}
-			inDepthFirstSearch(root.left, data);
-			inDepthFirstSearch(root.right, data);
+			if(inDepthFirstSearch(root.left, data))
+				 return true;
+			if (inDepthFirstSearch(root.right, data))
+				return true;
 		}
-
+		return false;
 	}
 
 	public void breadthFirstSearch(Node root, int data) {
+
 		if (root == null) {
 			return;
 		} else {
@@ -128,7 +133,6 @@ public class BinaryTreeUsingLinkedList {
 					queue.add(temp.right);
 			}
 		}
-
 	}
 
 	public void deleteFromBinaryTree(Node root, int value) {
@@ -142,6 +146,7 @@ public class BinaryTreeUsingLinkedList {
 
 				Node temp = queue.peek();
 				queue.remove();
+
 				if (temp.data == value) {
 					Node deep = deepestNode();
 					System.out.println();
@@ -189,6 +194,7 @@ public class BinaryTreeUsingLinkedList {
 	}
 
 	private Node deepestNode() {
+
 		Node temp=null;
 		if (root == null) {
 			return null;
@@ -208,6 +214,4 @@ public class BinaryTreeUsingLinkedList {
 		}
 		return temp;
 	}
-
-
 }

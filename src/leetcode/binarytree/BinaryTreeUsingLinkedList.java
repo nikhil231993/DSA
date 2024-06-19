@@ -12,26 +12,27 @@ import java.util.TreeMap;
 
 
 class Tuple {
-	Node node;
-	int vert;
-	int hori;
+
+	protected Node node;
+	protected int vert;
+	protected int hori;
 
 	public Tuple(Node node, int vert) {
 		this.node = node;
 		this.vert = vert;
 	}
+
 	public Tuple(Node node, int vert, int hori) {
 		this.node = node;
 		this.vert = vert;
 		this.hori = hori;
 	}
-
-
 }
 
 class Pair {
-	Node node;
-	int num;
+
+	protected Node node;
+	protected int num;
 
 	public Pair(Node node, int num) {
 		this.node = node;
@@ -41,7 +42,7 @@ class Pair {
 
 public class BinaryTreeUsingLinkedList {
 
-	Node root;
+	protected Node root;
 
 	public void insert(int data) {
 		Node node = new Node(data);
@@ -73,6 +74,7 @@ public class BinaryTreeUsingLinkedList {
 	}
 
 	public void inOrderTraversal(Node root) {
+
 		if (root == null)
 			return;
 		else {
@@ -83,29 +85,31 @@ public class BinaryTreeUsingLinkedList {
 			// TC:O(N)
 			// SC:O(H) in case of normal tree or O(N) in case of skewed tree
 		}
-
 	}
 
 	public void preOrderTraversal(Node root) {
+
 		if (root == null)
 			return;
 		else {
 			System.out.print(root.data + "-->");
 			preOrderTraversal(root.left);
 			preOrderTraversal(root.right);
+
 			// TC:O(N)
 			// SC:O(H) in case of normal tree or O(N) in case of skewed tree
 		}
-
 	}
 
 	public void postorderTraversal(Node root) {
+
 		if (root == null)
 			return;
 		else {
 			postorderTraversal(root.left);
 			postorderTraversal(root.right);
 			System.out.print(root.data + "-->");
+
 			// TC:O(N)
 			// SC:O(H) in case of normal tree or O(N) in case of skewed tree
 		}
@@ -113,6 +117,7 @@ public class BinaryTreeUsingLinkedList {
 	}
 
 	public void levelOrderTraversal(Node root) {
+
 		if (root == null) {
 			return;
 		} else {
@@ -125,10 +130,11 @@ public class BinaryTreeUsingLinkedList {
 					queue.add(temp.left);
 				if (temp.right != null)
 					queue.add(temp.right);
-
 			}
 		}
 
+		//TC:O(n)
+		//SC:O(n)
 	}
 
 	private int pos = 0;
@@ -250,6 +256,7 @@ public class BinaryTreeUsingLinkedList {
 	}
 
 	public List<List<Integer>> levelOrder(Node root) {
+
 		if (root == null)
 			return new ArrayList<>();
 
@@ -269,20 +276,24 @@ public class BinaryTreeUsingLinkedList {
 				l.add(temp.data);
 			}
 			list.add(l);
+
 			// TC:O(n) as we have to parse all elements
 			// SC:O(n) as we have to store all elements also we do not consider size of l i.e., list as it's small
 		}
 		return list;
 	}
 
-	public void iterativePreOrder(Node root) {
+	public List<Integer> iterativePreOrder(Node root) {
+
 		if (root == null)
-			return;
+			return new ArrayList<>();
+		List<Integer> list=new ArrayList<>();
 		Stack<Node> st = new Stack<>();
 		st.push(root);
 		while (!st.isEmpty()) {
+
 			Node temp = st.pop();
-			System.out.print(temp.data + "-->");
+			list.add(temp.data);
 			if (temp.right != null)
 				st.push(temp.right);
 			if (temp.left != null)
@@ -291,11 +302,12 @@ public class BinaryTreeUsingLinkedList {
 			// TC:O(N)
 			// SC:O(N) which is stack space in case of tree having more right nodes refer
 			// note or else it will be O(H)
-
 		}
+		return list;
 	}
 
 	public List<Integer> iterativeInOrder(Node root) {
+
 		List<Integer> result = new ArrayList<Integer>();
 		Node node = root;
 		Stack<Node> st = new Stack<Node>();
@@ -312,19 +324,20 @@ public class BinaryTreeUsingLinkedList {
 			}
 		}
 		return result;
+
 		// TC:O(N)
 		// SC:O(H) which is stack space but in case of skewed it will be O(N)
-
 	}
 
 	public List<Integer> iterativPostOrder(Node root) {
-		List<Integer> result = new ArrayList<Integer>();
-		Stack<Node> s1 = new Stack<Node>();
-		Stack<Node> s2 = new Stack<Node>();
 
 		if (root == null)
 			return new ArrayList<Integer>();
+		List<Integer> result = new ArrayList<Integer>();
+		Stack<Node> s1 = new Stack<Node>();
+		Stack<Node> s2 = new Stack<Node>();
 		s1.push(root);
+
 		while (!s1.isEmpty()) {
 			Node node = s1.pop();
 			s2.push(node);
@@ -332,7 +345,6 @@ public class BinaryTreeUsingLinkedList {
 				s1.push(node.left);
 			if (node.right != null)
 				s1.push(node.right);
-
 		}
 
 		while (!s2.isEmpty()) {
@@ -342,10 +354,10 @@ public class BinaryTreeUsingLinkedList {
 
 		// TC:O(N)
 		// SC:O(2N) only considering stack
-
 	}
 
 	public List<Integer>  iterativPostOrderUsing1Stack(Node root2) {
+
 		Stack<Node> st = new Stack<Node>();
 		List<Integer> arr = new ArrayList<Integer>();
 		Node current = root;
@@ -376,17 +388,17 @@ public class BinaryTreeUsingLinkedList {
 
 	public List<List<Integer>> allTraversalsStack(Node root) {
 
-		List<List<Integer>> list = new ArrayList<List<Integer>>();
-		List<Integer> predOrder = new ArrayList<Integer>();
-		List<Integer> inOrder = new ArrayList<Integer>();
-		List<Integer> postOrder = new ArrayList<Integer>();
+		List<List<Integer>> list = new ArrayList<>();
+		List<Integer> predOrder = new ArrayList<>();
+		List<Integer> inOrder = new ArrayList<>();
+		List<Integer> postOrder = new ArrayList<>();
 
 		Stack<NodeWithValue> st = new Stack();
 		st.add(new NodeWithValue(root, 1));
 		while (!st.isEmpty()) {
 			NodeWithValue n = st.pop();
-			if (n.num == 1) {
 
+			if (n.num == 1) {
 				predOrder.add(n.node.data);
 				n.num++;
 				st.push(n);
@@ -400,11 +412,9 @@ public class BinaryTreeUsingLinkedList {
 				if (n.node.right != null) {
 					st.push(new NodeWithValue(n.node.right, 1));
 				}
-				
 			}else {
 				postOrder.add(n.node.data);
 			}
-
 		}
 		list.add(predOrder);
 		list.add(inOrder);
@@ -416,20 +426,23 @@ public class BinaryTreeUsingLinkedList {
 	}
 
 	public int maxDepthRecursive(Node root) {
+
 		if (root == null)
 			return 0;
 		int leftLen = maxDepthRecursive(root.left);
 		int rightLen = maxDepthRecursive(root.right);
 		return 1 + Math.max(leftLen, rightLen);
+
 		// TC:O(N) as we have to travel each node
 		// SC:O(H) but O(N) in case of skewed tree
 	}
 
-	public int maxDepthIterative(Node root2) {
+	public int  maxDepthIterative(Node root) {
+
 		if(root==null)
 			return 0;
 		
-		Queue<Node> q = new LinkedList<Node>();
+		Queue<Node> q = new LinkedList<>();
 		q.add(root);
 		int len = 0;
 		while (!q.isEmpty()) {
@@ -452,9 +465,13 @@ public class BinaryTreeUsingLinkedList {
 		if (height == -1)
 			return false;
 		return true;
+
+		//TC:O(n)
+		//SC:O(H) or  O(N) for skewed tree
 	}
 
 	public static int maxHeight(Node root) {
+
 		if (root == null)
 			return 0;
 		int leftHeight = maxHeight(root.left);
@@ -466,23 +483,27 @@ public class BinaryTreeUsingLinkedList {
 		if (Math.abs(leftHeight - rightHeight) > 1)
 			return -1;
 		return 1 + Math.max(leftHeight, rightHeight);
+
 		// TC:o(n) as we have to traverse each node
 		// SC:o(n) in case of skewed tree auxiliary space will be this much
 	}
 
 	public int diameter(Node root) {
+
 		int[] diameter = new int[1];
 		findDiameter(diameter, root);
 		return diameter[0];
 	}
 
 	public static int findDiameter(int[] diameter, Node root) {
+
 		if (root == null)
 			return 0;
 		int left = findDiameter(diameter, root.left);
 		int right = findDiameter(diameter, root.right);
 		diameter[0] = Math.max(left + right, diameter[0]);
 		return 1 + Math.max(left, right);
+
 		// TC:O(N)
 		// SC:O(H) in case of normal tree but O(N) in case of skewed tree
 	}
@@ -494,26 +515,30 @@ public class BinaryTreeUsingLinkedList {
 	}
 
 	public static int maxPath(Node root, int[] max) {
+
 		if (root == null)
 			return 0;
 		int left = Math.max(0, maxPath(root.left, max));
 		int right = Math.max(0, maxPath(root.right, max));
 		max[0] = Math.max(max[0], root.data + left + right);
 		return root.data + Math.max(left, right);
+
 		//TC:O(N)
 		//SC:O(H) but in case of skewed tree it is O(N)
-
 	}
 
 	public List<List<Integer>> zigZag(Node root) {
+
 		List<List<Integer>> result = new ArrayList();
 		Queue<Node> q = new LinkedList();
 		if (root == null)
 			return new ArrayList();
+
 		q.add(root);
-		ArrayList<Integer> arr = null;
+		ArrayList<Integer> arr = new ArrayList<>();
 		boolean leftToRight = false;
 		while (!q.isEmpty()) {
+
 			int size = q.size();
 			arr = new ArrayList();
 
@@ -524,11 +549,11 @@ public class BinaryTreeUsingLinkedList {
 					arr.add(0, node.data);
 				else
 					arr.add(node.data);
+
 				if (node.left != null)
 					q.offer(node.left);
 				if (node.right != null)
 					q.offer(node.right);
-
 			}
 			if (leftToRight)
 				leftToRight = false;
@@ -536,22 +561,34 @@ public class BinaryTreeUsingLinkedList {
 				leftToRight = true;
 			result.add(arr);
 		}
-
 		return result;
-		// TC:o(n)
-		// SC:o(n)
+
+		// TC:O(N)
+		// SC:O(N)
 	}
 
 	public List<Integer> boundaryTraversal(Node root) {
+
 		if (root == null)
 			return new ArrayList();
 		
 		List<Integer> result=new ArrayList<Integer>();
 		if (isLeaf(root) == false)
 			result.add(root.data);
-		leftBoundary(root,result);
-		addLeaves(root, result);
-		rightBoundary(root, result);
+
+		//leftBoundary(root,result);
+		leftBoundaryRecursion(root.left,result); // using recursion
+		addLeavesPreOrder(root, result); //we use ore ,in or post order traversal with minor if condition check
+		//but cannot use level order as we might get above leaf node instead of bottom leaf node in answer
+		//addLeavesInorder(root, result);
+		//addLeavesPostOrder(root, result);
+
+		//rightBoundary(root, result); //below is to learn how to di t using recursion
+		Stack<Integer> st=new Stack<>();
+		rightBoundaryRecursion(root.right,result,st);
+
+		while(!st.isEmpty())
+			result.add(st.pop());
 		
 		// TC:O(H)+O(N)+o(H) where H is the height of the tree which is equal to O(N)
 		// SC:O(N) only about algo complexity
@@ -559,9 +596,66 @@ public class BinaryTreeUsingLinkedList {
 		return result;
 	}
 
+	private void addLeavesPostOrder(Node root, List<Integer> result) {
+
+		if(root==null) return;
+
+		if (root.left != null)
+			addLeavesPostOrder(root.left, result);
+
+		if (root.right != null)
+			addLeavesPostOrder(root.right, result);
+
+		if (isLeaf(root)) {
+			result.add(root.data);
+			return;
+		}
+	}
+
+	private void addLeavesInorder(Node root, List<Integer> result) {
+
+		if(root==null) return;
+		if (root.left != null)
+			addLeavesInorder(root.left, result);
+
+		if (isLeaf(root)) {
+			result.add(root.data);
+			return;
+		}
+		if (root.right != null)
+			addLeavesInorder(root.right, result);
+	}
+
+	private void rightBoundaryRecursion(Node root, List<Integer> result, Stack<Integer> st) {
+
+		if(root==null) return;
+		if(!isLeaf(root)){
+			st.push(root.data);
+		}
+		if(root.right!=null)
+			rightBoundaryRecursion(root.right, result,st);
+		if(root.right==null)
+			rightBoundaryRecursion(root.left,result,st);
+	}
+
+	private void leftBoundaryRecursion(Node root, List<Integer> result) {
+
+		if(root==null) return;
+		if(!isLeaf(root)){
+			result.add(root.data);
+			return;
+		}
+		if(root.left!=null)
+			leftBoundaryRecursion(root.left,result);
+		if(root.left==null)
+			leftBoundaryRecursion(root.right, result);
+	}
+
 	private void rightBoundary(Node root, List<Integer> result) {
+
 		Node current = root.right;
 		List<Integer> list = new ArrayList<Integer>();
+
 		while (current != null) {
 			if (isLeaf(current) == false) {
 				list.add(current.data);
@@ -576,19 +670,18 @@ public class BinaryTreeUsingLinkedList {
 		for (int i = list.size() - 1; i >= 0; i--) {
 			result.add(list.get(i));
 		}
-
 	}
 
-	private void addLeaves(Node root, List<Integer> result) {
+	private void addLeavesPreOrder(Node root, List<Integer> result) {
+
 		if (isLeaf(root)) {
 			result.add(root.data);
 			return;
 		}
 		if (root.left != null)
-			addLeaves(root.left, result);
+			addLeavesPreOrder(root.left, result);
 		if (root.right != null)
-			addLeaves(root.right, result);
-
+			addLeavesPreOrder(root.right, result);
 	}
 
 	private boolean isLeaf(Node root) {
@@ -598,6 +691,7 @@ public class BinaryTreeUsingLinkedList {
 	}
 
 	private void leftBoundary(Node root, List<Integer> result) {
+
 		Node current = root.left;
 		while (current != null) {
 			if (isLeaf(current) == false) {
@@ -609,12 +703,13 @@ public class BinaryTreeUsingLinkedList {
 			else
 				current = current.right;
 		}
-
 	}
 
 	public List<List<Integer>> verticalTraversal(Node root) {
+
 		TreeMap<Integer, TreeMap<Integer, PriorityQueue<Integer>>> map = new TreeMap();
-		Queue<Tuple> q=new LinkedList<Tuple>();
+		Queue<Tuple> q=new LinkedList<>();
+
 		//For root vert and hori are 0 taking it as centre
 		q.add(new Tuple(root, 0, 0));
 		
@@ -658,8 +753,9 @@ public class BinaryTreeUsingLinkedList {
 	}
 
 	public List<Integer> topView(Node root) {
-		Queue<Tuple> q = new LinkedList<Tuple>();
-		List<Integer> arr = new ArrayList<Integer>();
+
+		Queue<Tuple> q = new LinkedList<>();
+		List<Integer> arr = new ArrayList<>();
 		
 		Map<Integer, Integer> map = new TreeMap<>();
 
@@ -693,9 +789,10 @@ public class BinaryTreeUsingLinkedList {
 		// we cannot use recursive traversal directly in this
 	}
 
-	public List<Integer> bottomView(Node root2) {
-		Queue<Tuple> q = new LinkedList<Tuple>();
-		List<Integer> arr = new ArrayList<Integer>();
+	public List<Integer> bottomView(Node root) {
+
+		Queue<Tuple> q = new LinkedList<>();
+		List<Integer> arr = new ArrayList<>();
 
 		Map<Integer, Integer> map = new TreeMap<>();
 
@@ -709,7 +806,6 @@ public class BinaryTreeUsingLinkedList {
 
 			map.put(x, node.data);
 
-
 			if (node.left != null) {
 				q.offer(new Tuple(node.left, x - 1));
 			}
@@ -717,7 +813,7 @@ public class BinaryTreeUsingLinkedList {
 			if (node.right != null) {
 				q.offer(new Tuple(node.right, x + 1));
 			}
-	}
+		}
 
 		arr.addAll(map.values());
 		return arr;
@@ -736,6 +832,7 @@ public class BinaryTreeUsingLinkedList {
 	}
 
 	private void rightView(Node root, List<Integer> result, int level) {
+
 		if (root == null)
 			return;
 
@@ -747,7 +844,6 @@ public class BinaryTreeUsingLinkedList {
 
 		//TC:O(N)
 		//SC:O(H) but in case of skewed tree it will be o(N)
-
 	}
 
 	public List<Integer> leftViewBinaryTree(Node root) {
@@ -777,6 +873,7 @@ public class BinaryTreeUsingLinkedList {
 	}
 
 	public static boolean isSymmetry(Node left, Node right) {
+
 		if (left == null && right == null)
 			return true;
 		if (left == null || right == null)
@@ -784,11 +881,13 @@ public class BinaryTreeUsingLinkedList {
 		if (left.data != right.data)
 			return false;
 		return isSymmetry(left.left, right.right) && isSymmetry(left.right, right.left);
+
 		// SC:O(H) is o log n . In this case there is no skewed tree
 		// TC:o(n)
 	}
 
 	public List<Integer> rootToNode(Node root,int value) {
+
 		List<Integer> path = new ArrayList<Integer>();
 		if (root == null)
 			return path;
@@ -797,6 +896,7 @@ public class BinaryTreeUsingLinkedList {
 	}
 
 	private static boolean rootPathToNode(List<Integer> path, Node root, int value) {
+
 		if(root==null)
 			return false;
 		path.add(root.data);
@@ -821,6 +921,7 @@ public class BinaryTreeUsingLinkedList {
 	}
 
 	public int maxWdithOfBinaryTree(Node root) {
+
 		Queue<Pair> q = new LinkedList();
 		q.add(new Pair(root, 0));
 		int max = Integer.MIN_VALUE;
@@ -831,7 +932,7 @@ public class BinaryTreeUsingLinkedList {
 			int size = q.size();
 			for (int i = 0; i < size; i++) {
 				Node node = q.peek().node;
-				int currid = q.peek().num - minid;
+				int currid = q.poll().num - minid;
 				if (i == 0)
 					first = currid;
 				if (i == size - 1)
@@ -841,12 +942,13 @@ public class BinaryTreeUsingLinkedList {
 					q.offer(new Pair(node.left, 2 * currid + 1));
 				if (node.right != null)
 					q.offer(new Pair(node.right, 2 * currid + 2));
-				q.remove();
 			}
 			max = Math.max(max, last - first + 1);
 		}
 		return max;
 
+		//TC:O(n)
+		//SC:O(n)
 	}
 
 	public static void childrenSumProperty(Node root) {
@@ -859,6 +961,7 @@ public class BinaryTreeUsingLinkedList {
 
 		if (root.right != null)
 			childSum += root.right.data;
+
 		if (childSum >= root.data)
 			root.data = childSum;
 		else{
@@ -885,13 +988,13 @@ public class BinaryTreeUsingLinkedList {
 	}
 
 	public List<Integer> NodesAtKDistanceFromGivenNode(Node root, Node target, int k) {
-	Map<Node, Node> parent=new HashMap();
+
+		Map<Node, Node> parent=new HashMap();
 		parentMapping(parent, root);
 		
 		Queue<Node> q = new LinkedList();
 			q.offer(target);
-			
-			Map<Node, Boolean> visited=new HashMap();
+		Map<Node, Boolean> visited=new HashMap();
 		visited.put(target, true);
 		int count = 0;
 		while (!q.isEmpty()) {
@@ -925,12 +1028,13 @@ public class BinaryTreeUsingLinkedList {
 		while (!q.isEmpty())
 			result.add(q.poll().data);
 		return result;
+
 		// TC:O(N)+O(N)
-		// SC:O(N) parent+O(N) queue+o(N) visited
-		
+		// SC:O(N) parent + O(N) queue + O(N) visited
 	}
 
 	private static void parentMapping(Map<Node, Node> parent, Node root) {
+
 		Queue<Node> q = new LinkedList();
 		q.offer(root);
 
@@ -949,10 +1053,8 @@ public class BinaryTreeUsingLinkedList {
 					parent.put(node.right, node);
 				}
 			}
-
 		}
 		// TC:O(N)
-
 	}
 
 	public int burnTree(Node root, int start) {
@@ -1057,4 +1159,5 @@ public class BinaryTreeUsingLinkedList {
 		}
 		return count;
 	}
+
 }

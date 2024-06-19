@@ -4,9 +4,10 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 class PairG36{
-    int dist;
-    int row;
-    int col;
+
+    protected int dist;
+    protected int row;
+    protected int col;
 
     public PairG36(int dist, int row, int col){
         this.dist=dist;
@@ -14,9 +15,11 @@ class PairG36{
         this.col=col;
     }
 }
+
 public class G36BinaryMaze {
 
     public static void main(String[] args) {
+
         int[][] grid=new int[][]{{1,1,1,1},{1,1,0,1},{1,1,1,1},{1,1,0,0},{1,0,0,1}};
         int[] source=new int[]{0,0};
         int[] dest=new int[]{1,1};
@@ -28,7 +31,6 @@ public class G36BinaryMaze {
         // for each of which we also check 4 adjacent nodes for the shortest path length},
         // Where N = No. of rows of the binary maze and M = No. of columns of the binary maze.
         //Space Complexity: O( N*M ), Where N = No. of rows of the binary maze and M = No. of columns of the binary maze.
-
     }
 
     private static int shortestDistanceInMaze(int[][] grid, int[] source, int[] dest) {
@@ -78,7 +80,7 @@ public class G36BinaryMaze {
 
                     if(nrow==dest[0]&& ncol==dest[1])
                         return dis+1;
-                    if(distance[nrow][ncol]> dis+1){
+                    if(distance[nrow][ncol] > dis+1){
                         distance[nrow][ncol]=dis+1;
                         q.offer(new PairG36(distance[nrow][ncol],nrow,ncol));
                     }

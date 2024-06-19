@@ -15,8 +15,7 @@ public class LC1752CheckIfSortedArray {
 
     public static boolean check(int[] nums) {
 
-        int count=0;
-        int n=nums.length;
+        int count=0 , n=nums.length;
         for(int i=1; i<n;i++){
             if(nums[i-1]>nums[i])
                 count++;

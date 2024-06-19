@@ -21,7 +21,7 @@ public class LC1465MaximumAreaOfCake {
 		long x = maxDiff(hc, h);
 		long y = maxDiff(vc, v);
 
-		return (int) ((long) (x * y) % (1000000007));
+		return (int) ((long) (x * y) % (1000000007)); //long is not needed here
 	}
 
 	public static long maxDiff(int[] arr, int h) {
@@ -36,7 +36,7 @@ public class LC1465MaximumAreaOfCake {
 			max = h - arr[arr.length - 1];
 		return max;
 
-		// TC:O(nlogn)
+		// TC:O(n log n)
 		// SC:O(1)
 	}
 }

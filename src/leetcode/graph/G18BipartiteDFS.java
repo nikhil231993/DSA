@@ -8,11 +8,12 @@ import java.util.Scanner;
 public class G18BipartiteDFS {
 
     public static void main(String[] args) {
+
         List<List<Integer>> arr=new ArrayList<>();
         Scanner scan=new Scanner(System.in);
-        System.out.println("Enter no of vertex: ");
+        System.out.println("Enter no of Vertex: ");
         int n=scan.nextInt();
-        System.out.println("Enter no of edges: ");
+        System.out.println("Enter no of Edges: ");
         int m=scan.nextInt();
 
         adjacencyList(arr,n,m,scan);
@@ -34,6 +35,7 @@ public class G18BipartiteDFS {
             }
         }
         return true;
+
         //TC:o(N)for loop+O(N+2E)dfs
         //SC:O(N) color arr+O(N) stack
     }

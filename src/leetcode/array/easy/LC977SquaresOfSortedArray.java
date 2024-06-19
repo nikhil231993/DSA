@@ -30,8 +30,8 @@ public class LC977SquaresOfSortedArray {
 		 Arrays.sort(nums);
 		 return nums;
 
-		// SC:O(1)
 		// TC:O(nlogn)
+		// SC:O(1)
 	}
 
 	public static int[] sortedSquares(int[] nums) {
@@ -51,7 +51,7 @@ public class LC977SquaresOfSortedArray {
 		}
 		return result;
 
-		// SC:O(n)
 		// TC:O(n)
+		// SC:O(n)
 	}
 }

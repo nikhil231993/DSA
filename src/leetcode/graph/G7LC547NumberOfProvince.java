@@ -8,15 +8,16 @@ import java.util.Queue;
 public class G7LC547NumberOfProvince {
 
     public static void main(String[] args) {
+
         //below are the province https://leetcode.com/problems/number-of-provinces/description/
         //0--1
         //2
         //code in leetcode also runs from index as 0
         //we can use either BFS or DFS
-        int[][] matrix=new int[][]{{1,0,0},{0,1,0},{0,0,1}};
-        System.out.println("Using Adjacency Matrix :"+findCircleNum(matrix));
-        System.out.println("Using Adjacency List :"+findCircleNumUsingAdjacencyList(matrix));
 
+        int[][] matrix=new int[][]{{1,0,0},{0,1,0},{0,0,1}};
+        System.out.println("Using Adjacency Matrix :"+ findCircleNum(matrix));
+        System.out.println("Using Adjacency List :"+ findCircleNumUsingAdjacencyList(matrix));
     }
 
     private static int findCircleNumUsingAdjacencyList(int[][] matrix) {
@@ -57,6 +58,7 @@ public class G7LC547NumberOfProvince {
             }
         }
         return count;
+
         //TC:O(V)+O(V+2E)
         //TC:O(N) visited +O(N) queue
     }
@@ -76,8 +78,9 @@ public class G7LC547NumberOfProvince {
 
     public static void dfs(int[][] isConnected, int[] visited, int i){
 
+        visited[i]=1;
         for(int j=0;j<isConnected.length;j++){
-            if(isConnected[i][j]==1 && visited[j]==0){
+            if(isConnected[i][j]==1 && visited[j]==0 && i!=j){
                 visited[j]=1;
                 dfs(isConnected, visited, j);
             }

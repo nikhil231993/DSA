@@ -3,6 +3,7 @@ package leetcode.graph;
 import java.util.*;
 
 public class G35PrintShortestPathUG {
+
     public static void main(String[] args) {
 
         int[][] edge = new int[][] { { 1, 2, 2 },
@@ -25,6 +26,7 @@ public class G35PrintShortestPathUG {
 
         List<Integer> pathList=new ArrayList<>();
         int variable=dest;
+
         //at max this might be a linear graph
         while(path[variable]!=variable){
             pathList.add(variable);

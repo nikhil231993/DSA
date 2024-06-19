@@ -5,6 +5,7 @@ import java.util.Arrays;
 public class G41BellManFordAlgorithm {
 
     public static void main(String[] args) {
+
         int V=6;
         int E=7;
         int src=0;

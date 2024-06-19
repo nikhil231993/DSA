@@ -24,5 +24,8 @@ public class LC442FindAllDuplicatesInAnArray {
 	            nums[idx-1]=-nums[idx-1];
 	      }
 	      return arr;
+
+		  //TC:O(n)
+		  //SC:O(1)
 	}
 }

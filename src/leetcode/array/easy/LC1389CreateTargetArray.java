@@ -8,12 +8,15 @@ public class LC1389CreateTargetArray {
 
         int[] nums =new int[] {0,1,2,3,4};
         int[] index =new int[] {0,1,2,2,1};
+
+        //Approach 1:
         int[] result=createTargetArray(nums,index);
         for(int n:result)
             System.out.println(n);
 
         System.out.println("#######");
 
+        //Approach 2
         int[] result1=createTargetArrayWithSpace(nums,index);
         for(int n:result1)
             System.out.println(n);
@@ -24,11 +27,9 @@ public class LC1389CreateTargetArray {
         ArrayList<Integer>arr=new ArrayList<Integer>();
 
         for(int i=0;i<nums.length;i++){
-
             arr.add(index[i],nums[i]);
         }
-
-        return arr.stream().mapToInt(a->a).toArray();
+        return arr.stream().mapToInt(a->a).toArray(); //this will become 100% faster in leetcode if we use for to iterate and put into array from list
 
         //TC:O(n)
         //SC:O(n)
@@ -43,7 +44,7 @@ public class LC1389CreateTargetArray {
                 target[index[count]] = nums[count];
             }
             else{
-                for (int i = target.length - 1; i > index[count]; i--)
+                for (int i = count; i > index[count]; i--)
                     target[i] = target[i - 1];
                 target[index[count]] = nums[count];
             }
@@ -52,6 +53,6 @@ public class LC1389CreateTargetArray {
         return target;
 
         //TC:O(n square) worst case
-        //SC:O(1)
+        //SC:O(n)
     }
 }

@@ -35,7 +35,9 @@ public class LC75SortColors {
                 swap(mid,high,nums);
                 high--;
             }
+
             //TC:O(n)
+            //SC:O(1)
         }
     }
 
