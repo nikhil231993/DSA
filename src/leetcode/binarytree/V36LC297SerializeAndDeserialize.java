@@ -3,10 +3,11 @@ package leetcode.binarytree;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class LC297SerializeAndDeserialize {
+public class V36LC297SerializeAndDeserialize {
 
     // Encodes a tree to a single string.
     public String serialize(Node root) {
+        System.out.println();
 
         if(root==null)
             return "";
@@ -24,11 +25,11 @@ public class LC297SerializeAndDeserialize {
             sb.append(node.data +" ");
             q.offer(node.left);
             q.offer(node.right);
-
         }
         return sb.toString();
-        //TC:O(n) SC:O(n)
 
+        //TC:O(n)
+        // SC:O(n)
     }
 
     // Decodes your encoded data to tree.
@@ -36,10 +37,12 @@ public class LC297SerializeAndDeserialize {
 
         if(data=="")
             return null;
+
         String[] str=data.split(" ");
         Node root=new Node(Integer.parseInt(str[0]));
         Queue<Node> q=new LinkedList();
         q.offer(root);
+
         for(int i=1;i<str.length;i++){
             Node parent=q.poll();
             if(!str[i].equals("n")){
@@ -55,6 +58,8 @@ public class LC297SerializeAndDeserialize {
             }
         }
         return root;
-        //TC:O(n) SC:O(n)
+
+        //TC:O(n)
+        // SC:O(n)
     }
 }

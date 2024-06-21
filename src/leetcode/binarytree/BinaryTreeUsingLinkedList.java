@@ -311,7 +311,7 @@ public class BinaryTreeUsingLinkedList {
 		List<Integer> result = new ArrayList<Integer>();
 		Node node = root;
 		Stack<Node> st = new Stack<Node>();
-		while (true) {
+		while (node!=null || !st.isEmpty()) {
 			if (node != null) {
 				st.add(node);
 				node = node.left;
@@ -474,12 +474,15 @@ public class BinaryTreeUsingLinkedList {
 
 		if (root == null)
 			return 0;
+
 		int leftHeight = maxHeight(root.left);
 		if (leftHeight == -1)
 			return -1;
+
 		int rightHeight = maxHeight(root.right);
 		if (rightHeight == -1)
 			return -1;
+
 		if (Math.abs(leftHeight - rightHeight) > 1)
 			return -1;
 		return 1 + Math.max(leftHeight, rightHeight);
@@ -643,7 +646,6 @@ public class BinaryTreeUsingLinkedList {
 		if(root==null) return;
 		if(!isLeaf(root)){
 			result.add(root.data);
-			return;
 		}
 		if(root.left!=null)
 			leftBoundaryRecursion(root.left,result);
@@ -657,6 +659,7 @@ public class BinaryTreeUsingLinkedList {
 		List<Integer> list = new ArrayList<Integer>();
 
 		while (current != null) {
+
 			if (isLeaf(current) == false) {
 				list.add(current.data);
 			}
@@ -694,6 +697,7 @@ public class BinaryTreeUsingLinkedList {
 
 		Node current = root.left;
 		while (current != null) {
+
 			if (isLeaf(current) == false) {
 				result.add(current.data);
 			}
@@ -726,6 +730,8 @@ public class BinaryTreeUsingLinkedList {
 			if(!map.get(x).containsKey(y)) {
 				map.get(x).put(y, new PriorityQueue<Integer>());
 			}
+
+			map.get(x).get(y).offer(node.data);
 			
 			if (node.left != null) {
 				q.offer(new Tuple(node.left, x - 1, y + 1));
@@ -733,8 +739,6 @@ public class BinaryTreeUsingLinkedList {
 			if (node.right != null) {
 				q.offer(new Tuple(node.right, x + 1, y + 1));
 			}
-
-			map.get(x).get(y).offer(node.data);
 		}
 
 		List<List<Integer>> list = new ArrayList();
@@ -847,12 +851,14 @@ public class BinaryTreeUsingLinkedList {
 	}
 
 	public List<Integer> leftViewBinaryTree(Node root) {
+
 		List<Integer> result = new ArrayList<Integer>();
 		leftView(root, result, 0);
 		return result;
 	}
 
 	private void leftView(Node root, List<Integer> result, int level) {
+
 		if (root == null)
 			return;
 		if (result.size() == level)
@@ -925,6 +931,7 @@ public class BinaryTreeUsingLinkedList {
 		Queue<Pair> q = new LinkedList();
 		q.add(new Pair(root, 0));
 		int max = Integer.MIN_VALUE;
+
 		while (!q.isEmpty()) {
 			int minid = q.peek().num;
 			int first = 0;
@@ -952,6 +959,7 @@ public class BinaryTreeUsingLinkedList {
 	}
 
 	public static void childrenSumProperty(Node root) {
+
 		if(root==null)
 			return;
 		int childSum = 0;
@@ -1023,7 +1031,6 @@ public class BinaryTreeUsingLinkedList {
 			}
 		}
 
-	
 		List<Integer> result = new ArrayList();
 		while (!q.isEmpty())
 			result.add(q.poll().data);
@@ -1055,6 +1062,20 @@ public class BinaryTreeUsingLinkedList {
 			}
 		}
 		// TC:O(N)
+		// SC:O(N)
+	}
+
+	public static void rootToLeafs(List<List<Integer>> paths, Node root, List<Integer> list) {
+
+		if(root==null)
+			return;
+		list.add(root.data);
+		if(root.left==null && root.right==null){
+			paths.add(new ArrayList<>(list));
+		}
+		rootToLeafs(paths, root.left, list);
+		rootToLeafs(paths, root.right, list);
+		list.remove(list.size()-1);
 	}
 
 	public int burnTree(Node root, int start) {
@@ -1064,9 +1085,10 @@ public class BinaryTreeUsingLinkedList {
 
 		Queue<Node> q = new LinkedList();
 		q.offer(target);
+
 		Map<Node, Boolean> visited = new HashMap();
 		visited.put(target, true);
-		int max = 0;
+		int max = 0; // we can use count variable also but return count-1 at the end;
 		while (!q.isEmpty()) {
 			int flag = 0;
 			int size = q.size();
@@ -1100,6 +1122,7 @@ public class BinaryTreeUsingLinkedList {
 	}
 	
 	public static Node parentMapping(Map<Node, Node> parent, Node root, int start) {
+
 		Queue<Node> q = new LinkedList();
 		q.add(root);
 		Node temp = null;
@@ -1136,13 +1159,14 @@ public class BinaryTreeUsingLinkedList {
 		if(leftH==rightH)
 			return (1<<leftH)-1;
 
-		return 1+countNodes(root.left)+countNodes(root.right);
+		return 1+countNodes(root.left)+countNodes(root.right); //we do not need else as shown in video
 
 		//TC:O(logN) square
 		//SC:O(N)
     }
 
 	private static int rightHeight(Node root) {
+
 		int count=0;
 		while(root!=null){
 			count++;
@@ -1152,6 +1176,7 @@ public class BinaryTreeUsingLinkedList {
 	}
 
 	private static int leftHeight(Node root) {
+
 		int count=0;
 		while(root!=null){
 			count++;
@@ -1160,4 +1185,109 @@ public class BinaryTreeUsingLinkedList {
 		return count;
 	}
 
+	public static List<Integer> inorderMorris(Node root) {
+
+		List<Integer> list=new ArrayList<>();
+		Node current=root;
+		while(current!=null){
+			if(current.left==null){
+				list.add(current.data);
+				 current=current.right;
+			}else{
+				Node prev=current.left;
+				while(prev.right!=null && prev.right!=current){
+					prev=prev.right;
+				}
+				if(prev.right==null){
+					prev.right=current;
+					current=current.left;
+				}else{
+					prev.right=null;
+					list.add(current.data);
+					current=current.right;
+				}
+			}
+		}
+		return list;
+	}
+
+	public static List<Integer> preorderMorris(Node root) {
+
+		List<Integer> list=new ArrayList<>();
+		Node current=root;
+		while(current!=null){
+			if(current.left==null){
+				list.add(current.data);
+				current=current.right;
+			}else{
+
+				Node prev=current.left;
+				while(prev.right!=null && prev.right!=current){
+					prev=prev.right;
+				}
+				if (prev.right == null) {
+					list.add(current.data);
+					prev.right=current;
+					current=current.left;
+				}else{
+					prev.right=null;
+					current=current.right;
+				}
+			}
+		}
+		return list;
+	}
+
+	Node  prev=null;
+	public void flattenRecursion(Node root) {
+		if(root==null) return;
+
+		flattenRecursion(root.left);
+		flattenRecursion(root.right);
+		root.right=prev;
+		root.left=null;
+		prev=root;
+	}
+
+	public void flattenIteration(Node root) {
+
+		if(root==null) return;
+		Stack<Node> st=new Stack();
+		st.push(root);
+		while(!st.isEmpty()){
+			Node current=st.pop();
+			if(current.right!=null){
+				st.push(current.right);
+			}
+			if(current.left!=null){
+				st.push(current.left);
+			}
+			if(!st.isEmpty()){
+				current.right=st.peek();
+			}
+			current.left=null;
+		}
+	}
+
+	public void flattenMorris(Node root) {
+
+		if(root==null)
+			return;
+
+		Node current=root;
+		while(current!=null){
+			if(current.left!=null){
+				Node prev=current.left;
+				while(prev.right!=null)
+					prev=prev.right;
+				prev.right=current.right;
+				current.right=current.left;
+				current.left=null;
+			}
+			current=current.right;
+		}
+
+		//TC:O(N)
+		//SC:O(1)
+	}
 }

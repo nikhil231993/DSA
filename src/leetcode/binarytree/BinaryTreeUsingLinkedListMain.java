@@ -1,5 +1,6 @@
 package leetcode.binarytree;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class BinaryTreeUsingLinkedListMain {
@@ -78,7 +79,9 @@ public class BinaryTreeUsingLinkedListMain {
 		// Max Depth
 		System.out.println();
 		System.out.println("Max Depth Recursive: ");
-		System.out.println(bt.maxDepthRecursive(bt.root));
+		System.out.println(bt.maxDepthRecursive(bt.root)); // can be done using iterative traversal as well
+		//worst case is complete binary tree in iterative
+		//worst case is skewed tree in recursive traversal
 
 		// Max Depth Iterative
 		System.out.println();
@@ -152,6 +155,17 @@ public class BinaryTreeUsingLinkedListMain {
 		System.out.println("Root to node: ");
 		System.out.println(bt.rootToNode(bt.root, 60));
 
+		//Root To Leaf Paths
+		System.out.println();
+		System.out.println("All paths from root to leafs are :");
+		List<List<Integer>> paths= new ArrayList<>();
+		bt.rootToLeafs(paths, bt.root, new ArrayList<>());
+		System.out.println(paths);
+
+		System.out.println("Level order Traversal and adding to list. This is just to verify above result is correct or not ");
+		List<List<Integer>> result2 = bt.levelOrder(bt.root);
+		System.out.println(result2);
+
 		// Path sum
 		System.out.println();
 		System.out.println("Path sum: ");
@@ -185,5 +199,30 @@ public class BinaryTreeUsingLinkedListMain {
 		System.out.println();
 		System.out.println("Count nodes in a binary tree: ");
 		System.out.println(bt.countNodes(bt.root));
+
+		// Morris Traversal inorder
+		System.out.println();
+		System.out.println("Inorder Morris traversal: ");
+		System.out.println(bt.inorderMorris(bt.root));
+
+		// Morris Traversal inorder
+		System.out.println();
+		System.out.println("Preorder Morris traversal: ");
+		System.out.println(bt.preorderMorris(bt.root));
+
+		// Flatten BT using Recursion
+		System.out.println();
+		System.out.println("Flatten BT using Recursion: ");
+		bt.flattenRecursion(bt.root);
+
+		// Flatten BT using Iteration
+		System.out.println();
+		System.out.println("Flatten BT using Iteration: ");
+		bt.flattenIteration(bt.root);
+
+		// Flatten BT using Morris Traversal
+		System.out.println();
+		System.out.println("Flatten BT using Morris Traversal: ");
+		bt.flattenMorris(bt.root);
 	}
 }

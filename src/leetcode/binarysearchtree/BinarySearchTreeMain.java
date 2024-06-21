@@ -3,6 +3,7 @@ package leetcode.binarysearchtree;
 public class BinarySearchTreeMain {
 
 	public static void main(String[] args) {
+
 		BinarySearchTreeRevision bst = new BinarySearchTreeRevision();
 		Node root = null;
 		root = bst.insert(root, 8);
