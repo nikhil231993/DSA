@@ -45,6 +45,7 @@ public class BinaryTreeUsingLinkedList {
 	protected Node root;
 
 	public void insert(int data) {
+
 		Node node = new Node(data);
 		if (root == null) {
 			root = node;
@@ -113,7 +114,6 @@ public class BinaryTreeUsingLinkedList {
 			// TC:O(N)
 			// SC:O(H) in case of normal tree or O(N) in case of skewed tree
 		}
-
 	}
 
 	public void levelOrderTraversal(Node root) {
@@ -139,6 +139,7 @@ public class BinaryTreeUsingLinkedList {
 
 	private int pos = 0;
 	public void inDepthFirstSearch(Node root, int data) {
+
 		if (root == null) {
 			return;
 		} else {
@@ -151,10 +152,10 @@ public class BinaryTreeUsingLinkedList {
 			inDepthFirstSearch(root.left, data);
 			inDepthFirstSearch(root.right, data);
 		}
-
 	}
 
 	public void breadthFirstSearch(Node root, int data) {
+
 		if (root == null) {
 			return;
 		} else {
@@ -194,7 +195,6 @@ public class BinaryTreeUsingLinkedList {
 					System.out.println("Deepest node is: " + deep.data);
 					temp.data = deep.data;
 					deleteDeepestNode(root);
-
 				}
 				if (temp.left != null)
 					queue.add(temp.left);
@@ -206,6 +206,7 @@ public class BinaryTreeUsingLinkedList {
 	}
 
 	private void deleteDeepestNode(Node root) {
+
 		if(root==null) 
 			return;
 		else {
@@ -230,11 +231,10 @@ public class BinaryTreeUsingLinkedList {
 				queue.add(currentNode.right);
 			}
 		}
-		
-
 	}
 
 	private Node deepestNode() {
+
 		Node temp=null;
 		if (root == null) {
 			return null;
@@ -361,6 +361,7 @@ public class BinaryTreeUsingLinkedList {
 		Stack<Node> st = new Stack<Node>();
 		List<Integer> arr = new ArrayList<Integer>();
 		Node current = root;
+
 		while (!st.isEmpty() || current != null) {
 			if (current != null) {
 				st.push(current);
@@ -1005,6 +1006,7 @@ public class BinaryTreeUsingLinkedList {
 		Map<Node, Boolean> visited=new HashMap();
 		visited.put(target, true);
 		int count = 0;
+
 		while (!q.isEmpty()) {
 			int size = q.size();
 			if (count == k)
@@ -1240,6 +1242,7 @@ public class BinaryTreeUsingLinkedList {
 
 	Node  prev=null;
 	public void flattenRecursion(Node root) {
+
 		if(root==null) return;
 
 		flattenRecursion(root.left);
@@ -1254,6 +1257,7 @@ public class BinaryTreeUsingLinkedList {
 		if(root==null) return;
 		Stack<Node> st=new Stack();
 		st.push(root);
+
 		while(!st.isEmpty()){
 			Node current=st.pop();
 			if(current.right!=null){

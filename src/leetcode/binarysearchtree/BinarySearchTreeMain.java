@@ -4,7 +4,8 @@ public class BinarySearchTreeMain {
 
 	public static void main(String[] args) {
 
-		BinarySearchTreeRevision bst = new BinarySearchTreeRevision();
+		BinarySearchTree bst = new BinarySearchTree();
+
 		Node root = null;
 		root = bst.insert(root, 8);
 //		System.out.println(root.hashCode());
@@ -25,8 +26,17 @@ public class BinarySearchTreeMain {
 		root = bst.insert(root, 14);
 //		System.out.println(root.hashCode());
 
+		//Using video solution L44
+		root=bst.insertIterative(root, 16);
+
+		//Code for search is generic in Striver's code. Have not written that code. Please refer video
 		System.out.println();
+		System.out.println("Search using preorder order: ");
 		System.out.println("Value found is: " + bst.search(root, 30));
+
+		System.out.println();
+		System.out.println("Search using level order: ");
+		System.out.println("Value found is: " + bst.searchLevel(root, 30));
 
 		//Ceil in a binary tree using recursion
 		int[] ceil=new int[1];
@@ -34,11 +44,15 @@ public class BinarySearchTreeMain {
 		System.out.println("Ceil value using recursion:");
 		System.out.println(ceil[0]);
 
-		//Ceil using Iterative solution
+		bst.findCeilUsingQueue(root, 12);
+		System.out.println("Ceil value using queue:");
+		System.out.println(ceil[0]);
+
+		//Ceil using Iterative solution. This is video solution L41
 		System.out.println("Ceil value using iterative: ");
 		System.out.println(bst.ceilIterative(root,12));
 
-		//Floor using Iterative solution
+		//Floor using Iterative solution L42
 		System.out.println("Floor value using iterative:");
 		System.out.println(bst.floorIterative(root,12));
 
@@ -58,6 +72,9 @@ public class BinarySearchTreeMain {
 		System.out.println("LCA BST:");
 		System.out.println(bst.lcaBST(root,3,10));
 
+		System.out.println("LCA BST Iterative:");
+		System.out.println(bst.lcaBST(root,3,10));
+
 		//Inorder Successor BST
 		System.out.println("Inorder successor BST:");
 		System.out.println(bst.inorderSuccessorBST(root,6));
@@ -73,6 +90,7 @@ public class BinarySearchTreeMain {
 		System.out.println("Inorder traversal of BST is: ");
 		bst.inorder(root);
 
+		//LC44
 		System.out.println("Delete a node: ");
 		bst.delete(root, 5);
 		System.out.println("Tree after deletion is: ");
@@ -86,10 +104,8 @@ public class BinarySearchTreeMain {
 		System.out.println("Postorder traversal of BST is: ");
 		bst.postorder(root);
 		System.out.println();
-		System.out.println("Levelorder traversal of BST is: ");
+		System.out.println("Level order traversal of BST is: ");
 		bst.levelorder(root);
-
-
 
 		System.out.println("Printing range: ");
 		bst.printRange(root, 3, 11);
@@ -98,7 +114,5 @@ public class BinarySearchTreeMain {
 		bst.rootToLeaf(root);
 		System.out.println("Maximum depth of tree: ");
 		System.out.println(bst.maxDepth(root));
-
 	}
-
 }

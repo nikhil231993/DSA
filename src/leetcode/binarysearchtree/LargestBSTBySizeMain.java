@@ -12,7 +12,7 @@ class NodeValue {
 public class LargestBSTBySizeMain {
 
 	public static void main(String[] args) {
-		BinarySearchTreeRevision bst = new BinarySearchTreeRevision();
+		BinarySearchTree bst = new BinarySearchTree();
 
 		Node root=new Node(20);
 		root.left=new Node(15);

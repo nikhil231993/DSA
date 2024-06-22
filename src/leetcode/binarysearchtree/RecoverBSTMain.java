@@ -6,7 +6,7 @@ import java.util.List;
 public class RecoverBSTMain {
 
 	public static void main(String[] args) {
-		BinarySearchTreeRevision bst = new BinarySearchTreeRevision();
+		BinarySearchTree bst = new BinarySearchTree();
 
 		Node root=new Node(3);
 		root.left=new Node(1);

@@ -6,9 +6,10 @@ import java.util.List;
 import java.util.Queue;
 
 
-public class BinarySearchTreeRevision {
+public class BinarySearchTree {
 
 	public Node insert(Node root, int value) {
+
 		if (root == null) {
 			root = new Node(value);
 			return root;
@@ -19,7 +20,6 @@ public class BinarySearchTreeRevision {
 		} else if (root.data < value) {
 			root.right = insert(root.right, value);
 		}
-
 		return root;
 	}
 
@@ -37,7 +37,6 @@ public class BinarySearchTreeRevision {
 		}else{
 			ceil(root.right,ceil,key);
 		}
-
 	}
 
 	public int ceilIterative(Node root, int key) {
@@ -56,7 +55,6 @@ public class BinarySearchTreeRevision {
 			}else{
 				root=root.right;
 			}
-
 		}
 		return ceil;
 
@@ -65,6 +63,7 @@ public class BinarySearchTreeRevision {
 	}
 
 	public int floorIterative(Node root, int key) {
+
 		int floor=Integer.MAX_VALUE;
 
 		while(root!=null){
@@ -79,9 +78,11 @@ public class BinarySearchTreeRevision {
 				floor=root.data;
 				root=root.right;
 			}
-
 		}
 		return floor;
+
+		//TC:O(log n)
+		//SC:O(1)
 	}
 
 	public int kthSmallestElement(Node root, int k) {
@@ -95,6 +96,7 @@ public class BinarySearchTreeRevision {
 	}
 
 	private void kSmallest(Node root, int k, int[] count, int[] value) {
+
 		if(root==null)
 			return;
 		kSmallest(root.left, k, count, value);
@@ -104,12 +106,13 @@ public class BinarySearchTreeRevision {
 			return;
 		}
 		kSmallest(root.right,k ,count, value);
+
 		//TC:O(N) as we have to parse each element
 		//SC:O(N) stack space. This can be improved by using Morris Traversal
-
 	}
 
 	public int kthLargestElement(Node root, int k) {
+
 		int[] count=new int[1];
 		nodesCount(root,count);
 		int largest=count[0]-k+1;
@@ -118,10 +121,10 @@ public class BinarySearchTreeRevision {
 		int[] val=new int[1];
 		kSmallest(root,largest,c,val);
 		return val[0];
-
 	}
 
 	private void nodesCount(Node root, int[] count) {
+
 		if(root==null)
 			return;
 		count[0]++;
@@ -130,46 +133,50 @@ public class BinarySearchTreeRevision {
 	}
 
 	public boolean validBST(Node root) {
+
 		if(root==null)
 			return true;
 		return isValid(root,Long.MIN_VALUE,Long.MAX_VALUE);
 	}
 
 	private boolean isValid(Node root, long minValue, long maxValue) {
+
 		if(root==null)
 			return true;
 		if(root.data >=maxValue || root.data<=minValue )
 			return false;
 		return isValid(root.left, minValue, root.data) && isValid(root.right , root.data, maxValue);
-		//TC:O(N) SC:O(H)
+
+		//TC:O(N)
+		// SC:O(H)
 	}
 
 
 	public void inorder(Node root) {
+
 		if (root != null) {
 			inorder(root.left);
 			System.out.print(root.data + "-->");
 			inorder(root.right);
 		}
-
 	}
 
 	public void preorder(Node root) {
+
 		if (root != null) {
 			System.out.print(root.data + "-->");
 			preorder(root.left);
 			preorder(root.right);
 		}
-
 	}
 
 	public void postorder(Node root) {
+
 		if (root != null) {
 			postorder(root.left);
 			postorder(root.right);
 			System.out.print(root.data + "-->");
 		}
-
 	}
 
 	public boolean search(Node root, int value) {
@@ -185,6 +192,7 @@ public class BinarySearchTreeRevision {
 	}
 
 	public Node delete(Node root, int value) {
+
 		if (root == null)
 			return null;
 		if (root.data < value) {
@@ -204,16 +212,17 @@ public class BinarySearchTreeRevision {
 			root.right = delete(root.right, iS.data);
 		}
 		return root;
-
 	}
 
 	private Node inOrderSuccessor(Node root) {
+
 		while (root.left != null)
 			root = root.left;
 		return root;
 	}
 
 	public void printRange(Node root, int l, int u) {
+
 		if(root==null)
 			return;
 		if(root.data >=l && root.data <=u) {
@@ -238,19 +247,19 @@ public class BinarySearchTreeRevision {
 		rootToLeaf(root.left);
 		rootToLeaf(root.right);
 
-
 		arr.remove(arr.size() - 1);
 	}
 
 	private void print(ArrayList<Integer> arr) {
+
 		for (Integer n : arr) {
 			System.out.print(n + "-->");
 		}
 		System.out.println("Next Leaf is:  ");
-
 	}
 
 	public void levelorder(Node root) {
+
 		if(root==null)
 			return;
 		else {
@@ -265,17 +274,15 @@ public class BinarySearchTreeRevision {
 				if (temp.right != null)
 					q.add(temp.right);
 			}
-
 		}
-
 	}
 
 	public int maxDepth(Node root) {
+
 		if (root == null)
 			return 0;
 		else
 			return 1 + Math.max(maxDepth(root.left), maxDepth(root.right));
-
 	}
 
 	public  int maxSumBST(Node root) {
@@ -283,6 +290,7 @@ public class BinarySearchTreeRevision {
 	}
 
 	private  NodeValue largestBSTSubtreeHelper(Node root) {
+
 		// An empty tree is a BST of size 0.
 		if (root == null) {
 			return new NodeValue(Integer.MAX_VALUE, Integer.MIN_VALUE, 0);
@@ -318,6 +326,7 @@ public class BinarySearchTreeRevision {
 	private Node middle;
 	private Node prev;
 	public void recover(Node root) {
+
 		prev=new Node(Integer.MIN_VALUE);
 		inorderRecover(root);
 
@@ -333,6 +342,7 @@ public class BinarySearchTreeRevision {
 	}
 
 	private void inorderRecover(Node root) {
+
 		if(root==null)
 			return;
 
@@ -353,17 +363,32 @@ public class BinarySearchTreeRevision {
 		if(root==null)
 			return 0;
 
-		if(root.data < p && root.data <q)
+		if(root.data < p && root.data < q)
 			return lcaBST(root.right, p, q);
-		if(root.data >p && root.data >q)
-			return lcaBST(root.left,p,q);
+		if(root.data > p && root.data > q)
+			return lcaBST(root.left, p, q);
 
 		return root.data;
+
 		//TC:O(log N)
 		//TC:O(H)
 	}
 
+	public int lowestCommonAncestor(Node root, int p, int q) {
+
+		Node node=root;
+		while(true){
+			if(root==null)  return 0;
+			if(node.data > p && node.data >q)
+				node=node.left;
+			else if(node.data<p && node.data<q)
+				node=node.right;
+			else return node.data;
+		}
+	}
+
 	public int inorderSuccessorBST(Node root, int key) {
+
 		if(root==null)
 			return -1;
 		int ceil=-1;
@@ -376,6 +401,7 @@ public class BinarySearchTreeRevision {
 			}
 		}
 		return ceil;
+
 		//TC:O(log n)
 		//SC:o(1)
 	}
@@ -394,6 +420,7 @@ public class BinarySearchTreeRevision {
 			}
 		}
 		return floor;
+
 		//TC:O(log n)
 		//SC:o(1)
 	}
@@ -425,7 +452,6 @@ public class BinarySearchTreeRevision {
 
 		//TC:O(N)
 		//SC:O(H)*2 as we create two stack. In brute force we find inorder and then use two pointer technique so there space will be O(N)
-
 	}
 
 	public List<List<Integer>> pathSum(Node root, int targetSum) {
@@ -436,10 +462,10 @@ public class BinarySearchTreeRevision {
 		List<Integer> path=new ArrayList();
 		path(arr, root, targetSum, path);
 		return arr;
-
 	}
 
 	public static void path(List<List<Integer>> paths, Node root, int targetSum, List<Integer> path){
+
 		if(root==null)
 			return ;
 
@@ -452,7 +478,81 @@ public class BinarySearchTreeRevision {
 		path(paths, root.right, targetSum-root.data, path);
 		path.remove(path.size()-1);
 
-		//TC:o(n) sc:o(logn)
+		//TC:o(n)
+		// sc:o(logn)
 	}
 
+	public static boolean searchLevel(Node root, int value) {
+
+		if(root==null) return false;
+		if(root.data==value) return true;
+		Queue<Node> q=new LinkedList();
+		q.offer(root);
+
+		while(!q.isEmpty()){
+			Node node=q.poll();
+			if(node.data==value)
+				return true;
+			else if(node.data<value && node.right!=null)
+				q.offer(node.right);
+			else if(node.data>value && node.left!=null)
+				q.offer(node.left);
+		}
+		return false;
+
+		//TC:O(logn)
+		//SC:O(1)
+	}
+
+	public static int findCeilUsingQueue(Node root, int key) {
+
+		if (root == null) return -1;
+		Queue<Node> q=new LinkedList<>();
+		q.offer(root);
+		int value=-1;
+
+		while(!q.isEmpty()){
+			Node node=q.poll();
+			if(node!=null && node.data>=key){
+				value=node.data;
+				q.offer(node.left);
+			}else if(node!=null && node.data<key){
+				q.offer(node.right);
+			}
+		}
+		return value;
+
+		//TC:O(logN) which is the height of the tree
+		//SC:O(N) for queue
+	}
+
+	public Node insertIterative(Node root, int value) {
+
+		Node node=new Node(value);
+		if(root==null)
+			return node;
+		Node current=root;
+
+		while(true){
+			if(current.data>value){
+				if(current.left==null){
+					current.left=node;
+					break;
+				}else{
+					current=current.left;
+				}
+			}else{
+				if(current.right==null){
+					current.right=node;
+					break;
+				}else{
+					current=current.right;
+				}
+			}
+		}
+		return root;
+
+		//TC:O(log N)
+		//SC:O(1)
+	}
 }

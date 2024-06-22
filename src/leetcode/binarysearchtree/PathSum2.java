@@ -1,12 +1,9 @@
 package leetcode.binarysearchtree;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class PathSum2 {
 
 	public static void main(String[] args) {
-		BinarySearchTreeRevision bst = new BinarySearchTreeRevision();
+		BinarySearchTree bst = new BinarySearchTree();
 
 		Node root=new Node(5);
 		root.left=new Node(4);
