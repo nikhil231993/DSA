@@ -1,6 +1,12 @@
 package leetcode.binarysearchtree;
 
-public class V48LC1008BstFromPreorder {
+public class V49LC1008BstFromPreorder {
+
+    //1st approach
+    //Traverse through each and put the value at respective place which will be o(n sqaure)
+
+    //2nd approach
+    //find inorder by using sorting o(nlogn) and then map it which will be o(n)
 
 //    public TreeNode bstFromPreorder(int[] preorder) {
 //

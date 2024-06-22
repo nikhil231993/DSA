@@ -6,6 +6,7 @@ import java.util.List;
 public class RecoverBSTMain {
 
 	public static void main(String[] args) {
+
 		BinarySearchTree bst = new BinarySearchTree();
 
 		Node root=new Node(3);
@@ -26,7 +27,5 @@ public class RecoverBSTMain {
 		List<Integer> listRec=new ArrayList();
 		bst.inorderRecoverBST(root,listRec);
 		System.out.println(listRec);
-
 	}
-
 }

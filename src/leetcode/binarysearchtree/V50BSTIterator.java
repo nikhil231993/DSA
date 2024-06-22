@@ -2,12 +2,12 @@ package leetcode.binarysearchtree;
 
 import java.util.Stack;
 
-public class V49BSTIterator {
+public class V50BSTIterator {
 
     private Stack<Node> st=new Stack();
     private boolean reverse=true;
 
-    public V49BSTIterator(Node root, boolean rev) {
+    public V50BSTIterator(Node root, boolean rev) {
         reverse=rev;
         pushAll(root);
     }

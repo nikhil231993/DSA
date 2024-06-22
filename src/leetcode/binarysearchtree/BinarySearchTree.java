@@ -67,8 +67,7 @@ public class BinarySearchTree {
 		int floor=Integer.MAX_VALUE;
 
 		while(root!=null){
-			if(root.data==key)
-			{
+			if(root.data==key){
 				floor= root.data;;
 				return floor;
 			}
@@ -431,8 +430,8 @@ public class BinarySearchTree {
 			return false;
 
 		//Create two stack using two instances of same class so virtually you are not creating two stack
-		BSTIterator left=new BSTIterator(root,false);
-		BSTIterator right=new BSTIterator(root,true);
+		V50BSTIterator left=new V50BSTIterator(root,false);
+		V50BSTIterator right=new V50BSTIterator(root,true);
 
 		int small=left.next();
 		int large=right.next();
@@ -440,8 +439,7 @@ public class BinarySearchTree {
 		while(small<large){
 			if(small+large==k)
 				return true;
-			else if(small+large>k)
-			{
+			else if(small+large>k) {
 				large=right.next();
 			}else{
 				small=left.next();

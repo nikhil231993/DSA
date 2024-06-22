@@ -175,7 +175,6 @@ public class BinaryTreeUsingLinkedList {
 					queue.add(temp.right);
 			}
 		}
-
 	}
 
 	public void deleteFromBinaryTree(Node root, int value) {
@@ -202,7 +201,6 @@ public class BinaryTreeUsingLinkedList {
 					queue.add(temp.right);
 			}
 		}
-
 	}
 
 	private void deleteDeepestNode(Node root) {
@@ -226,7 +224,6 @@ public class BinaryTreeUsingLinkedList {
 					currentNode.left=null;
 					return;
 				}
-
 				queue.add(currentNode.left);
 				queue.add(currentNode.right);
 			}
@@ -249,7 +246,6 @@ public class BinaryTreeUsingLinkedList {
 					queue.add(temp.left);
 				if (temp.right != null)
 					queue.add(temp.right);
-
 			}
 		}
 		return temp;
@@ -619,6 +615,7 @@ public class BinaryTreeUsingLinkedList {
 	private void addLeavesInorder(Node root, List<Integer> result) {
 
 		if(root==null) return;
+
 		if (root.left != null)
 			addLeavesInorder(root.left, result);
 
@@ -941,6 +938,7 @@ public class BinaryTreeUsingLinkedList {
 			for (int i = 0; i < size; i++) {
 				Node node = q.peek().node;
 				int currid = q.poll().num - minid;
+
 				if (i == 0)
 					first = currid;
 				if (i == size - 1)
@@ -1155,6 +1153,7 @@ public class BinaryTreeUsingLinkedList {
 
 		if(root==null)
 			return 0;
+
 		int leftH=leftHeight(root);
 		int rightH=rightHeight(root);
 

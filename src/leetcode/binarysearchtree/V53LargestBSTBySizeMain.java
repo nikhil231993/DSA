@@ -9,7 +9,7 @@ class NodeValue {
 		this.maxSize = maxSize;
 	}
 }
-public class LargestBSTBySizeMain {
+public class V53LargestBSTBySizeMain {
 
 	public static void main(String[] args) {
 		BinarySearchTree bst = new BinarySearchTree();
@@ -27,9 +27,5 @@ public class LargestBSTBySizeMain {
 		root.right.right.left=new Node(50);
 
 		System.out.println(bst.maxSumBST(root));
-
-
-
 	}
-
 }

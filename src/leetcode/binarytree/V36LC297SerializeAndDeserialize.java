@@ -7,7 +7,6 @@ public class V36LC297SerializeAndDeserialize {
 
     // Encodes a tree to a single string.
     public String serialize(Node root) {
-        System.out.println();
 
         if(root==null)
             return "";

@@ -73,7 +73,7 @@ public class BinarySearchTreeMain {
 		System.out.println(bst.lcaBST(root,3,10));
 
 		System.out.println("LCA BST Iterative:");
-		System.out.println(bst.lcaBST(root,3,10));
+		System.out.println(bst.lowestCommonAncestor(root,3,10));
 
 		//Inorder Successor BST
 		System.out.println("Inorder successor BST:");
@@ -85,6 +85,8 @@ public class BinarySearchTreeMain {
 
 		//Two Sum BST
 		System.out.println("Two Sum BST:");
+		//1st approach
+		//find inorder and then use 2 pointer so TC :O(n)+O(n) SC:O(n)
 		System.out.println(bst.twoSumBST(root,20));
 
 		System.out.println("Inorder traversal of BST is: ");

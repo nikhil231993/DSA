@@ -3,6 +3,7 @@ package leetcode.binarysearchtree;
 public class PathSum2 {
 
 	public static void main(String[] args) {
+
 		BinarySearchTree bst = new BinarySearchTree();
 
 		Node root=new Node(5);
@@ -17,11 +18,5 @@ public class PathSum2 {
 		root.right.right.left=new Node(5);
 
 		System.out.println(bst.pathSum(root,22));
-
-
-
-
-
 	}
-
 }
