@@ -5,9 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72d35191-61fd-46f6-abe8-9b648fcd26f6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/leetcode/Basics Links" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/oopsConcepts/inheritance/A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/oopsConcepts/inheritance/B.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/oopsConcepts/inheritance/MainClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/oopsConcepts/multipleinheritance/example1/PI1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/oopsConcepts/multipleinheritance/example1/PI2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/oopsConcepts/multipleinheritance/example1/TestClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/oopsConcepts/multipleinheritance/example2/PI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/oopsConcepts/multipleinheritance/example2/PI1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/oopsConcepts/multipleinheritance/example2/PI2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/oopsConcepts/multipleinheritance/example2/TestClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/oopsConcepts/multipleinheritance/methodhiding/Base.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/oopsConcepts/multipleinheritance/methodhiding/Child.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/oopsConcepts/multipleinheritance/methodhiding/DriverClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearchtree/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearchtree/BinarySearchTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearchtree/RecoverBSTMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearchtree/V52LC99RecoverBSTMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,19 +53,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/nikhilthulaseedharan/Nikhil/DSA/src/leetcode/binarytree/udemy&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/Users/nikhilthulaseedharan/Nikhil/DSA/src/leetcode/designPatterns/oopsConcepts/multipleinheritance/example2",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "editor.preferences.tabs"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/leetcode/designPatterns/oopsConcepts/multipleinheritance/example2" />
+      <recent name="$PROJECT_DIR$/src/leetcode/designPatterns/oopsConcepts/multipleinheritance/example1" />
+      <recent name="$PROJECT_DIR$/src/leetcode/designPatterns/oopsConcepts" />
       <recent name="$PROJECT_DIR$/src/leetcode/binarytree/udemy" />
       <recent name="$PROJECT_DIR$/src/leetcode/stack/hw" />
     </key>
@@ -62,13 +77,13 @@
       <recent name="leetcode.stack.lb" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.leetcode.binarytree.BinaryTreeUsingLinkedListMain">
-    <configuration name="BinaryTreeUsingArrayMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.binarytree.udemy.BinaryTreeUsingArrayMain" />
+  <component name="RunManager" selected="Application.DriverClass">
+    <configuration name="DriverClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.designPatterns.oopsConcepts.multipleinheritance.methodhiding.DriverClass" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.binarytree.udemy.*" />
+          <option name="PATTERN" value="leetcode.designPatterns.oopsConcepts.multipleinheritance.methodhiding.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -76,12 +91,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BinaryTreeUsingLinkedListMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="revision.BinaryTree.BinaryTreeUsingLinkedListMain" />
+    <configuration name="MainClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.designPatterns.test.MainClass" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="revision.BinaryTree.*" />
+          <option name="PATTERN" value="leetcode.designPatterns.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -89,12 +104,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC301RemoveInvalidParentheses" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.string.hard.LC301RemoveInvalidParentheses" />
+    <configuration name="TestClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.designPatterns.test.multipleinheritance.TestClass" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.string.hard.*" />
+          <option name="PATTERN" value="leetcode.designPatterns.test.multipleinheritance.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,12 +130,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="leetcode.binarytree.udemy.BinaryTreeUsingLinkedListMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.binarytree.udemy.BinaryTreeUsingLinkedListMain" />
+    <configuration name="leetcode.designPatterns.oopsConcepts.multipleinheritance.example2.TestClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.designPatterns.oopsConcepts.multipleinheritance.example2.TestClass" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.binarytree.udemy.*" />
+          <option name="PATTERN" value="leetcode.designPatterns.oopsConcepts.multipleinheritance.example2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DriverClass" />
+        <item itemvalue="Application.leetcode.designPatterns.oopsConcepts.multipleinheritance.example2.TestClass" />
+        <item itemvalue="Application.TestClass" />
+        <item itemvalue="Application.MainClass" />
         <item itemvalue="Application.leetcode.binarytree.BinaryTreeUsingLinkedListMain" />
-        <item itemvalue="Application.leetcode.binarytree.udemy.BinaryTreeUsingLinkedListMain" />
-        <item itemvalue="Application.BinaryTreeUsingArrayMain" />
-        <item itemvalue="Application.BinaryTreeUsingLinkedListMain" />
-        <item itemvalue="Application.LC301RemoveInvalidParentheses" />
       </list>
     </recent_temporary>
   </component>
@@ -821,21 +836,6 @@
           <url>file://$PROJECT_DIR$/src/leetcode/recursion/medium/LC47Permutations2.java</url>
           <line>34</line>
           <option name="timeStamp" value="330" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/leetcode/recursion/medium/LC47Permutations2.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="331" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/revision/BinaryTree/BinaryTreeUsingLinkedList.java</url>
-          <line>97</line>
-          <option name="timeStamp" value="335" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/leetcode/binarytree/BinaryTreeUsingLinkedList.java</url>
-          <line>655</line>
-          <option name="timeStamp" value="336" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/leetcode/binarytree/Test.java</url>
