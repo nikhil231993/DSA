@@ -227,8 +227,8 @@ public class BinarySearchTree {
 		if(root.data >=l && root.data <=u) {
 			System.out.print(root.data + "-->");
 		}
-			printRange(root.left, l, u);
-			printRange(root.right, l, u);
+		printRange(root.left, l, u);
+		printRange(root.right, l, u);
 	}
 
 	private ArrayList<Integer> arr = new ArrayList<Integer>();

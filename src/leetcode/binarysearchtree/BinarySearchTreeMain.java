@@ -105,12 +105,14 @@ public class BinarySearchTreeMain {
 		System.out.println();
 		System.out.println("Postorder traversal of BST is: ");
 		bst.postorder(root);
+
 		System.out.println();
 		System.out.println("Level order traversal of BST is: ");
 		bst.levelorder(root);
 
 		System.out.println("Printing range: ");
 		bst.printRange(root, 3, 11);
+
 		System.out.println();
 		System.out.println("Root to Leaf path: ");
 		bst.rootToLeaf(root);

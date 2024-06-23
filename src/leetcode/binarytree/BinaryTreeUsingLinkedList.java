@@ -917,8 +917,8 @@ public class BinaryTreeUsingLinkedList {
 	}
 
 	public boolean pathSum(Node root, int sum) {
-	if(root==null)
-		return false;
+		if(root==null)
+			return false;
 		if (root.left == null && root.right == null && root.data == sum)
 			return true;
 		return pathSum(root.left, sum - root.data) || pathSum(root.right, sum - root.data);

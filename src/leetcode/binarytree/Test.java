@@ -4,6 +4,12 @@ public class Test {
 //	static Node target;
 
 	public static void main(String[] args) {
+
+		int a=10;
+		String s1="nikhil";
+		s1+=a;
+		System.out.println(s1);
+
 		System.out.println(-10>>>2);
 		System.out.println(Integer.toBinaryString(-10));
 //		mappping();
@@ -25,9 +31,6 @@ public class Test {
 		System.out.println(s);
 		for(int n:arr)
 			System.out.println(n);
-
-
-
 	}
 
 	private static void test(String s,int[] arr) {
