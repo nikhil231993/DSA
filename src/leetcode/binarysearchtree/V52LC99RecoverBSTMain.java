@@ -3,7 +3,7 @@ package leetcode.binarysearchtree;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RecoverBSTMain {
+public class V52LC99RecoverBSTMain {
 
 	public static void main(String[] args) {
 
@@ -13,7 +13,6 @@ public class RecoverBSTMain {
 		root.left=new Node(1);
 		root.right=new Node(4);
 		root.right.left=new Node(2);
-
 
 		System.out.println("Inorder traversal");
 		List<Integer> list=new ArrayList();
