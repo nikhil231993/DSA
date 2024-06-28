@@ -1,9 +1,9 @@
 package leetcode.designPatterns.factoryMethod;
 
-public class InfoLogger implements ILogger {
+public class CriticalLogger implements ILogger{
 
     @Override
     public void log() {
-        System.out.println("INFO Logger");
+        System.out.println("CRITICAL Logger");
     }
 }

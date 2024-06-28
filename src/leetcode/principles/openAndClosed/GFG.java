@@ -3,8 +3,7 @@ package leetcode.principles.openAndClosed;
 public class GFG {
 
     // Main driver method
-    public static void main(String args[])
-    {
+    public static void main(String args[]) {
         // Initializing cuboid1 as well as declaring
         // its dimensions.
         Cuboid_2 cb1 = new Cuboid_2();

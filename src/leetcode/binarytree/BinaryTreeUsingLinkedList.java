@@ -1244,8 +1244,8 @@ public class BinaryTreeUsingLinkedList {
 
 		if(root==null) return;
 
-		flattenRecursion(root.left);
 		flattenRecursion(root.right);
+		flattenRecursion(root.left);
 		root.right=prev;
 		root.left=null;
 		prev=root;

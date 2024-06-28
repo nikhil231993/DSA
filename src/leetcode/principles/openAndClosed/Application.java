@@ -2,9 +2,7 @@ package leetcode.principles.openAndClosed;
 
 class Application {
 
-    public double
-    get_total_volume(Geo_objects[] geo_objects)
-    {
+    public double get_total_volume(Geo_objects[] geo_objects) {
         // Initially initializing sum to zero
         double vol_sum = 0;
 

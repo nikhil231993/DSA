@@ -4,12 +4,12 @@ public class DriverClass {
 
     public static void main(String[] args) {
 
-        Base b=new Base();
-        Base c=new Child();
+        // Base b=new Base();
+        Child c=new Child();
         c.show();
         c.display();
 
-//        Child.show();
-//        Base.show();
+        // Child.show();
+        // Base.show();
     }
 }

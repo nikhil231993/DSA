@@ -2,7 +2,7 @@ package leetcode.designPatterns.oopsConcepts.multipleinheritance.methodhiding;
 
 public class Child extends Base {
 
-     public static void show(){
+    public static void show(){
          System.out.println("Child class");
      }
 

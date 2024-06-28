@@ -2,8 +2,7 @@ package leetcode.designPatterns.oopsConcepts.multipleinheritance.example1;
 
 public interface PI1 {
 
-    default void show()
-    {
+    default void show() {
 
         // Print statement if method is called
         // from interface 1

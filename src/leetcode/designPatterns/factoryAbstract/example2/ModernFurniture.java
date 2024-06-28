@@ -1,6 +1,7 @@
 package leetcode.designPatterns.factoryAbstract.example2;
 
 public class ModernFurniture implements  IFurnitureFactory{
+
     @Override
     public ISofa createSofa() {
         return new ModernSofa();

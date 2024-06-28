@@ -1,6 +1,7 @@
 package leetcode.designPatterns.factoryAbstract.example3;
 
 public class FileLoggerFactory implements LoggerFactory{
+
     @Override
     public DebugLogger createDebugLogger() {
         return new FileDebugLogger();
