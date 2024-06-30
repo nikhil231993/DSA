@@ -1,4 +1,4 @@
-package leetcode.designPatterns.builder.example4;
+package leetcode.designPatterns.builder.example1;
 
 public abstract class HouseBuilder {
 
@@ -9,8 +9,11 @@ public abstract class HouseBuilder {
     }
 
     public abstract void buildWindow();
+
     public abstract void buildDoor();
+
     public abstract void buildRoof();
+
     public abstract void buildFloor();
 
     public House buildHouse(){

@@ -1,4 +1,4 @@
-package leetcode.designPatterns.builder.chainingWithDirector;
+package leetcode.designPatterns.builder.example2chainingWithDirector;
 
 public class WoodenHouseBuilder extends HouseBuilder {
 

@@ -1,7 +1,8 @@
-package leetcode.designPatterns.builder.chainingWithOutDirector;
+package leetcode.designPatterns.builder.example3chainingWithOutDirector;
 
 
 public class Desktop {
+
 //Product
     private String monitor;
     private String keyboard;

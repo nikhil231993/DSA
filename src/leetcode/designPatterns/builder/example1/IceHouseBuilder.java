@@ -1,6 +1,7 @@
-package leetcode.designPatterns.builder.example4;
+package leetcode.designPatterns.builder.example1;
 
 public class IceHouseBuilder extends HouseBuilder{
+
     @Override
     public void buildWindow() {
         this.house.setWindow("Ice Window");

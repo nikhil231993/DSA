@@ -1,4 +1,4 @@
-package leetcode.designPatterns.builder.chainingWithDirector;
+package leetcode.designPatterns.builder.example2chainingWithDirector;
 
 public abstract class HouseBuilder {
 
@@ -9,8 +9,11 @@ public abstract class HouseBuilder {
     }
 
     public abstract HouseBuilder buildWindow();
+
     public abstract HouseBuilder buildDoor();
+
     public abstract HouseBuilder buildRoof();
+
     public abstract HouseBuilder buildFloor();
 
     public House buildHouse(){

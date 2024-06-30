@@ -1,6 +1,6 @@
 package leetcode.designPatterns.factorySimple;
 
-public class ILoggerFactory {
+public class LoggerFactory {
 
     public ILogger getCourseFactory(String course){
 

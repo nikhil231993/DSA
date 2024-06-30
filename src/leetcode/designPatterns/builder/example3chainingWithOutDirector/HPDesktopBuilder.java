@@ -1,6 +1,9 @@
-package leetcode.designPatterns.builder.chainingWithOutDirector;
+package leetcode.designPatterns.builder.example3chainingWithOutDirector;
+
+import leetcode.designPatterns.adapter.JSONAnalyticsTool;
 
 public class HPDesktopBuilder extends DesktopBuilder{
+
     @Override
     public DesktopBuilder buildMonitor() {
         this.desktop.setMonitor("HP Monitor");

@@ -1,4 +1,4 @@
-package leetcode.designPatterns.builder.chainingWithOutDirector;
+package leetcode.designPatterns.builder.example3chainingWithOutDirector;
 
 public class Main {
     //chaining without Director

@@ -1,4 +1,4 @@
-package leetcode.designPatterns.builder.example4;
+package leetcode.designPatterns.builder.example1;
 
 public class CivilEngineer {
 

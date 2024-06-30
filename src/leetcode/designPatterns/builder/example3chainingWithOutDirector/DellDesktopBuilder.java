@@ -1,43 +1,44 @@
-package leetcode.designPatterns.builder.chainingWithOutDirector;
+package leetcode.designPatterns.builder.example3chainingWithOutDirector;
 
-public class DellDesktopBuilder extends DesktopBuilder{
+public class  DellDesktopBuilder extends DesktopBuilder{
+
     @Override
-    public DesktopBuilder buildMonitor() {
+    public DellDesktopBuilder buildMonitor() {
         this.desktop.setMonitor("Dell Monitor");
         return this;
     }
 
     @Override
-    public DesktopBuilder buildKeyBoard() {
+    public DellDesktopBuilder buildKeyBoard() {
         this.desktop.setKeyboard("Dell KeyBoard");
         return this;
     }
 
     @Override
-    public DesktopBuilder buildMouse() {
+    public DellDesktopBuilder buildMouse() {
         this.desktop.setMouse("Dell Mouse");
         return this;
     }
 
     @Override
-    public DesktopBuilder buildSpeaker() {
+    public DellDesktopBuilder buildSpeaker() {
         this.desktop.setSpeaker("Dell Speaker");
         return this;
     }
 
     @Override
-    public DesktopBuilder buildRam() {
+    public DellDesktopBuilder buildRam() {
         this.desktop.setRam("Dell Ram"); return this;
     }
 
     @Override
-    public DesktopBuilder buildProcessor() {
+    public DellDesktopBuilder buildProcessor() {
         this.desktop.setProcessor("Dell Processor");
         return this;
     }
 
     @Override
-    public DesktopBuilder buildMotherboard() {
+    public DellDesktopBuilder buildMotherboard() {
         this.desktop.setMotherboard("Dell Motherboard");
         return this;
     }

@@ -5,7 +5,7 @@ public class FactoryMain {
     //client -> as here we create object in factory but client only uses it
     public static void main(String[] args) {
 
-        ILoggerFactory courseFactory=new ILoggerFactory();
+        LoggerFactory courseFactory=new LoggerFactory();
         ILogger course1=courseFactory.getCourseFactory("INFO");
         //Since we use ILogger then it follows DIP
         //OCP is followed as new loggers can be easily created in factory

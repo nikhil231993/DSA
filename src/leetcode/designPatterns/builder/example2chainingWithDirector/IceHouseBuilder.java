@@ -1,28 +1,28 @@
-package leetcode.designPatterns.builder.chainingWithDirector;
+package leetcode.designPatterns.builder.example2chainingWithDirector;
 
-public class SteelHouseBuilder extends HouseBuilder {
+public class IceHouseBuilder extends HouseBuilder {
 
     @Override
     public HouseBuilder buildWindow() {
-        this.house.setWindow("Steel Window");
+        this.house.setWindow("Ice Window");
         return this;
     }
 
     @Override
     public HouseBuilder buildDoor() {
-        this.house.setDoor("Steel Door");
+        this.house.setDoor("Ice Door");
         return this;
     }
 
     @Override
     public HouseBuilder buildRoof() {
-        this.house.setRoof("Steel Roof");
+        this.house.setRoof("Ice Roof");
         return this;
     }
 
     @Override
     public HouseBuilder buildFloor() {
-        this.house.setFloor("Steel Floor");
+        this.house.setFloor("Ice Floor");
         return this;
     }
 }
