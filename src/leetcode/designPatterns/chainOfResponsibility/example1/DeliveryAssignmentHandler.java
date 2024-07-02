@@ -8,6 +8,7 @@ public class DeliveryAssignmentHandler extends OrderHandler {
 
     @Override
     public void processOrder(String order) {
+
         System.out.println("Assigning delivery for order: " + order);
         if(orderHandler!=null){
             orderHandler.processOrder(order);

@@ -11,21 +11,22 @@ public class Router extends NetworkDevice{
         this.protocol = protocol;
     }
 
+
+    @Override
+    public void update(String name) {
+        this.protocol=name;
+    }
+
+    @Override
+    public NetworkDevice cloneDevice() {
+        return new Router(name, protocol);
+    }
+
     @Override
     void display() {
         System.out.println("Router{" +
                 "name='" + name + '\'' +
                 ", protocol='" + protocol + '\'' +
                 '}');
-    }
-
-    @Override
-    void update(String name) {
-        this.protocol=name;
-    }
-
-    @Override
-    NetworkDevice cloneDevice() {
-        return new Router(name, protocol);
     }
 }

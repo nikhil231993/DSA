@@ -9,5 +9,8 @@ public class OrderTrackingHandler extends OrderHandler {
     @Override
     public void processOrder(String order) {
         System.out.println("Tracking order: " + order);
+        if(this.orderHandler!=null)
+            System.out.println("Processed");
+        System.out.println("Not processed");
     }
 }

@@ -10,6 +10,7 @@ public class OrderValidationHandler extends OrderHandler {
 
     @Override
     public void processOrder(String order) {
+
         System.out.println("Validating order: " + order);
         if(orderHandler!=null){
             orderHandler.processOrder(order);

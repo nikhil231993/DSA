@@ -9,11 +9,11 @@ public class OrderTracker {
 
     private List<Observer> observers=new ArrayList<>();
 
-    public void register(Observer observer){
+    public void registerObservers(Observer observer){
         observers.add(observer);
     }
 
-    public void unregister(Observer observer){
+    public void unregisterObservers(Observer observer){
         observers.remove(observer);
     }
 

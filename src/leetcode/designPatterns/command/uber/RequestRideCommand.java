@@ -13,6 +13,7 @@ public class RequestRideCommand implements Command{
         this.from=from;
         this.to=to;
     }
+
     @Override
     public void execute() {
         this.rideService.requestRide(passenger,from,to);

@@ -1,7 +1,5 @@
 package leetcode.designPatterns.builder.example3chainingWithOutDirector;
 
-import leetcode.designPatterns.adapter.JSONAnalyticsTool;
-
 public class HPDesktopBuilder extends DesktopBuilder{
 
     @Override

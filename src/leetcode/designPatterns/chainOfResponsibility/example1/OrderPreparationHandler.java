@@ -8,6 +8,7 @@ public class OrderPreparationHandler extends OrderHandler {
 
     @Override
     public void processOrder(String order) {
+
         System.out.println("Preparing order: " + order);
         if(orderHandler!=null)
             orderHandler.processOrder(order);

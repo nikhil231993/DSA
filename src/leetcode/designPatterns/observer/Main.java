@@ -9,9 +9,9 @@ public class Main {
         Observer deliveryPartner=new ObserverDeliveryPartner("Swiggy");
 
         OrderTracker orderTracker=new OrderTracker();
-        orderTracker.register(customerObserver);
-        orderTracker.register(restaurant);
-        orderTracker.register(deliveryPartner);
+        orderTracker.registerObservers(customerObserver);
+        orderTracker.registerObservers(restaurant);
+        orderTracker.registerObservers(deliveryPartner);
 
         Order order1=new Order("Pizza", 1, "Placed");
         orderTracker.addOrder(order1);
@@ -24,7 +24,7 @@ public class Main {
         System.out.println("==============================================================");
 
         Order order3=new Order("Buger", 3, "Placed");
-        orderTracker.unregister(deliveryPartner);
+        orderTracker.unregisterObservers(deliveryPartner);
         orderTracker.addOrder(order3);
     }
 }
