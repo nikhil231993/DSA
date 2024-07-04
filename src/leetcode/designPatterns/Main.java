@@ -3,6 +3,8 @@ package leetcode.designPatterns;
 public class Main {
 
     public static void main(String[] args) {
-        LoggerTest.display("Nikhil");
+
+        //Test t=new LoggerTest("Nikhil");
+        CheckStatic checkStatic=CheckStatic.getInstance();
     }
 }
