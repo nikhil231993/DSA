@@ -17,5 +17,6 @@ public class Main {
         menu.addCommands(save);
 
         menu.executeCommands();
+        menu.executeUndoCommands();
     }
 }

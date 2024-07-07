@@ -1,6 +1,6 @@
 package leetcode.designPatterns.behaviourial.template;
 
-public abstract class Template {
+public abstract class  Template {
 
     public final void processOrder(){
         verifyOrder();

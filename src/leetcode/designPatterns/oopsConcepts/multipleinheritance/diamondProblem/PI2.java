@@ -1,4 +1,4 @@
-package leetcode.designPatterns.oopsConcepts.multipleinheritance.example1;
+package leetcode.designPatterns.oopsConcepts.multipleinheritance.diamondProblem;
 
 public interface PI2 {
 

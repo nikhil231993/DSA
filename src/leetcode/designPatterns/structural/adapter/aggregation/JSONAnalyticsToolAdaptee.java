@@ -1,4 +1,4 @@
-package leetcode.designPatterns.structural.adapter;
+package leetcode.designPatterns.structural.adapter.aggregation;
 
 public class JSONAnalyticsToolAdaptee {
 

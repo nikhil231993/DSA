@@ -11,8 +11,9 @@ public class OrderValidationHandler extends OrderHandler {
     @Override
     public void processOrder(String order) {
 
-        System.out.println("Validating order: " + order);
-        if(orderHandler!=null){
+        if(order.equalsIgnoreCase("validation"))
+            System.out.println("Validating order: " + order);
+        else if(orderHandler!=null){
             orderHandler.processOrder(order);
         }
     }

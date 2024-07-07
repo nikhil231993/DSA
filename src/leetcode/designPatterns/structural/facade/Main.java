@@ -1,6 +1,6 @@
 package leetcode.designPatterns.structural.facade;
 
-public class ComputerDemo {
+public class Main {
 
     public static void main(String[] args) {
 

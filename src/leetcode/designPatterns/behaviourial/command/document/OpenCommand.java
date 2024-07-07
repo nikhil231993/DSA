@@ -12,4 +12,9 @@ public class OpenCommand implements Command {
     public void execute() {
         document.open();
     }
+
+    @Override
+    public void executeUndo() {
+        document.save();
+    }
 }

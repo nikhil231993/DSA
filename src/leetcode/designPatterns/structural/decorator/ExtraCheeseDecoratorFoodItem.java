@@ -11,7 +11,7 @@ public class ExtraCheeseDecoratorFoodItem extends Decorator{
 
     @Override
     public String getDescription() {
-        return super.foodItem.getDescription()+ " with extra cheese";
+        return foodItem.getDescription()+ " with extra cheese";
     }
 
     @Override

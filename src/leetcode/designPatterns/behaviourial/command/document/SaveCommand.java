@@ -12,4 +12,9 @@ public class SaveCommand implements Command {
     public void execute() {
         document.save();;
     }
+
+    @Override
+    public void executeUndo() {
+        document.open();
+    }
 }

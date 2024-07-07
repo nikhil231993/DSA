@@ -1,6 +1,6 @@
 package leetcode.designPatterns.structural.proxy;
 
-public class RealImage implements  Image{
+public class RealImage implements Image{
 
     private String filename;
 

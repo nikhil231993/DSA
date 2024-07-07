@@ -1,20 +1,20 @@
-package leetcode.designPatterns.structural.adapter;
+package leetcode.designPatterns.structural.adapter.aggregation;
 
 public class XmlToJsonAdapter implements Adapter {
 
     private JSONAnalyticsToolAdaptee jsonAnalyticsToolAdaptee;
 
-    public XmlToJsonAdapter(String data){
+    public XmlToJsonAdapter(String data, JSONAnalyticsToolAdaptee jsonAnalyticsToolAdaptee){
 
         //Conversion can happen anywhere in this class
         System.out.println("Converting the XML Data '" + data + "' to JSON Data!");
         String newData = data + " in json";
-        jsonAnalyticsToolAdaptee=new JSONAnalyticsToolAdaptee();
-        jsonAnalyticsToolAdaptee.setJson(newData);
+        this.jsonAnalyticsToolAdaptee=jsonAnalyticsToolAdaptee;
+        this.jsonAnalyticsToolAdaptee.setJson(newData);
     }
 
     @Override
     public void analyseData() {
-        jsonAnalyticsToolAdaptee.analyseData();
+        this.jsonAnalyticsToolAdaptee.analyseData();
     }
 }

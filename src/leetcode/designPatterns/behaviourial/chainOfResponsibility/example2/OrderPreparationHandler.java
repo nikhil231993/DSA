@@ -10,9 +10,9 @@ public class OrderPreparationHandler extends OrderHandler {
 
     @Override
     public void processOrder(String order) {
-
-        System.out.println("Preparing order: " + order);
-        if(orderHandler!=null)
+        if(order.equals("preparing"))
+            System.out.println("Preparing order: " + order);
+        else if(orderHandler!=null)
             orderHandler.processOrder(order);
     }
 }

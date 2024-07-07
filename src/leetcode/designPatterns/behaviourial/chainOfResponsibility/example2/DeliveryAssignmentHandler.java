@@ -10,8 +10,9 @@ public class DeliveryAssignmentHandler extends OrderHandler {
 
     @Override
     public void processOrder(String order) {
-        System.out.println("Assigning delivery for order: " + order);
-        if(orderHandler!=null){
+        if(order.equalsIgnoreCase("delivery"))
+            System.out.println("Assigning delivery for order: " + order);
+        else if(orderHandler!=null){
             orderHandler.processOrder(order);
         }
     }

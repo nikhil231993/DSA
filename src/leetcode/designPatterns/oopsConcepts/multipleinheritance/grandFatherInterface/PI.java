@@ -1,4 +1,4 @@
-package leetcode.designPatterns.oopsConcepts.multipleinheritance.example2;
+package leetcode.designPatterns.oopsConcepts.multipleinheritance.grandFatherInterface;
 
 public interface PI {
 

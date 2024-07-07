@@ -1,6 +1,6 @@
 package leetcode.designPatterns.creational.factorySimple;
 
-public class FactoryMain {
+public class Main {
 
     //client -> as here we create object in factory but client only uses it
     public static void main(String[] args) {

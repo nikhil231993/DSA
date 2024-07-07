@@ -1,6 +1,6 @@
 package leetcode.designPatterns.structural.facade;
 
-public class ComputerSystemFacade {
+public class  ComputerSystemFacade {
 
     private CPU cpu;
     private Memory memory;
@@ -9,6 +9,7 @@ public class ComputerSystemFacade {
     private NetworkInterface networkInterface;
 
     public ComputerSystemFacade() {
+
         this.cpu = new CPU();
         this.memory = new Memory();
         this.gpu = new GPU();
@@ -17,6 +18,7 @@ public class ComputerSystemFacade {
     }
 
     public void startComputer() {
+
         System.out.println("Starting the computer...");
         cpu.powerOn();
         memory.initialize();

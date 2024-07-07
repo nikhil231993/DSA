@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String order= "amazon";
+        String order= "delivery";
 
         OrderValidationHandler orderValidationHandler = new OrderValidationHandler();
         OrderPreparationHandler orderPreparationHandler = new OrderPreparationHandler();
@@ -20,5 +20,9 @@ public class Main {
         //orderTrackingHandler.setHandler(orderTrackingHandler); same here. We should have some break condition
 
         orderValidationHandler.processOrder(order);
+        orderValidationHandler.processOrder("preparing");
+        orderValidationHandler.processOrder("tracking");
+        orderValidationHandler.processOrder("payment");
+        orderValidationHandler.processOrder("validation");
     }
 }

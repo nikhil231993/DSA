@@ -1,12 +1,6 @@
-package leetcode.designPatterns.oopsConcepts.multipleinheritance.example1;
+package leetcode.designPatterns.oopsConcepts.multipleinheritance.grandFatherInterface;
 
 public class TestClass implements PI1, PI2 {
-
-    @Override
-    public void show() {
-        PI1.super.show();
-        PI2.super.show();
-    }
 
     public static void main(String[] args) {
 

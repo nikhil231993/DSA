@@ -1,7 +1,11 @@
 package leetcode.designPatterns.structural.proxy;
 
-public class ImageDemo {
+public class Main {
+
     public static void main(String[] args) {
+
+
+
         // Create an ImageProxy for a high-resolution image.
         Image proxy = new ImageProxy("high_res_image.jpg");
 

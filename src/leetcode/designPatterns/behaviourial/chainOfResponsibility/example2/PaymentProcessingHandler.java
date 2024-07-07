@@ -11,8 +11,9 @@ public class PaymentProcessingHandler extends OrderHandler {
     @Override
     public void processOrder(String order) {
 
-        System.out.println("Processing payment for order: " + order);
-        if(orderHandler!=null)
+        if(order.equalsIgnoreCase("payment"))
+            System.out.println("Processing payment for order: " + order);
+        else if(orderHandler!=null)
             orderHandler.processOrder(order);
     }
 }

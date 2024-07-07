@@ -20,6 +20,7 @@ public class Team implements EmployeeComponent{
 
     @Override
     public void displayInfo() {
+
         System.out.println("Team is : "+ name);
         for(EmployeeComponent member: team)
             member.displayInfo();
