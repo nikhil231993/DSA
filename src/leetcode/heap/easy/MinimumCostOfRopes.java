@@ -11,8 +11,8 @@ public class MinimumCostOfRopes {
         System.out.println(minCost(arr,n));
 }
 
-    public static int minCost(int arr[], int n)
-    {
+    public static int minCost(int arr[], int n) {
+
         PriorityQueue<Integer> pq=new PriorityQueue();
         for(Integer num:arr)
             pq.offer(num);
@@ -25,6 +25,7 @@ public class MinimumCostOfRopes {
             pq.offer(a+b);
         }
         return cost;
+
         //TC:O(nlogn)
         //SC:O(n)
     }

@@ -3,8 +3,11 @@ package leetcode.heap;
 public class HeapAllConceptsPrince {
 
     private static int[] arr=null;
+
     private static int size;
+
     private static int capacity;
+
     public HeapAllConceptsPrince(int cap){
 
         capacity=cap;
@@ -15,9 +18,11 @@ public class HeapAllConceptsPrince {
     private int left(int i){
         return 2*i+1;
     }
+
     private int right(int i){
         return 2*i+2;
     }
+
     private int parent(int i){
         return (i-1)/2;
     }
@@ -28,6 +33,7 @@ public class HeapAllConceptsPrince {
             System.out.println("Heap is full");
         arr[size++]=value;
         heapifyUp(size-1);
+
         //TC:O(log n)
         //SC:O(1) as we are using already present array.
     }
@@ -61,6 +67,7 @@ public class HeapAllConceptsPrince {
         if(size==0)
             return -1;
         return arr[0];
+
         //TC:O(1)
         //SC:O(1)
     }
@@ -75,6 +82,7 @@ public class HeapAllConceptsPrince {
         arr[0]=arr[--size];
         heapifyTopToBottom(0);
         return removed;
+
         //TC:O(log n)
         //SC:O(log n) due recursive heap call
     }
@@ -84,10 +92,11 @@ public class HeapAllConceptsPrince {
         int left=2*index+1;
         int right=2*index+2;
         int smallest=index;
-        if(left<size && arr[left]<arr[smallest]){
+
+        if(left < size && arr[left] < arr[smallest]){
             smallest=left;
         }
-        if(right<size && arr[right]<arr[smallest]){
+        if(right < size && arr[right] < arr[smallest]){
             smallest=right;
         }
         if(smallest!=index){
@@ -96,6 +105,7 @@ public class HeapAllConceptsPrince {
             arr[index]=temp;
             heapifyTopToBottom(smallest);
         }
+
         //TC:O(log n)
         //SC:O(log n)
     }
@@ -130,8 +140,9 @@ public class HeapAllConceptsPrince {
         h.insert(8);
         h.insert(5);
         h.print();
-        System.out.println("Min is : "+ h.getMin());
-        System.out.println("Value has been extracted : "+h.extractMin());
+
+        System.out.println("Min is : " + h.getMin());
+        System.out.println("Value has been extracted : " + h.extractMin());
         h.print();
         System.out.println("After decrease key operation : ");
         h.decreaseKey(3,1);

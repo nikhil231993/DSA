@@ -3,13 +3,17 @@ package leetcode.heap;
 public class MaxHeap {
 
     int[] arr=null;
+
     int currentLoc=0;
+
     public MaxHeap(int size){
+
         arr=new int[size+1];
         currentLoc=0;
     }
 
     public void insert(int value) {
+
         if(currentLoc==arr.length)
             return;
         arr[++currentLoc]=value;
@@ -24,6 +28,7 @@ public class MaxHeap {
     }
 
     public void print() {
+
         if(currentLoc==0)
             return;
         for(int i=1;i<=currentLoc/2;i++){
@@ -36,12 +41,14 @@ public class MaxHeap {
     }
 
     public int peek() {
+
         if(currentLoc==0)
             return -1;
         return arr[1];
     }
 
     public int remove() {
+
         if(currentLoc==0)
             return -1;
         int removed=arr[1];
@@ -50,9 +57,10 @@ public class MaxHeap {
         //TC:logn (since we are passing length of the stack)
         //SC:logn (recursion stack)
         return removed;
-}
+    }
 
     private void maxHeapifyTopToBottom(int[] arr, int index) {
+
         if(index==currentLoc)
             return;
 

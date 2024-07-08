@@ -4,41 +4,43 @@ import java.util.PriorityQueue;
 
 public class LC295FindMedianFromDataStream {
 
-    PriorityQueue<Integer> smaller =new PriorityQueue<>((a, b)->b-a);
-    PriorityQueue<Integer> larger =new PriorityQueue<>();
+    PriorityQueue<Integer> right =new PriorityQueue<>((a, b)->b-a);
+    PriorityQueue<Integer> left =new PriorityQueue<>();
 
     public LC295FindMedianFromDataStream() {
 
     }
 
     public void addNum(int num) {
-        if(smaller.size()==0){
-            smaller.offer(num);
+
+        if(left.size()==0){
+            left.offer(num);
             return;
         }
 
-        if(smaller.size()>larger.size()){
-            if(num < smaller.peek()){
-                smaller.offer(num);
-                larger.offer(smaller.poll());
+        if(left.size()>right.size()){
+            if(num > left.peek()){
+                right.offer(num);
             }else{
-                larger.offer(num);
+                left.offer(num);
+                right.offer(left.poll());
             }
         }else{
-            if(smaller.peek()<num){
-                larger.offer(num);
-                smaller.offer(larger.poll());
+            if(left.peek()>num){
+                left.offer(num);
             }else{
-                smaller.offer(num);
+                right.offer(num);
+                left.offer(right.poll());
             }
         }
     }
 
     public double findMedian() {
-        if(smaller.size()==larger.size())
-            return (smaller.peek()+larger.peek())/2.0;
+
+        if(left.size()==right.size())
+            return (left.peek()+right.peek())/2.0;
         else
-            return smaller.peek();
+            return left.peek();
     }
 
     public static void main(String[] args) {

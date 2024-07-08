@@ -2,16 +2,19 @@ package leetcode.heap.codehelp;
 
 class Node{
 
-    int value;
-    Node left;
-    Node right;
+    protected int value;
+    protected Node left;
+    protected Node right;
+
     public Node(int value){
         this.value=value;
         this.left=null;
         this.right=null;
     }
 }
+
 public class L75IsBinaryTreeHeap {
+
     private Node root;
     public static void main(String[] args) {
 
@@ -78,11 +81,11 @@ public class L75IsBinaryTreeHeap {
 
         if(root==null)
             return 0;
-        else{
+        else{ // This else is not needed
             int left=countNode(root.left);
             int right=countNode(root.right);
             return 1+left+right;
-        }
+        } //This is also not needed
     }
 
     //TC:O(n) count nodes + O(n) cbt +O(n) maxorder

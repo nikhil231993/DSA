@@ -2,8 +2,10 @@ package leetcode.heap;
 
 public class MinHeap {
 
-    int[] arr=null;
-    int currentLocation=0;
+    private int[] arr=null;
+
+    private int currentLocation=0;
+
     public MinHeap(int size){
         arr=new int[size+1];
         currentLocation=0;
@@ -37,7 +39,6 @@ public class MinHeap {
             if(2*i+1<=currentLocation)
             System.out.print(" Right Child: "+arr[2*i+1]);
         }
-
     }
 
 
@@ -56,6 +57,7 @@ public class MinHeap {
         arr[1]=arr[currentLocation--];
         minHeapifyTopToBottom(arr,1);
         return removed;
+
         //TC:logn (since we are passing length of the stack)
         //SC:logn (recursion stack)
     }

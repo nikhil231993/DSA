@@ -6,7 +6,9 @@ import java.util.PriorityQueue;
 class KthLargest {
 
     private int size=0;
+
     private PriorityQueue<Integer> pq=new PriorityQueue<>();
+
     public KthLargest(int k, int[] nums) {
 
         size=k;
@@ -31,11 +33,14 @@ class KthLargest {
         return pq.peek();
     }
 }
+
 public class LC703KthLargestElementInStream {
 
     public static void main(String[] args) {
+
         int[] nums=new int[]{4,5,8,2};
         KthLargest k=new KthLargest(3,nums);
+
         System.out.println(k.add(3));
         System.out.println(k.add(5));
         System.out.println(k.add(10));

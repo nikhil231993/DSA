@@ -15,8 +15,6 @@ public class L75MergeTwoBinaryHeaps {
         int[] result=mergeHeaps(a,b,n,m);
         for(Integer num:result)
             System.out.println(num);
-        //TC:O(n+m) build heap time complexity+O(n) to for arr array
-        //SC:O(n+m)
     }
 
     public static int[] mergeHeaps(int[] a, int[] b, int n, int m) {
@@ -31,8 +29,9 @@ public class L75MergeTwoBinaryHeaps {
         }
         buildHeap(arr,arr.length);
         return arr;
-        //TC:O(n)
-        //SC:O(n)
+
+        //TC:O(n+m) build heap time complexity+O(n) to for arr array
+        //SC:O(n+m)
     }
 
     public static void buildHeap(int[] arr, int size){

@@ -3,15 +3,18 @@ package leetcode.heap;
 import java.util.PriorityQueue;
 
 class Node{
-    int value;
-    int key;
+     int value;
+     int key;
     public Node(int value, int key){
         this.value=value;
         this.key=key;
     }
 }
+
 public class PriorityQueueClass {
+
     public static void main(String[] args) {
+
         PriorityQueue<Integer> pq=new PriorityQueue<>((a,b)->b-a);
         pq.offer(100);
         pq.offer(99);
@@ -43,7 +46,5 @@ public class PriorityQueueClass {
         Node n=pq1.poll();
 
         System.out.println(n.value+"---"+n.key);
-
-
     }
 }

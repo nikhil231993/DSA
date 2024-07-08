@@ -44,6 +44,7 @@ public class MergeKSortedArrayGfg {
         while(!pq.isEmpty())
             list.add(pq.poll());
         return list;
+
         //TC:O(n*m+ n*m log n*m)
         //SC:O(n*m)*2
     }
@@ -57,13 +58,14 @@ public class MergeKSortedArrayGfg {
             }
         }
         Collections.sort(list);
+        return list;
+
         //TC:O(n*m log n*m)
         //SC:O(n*m)
-        return list;
     }
 
-    public static ArrayList<Integer> mergeKArrays(int[][] arr, int k)
-    {
+    public static ArrayList<Integer> mergeKArrays(int[][] arr, int k) {
+
         ArrayList<Integer> result=new ArrayList<>();
         PriorityQueue<SubNode> pq=new PriorityQueue<>((a,b)->a.val-b.val);
         for(int i=0;i<k;i++){
@@ -85,6 +87,7 @@ public class MergeKSortedArrayGfg {
         }
         return result;
     }
+
     //TC:O(klogk)
     //SC:k as at any moment heap has only k elements at the max
 }
