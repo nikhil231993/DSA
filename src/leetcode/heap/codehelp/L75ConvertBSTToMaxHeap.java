@@ -6,11 +6,12 @@ import static leetcode.heap.codehelp.L75IsBinaryTreeHeap.countNode;
 
 public class L75ConvertBSTToMaxHeap {
 
-    Node root;
+    private Node root;
 
     public static void main(String[] args) {
 
         L75ConvertBSTToMaxHeap l=new L75ConvertBSTToMaxHeap();
+
         l.root=new Node(4);
         l.root.left=new Node(2);
         l.root.right=new Node(6);
@@ -35,7 +36,6 @@ public class L75ConvertBSTToMaxHeap {
 
         //Print using level order
         levelOrder(l.root);
-
     }
 
     private static void postOrder(Node root, int[] arr, int[] newIndex) {

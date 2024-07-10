@@ -38,6 +38,7 @@ public class FindMedianInAStream {
 
     //Function to return Median.
     public static int getMedian() {
+
         if(smaller.size()==larger.size())
             return (smaller.peek()+larger.peek())/2;
         else
@@ -45,12 +46,14 @@ public class FindMedianInAStream {
     }
 
     public static void main(String[] args) {
+
         int n=4;
         int[] arr=new int[]{5,15,1,3};
         for(int num:arr){
             insertHeap(num);
             System.out.println(getMedian());
         }
+
         //TC:o(nlogn)
         //SC:o(n)
     }

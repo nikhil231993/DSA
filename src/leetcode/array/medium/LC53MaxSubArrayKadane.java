@@ -6,7 +6,6 @@ public class LC53MaxSubArrayKadane {
 
 		int[] arr = new int[] { 0, 1, 3, -5, 7 };
 		System.out.println(maxSubArray(arr));
-
 	}
 
 	private static int maxSubArray(int[] arr) {

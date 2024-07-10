@@ -4,11 +4,22 @@ import java.util.PriorityQueue;
 
 class Node1{
 
-    int key;
-    int value;
+    protected int key;
+    protected int value;
+
     public Node1(int key, int value){
         this.key=key;
         this.value=value;
+    }
+}
+
+class Node4 {
+
+    protected int val;
+    protected int index;
+    public Node4(int val, int index) {
+        this.val = val;
+        this.index = index;
     }
 }
 
@@ -20,6 +31,10 @@ public class LC506Rankings {
 
         String[] result=findRelativeRanks(score);
         for(String s: result)
+            System.out.println(s);
+
+        String[] result1=findRelativeRanksOptimized(score);
+        for(String s: result1)
             System.out.println(s);
     }
 
@@ -56,5 +71,29 @@ public class LC506Rankings {
             }
         }
         return str;
+    }
+
+    public static String[] findRelativeRanksOptimized(int[] score) {
+        PriorityQueue<Node4> pq = new PriorityQueue<>((a,b) -> b.val - a.val);
+        int n = score.length;
+        for (int i =0; i< n; i++) {
+            pq.offer(new Node4(score[i], i));
+        }
+        String[] ans = new String[n];
+        int count = 0;
+        while (!pq.isEmpty()) {
+            count++;
+            Node4 cur = pq.poll();
+            if (count == 1) {
+                ans[cur.index] = "Gold Medal";
+            } else if (count == 2) {
+                ans[cur.index] = "Silver Medal";
+            } else if (count == 3) {
+                ans[cur.index] = "Bronze Medal";
+            } else {
+                ans[cur.index] = String.valueOf(count);
+            }
+        }
+        return ans;
     }
 }

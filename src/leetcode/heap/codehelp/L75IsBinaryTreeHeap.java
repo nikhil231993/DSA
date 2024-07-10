@@ -16,6 +16,7 @@ class Node{
 public class L75IsBinaryTreeHeap {
 
     private Node root;
+
     public static void main(String[] args) {
 
         L75IsBinaryTreeHeap tree=new L75IsBinaryTreeHeap();

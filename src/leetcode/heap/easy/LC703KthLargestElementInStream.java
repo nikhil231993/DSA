@@ -38,8 +38,8 @@ public class LC703KthLargestElementInStream {
 
     public static void main(String[] args) {
 
-        int[] nums=new int[]{4,5,8,2};
-        KthLargest k=new KthLargest(3,nums);
+        int[] arr=new int[]{4,5,8,2};
+        KthLargest k=new KthLargest(3, arr);
 
         System.out.println(k.add(3));
         System.out.println(k.add(5));

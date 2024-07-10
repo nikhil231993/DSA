@@ -29,5 +29,8 @@ public class LC1962Pile {
             sum+=pq.poll();
 
         return sum;
+
+        //TC:O(n log n)
+        //SC:O(n)
     }
 }

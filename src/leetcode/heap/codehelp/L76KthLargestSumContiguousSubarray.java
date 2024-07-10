@@ -2,7 +2,8 @@ package leetcode.heap.codehelp;
 
 import java.util.Arrays;
 import java.util.PriorityQueue;
-public class L76KLargestSumContiguousSubarray {
+
+public class L76KthLargestSumContiguousSubarray {
 
     public static void main(String[] args) {
 
@@ -10,10 +11,10 @@ public class L76KLargestSumContiguousSubarray {
         int K = 2;
         int[] Arr =new int[] {3,2,1};
 
-        //Approach 1 Brute force
+        //Approach 1: Brute force
         System.out.println(kthLargest(N,K,Arr));
 
-        //Approach 2
+        //Approach 2: Using Heap
         System.out.println(kthLargestUsingHeap(N,K,Arr));
     }
 
@@ -46,7 +47,7 @@ public class L76KLargestSumContiguousSubarray {
         for(int i=0;i<N;i++){
             int sum=0;
             for(int j=i;j<N;j++){
-                sum+=Arr[j];
+                sum += Arr[j];
                 arr[k++]=sum;
             }
         }
@@ -54,6 +55,7 @@ public class L76KLargestSumContiguousSubarray {
         Arrays.sort(arr);//(n square log n square)
 
         return arr[size-K];
+
         //TC:O(n square log n square)
         //SC:O(n square)
     }

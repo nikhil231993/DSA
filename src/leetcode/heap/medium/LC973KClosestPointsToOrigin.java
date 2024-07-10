@@ -3,7 +3,9 @@ package leetcode.heap.medium;
 import java.util.PriorityQueue;
 
 public class LC973KClosestPointsToOrigin {
+
     public static void main(String[] args) {
+
         int[][] points =new int[][] {{3,3},{5,-1},{-2,4}};
         int k = 2;
 
@@ -18,10 +20,9 @@ public class LC973KClosestPointsToOrigin {
         PriorityQueue<int[]> pq=new PriorityQueue<>((a,b)->(((b[0]-0)*(b[0]-0))+(b[1]-0)*(b[1]-0))-((a[0]-0)*(a[0]-0)+(a[1]-0)*(a[1]-0)));
 
         for(int[] arr:points){
-                pq.offer(new int[]{arr[0],arr[1]});
-                if(pq.size()>k){
-                int[] temp=pq.poll();
-                pq.offer(new int[]{temp[0],temp[1]});
+
+            pq.offer(new int[]{arr[0],arr[1]});
+            if(pq.size()>k){
                 pq.poll();
             }
         }

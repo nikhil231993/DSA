@@ -5,11 +5,12 @@ import java.util.Queue;
 
 public class L75ConvertBSTToMinHeap {
 
-    Node root=null;
+    private Node root=null;
 
     public static void main(String[] args) {
 
         L75ConvertBSTToMinHeap tree=new L75ConvertBSTToMinHeap();
+
         tree.root=new Node(4);
         tree.root.left=new Node(2);
         tree.root.right=new Node(6);
@@ -48,18 +49,16 @@ public class L75ConvertBSTToMinHeap {
 
         if(root==null)
             return;
-        else {
-            Queue<Node> q = new LinkedList<>();
-            q.add(root);
-            while (!q.isEmpty()) {
-                Node temp = q.peek();
-                q.remove();
-                System.out.print(temp.value + "-->");
-                if (temp.left != null)
-                    q.add(temp.left);
-                if (temp.right != null)
-                    q.add(temp.right);
-            }
+        Queue<Node> q = new LinkedList<>();
+        q.add(root);
+        while (!q.isEmpty()) {
+            Node temp = q.peek();
+            q.remove();
+            System.out.print(temp.value + "-->");
+            if (temp.left != null)
+                q.add(temp.left);
+            if (temp.right != null)
+                q.add(temp.right);
         }
     }
 

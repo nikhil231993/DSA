@@ -2,7 +2,7 @@ package leetcode.heap.easy;
 
 import java.util.PriorityQueue;
 
-public class MinimumCostOfRopes {
+public class GfgMinimumCostOfRopes {
 
     public static void main(String[] args) {
 

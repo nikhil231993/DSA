@@ -28,7 +28,6 @@ public class LC1753MaximumScoreFromRemovingStones {
                 pq.offer(n1);
             if(n2>0)
                 pq.offer(n2);
-            
         }
         return count;
 

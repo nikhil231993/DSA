@@ -43,6 +43,7 @@ public class LC2016MaximumDifference {
                 maxDiff = Math.max(nums[i] - min,maxDiff);
         }
         return maxDiff;
+
         //TC:O(n)
         //SC:O(1)
     }

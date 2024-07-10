@@ -10,6 +10,7 @@ public class MinHeapToMaxHeap {
         for(int num:r)
             System.out.println(num);
     }
+
     public static int[] minToMaxHeap(int n, int[] arr){
 
         int lastInternalNode=arr.length/2-1;
@@ -20,6 +21,7 @@ public class MinHeapToMaxHeap {
     }
 
     private static void maxHeapify(int[] arr, int n, int index) {
+
         int left = 2 * index + 1;
         int right = 2 * index + 2;
         int largest = index;

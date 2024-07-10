@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class LC387FirstUniqueCharacterInString {
+
     public static void main(String[] args) {
 
         String s="aab";
@@ -49,6 +50,7 @@ public class LC387FirstUniqueCharacterInString {
             }
         }
         return -1;
+
         //TC:O(n) where n is the string length + O(26)
         //SC:O(n) where n is the unique characters in the string
     }

@@ -26,6 +26,7 @@ public class LC2351FirstLetterToAppearTwice {
                 m.put(s.charAt(i),i);
         }
         return 'a';
+
         //TC:O(n) in chase all characters are unique
         //SC:O(n)
     }
@@ -40,6 +41,7 @@ public class LC2351FirstLetterToAppearTwice {
                 m.put(s.charAt(i),i);
         }
         throw new IllegalArgumentException();
+
         //TC:O(n) in chase all characters are unique
         //SC:O(n)
     }

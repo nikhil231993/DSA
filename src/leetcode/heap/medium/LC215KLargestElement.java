@@ -15,7 +15,6 @@ public class LC215KLargestElement {
         int n=nums.length;
 
         //Approach 2: using max heap custom heap
-
         int r1=usingCustomHeap(nums, k,n);
         System.out.println(r1);
 
@@ -51,7 +50,7 @@ public class LC215KLargestElement {
         }
         return result;
 
-        //TC:O(n/2)+O(KlogN) since we insert all elements in max heap and then remove
+        //TC:O(n/2) + O( K log N) since we insert all elements in max heap and then remove
         //SC:O(n)
     }
 
@@ -71,7 +70,7 @@ public class LC215KLargestElement {
         }
         return result;
 
-        //TC:O(N)+O(KlogN)
+        //TC:O(N) + O( K log N)
         //SC:O(n)
     }
 
@@ -85,7 +84,7 @@ public class LC215KLargestElement {
         }
         return pq.peek();
 
-        //TC:o(Nlogk)
+        //TC:o(N log K)
         //SC:O(k)
     }
 

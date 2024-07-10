@@ -7,14 +7,15 @@ import java.util.PriorityQueue;
 
 class Node2 {
 
-    Integer key;
-    Integer freq;
+    protected Integer key;
+    protected Integer freq;
 
     public Node2(Integer key, Integer freq){
         this.key=key;
         this.freq=freq;
     }
 }
+
 public class LC2404MostFrequentEvenElement {
 
 

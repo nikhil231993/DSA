@@ -44,6 +44,7 @@ public class LC295FindMedianFromDataStream {
     }
 
     public static void main(String[] args) {
+
         int n=4;
         int[] arr=new int[]{5,15,1,3};
 

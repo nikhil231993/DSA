@@ -6,8 +6,9 @@ import java.util.PriorityQueue;
 
 class Node1{
 
-    int value;
-    int count;
+    protected int value;
+    protected int count;
+
     public Node1(int value, int count){
         this.value=value;
         this.count=count;
@@ -36,6 +37,7 @@ public class LC1054Barcodes {
         for(Map.Entry<Integer, Integer> m:map.entrySet()){
             pq.offer(new Node1(m.getKey(),m.getValue()));
         }
+
         int[] result=new int[barcodes.length];
         int i=0;
 

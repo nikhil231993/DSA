@@ -7,17 +7,21 @@ import java.util.PriorityQueue;
 
 class NodeValue{
 
-    int value;
-    int valueColInArr;
-    int  valueRowInArr;
+    protected int value;
+    protected int valueColInArr;
+    protected int  valueRowInArr;
+
     public NodeValue(int value, int valueColInArr, int valueRowInArr){
         this.value=value;
         this.valueColInArr=valueColInArr;
         this.valueRowInArr=valueRowInArr;
     }
 }
+
 public class LC632SmallestRangeFromKList {
+
     public static void main(String[] args) {
+
         List<List<Integer>> arr=new ArrayList<>();
         List<Integer> a1= Arrays.asList(4, 10, 15,24,26);
         List<Integer> a2= Arrays.asList(0,9, 12, 20);
@@ -32,7 +36,9 @@ public class LC632SmallestRangeFromKList {
         for(int n:res)
             System.out.println(n);
     }
+
     public static int[] smallestRange(List<List<Integer>> nums) {
+
         int k=nums.size();
 
         int min=Integer.MAX_VALUE;
@@ -67,6 +73,7 @@ public class LC632SmallestRangeFromKList {
             }
         }
         return new int[]{start,end};
+
         //TC:O(n*klog k)
         //SC:O(log k)
     }

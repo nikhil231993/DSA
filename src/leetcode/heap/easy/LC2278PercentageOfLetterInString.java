@@ -1,6 +1,6 @@
 package leetcode.heap.easy;
 
-public class LC2278PercentageOfLetterInAtring {
+public class LC2278PercentageOfLetterInString {
 
     public static void main(String[] args) {
 

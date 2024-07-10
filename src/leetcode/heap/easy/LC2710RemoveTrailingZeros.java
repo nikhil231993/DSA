@@ -32,6 +32,7 @@ public class LC2710RemoveTrailingZeros {
         //TC:O(n)
         //SC:O(1)
     }
+
     public static String removeTrailingZerosOptimised(String num) {
 
         int endIndex = num.length()-1;

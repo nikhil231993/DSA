@@ -27,5 +27,8 @@ public class LC2530MaximalScore {
             k--;
         }
         return sum;
+
+        //TC:O(n log n)
+        //SC:O(n)
     }
 }

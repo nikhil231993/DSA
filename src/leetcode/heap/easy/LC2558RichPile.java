@@ -28,6 +28,7 @@ public class LC2558RichPile {
             sum+=pq.poll();
         }
         return sum;
+
         //TC:O(n log n)
         //SC:O(n)
     }

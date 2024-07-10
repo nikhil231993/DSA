@@ -5,8 +5,9 @@ import java.util.Map;
 import java.util.PriorityQueue;
 
 class NodeCharacter {
-    int freq;
-    Character value;
+
+    protected int freq;
+    protected Character value;
 
     public NodeCharacter(int freq, Character value){
         this.freq=freq;
@@ -35,12 +36,12 @@ public class LC451SortCharacterByFrequency {
             map.put(c, map.getOrDefault(c, 0) + 1);
         }
 
-    PriorityQueue<NodeCharacter> pq = new PriorityQueue<>((a, b) -> a.freq == b.freq ? b.value.compareTo(a.value) : a.freq - b.freq);
-        for(Map.Entry<Character, Integer> m:map.entrySet()) {
-           pq.offer(new NodeCharacter(m.getValue(), m.getKey()));
-    }
+        PriorityQueue<NodeCharacter> pq = new PriorityQueue<>((a, b) -> a.freq == b.freq ? b.value.compareTo(a.value) : a.freq - b.freq);
+            for(Map.Entry<Character, Integer> m:map.entrySet()) {
+               pq.offer(new NodeCharacter(m.getValue(), m.getKey()));
+        }
 
-    PriorityQueue<NodeCharacter> pq1 = new PriorityQueue<>((a, b) -> a.freq == b.freq ? a.value.compareTo(b.value) : b.freq - a.freq);
+        PriorityQueue<NodeCharacter> pq1 = new PriorityQueue<>((a, b) -> a.freq == b.freq ? a.value.compareTo(b.value) : b.freq - a.freq);
         while(!pq.isEmpty()){
             Character s1 = pq.peek().value;
             int freq = pq.peek().freq;

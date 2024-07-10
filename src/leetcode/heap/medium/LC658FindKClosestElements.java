@@ -41,6 +41,7 @@ public class LC658FindKClosestElements {
             result.add(arr[left+i]);
         }
         return result;
+
         //TC:log n
         //SC:O(1)
     }
@@ -50,19 +51,20 @@ public class LC658FindKClosestElements {
         int left=0;
         int right=arr.length-1;
         while(right-left>=k){
-            if(Math.abs(arr[left]-x)>Math.abs(arr[right]-x))//we can write anyway this line as it is abs value
+            if(Math.abs(arr[left]-x)>Math.abs(arr[right]-x)) //we can write anyway this line as it is abs value
                 left++;
             else
                 right--;
         }
         List<Integer> result=new ArrayList();
-        for(int i=left;i<=right;i++)
-        {
+
+        for(int i=left;i<=right;i++) {
             result.add(arr[i]);
         }
         return result;
-        //TC:o(n-k)
-        //sc:O(1)
+
+        //TC:O(n-k)
+        //SC:O(1)
     }
 
     public static  List<Integer> findClosestElements(int[] arr, int k, int x) {
@@ -82,6 +84,7 @@ public class LC658FindKClosestElements {
         }
         Collections.sort(result);
         return result;
+
         //TC:O(nlogk)
         //SC:o(n) in worst case
     }

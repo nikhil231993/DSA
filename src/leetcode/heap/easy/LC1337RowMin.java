@@ -4,8 +4,9 @@ import java.util.PriorityQueue;
 
 class Node{
 
-    int row;
-    int count;
+    protected int row;
+    protected int count;
+
     public Node(int row, int count){
         this.row=row;
         this.count=count;

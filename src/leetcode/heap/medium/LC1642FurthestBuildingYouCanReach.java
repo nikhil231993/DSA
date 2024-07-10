@@ -10,6 +10,7 @@ public class LC1642FurthestBuildingYouCanReach {
         int bricks = 5, ladders = 1;
         System.out.println(furthestBuilding(heights,bricks,ladders));
     }
+
     public static int furthestBuilding(int[] heights, int bricks, int ladders) {
 
         PriorityQueue<Integer> pq=new PriorityQueue();

@@ -5,9 +5,11 @@ import java.util.Collections;
 import java.util.PriorityQueue;
 
 class SubNode{
-    int val;
-    int arrPos;
-    int valPosInArr;
+
+    protected int val;
+    protected int arrPos;
+    protected int valPosInArr;
+
     public SubNode(int val, int arrPos, int valPosInArr){
         this.val=val;
         this.arrPos=arrPos;
@@ -15,20 +17,21 @@ class SubNode{
     }
 }
 
-public class MergeKSortedArrayGfg {
+public class GfgMergeKSortedArray {
 
     public static void main(String[] args) {
 
         int k=4;
         int[][] arr=new int[][]{{1,2,3,4},{2,2,3,4},
                 {5,5,6,6},{7,8,9,9}};
-        //Approach 1 Brute
+
+        //Approach 1: Brute
         System.out.println(mergeBruteForce(arr,k));
 
-        //Approach 2 Better
+        //Approach 2: Better
         System.out.println(mergeUsingMinHeap(arr, k));
 
-        //Approach 3
+        //Approach 3: Optimal
         System.out.println(mergeKArrays(arr,k));
     }
 
@@ -41,6 +44,7 @@ public class MergeKSortedArrayGfg {
                 pq.offer(arr[i][j]);
             }
         }
+
         while(!pq.isEmpty())
             list.add(pq.poll());
         return list;

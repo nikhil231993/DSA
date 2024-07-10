@@ -32,9 +32,9 @@ public class LC347TopKFrequentElements {
 
         for(Map.Entry<Integer,Integer> entry:map.entrySet()){//O(N)
             Node n=new Node(entry.getValue(), entry.getKey());
-            pq.offer(n);//log k
+            pq.offer(n); //log k
             if(pq.size()>k)
-                pq.poll();//log k
+                pq.poll(); //log k
         }
 
         while(!pq.isEmpty()){

@@ -6,8 +6,8 @@ public class LC378KthSmallestInASortedMatrix {
 
     public static void main(String[] args) {
 
-        int[][] matrix =new int[][] {{1,5,9},{10,12,13},{13,13,15}};
-        int k = 5;
+        int[][] matrix =new int[][] {{1,5,9},{10,11,13},{12,13,15}};
+        int k = 8;
 
         //Approach 1:
         System.out.println(kthSmallest(matrix,k));
@@ -24,11 +24,13 @@ public class LC378KthSmallestInASortedMatrix {
 
         while(lowest<=highest){
             int mid=lowest+(highest-lowest)/2;
-            int count= countLessOrEqual(mid,matrix,k);
+            int count = countLessOrEqual(mid,matrix,k);
             if(count<k)
                 lowest=mid+1;
-            else
+            else{
                 highest=mid-1;
+            }
+
         }
         return lowest;
     }
@@ -63,6 +65,7 @@ public class LC378KthSmallestInASortedMatrix {
             }
         }
         return pq.peek();
+
         //TC:O(n square log k)
         //SC:O(k)
     }

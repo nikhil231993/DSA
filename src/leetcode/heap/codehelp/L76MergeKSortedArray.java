@@ -6,9 +6,9 @@ import java.util.PriorityQueue;
 
 class NodeValue{
 
-    int value;
-    int valueColInArr;
-    int  valueRowInArr;
+    protected int value;
+    protected int valueColInArr;
+    protected int  valueRowInArr;
 
     public NodeValue(int value, int valueColInArr, int valueRowInArr){
 
@@ -17,7 +17,9 @@ class NodeValue{
         this.valueRowInArr=valueRowInArr;
     }
 }
+
 public class L76MergeKSortedArray {
+
     public static void main(String[] args) {
 
         int k=4;
@@ -25,7 +27,7 @@ public class L76MergeKSortedArray {
                 {5,5,6,6},{7,8,9,9}};
 
         //Approach 1:
-        int[] r=mergeKArrays(arr,k);
+        int[] r = mergeKArrays(arr,k);
 
         for(Integer num:r)
             System.out.println(num);
@@ -69,7 +71,7 @@ public class L76MergeKSortedArray {
 
         int i=0;
         for(int[] a: arr){
-            for(int num:a){
+            for(int num : a){
                 result[i++]=num;
             }
         }

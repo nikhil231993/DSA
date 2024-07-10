@@ -30,7 +30,7 @@ public class L75MergeTwoBinaryHeaps {
         buildHeap(arr,arr.length);
         return arr;
 
-        //TC:O(n+m) build heap time complexity+O(n) to for arr array
+        //TC:O(n+m) build heap time complexity + O(n) to for arr array
         //SC:O(n+m)
     }
 

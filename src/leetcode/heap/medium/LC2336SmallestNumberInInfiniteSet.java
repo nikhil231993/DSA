@@ -6,8 +6,8 @@ import java.util.Set;
 
 class SmallestInfiniteSet {
 
-    PriorityQueue<Integer> pq=new PriorityQueue<>();
-    Set<Integer> set=new HashSet();
+    private PriorityQueue<Integer> pq=new PriorityQueue<>();
+    private Set<Integer> set=new HashSet();
 
     public SmallestInfiniteSet() {
         for(int i=1;i<=1000;i++){
@@ -30,6 +30,7 @@ class SmallestInfiniteSet {
         }
     }
 }
+
 public class LC2336SmallestNumberInInfiniteSet {
 
     public static void main(String[] args) {

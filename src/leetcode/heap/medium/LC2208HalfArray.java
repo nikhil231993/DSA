@@ -26,10 +26,11 @@ public class LC2208HalfArray {
             double newNum=num/2;
             newSum+=newNum;
             pq.offer(newNum);
-            if(newSum<=sum/2.0)
+            if(newSum<=(sum/2.0))
                 return count;
         }
         return 0;
+
         //TC:O(n log n)
         //SC:O(n)
     }

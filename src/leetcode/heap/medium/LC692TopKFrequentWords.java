@@ -4,8 +4,8 @@ import java.util.*;
 
 class NodeString{
 
-    int freq;
-    String value;
+    protected int freq;
+    protected String value;
 
     public NodeString(int freq, String value){
         this.freq=freq;
@@ -15,13 +15,15 @@ class NodeString{
 
 class NodeStr {
 
-    int count;
-    String str;
+    protected int count;
+    protected String str;
+
     public NodeStr(int count, String str) {
         this.count = count;
         this.str = str;
     }
 }
+
 public class LC692TopKFrequentWords {
 
     public static void main(String[] args) {

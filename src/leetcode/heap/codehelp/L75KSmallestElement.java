@@ -50,7 +50,7 @@ public class L75KSmallestElement {
         }
         return pq.peek();
 
-        //TC:o(Nlogk)
+        //TC:O(N log k)
         //SC:O(k)
     }
 }

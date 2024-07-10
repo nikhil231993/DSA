@@ -4,7 +4,7 @@ import java.util.PriorityQueue;
 
 class SeatManager {
 
-    PriorityQueue<Integer> pq=new PriorityQueue();
+    private PriorityQueue<Integer> pq=new PriorityQueue();
 
     public SeatManager(int n) {
 
@@ -22,6 +22,7 @@ class SeatManager {
         pq.offer(seatNumber);
     }
 }
+
 public class LC1845SeatManager {
 
     public static void main(String[] args) {

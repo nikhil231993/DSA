@@ -15,7 +15,7 @@ public class LC767ReorganizeString {
 
         HashMap<Character, Integer> counts=new HashMap<>();
 
-        for(Character c:s.toCharArray()){
+        for(Character c : s.toCharArray()){
             counts.put(c, counts.getOrDefault(c,0)+1);
         }
 
@@ -50,7 +50,7 @@ public class LC767ReorganizeString {
         }
         return sb.toString();
 
-        //TC:o(nlogn)
-        //SC:o(n) worst case
+        //TC:O(n log n)
+        //SC:O(n) worst case
     }
 }
