@@ -11,11 +11,11 @@ public class LC2226MaximumCandies{
 
     public static int maximumCandies(int[] candies, long k) {
 
-        int low=1;
-        int high=Integer.MIN_VALUE;
+        int low=1, high=Integer.MIN_VALUE;
         for(int i=0;i<candies.length;i++){
             high=Math.max(high, candies[i]);
         }
+
         int ans=0;
         while(low<=high){
             int mid=low+(high-low)/2;
@@ -27,8 +27,8 @@ public class LC2226MaximumCandies{
             }
         }
         return ans;
-
     }
+
     public static boolean isPossible(int mid, int[] candies, long n){
 
         long count=0;

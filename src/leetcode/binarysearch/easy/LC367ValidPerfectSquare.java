@@ -4,8 +4,8 @@ public class LC367ValidPerfectSquare {
 
     public static void main(String[] args) {
 
-        int num=9;
-        System.out.println(num);
+        int num=5;
+        System.out.println(isPerfectSquare(num));
     }
 
     public static boolean isPerfectSquare(int num) {

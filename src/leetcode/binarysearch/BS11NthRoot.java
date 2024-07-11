@@ -10,8 +10,7 @@ public class BS11NthRoot {
 
     public static int NthRoot(int n, int m) {
 
-        int low=1;
-        int high=m;
+        int low=1, high=m;
         while(low<=high){
             int mid=low+(high-low)/2;
 

@@ -6,7 +6,8 @@ public class BS5SearchInRotatedArray2LC81 {
 
         //NOTE: Index can be found using only linear search
 
-        int[] nums=new int[]{7,8,1,2,3,3,3,4,5,6};;
+        int[] nums=new int[]{7,8,1,2,3,3,3,4,5,6};
+        //int[] nums=new int[]{3,1,2,3,3,3,3,3};
         int target=3;
         System.out.println(search(nums,target));
     }

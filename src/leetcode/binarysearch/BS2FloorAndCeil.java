@@ -6,8 +6,8 @@ public class BS2FloorAndCeil {
 
         int[] arr=new int[]{2,4,6,8,8,8,11,13};
         int x=10;
-        System.out.println("Ceil index is: " +ceil(arr,x));
-        System.out.println("floor index is: " +floorMethod(arr,x));
+        System.out.println("Ceil index is: " + ceil(arr,x));
+        System.out.println("floor index is: " + floorMethod(arr,x));
     }
 
     private static int floorMethod(int[] arr, int x) {
@@ -26,10 +26,10 @@ public class BS2FloorAndCeil {
                 high=mid-1;
             }
         }
-            if(ans==-1)
-                return -1;
-            else 
-            	return arr[ans];
+        if(ans==-1)
+            return -1;
+        else
+            return arr[ans];
 
         //TC:O(log n)
         //SC:O(1)
@@ -37,7 +37,7 @@ public class BS2FloorAndCeil {
 
     private static int ceil(int[] arr, int x) {
 
-    	//smallest number which is >=x
+    	//smallest number which is >=x which is equal to lower bound
         int n=arr.length;
         int low=0;
         int high=n-1;

@@ -11,11 +11,11 @@ public class LC2064ProductsDistributionToStore {
 
     public static int minimizedMaximum(int n, int[] quantities) {
 
-        int low=1;
-        int high=Integer.MIN_VALUE;
+        int low=1, high=Integer.MIN_VALUE;
         for(int i=0;i<quantities.length;i++){
             high=Math.max(high, quantities[i]);
         }
+
         int ans=-1;
         while(low<=high){
             int mid=low+(high-low)/2;

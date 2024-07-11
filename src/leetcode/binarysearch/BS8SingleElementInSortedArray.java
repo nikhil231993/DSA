@@ -15,7 +15,7 @@ public class BS8SingleElementInSortedArray {
 
     private static int xor(int[] nums) {
 
-             int ans=0;
+        int ans=0;
          for(int i=0;i<nums.length;i++){
              ans=ans^nums[i];
          }

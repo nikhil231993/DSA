@@ -4,19 +4,20 @@ public class BS1IntroductionLC704 {
 
     public static void main(String[] args) {
 
-        //Note: If binary search question comes up in interview tell interviewer first about linear search(brute force)
+        //Note: If binary search question comes up in interview tell interviewer first about linear search (brute force)
         // and then move to binary search(optimal)
+
         int[] a = {3, 4, 6, 7, 9, 12, 16, 17};
         int target = 6;
 
-        //Approach 1
+        //Approach 1: Iterative
         int ind = binarySearch(a, target);
         if (ind == -1)
             System.out.println("The target is not present.");
         else
             System.out.println("The target is at index: " + ind);
 
-        //Approach 2
+        //Approach 2: Recursive
         ind = searchRecursion(a, target);
         if (ind == -1)
             System.out.println("The target is not present.");

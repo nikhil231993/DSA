@@ -10,6 +10,9 @@ public class BS9FindPeakElementLC852 {
 
     public static int peakIndexInMountainArray(int[] arr) {
 
+        //Here we need to understand that if we go to max value side we will find the peak element as it cannot be on the
+        //other side which is less basically left side
+
         int n=arr.length-1;
         int low = 1, high = n-1;
         if(arr[0]>arr[1])
@@ -28,6 +31,6 @@ public class BS9FindPeakElementLC852 {
         return -1;
 
         //TC:O(log n)
-        //SC:o(1)
+        //SC:O(1)
     }
 }

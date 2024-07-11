@@ -5,7 +5,6 @@ public class LC1351CountNegativeNumbersInGrid {
     public static void main(String[] args) {
 
         int[][] grid=new int[][]{{4,3,2,-1},{3,2,1,-1},{1,1,-1,-2},{-1,-1,-2,-3}};
-
         System.out.println(countNegative(grid));
     }
 

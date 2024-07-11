@@ -32,16 +32,13 @@ public class LC1760MinimumBallsInABag {
 
         //TC:O(nlogn)
         //sc:O(n)
-
     }
 
     public static boolean canSplit(int mid, int[] nums, int op){
 
-        int count=0;
         int operations=0;
         for(int i=0;i<nums.length;i++){
             operations+=(nums[i]-1)/mid;//mid is the desired weight. This is the formula to find operations
-
         }
         if(operations>op)
             return false;

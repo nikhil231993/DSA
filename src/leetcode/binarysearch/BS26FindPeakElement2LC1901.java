@@ -69,10 +69,8 @@ public class BS26FindPeakElement2LC1901 {
         for(int i=0;i<n;i++){
             for(int j=0;j<m;j++){
 
-                int left=Integer.MIN_VALUE;
-                int right=Integer.MIN_VALUE;
-                int top=Integer.MIN_VALUE;
-                int bottom=Integer.MIN_VALUE;
+                int left=Integer.MIN_VALUE, right=Integer.MIN_VALUE;
+                int top=Integer.MIN_VALUE, bottom=Integer.MIN_VALUE;
 
                 if(j-1>=0)
                     left=mat[i][j-1];

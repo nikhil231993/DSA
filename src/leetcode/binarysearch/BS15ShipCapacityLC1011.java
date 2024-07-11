@@ -20,10 +20,8 @@ public class BS15ShipCapacityLC1011 {
             max=Math.max(max,weights[i]);
             totalWeights+=weights[i];
         }
-        int low=max;
-        int high=totalWeights;
-        int ans=0;
-        while(low<=high){//log n
+        int low=max, high=totalWeights, ans=0;
+        while(low<=high){ //log n
             int mid=low+(high-low)/2;
             if(isPossible(mid,weights,days)){
                 high=mid-1;

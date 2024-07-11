@@ -4,14 +4,15 @@ import java.util.PriorityQueue;
 
 class Node{
 
-    double first;
-    int second;
+    protected double first;
+    protected int second;
 
     public Node(double first, int second){
         this.first=first;
         this.second=second;
     }
 }
+
 public class BS20MinimiseMaxGasDifference {
 
     public static void main(String[] args) {
@@ -47,7 +48,7 @@ public class BS20MinimiseMaxGasDifference {
         }
         return pq.peek().first;
 
-        //TC:O(n logn) + O(k log (n-1))
+        //TC:O(n log n) + O(k log (n-1))
         //SC:O(n-1)
     }
 
@@ -60,8 +61,8 @@ public class BS20MinimiseMaxGasDifference {
             int maxIndex=Integer.MIN_VALUE;
 
             for(int i=0;i<arr.length-1;i++){
-                double difference=arr[i+1]-arr[i];
-                double sectionLength=difference/(howMany[i]+1);
+                double difference = arr[i+1]-arr[i];
+                double sectionLength = difference/(howMany[i]+1);
                 if(sectionLength > maxDiff){
                     maxDiff=sectionLength;
                     maxIndex=i;
@@ -73,7 +74,7 @@ public class BS20MinimiseMaxGasDifference {
         double max=Integer.MIN_VALUE;
         for(int i=0;i<arr.length-1;i++){
             double diff=arr[i+1]-arr[i];
-            double ans=diff/(double)(howMany[i]+1);
+            double ans = diff / (double)(howMany[i]+1);
             max=Math.max(max, ans);
         }
         return max;
@@ -101,7 +102,7 @@ public class BS20MinimiseMaxGasDifference {
         }
         return ans;
 
-        //TC:O( nlog n)+O(n)
+        //TC:O( n log n) + O(n)
         //SC:O(1)
     }
 

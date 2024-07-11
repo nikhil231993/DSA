@@ -29,7 +29,6 @@ public class LC1608SpecialArray {
             }
         }
         return -1;
-
     }
 
     public static int find(int mid, int[] nums){

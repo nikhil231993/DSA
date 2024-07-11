@@ -6,8 +6,11 @@ public class BS12KokoEatingBananaLC875 {
 
         int[] piles=new int[]{3,6,7,11};
         int h=8;
-//        int[] piles =new int[] {30,11,23,4,20};
-//        int h = 5;
+        //int[] piles =new int[] {30,11,23,4,20};
+        //int h = 5;
+
+        //Why low cannot be minimum form array. Try below example
+        //piles =[312884470]    h =312884469     Expected =2
         System.out.println(minimumCount(piles,h));
     }
 

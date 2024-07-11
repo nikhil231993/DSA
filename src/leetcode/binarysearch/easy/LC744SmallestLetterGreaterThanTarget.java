@@ -16,7 +16,7 @@ public class LC744SmallestLetterGreaterThanTarget {
         char ans=letters[0];
         while(low<=high){
             int mid=low+(high-low)/2;
-            if(letters[mid]-'a'>(target-'a')){
+            if(letters[mid]-'a'> (target-'a')){
                 ans=letters[mid];
                 high=mid-1;
             }else{
@@ -25,7 +25,7 @@ public class LC744SmallestLetterGreaterThanTarget {
         }
         return ans;
         
-        //TC:O(nlogn)
+        //TC:O(n log n)
         //S:O(1)
     }
 }

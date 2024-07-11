@@ -10,8 +10,7 @@ public class LC278FirstBadVersion {
 
     public static int firstBadVersion(int n) {
 
-        int low=1;
-        int high=n;
+        int low=1, high=n;
         int ans=-1;
         while(low<=high){
             int mid=low+(high-low)/2;
@@ -23,7 +22,7 @@ public class LC278FirstBadVersion {
         }
         return ans;
         
-        //TC:O(nlogn)
+        //TC:O(n log n)
         //SC:O(1)		
     }
 

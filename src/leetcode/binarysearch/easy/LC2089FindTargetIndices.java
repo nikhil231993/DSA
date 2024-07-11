@@ -33,8 +33,7 @@ public class LC2089FindTargetIndices {
 
 		List<Integer> list = new ArrayList();
 		Arrays.sort(nums);
-		int firstPosition = -1;
-		int lastPosition = -1;
+		int firstPosition = -1, lastPosition = -1;
 
 		firstPosition = firstOccurrence(nums, target);
 		lastPosition = lastOccurrence(nums, target);
@@ -49,8 +48,7 @@ public class LC2089FindTargetIndices {
 
 	private static int lastOccurrence(int[] nums, int target) {
 
-		int low = 0;
-		int high = nums.length - 1;
+		int low = 0, high = nums.length - 1;
 		int ans = -1;
 
 		while (low <= high) {
@@ -72,8 +70,7 @@ public class LC2089FindTargetIndices {
 
 	private static int firstOccurrence(int[] nums, int target) {
 
-		int low = 0;
-		int high = nums.length - 1;
+		int low = 0, high = nums.length - 1;
 		int ans = -1;
 
 		while (low <= high) {

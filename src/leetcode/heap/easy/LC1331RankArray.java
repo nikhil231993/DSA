@@ -3,14 +3,18 @@ package leetcode.heap.easy;
 import java.util.PriorityQueue;
 
 class NodeRank{
-    int element;
-    int pos;
+
+    protected int element;
+    protected int pos;
+
     public NodeRank(int element, int pos){
         this.element=element;
         this.pos=pos;
     }
 }
-public class LC1338RankArray {
+
+public class LC1331RankArray {
+
     public static void main(String[] args) {
        int[] arr =new int[] {20, 15, 26, 2, 98, 6};
        int[] r=arrayRankTransform(arr);

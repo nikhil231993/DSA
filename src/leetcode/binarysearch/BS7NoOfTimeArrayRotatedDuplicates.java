@@ -11,10 +11,7 @@ public class BS7NoOfTimeArrayRotatedDuplicates {
 
     public static int findKRotation(int nums[], int n) {
 
-        int low=0;
-        int high=n-1;
-        int ans=Integer.MAX_VALUE;
-        int index=-1;
+        int low=0, high=n-1, ans=Integer.MAX_VALUE, index=-1;
         while(low<=high){
             int mid=low+(high-low)/2;
 

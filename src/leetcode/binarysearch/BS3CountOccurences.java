@@ -19,9 +19,7 @@ public class BS3CountOccurences {
 
     private static int lastOccurrence(int[] nums, int target) {
 
-        int low=0;
-        int high=nums.length-1;
-        int ans=-1;
+        int low=0, high=nums.length-1, ans=-1;
         while(low<=high){
             int mid=low+(high-low)/2;
             if(nums[mid]==target) {
@@ -41,9 +39,7 @@ public class BS3CountOccurences {
 
     private static int firstOccurrence(int[] nums, int target) {
 
-        int low=0;
-        int high=nums.length-1;
-        int ans=-1;
+        int low=0, high=nums.length-1, ans=-1;
         while(low<=high){
             int mid=low+(high-low)/2;
             if(nums[mid]==target) {

@@ -4,9 +4,9 @@ public class BS19SplitArrayLargestSumLC410 {
 
     public static void main(String[] args) {
 
-        int[] nums =new int[] {7,2,5,10,8};
+        int[] num = new int[] {7,2,5,10,8};
         int k = 2;
-        System.out.println(splitArray(nums,k));
+        System.out.println(splitArray(num, k));
     }
 
     public static int splitArray(int[] nums, int k) {

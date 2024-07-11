@@ -13,7 +13,7 @@ public class BS13BouquetsLC1482 {
     public static int minDays(int[] bloomDay, int m, int k) {
 
         int n=bloomDay.length;
-        if(n< m*k)
+        if(n < m*k)
             return -1;
         int min=Integer.MAX_VALUE;
         int max=Integer.MIN_VALUE;
@@ -21,9 +21,7 @@ public class BS13BouquetsLC1482 {
             min=Math.min(min, bloomDay[i]);
             max=Math.max(max, bloomDay[i]);
         }
-        int low=min;
-        int high=max;
-        int ans=-1;
+        int low=min, high=max, ans=-1;
         while(low<=high){
             int mid=low+(high-low)/2;
 
@@ -56,6 +54,6 @@ public class BS13BouquetsLC1482 {
         return false;
     }
 
-    //TC:O(log (max-min+1)*n)
+    //TC:O(n * log (max-min+1)) i.e., 7-13
     //SC:O(1)
 }

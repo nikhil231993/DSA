@@ -19,10 +19,8 @@ public class BS25SearchInSortedMatrix2LC240 {
 
     private static boolean searchMatrixOptimized(int[][] matrix, int target) {
 
-        int n=matrix.length;
-        int m=matrix[0].length;
-        int row=0;
-        int col=m-1;
+        int n=matrix.length, m=matrix[0].length;
+        int row=0, col=m-1;
         while(row<n && col>=0){
             if(matrix[row][col]==target)
                 return true;
@@ -38,8 +36,7 @@ public class BS25SearchInSortedMatrix2LC240 {
 
     public static boolean searchMatrixUsingPartialBS(int[][] matrix, int target) {
 
-        int n=matrix.length;
-        int m=matrix[0].length;
+        int n=matrix.length, m=matrix[0].length;
         for(int i=0;i<n;i++){
             if(target>=matrix[i][0] && target<=matrix[i][m-1])
                 if(binarySearch(matrix[i],n,m,target))
@@ -53,8 +50,7 @@ public class BS25SearchInSortedMatrix2LC240 {
 
     public static boolean binarySearch(int[] num, int n, int m, int target){
 
-        int low=0;
-        int high=m-1;
+        int low=0, high=m-1;
         while(low<=high){
             int mid=low+(high-low)/2;
             if(target==num[mid])

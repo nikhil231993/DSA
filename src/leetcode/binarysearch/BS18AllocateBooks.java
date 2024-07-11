@@ -20,9 +20,7 @@ public class BS18AllocateBooks {
             max=Math.max(max,num);
             sum+=num;
         }
-        int low=max;
-        int high=sum;
-        int ans=0;
+        int low=max, high=sum, ans=0;
         while(low<=high){
             int mid=low+(high-low)/2;
             if(possible(mid, arr, m)){

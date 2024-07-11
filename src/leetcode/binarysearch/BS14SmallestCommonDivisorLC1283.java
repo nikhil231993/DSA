@@ -1,6 +1,6 @@
 package leetcode.binarysearch;
 
-public class BS14SmallesCommonDivisorLC1283 {
+public class BS14SmallestCommonDivisorLC1283 {
 
     public static void main(String[] args) {
 
@@ -11,7 +11,8 @@ public class BS14SmallesCommonDivisorLC1283 {
 
     public static int smallestDivisor(int[] nums, int threshold) {
 
-        if(nums.length > threshold)// In case the elements of the array does not have  ans and threshold given is lessthan length
+        if(nums.length > threshold) // In case the elements of the array does not have ans
+            // and threshold given is less than length
             return -1;
 
         int max=Integer.MIN_VALUE;
@@ -19,9 +20,7 @@ public class BS14SmallesCommonDivisorLC1283 {
         for(int i=0;i<n;i++){
             max=Math.max(max,nums[i]);
         }
-        int low=1;
-        int high=max;
-        int ans=-1;
+        int low=1, high=max, ans=-1;
         while(low<=high){
             int mid=low+(high-low)/2;
             if(minValue(nums, mid, threshold)){

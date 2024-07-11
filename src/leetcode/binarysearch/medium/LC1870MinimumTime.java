@@ -14,10 +14,10 @@ public class LC1870MinimumTime {
         double total_hour_so_far = 0;
 
         for(int it = 0; it < dist.length - 1; it++){
-            double h = dist[it]/speed;
-            total_hour_so_far += Math.ceil(h);
+            total_hour_so_far += Math.ceil((double)dist[it]/speed);
 
-            if(total_hour_so_far > hour) return false;
+            if(total_hour_so_far > hour)
+                return false;
         }
         total_hour_so_far += dist[dist.length - 1] / speed;
         return total_hour_so_far <= hour ? true : false;
@@ -25,8 +25,7 @@ public class LC1870MinimumTime {
 
     public static int minSpeedOnTime(int[] dist, double hour) {
 
-        int low = 1;
-        int high = (int)1e7;
+        int low = 1, high = (int)1e7;
         int ans = -1;
 
         while(low <= high){

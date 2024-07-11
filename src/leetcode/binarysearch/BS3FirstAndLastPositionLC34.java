@@ -42,6 +42,7 @@ public class BS3FirstAndLastPositionLC34 {
             }
         }
         return ans;
+
         //TC:O(log n)
         //SC:O(1)
     }

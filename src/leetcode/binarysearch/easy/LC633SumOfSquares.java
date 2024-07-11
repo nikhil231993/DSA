@@ -13,7 +13,7 @@ public class LC633SumOfSquares {
     public static boolean judgeSquareSum(int c) {
 
         int left=0;
-        long right=(long)Math.sqrt(c);
+        long right= (long) Math.sqrt(c);
         while(left<=right){
             long value=left*left + right*right;
             if(value == c){

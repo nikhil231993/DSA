@@ -16,8 +16,7 @@ public class BS16KthMissingPositiveNumberLC1539 {
 
     private static int optimizedKthPositive(int[] arr, int k) {
 
-        int low=0;
-        int high=arr.length-1;
+        int low=0, high=arr.length-1;
 
         while(low<=high){
             int mid=low+(high-low)/2;

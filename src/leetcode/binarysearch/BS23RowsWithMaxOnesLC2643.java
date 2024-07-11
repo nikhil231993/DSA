@@ -52,6 +52,7 @@ public class BS23RowsWithMaxOnesLC2643 {
 
     public static int findSmallestOneIndex(int[] num, int m, int target){
 
+        //find lower bound >=1
         int low=0;
         int high=m-1;
         int ans=m;
@@ -64,6 +65,7 @@ public class BS23RowsWithMaxOnesLC2643 {
                 low=mid+1;
         }
         return ans;
+
         //TC:O(n log m)
         //SC:O(1)
     }

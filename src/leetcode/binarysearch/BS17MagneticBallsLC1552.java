@@ -18,6 +18,7 @@ public class BS17MagneticBallsLC1552 {
         int low=1;
         int high=position[n-1]-position[0];
         int ans=1;
+
         while(low<=high){
             int mid=low+(high-low)/2;
 

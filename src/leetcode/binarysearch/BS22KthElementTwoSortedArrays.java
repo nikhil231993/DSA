@@ -1,6 +1,6 @@
 package leetcode.binarysearch;
 
-public class BS22KThElementTwoSortedArrays {
+public class BS22KthElementTwoSortedArrays {
 
     public static void main(String[] args) {
 
@@ -13,8 +13,7 @@ public class BS22KThElementTwoSortedArrays {
 
     private static int KthElementInTwoSortedArray(int[] nums1, int[] nums2, int k) {
 
-        int n1=nums1.length;
-        int n2=nums2.length;
+        int n1=nums1.length, n2=nums2.length;
         if(n1>n2)
             return KthElementInTwoSortedArray(nums2,nums1,k);
 
@@ -26,10 +25,8 @@ public class BS22KThElementTwoSortedArrays {
         while(low<=high){
             int mid1=low+(high-low)/2;
             int mid2=k-mid1;
-            int l1=Integer.MIN_VALUE;
-            int l2=Integer.MIN_VALUE;
-            int r1=Integer.MAX_VALUE;
-            int r2=Integer.MAX_VALUE;
+            int l1=Integer.MIN_VALUE, l2=Integer.MIN_VALUE;
+            int r1=Integer.MAX_VALUE, r2=Integer.MAX_VALUE;
 
             if(mid1<n1) r1=nums1[mid1];
             if(mid2<n2) r2=nums2[mid2];

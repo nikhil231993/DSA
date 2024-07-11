@@ -12,9 +12,8 @@ public class BS19PaintersPartition {
         System.out.println(splitArray(nums,k));
     }
 
-    public static int splitArray(ArrayList<Integer> boards, int k)
-    {
-        int n=boards.size();
+    public static int splitArray(ArrayList<Integer> boards, int k) {
+
         int max=Integer.MIN_VALUE;
         int sum=0;
 
