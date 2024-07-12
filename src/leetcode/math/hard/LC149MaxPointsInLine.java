@@ -17,8 +17,9 @@ public class LC149MaxPointsInLine {
 
         for(int[] point1:points){
 
-            HashMap<Double, Integer> map=new HashMap<>();//We need to reset map everytime or else the values will get added
+            HashMap<Double, Integer> map=new HashMap<>(); //We need to reset map everytime or else the values will get added
             for(int[] point2: points){
+
                 if(point1==point2)
                     continue;
 

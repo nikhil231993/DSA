@@ -26,6 +26,7 @@ public class LC453MinimumEqual {
 		int min=Integer.MAX_VALUE;
 		for(int n:num)
 			min=Math.min(min, n);
+
 		int ans=0;
 		for(int n:num){
 			ans+=n-min;

@@ -59,6 +59,7 @@ public class LC258AddDigits {
             sum+=num%10;
             num=num/10;
         }
+
         if(sum<10)
             return sum;
         else

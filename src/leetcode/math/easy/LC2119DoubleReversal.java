@@ -6,13 +6,13 @@ public class LC2119DoubleReversal {
 
        int num = 526;
 
-        //Approach 1:
+        //Approach 1: Brute
         System.out.println(isSameAfterReversals(num));
 
-        //Approach 2:
+        //Approach 2: Better
         System.out.println(better(num));
 
-        //approach 3:
+        //approach 3: Best
         System.out.println(best(num));
     }
 

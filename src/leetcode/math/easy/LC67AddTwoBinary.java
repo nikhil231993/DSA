@@ -48,6 +48,9 @@ public class LC67AddTwoBinary {
 		while(!st.isEmpty())
 			s+=st.pop();
 		return s;
+
+		//SC:O(n) for stack
+		//TC:O(2 *n )
 	}
 
 	public static String addBinaryWithoutStringBuilder(String a, String b) {
@@ -81,9 +84,9 @@ public class LC67AddTwoBinary {
 
 		int sum = 0;
 		int carry = 0;
-		int i = a.length() - 1;
-		int j = b.length() - 1;
+		int i = a.length() - 1, j = b.length() - 1;
 		StringBuilder result = new StringBuilder();
+
 		while (i >= 0 || j >= 0) {
 			sum = carry;
 			if (i >= 0) {
@@ -95,7 +98,7 @@ public class LC67AddTwoBinary {
 			result.append(sum % 2);// we can use stack for this step. then we don't have to reverse as we can pop the ans in correct order
 			carry = sum / 2;
 		}
-		if (carry != 0) {
+		if (carry != 0) { // we can use sum instead of carry
 			result.append(carry);
 		}
 		return result.reverse().toString();

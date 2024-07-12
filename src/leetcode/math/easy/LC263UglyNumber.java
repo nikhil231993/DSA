@@ -7,6 +7,7 @@ public class LC263UglyNumber {
         int n=6;
         System.out.println(isUgly(n));
     }
+
     public static boolean isUgly(int n) {
 
         if (n == 0) return false;

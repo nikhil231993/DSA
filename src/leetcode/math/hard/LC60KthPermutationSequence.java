@@ -23,6 +23,7 @@ public class LC60KthPermutationSequence {
         }
         list.add(n);
         String ans="";
+
         while(true){
             ans=ans+ list.get(k/fact);
             list.remove(k/fact);

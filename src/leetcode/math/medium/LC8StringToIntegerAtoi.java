@@ -4,8 +4,9 @@ public class LC8StringToIntegerAtoi {
 
 	public static void main(String[] args) {
 
-		//String s = "2147483648";
-		String s = "2147483646";
+		//String s = "2147483648"; //below commented out code fails for this input as the second last check will be correct but
+		//in the next iteration it becomes negative value
+		String s = "2147483648";
 
 		//Approach 1:
 		System.out.println(myAtoi(s));
@@ -34,8 +35,10 @@ public class LC8StringToIntegerAtoi {
 		int ans = 0;
 		while (i < s.length() && ((int) s.charAt(i) >= 48 && (int) s.charAt(i) <= 57)) {
 
-			int no= s.charAt(i) - '0';
-			if(ans>(Integer.MAX_VALUE-no)/10){
+			int no= s.charAt(i) - '0';//below commented out code fails for this input as the second last check will be correct but
+			//in the next iteration it becomes negative value
+			int calc=(Integer.MAX_VALUE-no)/10;
+			if(ans>calc){
 				if(sign==-1)
 					return Integer.MIN_VALUE;
 				else
@@ -78,7 +81,7 @@ public class LC8StringToIntegerAtoi {
 
 	//If u see in below case it will fail for input "2147483648" because in it will go out of range in next step whereas in reverseInteger case the input is within range
 
-//	public int myAtoi(String s) {
+//	public static int myAtoiTest(String s) {
 //
 //		int i = 0;
 //		while (i < s.length() && s.charAt(i) == ' ') {

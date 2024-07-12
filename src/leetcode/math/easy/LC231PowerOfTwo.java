@@ -48,6 +48,9 @@ public class LC231PowerOfTwo {
         if(n<=0)
           return false;
         return Math.ceil(Math.log(n)/Math.log(2))==Math.floor(Math.log(n)/Math.log(2));
+
+        //TC:O(1)
+        //SC:O(1)
     }
 
     public static boolean isPowerOfTwo(int n) {
@@ -61,6 +64,6 @@ public class LC231PowerOfTwo {
         }
         return true;
 
-        //TC:O(log n) to  base 2 xas divided by 2
+        //TC:O(log n) to  base 2 as the number is getting divided by 2
     }
 }

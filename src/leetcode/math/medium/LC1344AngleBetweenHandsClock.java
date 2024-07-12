@@ -20,13 +20,13 @@ public class LC1344AngleBetweenHandsClock {
         return Math.min(Math.abs(hour_degree-min_degree), 360-Math.abs(hour_degree-min_degree));
     }
 
-    //No need to learn this
+    //Learn this
     public static double angleClock(int hour, int minutes) {
 
         //https://leetcode.com/problems/angle-between-hands-of-a-clock/discuss/502738/JavaPythonC%2B%2B-Simple-Math-on-Clock-angles
         double min_degree=minutes*6;
         double hour_degree=(hour%12)*30+((double)minutes/60)*30; // it will work without %12 also
-        return Math.min(Math.abs(hour_degree-min_degree), 360-Math.abs(hour_degree-min_degree));
+        return Math.min(Math.abs(hour_degree-min_degree), 360-Math.abs(hour_degree-min_degree)); //also it can be min_degree-hour_degree as well
 
         //TC:O(1)
         //SC:O(1)

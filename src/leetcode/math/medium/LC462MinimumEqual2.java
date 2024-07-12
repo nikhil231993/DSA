@@ -36,11 +36,11 @@ public class LC462MinimumEqual2 {
 	public static int minMovesBetter(int[] nums) {
 
 		Arrays.sort(nums);
-		int left = 0;
-		int right = nums.length - 1;
+		int left = 0, right = nums.length - 1;
 		int minMoves = 0;
+
 		while (left < right) {
-			minMoves += Math.abs(nums[left++] - nums[right--]);
+			minMoves += Math.abs(nums[left++] - nums[right--]); // abs is not needed as left > right
 		}
 		return minMoves;
 

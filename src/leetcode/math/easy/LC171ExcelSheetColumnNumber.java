@@ -7,6 +7,7 @@ public class LC171ExcelSheetColumnNumber {
 		String s="ABC";
 		System.out.println(titleToNumber(s));
 	}
+
 	public static int titleToNumber(String s) {
 
 		int result = 0;

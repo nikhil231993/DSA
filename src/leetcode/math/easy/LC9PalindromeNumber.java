@@ -6,10 +6,10 @@ public class LC9PalindromeNumber {
 
 		int x = 2147447412;
 
-		//Approach 1
+		//Approach 1:
 		System.out.println(isPalindromeUsingString(x));
 
-		//Approach 2
+		//Approach 2:
 		System.out.println(isPalindrome(x));
 	}
 

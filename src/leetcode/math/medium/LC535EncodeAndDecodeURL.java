@@ -19,7 +19,6 @@ public class LC535EncodeAndDecodeURL {
 
 	private static String encode(String longUrl, HashMap<String, String> urlMapping, HashMap<String, String> code) {
 
-
 		//https://leetcode.com/problems/encode-and-decode-tinyurl/solutions/1110551/js-python-java-c-easy-map-solution-w-explanation/?orderBy=most_votes
 		if (urlMapping.containsKey(longUrl))
 			return urlMapping.get(longUrl);

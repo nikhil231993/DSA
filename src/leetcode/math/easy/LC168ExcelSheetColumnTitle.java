@@ -4,7 +4,7 @@ public class LC168ExcelSheetColumnTitle {
 
 	public static void main(String[] args) {
 
-		System.out.println((char)(35+'A'));
+		//System.out.println((char)(35+'A'));
 
 		int columnNumber = 674;
 		System.out.println(convertToTitle(columnNumber));

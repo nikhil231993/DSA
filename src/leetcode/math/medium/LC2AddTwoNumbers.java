@@ -1,9 +1,10 @@
 package leetcode.math.medium;
 
 class ListNode {
-      int val;
 
-      ListNode next;
+      protected int val;
+
+      protected ListNode next;
 
       ListNode() {}
 
@@ -16,6 +17,7 @@ class ListNode {
           this.next = next;
       }
  }
+
 public class LC2AddTwoNumbers {
 
     public static void main(String[] args) {
@@ -66,7 +68,7 @@ public class LC2AddTwoNumbers {
         }
         return l.next;
 
-        //TC:O(n) where n is the length of the largest LinekdList
+        //TC:O(n) where n is the length of the largest LinkedList
         //SC:O(n) length of the new LinkedList
     }
 }

@@ -20,7 +20,7 @@ public class LC7ReverseInteger {
 		}
 		return ans;
 
-		// TC:O(n) where n is the length of the integer
-		// SC:O(1)
+		// TC: O(n) where n is the length of the integer
+		// SC: O(1)
 	}
 }
