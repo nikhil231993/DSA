@@ -2,6 +2,8 @@ package leetcode.designPatterns.creational.singleton.example1;
 
 public class Singleton {
 
+    //https://www.geeksforgeeks.org/java-singleton-design-pattern-practices-examples/
+
     private static Singleton singleton=null;
 
     private Singleton(){
