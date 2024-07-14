@@ -37,8 +37,7 @@ public class LC125ValidPalindrome {
 
 		String str = s.toLowerCase();
 		
-		int start=0;
-		int end=str.length()-1;
+		int start=0, end=str.length()-1;
 		
 		while (start < end) {
 			while (start < end && !(((int) str.charAt(start) >= 97) && ((int) str.charAt(start) <= 122)

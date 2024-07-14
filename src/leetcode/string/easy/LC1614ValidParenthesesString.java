@@ -19,6 +19,7 @@ public class LC1614ValidParenthesesString {
 
         int max=Integer.MIN_VALUE;
         Stack<Character> st=new Stack();
+
         for(int i=0;i<s.length();i++){
             char ch=s.charAt(i);
             if(ch=='('){
@@ -41,14 +42,14 @@ public class LC1614ValidParenthesesString {
     public static int maxDepthBetter(String s) {
 
         int max=Integer.MIN_VALUE;
-        Stack<Character> st=new Stack();
-        int count=0, depth=0;;
+        int count=0;
+
         for(int i=0;i<s.length();i++){
             char ch=s.charAt(i);
             if(ch=='('){
                 count++;
-            }else if(ch==')'){
                 max=Math.max(max,count);
+            }else if(ch==')'){
                 count--;
             }
         }

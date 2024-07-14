@@ -6,7 +6,7 @@ public class LC227BasicCalculator2 {
 
 	public static void main(String[] args) {
 		
-		String s = " 3-5 / 2 ";
+		String s = " 3-5 / 2  ";
 	    System.out.println(calculate(s));
 	}
 
@@ -18,6 +18,7 @@ public class LC227BasicCalculator2 {
 		char ch;
 		int currentNumber=0;
 		char operation='+';
+
 		for(int i=0;i<s.length();i++){
 			ch=s.charAt(i);
 			if(Character.isDigit(ch)){

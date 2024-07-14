@@ -11,10 +11,10 @@ public class LC14LongestCommonPrefix {
 
 		String[] s = new String[] { "flower", "flow", "flight" };
 
-		//Approach 1
+		//Approach 1:
 		System.out.println(longestCommonPrefix(s));
 
-		//Approach 2
+		//Approach 2:
 		System.out.println(longestCommonPrefixWithWhile(s));
 	}
 

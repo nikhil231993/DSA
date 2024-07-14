@@ -12,6 +12,7 @@ public class LC12IntegerToRoman {
         
         int[] numR=new int[]{1000,900,500,400,100,90,50,40,10,9,5,4,1};
         String[] roman=new String[]{"M","CM","D","CD","C","XC","L","XL","X","IX","V","IV","I"};
+
         StringBuilder sb=new StringBuilder();
         for(int i=0;i<numR.length;i++){
             while(num>=numR[i]){
@@ -21,7 +22,7 @@ public class LC12IntegerToRoman {
         }
         return sb.toString();
 
-        //SC:O(2*13) to store both array and and result string
+        //SC:O(2*13) to store both array and result string
         //TC: It depends on how many times both loop runs
     }
 }

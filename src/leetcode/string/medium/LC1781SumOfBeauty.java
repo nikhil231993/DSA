@@ -13,8 +13,7 @@ public class LC1781SumOfBeauty {
 
     public static int beautySum(String s) {
 
-        int n=s.length();
-        int sum=0;
+        int n=s.length(), sum=0;
 
         for(int i=0;i<n;i++){
 

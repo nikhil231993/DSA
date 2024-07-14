@@ -33,6 +33,7 @@ public class LC22GenerateParenthesis {
 		if (right < left) {
 			generate(n, left, right + 1, s + ")", result);
 		}
+
 		//TC:O(2 raise to n)
 	}
 }

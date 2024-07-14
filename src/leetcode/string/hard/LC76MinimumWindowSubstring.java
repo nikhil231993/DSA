@@ -17,6 +17,7 @@ public class LC76MinimumWindowSubstring {
     public static String minWindow(String s, String t) {
 
         int startingIndex=-1, right=0, left=0, n=s.length(), count=0;
+
         Integer minLen=Integer.MAX_VALUE;
         HashMap<Character, Integer> map=new HashMap<>();
 
@@ -30,7 +31,7 @@ public class LC76MinimumWindowSubstring {
                 count++;
             map.put(s.charAt(right), map.getOrDefault(s.charAt(right),0)-1);
 
-            while(count==t.length()){// while cannot be replaced with if as we have to shrink it
+            while(count==t.length()){ // while cannot be replaced with if as we have to shrink it
 
                 if(right-left+1<minLen){
                     minLen=right-left+1;

@@ -12,9 +12,7 @@ public class LC65ValidNumber {
 
         s=s.trim();
 
-        boolean numberSeen=false;
-        boolean expoSeen=false;
-        boolean decimalSeen=false;
+        boolean numberSeen=false, expoSeen=false, decimalSeen=false;
 
         for(int i=0;i<s.length();i++){
             switch(s.charAt(i)){

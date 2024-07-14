@@ -6,7 +6,7 @@ public class LC71SimplifyPath {
 
 	public static void main(String[] args) {
 
-		String path = "/home//foo/";
+		String path = "/home/user/Documents/../Pictures";
 		System.out.println(simplifyPath(path));
 	}
 
@@ -19,8 +19,8 @@ public class LC71SimplifyPath {
 				continue;
 			String temp="";
 			while (i < path.length() && path.charAt(i) != '/') {
-			temp+=path.charAt(i);
-			i++;
+				temp+=path.charAt(i);
+				i++;
 			}
 			if (temp.equals("."))
 				continue;

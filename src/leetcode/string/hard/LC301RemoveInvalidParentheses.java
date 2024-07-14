@@ -44,7 +44,7 @@ public class LC301RemoveInvalidParentheses {
                 found = true;
             }
 
-            if (found) continue; // if we find tru once then there is no point in reducing size further as that is the minimum
+            if (found) continue; // if we find true once then there is no point in reducing size further as that is the minimum
 
             // generate all possible states
             for (int i = 0; i < s.length(); i++) {
@@ -60,7 +60,6 @@ public class LC301RemoveInvalidParentheses {
                 }
             }
         }
-
         return res;
     }
 

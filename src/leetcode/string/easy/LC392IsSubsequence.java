@@ -12,10 +12,8 @@ public class LC392IsSubsequence {
 
         if(s.length()==0)
             return true;
-        int i=0;
-        int j=0;
-        int n1=s.length();
-        int n2=t.length();
+        int i=0, j=0;
+        int n1=s.length(), n2=t.length();
         while(i<n1 && j<n2){ // i<n1 is also not needed
             if(s.charAt(i)==t.charAt(j)){
                 i++;

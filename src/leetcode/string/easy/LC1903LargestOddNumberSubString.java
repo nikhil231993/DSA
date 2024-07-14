@@ -3,6 +3,7 @@ package leetcode.string.easy;
 public class LC1903LargestOddNumberSubString {
 
     public static void main(String[] args) {
+
         String num = "35427";
         System.out.println(largestOddNumber(num));
     }

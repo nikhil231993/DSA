@@ -15,9 +15,9 @@ public class LC5LongestPalandromicSubstring {
 
 	public static String longestPalindrome(String s) {
 
-		int n=s.length();
-		int len=0;
+		int n=s.length(), len=0;
 		String sub="";
+
 		for(int i=0;i<n;i++){
 			int left=i, right=i;
 

@@ -3,10 +3,14 @@ package leetcode.string.medium;
 public class MaximumSubArraySum {
 
 	public static void main(String[] args) {
+
 		int[] num = new int[] { -2, -3, 4, -1, -2, 1, 5, -3 };
+
 		System.out.println(maxSubArray(num));
+
 		// optimizing
 		System.out.println(maxSubArrayOptimizing(num));
+
 		// kadnes algorithm states atht if sum is less than 0 reset sum to 0 else
 		// continue;
 		System.out.println(maxSubArrayKdanes(num));
@@ -14,8 +18,6 @@ public class MaximumSubArraySum {
 		int[] r = maxSubArrayKdanesIndex(num);
 		for (int i : r)
 			System.out.println(i);
-
-
 	}
 
 	private static int[] maxSubArrayKdanesIndex(int[] num) {
@@ -54,7 +56,6 @@ public class MaximumSubArraySum {
 			// SC:O(n)
 			}
 		return max;
-
 	}
 
 	private static int maxSubArrayOptimizing(int[] num) {
@@ -71,10 +72,10 @@ public class MaximumSubArraySum {
 
 		// SC:O(1)
 		// TC:O(n square)
-
 	}
 
 	private static int maxSubArray(int[] num) {
+
 		int max = Integer.MIN_VALUE;
 		for (int i = 0; i < num.length; i++) {
 			for (int j = i; j < num.length; j++) {
@@ -90,5 +91,4 @@ public class MaximumSubArraySum {
 		// SC:O(1)
 		// TC:O(n cube)
 	}
-
 }

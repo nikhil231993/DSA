@@ -9,7 +9,7 @@ public class LC796RotateString {
         //Approach 1 Not for interview
         System.out.println(rotateString(s,goal));
 
-        //Approach 2
+        //Approach 2: for interview
         System.out.println(rotateStringBetter(s,goal));
     }
 

@@ -13,13 +13,15 @@ public class LC151ReverseWordsInAString {
 
 		//Approach 2
 		System.out.println(reverseWordsInPlace(s));
+
+		System.out.println(reverseWordsOptimized(s));
 	}
 
 	private static String reverseWordsInPlace(String s) {
 
-		int i = s.length() - 1;
-		int j = 0;
+		int i = s.length() - 1, j = 0;
 		StringBuilder sb = new StringBuilder();
+
 		while(i>=0) {
 			while(i>=0 && s.charAt(i)==' ')
 				i--;
@@ -41,6 +43,7 @@ public class LC151ReverseWordsInAString {
 
 		String[] str = s.split(" ");
 		Stack<String> stack = new Stack();
+
 		for (int i = 0; i < str.length; i++) {
 			if (str[i].isEmpty())
 				continue;
@@ -52,7 +55,26 @@ public class LC151ReverseWordsInAString {
 			sb.append(stack.pop()).append(" ");
 		}
 		return sb.toString().trim();
+
 		// SC:O(N-spaces)
 		// TC:O(N)
+	}
+
+	public static String reverseWordsOptimized(String s) {
+		int n=s.length();
+		int i=n-1;
+		StringBuilder sb=new StringBuilder();
+		while(i>=0){
+			while(i>=0 && s.charAt(i)==' ')
+				i--;
+			int j=i;
+			while(i>=0 && s.charAt(i)!=' ')
+				i--;
+			if(s.substring(i+1, j+1).length()!=0){
+				sb.append(s.substring(i+1, j+1));
+				sb.append(" ");
+			}
+		}
+		return sb.deleteCharAt(sb.length()-1).toString();
 	}
 }

@@ -7,8 +7,7 @@ public class ReverseString {
 		String name = "Nikhil";
 
 		char[] arr = new char[name.length()];
-		int start = 0;
-		int end = name.length() - 1;
+		int start = 0, end = name.length() - 1;
 
 		while (start <= end) {
 			char c = name.charAt(start);

@@ -11,6 +11,7 @@ public class LC6ZigzagConversion {
     }
 
     public static String convert(String s, int row){
+
         int n=s.length();
         StringBuilder[] sb=new StringBuilder[row];
 
@@ -32,6 +33,7 @@ public class LC6ZigzagConversion {
         }
 
         return sb[0].toString();
+
         //TC:O(n)
         //SC:O(n)
      }

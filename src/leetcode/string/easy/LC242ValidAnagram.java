@@ -7,7 +7,7 @@ public class LC242ValidAnagram {
 
     public static void main(String[] args) {
 
-        String s = "rat", t = "car";
+        String s = "rac", t = "car";
 
         //Approach 1
         System.out.println(isAnagram(s,t));
@@ -18,17 +18,15 @@ public class LC242ValidAnagram {
 
     public static boolean isAnagram(String s, String t) {
 
-        int[] ch1=new int[255];
-        int[] ch2=new int[255];
+        int[] ch1=new int[26];
+        int[] ch2=new int[26];
         int n1=s.length();
         int n2=t.length();
         if(n1!=n2)
             return false;
         for(int i=0;i<n1;i++){
-            ch1[s.charAt(i)-'A']++;
-        }
-        for(int j=0;j<n2;j++){
-            ch2[t.charAt(j)-'A']++;
+            ch1[s.charAt(i)-'a']++;
+            ch2[t.charAt(i)-'a']++;
         }
         for(int k=0;k<ch1.length;k++){
             if(ch1[k]!=ch2[k])

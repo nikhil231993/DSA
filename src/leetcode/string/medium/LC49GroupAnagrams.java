@@ -39,8 +39,7 @@ public class LC49GroupAnagrams {
 		}
 		return new ArrayList<>(map.values());
 
-		// TC:O(NK) where N is the total no of strings and K is the avg length of each
-		// string
+		// TC:O(NK) where N is the total no of strings and K is the avg length of each string
 		// SC:O(N)
 	}
 

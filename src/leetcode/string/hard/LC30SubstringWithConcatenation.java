@@ -1,6 +1,7 @@
 package leetcode.string.hard;
 
 import java.util.*;
+
 public class LC30SubstringWithConcatenation {
 
     public static void main(String[] args) {

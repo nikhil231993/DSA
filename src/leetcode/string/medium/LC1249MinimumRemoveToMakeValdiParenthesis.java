@@ -8,7 +8,7 @@ public class LC1249MinimumRemoveToMakeValdiParenthesis {
 
 		String s = "lee(t(c)o)de)";
 
-		//Approach 1
+		//Approach 1:
 		System.out.println(minimumRemoveUsingStack(s));
 
 		//Approach 2 Better Approach as no space is taken

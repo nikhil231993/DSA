@@ -63,5 +63,8 @@ public class LC1207UniqueOccurences {
                 return false;
         }
         return true;
+
+        //TC:O(2001 log 2001)
+        //SC:O(2000)
     }
 }

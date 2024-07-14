@@ -30,8 +30,8 @@ public class LC3LongestSubstringWithoutRepeatingCharacters {
 			Set<Character > se = new HashSet <>();
 			for (int j = i; j < str.length(); j++) // nested loop for getting different string starting with str[i]
 			{
-				if (se.contains(str.charAt(j))) // if element if found so mark it as ans and break from the loop
-				{
+				if (se.contains(str.charAt(j))) {// if element if found so mark it as ans and break from the loop
+
 					maxans = Math.max(maxans, j - i);
 					break;
 				}

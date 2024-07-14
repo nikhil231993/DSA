@@ -31,7 +31,7 @@ public class LC1021RemoveOutermostParentheses {
         }
         return sb.toString();
 
-        //TC:O(n);
+        //TC:O(n)
         //SC:O(n) answer
     }
 }
