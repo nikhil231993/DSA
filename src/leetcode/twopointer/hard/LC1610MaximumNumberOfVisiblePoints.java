@@ -8,6 +8,7 @@ import java.util.List;
 public class LC1610MaximumNumberOfVisiblePoints {
 
     public static void main(String[] args) {
+
        List<List<Integer>> points =new ArrayList<>();
        List<Integer> p1=new ArrayList<>(Arrays.asList(0,0));
        List<Integer> p2=new ArrayList<>(Arrays.asList(0,2));
@@ -19,6 +20,7 @@ public class LC1610MaximumNumberOfVisiblePoints {
     }
 
     public static int visiblePoints(List<List<Integer>> points, int angle, List<Integer> location) {
+
         List<Double> angles = new ArrayList<>();
         int count = 0;
         for (List<Integer> p : points) {

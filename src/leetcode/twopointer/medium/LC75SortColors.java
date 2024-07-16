@@ -14,9 +14,7 @@ public class LC75SortColors {
 
     public static void sortColors(int[] nums) {
 
-        int start=0;
-        int mid=0;
-        int last=nums.length-1;
+        int start=0, mid=0, last=nums.length-1;
 
         while(mid<=last){
             if(nums[mid]==0){

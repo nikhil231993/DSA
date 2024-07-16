@@ -20,8 +20,7 @@ public class LC763PartitionLabels {
 
         HashMap<Character, Integer> map=new HashMap();
         for(int i=0;i<s.length();i++){
-            char ch=s.charAt(i);
-            map.put(ch, i);
+            map.put(s.charAt(i), i);
         }
 
         int prev=-1;

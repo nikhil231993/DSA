@@ -4,7 +4,7 @@ public class V8LongestRepeatingCharacterReplacementLC424 {
 
     public static void main(String[] args) {
 
-        String s = "ABAB";
+        String s = "AAAAABABBBB";
         int  k = 2;
 
         //Approach 1: Brute
@@ -118,5 +118,8 @@ public class V8LongestRepeatingCharacterReplacementLC424 {
             }
         }
         return maxLen;
+
+        //TC:O(n*n)
+        //SC:O(1)
     }
 }

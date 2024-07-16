@@ -12,7 +12,7 @@ public class V2MaxPointsCardLC1423 {
     public static int maxScore(int[] cardPoints, int k) {
 
         int lsum=0;
-        for(int i=0; i<k; i++){  //O(k)
+        for(int i=0; i<k; i++){   //O(k)
             lsum+=cardPoints[i];
         }
 

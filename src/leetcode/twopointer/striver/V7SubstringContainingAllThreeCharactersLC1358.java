@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.HashMap;
 
-public class V7SubstringContainingAllThreeCharactersLC1358 {
+public class  V7SubstringContainingAllThreeCharactersLC1358 {
 
     public static void main(String[] args) {
 
@@ -29,9 +29,9 @@ public class V7SubstringContainingAllThreeCharactersLC1358 {
 
     private static int bestNumberOfSubstringsApproach(String s) {
 
-        int atleastThree=bestLongest(s, 3);
+        int atLeastThree=bestLongest(s, 3);
         int lessThanThree=bestLongest(s, 2);
-        return atleastThree-lessThanThree;
+        return atLeastThree-lessThanThree;
     }
 
     private static int bestLongest(String s, int k) {

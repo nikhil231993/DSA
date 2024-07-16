@@ -8,13 +8,17 @@ public class LC2799CountCompleteSubarrays {
     public static void main(String[] args) {
 
         int[] nums =new int[] {1,2,1,2,3};
-        int k = 2;
+
+        HashSet<Integer> set=new HashSet();
+        for(int i=0; i<nums.length ;i++){
+            set.add(nums[i]);
+        }
 
         //Approach 1: Brute Generate all the subarrays
-        System.out.println(brute(nums, k));
+        System.out.println(brute(nums, set.size()));
 
         //Approach 2: Better
-        System.out.println(better(nums, k));
+        System.out.println(better(nums, set.size()));
 
         //we cannot use "if" instead of "while" as in counting we will miss some subarrays. Take an example and try out
         //When we want to find longest length we can use as its to find max length

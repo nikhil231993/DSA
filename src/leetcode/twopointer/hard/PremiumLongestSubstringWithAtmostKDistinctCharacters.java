@@ -10,7 +10,7 @@ public class PremiumLongestSubstringWithAtmostKDistinctCharacters {
         String s="abcddefg";
         int K=3;
 
-        //old code no need to learn this. Learn below three approaches
+        //This is old code, no need to learn this. Learn below three approaches
         System.out.println(kDistinctChars(K,s));
 
         //Approach 1: Brute

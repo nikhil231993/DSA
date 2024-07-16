@@ -26,10 +26,8 @@ public class V3LongestSubstringWithoutRepeatingCharactersLC3 {
 		for (int i = 0; i < str.length(); i++){ // outer loop for traversing the string
 
 			Set<Character > se = new HashSet <>();
-			for (int j = i; j < str.length(); j++) // nested loop for getting different string starting with str[i]
-			{
-				if (se.contains(str.charAt(j))) // if element if found so mark it as ans and break from the loop
-				{
+			for (int j = i; j < str.length(); j++){ // nested loop for getting different string starting with str[i]
+				if (se.contains(str.charAt(j))){ // if element if found so mark it as ans and break from the loop
 					maxans = Math.max(maxans, j - i);
 					break;
 				}
@@ -45,9 +43,7 @@ public class V3LongestSubstringWithoutRepeatingCharactersLC3 {
 	private static int lengthOfLongestSubstringUsingMap(String s) {
 
 		HashMap<Character, Integer> m = new HashMap();
-		int left = 0;
-		int right = 0;
-		int len = 0;
+		int left = 0, right = 0, len = 0;
 		while (right < s.length()) {
 			if (m.containsKey(s.charAt(right))) {
 				left = Math.max(m.get(s.charAt(right)) + 1, left);
@@ -65,9 +61,7 @@ public class V3LongestSubstringWithoutRepeatingCharactersLC3 {
 	public static int lengthOfLongestSubstringUsingHashSet(String s) {
 
 		HashSet<Character> h = new HashSet<>();
-		int left = 0;
-		int right = 0;
-		int len = 0;
+		int left = 0, right = 0, len = 0;
 		while (right < s.length()) {
 
 			if (!h.contains(s.charAt(right))) {

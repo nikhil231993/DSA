@@ -9,7 +9,7 @@ public class PremiumLongestSubStringWithAtmostTwoDistinctCharacters {
 
         String s="ninninja";
 
-        //old code no need to learn this. Learn below three approaches
+        //This is old code, no need to learn this. Learn below three approaches
         System.out.println(lengthOfLongestSubstring(s));
 
         //Approach 1: Brute

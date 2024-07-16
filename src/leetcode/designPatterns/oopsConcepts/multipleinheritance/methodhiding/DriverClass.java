@@ -5,7 +5,7 @@ public class DriverClass {
     public static void main(String[] args) {
 
         // Base b=new Base();
-        Child c=new Child();
+        Base c=new Child();
         c.show();
         c.display();
 

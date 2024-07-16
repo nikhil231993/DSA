@@ -31,7 +31,7 @@ public class LC2000ReversePrefixOfWord {
                     sb.append(st.pop());
                 }
 
-                i++; //To move to next element
+                i++;  //To move to next element
                 while(i<n){
                     sb.append(word.charAt(i++));
                 }

@@ -3,7 +3,7 @@ package leetcode.twopointer.striver;
 import java.util.HashMap;
 import java.util.HashSet;
 
-public class V6LongestSubstringKDistinctCharactersPremium {
+public class V6LongestSubstringAtmostKDistinctCharactersPremium {
 
     public static void main(String[] args) {
 
@@ -23,9 +23,8 @@ public class V6LongestSubstringKDistinctCharactersPremium {
     private static int bestLongest(String s, int k) {
 
         Integer maxLen=Integer.MIN_VALUE;
-        int right=0, left=0;
+        int right=0, left=0, n=s.length();
         HashMap<Character, Integer> map= new HashMap<>();
-        int n=s.length();
 
         while(right<n){
 
@@ -49,9 +48,8 @@ public class V6LongestSubstringKDistinctCharactersPremium {
     private static int betterLongest(String s, int k) {
 
         Integer maxLen=Integer.MIN_VALUE;
-        int right=0, left=0;
+        int right=0, left=0,n=s.length();
         HashMap<Character, Integer> map= new HashMap<>();
-        int n=s.length();
 
         while(right<n){
 

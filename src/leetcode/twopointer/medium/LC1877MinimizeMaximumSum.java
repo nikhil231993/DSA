@@ -13,9 +13,8 @@ public class LC1877MinimizeMaximumSum {
     public static int minPairSum(int[] nums) {
 
         Arrays.sort(nums);
-        int left=0;
-        int right=nums.length-1;
-        int max=Integer.MIN_VALUE;
+        int left=0, right=nums.length-1, max=Integer.MIN_VALUE;
+
         while(left<right){
             max=Math.max(max, nums[right--]+nums[left++]);
         }

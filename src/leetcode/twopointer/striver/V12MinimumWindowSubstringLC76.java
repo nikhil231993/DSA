@@ -30,7 +30,7 @@ public class V12MinimumWindowSubstringLC76 {
                 count++;
             map.put(s.charAt(right), map.getOrDefault(s.charAt(right),0)-1);
 
-            while(count==t.length()){// while cannot be replaced with if as we have to shrink it
+            while(count==t.length()){ // while cannot be replaced with if as we have to shrink it
 
                 if(right-left+1<minLen){
                     minLen=right-left+1;

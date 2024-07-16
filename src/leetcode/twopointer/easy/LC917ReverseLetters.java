@@ -44,8 +44,7 @@ public class LC917ReverseLetters {
     public static String reverseOnlyLetters(String s) {
 
         String letters="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-        int left=0;
-        int right=s.length()-1;
+        int left=0, right=s.length()-1;
         char[] ch=s.toCharArray();
 
         while(left<right){
