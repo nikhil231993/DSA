@@ -15,7 +15,7 @@ public class LC1248CountNumberOfNiceSubarrays {
                 nums[i]=1;
         }
 
-        //Approach 1 : Brute will be generate all solutions
+        //Approach 1 : Brute will be to generate all solutions
 
         //Approach 2: Better
         System.out.println(numSubarraysWithSumUsingMap(nums, goal));
@@ -59,11 +59,9 @@ public class LC1248CountNumberOfNiceSubarrays {
 
     public static int numSubarraysWithSumUsingMap(int[] nums, int goal) {
 
-        int count=0;
-
         HashMap<Integer, Integer> map=new HashMap<>();
-        int n=nums.length;
-        int sum=0;
+        int n=nums.length, sum=0, count=0;
+
         for(int i=0; i<n; i++){
             sum+=nums[i];
             if(sum==goal)

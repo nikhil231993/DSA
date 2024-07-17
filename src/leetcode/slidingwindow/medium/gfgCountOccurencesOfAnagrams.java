@@ -11,7 +11,7 @@ public class gfgCountOccurencesOfAnagrams {
 
         //Approach 1: Brute using two for loops
 
-        //Approach 2: Better using while
+        //Approach 2: Better using while loop
 
         //Approach 3: Best
         System.out.println(minWindow(pat, txt));

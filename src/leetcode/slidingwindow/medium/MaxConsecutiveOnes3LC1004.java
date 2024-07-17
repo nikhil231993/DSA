@@ -73,8 +73,8 @@ public class MaxConsecutiveOnes3LC1004 {
         Integer maxLen=Integer.MIN_VALUE;
         int right=0, left=0, count=0, n=nums.length;
 
-        while(right<n)
-        {
+        while(right<n) {
+
             if(nums[right]==0)
                 count++;
             if(count>k){

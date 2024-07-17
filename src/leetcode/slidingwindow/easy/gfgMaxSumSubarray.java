@@ -22,8 +22,7 @@ public class gfgMaxSumSubarray {
     private static long funcBest(int k, ArrayList<Integer> arr, int n) {
 
         int left=0, right=0;
-        long sum=0;
-        long maxSum=-1l;
+        long sum=0, maxSum=-1l;
 
         while(right<n){
             sum+=arr.get(right);
@@ -45,8 +44,7 @@ public class gfgMaxSumSubarray {
     public static long func(int k, ArrayList<Integer> arr, int n){
 
         int left=0, right=0;
-        long sum=0;
-        long maxSum=-1l;
+        long sum=0, maxSum=-1l;
 
         while(right<n){
             sum+=arr.get(right);

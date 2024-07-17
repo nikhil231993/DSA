@@ -66,9 +66,7 @@ public class MaxConsecutiveOnes2LC485Premium {
 
     private static int best(int[] nums,int k) {
 
-        int left=0;
-        int len=0;
-        int zeroCount=0;
+        int left=0, len=0, zeroCount=0;
 
         for(int i=0;i<nums.length;i++){
             if(nums[i]==0)

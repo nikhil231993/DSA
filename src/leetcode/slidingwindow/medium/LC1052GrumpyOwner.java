@@ -4,8 +4,8 @@ public class LC1052GrumpyOwner {
 
     public static void main(String[] args) {
 
-        int[] customers =new int[] {1,0,1,2,1,1,7,5};
-        int[] grumpy =new int[] {0,1,0,1,0,1,0,1};
+        int[] customers = new int[] {1,0,1,2,1,1,7,5};
+        int[] grumpy = new int[] {0,1,0,1,0,1,0,1};
         int minutes = 3;
 
         //Approach 1: for loop
@@ -27,9 +27,8 @@ public class LC1052GrumpyOwner {
             if(grumpy[i]==0)
                 sum+=customers[i];
         }
-        int r=0;
-        int l=0;
-        int max=Integer.MIN_VALUE;
+        int r=0, l=0, max=Integer.MIN_VALUE;
+
         while(r<customers.length){
             if(grumpy[r]==1)
                 sum+=customers[r];

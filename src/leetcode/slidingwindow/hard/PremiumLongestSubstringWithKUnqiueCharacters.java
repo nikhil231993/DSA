@@ -35,8 +35,7 @@ public class PremiumLongestSubstringWithKUnqiueCharacters {
         if(set.size()<k)
             return -1;
 
-        int maxLen=-1;
-        int right=0, left=0;
+        int maxLen=-1, right=0, left=0;
         HashMap<Character, Integer> map= new HashMap<>();
         int n=s.length();
 

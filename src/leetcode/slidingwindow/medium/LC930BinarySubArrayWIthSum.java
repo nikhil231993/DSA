@@ -38,6 +38,7 @@ public class LC930BinarySubArrayWIthSum {
     private static int numSubarraySum(int[] nums, int goal) {
 
         int right=0, left=0, count=0,n=nums.length, sum=0;
+
         while(right<n){
             sum+=nums[right];
 

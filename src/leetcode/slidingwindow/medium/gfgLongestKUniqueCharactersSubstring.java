@@ -31,14 +31,12 @@ public class gfgLongestKUniqueCharactersSubstring {
         if(set.size()<k)
             return -1;
 
-        int maxLen=-1;
-        int right=0, left=0;
+        int maxLen=-1, right=0, left=0, n=s.length();
         HashMap<Character, Integer> map= new HashMap<>();
-        int n=s.length();
 
         while(right<n){
-
             map.put(s.charAt(right), map.getOrDefault(s.charAt(right),0)+1);
+
             if(map.size()>k){ // we can use while loop also here
                 map.put(s.charAt(left), map.get(s.charAt(left))-1);
                 if(map.get(s.charAt(left))==0)

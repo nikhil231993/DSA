@@ -30,6 +30,7 @@ public class LC904FruitBaskets {
         HashMap<Integer, Integer> map=new HashMap<>();
 
         while(right< n){
+
             map.put(fruits[right], map.getOrDefault(fruits[right], 0)+1);
             if(map.size()>2){
                 map.put(fruits[left], map.get(fruits[left])-1);
@@ -52,9 +53,7 @@ public class LC904FruitBaskets {
 
         Integer maxLen=Integer.MIN_VALUE;
 
-        int n= fruits.length;
-
-        int right=0, left=0;
+        int n= fruits.length, right=0, left=0;
         HashMap<Integer, Integer> map=new HashMap<>();
 
         while(right< n){
