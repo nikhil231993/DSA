@@ -12,5 +12,4 @@ public interface Rectangle extends Shape {
 	default void display() {
 		System.out.println("Rectangle");
 	}
-
 }

@@ -6,9 +6,13 @@ public class Main{
 
         //Test t=new LoggerTest("Nikhil");
         //CheckStatic checkStatic=CheckStatic.getInstance();
-       Test1 t=new Test1() {
-       };
+//       Test1 t=new Test1() {
+//       };
+//
+//       t.show();
+        Test1.display();
 
-       t.show();
+        Test t=new Test();
+        t.testDisplay();
     }
 }

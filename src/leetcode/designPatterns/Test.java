@@ -11,4 +11,8 @@ public class Test {
     public Test(String name){
 
     }
+
+    public void testDisplay(){
+        System.out.println("Test Display");
+    }
 }

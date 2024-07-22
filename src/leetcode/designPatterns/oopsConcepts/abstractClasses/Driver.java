@@ -1,4 +1,4 @@
-package leetcode.designPatterns.oopsConcepts.abstractclasses;
+package leetcode.designPatterns.oopsConcepts.abstractClasses;
 
 public class Driver{
 

@@ -1,9 +1,17 @@
 package leetcode.principles.InterfaceDemo;
 
-public class MainCar {
+public class MainCar implements  Car{
 
     public static void main(String[] args) {
-        SwiftCar sw=new SwiftCar();
-        sw.start();
+
+        Car c=new MainCar();
+        c.startTest();
+        c.print();
+    }
+
+    @Override
+    public void print() {
+        Car.start();
+        Car.starting();
     }
 }

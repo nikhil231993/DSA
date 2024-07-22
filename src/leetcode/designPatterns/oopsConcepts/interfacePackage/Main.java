@@ -1,4 +1,4 @@
-package leetcode.designPatterns.oopsConcepts.interfacepackage;
+package leetcode.designPatterns.oopsConcepts.interfacePackage;
 
 public class Main{
 
@@ -7,5 +7,7 @@ public class Main{
         Car c=new Car();
         c.show();
         c.display();
+
+        Vehicle.print();
     }
 }

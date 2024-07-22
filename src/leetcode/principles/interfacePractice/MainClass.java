@@ -3,6 +3,7 @@ package leetcode.principles.interfacePractice;
 public class MainClass implements Rectangle, Square {
 
 	public static void main(String[] args) {
+
 		MainClass mC = new MainClass();
 		mC.area();
 		mC.display();
@@ -23,5 +24,4 @@ public class MainClass implements Rectangle, Square {
 		Rectangle.super.display();
 		Square.super.display();
 	}
-
 }

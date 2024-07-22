@@ -11,5 +11,4 @@ public interface Square extends Shape {
 	default void display() {
 		System.out.println("Square");
 	}
-
 }
