@@ -17,8 +17,8 @@ public class LC1572MatrixDiagonalSum {
 
     private static int diagonalSumOptimal(int[][] mat) {
 
-        int n=mat.length;
-        int sum=0, mid=n/2;
+        int n=mat.length, sum=0, mid=n/2;
+
         for(int i=0;i<mat.length;i++){
             sum+=mat[i][i]+mat[i][n-1-i];
         }
@@ -32,8 +32,8 @@ public class LC1572MatrixDiagonalSum {
 
     public static int diagonalSum(int[][] mat) {
 
-        int n=mat.length;
-        int sum=0;
+        int n=mat.length, sum=0;
+
         for(int i=0;i<mat.length;i++){
             for(int j=0;j<mat[0].length;j++){
                 if(i==j || (i+j==(n-1))){

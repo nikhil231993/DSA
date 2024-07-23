@@ -5,11 +5,16 @@ public class LC509FibonacciNumber {
     public static void main(String[] args) {
 
         int n=3;
-        //Approach 1 recursion
+
+        //Approach 1: recursion
         System.out.println(fibUsingRecursion(n));
 
-        //Approach 2 Iterative
+        //Approach 2: Iterative
         System.out.println(fibIterative(n));
+
+        //Approach 3: Iterative
+        System.out.println(fibForLoop(n));
+
     }
 
     private static int fibIterative(int n) {
@@ -26,6 +31,18 @@ public class LC509FibonacciNumber {
 
         //SC:O(1)
         //TC:O(n)
+    }
+
+    public static int fibForLoop(int n) {
+
+        int a = 0, b = 1;
+
+        for (int i = 0; i <n; ++i) {
+            int c = a + b;
+            a = b;
+            b = c;
+        }
+        return a;
     }
 
     public static int fibUsingRecursion(int n) {

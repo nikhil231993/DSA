@@ -22,14 +22,14 @@ public class LC1331RankTransform {
 
         int[] arr =new int[] {40,10,20,30};
 
-        //Approach 1
+        //Approach 1:
         int[] r1=arrayRankTransform(arr);
         for(int n:r1)
             System.out.println(n);
 
         System.out.println("###############");
 
-        //Approach 2
+        //Approach 2:
         int[] arr1 =new int[] {40,10,20,30};
         int[] r2=arrayRankTransformUsingHeap(arr1);
         for(int n:r2)

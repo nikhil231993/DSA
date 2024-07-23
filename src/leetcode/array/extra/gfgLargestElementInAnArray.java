@@ -1,6 +1,7 @@
-package leetcode.array.easy;
+package leetcode.array.extra;
 
-public class LargestElementInAnArray {
+public class gfgLargestElementInAnArray {
+
     //Q:https://practice.geeksforgeeks.org/problems/largest-element-in-array4009/0?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=largest-element-in-array
 
     public static void main(String[] args) {
@@ -13,7 +14,6 @@ public class LargestElementInAnArray {
     public static int largest(int arr[], int n)
     {
         int max=Integer.MIN_VALUE;
-        int end=arr.length;
         for(int i=0;i<n;i++){
             if(arr[i]>max)
                 max=arr[i];

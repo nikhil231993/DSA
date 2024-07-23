@@ -8,8 +8,8 @@ public class LC1358NoOfSubstringContainingAllCharacters {
 
     public static void main(String[] args) {
 
-        //String s = "aaacb";
-        String s = "bbacba";
+        String s = "aaacb";
+        //String s = "bbacba";
 
         //Approach 1: Brute
         System.out.println(bruteNumberOfSubstrings(s));

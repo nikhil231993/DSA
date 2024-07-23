@@ -55,7 +55,8 @@ public class LC1512GoodPairs {
 
     public static int numIdenticalPairsOptimal(int[] A) {
 
-        int res = 0, count[] = new int[101];
+        int res = 0;
+        int[] count = new int[101];
         for (int a: A) {
             res += count[a]++;
         }

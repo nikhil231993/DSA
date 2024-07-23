@@ -1,6 +1,6 @@
 package leetcode.array.easy;
 
-public class xLC2011PerformingOperations {
+public class LC2011PerformingOperations {
 
     public static void main(String[] args) {
         

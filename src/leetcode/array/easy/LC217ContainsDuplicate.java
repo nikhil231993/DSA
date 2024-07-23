@@ -9,10 +9,10 @@ public class LC217ContainsDuplicate {
 
 		int[] arr = new int[] { 1, 2, 3, 1 };
 
-		//Approach 1
+		//Approach 1:
 		System.out.println(containsDuplicate(arr));
 
-		//Approach 2
+		//Approach 2:
 		System.out.println(containsDuplicateApproach2(arr));
 	}
 

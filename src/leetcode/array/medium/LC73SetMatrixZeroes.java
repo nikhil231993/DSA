@@ -5,7 +5,6 @@ public class LC73SetMatrixZeroes {
     public static void main(String[] args) {
 
         int[][] matrix =new int[][] {{0,1,2,0},{3,4,5,2},{1,3,1,5}};
-
         int[][] matrix2 =new int[][] {{0,1,2,0},{3,4,5,2},{1,3,1,5}};
 
         //Approach 1: Iterate and mark all the 1's in o's row and column as -1 and then put 0 instead of -1 in other parse
@@ -35,11 +34,10 @@ public class LC73SetMatrixZeroes {
 
     private static void optimalSetZeroes(int[][] matrix) {
 
-        int n=matrix.length;
-        int m=matrix[0].length;
+        int n=matrix.length, m=matrix[0].length;
 
         //int[] col=new int[n];  matrix[0][..]
-        // int[] row=new int[m]; matrix[..][0]
+        //int[] row=new int[m]; matrix[..][0]
 
         int col0=1;
         for(int i=0;i<n;i++){

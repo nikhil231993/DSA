@@ -9,6 +9,7 @@ public class Lc1394LuckyNumber {
 	}
 
 	public static int findLucky(int[] arr) {
+
 		int[] res=new int[501];
 		int max=-1;
 		for(int no:arr){

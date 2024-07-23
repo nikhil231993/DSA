@@ -48,8 +48,7 @@ public class LC2149SortSigns {
     public static int[] rearrangeArray(int[] nums) {
 
         int n=nums.length;
-        int posIndx=0;
-        int negIndx=1;
+        int posIndx=0, negIndx=1;
         int[] ans=new int[n];
 
         for(int i=0;i<nums.length;i++){

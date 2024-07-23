@@ -1,6 +1,6 @@
 package leetcode.array.extra;
 
-public class GfgSecondLargestAndSecondSmallest {
+public class gfgSecondLargestAndSecondSmallest {
 
     public static void main(String[] args) {
 
@@ -13,10 +13,8 @@ public class GfgSecondLargestAndSecondSmallest {
 
     public static int[] getSecondOrderElements(int[] nums) {
 
-        Integer max=Integer.MIN_VALUE;
-        Integer secondMax=Integer.MIN_VALUE;
-        Integer smallest=Integer.MAX_VALUE;
-        Integer secondSmallest=Integer.MAX_VALUE;
+        Integer max=Integer.MIN_VALUE, secondMax=Integer.MIN_VALUE;
+        Integer smallest=Integer.MAX_VALUE, secondSmallest=Integer.MAX_VALUE;
 
         for(int i=0; i<nums.length; i++){
 

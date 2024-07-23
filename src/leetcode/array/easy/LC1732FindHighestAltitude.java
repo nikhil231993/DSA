@@ -6,7 +6,7 @@ public class LC1732FindHighestAltitude {
 
         int[] gain = new int[]{-5,1,5,0,-7};
 
-        //Approach 1
+        //Approach 1: Best
         System.out.println(largestAltitude(gain));
     }
 

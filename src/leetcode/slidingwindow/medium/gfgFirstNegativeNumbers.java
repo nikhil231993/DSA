@@ -27,8 +27,7 @@ public class gfgFirstNegativeNumbers {
     private static long[] printFirstNegativeIntegerBest(long A[], int N, int K) {
 
         long[] subArr=new long[N-K+1];
-        int i=0;
-        int left=0, right=0;
+        int i=0, left=0, right=0;
         List<Long> list=new ArrayList<Long>();
         while(right<N){
 
@@ -40,7 +39,7 @@ public class gfgFirstNegativeNumbers {
                     subArr[i]=0;
                 }else {
                     subArr[i]=list.get(0);
-                    if(A[i]==list.get(0))
+                    if(A[left]==list.get(0))
                         list.remove(0);
                 }
                 left++;
@@ -57,8 +56,7 @@ public class gfgFirstNegativeNumbers {
     public static long[] printFirstNegativeInteger(long A[], int N, int K) {
 
         long[] subArr=new long[N-K+1];
-        int i=0;
-        int left=0, right=0;
+        int i=0, left=0, right=0;
         List<Long> list=new ArrayList<Long>();
         while(right<N){
 
@@ -70,7 +68,7 @@ public class gfgFirstNegativeNumbers {
                     subArr[i]=0;
                 }else {
                     subArr[i]=list.get(0);
-                    if(A[i]==list.get(0))
+                    if(A[left]==list.get(0))
                         list.remove(0);
                 }
                 left++;

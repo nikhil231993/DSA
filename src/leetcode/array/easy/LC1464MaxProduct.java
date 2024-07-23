@@ -16,8 +16,8 @@ public class LC1464MaxProduct {
 
     public static int maxProduct(int[] nums) {
 
-        int max=Integer.MIN_VALUE;
-        int secMax=Integer.MIN_VALUE;
+        int max=Integer.MIN_VALUE, secMax=Integer.MIN_VALUE;
+
         for(int i=0;i<nums.length;i++){
             if(nums[i]>=max){
                 secMax=max;

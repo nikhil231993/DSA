@@ -22,7 +22,7 @@ public class LC128orPremiumLongestConsecutiveSequence {
         //Approach 3: Optimal
         //Step 1: Put all the values in set
         //Step 2: Take each element from set and see if lesser no exist
-        //Step 3: If lesser no does not exist then that no is the smallest no and also the first no
+        //Step 3: If lesser no does not exist, then that no is the smallest no and also the first no
         System.out.println(optimalApproach(num));
     }
 

@@ -33,8 +33,7 @@ public class LC1470ShuffleArray {
         int[] result=new int[2*n];
         int k=0;
 
-        int i=0;
-        int j=0;
+        int i=0, j=0;
         int flag=0;
         while(i<n || j<n){
             if(flag==0){

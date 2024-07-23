@@ -14,6 +14,7 @@ public class LC1624SubstringBetweenEqualCharacters {
 
 		HashMap<Character, Integer> msp = new HashMap<Character, Integer>();
 		int maxDiff=0;
+
 		for(int i=0;i<s.length();i++) {
 			if(msp.containsKey(s.charAt(i))) {
 				int diff=i-msp.get(s.charAt(i));

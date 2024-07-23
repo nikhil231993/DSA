@@ -6,6 +6,7 @@ public class LC1629SlowestKey {
 
 		int[] arr = new int[] { 12, 23, 36, 46, 62 };
 		String s = "spuda";
+
 		System.out.println(slowestKey(arr, s));
 	}
 

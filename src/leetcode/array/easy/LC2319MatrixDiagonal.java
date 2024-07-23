@@ -11,6 +11,7 @@ public class LC2319MatrixDiagonal {
                 {0,0,0,2,20,0,0,0},
                 {0,0,20,0,0,3,0,0},
                 {0,14,0,0,0,0,11,0},{19,0,0,0,0,0,0,9}};
+
         System.out.println(checkXMatrix(matrix));
     }
 

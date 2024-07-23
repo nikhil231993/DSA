@@ -6,7 +6,6 @@ public class LC1748SumOfUniqueElements {
 		
 		int[] nums = new int[] { 1, 1, 1, 1, 1 };
 		System.out.println(sumOfUnique(nums));
-
 	}
 
 	public static int sumOfUnique(int[] nums) {

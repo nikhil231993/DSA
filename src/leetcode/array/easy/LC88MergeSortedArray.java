@@ -21,11 +21,8 @@ public class LC88MergeSortedArray {
 
     private static void optimal(int[] arr1, int[] arr2) {
 
-        int n=arr1.length;
-        int m=arr2.length;
-        int left=m-1;
-        int right=m-1;
-        int k=n-1;
+        int n=arr1.length, m=arr2.length;
+        int left=m-1, right=m-1, k=n-1;
 
         while(left>=0 && right >=0){
 
@@ -53,13 +50,10 @@ public class LC88MergeSortedArray {
 
     private static int[] withExtraSpace(int[] arr1, int[] arr2) {
 
-        int n=arr1.length;
-        int m=arr2.length;
+        int n=arr1.length, m=arr2.length;
         int[] r=new int[n];
 
-        int left=0;
-        int right=0;
-        int index=0;
+        int left=0, right=0, index=0;
 
         while(left<n && right<m ){
 

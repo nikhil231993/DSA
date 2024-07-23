@@ -27,9 +27,9 @@ public class LC14LongestCommomPrefix {
 	private static String fetchLngestCommonSequence(String[] strs) {
 
 		int minLength = minLength(strs);
-		System.out.println("Minimum length is : " + minLength);
 		String result = "";
 		char c;
+
 		for (int i = 0; i < minLength; i++) {
 			c = strs[0].charAt(i);
 			for (int j = 1; j < strs.length; j++) {

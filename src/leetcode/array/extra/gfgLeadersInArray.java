@@ -14,6 +14,7 @@ public class gfgLeadersInArray {
 
 
     public static ArrayList<Integer> leaders(int arr[], int n){
+
         Stack<Integer> st=new Stack<>();
 
         for(int i=arr.length-1; i>=0; i--){

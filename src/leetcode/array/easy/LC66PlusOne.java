@@ -22,7 +22,7 @@ public class LC66PlusOne {
 			i--;
 		}
 
-		//Approach
+		//Approach 1
 		int[] result = plusOne(digits);
 		for (int k = 0; k < result.length; k++)
 			System.out.println(result[k]);

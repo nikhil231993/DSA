@@ -12,11 +12,11 @@ public class LongestSubarrayWithSumK {
 
         //Approach 1: Brute is generating all sub arrays
 
-        //Optimal works for both positive, zeroes and negative
-        //For negative numbers below code is the optimal
+        //Optimal works for positive, zeroes and negative
+        //but for negative numbers below code which is better for positive and zeroes is the best code
         System.out.println(maxLength(arr,k));
 
-        //Optimal which is two pointer for positive numbers only
+        //Most Optimal which is two pointer for positive and zero numbers only
         System.out.println(maxLen(arr,k));
     }
 
@@ -28,7 +28,7 @@ public class LongestSubarrayWithSumK {
         while(r<n){
             sum+=arr[r];
 
-            while(sum>k && l<n){
+            while(sum>k && l<=r){
                 sum-=arr[l];
                 l++;
             }
@@ -58,7 +58,7 @@ public class LongestSubarrayWithSumK {
             if(map.containsKey(sum-k))
                 maxLen=Math.max(maxLen,i-map.get(sum-k));
 
-            if(!map.containsKey(sum))
+            if(!map.containsKey(sum)) // to handle zero
                 map.put(sum,i);
         }
         return maxLen;

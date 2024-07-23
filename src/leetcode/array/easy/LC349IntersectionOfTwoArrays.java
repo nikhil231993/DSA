@@ -9,7 +9,7 @@ public class LC349IntersectionOfTwoArrays {
     public static void main(String[] args) {
 
 		// Here in Leetcode the question is about without duplicate that is why we add
-		// conditions in line 43 and 67
+		// conditions in line 47 and 71
 
 		// For video https://www.youtube.com/watch?v=wvcQg43_V8U we are even including
 		// duplicate values
@@ -23,14 +23,14 @@ public class LC349IntersectionOfTwoArrays {
         int n=nums1.length;
         int m=nums2.length;
 
-		// Approach 1 Brute
+		// Approach 1: Brute
 		int[] ans = uniqueBrute(n, m, nums1, nums2, new ArrayList<>());
 		for (int num : ans)
 			System.out.println(num);
 		
 		System.out.println("####################");
 
-		// Approach 2 Optimal
+		// Approach 2: Optimal
 		int[] result = uniqueIntersection(n, m, nums1, nums2, new ArrayList<>());
 
 		for (int num : result)

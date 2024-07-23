@@ -9,6 +9,7 @@ public class LC1332RemovePalindromicSubsequences {
 		System.out.println("Enter string to check: ");
 		Scanner scan = new Scanner(System.in);
 		String s = scan.nextLine();
+
 		System.out.println(palindrome(s));
 	}
 
@@ -24,5 +25,8 @@ public class LC1332RemovePalindromicSubsequences {
 			i++;
 		}
 		return 1;
+
+		//TC:O(n)
+		//SC:O(1)
 	}
 }
