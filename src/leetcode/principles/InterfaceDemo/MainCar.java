@@ -7,6 +7,7 @@ public class MainCar implements  Car{
         Car c=new MainCar();
         c.startTest();
         c.print();
+        Car.starting();
     }
 
     @Override
