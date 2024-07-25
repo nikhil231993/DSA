@@ -2,13 +2,13 @@ package leetcode.designPatterns.creational.builder.example2chainingWithDirector;
 
 public class House {
 
-    public String window;
+    private String window;
 
-    public String door;
+    private String door;
 
-    public String roof;
+    private String roof;
 
-    public String floor;
+    private String floor;
 
     public String getWindow() {
         return window;

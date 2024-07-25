@@ -8,7 +8,10 @@ public class Main {
             Prototype prodcut2=product1.clonePrototype();
             product1.update(200);
             product1.update(1000);
+
+            System.out.println("Product 1: ");
             product1.display();
+            System.out.println("Product 2: ");
             prodcut2.display();
     }
 }
