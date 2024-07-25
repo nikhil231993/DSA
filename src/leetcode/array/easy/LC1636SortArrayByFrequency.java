@@ -18,6 +18,7 @@ public class LC1636SortArrayByFrequency {
 	public static void main(String[] args){
 
 		int[] nums = new int[]{2,3,1,3,2};
+
 		int[] result=frequencySort(nums);
 		for(int n:result)
 			System.out.println(n);

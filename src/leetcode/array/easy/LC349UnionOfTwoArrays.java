@@ -16,14 +16,14 @@ public class LC349UnionOfTwoArrays {
 		int m = 3;
        int[] arr2=new int[] {1, 2, 3};
 
-		// Approach 1 Brute
+		//Approach 1: Brute
 		int[] ans = findUnionBrute(n, m, arr1, arr2);
 		for (int num : ans)
 			System.out.println(num);
 
 		System.out.println("#######################");
 
-		// Approach 2 Optimal
+		//Approach 2: Optimal
 		int[] result = findUnion(n, m, arr1, arr2, new ArrayList<>());
 		for (int num : result)
 			System.out.println(num);

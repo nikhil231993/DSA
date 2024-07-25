@@ -11,7 +11,6 @@ public class Switch extends NetworkDevice{
         this.protocol = protocol;
     }
 
-
     @Override
     public void update(String name) {
         this.protocol=name;

@@ -39,8 +39,8 @@ public class LC2418SortThePeople {
         }
 
         String[] result=new String[names.length];
-        int j=0;
 
+        int j=0;
         while(!pq.isEmpty()){
             result[j++]=pq.poll().name;
         }

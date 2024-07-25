@@ -10,19 +10,19 @@ public class LC1TwoSum {
 		int[] nums = new int[] { 2, 7, 11, 15 };
 		int target = 22;
 
-		//Approach 1: Brute
+		//Approach 1:Brute
 		int[] r = twoSum(nums, target);
 		for (int n : r)
 			System.out.println(n);
 		System.out.println("###############");
 
-		//Approach 2: Better
+		//Approach 2:Better
 		int[] r1= twoSumUsingMap(nums, target);
 		for (int n : r1)
 			System.out.println(n);
 		System.out.println("###############");
 
-		//Approach 3: Optimal
+		//Approach 3:Optimal
 		int[] r2 = twoSumBestApproach(nums, target);
 		for (int n : r2)
 			System.out.println(n);

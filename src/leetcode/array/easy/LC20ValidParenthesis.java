@@ -4,6 +4,7 @@ import java.util.Stack;
 
 public class LC20ValidParenthesis {
 	public static void main(String[] args) {
+
 		String s = "(])";
 		System.out.println(validParen(s));
 	}

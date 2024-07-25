@@ -21,7 +21,7 @@ public class MergeSortedArrays {
 
       System.out.println("######################");
 
-       //Approach 2: Optimal1
+        //Approach 2: Optimal1
         int[] arr3 =new int[] {1,4,8,10};
         int[] arr4=new int[] {2,3,9};
 
@@ -84,8 +84,7 @@ public class MergeSortedArrays {
 
     private static void optimal1(int n, int[] arr3, int m, int[] arr4) {
 
-        int left=n-1;
-        int right=0;
+        int left=n-1, right=0;
 
         while(left>=0 && right<m){
             if(arr3[left]>arr4[right]){
@@ -107,11 +106,9 @@ public class MergeSortedArrays {
 
         int[] res=new int[n+m];
 
-        int left=0;
-        int right=0;
-        int k=0;
+        int left=0, right=0, k=0;
 
-        while(left<n && right< m){
+        while(left < n && right < m){
 
             if(arr1[left]<=arr2[right]){
                 res[k++]=arr1[left++];

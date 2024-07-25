@@ -16,13 +16,18 @@ public class LC283MoveZeroes {
 		int[] result = maxZerores(arr);
 		for (int num : result)
 			System.out.println(num);
+		System.out.println("#########");
+
+		//Approach 3: Best
+		int[] result1 = maxZeroresBest(arr);
+		for (int num : result1)
+			System.out.println(num);
 	}
 
 	private static int[] maxZeroesBrute(int[] arr) {
 
-		int n=arr.length;
+		int n=arr.length, j=0;
 		int[] result=new int[n];
-		int j=0;
 		for(int i=0;i<n;i++){
 			if(arr[i]!=0)
 				result[j++]=arr[i];
@@ -45,6 +50,23 @@ public class LC283MoveZeroes {
 			arr[i++] = 0;
 		}
 		return arr;
+
+		//TC:O(n)
+		//SC:O(1)
+	}
+
+	private static int[] maxZeroresBest(int[] nums) {
+
+		int i = 0;
+		for (int j = 0; j < nums.length; j++) {
+			if (nums[j] != 0) {
+				int temp=nums[i];
+				nums[i]=nums[j];
+				nums[j]=temp;
+				i++;
+			}
+		}
+		return nums;
 
 		//TC:O(n)
 		//SC:O(1)

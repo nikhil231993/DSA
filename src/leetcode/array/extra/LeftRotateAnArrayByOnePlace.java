@@ -22,6 +22,6 @@ public class LeftRotateAnArrayByOnePlace {
         num[num.length-1]=temp;
 
         //TC:O(N)
-        //SC:O(N) we are not using any extra array but we us existing array, so it can be said as N
+        //SC:O(N) we are not using any extra array but we use existing array, so it can be said as N
     }
 }

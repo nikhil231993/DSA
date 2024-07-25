@@ -6,21 +6,21 @@ public class LC167TwoSum2 {
 
        int[] numbers =new int[] {2,7,11,15};
        int target = 9;
-       System.out.println(twoSum(numbers, target));
+       int[] result=twoSum(numbers, target);
+       System.out.println(result[0]+" "+ result[1]);
     }
 
     public static int[] twoSum(int[] numbers, int target) {
 
-        int i=0;
-        int j=numbers.length-1;
-        while(i<j){
-            if(numbers[i]+numbers[j] == target){
-                return new int[]{i+1,j+1};
+        int left=0, right=numbers.length-1;
+        while(left<right){
+            if(numbers[left]+numbers[right] == target){
+                return new int[]{left+1,right+1};
             }
-            else if(numbers[i]+numbers[j] > target)
-                j--;
+            else if(numbers[left]+numbers[right] > target)
+                right--;
             else
-                i++;
+                left++;
         }
         return new int[]{};
 

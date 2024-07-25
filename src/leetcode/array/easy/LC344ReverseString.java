@@ -12,6 +12,7 @@ public class LC344ReverseString {
 		char[] charS = s.toCharArray();
 
 		char[] reversedString = reverse(charS);
+
 		System.out.println("Reversed string is: ");
 		for (char value : reversedString)
 			System.out.print(value);

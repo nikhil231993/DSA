@@ -6,14 +6,14 @@ public class LC1480RunningSumOneDArray {
 
         int[] nums =new int[] {1,2,3,4,5};
 
-        //Approach 1 Brute
+        //Approach 1: Brute
         int[] r=runningSumBrute(nums);
         for(int n:r)
             System.out.println(n);
 
         System.out.println("############");
 
-        //Approach 2 Optimal
+        //Approach 2: Optimal
         runningSum(nums);
         for(int num:nums)
             System.out.println(num);

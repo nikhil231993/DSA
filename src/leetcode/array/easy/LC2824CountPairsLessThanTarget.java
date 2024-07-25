@@ -15,7 +15,7 @@ public class LC2824CountPairsLessThanTarget {
         //Approach 1
         System.out.println(countPairs(list,target));
 
-        //Approach 2 Twopointer
+        //Approach 2 Two pointer
         System.out.println(countPairsPointer(list,target));
     }
 
@@ -37,9 +37,9 @@ public class LC2824CountPairsLessThanTarget {
     public static int countPairsPointer(List<Integer> nums, int target) {
 
         Collections.sort(nums);
-        int count=0;
-        int left=0;
-        int right=nums.size()-1;
+
+        int count=0, left=0, right=nums.size()-1;
+
         while(left<right){
             if(nums.get(left)+nums.get(right)<target){
                 count+=right-left;

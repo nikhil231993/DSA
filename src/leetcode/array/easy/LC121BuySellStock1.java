@@ -6,10 +6,10 @@ public class LC121BuySellStock1 {
 
 		int[] prices = new int[] { 7, 1, 5, 3, 6, 10 };
 
-		//Approach 1:
+		//Approach 1:Brute
 		System.out.println(maxProfitBrute(prices));
 
-		//Approach 2: Optimal
+		//Approach 2:Optimal
 		System.out.println(maxProfit(prices));
 	}
 
@@ -29,8 +29,7 @@ public class LC121BuySellStock1 {
 
 	private static int maxProfit(int[] prices) {
 
-		int minValue = Integer.MAX_VALUE;
-		int profit = 0;
+		int minValue = Integer.MAX_VALUE, profit = 0;
 		for (int i = 0; i < prices.length; i++) {
 			if (minValue > prices[i])
 				minValue = prices[i];

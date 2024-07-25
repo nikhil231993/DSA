@@ -12,6 +12,8 @@ public class LeftRotateAnArrayByKPlaces {
         for(int n:num)
             System.out.println(n);
 
+        System.out.println("##################################");
+
         int[] num1=new int[]{1,2,3,4,5,6,7};
         int k1=2;
         rightRotate(num1,k1);

@@ -35,8 +35,7 @@ public class LC912MergeSort {
     private static void merge(int[] nums, int low, int mid, int high) {
 
         List<Integer> temp=new ArrayList<>();
-        int left=low;
-        int right=mid+1;
+        int left=low, right=mid+1;
 
         while(left<=mid && right<=high){
 

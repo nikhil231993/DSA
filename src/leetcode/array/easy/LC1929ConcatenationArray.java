@@ -13,7 +13,7 @@ public class LC1929ConcatenationArray {
 
         System.out.println("##########");
 
-        //Approach 2: Single parse but so improvement in TC
+        //Approach 2: Single parse but no improvement in TC
         int[] result1=getConcatenationSingleParse(nums);
         for(int n:result1)
             System.out.println(n);

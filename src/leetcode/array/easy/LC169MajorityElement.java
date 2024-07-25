@@ -16,7 +16,7 @@ public class LC169MajorityElement {
 		//Approach 2:
 		System.out.println(majorityElement(nums));
 
-		//Approach 3: Optimal
+		//Approach 3:Optimal
 		System.out.println(majorityElementOptimal(nums));
 	}
 
@@ -57,8 +57,7 @@ public class LC169MajorityElement {
 	private static int majorityElementOptimal(int[] nums) {
 
 		//Step 1: Moore's Voting Algo
-		int count = 0;
-		int maj = 0;
+		int count = 0, maj = 0;
 		for (int i = 0; i < nums.length; i++) {
 
 			if (count == 0)
@@ -82,5 +81,4 @@ public class LC169MajorityElement {
 		//TC:O(N)
 		//SC:O(1)
 	}
-
 }

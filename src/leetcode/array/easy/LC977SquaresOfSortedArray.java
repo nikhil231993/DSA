@@ -8,14 +8,14 @@ public class LC977SquaresOfSortedArray {
 
 		int[] num=new int[] {-4,-1,0,3,10};
 
-		//Approach 1: Brute Force
+		//Approach 1:Brute Force
 		int[] res=sortedSquaresBrute(num);
 		for (Integer n : res)
 			System.out.println(n);
 
 		System.out.println("###############");
 
-		//Approach 2: Optimal
+		//Approach 2:Optimal
 		int[] num1=new int[] {-4,-1,0,3,10};
 		int[] result = sortedSquares(num1);
 		for (Integer n : result)
@@ -36,10 +36,9 @@ public class LC977SquaresOfSortedArray {
 
 	public static int[] sortedSquares(int[] nums) {
 
-		int l = 0;
-		int r = nums.length - 1;
 		int[] result = new int[nums.length];
-		int k = result.length - 1;
+		int l = 0, r = nums.length - 1, k = result.length - 1;
+
 		while (l <= r) {
 			if (nums[l] * nums[l] >= nums[r] * nums[r]) {
 				result[k--] = nums[l] * nums[l];

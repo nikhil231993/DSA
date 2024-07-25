@@ -16,7 +16,7 @@ public class LC1389CreateTargetArray {
 
         System.out.println("#######");
 
-        //Approach 2
+        //Approach 2:
         int[] result1=createTargetArrayWithSpace(nums,index);
         for(int n:result1)
             System.out.println(n);

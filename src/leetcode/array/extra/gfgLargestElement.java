@@ -1,6 +1,6 @@
 package leetcode.array.extra;
 
-public class GfgLargestElement {
+public class gfgLargestElement {
 
     public static void main(String[] args) {
 
