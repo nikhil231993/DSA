@@ -11,6 +11,12 @@ public class Router extends NetworkDevice{
         this.protocol = protocol;
     }
 
+    //We can do clone like this also
+    public Router(Router router) {
+        this.name = router.name;
+        this.protocol = router.protocol;
+    }
+
     @Override
     public void update(String name) {
         this.protocol=name;
@@ -18,7 +24,7 @@ public class Router extends NetworkDevice{
 
     @Override
     public NetworkDevice cloneDevice() {
-        return new Router(name, protocol);
+        return new Router(this);
     }
 
     @Override

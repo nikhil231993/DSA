@@ -18,7 +18,7 @@ public class Switch extends NetworkDevice{
 
     @Override
     public NetworkDevice cloneDevice() {
-        return new Switch(name, protocol);
+        return new Switch(this.name, this.protocol);
     }
 
     @Override

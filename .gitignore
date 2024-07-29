@@ -5,3 +5,5 @@ bin
 .settings
 untitled
 .idea/workspace.xml
+.idea/vcs.xml
+DSA.iml

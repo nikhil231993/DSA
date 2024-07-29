@@ -5,11 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72d35191-61fd-46f6-abe8-9b648fcd26f6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/creational/singleton/example3/threeInstance/Singleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/creational/singleton/example3/threeInstance/SingletonMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/creational/builder/example1/House.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/creational/builder/example1/House.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/creational/builder/example2chainingWithDirector/House.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/creational/builder/example2chainingWithDirector/House.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/creational/prototype/Network/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/creational/prototype/Network/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/creational/prototype/product/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/creational/prototype/product/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSA.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DSA.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/creational/prototype/Network/Router.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/creational/prototype/Network/Router.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/creational/prototype/Network/Switch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/creational/prototype/Network/Switch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/creational/singleton/example1/SingletonMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/creational/singleton/example1/SingletonMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/creational/singleton/example2/Singleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/creational/singleton/example2/Singleton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/creational/singleton/example2/SingletonMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/creational/singleton/example2/SingletonMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

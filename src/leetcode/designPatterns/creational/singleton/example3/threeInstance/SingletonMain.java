@@ -1,4 +1,4 @@
-package leetcode.designPatterns.creational.singleton.example2;
+package leetcode.designPatterns.creational.singleton.example3.threeInstance;
 
 public class SingletonMain {
 

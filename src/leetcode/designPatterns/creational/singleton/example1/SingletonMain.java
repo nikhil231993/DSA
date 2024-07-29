@@ -2,6 +2,10 @@ package leetcode.designPatterns.creational.singleton.example1;
 
 public class SingletonMain {
 
+    //1. we want one instance so constructor should be private
+    //2. static instance
+    //3. static getter
+
     public static void main(String[] args) {
 
         Singleton singleton1= Singleton.getInstance();
