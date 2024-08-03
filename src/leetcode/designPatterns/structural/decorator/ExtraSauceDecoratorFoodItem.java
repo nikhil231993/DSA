@@ -11,7 +11,7 @@ public class ExtraSauceDecoratorFoodItem extends Decorator{
 
     @Override
     public String getDescription() {
-        return foodItem.getDescription() + " extra sauce";
+        return foodItem.getDescription() + " with extra sauce";
     }
 
     @Override
