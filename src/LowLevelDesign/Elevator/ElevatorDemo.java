@@ -3,6 +3,7 @@ package LowLevelDesign.Elevator;
 public class ElevatorDemo {
 
     public static void main(String[] args) {
+
         // Initialize the Elevator system for 12 floors and 4 elevators
         ElevatorSystem elevatorSystem = ElevatorSystem.getElevatorSystem();
         elevatorSystem.initializeElevatorSystem(12, 4);
