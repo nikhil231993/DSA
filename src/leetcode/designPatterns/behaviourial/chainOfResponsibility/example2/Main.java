@@ -4,6 +4,11 @@ public class Main {
 
     public static void main(String[] args) {
 
+        //1. We can even ste handler next handler within the handler at runtime
+        //2. we can have multiple successor
+        //3. we can pass two handler in parameter so that based on success or failure we can decide which handler to use
+        // OrderPreparationHandler orderPreparationHandler = new OrderPreparationHandler(successHandler, failureHandler);
+
         String order= "delivery";
 
         OrderValidationHandler orderValidationHandler = new OrderValidationHandler();
