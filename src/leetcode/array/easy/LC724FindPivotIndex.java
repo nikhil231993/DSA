@@ -9,7 +9,7 @@ public class LC724FindPivotIndex {
 		//Approach 1
 		System.out.println(pivotIndex(n));
 
-		//Approach 2 Optimal
+		//Approach 2: Optimal
 		System.out.println(pivotIndexOptimal(n));
 	}
 

@@ -8,7 +8,32 @@ public class LC2006PairsWithAbsoluteDifference {
 
         int[] nums =new int[] {1,2,2,1};
         int k = 1;
+
+        //This is single parsing and does not have values stored in map due to which we will miss either + or - values.
         System.out.println(countKDifference(nums,k));
+
+        //In this we preload the value in map due to which we have all the combinations and can go with only -
+        System.out.println(countKDifferenceOptimized(nums,k));
+    }
+
+    private static int countKDifferenceOptimized(int[] nums, int k) {
+
+        int n=nums.length;
+        HashMap<Integer, Integer> map=new HashMap<>();
+        for(int i=0;i<n;i++){
+            map.put(nums[i], map.getOrDefault(nums[i],0)+1);
+        }
+
+        int count=0;
+        for(int i=0;i<n;i++){
+            if(map.containsKey(nums[i]-k)){
+                count+=map.get(nums[i]-k);
+            }
+        }
+        return count;
+
+        //TC:O(n)
+        //SC:O(1)
     }
 
     public static int countKDifference(int[] nums, int k) {

@@ -33,7 +33,7 @@ public class LC121BuySellStock1 {
 		for (int i = 0; i < prices.length; i++) {
 			if (minValue > prices[i])
 				minValue = prices[i];
-			profit = Math.max(prices[i] - minValue,profit);
+			profit = Math.max(prices[i] - minValue, profit);
 		}
 		return profit;
 
