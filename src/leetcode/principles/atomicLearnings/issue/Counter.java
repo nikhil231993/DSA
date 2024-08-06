@@ -6,8 +6,7 @@ public class Counter extends Thread{
 
     // method which would be called upon
     // the start of execution of a thread
-    public void run()
-    {
+    public void run() {
         int max = 1_000_00_000;
 
         // incrementing counter
