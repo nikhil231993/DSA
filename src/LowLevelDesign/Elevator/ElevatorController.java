@@ -17,6 +17,7 @@ public class ElevatorController {
 
     public void moveElevatorToFloor(int floorNum) {
         controlStrategy = new FirstComeFirstServeElevatorControlStrategy();
+        System.out.println("Control strategy: " +controlStrategy.hashCode());
 
         //We are just determining the next stop as when requests come
         //The movement is being taken by hardware.
