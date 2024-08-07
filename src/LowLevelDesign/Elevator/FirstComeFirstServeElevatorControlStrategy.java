@@ -12,7 +12,7 @@ public class FirstComeFirstServeElevatorControlStrategy implements ElevatorContr
          HashMap<String, String> map=new HashMap<>();
 
         status=new ElevatorCurrState();
-        // synchronized (this) {
+         synchronized (this) {
              if (floorNum == 1) {
                  map.put("Nikhil","Hi");
                  System.out.println("if"+ map + map.hashCode());
@@ -33,7 +33,7 @@ public class FirstComeFirstServeElevatorControlStrategy implements ElevatorContr
                  } catch (InterruptedException e) {
                      throw new RuntimeException(e);
                  }
-           //  }
+             }
          }
 
         System.out.println("Applying First Come First Serve Algorithm and Moving elevator to floor " + status.hashCode()+" floor No "+floorNum +" "+ status.getCurrStatus() +" "+ map +" "+ map.hashCode());
