@@ -8,7 +8,7 @@ public class StackImplementation {
     public StackImplementation(int capacity){
         
         array=new int[capacity];
-        stackTop=-1;
+        stackTop=0;
     }
 
     public  boolean push(int element){

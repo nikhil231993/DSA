@@ -17,7 +17,7 @@ public class Main {
         new Thread(()->{
             int count=0;
             while(++count<10)
-                System.out.println("Popped: " + st.pop());
+                System.out.println("Popped: " + st1.pop());
         }, "popper").start();
 
         System.out.println("Main is exiting");
