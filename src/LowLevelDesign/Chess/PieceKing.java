@@ -1,6 +1,7 @@
 package LowLevelDesign.Chess;
 
 public class PieceKing extends Piece {
+
     public PieceKing(boolean white) {
         super(white);
     }

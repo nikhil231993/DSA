@@ -1,7 +1,7 @@
 package LowLevelDesign.Chess;
 
-
 public class PiecePawn extends Piece {
+
     public PiecePawn(boolean white) {
         super(white);
     }

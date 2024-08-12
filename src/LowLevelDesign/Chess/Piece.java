@@ -1,7 +1,9 @@
 package LowLevelDesign.Chess;
 
 public abstract class Piece {
+
     private boolean isKilled = false;
+
     private boolean isWhitePiece = true;
 
     public Piece(boolean isWhitePiece) {
@@ -25,6 +27,8 @@ public abstract class Piece {
     }
 
     public abstract boolean canMove(Board board, Spot start, Spot end);
+
     public abstract String getSymbol();
+
     public abstract void move(Board board, Spot start, Spot end);
 }

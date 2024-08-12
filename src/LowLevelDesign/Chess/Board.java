@@ -5,6 +5,7 @@ public class Board {
     private Spot[][] boxes = new Spot[8][8];
 
     public Board() {
+
         for (int i = 0; i < 8; i++) {
             for (int j = 0; j < 8; j++) {
                 boxes[i][j] = null;
@@ -14,6 +15,7 @@ public class Board {
     }
 
     public Spot getSpot(int row, int col) {
+
         if (row < 0 || row >= 8 || col < 0 || col >= 8) {
             System.err.println("Error: Index out of bounds");
             return null;
@@ -22,6 +24,7 @@ public class Board {
     }
 
     public void resetBoard() {
+
         // Initialize white pieces
         boxes[0][0] = new Spot(0, 0, new PieceRook(true));
         boxes[0][1] = new Spot(0, 1, new PieceKnight(true));
@@ -59,6 +62,7 @@ public class Board {
     }
 
     public void displayBoard() {
+
         System.out.printf("%12s", "");
         for (char ch = 'a'; ch <= 'h'; ch++) {
             System.out.printf("%12c", ch);

@@ -1,6 +1,7 @@
 package LowLevelDesign.Chess;
 
 public class Spot {
+
     private Piece piece;
     private int x;
     private int y;

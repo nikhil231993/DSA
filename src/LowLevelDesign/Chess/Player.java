@@ -1,6 +1,7 @@
 package LowLevelDesign.Chess;
 
 public class Player {
+
     private boolean humanPlayer;
     private String name;
     private boolean isCurrPlayer;

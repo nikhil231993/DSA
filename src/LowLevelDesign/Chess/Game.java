@@ -27,6 +27,7 @@ public class Game {
     }
 
     public List<Integer> getSpotPosition(String spot) {
+
         int spotRow = 8 - (spot.charAt(0) - '0');
         int spotCol = spot.charAt(1) - 'a';
         List<Integer> position = new ArrayList<>();
@@ -36,6 +37,7 @@ public class Game {
     }
 
     public boolean processMove(Player currPlayer, String start, String end) {
+
         List<Integer> startMove = getSpotPosition(start);
         List<Integer> endMove = getSpotPosition(end);
 
@@ -61,6 +63,7 @@ public class Game {
     }
 
     public void undo() {
+
         currMoveIndex--;
         Move lastMove = movesPlayed.get(currMoveIndex);
         if (lastMove != null) {

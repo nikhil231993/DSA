@@ -2,6 +2,7 @@ package LowLevelDesign.Chess;
 
 
 public class PieceRook extends Piece {
+
     public PieceRook(boolean white) {
         super(white);
     }
