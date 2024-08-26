@@ -3,7 +3,7 @@ package leetcode.principles.Immutable.mapPackage;
 import java.util.Map;
 import java.util.HashMap;
 
-public class Driver {
+public final class Driver {
 
     // Main driver method
     public static void main(String[] args) {
