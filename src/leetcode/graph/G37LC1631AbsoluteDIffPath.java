@@ -32,7 +32,7 @@ public class G37LC1631AbsoluteDIffPath {
         int[][] diff=new int[n][m];
         for(int i=0;i<n;i++){
             for(int j=0;j<m;j++){
-                diff[i][j]=(int)1e9;
+                diff[i][j]=(int) 1e9;
             }
         }
 
@@ -52,7 +52,7 @@ public class G37LC1631AbsoluteDIffPath {
             pq.poll();
 
             //we check the value while taking out of PQ because we might reach right corner with max values as well
-            //Try dry run with example in question and you will find out
+            //Try dry run with example in question, and you will find out
             if(row==n-1 && col==m-1)
                 return height;
 
@@ -62,7 +62,7 @@ public class G37LC1631AbsoluteDIffPath {
 
                 if(nrow>=0 && nrow<n && ncol>=0 && ncol<m){
                     int maxDiff=Math.max(height,Math.abs(heights[row][col]-heights[nrow][ncol]));
-                    if(maxDiff<diff[nrow][ncol]) {
+                    if(maxDiff < diff[nrow][ncol]) {
                         diff[nrow][ncol] = maxDiff;
                         pq.offer(new PairG37(maxDiff, nrow, ncol));
                     }

@@ -25,8 +25,10 @@ public class G3WeightedGraph {
     private static void adjacencyList() {
 
         Scanner scan=new Scanner(System.in);
+
         System.out.println("Enter no of edges: ");
         int n=scan.nextInt();
+
         System.out.println("Enter no of edges: ");
         int m=scan.nextInt();
 
@@ -69,8 +71,10 @@ public class G3WeightedGraph {
     private static void adjacencyMatrix() {
 
         Scanner scan=new Scanner(System.in);
+
         System.out.println("Enter no of edges: ");
         int n=scan.nextInt();
+
         System.out.println("Enter no of edges: ");
         int m=scan.nextInt();
 

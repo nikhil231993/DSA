@@ -99,7 +99,7 @@ public class G16PremiumNumberOfDistinctIslands {
     private static void dfs(int row, int col, int n, int m, int[][] visited, int[][] grid, int[] xaxis, int[] yaxis, List<String> list,int rorigin,int corigin) {
 
         visited[row][col]=1;
-        list.add(toString(row-rorigin,col-corigin));
+        list.add((row-rorigin)+" "+(col-corigin));
 
         for(int k=0;k<4;k++){
             int nrow=row+xaxis[k];

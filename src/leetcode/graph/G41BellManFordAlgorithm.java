@@ -49,7 +49,7 @@ public class G41BellManFordAlgorithm {
             int u=edge[0];
             int v=edge[1];
             int wt=edge[2];
-            if(dist[u]!=1e9 && dist[u]+wt<dist[v]){
+            if(dist[u]!=1e9 && dist[u]+wt < dist[v]){
                 return negArray;
             }
         }

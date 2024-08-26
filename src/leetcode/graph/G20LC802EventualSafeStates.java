@@ -54,7 +54,7 @@ public class G20LC802EventualSafeStates {
             pathVis[i]=1;
             safeNodes[i]=0;//not needed as by default it is 0
 
-            for(Integer vertex:adjList.get(i)){
+            for(Integer vertex : adjList.get(i)){
                 if(visited[vertex]==0){
                     if(dfs(vertex,n,m,visited,pathVis,safeNodes,adjList)){
                         return true;
@@ -68,7 +68,7 @@ public class G20LC802EventualSafeStates {
 
             return false;
 
-            //TC:o(N)+O(N+E)
+            //TC:O(N) + O(N+E)
             //SC:O(3N) visited array,path visited array and safe +O(N) recursion stack
     }
 }

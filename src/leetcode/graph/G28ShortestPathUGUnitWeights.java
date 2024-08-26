@@ -5,6 +5,10 @@ public class G28ShortestPathUGUnitWeights {
 
     public static void main(String[] args) {
 
+        //August 22 : BFS is good for unit weight graph and Dijsktra is good for weighted graph becuase
+        //in BFS we use visited array as per the BFS code but here we don't use it thats why it works for Actual weights
+        //example also. Dijkstra on the other hand works based on PQ of weights
+
         //IMP: we can find the shortest path for undirected unit weights with BFS as the first path
         // guarantees it is the shortest path as it goes level by level
         //Method 1. We can do without visited array where we do have to check the weights
@@ -97,6 +101,7 @@ public class G28ShortestPathUGUnitWeights {
                 }
             }
         }
+
         return dist;
     }
 }

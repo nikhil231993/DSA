@@ -19,7 +19,7 @@ public class G6DFS {
 
         //SC:O(N) dfs list + O(N) visited array + O(N) recursion stack in case of skew graph
         //TC:O(N+2E) for 1 component
-        //TC:O(N)+O(N+2E) for multiple connected components
+        //TC:O(N) + O(N+2E) for multiple connected components
         //Above is for UG graph
 
         //For DG

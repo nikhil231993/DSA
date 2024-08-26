@@ -81,7 +81,7 @@ public class G36BinaryMaze {
                     if(nrow==dest[0]&& ncol==dest[1])
                         return dis+1;
                     if(distance[nrow][ncol] > dis+1){
-                        distance[nrow][ncol]=dis+1;
+                        distance[nrow][ncol] = dis+1;
                         q.offer(new PairG36(distance[nrow][ncol],nrow,ncol));
                     }
                 }

@@ -1,8 +1,11 @@
 package leetcode.graph;
 
 import java.util.*;
+
 public class G50LC721AccountsMerge {
+
     public static void main(String[] args) {
+
         List<List<String>> accounts = new ArrayList<List<String>>();
         accounts.add(Arrays.asList("John","J1@m.co","J2@m.co","J3@m.co"));
         accounts.add(Arrays.asList("John","J4@m.co"));
@@ -13,6 +16,7 @@ public class G50LC721AccountsMerge {
 
         System.out.println(accountsMerge(accounts));
     }
+
     public static List<List<String>> accountsMerge(List<List<String>> accounts) {
 
         int noOfNames=accounts.size();
@@ -40,6 +44,7 @@ public class G50LC721AccountsMerge {
         for(int i=0;i<accounts.size();i++){
             mergeList.add(new ArrayList<>());
         }
+
         for(Map.Entry<String, Integer> m:emailToNode.entrySet()){
             String email=m.getKey();
             Integer node=ds.findParent( m.getValue());
@@ -53,17 +58,21 @@ public class G50LC721AccountsMerge {
             if(mergeList.get(i).size()==0) continue;
             //If present then sort it
             Collections.sort(mergeList.get(i));
+            System.out.println("+++++++");
+            System.out.println(mergeList.get(i));
+            System.out.println("+++++++");
             //Create new ArrayList to add value;
             List<String> tempList=new ArrayList<>();
             tempList.add(accounts.get(i).get(0));
 
-//            for(int j=0;j<mergeList.get(i).size();j++){
-                tempList.addAll(mergeList.get(i));
-//            }
+//          for(int j=0;j<mergeList.get(i).size();j++){
+            tempList.addAll(mergeList.get(i));
+//          }
             ans.add(tempList);
         }
 
         return ans;
+
         //Time Complexity: O(N+E) + O(E*4ɑ) + O(N*(ElogE + E)) where N = no. of indices or nodes
         // and E = no. of emails.
         // The first term is for visiting all the emails. The second term is for merging the accounts.

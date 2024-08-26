@@ -6,7 +6,7 @@ public class BinaryTreeUsingArray {
 	protected int lastUsedIndex = 0;
 
 	public BinaryTreeUsingArray(int size) {
-		arr = new int[size + 1];
+		this.arr = new int[size + 1];
 	}
 
 	public void insert(int value) {
@@ -15,27 +15,26 @@ public class BinaryTreeUsingArray {
 			System.out.println("Tree is full so cannot insert an element");
 			return;
 		}
-		arr[++lastUsedIndex] = value;
-
+		this.arr[++this.lastUsedIndex] = value;
 	}
 
 	private boolean isTreeFull() {
 
-		if (lastUsedIndex == arr.length)
+		if (this.lastUsedIndex == this.arr.length)
 			return true;
 		return false;
 	}
 
 	public void levelOrder() {
 
-		for (int i = 1; i <= lastUsedIndex; i++)
+		for (int i = 1; i <= this.lastUsedIndex; i++)
 			System.out.print(arr[i] + "-->");
 	}
 
 	public void preOrder(int root) {
 
-		if (root <= lastUsedIndex) {
-			System.out.print(arr[root] + "-->");
+		if (root <= this.lastUsedIndex) {
+			System.out.print(this.arr[root] + "-->");
 			preOrder(root * 2);
 			preOrder(root * 2 + 1);
 		}
@@ -43,26 +42,26 @@ public class BinaryTreeUsingArray {
 
 	public void postOrder(int root) {
 
-		if (root <= lastUsedIndex) {
+		if (root <= this.lastUsedIndex) {
 			postOrder(root * 2);
 			postOrder(root * 2 + 1);
-			System.out.print(arr[root] + "-->");
+			System.out.print(this.arr[root] + "-->");
 		}
 	}
 
 	public void inOrder(int root) {
 
-		if (root <= lastUsedIndex) {
+		if (root <= this.lastUsedIndex) {
 			inOrder(root * 2);
-			System.out.print(arr[root] + "-->");
+			System.out.print(this.arr[root] + "-->");
 			inOrder(root * 2 + 1);
 		}
 	}
 
 	public void search(int value) {
 
-		for (int i = 1; i <= lastUsedIndex; i++) {
-			if (arr[i] == value) {
+		for (int i = 1; i <= this.lastUsedIndex; i++) {
+			if (this.arr[i] == value) {
 				System.out.println("Value found at pos: " + i);
 				return;
 			}
@@ -71,17 +70,18 @@ public class BinaryTreeUsingArray {
 
 	public void delete(int value) {
 
-		for (int i = 1; i <= lastUsedIndex; i++) {
-			if (arr[i] == value) {
-				System.out.println("Replacing " + value + " with " + arr[lastUsedIndex]);
-				arr[i] = arr[lastUsedIndex];
-				lastUsedIndex--;
+		for (int i = 1; i <= this.lastUsedIndex; i++) {
+			if (this.arr[i] == value) {
+				System.out.println("Replacing " + value + " with " + this.arr[this.lastUsedIndex]);
+				this.arr[i] = this.arr[this.lastUsedIndex];
+				this.lastUsedIndex--;
 				return;
 			}
 		}
 	}
 
 	public void deleteTree() {
-		arr = null;
+
+		this.arr = null;
 	}
 }

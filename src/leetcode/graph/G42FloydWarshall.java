@@ -5,6 +5,7 @@ import java.util.Arrays;
 public class G42FloydWarshall {
 
     public static void main(String[] args) {
+
       int[][]  matrix = new int[][]{{0,1,43},{1,0,6},{-1,-1,0}};
 
       shortest_distance(matrix);
@@ -19,10 +20,12 @@ public class G42FloydWarshall {
           System.out.println();
       }
     }
-    public static void shortest_distance(int[][] matrix)
-    {
+
+    public static void shortest_distance(int[][] matrix) {
+
         for(int i=0;i<matrix.length;i++){
             for(int j=0;j<matrix[0].length;j++) {
+
                 if (matrix[i][j] == -1) {
                     matrix[i][j] = (int) (1e9);
                 }

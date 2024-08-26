@@ -8,6 +8,7 @@ public class G22TopoSortBFSKahnAlgo {
 
         List<List<Integer>> arr=new ArrayList<>();
         Scanner scan=new Scanner(System.in);
+
         System.out.println("Enter no of Vertex: ");
         int n=scan.nextInt();
         System.out.println("Enter no of Edges: ");
@@ -50,7 +51,7 @@ public class G22TopoSortBFSKahnAlgo {
         }
         return list;
 
-        //SC:O(N) queue+O(N) indegree +O(N)toposort
+        //SC:O(N) queue+O(N) indegree + O(N)toposort
         //TC:O(N+E)
     }
 

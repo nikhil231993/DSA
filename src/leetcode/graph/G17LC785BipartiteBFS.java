@@ -22,6 +22,7 @@ public class G17LC785BipartiteBFS {
                 adjList.get(i).add(graph[i][j]);
             }
         }
+
         System.out.println("Converting Adj Matrix to Adj List: ");
         int j=0;
         for(List<Integer> l:adjList){

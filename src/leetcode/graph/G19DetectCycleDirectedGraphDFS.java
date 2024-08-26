@@ -10,6 +10,7 @@ public class G19DetectCycleDirectedGraphDFS {
 
         List<List<Integer>> arr=new ArrayList<>();
         Scanner scan=new Scanner(System.in);
+
         System.out.println("Enter no of vertex: ");
         int n=scan.nextInt();
         System.out.println("Enter no of edges: ");
@@ -48,7 +49,7 @@ public class G19DetectCycleDirectedGraphDFS {
         pathVisited[i]=0;
         return false;
 
-        //TC:O(N)+O(N+E)
+        //TC:O(N) + O(N+E)
         //SC:O(2N) we can also do it with one visited array
         //Hint: Take visited as 1 and pathVisited as 2
     }

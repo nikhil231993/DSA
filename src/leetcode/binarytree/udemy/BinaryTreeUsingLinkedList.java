@@ -3,7 +3,6 @@ package leetcode.binarytree.udemy;
 import java.util.LinkedList;
 import java.util.Queue;
 
-
 public class BinaryTreeUsingLinkedList {
 
 	protected Node root;
@@ -100,7 +99,7 @@ public class BinaryTreeUsingLinkedList {
 		} else {
 			pos++;
 			if (root.data == data) {
-				System.out.println("value is found at: " + pos);
+				System.out.println("Value is found at: " + pos);
 				return true;
 			}
 			if(inDepthFirstSearch(root.left, data))
@@ -153,7 +152,6 @@ public class BinaryTreeUsingLinkedList {
 					System.out.println("Deepest node is: " + deep.data);
 					temp.data = deep.data;
 					deleteDeepestNode(root);
-
 				}
 				if (temp.left != null)
 					queue.add(temp.left);
@@ -161,10 +159,10 @@ public class BinaryTreeUsingLinkedList {
 					queue.add(temp.right);
 			}
 		}
-
 	}
 
 	private void deleteDeepestNode(Node root) {
+
 		if(root==null) 
 			return;
 		else {
@@ -178,19 +176,16 @@ public class BinaryTreeUsingLinkedList {
 				queue.remove();
 				if(currentNode.left==null) {
 					previousNode.right=null;
-							return;
+					return;
 				}
 				if (currentNode.right == null) {
 					currentNode.left=null;
 					return;
 				}
-
 				queue.add(currentNode.left);
 				queue.add(currentNode.right);
 			}
 		}
-		
-
 	}
 
 	private Node deepestNode() {
@@ -209,7 +204,6 @@ public class BinaryTreeUsingLinkedList {
 					queue.add(temp.left);
 				if (temp.right != null)
 					queue.add(temp.right);
-
 			}
 		}
 		return temp;

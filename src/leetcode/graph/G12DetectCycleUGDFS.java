@@ -9,6 +9,7 @@ public class G12DetectCycleUGDFS {
         System.out.println("################# List Creation Start #####################");
         List<List<Integer>> arr=new ArrayList<>();
         Scanner scan=new Scanner(System.in);
+
         System.out.println("Enter no of vertex: ");
         int n=scan.nextInt();
         System.out.println("Enter no of edges: ");
@@ -80,12 +81,13 @@ public class G12DetectCycleUGDFS {
             }
         }
         //SC:O(N) visited + O(N) auxiliary space worst case in case of skewed graph
-        //TC:O(N+2E) (dfs traversal)+ O(N) for the for loop but it does not call dfs for each of them
+        //TC:O(N+2E) (dfs traversal)+ O(N) for the for loop, but it does not call dfs for each of them
         //G12 18:00
         return false;
     }
 
     private static void adjacencyList(List<List<Integer>> arr,int n, int m, Scanner scan) {
+
         System.out.println("Creating " +n +" List:");
         for(int i=0;i<=n;i++)
             arr.add(new ArrayList<>());

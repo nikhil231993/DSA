@@ -25,11 +25,11 @@ public class G39MinimumMultiplicationToReachEnd {
         int end=5;
 
         //Both gave correct ans in GFG
-        //TC:O(10000*size of array) we cannot say a correct value as it depends on mod and arr size
-        //SC:O(N) queue+O(N) distance
+        //TC: O(10000 * size of array) we cannot say a correct value as it depends on mod and arr size
+        //SC: O(N) queue+O(N) distance
         System.out.println(minimumMultiplications(arr,start,end));
 
-        //SC:O(N) queue+O(N) visited
+        //SC:O(N) queue + O(N) visited
         System.out.println(minimumMultiplicationsWithoutUsingDistanceArray(arr,start,end));
     }
 

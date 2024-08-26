@@ -31,8 +31,8 @@ public class G25LC802EventualSafeStatesUsingTopoSort {
         int[] indegree=new int[graph.length];
 
         //Reverse the Adjacency List and then increase the indegree of parent of previous list
-        for(int i=0;i<adjList.size();i++){
-            for(Integer v:adjList.get(i)){
+        for(int i=0; i<adjList.size(); i++){
+            for(Integer v : adjList.get(i)){
                 reverseAdjList.get(v).add(i);
                 indegree[i]++;
             }

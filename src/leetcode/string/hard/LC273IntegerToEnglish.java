@@ -5,6 +5,7 @@ public class LC273IntegerToEnglish {
     public static void main(String[] args) {
 
         int num = 2130000000;
+        num=200;
         System.out.println(numberToWords(num));
     }
 

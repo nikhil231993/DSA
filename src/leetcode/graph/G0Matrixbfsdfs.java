@@ -25,7 +25,7 @@ public class G0Matrixbfsdfs {
         System.out.println("BFS Traversal in a Matrix: ");
 
         int[] visited = new int[n+1];
-        for (int i =1;i<=n;i++) {
+        for (int i =1; i<=n; i++) {
             if (visited[i] == 0) {
                 bfs(matrix, bfs, i, visited,n);
             }
@@ -57,7 +57,7 @@ public class G0Matrixbfsdfs {
         }
 
         //TC:O(N*N)
-        //SC:O(N) visited array+O(N) recursion stack
+        //SC:O(N) visited array + O(N) recursion stack
     }
 
     private static List<Integer> bfs(int[][] matrix, List<Integer> bfs, int node, int[] visited,int V) {
@@ -96,7 +96,7 @@ public class G0Matrixbfsdfs {
                 }
             }
         }
-        System.out.println("Printing Adjacency List");
+        System.out.println("Printing Adjacency List: ");
         for (List<Integer> list : adjList) {
             System.out.println(list);
         }
@@ -104,7 +104,7 @@ public class G0Matrixbfsdfs {
 
     private static void createMatrix(int[][] matrix, int m, int n, Scanner scanner) {
         
-        System.out.println("Enter Edge values");
+        System.out.println("Enter Edge values: ");
         for (int i=1; i<=m ; i++) {
             int u = scanner.nextInt();
             int v = scanner.nextInt();
@@ -115,7 +115,7 @@ public class G0Matrixbfsdfs {
         //SC:O(n square)
         //TC:O(m) as we pass through the actual edges only and all others are by default 0
 
-        System.out.println("Print Matrix");
+        System.out.println("Print Matrix: ");
         for (int i=0;i<=n;i++) {
             for (int j=0;j<=n;j++) {
                 System.out.print(matrix[i][j] + " ");

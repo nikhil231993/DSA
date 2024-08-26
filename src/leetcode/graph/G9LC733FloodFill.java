@@ -54,7 +54,7 @@ public class G9LC733FloodFill {
 
         for(int i=0;i<n;i++){
             for(int j=0;j<m;j++){
-                System.out.print(image[i][j]);
+                System.out.print(image2[i][j]);
             }
             System.out.println();
         }

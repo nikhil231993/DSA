@@ -11,6 +11,7 @@ public class G18BipartiteDFS {
 
         List<List<Integer>> arr=new ArrayList<>();
         Scanner scan=new Scanner(System.in);
+
         System.out.println("Enter no of Vertex: ");
         int n=scan.nextInt();
         System.out.println("Enter no of Edges: ");
@@ -36,8 +37,8 @@ public class G18BipartiteDFS {
         }
         return true;
 
-        //TC:o(N)for loop+O(N+2E)dfs
-        //SC:O(N) color arr+O(N) stack
+        //TC:O(N)for loop + O(N+2E) dfs
+        //SC:O(N) color arr + O(N) stack
     }
 
     private static boolean bipartite(int i, int n, int m, int[] color, List<List<Integer>> arr) {

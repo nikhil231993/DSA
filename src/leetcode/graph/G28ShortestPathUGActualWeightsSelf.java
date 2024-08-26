@@ -63,7 +63,7 @@ public class G28ShortestPathUGActualWeightsSelf {
             }
         }
 
-        System.out.println("Shortest path from src are: ");
+        System.out.println("Shortest Path from src are: ");
         for(Integer n:dist)
             System.out.println(n);
 

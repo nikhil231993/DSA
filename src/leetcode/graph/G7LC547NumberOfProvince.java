@@ -59,8 +59,8 @@ public class G7LC547NumberOfProvince {
         }
         return count;
 
-        //TC:O(V)+O(V+2E)
-        //TC:O(N) visited +O(N) queue
+        //TC:O(V) + O(V+2E)
+        //TC:O(N) visited + O(N) queue
     }
 
     public static int findCircleNum(int[][] isConnected) {
@@ -89,7 +89,7 @@ public class G7LC547NumberOfProvince {
         //SC:O(n) for visited array + O(n) recursion stack for skewed
         //TC:O(n*n) as we have to parse each element in matrix
 
-        //if it was Adjacency list TC:O(V) outer loop +O(V+2E) for inner loop (12:53 in video)
+        //if it was Adjacency list TC:O(V) outer loop + O(V+2E) for inner loop (12:53 in video)
 
         //IMP: for a graph having 5 disconnected graph  TC:O(N)+O(1)+O(1)+O(1)+O(1)+O(1)
         //which is equal to O(N)

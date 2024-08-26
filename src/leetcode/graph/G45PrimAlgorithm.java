@@ -5,23 +5,29 @@ import java.util.List;
 import java.util.PriorityQueue;
 
 class PairNodeWeight{
-    int node;
-    int weight;
+
+    protected int node;
+    protected int weight;
+
     public PairNodeWeight(int node, int weight){
         this.node=node;
         this.weight=weight;
     }
 }
+
 class PairG45{
-    int weight;
-    int node;
-    int parent;
+
+    protected int weight;
+    protected int node;
+    protected int parent;
+
     public PairG45(int weight, int node, int parent){
         this.weight=weight;
         this.node=node;
         this.parent=parent;
     }
 }
+
 public class G45PrimAlgorithm {
 
     public static void main(String[] args) {
@@ -45,6 +51,7 @@ public class G45PrimAlgorithm {
             adjList.get(edges[i][0]).add(new PairNodeWeight(edges[i][1],edges[i][2]));
             adjList.get(edges[i][1]).add(new PairNodeWeight(edges[i][0],edges[i][2]));
         }
+
         //key is to store the distance
         int[] key=new int[n];
         //to store parent of each
@@ -89,7 +96,8 @@ public class G45PrimAlgorithm {
         for(int num:key)
             sum+=num;
         return sum;
-        //TC:ElogE+ElogE
+
+        //TC:ElogE + ElogE
         //SC:O(N) key+O(N) parent +O(2E) edges +O(N) visited
     }
 }

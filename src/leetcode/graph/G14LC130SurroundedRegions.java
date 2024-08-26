@@ -30,7 +30,7 @@ public class G14LC130SurroundedRegions {
         int delcol[] = {0, 1, 0, -1};
         int vis[][] = new int[n][m];
 
-        // traverse first row and last rowZ
+        // traverse first row and last row
         for(int j = 0 ; j<m;j++) {
             // check for unvisited Os in the boundary rws
             // first row
@@ -83,6 +83,7 @@ public class G14LC130SurroundedRegions {
                 dfs(nrow, ncol, vis, mat, delrow, delcol);
             }
         }
+
         //TC:O(N) boundary rows + O(N) boundary columns + O(N^2 *4) bfs
         //SC:O(N^2) visited array + O(N^2) auxiliary space worst case
     }

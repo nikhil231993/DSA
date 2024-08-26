@@ -8,6 +8,7 @@ public class G23DetectCycleUsingTopoSortBFS {
 
         List<List<Integer>> arr=new ArrayList<>();
         Scanner scan=new Scanner(System.in);
+
         System.out.println("Enter no of vertex: ");
         int n=scan.nextInt();
         System.out.println("Enter no of edges: ");
@@ -39,6 +40,7 @@ public class G23DetectCycleUsingTopoSortBFS {
         while(!q.isEmpty()){
             Integer node=q.poll();
             list.add(node);
+
             for(Integer vertex:arr.get(node)){
                 indegree[vertex]--;
                 if(indegree[vertex]==0){
@@ -51,7 +53,7 @@ public class G23DetectCycleUsingTopoSortBFS {
         //if it is equal to the no of nodes. If equal then there are no cycle but if not then there is a cycle.
         return list.size()<n;
 
-        //SC:O(N) queue+O(N) indegree +O(N) toposort
+        //SC:O(N) queue + O(N) indegree + O(N) toposort
         //TC:O(N+E)
     }
 

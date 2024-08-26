@@ -16,7 +16,7 @@ public class G24LC207CourseSchedule {
         int numCourses=2;
         System.out.println(canFinish(numCourses,prerequisites));
 
-        //TC:O(N)+O(N+E)
+        //TC:O(N) + O(N+E)
         //SC:O(N) queue + O(N) Indegree
     }
 

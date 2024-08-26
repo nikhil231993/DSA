@@ -70,7 +70,7 @@ public class G13LC542Matrix01 {
                 int nrow=row+xaxis[i];
                 int ncol=col+yaxis[i];
 
-                if(nrow>=0 && nrow< n && ncol>=0 && ncol<m && visited[nrow][ncol] ==0){
+                if(nrow >= 0 && nrow < n && ncol >= 0 && ncol < m && visited[nrow][ncol] == 0){
                     visited[nrow][ncol]=1;
                     q.offer(new PairG13(nrow,ncol,level+1));
                 }
@@ -78,7 +78,7 @@ public class G13LC542Matrix01 {
         }
         return dist;
 
-        //TC:O(m*n) for loop +O(m*n*4) bfs
+        //TC:O(m*n) for loop + O(m*n*4) bfs
         //SC:O(m*n) distance array + O(m*n) visited array + O(m*n) queue is full in case of all elements are 0
     }
 }

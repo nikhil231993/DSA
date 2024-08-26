@@ -31,7 +31,7 @@ public class G30LC126WordLadder2 {
         List<String> l=new ArrayList<>();
         l.add(beginWord);
         q.offer(l);
-        int level=0;//Not needed
+        int level=0; //Not needed
 
         //we can usedonlevel array also to store values added inside contains check below
 

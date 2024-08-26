@@ -5,7 +5,13 @@ import java.util.PriorityQueue;
 import java.util.TreeSet;
 
 public class Test {
+
     public static void main(String[] args) {
+
+        System.out.println((char)97);
+
+        System.out.println("####################");
+
         int[] orig=new int[10];
         Arrays.fill(orig,-1);
 

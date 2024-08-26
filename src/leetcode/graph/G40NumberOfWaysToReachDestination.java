@@ -19,7 +19,7 @@ class PairG40{
 
 public class G40NumberOfWaysToReachDestination {
 
-    //converting to long as the test case in leetocde have large values
+    //converting to long as the test case in leetcode have large values
     public static void main(String[] args) {
 
         int V = 7;
@@ -29,6 +29,7 @@ public class G40NumberOfWaysToReachDestination {
         //TC:ElogV
         //SC:O(N) queue+ O(N) distance +O(N) ways
     }
+
     public static int countPaths(int n, int[][] roads) {
 
         List<List<PairG40>> adList=new ArrayList<>();
@@ -63,6 +64,7 @@ public class G40NumberOfWaysToReachDestination {
             for(PairG40 vertexPair:adList.get(node)){
                 int vert=vertexPair.node;
                 long vertDistance=vertexPair.distance;
+
                 if(vertDistance+dis<distance[vert]){
                     distance[vert]=vertDistance+dis;
                     pq.offer(new PairG40(vert,vertDistance+dis));

@@ -11,10 +11,10 @@ public class G37MinPathMatrixSelf {
         int[] source = new int[]{0, 0};
         int[] dest = new int[]{2, 2};
 
-        System.out.println(maxPAth(heights, source, dest));
+        System.out.println(maxPath(heights, source, dest));
     }
 
-    private static int maxPAth(int[][] heights, int[] source, int[] dest) {
+    private static int maxPath(int[][] heights, int[] source, int[] dest) {
 
         PriorityQueue<PairG37> pq = new PriorityQueue<>((a, b) -> a.diff - b.diff);
         int n = heights.length;

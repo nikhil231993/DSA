@@ -30,6 +30,7 @@ public class G32DijkstraAlgoUGWeight {
         //Ans: Yes
         // Also in here we use (v * ((pop vertex from min heap) + no of edges on each vertex *push into PQ) Here it is V* because we parse everything in for loop also which is present inside
         //TC  if we use Queue instead of priority queue will be EV
+
         int V=6;
         int E=8;
         int src=0;
@@ -53,6 +54,7 @@ public class G32DijkstraAlgoUGWeight {
     }
 
     private static int[] shortestPathUsingVisited(int[][] edge, int V, int E, int src) {
+
         List<List<PairG32>> adjList=new ArrayList<>();
 
         for(int i=0;i<V;i++)

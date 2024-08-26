@@ -37,7 +37,6 @@ public class G8LC200NumberOfIslands {
 
         //Without graph using flood fill algo
         System.out.println(g.recursion(grid));
-
     }
 
     private int numIslandsUsingDfs(char[][] grid) {
@@ -151,7 +150,7 @@ public class G8LC200NumberOfIslands {
                 }
             }
 
-            //SC:O(N^2) visited matrix + xO(N^2) if queue is fully occupied
+            //SC:O(N^2) visited matrix + O(N^2) if queue is fully occupied
             //TC:O(n^2 outer for loop + n^2 *4 inner bfs into 4 sides) i.e.,O(n^2+ n^2 *4)
         }
     }

@@ -6,14 +6,16 @@ import java.util.List;
 import java.util.PriorityQueue;
 
 class PairG43 {
-	int dist;
-	int node;
+
+	protected int dist;
+	protected int node;
 
 	public PairG43(int node, int dist) {
 		this.node = node;
 		this.dist = dist;
 	}
 }
+
 public class G43SmallestDistanceNeighbours {
 
 	public static void main(String[] args) {
@@ -30,7 +32,6 @@ public class G43SmallestDistanceNeighbours {
 
 		System.out.println(cityWithSmallestDistanceUsingDijkstra(n, edges, distanceThreshold));
 		System.out.println(cityWithSmallestDistance(n, edges, distanceThreshold));
-
 	}
 
 	private static int cityWithSmallestDistanceUsingDijkstra(int n, int[][] edges, int distanceThreshold) {
@@ -51,6 +52,7 @@ public class G43SmallestDistanceNeighbours {
 		// In Dijkstra we have to just find the shortest distance between for all the
 		// nodes in a loop i.e., the only difference
 		for (int i = 0; i < n; i++) {
+
 			int[] distanceNode=new int[n];
 			Arrays.fill(distanceNode, (int)(1e9));
 			PriorityQueue<PairG43> pq = new PriorityQueue<PairG43>((a, b) -> a.dist - b.dist);

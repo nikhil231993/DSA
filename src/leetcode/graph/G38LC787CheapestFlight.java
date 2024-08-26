@@ -77,12 +77,13 @@ public class G38LC787CheapestFlight {
                 int edW=vertex.distance;
 
                 //below stop<=k is not required
-                if(stop <=k && dist[destination]>edW+distance){
+                if(stop <=k && dist[destination] > edW+distance){
                     dist[destination]=edW+distance;
                     q.offer(new PairG38(stop+1,destination,edW+distance));
                 }
             }
         }
+
         System.out.println("All other destination shortest distance is :");
         for(Integer n : dist)
             System.out.println(n);

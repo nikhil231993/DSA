@@ -20,6 +20,7 @@ public class G11DetectCycleUGBFS {
         System.out.println("################# List Creation Start #####################");
         List<List<Integer>> arr=new ArrayList<>();
         Scanner scan=new Scanner(System.in);
+
         System.out.println("Enter no of vertex: ");
         int n=scan.nextInt();
         System.out.println("Enter no of edges: ");
@@ -110,6 +111,7 @@ public class G11DetectCycleUGBFS {
         // O(N) only 1 time it goes inside for each of the 3 separate components which means 3 times
         // watch G11 19:10
         //SC:O(N) queue+O(n) visited array
+
         return false;
     }
 

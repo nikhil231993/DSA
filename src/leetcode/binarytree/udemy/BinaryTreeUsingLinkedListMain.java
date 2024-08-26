@@ -23,15 +23,15 @@ public class BinaryTreeUsingLinkedListMain {
 		System.out.println("\nLevel order traversal data is : ");
 		bt.levelOrderTraversal(bt.root);
 
-		System.out.println("\nSearching value in Tree:");
+		System.out.println("\nSearching value in Tree :");
 
-		System.out.println("\nUsing preorder traversal");
+		System.out.println("\nUsing preorder traversal : ");
 		bt.inDepthFirstSearch(bt.root, 20);
 
-		System.out.println("\nUsing Level order traversal");
+		System.out.println("\nUsing Level order traversal : ");
 		bt.breadthFirstSearch(bt.root, 50);
 
-		System.out.println("Deleting a value from binary tree: ");
+		System.out.println("Deleting a value from binary tree : ");
 		bt.deleteFromBinaryTree(bt.root, 20);
 
 		System.out.println("\nLevel order traversal data after replacement with deepest node is : ");

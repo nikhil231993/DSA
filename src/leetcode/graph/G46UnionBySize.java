@@ -1,9 +1,12 @@
 package leetcode.graph;
 
 class DisjointSetBySize{
-    int[] parent=null;
-    int[] size=null;
+
+    protected int[] parent=null;
+    protected int[] size=null;
+
     public DisjointSetBySize(int n){
+
         parent=new int[n+1];
         size=new int[n+1];
         for(int i=0;i<=n;i++){
@@ -13,12 +16,14 @@ class DisjointSetBySize{
     }
 
     public int findParent(int node){
+
         if(node ==parent[node])
             return node;
         return parent[node]=findParent(parent[node]);
     }
 
     public void unionBySize(int u,int v){
+
         int parent_U=findParent(u);
         int parent_V=findParent(v);
 
@@ -40,8 +45,11 @@ class DisjointSetBySize{
         }
     }
 }
+
 public class G46UnionBySize {
+
     public static void main(String[] args) {
+
         DisjointSetBySize ds=new DisjointSetBySize(7);
         ds.unionBySize(1,2);
         ds.unionBySize(2,3);
@@ -53,12 +61,13 @@ public class G46UnionBySize {
         else
             System.out.println("Not same");
         ds.unionBySize(3,7);
+
         if(ds.findParent(3)==ds.findParent(7))
             System.out.println("Same");
         else
             System.out.println("Not same");
 
-        //TC:O(4 alpha) for findParent +O(4 alpha) for union
+        //TC:O(4 alpha) for findParent + O(4 alpha) for union
         //SC:O(n) rank and +o(N) parent
     }
 }

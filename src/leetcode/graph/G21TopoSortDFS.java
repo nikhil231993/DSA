@@ -46,8 +46,8 @@ public class G21TopoSortDFS {
         }
         s.push(i);
 
-        //TC:O(N)+O(N+E)
-        //SC:0(N) visited array +O(N) recursion stack
+        //TC:O(N) + O(N+E)
+        //SC:0(N) visited array + O(N) recursion stack
     }
 
     private static void adjacencyList(List<List<Integer>> arr,int n, int m, Scanner scan) {

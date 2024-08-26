@@ -1,12 +1,12 @@
 package leetcode.graph;
 
-
-import java.util.Arrays;
-
 class DisjointSetByRank{
-    int[] rank=null;
-    int[] parent=null;
+
+    protected int[] rank=null;
+    protected int[] parent=null;
+
     public DisjointSetByRank(int n){
+
         rank=new int[n+1];
         parent=new int[n+1];
         for(int i=0;i<=n;i++)
@@ -14,12 +14,14 @@ class DisjointSetByRank{
     }
 
     public int findParent(int node){
+
         if(node==parent[node])
             return node;
         return parent[node]=findParent(parent[node]);
     }
 
     public void unionByRank(int u,int v){
+
         int parent_U=findParent(u);
         int parent_V=findParent(v);
         //If they belong to same component don't do anything
@@ -38,6 +40,7 @@ class DisjointSetByRank{
         }
     }
 }
+
 public class G46UnionByRank {
 
     public static void main(String[] args) {
@@ -53,6 +56,7 @@ public class G46UnionByRank {
         else
             System.out.println("Not same");
         ds.unionByRank(3,7);
+
         if(ds.findParent(3)==ds.findParent(7))
             System.out.println("Same");
         else

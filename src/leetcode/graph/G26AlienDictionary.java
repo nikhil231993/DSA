@@ -20,7 +20,7 @@ public class G26AlienDictionary {
 //                "cab",
 //               "cad"};
         int n=words.length;
-        int k=26;//Try with 5
+        int k=26; //Try with 5
 
         //Above k is used if we are given random digits order and the first 4-5 digits
         //If the value of k is 6 then it will be befdac where e can come at any place
@@ -30,7 +30,7 @@ public class G26AlienDictionary {
         String s=alienDictionary(words,n,k);
         System.out.println(s);
 
-        //Time Complexity: O(N*len)+O(K+E), where N is the number of words in the dictionary,
+        //Time Complexity: O(N*len) + O(K+E), where N is the number of words in the dictionary,
         // ‘len’ is the length up to the index where the first inequality occurs,
         // K = no. of nodes, and E = no. of edges.
         //
@@ -49,7 +49,7 @@ public class G26AlienDictionary {
         for(int i=0;i<words.length-1;i++){
             String firstString=words[i];
             String secondString=words[i+1];
-            for(int j=0;j<Math.min(firstString.length(),secondString.length());j++){
+            for(int j=0; j<Math.min(firstString.length(),secondString.length()); j++){
                 if(firstString.charAt(j)!=secondString.charAt(j)){
                     adList.get(firstString.charAt(j)-'a').add(secondString.charAt(j)-'a');
                     break;
@@ -61,7 +61,7 @@ public class G26AlienDictionary {
 
         String s="";
         for(Integer num:list){
-            s+=(char)(num+(int)'a');
+            s+=(char)(num+'a');
         }
         return s;
     }
@@ -70,7 +70,7 @@ public class G26AlienDictionary {
 
         int[] indegree=new int[n];
         for(int i=0;i<n;i++){
-//            if (arr.get(i).isEmpty()) {
+//            if (arr.get(i).isEmpty()) { // if we want only wert as ans then we can uncommnet this
 //                indegree[i] = Integer.MAX_VALUE;
 //            }
             for(Integer v:arr.get(i)){

@@ -2,6 +2,7 @@ package leetcode.graph;
 
 import java.util.LinkedList;
 import java.util.Queue;
+
 class PairLC1020{
 
     protected int row;
@@ -80,6 +81,7 @@ public class G15LC1020NumberOfEnclaves {
         int[] yaxis=new int[] {0,-1,0,1};
 
         Queue<PairLC1020> q=new LinkedList();
+
         for(int i=0;i<n;i++){
             for(int j=0;j<m;j++){
                 if(i==0||j==0||i==n-1||j==m-1){

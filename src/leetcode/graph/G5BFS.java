@@ -7,10 +7,13 @@ public class G5BFS {
     public static void main(String[] args) {
 
         System.out.println("################# List Creation Start #####################");
+
         List<List<Integer>> arr=new ArrayList<>();
         Scanner scan=new Scanner(System.in);
+
         System.out.println("Enter no of Vertex: ");
         int n=scan.nextInt();
+
         System.out.println("Enter no of Edges: ");
         int m=scan.nextInt();
 
@@ -23,18 +26,19 @@ public class G5BFS {
 
     private static void bfs(List<List<Integer>> arr,int n, int m) {
 
-        ArrayList<Integer> bfs=new ArrayList<>();
-        Queue<Integer> q=new LinkedList<>();
-        boolean[] visited=new boolean[n+1];
+        ArrayList<Integer> bfs = new ArrayList<>();
+        Queue<Integer> q = new LinkedList<>();
+        boolean[] visited = new boolean[n+1];
 
-        for(int i=1;i<=n;i++){
+        for(int i=1; i<=n; i++){
             if(!visited[i]){
                 visited[i]=true;
                 q.add(i);
 
                 while(!q.isEmpty()){
                     Integer vertex=q.poll();
-                    bfs.add(vertex);
+                    bfs.add(vertex); // adding to bfs list
+
                     for(Integer v: arr.get(vertex)){
                         if(!visited[v]) {
                             q.add(v);
@@ -49,8 +53,8 @@ public class G5BFS {
         System.out.println(bfs);
 
         //SC:O(3N) for queue, bfs list and visited array (not using adjacency list as it is given)
-        //TC:O(N)outer for loop + O(N+2E) for while loop and the for loop inside it runs for all the degrees of the node
-        //G7 12:53
+        //TC:O(N) outer for loop + O(N+2E) for while loop and the for loop inside it runs for all the degrees of the node
+         //G7 12:53
     }
 
     private static void adjacencyList(List<List<Integer>> arr,int n, int m, Scanner scan) {

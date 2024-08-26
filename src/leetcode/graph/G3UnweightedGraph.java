@@ -33,6 +33,7 @@ public class G3UnweightedGraph {
             arr.get(u).add(v);
             arr.get(v).add(u);
         }
+
         System.out.println("Adjacency List is: ");
 
         int i=0;
@@ -41,7 +42,7 @@ public class G3UnweightedGraph {
             System.out.println(l);
         }
 
-        //SC:O(2*Edges) This is tp only show show space complexity
+        //SC:O(2*Edges) This is tp only show space complexity
     }
 
     private static void adjacencyMatrix() {
@@ -53,7 +54,7 @@ public class G3UnweightedGraph {
         int m=scan.nextInt();
 
         System.out.println("Enter the edges values: ");
-        int[] [] arr=new int[n+1][n+1];
+        int[] [] arr = new int[n+1][n+1];
 
         for(int i=1;i<=m;i++){
             System.out.println("Enter the "+ i +" edge: ");
@@ -71,6 +72,6 @@ public class G3UnweightedGraph {
           System.out.println();
         }
 
-        //SC:O(n*n) This is tp only show show space complexity
+        //SC:O(n*n) This is tp only show space complexity
     }
 }

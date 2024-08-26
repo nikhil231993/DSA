@@ -19,8 +19,8 @@ public class G24LC210CourseSchedule2 {
        for(Integer n:result)
            System.out.println(n);
 
-        //TC:O(N)+O(N+E)
-        //SC:O(N) queue + O(N) indegree
+        //TC:O(N) + O(N+E)
+        //SC:O(N) queue + O(N) Indegree
     }
 
     public static int[] isPossible(int numCourses, int[][] prerequisites) {
@@ -63,8 +63,8 @@ public class G24LC210CourseSchedule2 {
             }
         }
         int[] arr=new int[topoSort.size()];
-        if(topoSort.size()==numCourses)
-        {
+
+        if(topoSort.size()==numCourses) {
             for(int i=0;i<list.size();i++){
                 arr[i]=topoSort.get(i);
             }

@@ -21,7 +21,7 @@ public class G29LC127WordLadder {
         List<String> wordList = Arrays.asList("hot","dot","dog","lot","log","cog");
         System.out.println(wordLadder(beginWord,endWord,wordList));
 
-        //TC:word.length*26(internal loop) * while loop(size of wordlist)*log n for set
+        //TC:word.length * 26(internal loop) * while loop(size of wordlist)*log n for set
         //SC:set size
     }
 

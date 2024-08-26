@@ -73,10 +73,10 @@ public class G10LC994RottenOranges {
         if(count!=freshOranges) return -1;
         return max;
 
-        //TC:O(n*m) initial loop to put rotten oranges into queue+
+        //TC:O(n*m) initial loop to put rotten oranges into queue +
         // O(n*m) if all oranges are fresh apart from 1st queue will run this time
-        // +O(m*n*4) for all nodes inside loop runs this time
+        // + O(m*n*4) for all nodes inside loop runs this time
         
-        //SC:O(m*n) visited matrix +O(m*n) queue where all oranges can be rotten
+        //SC:O(m*n) visited matrix + O(m*n) queue where all oranges can be rotten
     }
 }

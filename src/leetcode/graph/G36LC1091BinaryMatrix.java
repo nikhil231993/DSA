@@ -68,8 +68,8 @@ public class G36LC1091BinaryMatrix {
                     if(nrow==dest[0]&& ncol==dest[1]){
                         return dis+1;
                     }
-                    if(distance[nrow][ncol]> distance[row][col]+1){
-                        distance[nrow][ncol]=distance[row][col]+1;
+                    if(distance[nrow][ncol] > distance[row][col]+1){
+                        distance[nrow][ncol] = distance[row][col]+1;
                         q.offer(new PairG36(distance[nrow][ncol],nrow,ncol));
                     }
                 }
@@ -77,7 +77,7 @@ public class G36LC1091BinaryMatrix {
         }
         return -1;
 
-        //TC:O(ElogV) i.e O(n*m*4*log(n*m))
+        //TC:O(4*n*m)
         //SC:O(m*n)
     }
 }

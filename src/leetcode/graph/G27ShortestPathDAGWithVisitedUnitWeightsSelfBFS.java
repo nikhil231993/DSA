@@ -9,7 +9,7 @@ public class G27ShortestPathDAGWithVisitedUnitWeightsSelfBFS {
 		//Below is with normal BFS with visited array, and it works because if we reach a node first time
 		//it will be the shortest path with unit weights
 		//but if the weight varies then we cannot use normal BFS with visited array
-		//but if we remove visited array then it will work only in case of graphs without negative weights. (NOte: This statement might be wrong which says it will not work with negative weights)
+		//but if we remove visited array then it will work only in case of graphs without negative weights. (Note: This statement might be wrong which says it will not work with negative weights)
 		//If negative weights are there and directed graph then it will work
 		//If negative weights are there with UG then it will not work
 
@@ -40,6 +40,7 @@ public class G27ShortestPathDAGWithVisitedUnitWeightsSelfBFS {
 
 		int[] visited=new int[V];
 		int[] dist=new int[V];
+
 		Arrays.fill(dist,(int)(1e9));
 
 		dist[src]=0;

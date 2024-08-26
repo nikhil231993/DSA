@@ -3,9 +3,12 @@ package leetcode.graph;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+
 class Pair47{
-    int node;
-    int dist;
+
+    protected int node;
+    protected int dist;
+
     public Pair47(int node, int dist){
         this.node=node;
         this.dist=dist;
@@ -13,37 +16,45 @@ class Pair47{
 }
 
 class Edge implements Comparable<Edge>{
-    int wt;
-    int u;
-    int v;
+
+    protected int wt;
+    protected int u;
+    protected int v;
+
     public Edge(int wt, int u, int v){
         this.wt=wt;
         this.u=u;
         this.v=v;
     }
+
     @Override
     public int compareTo(Edge o) { return this.wt-o.wt;
     }
 }
 
 class PairEdges{
-    int u;
-    int v;
+
+    protected int u;
+    protected int v;
+
     public PairEdges(int u,int v){
         this.u=u;
         this.v=v;
     }
 }
+
 public class G47KrushkalAlgorithm {
+
     public static void main(String[] args) {
+
         int V = 5;
         int[][] edges =  {{0, 1, 2}, {0, 2, 1}, {1, 2, 1}, {2, 3, 2}, {3, 4, 1}, {4, 2, 2}};
 
         //Creating a list of edge having wt, u, v
         //O(N+E) is TC here
         List<Edge> edgeList=new ArrayList<>();
-            for(int[] row:edges){
-                edgeList.add(new Edge(row[2],row[0],row[1]));
+        for(int[] row:edges){
+            edgeList.add(new Edge(row[2],row[0],row[1]));
         }
 
         //To sort based on weight to have minimum weight at top
@@ -52,8 +63,10 @@ public class G47KrushkalAlgorithm {
 
         //Disjoint Set
         DisjointSetBySize ds=new DisjointSetBySize(V);
+
         int sum=0;
         List<PairEdges> pairEdge=new ArrayList<>();
+
         //O(M*4*alpha*2)
         for(Edge edge:edgeList){
             int u=edge.u;
@@ -66,8 +79,10 @@ public class G47KrushkalAlgorithm {
                 ds.unionBySize(u,v);
             }
         }
+
         System.out.println("Minimum Weight of Spanning tree is: "+sum);
         System.out.println("Pair of edges are:");
+
         for(PairEdges e:pairEdge){
             System.out.println(e.u+"--"+e.v);
 
