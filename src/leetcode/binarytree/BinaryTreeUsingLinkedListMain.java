@@ -15,22 +15,22 @@ public class BinaryTreeUsingLinkedListMain {
 		bt.insert(50);
 //		bt.insert(60);
 
-		System.out.println("Inorder traversal data is : ");
+		System.out.println("Inorder traversal data is: ");
 		bt.inOrderTraversal(bt.root);
 
-		System.out.println("\nPre order traversal data is : ");
+		System.out.println("\nPre order traversal data is: ");
 		bt.preOrderTraversal(bt.root);
 
-		System.out.println("\nPost order traversal data is : ");
+		System.out.println("\nPost order traversal data is: ");
 		bt.postorderTraversal(bt.root);
 
-		System.out.println("\nLevel order traversal data is : ");
+		System.out.println("\nLevel order traversal data is: ");
 		bt.levelOrderTraversal(bt.root);
 
-		System.out.println("\nSearching value in BT(Binary Tree) Using Inorder Traversal:");
+		System.out.println("\nSearching value in BT(Binary Tree) Using Inorder Traversal: ");
 		bt.inDepthFirstSearch(bt.root, 50);
 
-		System.out.println("\nSearching value in BT Using Level order Traversal");
+		System.out.println("\nSearching value in BT Using Level order Traversal: ");
 		bt.breadthFirstSearch(bt.root, 50);
 
 		System.out.println("Deleting a value from BT: ");
@@ -61,7 +61,7 @@ public class BinaryTreeUsingLinkedListMain {
 		// Iterative postorder traversal using 2 stack
 		System.out.println();
 		System.out.println("Iterative postorder traversal using two stack: ");
-		List<Integer> postOrder = bt.iterativPostOrder(bt.root);
+		List<Integer> postOrder = bt.iterativePostOrder(bt.root);
 		System.out.println(postOrder);
 
 		// Iterative postorder traversal using 1 stack

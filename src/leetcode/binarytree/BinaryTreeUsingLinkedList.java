@@ -133,8 +133,8 @@ public class BinaryTreeUsingLinkedList {
 			}
 		}
 
-		//TC:O(n)
-		//SC:O(n)
+		//TC:O(N)
+		//SC:O(N)
 	}
 
 	private int pos = 0;
@@ -218,7 +218,7 @@ public class BinaryTreeUsingLinkedList {
 				queue.remove();
 				if(currentNode.left==null) {
 					previousNode.right=null;
-							return;
+					return;
 				}
 				if (currentNode.right == null) {
 					currentNode.left=null;
@@ -304,9 +304,9 @@ public class BinaryTreeUsingLinkedList {
 
 	public List<Integer> iterativeInOrder(Node root) {
 
-		List<Integer> result = new ArrayList<Integer>();
+		List<Integer> result = new ArrayList<>();
 		Node node = root;
-		Stack<Node> st = new Stack<Node>();
+		Stack<Node> st = new Stack<>();
 		while (node!=null || !st.isEmpty()) {
 			if (node != null) {
 				st.add(node);
@@ -325,7 +325,7 @@ public class BinaryTreeUsingLinkedList {
 		// SC:O(H) which is stack space but in case of skewed it will be O(N)
 	}
 
-	public List<Integer> iterativPostOrder(Node root) {
+	public List<Integer> iterativePostOrder(Node root) {
 
 		if (root == null)
 			return new ArrayList<Integer>();
@@ -392,6 +392,7 @@ public class BinaryTreeUsingLinkedList {
 
 		Stack<NodeWithValue> st = new Stack();
 		st.add(new NodeWithValue(root, 1));
+
 		while (!st.isEmpty()) {
 			NodeWithValue n = st.pop();
 
@@ -463,8 +464,8 @@ public class BinaryTreeUsingLinkedList {
 			return false;
 		return true;
 
-		//TC:O(n)
-		//SC:O(H) or  O(N) for skewed tree
+		//TC:O(N)
+		//SC:O(H) or O(N) for skewed tree
 	}
 
 	public static int maxHeight(Node root) {
@@ -484,8 +485,8 @@ public class BinaryTreeUsingLinkedList {
 			return -1;
 		return 1 + Math.max(leftHeight, rightHeight);
 
-		// TC:o(n) as we have to traverse each node
-		// SC:o(n) in case of skewed tree auxiliary space will be this much
+		// TC:O(N) as we have to traverse each node
+		// SC:O(N) in case of skewed tree auxiliary space will be this much
 	}
 
 	public int diameter(Node root) {
@@ -508,7 +509,8 @@ public class BinaryTreeUsingLinkedList {
 		// SC:O(H) in case of normal tree but O(N) in case of skewed tree
 	}
 
-	public int maxPath(Node root2) {
+	public int maxPath(Node root) {
+
 		int[] max = new int[1];
 		maxPath(root, max);
 		return max[0];
