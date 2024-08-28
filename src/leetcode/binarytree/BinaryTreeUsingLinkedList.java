@@ -580,7 +580,7 @@ public class BinaryTreeUsingLinkedList {
 
 		//leftBoundary(root,result);
 		leftBoundaryRecursion(root.left,result); // using recursion
-		addLeavesPreOrder(root, result); //we use ore ,in or post order traversal with minor if condition check
+		addLeavesPreOrder(root, result); //we use pre ,in or post order traversal with minor if condition check
 		//but cannot use level order as we might get above leaf node instead of bottom leaf node in answer
 		//addLeavesInorder(root, result);
 		//addLeavesPostOrder(root, result);
