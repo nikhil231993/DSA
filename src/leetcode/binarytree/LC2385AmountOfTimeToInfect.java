@@ -61,7 +61,6 @@ public class LC2385AmountOfTimeToInfect {
 //                }
 //            }
 //            return count-1;
-//
 //        }
 //
 //        public static TreeNode parentMapping(Map<TreeNode, TreeNode> parent, TreeNode root, int start) {

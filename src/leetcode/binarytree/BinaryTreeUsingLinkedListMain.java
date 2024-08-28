@@ -195,17 +195,17 @@ public class BinaryTreeUsingLinkedListMain {
 		System.out.println("Burn a tree: ");
 		System.out.println(bt.burnTree(bt.root, 100));
 
-		// Count nodes in a Binary tree
+		// Count nodes in a Binary Tree
 		System.out.println();
 		System.out.println("Count nodes in a binary tree: ");
 		System.out.println(bt.countNodes(bt.root));
 
-		// Morris Traversal inorder
+		// Morris Traversal Inorder
 		System.out.println();
 		System.out.println("Inorder Morris traversal: ");
 		System.out.println(bt.inorderMorris(bt.root));
 
-		// Morris Traversal inorder
+		// Morris Traversal Preorder
 		System.out.println();
 		System.out.println("Preorder Morris traversal: ");
 		System.out.println(bt.preorderMorris(bt.root));

@@ -28,7 +28,7 @@ public class V36LC297SerializeAndDeserialize {
         return sb.toString();
 
         //TC:O(n)
-        // SC:O(n)
+        //SC:O(n)
     }
 
     // Decodes your encoded data to tree.
@@ -59,6 +59,6 @@ public class V36LC297SerializeAndDeserialize {
         return root;
 
         //TC:O(n)
-        // SC:O(n)
+        //SC:O(n)
     }
 }

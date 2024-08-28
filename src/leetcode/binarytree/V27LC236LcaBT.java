@@ -2,7 +2,7 @@ package leetcode.binarytree;
 
 public class V27LC236LcaBT {
 
-    //Method 1: Bruet force
+    //Method 1: Brute force
     //Step 1: Find the root to node a TC:O(N) SC:O(N)
     //Step 2: Find the root to node b TC:O(N) SC:O(N)
     //Step 3: Check the path of both and see which of the last element matched

@@ -27,6 +27,6 @@ public class V34BTFromInorderAndPreorder {
 //        return root;
 //
 //        TC:O(N) depending on hashmap
-//        SC:o(n)map +o(n) recursion stack
+//        SC:O(N)map + O(N) recursion stack
 //    }
 }
