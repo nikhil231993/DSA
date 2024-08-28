@@ -261,6 +261,7 @@ public class BinaryTreeUsingLinkedList {
 		List<List<Integer>> list = new ArrayList<>();
 
 		while (!q.isEmpty()) {
+
 			List<Integer> l = new ArrayList();
 			int size = q.size();
 			for (int i = 0; i < size; i++) {
@@ -787,8 +788,8 @@ public class BinaryTreeUsingLinkedList {
 		arr.addAll(map.values());
 		return arr;
 
-		// TC:o(n) I feel it should be O(nlogn ) as it is treemap (This is mentioned in GFG)
-		// SC:o(n)
+		// TC:O(n) I feel it should be O(nlogn ) as it is treemap (This is mentioned in GFG)
+		// SC:O(n)
 
 		// we cannot use recursive traversal directly in this
 	}
@@ -822,8 +823,8 @@ public class BinaryTreeUsingLinkedList {
 		arr.addAll(map.values());
 		return arr;
 
-		// TC:o(n) I feel it should be O(nlogn ) as it is treemap (This is mentioned in GFG)
-		// SC:o(n)
+		// TC:O(n) I feel it should be O(nlogn ) as it is treemap (This is mentioned in GFG)
+		// SC:O(n)
 
 		// we cannot use recursive traversal directly in this
 	}
@@ -847,7 +848,7 @@ public class BinaryTreeUsingLinkedList {
 		rightView(root.left, result, level + 1);
 
 		//TC:O(N)
-		//SC:O(H) but in case of skewed tree it will be o(N)
+		//SC:O(H) but in case of skewed tree it will be O(N)
 	}
 
 	public List<Integer> leftViewBinaryTree(Node root) {
@@ -875,7 +876,6 @@ public class BinaryTreeUsingLinkedList {
 		if (root == null)
 			return true;
 		return isSymmetry(root.left, root.right);
-
 	}
 
 	public static boolean isSymmetry(Node left, Node right) {
@@ -992,7 +992,7 @@ public class BinaryTreeUsingLinkedList {
 		if (root.left != null || root.right != null)
 			root.data = total;
 
-		// TC:o(n)
+		// TC:O(n)
 		// SC:O(H) but in case of skewed tree it will be O(N)
 	}
 
@@ -1063,6 +1063,7 @@ public class BinaryTreeUsingLinkedList {
 				}
 			}
 		}
+
 		// TC:O(N)
 		// SC:O(N)
 	}
