@@ -137,8 +137,8 @@ public class BinaryTreeUsingLinkedListMain {
 		// Right View
 		System.out.println();
 		System.out.println("Right View: ");
-		System.out.println(bt.rightViewBinaryTree(bt.root)); // we can use level order but TC is O(n)  and SC:O(n)
-		//Recursive SC is less
+		System.out.println(bt.rightViewBinaryTree(bt.root)); // we can use level order but TC is O(N)  and SC:O(N)
+		//Recursive SC is less and code is less
 
 		// Left View
 		System.out.println();
@@ -147,7 +147,7 @@ public class BinaryTreeUsingLinkedListMain {
 
 		// Symmetric tree
 		System.out.println();
-		System.out.println("Symmetric tree: ");
+		System.out.println("Symmetric Tree: ");
 		System.out.println(bt.isSymmetric(bt.root));
 
 		// Root To Node
@@ -166,7 +166,7 @@ public class BinaryTreeUsingLinkedListMain {
 		List<List<Integer>> result2 = bt.levelOrder(bt.root);
 		System.out.println(result2);
 
-		// Path sum
+		// Path sum LC 112
 		System.out.println();
 		System.out.println("Path sum: ");
 		System.out.println(bt.pathSum(bt.root, 60));
