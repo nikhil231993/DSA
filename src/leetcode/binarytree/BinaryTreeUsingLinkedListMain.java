@@ -67,7 +67,7 @@ public class BinaryTreeUsingLinkedListMain {
 		// Iterative postorder traversal using 1 stack
 		System.out.println();
 		System.out.println("Iterative postorder traversal using one stack: ");
-		List<Integer> postOrderUsing1Stack = bt.iterativPostOrderUsing1Stack(bt.root);
+		List<Integer> postOrderUsing1Stack = bt.iterativePostOrderUsing1Stack(bt.root);
 		System.out.println(postOrderUsing1Stack);
 
 		// Iterative preorder, inorder and postorder traversal using 1 stack
@@ -152,7 +152,7 @@ public class BinaryTreeUsingLinkedListMain {
 
 		// Root To Node
 		System.out.println();
-		System.out.println("Root to node: ");
+		System.out.println("Root to node: "); //Print from root to a particular node
 		System.out.println(bt.rootToNode(bt.root, 60));
 
 		//Root To Leaf Paths
@@ -166,7 +166,7 @@ public class BinaryTreeUsingLinkedListMain {
 		List<List<Integer>> result2 = bt.levelOrder(bt.root);
 		System.out.println(result2);
 
-		// Path sum LC 112
+		// Path sum LC 112 (ALREADY DONE IN LC12PathSum but with some minor changes)
 		System.out.println();
 		System.out.println("Path sum: ");
 		System.out.println(bt.pathSum(bt.root, 60));
@@ -174,7 +174,7 @@ public class BinaryTreeUsingLinkedListMain {
 		// Max Width of a binary tree
 		System.out.println();
 		System.out.println("Max Width of a binary tree: ");
-		System.out.println(bt.maxWdithOfBinaryTree(bt.root));
+		System.out.println(bt.maxWidthOfBinaryTree(bt.root));
 
 		// Children Sum Property
 		System.out.println();
@@ -212,17 +212,17 @@ public class BinaryTreeUsingLinkedListMain {
 
 		// Flatten BT using Recursion
 		System.out.println();
-		System.out.println("Flatten BT using Recursion: ");
+		System.out.println("Flatten Binary Tree using Recursion: ");
 		bt.flattenRecursion(bt.root);
 
 		// Flatten BT using Iteration
 		System.out.println();
-		System.out.println("Flatten BT using Iteration: ");
+		System.out.println("Flatten Binary Tree using Iteration: ");
 		bt.flattenIteration(bt.root);
 
 		// Flatten BT using Morris Traversal
 		System.out.println();
-		System.out.println("Flatten BT using Morris Traversal: ");
+		System.out.println("Flatten Binary Tree using Morris Traversal: ");
 		bt.flattenMorris(bt.root);
 	}
 }

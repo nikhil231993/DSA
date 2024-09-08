@@ -7,6 +7,12 @@ public class V52LC99RecoverBSTMain {
 
 	public static void main(String[] args) {
 
+		//Brute force:
+		//1.Do any traversal and sort it
+		//2.Simply  do inorder and if the values are incorrect change it
+		//TC:O(2n)+O(nlog n)
+		//SC:O(n)
+
 		BinarySearchTree bst = new BinarySearchTree();
 
 		Node root=new Node(3);

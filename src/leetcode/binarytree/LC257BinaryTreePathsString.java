@@ -1,6 +1,12 @@
 package leetcode.binarytree;
 
-public class LC257BinaryTreePaths {
+public class LC257BinaryTreePathsString {
+
+    /*
+    In this case since string is immutable the value of string does not change when we go only left or right,
+    whereas in case list since it is pass by reference its value changes due to which we have to remove the elements
+    while backtracking
+     */
 
 //    public List<String> binaryTreePaths(TreeNode root) {
 //
@@ -19,7 +25,8 @@ public class LC257BinaryTreePaths {
 //            paths.add(path);
 //        dfs(paths, path+"->", root.left);
 //        dfs(paths, path+"->", root.right);
-//        //TC:o(logn) or O(h)
+//
+//        //TC:O(logn) or O(h)
 //        //Tc:O(H)
 //    }
 }

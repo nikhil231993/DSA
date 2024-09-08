@@ -1,6 +1,6 @@
 package leetcode.binarytree;
 
-public class LC122PathSum {
+public class LC112PathSum {
 
 //    public boolean hasPathSum(TreeNode root, int targetSum) {
 //        if(root==null) return false;
@@ -16,5 +16,8 @@ public class LC122PathSum {
 //        if(func(root.left, sum, s)) return true;
 //        if(func(root.right, sum, s)) return true;
 //        return false;
+//
+//        TC:O(N)
+//        SC:O(N) worst case in case of skewed tree
 //    }
 }

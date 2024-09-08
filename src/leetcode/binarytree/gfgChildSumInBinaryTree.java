@@ -3,6 +3,7 @@ package leetcode.binarytree;
 public class gfgChildSumInBinaryTree {
 
 //    class Solution {
+//
 //        public static int isSumProperty(Node root) {
 //            if (root == null || (root.left == null && root.right == null)) return 1;
 //            int sum = 0;

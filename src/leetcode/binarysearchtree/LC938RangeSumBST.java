@@ -1,6 +1,6 @@
 package leetcode.binarysearchtree;
 
-public class LC938RangeSum {
+public class LC938RangeSumBST {
 
     //Approach 1
 
@@ -12,7 +12,7 @@ public class LC938RangeSum {
 //    public static int func(TreeNode root, int low, int high){
 //        if(root==null) return 0;
 //        if(root.val>= low && root.val<=high)
-//            return root.val+func(root.left, low, high)+func(root.right, low, high);
+//            return root.val + func(root.left, low, high) + func(root.right, low, high);
 //        else if(root.val<low)
 //            return func(root.right, low, high);
 //        else

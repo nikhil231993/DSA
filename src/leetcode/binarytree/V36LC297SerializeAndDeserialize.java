@@ -47,13 +47,13 @@ public class V36LC297SerializeAndDeserialize {
             if(!str[i].equals("n")){
                 Node left=new Node(Integer.parseInt(str[i]));
                 parent.left=left;
-                q.offer(left);
+                q.offer(left);// q.offer(parent.left)
             }
 
             if(!str[++i].equals("n")){
                 Node right=new Node(Integer.parseInt(str[i]));
                 parent.right=right;
-                q.offer(right);
+                q.offer(right); //q.offer(parent.right);
             }
         }
         return root;

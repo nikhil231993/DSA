@@ -11,8 +11,8 @@ public class LC572Subtree {
 //        if(root!=null && subRoot==null)
 //            return false;
 //        return isSame(root, subRoot) || isSubtree(root.left, subRoot) || isSubtree(root.right, subRoot);
-//
 //    }
+//
 //    public static boolean isSame(TreeNode p, TreeNode q) {
 //        if(p ==null && q == null )
 //            return true;

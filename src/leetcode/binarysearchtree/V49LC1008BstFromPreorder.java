@@ -3,10 +3,11 @@ package leetcode.binarysearchtree;
 public class V49LC1008BstFromPreorder {
 
     //1st approach
-    //Traverse through each and put the value at respective place which will be o(n sqaure)
+    //Traverse through each and put the value at respective place which will be TC: O(n square)
 
     //2nd approach
-    //find inorder by using sorting o(nlogn) and then map it which will be o(n)
+    //find inorder by using sorting o(nlogn) and then map it which will be o(n). This
+    //is using preorder and inorder combo which we have learned in BT
 
 //    public TreeNode bstFromPreorder(int[] preorder) {
 //
@@ -21,4 +22,6 @@ public class V49LC1008BstFromPreorder {
 //        node.right=func(preorder, max, count);
 //        return node;
 //    }
+    //TC: we visit single node 3 times so it is 3N
+    //SC:O(1) spart from stack
 }

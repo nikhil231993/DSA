@@ -6,9 +6,11 @@ public class V50BSTIterator {
 
     private Stack<Node> st=new Stack();
     private boolean reverse=true;
+    //reverse false means small
+    //revers true means large
 
     public V50BSTIterator(Node root, boolean rev) {
-        reverse=rev;
+        reverse=rev; // This code is for Two Sum
         pushAll(root);
     }
 

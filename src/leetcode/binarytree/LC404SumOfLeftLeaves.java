@@ -1,6 +1,6 @@
 package leetcode.binarytree;
 
-public class LC404SumOfLeaftLeaves {
+public class LC404SumOfLeftLeaves {
 
 //    public int sumOfLeftLeaves(TreeNode root) {
 //        if(root==null) return 0;

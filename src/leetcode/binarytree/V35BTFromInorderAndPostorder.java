@@ -10,7 +10,6 @@ public class V35BTFromInorderAndPostorder {
 //        TreeNode node=buildingTree(postorder, 0, postorder.length-1,
 //                inorder, 0, inorder.length-1,  map);
 //        return node;
-//
 //    }
 //
 //    public static TreeNode buildingTree(int[] postorder, int postStart, int postEnd, int[] inorder, int inStart, int inEnd, Map<Integer, Integer> map){
@@ -23,8 +22,7 @@ public class V35BTFromInorderAndPostorder {
 //
 //        node.left=buildingTree(postorder, postStart, postStart+numLeft-1, inorder, inStart, inRoot-1,map);
 //
-//        node.right=buildingTree(postorder,postStart+numLeft, postEnd-1, inorder,
-//                inRoot+1, inEnd, map );
+//        node.right=buildingTree(postorder,postStart+numLeft, postEnd-1, inorder, inRoot+1, inEnd, map );
 //
 //        return node;
 //

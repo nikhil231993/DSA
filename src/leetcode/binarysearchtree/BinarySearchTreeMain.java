@@ -26,8 +26,12 @@ public class BinarySearchTreeMain {
 		root = bst.insert(root, 14);
 //		System.out.println(root.hashCode());
 
-		//Using video solution L44
+		//Using video solution L43
 		root=bst.insertIterative(root, 16);
+
+		System.out.println();
+		System.out.println("Search using level order without queue: ");
+		System.out.println("Value found is: " + bst.searchLevelWithoutQueue(root, 30));
 
 		//Code for search is generic in Striver's code. Have not written that code. Please refer video
 		System.out.println();
@@ -57,19 +61,25 @@ public class BinarySearchTreeMain {
 		System.out.println(bst.floorIterative(root,12));
 
 		//Kth Smallest element
-		System.out.println("Kth smallest element:");
+		System.out.println("Kth Smallest Element:");
 		System.out.println(bst.kthSmallestElement(root,3));
 
 		//Kth Smallest element
-		System.out.println("Kth largest element:");
+		System.out.println("Kth Largest Element:");
 		System.out.println(bst.kthLargestElement(root,9));
+
+		System.out.println("Kth Largest Element:");
+		System.out.println(bst.kthLargestElementOptimized(root,9));
+		//Above using Morris Traversal
+		System.out.println("Kth Largest Element suing Morris traversal:");
+		System.out.println(bst.kthLargestUsingMorris(root,9));
 
 		//Valid BST
 		System.out.println("Valid BST:");
 		System.out.println(bst.validBST(root));
 
 		//LCA BST
-		System.out.println("LCA BST:");
+		System.out.println("LCA BST Recursion:");
 		System.out.println(bst.lcaBST(root,3,10));
 
 		System.out.println("LCA BST Iterative:");
@@ -85,8 +95,9 @@ public class BinarySearchTreeMain {
 
 		//Two Sum BST
 		System.out.println("Two Sum BST:");
-		//1st approach
-		//find inorder and then use 2 pointer so TC :O(n)+O(n) SC:O(n)
+		//Brute Approach:
+		//Find inorder and then use 2 pointer so TC :O(n) + O(n)
+		//SC:O(n)
 		System.out.println(bst.twoSumBST(root,20));
 
 		System.out.println("Inorder traversal of BST is: ");

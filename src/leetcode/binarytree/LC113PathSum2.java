@@ -14,7 +14,7 @@ public class LC113PathSum2 {
 //            return;
 //        s+=root.val;
 //        ans.add(root.val);
-//        if(s==sum && root.left==null && root.right==null)
+//        if(s == sum && root.left == null && root.right == null)
 //            list.add(new ArrayList(ans));
 //        func(root.left, sum, s, list, ans);
 //        func(root.right, sum, s, list, ans);

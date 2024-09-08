@@ -1,6 +1,6 @@
 package leetcode.binarytree;
 
-public class LC617MeregTwoBinaryTrees {
+public class LC617MergeTwoBinaryTrees {
 
 //    public TreeNode mergeTrees(TreeNode root1, TreeNode root2) {
 //        return func(root1, root2);

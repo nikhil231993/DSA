@@ -353,7 +353,7 @@ public class BinaryTreeUsingLinkedList {
 		// SC:O(2N) only considering stack
 	}
 
-	public List<Integer>  iterativPostOrderUsing1Stack(Node root2) {
+	public List<Integer>  iterativePostOrderUsing1Stack(Node root2) {
 
 		Stack<Node> st = new Stack<Node>();
 		List<Integer> arr = new ArrayList<Integer>();
@@ -638,7 +638,7 @@ public class BinaryTreeUsingLinkedList {
 		}
 		if(root.right!=null)
 			rightBoundaryRecursion(root.right, result,st);
-		if(root.right==null)
+		else if(root.right==null) // we can only have else without condition
 			rightBoundaryRecursion(root.left,result,st);
 	}
 
@@ -650,7 +650,7 @@ public class BinaryTreeUsingLinkedList {
 		}
 		if(root.left!=null)
 			leftBoundaryRecursion(root.left,result);
-		if(root.left==null)
+		else if(root.left==null) // we can only have else without condition
 			leftBoundaryRecursion(root.right, result);
 	}
 
@@ -926,7 +926,7 @@ public class BinaryTreeUsingLinkedList {
 		return pathSum(root.left, sum - root.data) || pathSum(root.right, sum - root.data);
 	}
 
-	public int maxWdithOfBinaryTree(Node root) {
+	public int maxWidthOfBinaryTree(Node root) {
 
 		Queue<Pair> q = new LinkedList();
 		q.add(new Pair(root, 0));
@@ -1242,16 +1242,20 @@ public class BinaryTreeUsingLinkedList {
 		return list;
 	}
 
-	Node  prev=null;
+	private Node  prev=null;
 	public void flattenRecursion(Node root) {
 
-		if(root==null) return;
+		if(root==null)
+			return;
 
 		flattenRecursion(root.right);
 		flattenRecursion(root.left);
 		root.right=prev;
 		root.left=null;
 		prev=root;
+
+		//TC:O(N)
+		//SC:O(N) for skewed tree
 	}
 
 	public void flattenIteration(Node root) {
@@ -1273,6 +1277,8 @@ public class BinaryTreeUsingLinkedList {
 			}
 			current.left=null;
 		}
+		//TC:O(N)
+		//SC:O(N)
 	}
 
 	public void flattenMorris(Node root) {

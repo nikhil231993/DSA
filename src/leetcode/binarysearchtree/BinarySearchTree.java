@@ -43,11 +43,11 @@ public class BinarySearchTree {
 		int ceil=-1;
 
 		while(root!=null){
+
 			if(root.data==key){
 				ceil=root.data;
 				return ceil;
 			}
-
 			if(key<root.data){
 				ceil=root.data;
 				root=root.left;
@@ -66,6 +66,7 @@ public class BinarySearchTree {
 		int floor=Integer.MAX_VALUE;
 
 		while(root!=null){
+
 			if(root.data==key){
 				floor= root.data;;
 				return floor;
@@ -121,6 +122,70 @@ public class BinarySearchTree {
 		return val[0];
 	}
 
+	public int kthLargestElementOptimized(Node root, int k) {
+
+		int[] c=new int[1];
+		int[] val=new int[1];
+		kLargest(root,k,c,val);
+		return val[0];
+	}
+
+	private void kLargest(Node root, int k, int[] count, int[] value) {
+
+		if(root==null)
+			return;
+		kLargest(root.right, k, count, value);
+		count[0]++;
+		if(count[0]==k){
+			value[0]=root.data;
+			return;
+		}
+		kLargest(root.left,k ,count, value);
+
+		//TC:O(N) as we have to parse each element
+		//SC:O(N) stack space. This can be improved by using Morris Traversal
+	}
+
+	public static int kthLargestUsingMorris(Node root, int k) {
+		Node curr = root;
+		Node Klargest = null;
+		// count variable to keep count of visited Nodes
+		int count = 0;
+		while (curr != null) {
+			// if right child is NULL
+			if (curr.right == null) {
+				// first increment count and check if count = k
+				if (++count == k)
+					Klargest = curr;
+				// otherwise move to the left child
+				curr = curr.left;
+			} else {
+				// find inorder successor of current Node
+				Node succ = curr.right;
+				while (succ.left != null && succ.left != curr)
+					succ = succ.left;
+
+				if (succ.left == null) {
+					// set left child of successor to the
+					// current Node
+					succ.left = curr;
+					// move current to its right
+					curr = curr.right;
+				}
+				// restoring the tree back to original binary
+				// search tree removing threaded links
+				else {
+					succ.left = null;
+					if (++count == k)
+						Klargest = curr;
+					// move current to its left child
+					curr = curr.left;
+				}
+			}
+		}
+		return Klargest.data;
+	}
+
 	private void nodesCount(Node root, int[] count) {
 
 		if(root==null)
@@ -146,7 +211,7 @@ public class BinarySearchTree {
 		return isValid(root.left, minValue, root.data) && isValid(root.right , root.data, maxValue);
 
 		//TC:O(N)
-		// SC:O(H)
+		//SC:O(H)
 	}
 
 
@@ -187,6 +252,9 @@ public class BinarySearchTree {
 			return search(root.right, value);
 		else
 			return search(root.left, value);
+
+		//TC:O(log n)
+		//SC:O(log n)
 	}
 
 	public Node delete(Node root, int value) {
@@ -320,9 +388,13 @@ public class BinarySearchTree {
 
 	//below elements are used to recover BST
 	private Node first;
+
 	private Node last;
+
 	private Node middle;
+
 	private Node prev;
+
 	public void recover(Node root) {
 
 		prev=new Node(Integer.MIN_VALUE);
@@ -475,8 +547,8 @@ public class BinarySearchTree {
 		path(paths, root.right, targetSum-root.data, path);
 		path.remove(path.size()-1);
 
-		//TC:o(n)
-		// sc:o(logn)
+		//TC:O(n)
+		//SC:O(logn)
 	}
 
 	public static boolean searchLevel(Node root, int value) {
@@ -494,6 +566,26 @@ public class BinarySearchTree {
 				q.offer(node.right);
 			else if(node.data>value && node.left!=null)
 				q.offer(node.left);
+		}
+		return false;
+
+		//TC:O(logn)
+		//SC:O(N)
+	}
+
+	public static boolean searchLevelWithoutQueue(Node root, int value) {
+
+		if(root==null) return false;
+		Node current=root;
+		while(current!=null){
+
+			if(current.data==value)
+				return true;
+
+			else if(current.data<value)
+				current=current.right;
+			else if(current.data>value)
+				current=current.left;
 		}
 		return false;
 
@@ -531,6 +623,7 @@ public class BinarySearchTree {
 		Node current=root;
 
 		while(true){
+
 			if(current.data>value){
 				if(current.left==null){
 					current.left=node;

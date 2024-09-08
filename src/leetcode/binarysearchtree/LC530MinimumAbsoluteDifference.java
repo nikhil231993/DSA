@@ -11,10 +11,10 @@ public class LC530MinimumAbsoluteDifference {
 //    }
 //
 //    public void func(TreeNode root, int[] min){
-//        if(root==null)
+//        if(root == null)
 //            return;
 //        func(root.left, min);
-//        if(prev!=null)
+//        if(prev != null)
 //            min[0]=Math.min(min[0], root.val-prev.val);
 //        prev=root;
 //        func(root.right, min);

@@ -17,6 +17,7 @@ public class LC2385AmountOfTimeToInfect {
      *     }
      * }
      */
+
 //    class Solution {
 //        public int amountOfTime(TreeNode root, int start) {
 //

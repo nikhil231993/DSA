@@ -19,11 +19,11 @@ public class V34BTFromInorderAndPreorder {
 //    public static TreeNode func(int[] preorder, int preStart, int preEnd, int[] inorder, int inStart, int inEnd, HashMap<Integer, Integer> map){
 //        if(preStart>preEnd || inStart>inEnd) return null;
 //
-//        TreeNode root=new TreeNode(preorder[preStart]);
-//        int inRoot=map.get(preorder[preStart]);
-//        int numsLeftofRootInorder= inRoot-inStart;
-//        root.left=func(preorder, preStart+1, preStart+numsLeftofRootInorder, inorder, inStart, inRoot-1, map);
-//        root.right=func(preorder, preStart+numsLeftofRootInorder+1, preEnd, inorder, inRoot+1, inEnd , map);
+//        TreeNode root = new TreeNode(preorder[preStart]);
+//        int inRoot = map.get(preorder[preStart]);
+//        int numsLeftofRootInorder = inRoot-inStart;
+//        root.left = func(preorder, preStart+1, preStart+numsLeftofRootInorder, inorder, inStart, inRoot-1, map);
+//        root.right = func(preorder, preStart+numsLeftofRootInorder+1, preEnd, inorder, inRoot+1, inEnd , map);
 //        return root;
 //
 //        TC:O(N) depending on hashmap
