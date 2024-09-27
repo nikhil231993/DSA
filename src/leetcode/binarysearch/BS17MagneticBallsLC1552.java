@@ -14,10 +14,8 @@ public class BS17MagneticBallsLC1552 {
     public static int maxDistance(int[] position, int m) {
 
         Arrays.sort(position);
-        int n=position.length;
-        int low=1;
-        int high=position[n-1]-position[0];
-        int ans=1;
+
+        int n=position.length, low=1, high=position[n-1]-position[0], ans=1;
 
         while(low<=high){
             int mid=low+(high-low)/2;
@@ -33,10 +31,10 @@ public class BS17MagneticBallsLC1552 {
 
     public static boolean isPossible(int distance, int[] position, int m){
 
-        int count=1;
-        int last=position[0];
+        int count=1, last=position[0];
 
         for(int i=1;i<position.length;i++){
+
             if(position[i]-last>=distance){
                 count++;
                 last=position[i];
@@ -46,7 +44,7 @@ public class BS17MagneticBallsLC1552 {
         }
         return false;
 
-        //TC:nlog n +log(arr[n-1]-arr[0])*O(n)
+        //TC:nlog n + log(arr[n-1]-arr[0])*O(n)
         //SC:O(1)
     }
 }

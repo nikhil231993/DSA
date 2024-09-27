@@ -11,9 +11,9 @@ public class BS2InsertPositionLC35 {
 
     private static int insertPosition(int[] arr, int x) {
 
-        int low=0;
+        int low=0, high=arr.length-1;
         int ans=arr.length; //Return last hypothetical answer
-        int high=arr.length-1;
+
         while(low<=high){
             int mid=low+(high-low)/2;
             if(arr[mid]>=x){

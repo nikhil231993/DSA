@@ -27,6 +27,7 @@ public class LC43MultiplyStrings {
 		}
 		StringBuilder sb = new StringBuilder();
 		int j = 0;
+
 		while (j < result.length && result[j] == 0)
 			j++;
 		while (j < result.length) {

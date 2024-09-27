@@ -6,7 +6,7 @@ public class LC5LongestPalandromicSubstring {
 
 		String s = "abccbs";
 
-		//Approach 1 find all substring which takes O(n square) and then check each substring with original string o(n)
+		//Approach 1 find all substring which takes O(n square) and then check if each substring is a palindrome or not o(n)
 		//.i.e., O(n square)*O(n)
 
 		//Approach 2

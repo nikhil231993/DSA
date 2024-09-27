@@ -36,8 +36,8 @@ public class G10LC994RottenOranges {
         for(int i=0;i<n;i++){
             for(int j=0;j<m;j++){
                 if(grid[i][j]==2){
-                    q.offer(new Oranges(i,j,0));
-                //  visited[i][j]=2; will work without this
+                    q.offer(new Oranges(i, j, 0));
+                //  visited[i][j]=2; will work without this //marking as rotten
                 }
 
                 if(grid[i][j]==1)
@@ -64,7 +64,7 @@ public class G10LC994RottenOranges {
 
                 if(nrow>=0 && nrow<n && ncol>=0 && ncol<m && visited[nrow][ncol]!=2 && grid[nrow][ncol]==1){
                     count++;
-                    visited[nrow][ncol]=2;
+                    visited[nrow][ncol]=2; //marking as rotten
                     q.offer(new Oranges(nrow,ncol,lev+1));
                 }
             }

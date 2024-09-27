@@ -38,6 +38,7 @@ public class G23DetectCycleUsingTopoSortBFS {
         }
         List<Integer> list=new ArrayList<>();
         while(!q.isEmpty()){
+
             Integer node=q.poll();
             list.add(node);
 

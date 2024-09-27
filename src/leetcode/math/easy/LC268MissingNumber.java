@@ -24,7 +24,7 @@ public class LC268MissingNumber {
 		}
 		return n;
 
-		//TC:O(n)
+		//TC:O(n) ask me if u don't get it. This bit operation of XOR
 		//SC:O(n)
 	}
 

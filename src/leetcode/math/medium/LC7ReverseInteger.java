@@ -6,6 +6,7 @@ public class LC7ReverseInteger {
 
 		int n = -123;
 		n=2147483647;
+		n=1534236469;
 		System.out.println(reverseInteger(n));
 	}
 

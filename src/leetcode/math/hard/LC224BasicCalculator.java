@@ -17,6 +17,7 @@ public class LC224BasicCalculator {
         int sign = 1;
         int result = 0;
         Stack<Integer> st = new Stack<>();
+
         for (int i = 0; i < s.length(); i++) {
             int num = 0;
             while (i < s.length() && Character.isDigit(s.charAt(i))) {
@@ -24,7 +25,7 @@ public class LC224BasicCalculator {
                 i++;
             }
             result += sign * num;
-            if (i >= s.length())//To avoid index out of bound condition
+            if (i >= s.length()) //To avoid index out of bound condition
                 break;
             if (s.charAt(i) == '+')
                 sign = 1;

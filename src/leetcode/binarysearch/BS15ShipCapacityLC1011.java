@@ -6,7 +6,7 @@ public class BS15ShipCapacityLC1011 {
 
        int[] weights = new int[]{1,2,3,4,5,6,7,8,9,10};
        int days = 5;
-       System.out.println(shipWithinDays(weights,days));
+       System.out.println(shipWithinDays(weights, days));
     }
 
     public static int shipWithinDays(int[] weights, int days) {
@@ -14,13 +14,14 @@ public class BS15ShipCapacityLC1011 {
         //Step 1: find the max value
         //Step 2: find the sum of the total weight of the packages
 
-        int totalWeights=0;
-        int max=Integer.MIN_VALUE;
+        int totalWeights=0, max=Integer.MIN_VALUE;
         for(int i=0;i<weights.length;i++){
             max=Math.max(max,weights[i]);
             totalWeights+=weights[i];
         }
+
         int low=max, high=totalWeights, ans=0;
+
         while(low<=high){ //log n
             int mid=low+(high-low)/2;
             if(isPossible(mid,weights,days)){
@@ -35,8 +36,7 @@ public class BS15ShipCapacityLC1011 {
 
     public static boolean isPossible(int total, int[] weights, int days){
 
-        int count=1;
-        int sum=0;
+        int count=1, sum=0;
 
         for(int i=0;i< weights.length;i++){//o(n)
             sum+=weights[i];

@@ -6,13 +6,13 @@ class ListNode {
 
       protected ListNode next;
 
-      ListNode() {}
+      protected ListNode() {}
 
-      ListNode(int val) {
+      protected ListNode(int val) {
           this.val = val;
       }
 
-      ListNode(int val, ListNode next) {
+      protected ListNode(int val, ListNode next) {
           this.val = val;
           this.next = next;
       }
@@ -39,8 +39,7 @@ public class LC2AddTwoNumbers {
 
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 
-        int sum=0;
-        int carry=0;
+        int sum=0, carry=0;
         ListNode l=new ListNode(-1);
         ListNode temp=l;
 

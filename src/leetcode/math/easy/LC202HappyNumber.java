@@ -30,7 +30,7 @@ public class LC202HappyNumber {
 		 return false;
 
 		// SC:O(1)
-		// TC:(logn) where log n is the time taken to find no of digits in a number
+		// TC:(log n) where log n is the time taken to find no of digits in a number
 	}
 
 	 public static int squareDigits(int n) {

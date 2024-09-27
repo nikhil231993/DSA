@@ -136,8 +136,8 @@ public class G8LC200NumberOfIslands {
             int second=q.peek().second;
             q.poll();
 
-            int[] x_axis=new int[]{1,0,-1,0};//check for all 4 directions
-            int[] y_axis=new int[]{0,-1,0,1};//check for all 4 directions
+            int[] x_axis=new int[]{1,0,-1,0}; //check for all 4 directions
+            int[] y_axis=new int[]{0,-1,0,1}; //check for all 4 directions
 
             //NOTE: for diagonal check for all 8 directions
 

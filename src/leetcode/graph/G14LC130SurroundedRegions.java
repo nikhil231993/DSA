@@ -44,7 +44,7 @@ public class G14LC130SurroundedRegions {
             }
         }
 
-        for(int i = 0;i<n;i++) {
+        for(int i = 0; i<n; i++) {
             // check for unvisited Os in the boundary columns
             // first column
             if(vis[i][0] == 0 && board[i][0] == 'O') {
@@ -78,8 +78,7 @@ public class G14LC130SurroundedRegions {
             int nrow = row + delrow[i];
             int ncol = col + delcol[i];
             // check for valid coordinates and unvisited Os
-            if(nrow >=0 && nrow <n && ncol >= 0 && ncol < m
-                    && vis[nrow][ncol] == 0 && mat[nrow][ncol] == 'O') {
+            if(nrow >=0 && nrow <n && ncol >= 0 && ncol < m && vis[nrow][ncol] == 0 && mat[nrow][ncol] == 'O') {
                 dfs(nrow, ncol, vis, mat, delrow, delcol);
             }
         }

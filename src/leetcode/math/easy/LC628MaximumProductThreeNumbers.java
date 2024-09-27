@@ -70,7 +70,7 @@ public class LC628MaximumProductThreeNumbers {
 				min2 = nums[i];
 			}
 		}
-		return Math.max(max1 * max2 * max3, max1 * min1 * min2);
+		return Math.max( max1 * max2 * max3, max1 * min1 * min2 );
 
 		// SC:O(1)
 		// TC:O(n)

@@ -11,6 +11,9 @@ public class LC796RotateString {
 
         //Approach 2: for interview
         System.out.println(rotateStringBetter(s,goal));
+
+        //Approach 3: Self
+        System.out.println(rotateStringSelf(s,goal));
     }
 
     public static boolean rotateString(String s, String goal) {
@@ -44,6 +47,28 @@ public class LC796RotateString {
             if(A.charAt(i) != B.charAt((i+rotation)%B.length())) {
                 return false;
             }
+        }
+        return true;
+    }
+
+    public static boolean rotateStringSelf(String s, String goal) {
+
+        int n=s.length(), m=goal.length();
+        if(n!=m)
+            return false;
+        for(int i=0;i<n;i++){
+            if(func(s, goal, 0, i))
+                return true;
+        }
+        return false;
+    }
+
+    public static boolean func(String s, String goal, int start, int j){
+
+        for(int i=start;i<s.length();i++){
+            if(s.charAt(i)==goal.charAt(j%(goal.length()))){
+                j++;
+            }else return false;
         }
         return true;
     }

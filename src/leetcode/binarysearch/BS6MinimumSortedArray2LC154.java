@@ -12,6 +12,7 @@ public class BS6MinimumSortedArray2LC154 {
 
         int n=nums.length;
         int low=0, high=n-1, ans=Integer.MAX_VALUE;
+
         while(low<=high){
             int mid=low+(high-low)/2;
 

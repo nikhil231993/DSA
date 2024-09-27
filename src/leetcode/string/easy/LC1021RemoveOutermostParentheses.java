@@ -16,6 +16,7 @@ public class LC1021RemoveOutermostParentheses {
         StringBuilder sb=new StringBuilder();
 
         for(int i=0;i<s.length();i++){
+
             char ch=s.charAt(i);
             if(ch=='('){
                 if(!st.isEmpty()){

@@ -38,8 +38,8 @@ public class BS23RowsWithMaxOnesLC2643 {
 
     public static int rowWithMax1s(int arr[][], int n, int m) {
 
-        int maxValue=0;
-        int index=-1;
+        int maxValue=0, index=-1;
+
         for(int i=0;i<n;i++){
             int count=m-findSmallestOneIndex(arr[i], m, 1);
             if(count>maxValue){
@@ -53,9 +53,8 @@ public class BS23RowsWithMaxOnesLC2643 {
     public static int findSmallestOneIndex(int[] num, int m, int target){
 
         //find lower bound >=1
-        int low=0;
-        int high=m-1;
-        int ans=m;
+        int low=0, high=m-1, ans=m;
+
         while(low<=high){
             int mid=low+(high-low)/2;
             if(num[mid]>=target){

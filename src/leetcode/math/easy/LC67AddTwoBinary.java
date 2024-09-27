@@ -9,13 +9,13 @@ public class LC67AddTwoBinary {
 		String a = "1010";
 		String b = "1011";
 
-		//Approach 1:Best
+		//Approach 1: Best
 		System.out.println(addBinary(a, b));
 
-		//Approach 2:Better
+		//Approach 2: Better
 		System.out.println(addBinaryWithoutStringBuilder(a, b));
 
-		//Approach 3:Brute
+		//Approach 3: Brute
 		System.out.println(addBinaryWithStringAndStack(a, b));
 	}
 

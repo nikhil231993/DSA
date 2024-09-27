@@ -12,6 +12,7 @@ public class BS11NthRoot {
 
         int low=1, high=m;
         while(low<=high){
+
             int mid=low+(high-low)/2;
 
             if(root(n,m,mid)==1){

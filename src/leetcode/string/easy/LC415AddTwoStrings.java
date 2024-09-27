@@ -17,6 +17,7 @@ public class LC415AddTwoStrings {
 
 		while (i >= 0 || j >= 0) {
 			sum = carry;
+
 			if (i >= 0)
 				sum += num1.charAt(i--) - '0';
 			if (j >= 0)

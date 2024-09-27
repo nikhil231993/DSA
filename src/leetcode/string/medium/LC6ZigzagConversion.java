@@ -7,7 +7,7 @@ public class LC6ZigzagConversion {
         String s = "PAYPALISHIRING";
         int numRows = 3;
 
-        System.out.println(convert(s,numRows));
+        System.out.println(convert(s, numRows));
     }
 
     public static String convert(String s, int row){

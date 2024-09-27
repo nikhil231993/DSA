@@ -31,7 +31,7 @@ public class G48NoOfProvincesUsingDisjointSet {
         }
         return count;
 
-        //TC: O(n*m *4 *alpha) for matrix in step 1 + O(n) no of nodes for step 2
+        //TC: O( n * m *4 * alpha) for matrix in step 1 + O(n) no of nodes for step 2
         //SC: O(N) parent + O(N) size array
     }
 }

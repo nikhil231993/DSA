@@ -33,6 +33,7 @@ public class LC14LongestCommonPrefix {
 
 		int minLength = findMin(s);
 		String first=s[0];
+
 		char current;
 		String temp="";
 

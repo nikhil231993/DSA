@@ -58,7 +58,7 @@ public class G36LC1091BinaryMatrix {
 //                continue;
 //            visited[row][col]=1;
 
-            for(int k=0;k<8;k++){
+            for(int k=0; k<8; k++){ //Parse in all the directions
                 int nrow=row+xaxis[k];
                 int ncol=col+yaxis[k];
 

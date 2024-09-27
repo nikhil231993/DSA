@@ -24,7 +24,7 @@ public class BS25SearchInSortedMatrix2LC240 {
         while(row<n && col>=0){
             if(matrix[row][col]==target)
                 return true;
-            else if(target> matrix[row][col])
+            else if(target > matrix[row][col])
                 row++;
             else col--;
         }

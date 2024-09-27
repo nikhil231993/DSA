@@ -37,6 +37,7 @@ public class G37MinPathMatrixSelf {
         int[] yaxis = new int[]{0, -1, 0, 1};
 
         while (!pq.isEmpty()) {
+
             int distance = pq.peek().diff;
             int row = pq.peek().row;
             int col = pq.peek().col;

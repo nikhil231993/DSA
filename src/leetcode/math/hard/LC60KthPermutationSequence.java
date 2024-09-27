@@ -7,7 +7,11 @@ public class LC60KthPermutationSequence {
 
     public static void main(String[] args) {
 
-        int n = 4, k = 12;
+        //Approach 1: Learnt in Striver recursion which is generating all combinations and sorting it
+        // and fetching k-1
+
+        //Approach 2:
+        int n = 4, k = 11;
         System.out.println(getPermutation(n,k));
     }
 

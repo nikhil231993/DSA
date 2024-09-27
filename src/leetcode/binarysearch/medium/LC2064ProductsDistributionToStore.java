@@ -6,12 +6,13 @@ public class LC2064ProductsDistributionToStore {
 
         int[] quantities=new int[]{11,6};
         int n=6;
-        System.out.println(minimizedMaximum(n,quantities));
+        System.out.println(minimizedMaximum(n, quantities));
     }
 
     public static int minimizedMaximum(int n, int[] quantities) {
 
         int low=1, high=Integer.MIN_VALUE;
+
         for(int i=0;i<quantities.length;i++){
             high=Math.max(high, quantities[i]);
         }

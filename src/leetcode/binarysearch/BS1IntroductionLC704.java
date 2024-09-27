@@ -5,7 +5,7 @@ public class BS1IntroductionLC704 {
     public static void main(String[] args) {
 
         //Note: If binary search question comes up in interview tell interviewer first about linear search (brute force)
-        // and then move to binary search(optimal)
+        // and then move to binary search (optimal)
 
         int[] a = {3, 4, 6, 7, 9, 12, 16, 17};
         int target = 6;

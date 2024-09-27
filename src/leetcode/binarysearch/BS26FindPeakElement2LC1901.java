@@ -17,11 +17,8 @@ public class BS26FindPeakElement2LC1901 {
 
     private static int[] findPeakGridOptimized(int[][] mat) {
 
-        int n=mat.length;;
-        int m=mat[0].length;
-
-        int low=0;
-        int high=m-1;
+        int n=mat.length, m=mat[0].length;
+        int low=0, high=m-1;
 
         while(low<=high){
 

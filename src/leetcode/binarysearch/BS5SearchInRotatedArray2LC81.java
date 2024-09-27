@@ -4,12 +4,13 @@ public class BS5SearchInRotatedArray2LC81 {
 
     public static void main(String[] args) {
 
-        //NOTE: Index can be found using only linear search
+        //NOTE: Index can be found using only linear search in this case as there are multiple occurences in this question 1:53.
+        // In the previous questions it was unique elements so index can be found out.
 
-        int[] nums=new int[]{7,8,1,2,3,3,3,4,5,6};
-        //int[] nums=new int[]{3,1,2,3,3,3,3,3};
+        int[] num=new int[]{7,8,1,2,3,3,3,4,5,6};
+        //int[] num=new int[]{3,1,2,3,3,3,3,3};
         int target=3;
-        System.out.println(search(nums,target));
+        System.out.println(search(num, target));
     }
 
     public static boolean search(int[] nums, int target) {

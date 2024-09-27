@@ -1,6 +1,5 @@
 package leetcode.string.easy;
 
-import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,6 +8,8 @@ public class Test {
 	public static void main(String[] args) {
 		
 		Object a=null;
+
+		System.out.println("Nikhil".indexOf("Nikhill"));
 
 		System.out.println("Nikhil".substring(1));
 

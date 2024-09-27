@@ -4,8 +4,8 @@ public class LC1608SpecialArray {
 
     public static void main(String[] args) {
 
-        int[] nums =new int[] {3,5};
-        System.out.println(specialArray(nums));
+        int[] num =new int[] {3,5};
+        System.out.println(specialArray(num));
     }
 
     public static int specialArray(int[] nums) {
@@ -34,7 +34,7 @@ public class LC1608SpecialArray {
     public static int find(int mid, int[] nums){
 
         int count=0;
-        for(int i=0;i<nums.length;i++){
+        for(int i=0; i<nums.length; i++){
             if(nums[i] >= mid)
                 count++;
         }

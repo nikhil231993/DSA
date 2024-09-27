@@ -48,10 +48,10 @@ public class LC1614ValidParenthesesString {
             char ch=s.charAt(i);
             if(ch=='('){
                 count++;
-                max=Math.max(max,count);
             }else if(ch==')'){
                 count--;
             }
+            max=Math.max(max,count);
         }
         return max==Integer.MIN_VALUE?0:max;
 

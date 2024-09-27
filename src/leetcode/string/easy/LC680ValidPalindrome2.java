@@ -5,6 +5,7 @@ public class LC680ValidPalindrome2 {
 	public static void main(String[] args) {
 
 		String str = "abcba";
+
 		System.out.println(validPalindrome(str));
 		System.out.println(validPalindromeOptimized(str));
 	}
@@ -49,7 +50,6 @@ public class LC680ValidPalindrome2 {
 
 		int n=s.length();
 		int start=0, end=n-1;;
-
 
 		while(start<end){
 			if(s.charAt(start)==s.charAt(end)){

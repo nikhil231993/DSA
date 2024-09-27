@@ -163,7 +163,7 @@ public class G43SmallestDistanceNeighbours {
 		// Time Complexity: O(V cube), as we have three nested loops each running for V times,
 		// where V = no. of vertices.
 
-		// Space Complexity: O(V2), where V = no. of vertices. This space complexity is due to storing the
+		// Space Complexity: O(V square), where V = no. of vertices. This space complexity is due to storing the
 		// adjacency matrix of the given graph.
 	}
 }

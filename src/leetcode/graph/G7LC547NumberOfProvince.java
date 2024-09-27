@@ -16,8 +16,8 @@ public class G7LC547NumberOfProvince {
         //we can use either BFS or DFS
 
         int[][] matrix=new int[][]{{1,0,0},{0,1,0},{0,0,1}};
-        System.out.println("Using Adjacency Matrix :"+ findCircleNum(matrix));
-        System.out.println("Using Adjacency List :"+ findCircleNumUsingAdjacencyList(matrix));
+        System.out.println("Using Adjacency Matrix :" + findCircleNum(matrix));
+        System.out.println("Using Adjacency List :" + findCircleNumUsingAdjacencyList(matrix));
     }
 
     private static int findCircleNumUsingAdjacencyList(int[][] matrix) {
@@ -48,7 +48,7 @@ public class G7LC547NumberOfProvince {
                 while(!q.isEmpty()){
                     Integer node=q.poll();
 
-                    for(Integer vertex:adjList.get(node)){
+                    for(Integer vertex : adjList.get(node)){
                         if(visited[vertex]==0){
                             visited[vertex]=1;
                             q.offer(vertex);
@@ -70,7 +70,7 @@ public class G7LC547NumberOfProvince {
         for(int i=0;i<isConnected.length;i++){
             if(visited[i]==0){
                 count++;
-                dfs(isConnected, visited,i);
+                dfs(isConnected, visited, i);
             }
         }
         return count;
@@ -89,7 +89,7 @@ public class G7LC547NumberOfProvince {
         //SC:O(n) for visited array + O(n) recursion stack for skewed
         //TC:O(n*n) as we have to parse each element in matrix
 
-        //if it was Adjacency list TC:O(V) outer loop + O(V+2E) for inner loop (12:53 in video)
+        //if it was Adjacency list TC: O(V) outer loop + O(V+2E) for inner loop (12:53 in video)
 
         //IMP: for a graph having 5 disconnected graph  TC:O(N)+O(1)+O(1)+O(1)+O(1)+O(1)
         //which is equal to O(N)

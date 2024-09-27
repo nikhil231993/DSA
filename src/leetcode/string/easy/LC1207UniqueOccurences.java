@@ -40,10 +40,10 @@ public class LC1207UniqueOccurences {
 
         // check whether all values in the map are unique
         Set<Integer> seen = new HashSet<>();
+
         for (int currValue : freqMap.values()) {
             if (seen.contains(currValue)) {
                 return false;     // terminate as soon as a duplicate is detected
-
             } else {
                 seen.add(currValue);
             }

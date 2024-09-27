@@ -45,6 +45,7 @@ public class LC1249MinimumRemoveToMakeValdiParenthesis {
 				}
 			}
 		}
+
 		String str = "";
 		for (int i = 0; i < ch.length; i++) {
 			if (ch[i] != '#') {

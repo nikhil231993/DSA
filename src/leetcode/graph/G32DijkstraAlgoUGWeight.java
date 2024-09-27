@@ -17,19 +17,24 @@ public class G32DijkstraAlgoUGWeight {
 
     public static void main(String[] args) {
 
+        //IMP:
+        //1. Visited works in below example because once a edge is relaxed it cannot have better shortest path to reach
+        //2. Visited does not work in negative case here because it forms negative cycle
+        //3. Visited with negative value behavior with DG having no cycle can be seen in code G32DijkstraAlgoDGWeightSelf.java
+
         int[][] edge = new int[][] { { 0, 2, 4 },
-                { 0, 1, 4 }, {1,2,2},{ 2, 3, 3 }, { 2, 4, 1 },
-                { 3, 5, 2 }, { 2, 5, 6 }, { 4, 5, 3 } };
+                { 0, 1, 4 }, { 1, 2, 2 },{ 2, 3, 3 }, { 2, 4, 1 },
+                { 3, 5, 2 }, { 2, 5, 6 },{ 4, 5, 3 } };
 
         // Dijkstra not applicable for graph with negative weights and negative cycle
 
         // Below we can see in comments of the video G-33:
-        //Ques:I just had one doubt will the T.C of the priority queue method be O(ElogE) instead of O(ElogV)
+        // Ques:I just had one doubt will the T.C of the priority queue method be O(ElogE) instead of O(ElogV)
         // as there can be more than one instance of a node in the priority queue whereas in the treeset
         // method it will be O(ElogV)
-        //Ans: Yes
+        // Ans: Yes
         // Also in here we use (v * ((pop vertex from min heap) + no of edges on each vertex *push into PQ) Here it is V* because we parse everything in for loop also which is present inside
-        //TC  if we use Queue instead of priority queue will be EV
+        // TC  if we use Queue instead of priority queue will be EV
 
         int V=6;
         int E=8;
@@ -80,8 +85,11 @@ public class G32DijkstraAlgoUGWeight {
             q.poll();
 
             if(visited[node]==1)
-                continue;;
-            visited[node]=1;
+                continue;
+            visited[node]=1; // we cannot mark the node as visited while
+            // adding into the queue because we may encounter another shorter path through other route
+            // we add visited here because once we process the node then that means there is no other way it can have
+            // shortest path
 
             for(PairG32 vertex:adjList.get(node)){
                     if(dist[vertex.node]>weight+vertex.weight){

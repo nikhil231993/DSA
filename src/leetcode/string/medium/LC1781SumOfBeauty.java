@@ -22,8 +22,8 @@ public class LC1781SumOfBeauty {
 
                 char ch=s.charAt(j);
                 map.put(ch, map.getOrDefault(ch,0)+1);
-                int max=Integer.MIN_VALUE;
-                int min=Integer.MAX_VALUE;
+
+                int max=Integer.MIN_VALUE, min=Integer.MAX_VALUE;
                 for(Map.Entry<Character, Integer> m:map.entrySet()){
                     if(m.getValue()>max)
                         max=m.getValue();

@@ -61,7 +61,7 @@ public class G37LC1631AbsoluteDIffPath {
                 int ncol=col+yaxis[k];
 
                 if(nrow>=0 && nrow<n && ncol>=0 && ncol<m){
-                    int maxDiff=Math.max(height,Math.abs(heights[row][col]-heights[nrow][ncol]));
+                    int maxDiff=Math.max(height, Math.abs(heights[row][col]-heights[nrow][ncol]));
                     if(maxDiff < diff[nrow][ncol]) {
                         diff[nrow][ncol] = maxDiff;
                         pq.offer(new PairG37(maxDiff, nrow, ncol));

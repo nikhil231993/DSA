@@ -10,7 +10,7 @@ public class LC343IntegerBreak {
 
 	public static int integerBreak(int n) {
 
-		if (n == 2 || n == 3)
+		if (n == 2 || n == 3 || n==1)
 			return n - 1;
 		int product = 1;
 

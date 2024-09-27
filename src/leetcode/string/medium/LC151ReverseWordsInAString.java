@@ -61,9 +61,11 @@ public class LC151ReverseWordsInAString {
 	}
 
 	public static String reverseWordsOptimized(String s) {
+
 		int n=s.length();
 		int i=n-1;
 		StringBuilder sb=new StringBuilder();
+
 		while(i>=0){
 			while(i>=0 && s.charAt(i)==' ')
 				i--;

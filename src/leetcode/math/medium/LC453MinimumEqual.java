@@ -21,7 +21,7 @@ public class LC453MinimumEqual {
 		//Here instead of increasing n-1 by 1 to make all numbers equal, we decrease 1 element by 1
 		//to make it equal to minimum number as that is the minimum we can reach.
 		//Step 1: so find the minimum
-		//Step 2: Subtract that no from each and add it
+		//Step 2: Subtract that number from each and add it
 
 		int min=Integer.MAX_VALUE;
 		for(int n:num)

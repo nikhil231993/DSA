@@ -32,6 +32,7 @@ public class G16PremiumNumberOfDistinctIslands {
         int[][] visited=new int[n][m];
         int[] xaxis=new int[]{1,0,-1,0};
         int[] yaxis=new int[]{0,-1,0,1};
+
         Set<List<String>> s=new HashSet<>();
         Queue<PairG16> q=new LinkedList<>();
 
@@ -54,7 +55,7 @@ public class G16PremiumNumberOfDistinctIslands {
         //SC:O(n*m) visited + O(m*n) queue
     }
 
-    private static void bfs(int row, int col, int[] xaxis, int[] yaxis, int[][] visited, int[][] grid, int n, int m, int ro, int co,List<String> list,Queue<PairG16> q) {
+    private static void bfs(int row, int col, int[] xaxis, int[] yaxis, int[][] visited, int[][] grid, int n, int m, int ro, int co, List<String> list,Queue<PairG16> q) {
 
         while(!q.isEmpty()){
 
@@ -82,6 +83,7 @@ public class G16PremiumNumberOfDistinctIslands {
         int[][] visited=new int[n][m];
         int[] xaxis=new int[]{1,0,-1,0};
         int[] yaxis=new int[]{0,-1,0,1};
+
         Set<List<String>> s=new HashSet<>();
         for(int i=0;i<n;i++){
             for(int j=0;j<m;j++){

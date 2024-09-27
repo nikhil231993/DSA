@@ -31,10 +31,10 @@ public class LC13RomanToInteger {
 
 	private static int romanToIntegerWithoutUsingMap(String s) {
 
-		int sum = 0;
-		int num = 0;
-		int forward=0;
+		int sum = 0, num = 0, forward=0;
+
 		for (int i = s.length() - 1; i >= 0; i--) {
+
 			switch (s.charAt(i)) {
 			case 'I':
 				num = 1;
@@ -67,6 +67,7 @@ public class LC13RomanToInteger {
 			forward = num;
 		}
 		return sum;
+
 		//TC:O(n)
 		//SC:O(1)
 	}
@@ -85,7 +86,7 @@ public class LC13RomanToInteger {
 		int sum = keyValueMapping.get(s.charAt(s.length() - 1));
 		for (int i = s.length() - 2; i >= 0; i--) {
 
-			if (keyValueMapping.get(s.charAt(i)) <= keyValueMapping.get(s.charAt(i + 1))) {
+			if (keyValueMapping.get(s.charAt(i)) < keyValueMapping.get(s.charAt(i + 1))) {
 				sum -= keyValueMapping.get(s.charAt(i));
 			} else {
 				sum += keyValueMapping.get(s.charAt(i));
@@ -114,6 +115,7 @@ public class LC13RomanToInteger {
 		int n=s.length();
 		for(int i=n-1;i>=0;i--){
 			num=map.get(s.charAt(i));
+
 			if(num>=prev){
 				sum+=num;
 			}else{

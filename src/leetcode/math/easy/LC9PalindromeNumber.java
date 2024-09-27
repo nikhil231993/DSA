@@ -4,7 +4,7 @@ public class LC9PalindromeNumber {
 
 	public static void main(String[] args) {
 
-		int x = 2147447412;
+		int x = 2147483647;
 
 		//Approach 1:
 		System.out.println(isPalindromeUsingString(x));
@@ -28,7 +28,9 @@ public class LC9PalindromeNumber {
 
 	public static boolean isPalindrome(int x) {
 
-		if (x < 0)
+		if(x==0) return true;
+
+		if (x < 0  || (x%10)==0)
 			return false;
 		int y = x;
 		int num = 0;
@@ -38,10 +40,7 @@ public class LC9PalindromeNumber {
 			num = num * 10 + x % 10;
 			x = x / 10;
 		}
-		if (y == num)
-			return true;
-		else
-			return false;
+		return  y == num;
 
 		// TC:O(n) where n is the no of digits in no x
 		// SC:O(1)

@@ -19,18 +19,17 @@ public class BS3FirstAndLastPositionLC34 {
 
     public static int[] searchRange(int[] nums, int target) {
 
-        int first=firstOccurrence(nums,target);
-        int last=lastOccurrence(nums,target);
+        int first = firstOccurrence(nums,target);
+        int last = lastOccurrence(nums,target);
         return new int[]{first,last};
     }
 
     private static int lastOccurrence(int[] nums, int target) {
 
-        int low=0;
-        int high=nums.length-1;
-        int ans=-1;
+        int low=0, high=nums.length-1, ans=-1;
 
         while(low<=high){
+
             int mid=low+(high-low)/2;
             if(nums[mid]==target) {
                 ans = mid;
@@ -49,11 +48,10 @@ public class BS3FirstAndLastPositionLC34 {
 
     private static int firstOccurrence(int[] nums, int target) {
 
-        int low=0;
-        int high=nums.length-1;
-        int ans=-1;
+        int low=0, high=nums.length-1, ans=-1;
 
         while(low<=high){
+
             int mid=low+(high-low)/2;
             if(nums[mid]==target) {
                 ans = mid;

@@ -11,6 +11,7 @@ public class BS10SquareRootLC69 {
     public static int mySqrt(int x) {
 
         int low=1, high=x, ans=0;
+
         while(low<=high){
             int mid=low+(high-low)/2;
             if(x/mid<mid){

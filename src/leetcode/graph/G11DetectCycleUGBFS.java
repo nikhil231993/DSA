@@ -143,6 +143,7 @@ public class G11DetectCycleUGBFS {
 
         System.out.println("Enter the edges values: ");
         for(int i=1;i<=m;i++){
+
             System.out.println("Enter the "+ i +" edge: ");
             int u=scan.nextInt();
             int v=scan.nextInt();

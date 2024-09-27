@@ -15,19 +15,17 @@ public class G25LC802EventualSafeStatesUsingTopoSort {
         List<List<Integer>> adjList=new ArrayList<>();
         List<List<Integer>> reverseAdjList=new ArrayList<>();
 
-        for(int i=0;i<graph.length;i++){
+        for(int i=0; i<graph.length; i++){
             adjList.add(new ArrayList<>());
             reverseAdjList.add(new ArrayList<>());
         }
 
-        for(int i=0;i<graph.length;i++){
+        for(int i=0; i<graph.length; i++){
             for(int j=0;j<graph[i].length;j++){
                 adjList.get(i).add(graph[i][j]);
             }
         }
-        for(int i=0;i< graph.length;i++){
-            System.out.println(adjList.get(i));
-        }
+
         int[] indegree=new int[graph.length];
 
         //Reverse the Adjacency List and then increase the indegree of parent of previous list
@@ -60,7 +58,7 @@ public class G25LC802EventualSafeStatesUsingTopoSort {
         Collections.sort(safeNodes);
         return safeNodes;
 
-        //TC:O(nlogn) sorting + O(N+E)+ O(n^2) for converting 2d array to adjlist
+        //TC:O(nlogn) sorting + O(N+E) + O(n^2) for converting 2d array to adjlist
         //SC:O(n) indegree+ O(n) safenodes + O(2*n^2) adjlist and reverse list
         //Here extra space for adjList is used as compared previous similar question with only dfs
     }

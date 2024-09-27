@@ -13,6 +13,7 @@ public class LC374GuessHigherOrLower {
     public static int guessNumber(int n) {
 
         int low=0, high=n;
+
         while(low<=high){
             int mid=low+(high-low)/2;
             int val=guess(mid);

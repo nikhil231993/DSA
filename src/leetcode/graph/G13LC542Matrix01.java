@@ -36,8 +36,7 @@ public class G13LC542Matrix01 {
 
     public static int[][] updateMatrix(int[][] mat) {
 
-        int n=mat.length;
-        int m=mat[0].length;
+        int n=mat.length, m=mat[0].length;
         int[][] visited=new int[n][m];
         int[][] dist=new int[n][m];
 

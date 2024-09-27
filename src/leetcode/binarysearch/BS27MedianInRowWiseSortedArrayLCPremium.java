@@ -35,7 +35,7 @@ public class BS27MedianInRowWiseSortedArrayLCPremium {
             low=Math.min(matrix[i][0],low);
             high=Math.max(matrix[i][C-1],high);
         }
-        int ans=-1;
+
         int required=R*C/2;
         while(low<=high){
             int mid=low+(high-low)/2;
@@ -60,8 +60,8 @@ public class BS27MedianInRowWiseSortedArrayLCPremium {
 
     public static int upperBound(int[] num, int target){
 
-        int low=0, high=num.length-1;
-        int ans=num.length;
+        int low=0, high=num.length-1, ans=num.length;
+
         while(low<=high){
             int mid=low+(high-low)/2;
 
@@ -74,6 +74,6 @@ public class BS27MedianInRowWiseSortedArrayLCPremium {
         }
         return ans;
 
-        //TC:log(max-min)*R *log C
+        //TC:log(max-min) * R * log C
     }
 }

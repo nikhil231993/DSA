@@ -60,7 +60,7 @@ public class G45PrimAlgorithm {
         int[] visited=new int[n];
 
         PriorityQueue<PairG45> pq=new PriorityQueue<>((a,b)->(a.weight-b.weight));
-        pq.add(new PairG45(0,src,-1));
+        pq.add(new PairG45(0, src, -1));
         //E
         while(!pq.isEmpty()){
             //logE
@@ -70,7 +70,8 @@ public class G45PrimAlgorithm {
             pq.poll();
 
             //Once visited we need not visit again as minimum is found
-            if(visited[node]==1) continue;;
+            if(visited[node]==1)
+                continue;;
             visited[node]=1;
 
             parent[node]=parentNode;
@@ -82,7 +83,7 @@ public class G45PrimAlgorithm {
 
                 if(visited[vertexAdj]==0){
                     //logE
-                    pq.offer(new PairG45(weigh,vertexAdj,node));
+                    pq.offer(new PairG45(weigh, vertexAdj, node));
                 }
             }
         }

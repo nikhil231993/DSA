@@ -21,7 +21,7 @@ public class G28ShortestPathUGActualWeightsSelf {
         //Try negative weight and see what happens
         //In case of negative loop it will go as a negative cycle and will be infinite loop
         int[][] edges=new int[][]{{0,1,2},{0,3,1},{3,4,2},{4 ,5,1}
-                        ,{5, 6,6},{1,2,3},{2,6,4},{6,7,1},{7,8,1},{6,8,4}};
+                        ,{5,6,6},{1,2,3},{2,6,4},{6,7,1},{7,8,1},{6,8,4}};
         int src=0;
 
         //If we change src to which does not have adj nodes all will be -1 that is not reachable

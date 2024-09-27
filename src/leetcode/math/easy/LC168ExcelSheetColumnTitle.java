@@ -20,7 +20,11 @@ public class LC168ExcelSheetColumnTitle {
 		}
 		return result.reverse().toString();
 
-		// TC:log(n) base 26 as we are dividing by 26
-		// SC:log(n) base 26 as we are dividing by 26
+		// TC:log(n) base 26 as we are dividing number at each stage by 26
+		// SC:log(n) base 26 as we are dividing number at each stage by 26
+
+		//Reason for SC: We store the resulting characters in a list, and
+		// the length of this list is proportional to the number of iterations of the loop,
+		// which is the number of digits in the base-26 representation of the number.
 	}
 }

@@ -8,7 +8,17 @@ public class Test {
 
     public static void main(String[] args) {
 
-        System.out.println((char)97);
+        System.out.println("++++++++");
+        String s="Nikhil";
+
+        char[] ch=s.toCharArray();
+        ch[0]='k';
+        System.out.println(s);
+        System.out.println(ch);
+
+        System.out.println("++++++++");
+
+        System.out.println((char)(0+'a'));
 
         System.out.println("####################");
 

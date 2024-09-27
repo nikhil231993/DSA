@@ -22,6 +22,7 @@ public class LC593ValidSquare {
 
 		HashMap<Integer, Integer> map = new HashMap();
 		int max = 0;// To check diagonal
+
 		for (int val : arr) {
 			max = Math.max(max, val);
 			map.put(val, map.getOrDefault(val, 0) + 1);

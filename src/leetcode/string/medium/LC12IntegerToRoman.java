@@ -22,7 +22,7 @@ public class LC12IntegerToRoman {
         }
         return sb.toString();
 
-        //SC:O(2*13) to store both array and result string
+        //SC: O(2*13) to store both array and result string
         //TC: It depends on how many times both loop runs
     }
 }

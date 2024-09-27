@@ -4,11 +4,9 @@ public class BS4SearchInRotatedArray1LC33 {
 
     public static void main(String[] args) {
 
-        //NOTE: Index can be found using only linear search
-
-        int[]  nums =new int[] {4,5,6,7,0,1,2};
-        int target = 3;
-        int pos=search(nums,target);
+        int[]  num =new int[] {4,5,6,7,0,1,2};
+        int target = 0;
+        int pos=search(num,target);
         System.out.println(pos);
     }
 
@@ -18,6 +16,7 @@ public class BS4SearchInRotatedArray1LC33 {
 
         while(low<=high){
             int mid=low+(high-low)/2;
+
             if(nums[mid]==target)
                 return mid;
 

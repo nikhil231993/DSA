@@ -72,7 +72,7 @@ public class G36BinaryMaze {
 //                continue;
 //            visited[row][col]=1;
 
-            for(int k=0;k<4;k++){
+            for(int k=0; k<4; k++){
                 int nrow=row+xaxis[k];
                 int ncol=col+yaxis[k];
 

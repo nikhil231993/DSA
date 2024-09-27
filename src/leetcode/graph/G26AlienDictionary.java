@@ -27,7 +27,7 @@ public class G26AlienDictionary {
         //If it is not in initial order then we can find entire
         //alphabets toposort and then find only characters we need https://leetcode.com/discuss/interview-question/248131/Microsoft-Interview-(round-1)-Alien-Dictionary
 
-        String s=alienDictionary(words,n,k);
+        String s = alienDictionary(words,n,k);
         System.out.println(s);
 
         //Time Complexity: O(N*len) + O(K+E), where N is the number of words in the dictionary,
@@ -49,7 +49,8 @@ public class G26AlienDictionary {
         for(int i=0;i<words.length-1;i++){
             String firstString=words[i];
             String secondString=words[i+1];
-            for(int j=0; j<Math.min(firstString.length(),secondString.length()); j++){
+
+            for(int j=0; j<Math.min(firstString.length(), secondString.length()); j++){
                 if(firstString.charAt(j)!=secondString.charAt(j)){
                     adList.get(firstString.charAt(j)-'a').add(secondString.charAt(j)-'a');
                     break;
@@ -70,10 +71,12 @@ public class G26AlienDictionary {
 
         int[] indegree=new int[n];
         for(int i=0;i<n;i++){
-//            if (arr.get(i).isEmpty()) { // if we want only wert as ans then we can uncommnet this
+            // if we want only wert as ans then we can uncomment this as it will make sure
+            // this is not added to the queue but here f will be missed
+//            if (arr.get(i).isEmpty()) {
 //                indegree[i] = Integer.MAX_VALUE;
 //            }
-            for(Integer v:arr.get(i)){
+            for(Integer v : arr.get(i)){
                 indegree[v]++;
             }
         }

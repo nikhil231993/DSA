@@ -8,14 +8,14 @@ public class LC2089FindTargetIndices {
 
     public static void main(String[] args) {
 
-		int[] nums = new int[] { 1, 2, 5, 2, 3 };
+		int[] num = new int[] { 1, 2, 5, 2, 3 };
 		int target = 2;
 
 		// Approach 1: Brute
-		System.out.println(targetIndices(nums, target));
+		System.out.println(targetIndices(num, target));
 
 		// Approach 2: Better
-		System.out.println(targetIndicesOptimised(nums, target));
+		System.out.println(targetIndicesOptimised(num, target));
     }
 
     public static List<Integer> targetIndices(int[] nums, int target) {

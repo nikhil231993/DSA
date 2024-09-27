@@ -12,8 +12,8 @@ public class LC367ValidPerfectSquare {
 
         if(num==1)
             return true;
-        int low=0;
-        int high=num/2;
+        int low=0, high=num/2;
+
         while(low<=high){
             int mid=low+(high-low)/2;
             if((double)num/mid==mid)

@@ -16,7 +16,7 @@ public class G35PrintShortestPathUG {
         int dest=5;
 
         int[] dist=new int[V+1];
-        int[] path=shortestPath(edge,V,E,src,dest,dist);
+        int[] path=shortestPath(edge, V, E, src, dest, dist);
 
         //If we are not able to reach then dest then it will 1e9
         if(dist[dest]==1e9)
@@ -29,11 +29,11 @@ public class G35PrintShortestPathUG {
 
         //at max this might be a linear graph
         while(path[variable]!=variable){
-            pathList.add(variable);
+            pathList.add(variable); // pathList.add(0, variable) can be used which will avoid Collection.reverse() call
             variable=path[variable];
         }
-        pathList.add(src);
-        Collections.reverse(pathList);
+        pathList.add(src); // pathList.add(0, src);
+        // Collections.reverse(pathList);
         System.out.println(pathList);
 
         //Time Complexity: O( E log(V) ) { for Dijkstra’s Algorithm } +
@@ -74,6 +74,7 @@ public class G35PrintShortestPathUG {
             Integer node=q.peek().node;
             Integer weight=q.peek().weight;
             q.poll();
+
             for (PairG32 vertex:adjList.get(node)){
                 if(dist[vertex.node]>weight+vertex.weight){
                     parent[vertex.node]=node;

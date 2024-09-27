@@ -19,9 +19,9 @@ class PairG27 {
 public class G27ShortestPathDAG {
 
 		//IMP:Why toposort works?
-		//1.we go from one node to another node in an order which guarantees that previous node is processed and has shortest distance
+		//1.We go from one node to another node in an order which guarantees that previous node is processed and has shortest distance
 		//Dijkstra(ElogV) will also work to find shortest distance, but it takes more time than toposort(V+E)
-		//2.Dijkstra algo is necessary for graphs which contains cycles because they can't be topologically sorted.
+		//2.Dijkstra algo is necessary for graphs which contains cycles like undirected because they can't be topologically sorted.
 		//3.Toposort works with negative weights in a DAG
 
 	public static void main(String[] args) {
@@ -37,7 +37,7 @@ public class G27ShortestPathDAG {
 
 		int V = 6;
 		int E = 7;
-		int src = 2;//we can take any node as source, and it will work as for not reachable nodes it will give 1e9
+		int src = 2; //we can take any node as source, and it will work as for not reachable nodes it will give 1e9
 
 		// Convert matrix to adjList;
 		
@@ -72,7 +72,8 @@ public class G27ShortestPathDAG {
 		// Time Complexity: O(N+M) {for the topological sort} + O(N+M) {for relaxation
 		// of vertices, each node and its adjacent nodes get traversed} ~ O(N+M).
 		// Where N= number of vertices and M= number of edges.
-		// Space Complexity: O( N) {for the stack storing the topological sort} + O(N) {for storing the
+
+		// Space Complexity: O(N) {for the stack storing the topological sort} + O(N) {for storing the
 		// shortest distance for each node} + O(N) {for the visited array} + O( N+2M)
 		// {for the adjacency list} ~ O(N+M) .
 		// Where N= number of vertices and M= number of edges.

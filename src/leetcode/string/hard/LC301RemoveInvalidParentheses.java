@@ -7,7 +7,8 @@ public class LC301RemoveInvalidParentheses {
     public static void main(String[] args) {
         
         //Approach 1 This gives TLE due to recursion
-        String s = "()())()";
+        String s = "))";
+        s="()())()";
         HashSet<String> set=new HashSet<>();
         List<String> list=new ArrayList<>();
         int count=validate(s);
@@ -77,7 +78,7 @@ public class LC301RemoveInvalidParentheses {
         for(int i=0;i<s.length();i++){
             String start=s.substring(0,i);
             String remain=s.substring(i+1);
-            removeInvalidParentheses(start+remain,set,count-1);
+            removeInvalidParentheses(start+remain, set, count-1);
         }
     }
 
@@ -106,7 +107,7 @@ public class LC301RemoveInvalidParentheses {
             if(ch=='(')
                 st.push(ch);
             else if(ch==')'){
-                if(st.isEmpty() || st.peek()!='(')
+                if(st.isEmpty()) // we can remove st.peek()!='(' here
                     st.push(')');
                 else if(st.peek()=='(')
                     st.pop();

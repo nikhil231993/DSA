@@ -2,11 +2,17 @@ package leetcode.graph;
 
 import java.util.Arrays;
 
-public class G42FloydWarshall {
+public class  G42FloydWarshall {
 
     public static void main(String[] args) {
 
-      int[][]  matrix = new int[][]{{0,1,43},{1,0,6},{-1,-1,0}};
+        // 1. This is used for multi source shortest path
+        // 2. Helps to detect negative cycles
+        // 3. we use Adjacency Matrix method here
+        // 4. If it is a undirected graph put same values in both direction same as bellman ford algo
+        // 5. if i==j i.e. diagonal elements is less than 0 then there is negative cycle
+
+      int[][]  matrix = new int[][]{{ 0,1,43 },{ 1,0,6 },{ -1,-1,0 }};
 
       shortest_distance(matrix);
 

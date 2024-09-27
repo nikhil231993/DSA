@@ -12,8 +12,8 @@ public class LC1351CountNegativeNumbersInGrid {
 
         int row=grid.length-1;
         int n=grid[0].length;
-        int column=0;
-        int count=0;
+        int column=0, count=0;
+
         while(row>=0 && column<n){
             if(grid[row][column]<0) {
                 count+=n-column;

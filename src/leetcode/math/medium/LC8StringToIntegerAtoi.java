@@ -6,7 +6,8 @@ public class LC8StringToIntegerAtoi {
 
 		//String s = "2147483648"; //below commented out code fails for this input as the second last check will be correct but
 		//in the next iteration it becomes negative value
-		String s = "2147483648";
+		String s = "2147483647";
+		//s="21474836460";
 
 		//Approach 1:
 		System.out.println(myAtoi(s));
@@ -69,11 +70,12 @@ public class LC8StringToIntegerAtoi {
 		}
 		long ans = 0;
 		while (i < s.length() && ((int) s.charAt(i) >= 48 && (int) s.charAt(i) <= 57)) {
-			ans = ans * 10 + s.charAt(i) - '0';
+
 			if (sign == 1 && ans > Integer.MAX_VALUE)
 				return Integer.MAX_VALUE;
 			if (sign == -1 && -1 * ans < Integer.MIN_VALUE)
 				return Integer.MIN_VALUE;
+			ans = ans * 10 + s.charAt(i) - '0';
 			i++;
 		}
 		return (int) ans * sign;

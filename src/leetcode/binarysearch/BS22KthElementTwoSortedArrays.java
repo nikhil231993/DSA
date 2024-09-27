@@ -6,7 +6,7 @@ public class BS22KthElementTwoSortedArrays {
 
         int[] nums1 = new int[] {1,7,8,10};
         int[] nums2 = new int[] {2,3,5,6,9};
-        int k=2;
+        int k = 4;
 
         System.out.println(KthElementInTwoSortedArray(nums1,nums2,k));
     }

@@ -36,7 +36,7 @@ public class G9LC733FloodFill {
         int[][] image1=new int[][]{{1,1,1},{1,1,0},{1,0,1}};
         int[][] ans_bfs=image1;
 
-        bfs(image1,ans_bfs,sr,sc,color,oldColor,x_axis,y_axis,n,m);
+        bfs(image1, ans_bfs, sr, sc, color, oldColor, x_axis, y_axis, n, m);
 
         for(int i=0;i<n;i++){
             for(int j=0;j<m;j++){

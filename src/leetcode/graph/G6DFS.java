@@ -42,7 +42,7 @@ public class G6DFS {
         System.out.println(dfs);
     }
 
-    private static void dfsRecursive(List<List<Integer>> arr, ArrayList<Integer> dfs,boolean[] visited, int i) {
+    private static void dfsRecursive(List<List<Integer>> arr, ArrayList<Integer> dfs, boolean[] visited, int i) {
 
         visited[i]=true;
         dfs.add(i);
@@ -53,7 +53,7 @@ public class G6DFS {
         }
     }
 
-    private static void adjacencyList(List<List<Integer>> arr,int n, int m, Scanner scan) {
+    private static void adjacencyList(List<List<Integer>> arr, int n, int m, Scanner scan) {
 
         System.out.println("Creating " +n +" List:");
         for(int i=0;i<=n;i++)

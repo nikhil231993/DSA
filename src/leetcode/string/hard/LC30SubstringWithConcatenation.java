@@ -35,22 +35,21 @@ public class LC30SubstringWithConcatenation {
 
             for(int j=0;j<size;j++){
 
-                int startPos=i+j*len;
+                int startPos= i + (j*len); //mi is to shift in array to right
                 int endPos=startPos+len;
                 String subString=s.substring(startPos, endPos);
 
                 if(copyMap.containsKey(subString)){
-                    if(copyMap.get(subString)==1){
+                    copyMap.put(subString, copyMap.get(subString)-1);
+                    if(copyMap.get(subString)==0){
                         copyMap.remove(subString);
-                    }else{
-                        copyMap.put(subString, copyMap.get(subString)-1);
                     }
                     if(copyMap.isEmpty()){
                         pos.add(i);
                         break;
                     }
                 }else{
-                    break;
+                    break; // we go have to parse other words in the words array
                 }
             }
         }

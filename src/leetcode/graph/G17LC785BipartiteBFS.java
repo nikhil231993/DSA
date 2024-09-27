@@ -62,7 +62,7 @@ public class G17LC785BipartiteBFS {
         }
         return true;
 
-        //TC:O(N+2E) while loop + O(N) outer for loop
-        //SC:O(N) color array + O(N) queue
+        //TC: O(N+2E) while loop + O(N) outer for loop
+        //SC: O(N) color array + O(N) queue
     }
 }

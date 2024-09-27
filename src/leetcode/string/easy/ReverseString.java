@@ -16,6 +16,7 @@ public class ReverseString {
 			start++;
 			end--;
 		}
+
 		for (char c : arr)
 			System.out.print(c);
 	}

@@ -52,7 +52,7 @@ public class G0Matrixbfsdfs {
         dfs.add(node);
         for (int i = 1;i<=V;i++) {
             if (matrix[node][i] == 1 && visited[i] == 0) {
-                dfs(matrix, dfs , i, visited,V);
+                dfs(matrix, dfs , i, visited, V);
             }
         }
 
@@ -88,14 +88,15 @@ public class G0Matrixbfsdfs {
             adjList.add(new ArrayList<>());
         }
 
-        for (int i = 1;i<=vertices;i++) {
-            for (int j =1;j<=vertices;j++) {
+        for (int i = 1; i<=vertices; i++) {
+            for (int j = 1; j<=vertices; j++) {
                 if (matrix[i][j] == 1 && i != j) {
                     adjList.get(i).add(j);
-                    adjList.get(j).add(i);
+                    //adjList.get(j).add(i);
                 }
             }
         }
+
         System.out.println("Printing Adjacency List: ");
         for (List<Integer> list : adjList) {
             System.out.println(list);

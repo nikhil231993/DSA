@@ -9,7 +9,7 @@ public class G24LC207CourseSchedule {
 
     public static void main(String[] args) {
 
-        //can be done using dfs or bfs. Use toposort to detect cycle.
+        //Can be done using dfs or bfs. Use toposort to detect cycle.
         //We are using toposort with bfs as next question is based on that
 
         int[][] prerequisites=new int[][]{{1,0},{0,1}};
@@ -28,13 +28,13 @@ public class G24LC207CourseSchedule {
             list.add(new ArrayList<>());
         }
 
-        for(int i=0;i<prerequisites.length;i++){
+        for(int i=0; i<prerequisites.length; i++){
             list.get(prerequisites[i][1]).add(prerequisites[i][0]);
         }
 
         int[] indegree=new int[numCourses];
-        for(int i=0;i<list.size();i++){
-            for(Integer n:list.get(i)){
+        for(int i=0; i<list.size(); i++){
+            for(Integer n : list.get(i)){
                 indegree[n]++;
             }
         }

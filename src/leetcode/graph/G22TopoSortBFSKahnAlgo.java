@@ -18,14 +18,14 @@ public class G22TopoSortBFSKahnAlgo {
 
         System.out.println("TopoSort");
 
-        List<Integer> list=topoSort(arr,n,m);
+        List<Integer> list = topoSort(arr,n,m);
         System.out.println(list);
     }
 
     private static List<Integer> topoSort(List<List<Integer>> arr, int n, int m) {
 
         int[] indegree=new int[n];
-        for(int i=0;i<n;i++){
+        for(int i=0; i<n; i++){
             for(Integer v:arr.get(i)){
                 indegree[v]++;
             }
@@ -51,7 +51,7 @@ public class G22TopoSortBFSKahnAlgo {
         }
         return list;
 
-        //SC:O(N) queue+O(N) indegree + O(N)toposort
+        //SC:O(N) queue + O(N) indegree + O(N)toposort
         //TC:O(N+E)
     }
 

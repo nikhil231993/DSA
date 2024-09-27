@@ -6,6 +6,14 @@ public class G32DijkstraAlgoDGWeightSelf {
 
     public static void main(String[] args) {
 
+        //IMP:
+        //In DG when we have negative value then visited array does not allow to relax a visited edge again which might have better answer
+        //In DG having only positive values the visited array also gives correct answer because shortest values are taken first
+        //and since negative values are not there, PQ formed is an increasing PQ
+
+        //Try example         int[][] edge = new int[][] { { 0, 1, 5 },
+        //                { 0, 2, 6 }, { 2, 1, -3},{ 0, 3, 7},{ 3, 2, -3} };
+
 //        You can use dijkstra's algorithm with negative edges not including negative cycle,
 //        but you must allow a vertex can be visited multiple times and that version will lose
 //        it's fast time complexity.
@@ -19,7 +27,7 @@ public class G32DijkstraAlgoDGWeightSelf {
 //        int E=8;
 
         int[][] edge = new int[][] { { 0, 1, 5 },
-                { 0, 2, 6 }, {2,1,-3},{0,3,7},{3,2,-3}};
+                { 0, 2, 6 }, { 2, 1, -3},{ 0, 3, 7},{ 3, 2, -3} };
 
         int V=4;
         int E=5;
@@ -32,7 +40,7 @@ public class G32DijkstraAlgoDGWeightSelf {
 
         System.out.println("#########################");
 
-        //TC:ElogE as there can be more edges in PQ
+        //TC: ElogE as there can be more edges in PQ
 
         //Even with Q instead of PQ we will get answer but why PQ will be in next video?
 

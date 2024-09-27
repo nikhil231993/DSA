@@ -20,7 +20,7 @@ public class LC125ValidPalindrome {
 		int start=0;
 		int end=str.length()-1;
 		
-		while(start<end) {
+		while(start < end) {
 			while (start < end && !Character.isLetterOrDigit(str.charAt(start)))
 				start++;
 			while (start < end && !Character.isLetterOrDigit(str.charAt(end)))

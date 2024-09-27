@@ -46,6 +46,7 @@ public class G50LC721AccountsMerge {
         }
 
         for(Map.Entry<String, Integer> m:emailToNode.entrySet()){
+
             String email=m.getKey();
             Integer node=ds.findParent( m.getValue());
             mergeList.get(node).add(email);

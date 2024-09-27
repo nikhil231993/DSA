@@ -13,7 +13,7 @@ public class G49LC1319NoOfOperations {
         int n = 6;
         int[][] connections =new int[][] {{0,1},{0,2},{0,3},{1,2},{1,3}};
 
-        System.out.println(noOfOperations(n,connections));
+        System.out.println(noOfOperations(n, connections));
         System.out.println(makeConnected(n, connections));
     }
 
@@ -27,6 +27,7 @@ public class G49LC1319NoOfOperations {
 
         boolean[] visited = new boolean[n];
         int countConnectedComponent = 0;
+
         for (int i = 0; i < n; i++) {
             if (!visited[i]) {
                 dfs(visited, i, adjList);

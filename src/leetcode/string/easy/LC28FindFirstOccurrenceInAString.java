@@ -12,6 +12,8 @@ public class LC28FindFirstOccurrenceInAString {
 
 		//Approach 2
 		System.out.println(findOccurrence(haystack, needle));
+
+		//Approach 3: Need to learn KMP algorithm https://www.youtube.com/watch?v=JoF0Z7nVSrA&ab_channel=NeetCode
 	}
 
 	public static int strStrBrute(String haystack, String needle) {

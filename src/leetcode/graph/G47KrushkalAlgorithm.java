@@ -54,7 +54,7 @@ public class G47KrushkalAlgorithm {
         //O(N+E) is TC here
         List<Edge> edgeList=new ArrayList<>();
         for(int[] row:edges){
-            edgeList.add(new Edge(row[2],row[0],row[1]));
+            edgeList.add(new Edge(row[2], row[0], row[1]));
         }
 
         //To sort based on weight to have minimum weight at top

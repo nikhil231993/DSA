@@ -24,21 +24,21 @@ class DisjointSetBySize{
 
     public void unionBySize(int u,int v){
 
-        int parent_U=findParent(u);
-        int parent_V=findParent(v);
+        int parent_U = findParent(u);
+        int parent_V = findParent(v);
 
         //Don't do anything as both have same parent and by path compression they would be directly pointing to parent
-        if(parent_U==parent_V) return;
+        if(parent_U == parent_V) return;
 
-        int size_U=size[parent_U];
-        int size_V=size[parent_V];
+        int size_U = size[parent_U];
+        int size_V = size[parent_V];
 
-        if(size_U<size_V){
-            parent[parent_U]=parent_V;
-            size[parent_V]+=size[parent_U];
-        }else if(size_V<size_U){
-            parent[parent_V]=parent_U;
-            size[parent_U]+=size[parent_V];
+        if(size_U < size_V){
+            parent[parent_U] = parent_V;
+            size[parent_V] += size[parent_U];
+        }else if(size_V < size_U){
+            parent[parent_V] = parent_U;
+            size[parent_U] += size[parent_V];
         }else{
             parent[parent_U]=parent_V;
             size[parent_V]+=size[parent_U];

@@ -13,9 +13,9 @@ public class G24LC210CourseSchedule2 {
         int numCourses=2;
 
         //Can be done using dfs or bfs  toposort to detect cycle.
-        // we are using toposort as next question is based on that
+        //We are using toposort as next question is based on that
 
-       int[] result= isPossible(numCourses,prerequisites);
+       int[] result = isPossible(numCourses,prerequisites);
        for(Integer n:result)
            System.out.println(n);
 

@@ -73,8 +73,7 @@ public class G15LC1020NumberOfEnclaves {
 
     public static  int numEnclaves(int[][] grid) {
 
-        int n=grid.length;
-        int m=grid[0].length;
+        int n=grid.length, m=grid[0].length;
         int[][] visited=new int[n][m];
 
         int[] xaxis=new int[] {1,0,-1,0};

@@ -41,7 +41,7 @@ public class G38LC787CheapestFlight {
         int k=2;
 //        int k=2;
 
-        System.out.println("Shortest distance with required stop is :"+shortestPath(flights,V,src,dest,k));
+        System.out.println("Shortest distance with required stop is :" + shortestPath(flights,V,src,dest,k));
     }
 
     private static int shortestPath(int[][] flights, int V, int src, int dest, int k) {
@@ -77,9 +77,9 @@ public class G38LC787CheapestFlight {
                 int edW=vertex.distance;
 
                 //below stop<=k is not required
-                if(stop <=k && dist[destination] > edW+distance){
-                    dist[destination]=edW+distance;
-                    q.offer(new PairG38(stop+1,destination,edW+distance));
+                if(stop <=k && dist[destination] > edW + distance){
+                    dist[destination] = edW + distance;
+                    q.offer(new PairG38(stop+1, destination,edW + distance));
                 }
             }
         }

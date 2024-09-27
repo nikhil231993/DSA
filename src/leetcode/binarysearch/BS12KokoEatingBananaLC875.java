@@ -9,18 +9,17 @@ public class BS12KokoEatingBananaLC875 {
         //int[] piles =new int[] {30,11,23,4,20};
         //int h = 5;
 
-        //Why low cannot be minimum form array. Try below example
+        //Why low cannot be minimum from array. Try below example
         //piles =[312884470]    h =312884469     Expected =2
         System.out.println(minimumCount(piles,h));
     }
 
     private static int minimumCount(int[] piles, int h) {
 
-        int max=findmax(piles,h);
+        int max=findMax(piles,h);
 
-        int low=1;
-        int high=max;
-        int ans=0;
+        int low=1, high=max, ans=0;
+
         while(low<=high){
             int mid=low+(high-low)/2;
             int count=isPossible(mid,piles,h);
@@ -46,7 +45,7 @@ public class BS12KokoEatingBananaLC875 {
         return count;
     }
 
-    private static int findmax(int[] piles, int h) {
+    private static int findMax(int[] piles, int h) {
 
         int max=Integer.MIN_VALUE;
         for(Integer num:piles)

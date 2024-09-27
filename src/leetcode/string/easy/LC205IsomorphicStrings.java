@@ -21,6 +21,7 @@ public class LC205IsomorphicStrings {
         HashMap<Character, Character> m2=new HashMap();
 
         for(int i=0;i<s.length();i++){
+
             char s1=s.charAt(i);
             char t1=t.charAt(i);
             if(m1.containsKey(s1)){
@@ -52,8 +53,8 @@ public class LC205IsomorphicStrings {
 
             if(ch1[cha1]!=ch2[cha2])
                 return false;
-            ch1[cha1]=i+1;
-            ch2[cha2]=i+1;
+            ch1[cha1]=i+1; // store the index plus one to know where the character existed in last iteration of the character
+            ch2[cha2]=i+1; // if we assign only i then aa, ab will fail
         }
 
         return true;

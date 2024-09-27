@@ -10,8 +10,8 @@ public class LC278FirstBadVersion {
 
     public static int firstBadVersion(int n) {
 
-        int low=1, high=n;
-        int ans=-1;
+        int low=1, high=n, ans=-1;
+
         while(low<=high){
             int mid=low+(high-low)/2;
             if(isBadVersion(mid)){

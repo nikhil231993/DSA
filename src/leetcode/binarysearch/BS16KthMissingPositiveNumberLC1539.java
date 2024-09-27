@@ -28,7 +28,7 @@ public class BS16KthMissingPositiveNumberLC1539 {
                 high=mid-1;
         }
 
-        // arr[high]+more
+        //arr[high]+more
         //more=K- missingNumber
         //missingNumber=arr[high]-high-1;
         //arr[high]-arr[high]+high+1+k

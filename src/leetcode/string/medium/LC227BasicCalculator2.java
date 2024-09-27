@@ -7,6 +7,7 @@ public class LC227BasicCalculator2 {
 	public static void main(String[] args) {
 		
 		String s = " 3-5 / 2  ";
+		s="100*5-2+3/2";
 	    System.out.println(calculate(s));
 	}
 

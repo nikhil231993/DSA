@@ -27,6 +27,7 @@ public class G18BipartiteDFS {
         int[] color=new int[n+1];
         Arrays.fill(color,-1);
         //considering nodes start with index=1
+
         for(int i=1;i<=n;i++){
             if(color[i]==-1){
                 color[i]=0;
@@ -43,7 +44,7 @@ public class G18BipartiteDFS {
 
     private static boolean bipartite(int i, int n, int m, int[] color, List<List<Integer>> arr) {
 
-        for(Integer vertex: arr.get(i)){
+        for(Integer vertex : arr.get(i)){
             if(color[vertex]==-1){
                 color[vertex]=1-color[i];
                 if(bipartite(vertex,n,m,color,arr)==false){

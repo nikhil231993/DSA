@@ -12,7 +12,7 @@ public class LC1760MinimumBallsInABag {
     public static int minimumSize(int[] nums, int maxOperations) {
 
         int low=1;//we want to reach this value which is the best
-        //high can be any value even Integer.MA_VALUE can be used
+        //high can be any value even Integer.MAX_VALUE can be used
         int high=Integer.MIN_VALUE;
         for(int i=0;i<nums.length;i++){
             high=Math.max(high, nums[i]);

@@ -22,20 +22,20 @@ class DisjointSetByRank{
 
     public void unionByRank(int u,int v){
 
-        int parent_U=findParent(u);
-        int parent_V=findParent(v);
+        int parent_U = findParent(u);
+        int parent_V = findParent(v);
         //If they belong to same component don't do anything
-        if(parent_U==parent_V) return;
+        if(parent_U == parent_V) return;
 
-        int rank_U=rank[parent_U];
-        int rank_V=rank[parent_V];
+        int rank_U = rank[parent_U];
+        int rank_V = rank[parent_V];
 
-        if(rank_U<rank_V){
-            parent[parent_U]=parent_V;
-        }else if(rank_U>rank_V){
-            parent[parent_V]=parent_U;
+        if(rank_U < rank_V){
+            parent[parent_U] = parent_V;
+        }else if(rank_U > rank_V){
+            parent[parent_V] = parent_U;
         }else{
-            parent[parent_V]=parent_U;
+            parent[parent_V] = parent_U;
             rank[parent_U]++;
         }
     }

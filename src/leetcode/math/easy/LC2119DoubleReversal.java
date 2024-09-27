@@ -12,7 +12,7 @@ public class LC2119DoubleReversal {
         //Approach 2: Better
         System.out.println(better(num));
 
-        //approach 3: Best
+        //Approach 3: Best
         System.out.println(best(num));
     }
 

@@ -40,7 +40,7 @@ public class LC462MinimumEqual2 {
 		int minMoves = 0;
 
 		while (left < right) {
-			minMoves += Math.abs(nums[left++] - nums[right--]); // abs is not needed as left > right
+			minMoves += Math.abs(nums[left++] - nums[right--]); // absolute value is not needed as left > right
 		}
 		return minMoves;
 

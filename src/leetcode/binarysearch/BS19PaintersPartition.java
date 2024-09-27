@@ -7,24 +7,25 @@ public class BS19PaintersPartition {
 
     public static void main(String[] args) {
 
-        ArrayList<Integer> nums = new ArrayList<>(Arrays.asList(7,2,5,10,8));
+//        ArrayList<Integer> num = new ArrayList<>(Arrays.asList(7,2,5,10,8));
+//        int k = 2;
+
+        ArrayList<Integer> num = new ArrayList<>(Arrays.asList(10, 20, 30, 40));
         int k = 2;
-        System.out.println(splitArray(nums,k));
+        System.out.println(splitArray(num, k));
     }
 
     public static int splitArray(ArrayList<Integer> boards, int k) {
 
-        int max=Integer.MIN_VALUE;
-        int sum=0;
+        int max=Integer.MIN_VALUE, sum=0;
 
         for(Integer num:boards){
             max=Math.max(max, num);
             sum+=num;
         }
 
-        int low=max;
-        int high=sum;
-        int ans=0;
+        int low=max, high=sum, ans=0;
+
         while(low<=high){
             int mid=low+(high-low)/2;
             if(possible(mid, boards, k)){
@@ -38,8 +39,8 @@ public class BS19PaintersPartition {
 
     public static boolean possible(int mid, ArrayList<Integer> a, int k) {
 
-        int count = 1;
-        int sum = 0;
+        int count = 1, sum = 0;
+
         for (Integer num: a) {
             sum += num;
             if (sum > mid) {

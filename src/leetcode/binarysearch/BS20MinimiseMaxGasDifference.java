@@ -18,7 +18,7 @@ public class BS20MinimiseMaxGasDifference {
     public static void main(String[] args) {
 
         int n=4,k=5;
-        int[] arr=new int[]{1,13,17,23};
+        int[] arr=new int[]{1,2,3,4};
 
         //Approach 1
         System.out.println(minimiseMaxDistance(arr,k));
@@ -44,7 +44,7 @@ public class BS20MinimiseMaxGasDifference {
             int index=n.second;
             howMany[index]++;
             double newSectionLength=(double)(arr[index+1]-arr[index])/(double)(howMany[index]+1);
-            pq.offer(new Node(newSectionLength,index));
+            pq.offer(new Node(newSectionLength, index));
         }
         return pq.peek().first;
 
@@ -56,7 +56,7 @@ public class BS20MinimiseMaxGasDifference {
 
         int[] howMany=new int[arr.length-1];
 
-        for(int gas=1;gas<=k;gas++){
+        for(int gas=1; gas<=k; gas++){
             double maxDiff=Integer.MIN_VALUE;
             int maxIndex=Integer.MIN_VALUE;
 
@@ -85,10 +85,8 @@ public class BS20MinimiseMaxGasDifference {
 
     public static double minimiseMaxDistanceUsingBinarySearch(int []arr, int K){
 
-        double low=0;
-        double high=maxValue(arr);
-        double ans=0;
-        double diff=1e-6;
+        double low=0, high=maxValue(arr), ans=0, diff=1e-6;
+
         while(high-low > diff){
 
             double mid=low+(high-low)/2.0;

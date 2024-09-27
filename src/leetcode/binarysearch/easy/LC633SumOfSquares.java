@@ -13,7 +13,7 @@ public class LC633SumOfSquares {
     public static boolean judgeSquareSum(int c) {
 
         int left=0;
-        long right= (long) Math.sqrt(c);
+        long right= (long) Math.sqrt(c); //Line 4: error: incompatible types: possible lossy conversion from long to int
         while(left<=right){
             long value=left*left + right*right;
             if(value == c){

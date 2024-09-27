@@ -35,7 +35,7 @@ public class LC49GroupAnagrams {
 				map.put(key, new ArrayList());
 			}
 			map.get(key).add(s);
-			
+
 		}
 		return new ArrayList<>(map.values());
 

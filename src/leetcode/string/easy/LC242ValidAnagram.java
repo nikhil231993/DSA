@@ -20,8 +20,8 @@ public class LC242ValidAnagram {
 
         int[] ch1=new int[26];
         int[] ch2=new int[26];
-        int n1=s.length();
-        int n2=t.length();
+        int n1=s.length(), n2=t.length();
+
         if(n1!=n2)
             return false;
         for(int i=0;i<n1;i++){

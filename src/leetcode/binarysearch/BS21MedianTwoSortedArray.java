@@ -23,8 +23,7 @@ public class BS21MedianTwoSortedArray {
         int[] nums3=new int[n1+n2];
         int n=n1+n2;
 
-        int i=0,j=0;
-        int k=0;
+        int i=0, j=0, k=0;
         while(i < n1 && j < n2){
             if(nums1[i] < nums2[j]){
                 nums3[k++]=nums1[i++];
@@ -97,9 +96,9 @@ public class BS21MedianTwoSortedArray {
         if(n1>n2)
             return findMedianSortedArrays(nums2,nums1);
 
-        int low=0;
-        int high=n1;
+        int low=0, high=n1;
         int left=(n1+n2+1)/2;
+
         while(low<=high){
 
             int mid1=low+(high-low)/2;

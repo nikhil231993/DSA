@@ -55,7 +55,7 @@ public class G39MinimumMultiplicationToReachEnd {
 
                if(vertex==end)
                    return level+1;
-               if(dist[vertex]>level+1){
+               if(dist[vertex] > level+1){
                    dist[vertex]=level+1;
                    q.offer(new PairG39(level+1,vertex));
                }
@@ -85,10 +85,11 @@ public class G39MinimumMultiplicationToReachEnd {
                 Integer vertex=(n*node)%mod;
                 if(visited[vertex]==1)
                     continue;
-                visited[vertex]=1;
+                visited[vertex]=1; // Since the level move by 1, once we reach an element we will not reach it in future
+                //in better time complexity
                 if(vertex==end)
                     return level+1;
-                q.offer(new PairG39(level+1,vertex));
+                q.offer(new PairG39(level+1, vertex));
             }
         }
         return -1;
