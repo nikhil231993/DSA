@@ -5,6 +5,7 @@ public class SingletonMain {
     //1. we want one instance so constructor should be private
     //2. static instance
     //3. static getter
+    //4. final class so subclass also cannot create instance using Reflections
 
     public static void main(String[] args) {
 

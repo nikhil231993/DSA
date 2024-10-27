@@ -5,9 +5,9 @@ public class Main {
     public static void main(String[] args) {
 
         FoodItem pizza=new Pizza();
-        pizza = new ExtraCheeseDecoratorFoodItem(pizza,10.0);
-        pizza = new ExtraSauceDecoratorFoodItem(pizza, 20.0);
-        pizza = new ExtraToppingsDecoratorFoodItem(pizza, 30.0);
+        pizza = new ExtraSauceDecoratorFoodItem(new ExtraCheeseDecoratorFoodItem(pizza,10.0), 20);
+//        pizza = new ExtraSauceDecoratorFoodItem(pizza, 20.0);
+//        pizza = new ExtraToppingsDecoratorFoodItem(pizza, 30.0);
 
         System.out.println(pizza.getDescription());
         System.out.println(pizza.getPrice());

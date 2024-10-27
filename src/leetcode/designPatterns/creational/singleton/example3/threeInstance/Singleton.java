@@ -13,9 +13,9 @@ public class Singleton {
 
     public static Singleton getInstance(){
 
-        if(id<=3){
+        if(id<=4){
             synchronized (Singleton.class){
-                if(id<=3){
+                if(id<=4){
                     singleton=new Singleton();
                 }
             }

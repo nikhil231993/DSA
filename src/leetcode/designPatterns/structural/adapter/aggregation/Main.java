@@ -10,7 +10,7 @@ public class Main {
         jsonAnalyticsTool.setJson(data);
         jsonAnalyticsTool.analyseData();
 
-        XmlToJsonAdapter xmlToJsonAdapter=new XmlToJsonAdapter(data, new JSONAnalyticsToolAdaptee());
+        AdapterXmlToJson xmlToJsonAdapter=new AdapterXmlToJson(data, new JSONAnalyticsToolAdaptee());
         xmlToJsonAdapter.analyseData();
     }
 }

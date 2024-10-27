@@ -17,6 +17,7 @@ public class MenuOptions {
     }
 
     public void executeCommands(){
+
         for(Command cmd: commands){
             undoCommands.push(cmd);
             cmd.execute();

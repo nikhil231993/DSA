@@ -1,6 +1,14 @@
 package leetcode.designPatterns.structural.bridge;
 
-public interface NavigationSystem {
+public abstract class NavigationSystem {
 
-    void navigate(String destination);
+    //Abstraction Layer
+
+    protected ImplNavigation navigationSystem;
+
+    abstract void navigate(String destination);
+
+    public void setNavigationImplementation(ImplNavigation navigationSystem){
+        this.navigationSystem=navigationSystem;
+    }
 }

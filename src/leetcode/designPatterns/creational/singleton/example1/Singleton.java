@@ -4,7 +4,8 @@ public class Singleton {
 
     //https://www.geeksforgeeks.org/java-singleton-design-pattern-practices-examples/
 
-    private static Singleton singleton=null;
+    private static Singleton singleton=null; // Volatile ensures visibility
+    //volatile can be used but is not mandatory
 
     private Singleton(){
     }

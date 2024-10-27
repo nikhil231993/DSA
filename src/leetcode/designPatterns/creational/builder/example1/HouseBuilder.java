@@ -2,7 +2,7 @@ package leetcode.designPatterns.creational.builder.example1;
 
 public abstract class HouseBuilder {
 
-    protected House house; //Your access it within the implemented classes
+    protected House house; //You can access it within the implemented classes
 
     public HouseBuilder(){
         this.house=new House();

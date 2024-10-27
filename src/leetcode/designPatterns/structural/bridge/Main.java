@@ -5,18 +5,18 @@ public class Main {
     public static void main(String[] args) {
 
         //We can have both NavigationSystem and NavigationImplementation as interface but
-        //if we have NavigationImplementation as abstract class then we can create reference of NavigationSystem inside it
+        //if we have NavigationSystem as abstract class then we can create reference of ImplNavigation inside it
 
-        UberRides uberRides=new UberRides("Raj");
-        UberEats uberEats=new UberEats("Daily");
+        NavigationSystem uberRides=new UberRides("Raj");
+        NavigationSystem uberEats=new UberEats("Daily");
 
-        AppleMaps appleMaps=new AppleMaps();
-        GoogleMaps googleMaps=new GoogleMaps();
+        ImplNavigation appleMaps=new ImplementationAppleMaps();
+        ImplNavigation googleMaps=new ImplementationGoogleMaps();
 
         uberRides.setNavigationImplementation(appleMaps);
-        uberRides.navigateTo("Delhi");
+        uberRides.navigate("Delhi");
 
-        uberEats.setNavigationSystem(googleMaps);
-        uberEats.navigateTo("Mumbai");
+        uberEats.setNavigationImplementation(googleMaps);
+        uberEats.navigate("Mumbai");
     }
 }

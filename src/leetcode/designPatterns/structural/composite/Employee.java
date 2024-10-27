@@ -6,7 +6,7 @@ public class Employee implements  EmployeeComponent{
 
     private double salary;
 
-    public Employee(String name,double salary){
+    public Employee(String name, double salary){
         this.name=name;
         this.salary=salary;
     }

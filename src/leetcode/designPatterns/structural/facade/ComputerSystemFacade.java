@@ -1,6 +1,6 @@
 package leetcode.designPatterns.structural.facade;
 
-public class  ComputerSystemFacade {
+public class ComputerSystemFacade {
 
     private CPU cpu;
     private Memory memory;

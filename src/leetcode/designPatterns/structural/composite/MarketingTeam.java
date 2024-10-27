@@ -34,5 +34,4 @@ public class MarketingTeam implements EmployeeComponent{
             salary+=employeeComponent.calculateSalary();
         return salary;
     }
-
 }
