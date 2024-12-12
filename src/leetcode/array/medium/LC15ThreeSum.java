@@ -15,7 +15,7 @@ public class LC15ThreeSum {
 		System.out.println(r);
 
 		//Approach 2: Better
-		List<List<Integer>> re1=betterThreeSum(n);
+		List<List<Integer>> re1 = betterThreeSum(n);
 		System.out.println(re1);
 
 		//Approach 3: Optimal
@@ -92,10 +92,10 @@ public class LC15ThreeSum {
 	private static List<List<Integer>> betterThreeSum(int[] nums) {
 
 		Set<List<Integer>> s=new HashSet<>();
-		for(int i=0;i<nums.length;i++){
+		for(int i=0; i<nums.length; i++){
 			Set<Integer> threeDigits=new HashSet<>();
 
-			for(int j=i+1;j<nums.length;j++){
+			for(int j=i+1; j<nums.length; j++){
 				int third=-(nums[i]+nums[j]);
 				if(threeDigits.contains(third)){
 					List<Integer> r=new ArrayList<>(Arrays.asList(nums[i], nums[j], third));

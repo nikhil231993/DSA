@@ -54,8 +54,8 @@ public class LC84LargestRectangleInHistogram {
 	public static int largestRectangleAreaHelloWorld(int[] arr) {
 
 		int n = arr.length;
-		Stack<Integer> leftMinStack = new Stack<Integer>();
-		Stack<Integer> rightMinStack = new Stack<Integer>();
+		Stack<Integer> leftMinStack = new Stack<>();
+		Stack<Integer> rightMinStack = new Stack<>();
 
 		int[] leftMin = new int[n];
 		int[] rightMin = new int[n];

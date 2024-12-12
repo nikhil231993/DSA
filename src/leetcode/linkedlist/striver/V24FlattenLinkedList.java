@@ -3,7 +3,7 @@ package leetcode.linkedlist.striver;
 public class V24FlattenLinkedList {
 
     //Approach 1: Parse through all the nodes and put the values in a list and then sort it and then put the values in a LinkedList
-    //TC:O(nlogn)
+    //TC:O(n log n)
     //SC:O(n)
 
     /**
@@ -60,7 +60,6 @@ public class V24FlattenLinkedList {
                 node2=node2.bottom;
             }
             temp=temp.bottom;
-
         }
 
         if(node1==null)

@@ -56,8 +56,8 @@ public class LC56MergeIntervals {
 		int end = twoDim[0][1];
 
 		for (int[] row : twoDim) {
-			if(end>=row[0]) {
-				end=Math.max(end, row[1]);
+			if(end >= row[0]) {
+				end = Math.max(end, row[1]);
 			}else {
 				res.add(new int[] { start, end });
 				start = row[0];

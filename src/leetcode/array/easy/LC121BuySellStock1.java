@@ -16,9 +16,9 @@ public class LC121BuySellStock1 {
 	private static int maxProfitBrute(int[] prices) {
 
 		int profit=Integer.MIN_VALUE;
-		for(int i=0;i<prices.length-1;i++){
-			for(int j=i+1;j<prices.length;j++){
-				profit=Math.max(profit,prices[j]-prices[i]);
+		for(int i=0; i<prices.length-1; i++){
+			for(int j=i+1; j<prices.length; j++){
+				profit=Math.max(profit, prices[j]-prices[i]);
 			}
 		}
 		return profit;

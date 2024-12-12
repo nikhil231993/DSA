@@ -2,7 +2,7 @@ package leetcode.linkedlist.striver;
 
 public class V23MergeTwoSortedListLC21 {
 
-    //Approach 1: Parse both LL and put the values in an array and then parse the sorted array
+    //Approach 1: Parse both LL and put the values in an array and then parse the sorted array. This uses 2 parsing and extra array space
 
     //Approach 2:
 

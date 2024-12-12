@@ -62,7 +62,6 @@ public class LC844BackSpaceStringComparison {
 			} else if (!s2.isEmpty()) {
 				s2.pop();
 			}
-
 		}
 
 		StringBuilder sb1 = new StringBuilder();

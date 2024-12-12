@@ -17,9 +17,8 @@ public class LC82EntireDuplicateRemoval {
             }else{
                 while(temp.next!=null && temp.val==temp.next.val)
                     temp=temp.next;
-                prev.next=temp.next;// This handles when first itslef has duplicate
+                prev.next=temp.next;// This handles when first itself has duplicate
             }
-
             temp=temp.next;
         }
         return dummy.next;

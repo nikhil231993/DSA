@@ -20,7 +20,7 @@ public class V55P4ReverseStack {
             st.push(value);
             return;
         }
-        int num=st.pop();
+        int num = st.pop();
         insertAtBottom(st,value);
         st.push(num);
     }

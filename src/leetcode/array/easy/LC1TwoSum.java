@@ -33,7 +33,7 @@ public class LC1TwoSum {
 		Map<Integer, Integer> map = new LinkedHashMap();
 		for(int i=0;i<nums.length;i++) {
 			if (map.containsKey(target - nums[i])) {
-				return new int[] {map.get(target-nums[i]),i};
+				return new int[] {map.get(target-nums[i]), i};
 			}
 			map.put(nums[i], i);
 		}
@@ -51,7 +51,6 @@ public class LC1TwoSum {
 					return new int[] { i, j };
 				}
 			}
-
 		}
 		return new int[] {};
 

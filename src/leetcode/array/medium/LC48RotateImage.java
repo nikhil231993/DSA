@@ -19,6 +19,9 @@ public class LC48RotateImage {
 			System.out.print(row[0] + " " + row[1] + " " + row[2]);
 			System.out.println();
 		}
+
+		//We have approach2 below where only reversal logic changes
+		//rotateApproach2() function
 	}
 
 	private static void rotate(int[][] matrix) {
@@ -44,5 +47,32 @@ public class LC48RotateImage {
 
 		//TC:O(M*N)+O(M*N)
 		//SC:O(1)
+	}
+
+	public static void rotateApproach2(int[][] matrix) {
+
+		int n=matrix.length;
+		int m=matrix[0].length;
+		for(int i=0;i<n;i++){
+			for(int j=i+1;j<m;j++){
+				int temp=matrix[i][j];
+				matrix[i][j]=matrix[j][i];
+				matrix[j][i]=temp;
+			}
+		}
+
+		for(int i=0;i<n;i++){
+			reverse(0, n-1, matrix[i]);
+		}
+	}
+
+	public static void reverse(int left, int right, int[] matrix){
+		while(left<right){
+			int temp=matrix[left];
+			matrix[left]=matrix[right];
+			matrix[right]=temp;
+			left++;
+			right--;
+		}
 	}
 }

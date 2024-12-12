@@ -18,7 +18,7 @@ public class LC394DecodeString {
 
         int currNo=0;
         StringBuilder str=new StringBuilder();
-        for(int i=0; i<n;i++){
+        for(int i=0; i<n; i++){
 
             char ch=s.charAt(i);
             if(Character.isDigit(ch)){

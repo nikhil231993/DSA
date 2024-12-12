@@ -41,7 +41,7 @@ public class LC581ShortestUnsortedContinuousSubarray {
         if(leftIndex==Integer.MAX_VALUE && rightIndex==Integer.MIN_VALUE)
             return 0;
 
-        return rightIndex-leftIndex+1;
+        return rightIndex - leftIndex + 1;
 
         //TC:O(2*n) parsing array two times
         //SC:O(2*n) two stack space in worst case

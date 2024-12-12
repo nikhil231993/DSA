@@ -17,14 +17,14 @@ public class LC695MaxAreaOfIsland {
 
 		for (int i = 0; i < grid.length; i++) {
 			for (int j = 0; j < grid[0].length; j++) {
-				int areaCalculated = calculateArea(grid, 0, i, j);
+				int areaCalculated = calculateArea(grid, 0, i, j, grid.length, grid[0].length);
 				maxArea = Math.max(areaCalculated, maxArea);
 			}
 		}
 		System.out.println(maxArea);
 	}
 
-	public static int calculateArea(int[][] grid, int area, int i, int j) {
+	public static int calculateArea(int[][] grid, int area, int i, int j, int n, int m) {
 
 		if (i >= grid.length || i < 0 || j < 0 || j >= grid[0].length)
 			return area;
@@ -34,10 +34,11 @@ public class LC695MaxAreaOfIsland {
 
 		area++;
 		grid[i][j] = 0;
-		area = calculateArea(grid, area, i + 1, j);
-		area = calculateArea(grid, area, i - 1, j);
-		area = calculateArea(grid, area, i, j + 1);
-		area = calculateArea(grid, area, i, j - 1);
+
+		area = calculateArea(grid, area, i + 1, j, n, m);
+		area = calculateArea(grid, area, i - 1, j, n, m);
+		area = calculateArea(grid, area, i, j + 1, n, m);
+		area = calculateArea(grid, area, i, j - 1, n, m);
 
 		return area;
 

@@ -10,10 +10,10 @@ public class HeapSort {
 
         int arr[] = {1, 3, 5, 4, 6, 13, 10, 9, 8, 15, 17} ;
 
-        int n = arr.length   ;
-        heapSort(arr, n)  ;
+        int n = arr.length;
+        heapSort(arr, n);
         System.out.println("Heap after Sorting is :")  ;
-        print(arr, n)  ;
+        print(arr, n);
 
         System.out.println("Array after sorting is : ");
         for(int num:arr)
@@ -35,6 +35,7 @@ public class HeapSort {
     private static void heapSort(int[] arr, int n) {
 
         buildHeap(arr,n);
+
         for(int i=n-1;i>0;i--){
             int temp=arr[i];
             arr[i]=arr[0];

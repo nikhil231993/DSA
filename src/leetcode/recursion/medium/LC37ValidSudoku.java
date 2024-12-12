@@ -33,6 +33,7 @@ public class LC37ValidSudoku {
 
 				if (board[i][j] != '.') {
 					char c = board[i][j];
+
 					if (!isValid(i, j, board, c)) {
 						return false;
 					}
@@ -51,8 +52,10 @@ public class LC37ValidSudoku {
 
 			if (i != col && board[row][i] == c)
 				return false;
+
 			if (i != row && board[i][col] == c)
 				return false;
+
 			int lastRow = 3 * (row / 3) + (i / 3);
 			int lastCol = 3 * (col / 3) + (i % 3);
 			if (lastRow != row && lastCol != col && board[lastRow][lastCol] == c)

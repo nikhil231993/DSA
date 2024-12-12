@@ -45,24 +45,16 @@ public class L75IsBinaryTreeHeap {
             return true;
         int totalNodes=countNode(root);
         System.out.println(totalNodes);
-        if(isCBT(root,0,totalNodes) && maxHeap(root))
-            return true;
-        return false;
+        return isCBT(root,0,totalNodes) && maxHeap(root);
     }
 
     private static boolean maxHeap(Node root) {
 
-        if(root==null)
-            return true;
         if(root.right==null && root.left==null)
             return true;
-        if(root.right==null){
+        if(root.right==null)
             return root.left.value<root.value;
-        }else{
-            boolean left=maxHeap(root.left);
-            boolean right=maxHeap(root.right);
-            return (left && right && root.left.value<root.value && root.right.value< root.value);
-        }
+        return root.left.value<root.value && root.right.value< root.value && maxHeap(root.left) && maxHeap(root.right);
     }
 
     private static boolean isCBT(Node root, int index, int totalNodes) {
@@ -71,24 +63,16 @@ public class L75IsBinaryTreeHeap {
             return true;
         if(index>=totalNodes)
             return false;
-        else{
-            boolean left=isCBT(root.left,2*index+1,totalNodes);
-            boolean right=isCBT(root.right,2*index+2,totalNodes);
-            return left && right;
-        }
+        return isCBT(root.left,2*index+1,totalNodes) && isCBT(root.right,2*index+2,totalNodes);
     }
 
     static int countNode(Node root) {
 
         if(root==null)
             return 0;
-        else{ // This else is not needed
-            int left=countNode(root.left);
-            int right=countNode(root.right);
-            return 1+left+right;
-        } //This is also not needed
+        return 1 + countNode(root.left) + countNode(root.right) ;
     }
 
-    //TC:O(n) count nodes + O(n) cbt +O(n) maxorder
+    //TC:O(n) count nodes + O(n) cbt + O(n) for max order
     //SC:O(log N) basically height of the tree
 }

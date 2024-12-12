@@ -24,7 +24,7 @@ public class LC378KthSmallestInASortedMatrix {
 
         while(lowest<=highest){
             int mid=lowest+(highest-lowest)/2;
-            int count = countLessOrEqual(mid,matrix,k);
+            int count = countLessOrEqual(mid, matrix, k);
             if(count<k)
                 lowest=mid+1;
             else{

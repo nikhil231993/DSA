@@ -34,9 +34,8 @@ public class LC150ReversePolishNotations {
                 int num1=st.pop();
                 int num2=st.pop();
                 st.push(num2/num1);
-            }else{
+            }else
                 st.push(Integer.valueOf(tokens[i]));
-            }
         }
         return st.pop();
 

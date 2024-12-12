@@ -14,7 +14,7 @@ public class LC1833IceCreamBars {
     public static int maxIceCream(int[] costs, int coins) {
 
         PriorityQueue<Integer> pq=new PriorityQueue<>();
-        for(int c:costs){
+        for(int c : costs){
             pq.offer(c);
         }
         int count=0;

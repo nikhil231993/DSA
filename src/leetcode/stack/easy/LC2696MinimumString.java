@@ -16,7 +16,7 @@ public class LC2696MinimumString {
 
         int n=s.length();
 
-        for(int i=0; i< n;i++){
+        for(int i=0; i< n; i++){
             char ch=s.charAt(i);
 
             if(st.isEmpty() ||(ch!='B' && ch!='D'))

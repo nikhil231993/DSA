@@ -16,7 +16,7 @@ public class V55P3InsertElementAtBottomOfStack {
             st.push(value);
             return;
         }
-        int num=st.pop();
+        int num = st.pop();
         solve(st,value);
         st.push(num);
     }

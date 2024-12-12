@@ -35,13 +35,11 @@ public class V5AddTwoNumbersLC2 {
                 carry=sum/10;
                 temp.next=n;
                 temp=temp.next;
-
             }
             if(carry!=0){
                 ListNode n1=new ListNode(carry);
                 temp.next=n1;
             }
-
             return l.next;
         }
     }

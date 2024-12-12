@@ -35,8 +35,8 @@ public class LC32LongestValidParenthesis {
         int termIndex=n;
 
         while(!st.isEmpty()){
-            maxLen=Math.max(maxLen, termIndex-st.peek()-1);
-            termIndex=st.pop();
+            maxLen = Math.max(maxLen, termIndex-st.peek()-1);
+            termIndex = st.pop();
         }
         return Math.max(termIndex, maxLen);
 

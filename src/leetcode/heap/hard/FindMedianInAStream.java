@@ -14,7 +14,7 @@ public class FindMedianInAStream {
             smaller.offer(x);
             return;
         }
-        if(smaller.size()>larger.size()){
+        if(smaller.size() > larger.size()){
             if(x<smaller.peek()){
                 smaller.offer(x);
                 larger.offer(smaller.poll());
@@ -22,7 +22,7 @@ public class FindMedianInAStream {
                 larger.offer(x);
             }
         }else{
-            if(x>smaller.peek()){
+            if(x > smaller.peek()){
                 larger.offer(x);
                 smaller.offer(larger.poll());
             }else{

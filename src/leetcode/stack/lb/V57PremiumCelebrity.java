@@ -11,7 +11,7 @@ public class V57PremiumCelebrity {
     private static int celebrity(int n) {
 
         int candidate=0;
-        for(int i=1;i<n;i++){
+        for(int i=1; i<n; i++){
             if(knows(candidate, i))
                 candidate=i;
         }

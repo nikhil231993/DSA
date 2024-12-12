@@ -4,7 +4,7 @@ public class V17FindStartingPointLinkedListLC142 {
 
     //Approach 1: Use hashing to remember the node which I have seen first previously
 
-    //Approach 2:
+    //Approach 2: Using Tortoise and Hare Algo
 
     /**
     public ListNode detectCycle(ListNode head) {

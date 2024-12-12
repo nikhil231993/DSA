@@ -6,6 +6,7 @@ import java.util.List;
 public class LC212WordSearch2 {
 
     public static void main(String[] args) {
+
         char[][] board=new char[][]{{'o','a','a','n'},{'e','t','a','e'},{'i','h','k','r'},{'i','f','l','v'}};
         String[] word={"oath","pea","eat","rain"};
         System.out.println(findWords(board,word));
@@ -31,6 +32,7 @@ public class LC212WordSearch2 {
     }
 
     public static boolean search(char[][] board, int i, int j, int n, int m, String word, int k){
+
         if(k==word.length())
             return true;
         if(i<0 || i>=board.length||j<0||j>=board[0].length||board[i][j]!=word.charAt(k))
@@ -43,7 +45,8 @@ public class LC212WordSearch2 {
         boolean op4=search(board, i,j-1,n,m,word,k+1);
         board[i][j]=c;
         return op1||op2||op3||op4;
+
         //SC:O(k) that is the word length which will there in stack
-        //TC:O(n*m * 4 raised to k)
+        //TC:O(k*n*m * 4 raised to (word length))
     }
 }

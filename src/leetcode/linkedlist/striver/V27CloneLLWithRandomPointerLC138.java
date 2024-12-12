@@ -2,7 +2,7 @@ package leetcode.linkedlist.striver;
 
 public class V27CloneLLWithRandomPointerLC138 {
 
-    // Approach 1:
+    // Approach 1: Create new nodes and stores them in hashmap. Again parse and fetch the nodes by using map.get()
 
     /**
     public Node copyRandomList(Node head) {
@@ -55,6 +55,7 @@ public class V27CloneLLWithRandomPointerLC138 {
     }
 
     public static void addRandomPointer(Node head){
+
         Node temp=head;
 
         while(temp!=null){
@@ -68,6 +69,7 @@ public class V27CloneLLWithRandomPointerLC138 {
     }
 
     public static Node removeOldListLinkage(Node head){
+
         Node dummyNode=new Node(-1);
         Node res=dummyNode;
 

@@ -3,6 +3,7 @@ package leetcode.linkedlist.striver;
 public class V21ReverseLinkedListInGroupLC25 {
 
     public static void main(String[] args) {
+
         int[] arr=new int[]{1,2,3,4,5,6,7,8,9,10};
 
         Node head=new Node(arr[0]);
@@ -48,6 +49,7 @@ public class V21ReverseLinkedListInGroupLC25 {
     }
 
     private static Node reverse(Node head) {
+
         if(head==null || head.next==null)
             return head;
         Node newHead=reverse(head.next);
@@ -58,6 +60,7 @@ public class V21ReverseLinkedListInGroupLC25 {
     }
 
     private static Node findKNode(Node temp, int k) {
+
         k--;
         while(temp!=null && k>0){
             k--;

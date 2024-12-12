@@ -15,11 +15,14 @@ public class LC1629SlowestKey {
 		int n=releaseTimes.length;
 		char ch=keysPressed.charAt(0);
 		int max=releaseTimes[0];
-		for(int i=1;i<n;i++){
-			if((releaseTimes[i]-releaseTimes[i-1])>max){
+
+		for(int i=1; i<n; i++){
+
+			int diff=releaseTimes[i]-releaseTimes[i-1];
+			if(diff>max){
 				max=releaseTimes[i]-releaseTimes[i-1];
 				ch=keysPressed.charAt(i);
-			}else if((releaseTimes[i]-releaseTimes[i-1])==max && keysPressed.charAt(i)>ch){
+			}else if(diff==max && keysPressed.charAt(i)>ch){
 				ch=keysPressed.charAt(i);
 			}
 		}

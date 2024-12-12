@@ -14,10 +14,7 @@ public class LC59SpiralMatrix2 {
 	public static int[][] spiralOrder(int n) {
 
 		int[][] matrix = new int[n][n];
-		int top = 0;
-		int left = 0;
-		int right = matrix[0].length - 1;
-		int bottom = matrix.length - 1;
+		int top = 0, left = 0, right = matrix[0].length - 1, bottom = matrix.length - 1;
 		
 		int value=0;
 

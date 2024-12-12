@@ -20,7 +20,7 @@ public class LC1423MaximumPointsYouCanObtainFromCards {
 		int rsum=0;
 
 		int l=k-1, r=cardPoints.length-1;
-		while(l>=0){  //O(k)
+		while(l >= 0){  //O(k)
 			lsum-=cardPoints[l--];
 			rsum+=cardPoints[r--];
 			maxSum=Math.max(maxSum, lsum+rsum);

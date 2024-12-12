@@ -34,7 +34,7 @@ public class V55P7MinimumCostToMakeStringValid {
 
         int a=0, b=0;
         while(!st.isEmpty()){
-            if(st.pop()=='{')
+            if(st.pop() == '{')
                 a++;
             else
                 b++;

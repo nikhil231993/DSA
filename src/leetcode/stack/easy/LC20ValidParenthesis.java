@@ -23,10 +23,7 @@ public class LC20ValidParenthesis {
             else if(s.charAt(i)=='{')
                 st.push('}');
             else{
-                if(st.size()==0)
-                    return false;
-
-                if(st.pop()!=s.charAt(i))
+                if(st.size()==0 || st.pop()!=s.charAt(i))
                     return false;
             }
         }

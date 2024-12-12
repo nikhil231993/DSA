@@ -29,22 +29,16 @@ public class LC146LRU {
 
         private void addNode(Node newnode) {
             m.put(newnode.key, newnode);
-            Node temp = head.next;
-
-            newnode.next = temp;
-            newnode.prev = head;
-
+            newnode.next = head.next;
+            head.next.prev = newnode;
             head.next = newnode;
-            temp.prev = newnode;
+            node.prev = head;
         }
 
-        private void deleteNode(Node delnode) {
-            m.remove(delnode.key);
-            Node prevv = delnode.prev;
-            Node nextt = delnode.next;
-
-            prevv.next = nextt;
-            nextt.prev = prevv;
+        private void deleteNode(Node node) {
+             m.remove(node.key);
+            node.prev.next = node.next;
+            node.next.prev = node.prev;
         }
 
         public int get(int key) {
@@ -65,9 +59,7 @@ public class LC146LRU {
             if (m.size() == cap) {
                 deleteNode(tail.prev);
             }
-
             addNode(new Node(key, value));
-
         }
     }
      */

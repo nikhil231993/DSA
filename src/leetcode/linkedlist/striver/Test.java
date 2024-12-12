@@ -5,6 +5,7 @@ import java.util.HashMap;
 public class Test {
 
     public static void main(String[] args) {
+
         Node n=new Node(1);
         n.next=new Node(2);
         n.next.next=new Node(3);
@@ -15,11 +16,18 @@ public class Test {
             head=head.next;
         }
         HashMap<Integer, Node> map=new HashMap<>();
-        map.put(n.data,n.next);
-        map.put(n.next.data,n.next);
-        map.put(n.next.next.data,n.next.next);
+        map.put(n.data, n.next);
+        map.put(n.next.data, n.next);
+        map.put(n.next.next.data, n.next.next);
 
         Node temp=map.get(2);
         System.out.println(temp.hashCode());
+
+        Node node=new Node(100);
+        node.next=new Node(200);
+        Node temp1=node;
+        Node prev=null;
+        prev=temp1;
+        temp1=temp1.next;
     }
 }

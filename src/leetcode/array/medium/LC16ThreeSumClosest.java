@@ -13,19 +13,18 @@ public class LC16ThreeSumClosest {
 
     public static int threeSumClosest(int[] nums, int target) {
 
-        Arrays.sort(nums);//O(nlogn)
+        Arrays.sort(nums); //O(nlogn)
 
         int diff=Integer.MAX_VALUE;
         int ans=0;
         for(int i=0;i<nums.length-2;i++){
 
-            int start=i+1;
-            int end=nums.length-1;
-            while(start<end){
+            int start=i+1, end=nums.length-1;
+            while(start < end){
                 int sum=nums[i]+nums[start]+nums[end];
                 if(sum==target)
                     return target;
-                if(Math.abs(sum-target)<diff){
+                if(Math.abs(sum-target) < diff){
                     diff=Math.abs(sum-target);
                     ans=sum;
                 }

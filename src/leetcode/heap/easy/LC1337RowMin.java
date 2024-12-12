@@ -34,18 +34,20 @@ public class LC1337RowMin {
 
     public static int[] kWeakestRows(int[][] mat, int k) {
 
-        PriorityQueue<Node> pq=new PriorityQueue<>((a, b)->a.count==b.count?b.row-a.row:b.count-a.count);
-        for(int i=0;i<mat.length;i++){
-            int no=required(mat[i], 1);
+        PriorityQueue<Node> pq=new PriorityQueue<>((a, b)->a.count == b.count ? b.row - a.row : b.count - a.count);
+
+        for(int i=0; i<mat.length; i++){
+
+            int no = required(mat[i], 1);
             pq.offer(new Node(i, no));
             if(pq.size()>k)
                 pq.poll();
         }
 
-        PriorityQueue<Node> pq1=new PriorityQueue<>((a,b)->a.count==b.count?a.row-b.row:a.count-b.count);
+        PriorityQueue<Node> pq1=new PriorityQueue<>((a,b)->a.count == b.count ? a.row - b.row : a.count - b.count);
         while(!pq.isEmpty()){
-            Integer r=pq.peek().row;
-            Integer c=pq.peek().count;
+            Integer r = pq.peek().row;
+            Integer c = pq.peek().count;
             pq1.offer(new Node(r,c));
             pq.poll();
         }

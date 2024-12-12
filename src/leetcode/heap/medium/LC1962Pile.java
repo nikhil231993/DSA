@@ -20,7 +20,7 @@ public class LC1962Pile {
 
         while(k!=0){
             Integer num=pq.poll();
-            Integer newNum=(int)Math.ceil(num/2.0);
+            Integer newNum=(int)Math.ceil(num/2.0); //Since it is 2.0 them 9/2.0 is 4.5 for which the ceil is 5
             pq.offer(newNum);
             k--;
         }

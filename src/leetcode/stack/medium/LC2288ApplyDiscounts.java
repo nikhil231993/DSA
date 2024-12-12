@@ -20,7 +20,7 @@ public class LC2288ApplyDiscounts {
                 long val=Long.parseLong(str[i].substring(1));
                 ans+=("$"+ String.format("%.2f", val*(1-discount/100.0d)));
             }else{
-                ans+=str[i];
+                ans+= str[i];
             }
             ans+=" ";
         }

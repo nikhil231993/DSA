@@ -41,10 +41,10 @@ public class LC506Rankings {
     public static String[] findRelativeRanks(int[] score) {
 
         int n=score.length;
-        PriorityQueue<Node1> pq=new PriorityQueue<>((a, b)->b.key-a.key);
+        PriorityQueue<Node1> pq=new PriorityQueue<>((a, b)->b.key - a.key);
         int i=0;
         for(int n1:score)
-            pq.offer(new Node1(n1,i++));
+            pq.offer(new Node1(n1, i++));
 
         String[] str=new String[score.length];
         if(n>=1){
@@ -74,6 +74,7 @@ public class LC506Rankings {
     }
 
     public static String[] findRelativeRanksOptimized(int[] score) {
+
         PriorityQueue<Node4> pq = new PriorityQueue<>((a,b) -> b.val - a.val);
         int n = score.length;
         for (int i =0; i< n; i++) {
@@ -82,6 +83,7 @@ public class LC506Rankings {
         String[] ans = new String[n];
         int count = 0;
         while (!pq.isEmpty()) {
+
             count++;
             Node4 cur = pq.poll();
             if (count == 1) {

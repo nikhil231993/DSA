@@ -7,9 +7,10 @@ public class LC131PalindromePartitioning {
 
     public static void main(String[] args) {
 
-      String  s = "aab";
-      System.out.println(partition(s));
+          String  s = "aab";
+          System.out.println(partition(s));
     }
+
     public static List<List<String>> partition(String s) {
 
         List<List<String>> finalResult=new ArrayList();
@@ -26,7 +27,7 @@ public class LC131PalindromePartitioning {
         }
         for(int i=index;i<s.length();i++){
             if(isPalindrome(index, i, s)){
-                subList.add(s.substring(index,i+1));
+                subList.add(s.substring(index, i+1));
                 partitionFunction(subList, finalResult,  s, i+1);
                 subList.remove(subList.size()-1);
             }
@@ -41,6 +42,7 @@ public class LC131PalindromePartitioning {
             }
         }
         return true;
+
         //Time Complexity: O( (2^n) *k*(n/2) )
 
         //Reason: O(2^n) to generate every substring and O(n/2)  to check if the substring generated is a palindrome.

@@ -29,7 +29,7 @@ public class V12IntersectionLinkedListLC160 {
                 temp2=headA;
             }
         }
-        return temp1;
+        return temp1; // This for the first node which might be equal
     }
      TC:O(N1+N2)
      SC:O(1)

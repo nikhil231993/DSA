@@ -45,6 +45,7 @@ public class HeapAllConceptsPrince {
             arr[(index-1)/2]=arr[index];
             arr[index]=temp;
             index=(index-1)/2;
+
             //TC:O(log n) .ie., Height of the tree
             //SC:O(1) as we are using already present array.
         }
@@ -116,14 +117,16 @@ public class HeapAllConceptsPrince {
             System.out.println("Cannot insert");
         arr[index]=value;
         heapifyUp(index);
+
         //TC:O(log n)
         //SC:O(n)
     }
 
     private void deleteKey(int index) {
 
-        decreaseKey(index,-Integer.MIN_VALUE);
+        decreaseKey(index, -Integer.MIN_VALUE);
         extractMin();
+
         //TC:O(log n)
         //SC:O(log n) for heapify call
     }
@@ -145,7 +148,7 @@ public class HeapAllConceptsPrince {
         System.out.println("Value has been extracted : " + h.extractMin());
         h.print();
         System.out.println("After decrease key operation : ");
-        h.decreaseKey(3,1);
+        h.decreaseKey(3, 1);
         h.print();
         System.out.println("After delete key operation : ");
         h.deleteKey(4);

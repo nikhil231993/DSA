@@ -6,6 +6,7 @@ import java.util.List;
 public class LC60PermutationSequence {
 
     public static void main(String[] args) {
+
         int n = 3, k = 3;
         System.out.println(getPermutation(n,k));
     }
@@ -31,7 +32,8 @@ public class LC60PermutationSequence {
             fact=fact/list.size();
         }
         return ans;
-        //TC:O(N) for while loop *O(n) for removing
-        //Sc:O(N) ans string+O(n) list
+
+        //TC:O(N) for while loop * O(n) for removing
+        //Sc:O(N) ans string + O(n) list
     }
 }

@@ -3,14 +3,14 @@ package leetcode.linkedlist.striver;
 public class V6OddEvenLinkedListLC328 {
 
     //Approach 1 : Create a arr and store the values in it and then retrieve it back and put it in LinkedList
-    // Do eth above first for odd index and then for even. Handle last node specifically
+    // Do the above first for odd index and then for even. Handle last node specifically
 
     //Approach 2
     /**
     public ListNode oddEvenList(ListNode head) {
 
         if(head==null || head.next==null)
-            return ListNode;
+            return head;
 
         ListNode odd=head;
         ListNode even=head.next;
@@ -23,7 +23,7 @@ public class V6OddEvenLinkedListLC328 {
             even=even.next;
         }
         odd.next=evenHead;
-        return odd;
+        return head;
     }
      TC:O(N/2)*2 as we move two steps at a time
      SC:O(1)

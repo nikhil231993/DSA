@@ -4,6 +4,7 @@ public class LC203RemoveLinkedListElements {
 
     /**
     public ListNode removeElements(ListNode head, int val) {
+
         ListNode temp=head;
         ListNode dummy=new ListNode(-1);
         dummy.next=head;
@@ -26,4 +27,25 @@ public class LC203RemoveLinkedListElements {
 
      */
 
+    //Approach 2: Self
+
+    /**
+    public ListNode removeElements(ListNode head, int val) {
+
+        if(head==null)
+            return null;
+        ListNode dummy=new ListNode(-1);
+        ListNode prev=dummy;
+        ListNode temp=head;
+        while(temp!=null){
+            if(temp.val!=val){
+                prev.next=temp;
+                prev=prev.next;
+            }
+            temp=temp.next;
+        }
+        prev.next=null;
+        return dummy.next;
+    }
+     */
 }

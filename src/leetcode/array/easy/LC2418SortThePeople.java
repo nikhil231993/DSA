@@ -42,7 +42,7 @@ public class LC2418SortThePeople {
 
         int j=0;
         while(!pq.isEmpty()){
-            result[j++]=pq.poll().name;
+            result[j++] = pq.poll().name;
         }
         return result;
 

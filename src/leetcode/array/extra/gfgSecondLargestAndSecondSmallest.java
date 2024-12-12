@@ -18,17 +18,17 @@ public class gfgSecondLargestAndSecondSmallest {
 
         for(int i=0; i<nums.length; i++){
 
-            if(nums[i]>max){
+            if(nums[i] > max){
                 secondMax=max;
                 max=nums[i];
-            }else if(nums[i]>secondMax && nums[i]!=max){
-                secondMax=nums[i];
+            }else if(nums[i] > secondMax && nums[i] != max){
+                secondMax = nums[i];
             }
-            if(nums[i]<smallest){
-                secondSmallest=smallest;
-                smallest=nums[i];
-            }else if(nums[i]<secondSmallest && nums[i]!=smallest){
-                secondSmallest=nums[i];
+            if(nums[i] < smallest){
+                secondSmallest = smallest;
+                smallest = nums[i];
+            }else if(nums[i] < secondSmallest && nums[i] != smallest){
+                secondSmallest = nums[i];
             }
         }
         return new int[]{secondMax, secondSmallest };

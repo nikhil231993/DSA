@@ -4,11 +4,22 @@ public class LC73SetMatrixZeroes {
 
     public static void main(String[] args) {
 
-        int[][] matrix =new int[][] {{0,1,2,0},{3,4,5,2},{1,3,1,5}};
+        int[][] matrix = new int[][] {{0,1,2,0},{3,4,5,2},{1,3,1,5}};
+        int[][] matrix1 =new int[][] {{0,1,2,0},{3,4,5,2},{1,3,1,5}};
         int[][] matrix2 =new int[][] {{0,1,2,0},{3,4,5,2},{1,3,1,5}};
 
         //Approach 1: Iterate and mark all the 1's in o's row and column as -1 and then put 0 instead of -1 in other parse
         //TC:O(n*m)(n+m) + O(n*m)
+        setZeroes(matrix1);
+
+        for(int[] m:matrix1){
+            for(int m1:m){
+                System.out.print(m1+" ");
+            }
+            System.out.println();
+        }
+
+        System.out.println("###################");
 
         //Approach 2: Better
         setZeroes(matrix);
@@ -95,8 +106,8 @@ public class LC73SetMatrixZeroes {
             }
         }
 
-        for(int i=0;i<matrix.length;i++){
-            for(int j=0;j<matrix[0].length;j++){
+        for(int i=0; i<matrix.length; i++){
+            for(int j=0; j<matrix[0].length; j++){
                 if(row[i]==1 || col[j]==1)
                     matrix[i][j]=0;
             }
@@ -104,5 +115,43 @@ public class LC73SetMatrixZeroes {
 
         //TC:O(n*m)+O(n*m)
         //SC:O(n+m)
+    }
+
+    public static void setZeroesBrute(int[][] matrix) {
+
+        int m=matrix.length;
+        int n=matrix[0].length;
+        int[][] visited=new int[m][n];
+        for(int i=0; i<m;i++){
+            for(int j=0;j<n;j++){
+                if(matrix[i][j]==0){
+                    setMinus(i,j,matrix,m,n, visited);
+                }
+            }
+        }
+
+        for(int i=0; i<m;i++){
+            for(int j=0;j<n;j++){
+                if(matrix[i][j]==-1 && visited[i][j]==1){
+                    matrix[i][j]=0;
+                }
+            }
+        }
+    }
+
+    public static void setMinus(int row, int col, int[][] matrix,int m,int n, int[][] visited){
+
+        for(int i=0;i<m;i++){
+            if( matrix[i][col]!=0){
+                matrix[i][col]=-1;
+                visited[i][col]=1;
+            }
+        }
+        for(int j=0;j<n;j++){
+            if( matrix[row][j]!=0){
+                matrix[row][j]=-1;
+                visited[row][j]=1;
+            }
+        }
     }
 }

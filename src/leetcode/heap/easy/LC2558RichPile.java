@@ -8,6 +8,7 @@ public class LC2558RichPile {
 
         int[] gifts =new int[] {25,64,9,4,100};
         int k = 4;
+
         System.out.println(pickGifts(gifts,k));
     }
 

@@ -31,8 +31,8 @@ public class LC1331RankArray {
 
         int rank=1;
         int[] rankArray=new int[arr.length];
-        int previous=-1;
-        int previousRank=-1;
+        int previous=Integer.MIN_VALUE, previousRank=Integer.MIN_VALUE;
+
         while(!pq.isEmpty()){
             int v=pq.peek().element;
             int p=pq.peek().pos;

@@ -41,8 +41,8 @@ public class L76MergeKSortedArray {
     private static ArrayList<Integer> mergeKArraysUsingHeap(int[][] arr, int k) {
 
         PriorityQueue<NodeValue> pq=new PriorityQueue<>((a,b)->a.value-b.value);
-        for(int i=0;i<k;i++){
-            pq.offer(new NodeValue(arr[i][0],0,i));
+        for(int i=0; i<k; i++){
+            pq.offer(new NodeValue(arr[i][0], 0, i));
         }
 
         ArrayList<Integer> result=new ArrayList<>();
@@ -58,7 +58,7 @@ public class L76MergeKSortedArray {
         }
         return result;
 
-        //TC:O(klogk) +O(n*k -k log k)
+        //TC:O(k logk) + O(n*k - k log k)
         //SC:k as at any moment heap has only k elements at the max
     }
 

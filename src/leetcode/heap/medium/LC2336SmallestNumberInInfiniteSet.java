@@ -10,6 +10,7 @@ class SmallestInfiniteSet {
     private Set<Integer> set=new HashSet();
 
     public SmallestInfiniteSet() {
+
         for(int i=1;i<=1000;i++){
             pq.offer(i);
             set.add(i);

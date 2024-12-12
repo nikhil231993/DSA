@@ -39,6 +39,7 @@ public class GfgMergeKSortedArray {
 
        PriorityQueue<Integer> pq=new PriorityQueue<>();
        ArrayList<Integer> list=new ArrayList<>();
+
         for(int i=0;i<arr.length;i++){
             for(int j=0;j<arr[0].length;j++){
                 pq.offer(arr[i][j]);
@@ -49,8 +50,8 @@ public class GfgMergeKSortedArray {
             list.add(pq.poll());
         return list;
 
-        //TC:O(n*m+ n*m log n*m)
-        //SC:O(n*m)*2
+        //TC:O(n*m + n*m log n*m)
+        //SC:O(n*m) * 2
     }
 
     private static ArrayList<Integer> mergeBruteForce(int[][] arr, int k) {
@@ -72,6 +73,7 @@ public class GfgMergeKSortedArray {
 
         ArrayList<Integer> result=new ArrayList<>();
         PriorityQueue<SubNode> pq=new PriorityQueue<>((a,b)->a.val-b.val);
+
         for(int i=0;i<k;i++){
             SubNode node=new SubNode(arr[i][0],i,0);
             pq.offer(node);
@@ -85,13 +87,13 @@ public class GfgMergeKSortedArray {
             int valPosInArr=temp.valPosInArr;
 
             if(valPosInArr+1<arr[arrPos].length){
-                SubNode inertVal=new SubNode(arr[arrPos][valPosInArr+1],arrPos,valPosInArr+1);
+                SubNode inertVal=new SubNode(arr[arrPos][valPosInArr+1], arrPos, valPosInArr+1);
                 pq.offer(inertVal);
             }
         }
         return result;
     }
 
-    //TC:O(klogk)
+    //TC:O(k log k)
     //SC:k as at any moment heap has only k elements at the max
 }

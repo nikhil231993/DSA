@@ -3,6 +3,7 @@ package leetcode.linkedlist.striver;
 public class V22RotateLinkedListLC61 {
 
     public static void main(String[] args) {
+
         int[] arr=new int[]{1,2};
 
         Node head=new Node(arr[0]);
@@ -33,6 +34,7 @@ public class V22RotateLinkedListLC61 {
             return head;
 
         tail.next=head;
+        k=k%2;
         int pos=count-k;
 
         Node first=head;

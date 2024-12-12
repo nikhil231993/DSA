@@ -15,6 +15,10 @@ public class LC17LetterCombinationsKeypad {
 
 	public static List<String> letterCombinations(String digits) {
 
+		if (digits.length() == 0) {
+			return new ArrayList();
+		}
+
 		Map<Character, String> m = new HashMap();
 		m.put('2', "abc");
 		m.put('3', "def");
@@ -25,14 +29,12 @@ public class LC17LetterCombinationsKeypad {
 		m.put('8', "tuv");
 		m.put('9', "wxyz");
 
-		if (digits.length() == 0) {
-			return new ArrayList();
-		}
+
 		List<String> list = new ArrayList();
 		String temp = "";
 		combination(m, list, digits, 0, temp);
 
-		// TC: 3 raise to N
+		// TC: 3 raise to N * n(This is to append the values into list )
 		// SC: O(N) where N is the digits length
 		return list;
 	}

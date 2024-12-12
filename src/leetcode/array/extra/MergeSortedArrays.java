@@ -37,7 +37,9 @@ public class MergeSortedArrays {
         //Approach 3: Optimal2
         int[] arr5 =new int[] {1,4,8,10};
         int[] arr6=new int[] {2,3,9};
+
         optimal2(n,arr5,m,arr6);
+
         for(int n1:arr5)
             System.out.println(n1);
         for(int n1:arr6)
@@ -56,7 +58,7 @@ public class MergeSortedArrays {
     private static void optimal2(int n, int[] arr5, int m, int[] arr6) {
 
         int len=n+m;
-        int gap=( len / 2 )+( len % 2 );
+        int gap=( len / 2 ) + ( len % 2 );
 
         while(gap>0){
 
@@ -86,8 +88,9 @@ public class MergeSortedArrays {
 
         int left=n-1, right=0;
 
-        while(left>=0 && right<m){
-            if(arr3[left]>arr4[right]){
+        while( left >= 0 && right < m ){
+
+            if(arr3[left] > arr4[right]){
                 swap(arr3, arr4, left, right );
                 left--;
                 right++;
@@ -98,8 +101,8 @@ public class MergeSortedArrays {
         Arrays.sort(arr3);
         Arrays.sort(arr4);
 
-        //TC:O(Min(left,right))+O(nlogn)+o(mlogm)
-        //SC:O(1)
+        //TC: O(Min(left,right)) + O(n log n) + O(m log m)
+        //SC: O(1)
     }
 
     private static void brute(int n, int[] arr1, int m, int[] arr2) {
@@ -123,7 +126,7 @@ public class MergeSortedArrays {
             res[k++]=arr2[right++];
         }
 
-        for(int i=0;i<res.length;i++){
+        for(int i=0; i<res.length; i++){
             if(i<n){
                 arr1[i]=res[i];
             }else{

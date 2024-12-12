@@ -25,6 +25,7 @@ public class L76KthLargestSumContiguousSubarray {
         for(int i=0;i<N;i++){
             int sum=0;
             for(int j=i;j<N;j++){
+
                 sum+=Arr[j];
                 pq.offer(sum);
                 if(pq.size()>K)
@@ -34,7 +35,7 @@ public class L76KthLargestSumContiguousSubarray {
         //O(k)
         return pq.peek();
 
-        //TC:O(n square log k)
+        //TC:O(n square * log k)
         //SC:O(k)
     }
 

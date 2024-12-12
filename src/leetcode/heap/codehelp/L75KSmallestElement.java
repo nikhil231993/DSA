@@ -34,8 +34,8 @@ public class L75KSmallestElement {
         return pq.peek();
 
         //max heap
-        //TC:o(O(K + (n-k)*log(k)))
-        //The time complexity of this method is O(K + (n-k)*log(k)). Because we are building a max heap of k elements
+        //TC:O(O(K + (n-k) * log(k)))
+        //The time complexity of this method is O(K + (n-k) * log(k)). Because we are building a max heap of k elements
         //and then checking the remaining (n-k) elements into the top of the heap.
         //SC:O(k)
     }
@@ -43,6 +43,7 @@ public class L75KSmallestElement {
     private static int KSmallest(int[] arr, int k) {
 
         PriorityQueue<Integer> pq=new PriorityQueue<>((a,b)->b-a);
+
         for(Integer num:arr){
             pq.offer(num);
             if(pq.size()>k)

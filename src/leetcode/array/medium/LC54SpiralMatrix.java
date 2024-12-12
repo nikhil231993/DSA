@@ -15,7 +15,7 @@ public class LC54SpiralMatrix {
 
 	public static List<Integer> spiralOrder(int[][] matrix) {
 
-		List<Integer> output = new ArrayList<Integer>();
+		List<Integer> output = new ArrayList<>();
 		if (matrix.length == 0)
 			return output;
 

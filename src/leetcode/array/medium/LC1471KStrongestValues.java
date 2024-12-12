@@ -33,6 +33,7 @@ public class LC1471KStrongestValues {
         int n=arr.length;
         int median=0;
         median=arr[(n-1)/2];
+
         for(int num:arr){
             pq.offer(new Node1(num, Math.abs(num-median)));
             if(pq.size()>k)

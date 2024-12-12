@@ -9,7 +9,7 @@ public class LC47Permutations2 {
 
 	public static void main(String[] args) {
 
-		int[] nums = new int[] { 1, 1, 2 };
+		int[] nums = new int[] { 1, 2, 2 };
 		boolean[] flag = new boolean[nums.length];
 
 		// Approach 1
@@ -48,20 +48,20 @@ public class LC47Permutations2 {
 		}
 	}
 
-	private static void permutationsSecondApproach(Set<List<Integer>> newList, int[] nums, 
+	private static void permutationsSecondApproach(Set<List<Integer>> newSet, int[] nums,
 			int index) {
 		
 		if(index==nums.length) {
 			List<Integer> arr = new ArrayList<Integer>();
 			for (Integer n : nums)
 				arr.add(n);
-			newList.add(arr);
+			newSet.add(arr);
 			return;
 		}
 
-		for(int i=index;i<nums.length;i++) {
+		for(int i=index; i<nums.length; i++) {
 			swap(i, index, nums);
-			permutationsSecondApproach(newList, nums, index + 1);
+			permutationsSecondApproach(newSet, nums, index + 1);
 			swap(i, index, nums);
 		}
 	}

@@ -12,6 +12,14 @@ public class LC503NextGreaterElement2 {
 
 		for (int n : result)
 			System.out.println(n);
+
+		System.out.println("###########################");
+
+		int[] result2 = nextGreaterElementsSelf(nums); // we cannot use Stack while loop because  when we again go through it in 2*n cycle we will have last value in
+		// which will lead to -1 in result. Debug and see the issue.
+
+		for (int n : result2)
+			System.out.println(n);
 	}
 
 	public static int[] nextGreaterElements(int[] nums) {
@@ -32,5 +40,24 @@ public class LC503NextGreaterElement2 {
 
 		//TC:O(2 * n)
 		//SC:O(2 * n)
+	}
+
+	public static int[] nextGreaterElementsSelf(int[] nums) {
+
+		Stack<Integer> st=new Stack();
+		int n=nums.length;
+		int[] result=new int[n];
+
+		for(int i=0; i< 2*n; i++){
+
+			while(!st.isEmpty() && nums[st.peek()] < nums[i%n]){
+				result[st.pop()]=nums[i%n];
+			}
+			st.push(i%n);
+		}
+
+		while(!st.isEmpty())
+			result[st.pop()]=-1;
+		return result;
 	}
 }

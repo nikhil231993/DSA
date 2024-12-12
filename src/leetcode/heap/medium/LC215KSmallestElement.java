@@ -13,6 +13,7 @@ public class LC215KSmallestElement {
 
     public static int kthSmallest(int[] arr, int l, int r, int k) {
 
+        //Using max heap
         PriorityQueue<Integer> pq=new PriorityQueue<>((a,b)-> b - a);
         for(int n:arr){
             pq.offer(n);
@@ -20,5 +21,8 @@ public class LC215KSmallestElement {
                 pq.poll();
         }
         return pq.peek();
+
+        //TC:O(log n)
+        //SC:O(K)
     }
 }

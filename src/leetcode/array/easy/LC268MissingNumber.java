@@ -49,6 +49,7 @@ public class LC268MissingNumber {
 
         int n=nums.length, sum=0,i=0;
         int actualsum=(n)*(n+1)/2;
+
         for( i=0;i<nums.length;i++)
             sum+=nums[i];
         return actualsum-sum;

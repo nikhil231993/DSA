@@ -66,10 +66,10 @@ public class LC128orPremiumLongestConsecutiveSequence {
 
         for(int i=0;i<n;i++)
             hash.add(num[i]);
-        int count=0;
-        int len=0;
 
-        for(Integer no:hash){
+        int count=0, len=0;
+
+        for(Integer no: hash){
             if(!hash.contains(no-1)){
                 count=1;
 
@@ -96,8 +96,9 @@ public class LC128orPremiumLongestConsecutiveSequence {
         int len=0;
         int lastSmaller=Integer.MIN_VALUE;
 
-        for(int i=0;i<num.length;i++){
-             if(num[i]-1==lastSmaller){
+        for(int i=0; i<num.length; i++){
+
+             if(num[i]-1 == lastSmaller){
                  count++;
                  lastSmaller=num[i];
              }else if(num[i]!=lastSmaller){
@@ -108,7 +109,7 @@ public class LC128orPremiumLongestConsecutiveSequence {
             }
             return len;
 
-        //TC:O(nlogn)
+        //TC:O(n log n)
         //SC:O(1)
     }
 }

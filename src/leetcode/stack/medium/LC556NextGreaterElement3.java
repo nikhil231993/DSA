@@ -47,7 +47,6 @@ public class LC556NextGreaterElement3 {
 		char temp = ch[idx1];
 		ch[idx1] = ch[idx2];
 		ch[idx2] = temp;
-
 	}
 
 	private static void reverse(int start, int end, char[] ch) {

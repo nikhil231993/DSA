@@ -13,8 +13,8 @@ public class LC2798NumberEmplyeesTarget {
     public static int numberOfEmployeesWhoMetTarget(int[] hours, int target) {
 
         int count=0, n=hours.length;
-        for(int i=0;i<n;i++){
-            if(hours[i]>=target)
+        for(int i=0; i<n; i++){
+            if(hours[i] >= target)
                 count++;
         }
         return count;

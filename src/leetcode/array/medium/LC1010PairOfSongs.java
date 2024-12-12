@@ -16,8 +16,9 @@ public class LC1010PairOfSongs {
 	private static int pairDivisibleBruteForce(int[] time) {
 
 		 int count=0;
-		 for(int i=0;i<time.length-1;i++){
-		     for(int j=i+1;j<time.length;j++){
+
+		 for(int i=0; i<time.length-1; i++){
+		     for(int j=i+1; j<time.length; j++){
 		         if((time[i]+time[j])%60 == 0){
 		             count++;
 		         }

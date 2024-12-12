@@ -22,12 +22,12 @@ public class LC1470ShuffleArray {
 
         int[] temp=new int[n];
         int s=0;
-        for(int p=0;p<n;p++)
+        for(int p=0; p<n; p++)
             temp[s++]=nums[p];
 
         int[] temp1=new int[n];
         int l=0;
-        for(int q=n;q<2*n;q++)
+        for(int q=n; q<2*n; q++)
             temp1[l++]=nums[q];
 
         int[] result=new int[2*n];

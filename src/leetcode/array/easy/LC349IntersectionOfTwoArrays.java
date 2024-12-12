@@ -61,8 +61,9 @@ public class LC349IntersectionOfTwoArrays {
 
 	private static int[] uniqueIntersection(int n, int m, int[] nums1, int[] nums2, List<Integer> r) {
 
-        int i=0,j=0;
+        int i=0, j=0;
         while(i<n && j<m){
+
             if(nums1[i]<nums2[j]){
                 i++;
             }else if(nums1[i]>nums2[j]){

@@ -61,13 +61,13 @@ public class LC532KDiffPairs {
         HashMap<Integer, Integer> map=new HashMap();
 
         for(int i=0; i<n; i++){
-            map.put(nums[i], map.getOrDefault(nums[i],0)+1);
+            map.put(nums[i], map.getOrDefault(nums[i],0) + 1);
         }
 
         int count=0;
         for(Map.Entry<Integer, Integer> m: map.entrySet()){
             int x=m.getKey();
-            if((k>0 && map.containsKey(x+k))||(k==0 && map.get(x)>1)){
+            if((k>0 && map.containsKey(x+k))||(k==0 && map.get(x)>1)){ // Since we have already added the values in map it can be x+k or x-k
                 count++;
             }
         }

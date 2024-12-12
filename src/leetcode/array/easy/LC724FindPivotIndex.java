@@ -17,14 +17,14 @@ public class LC724FindPivotIndex {
 
 		 // In this we use mathematical equation to find the solution
 		 int total=0;
-		 for(int i=0;i<nums.length;i++){
+		 for(int i=0; i<nums.length; i++){
 		 	total+=nums[i];
 		 }
 
 		 int leftSum=0;
-		 for(int i=0;i<nums.length;i++){
+		 for(int i=0; i<nums.length; i++){
 
-		 	if(2*leftSum==total-nums[i])
+		 	if(2*leftSum == total-nums[i])
 		 		return i;
 		 	leftSum+=nums[i];
 		 }

@@ -26,7 +26,7 @@ public class GfgMinimumCostOfRopes {
         }
         return cost;
 
-        //TC:O(nlogn)
+        //TC:O(n log n)
         //SC:O(n)
     }
 }

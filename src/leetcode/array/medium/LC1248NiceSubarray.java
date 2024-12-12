@@ -37,7 +37,7 @@ public class LC1248NiceSubarray {
             if(m.containsKey(sum-k)){
                 count+=m.get(sum-k);
             }
-            m.put(sum,m.getOrDefault(sum,0)+1);
+            m.put(sum,m.getOrDefault(sum,0) + 1);
         }
         return count;
 

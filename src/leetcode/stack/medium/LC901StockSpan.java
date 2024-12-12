@@ -4,7 +4,6 @@ import java.util.Stack;
 
 public class LC901StockSpan {
 
-
     class Node{
 
         public int key;
@@ -21,13 +20,11 @@ public class LC901StockSpan {
         Stack<Node> st=new Stack();
 
         public StockSpanner() {
-
         }
 
         public int next(int price) {
 
             int span=1;
-
             while(!st.isEmpty() && st.peek().key<=price){
                 span+=st.peek().span;
                 st.pop();

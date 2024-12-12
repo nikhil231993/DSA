@@ -4,10 +4,10 @@ import java.util.PriorityQueue;
 
 class Node2{
 
-    protected Integer value;
-    protected Integer row;
+    protected int value;
+    protected int row;
 
-    public Node2(Integer value, Integer row){
+    public Node2(int value, int row){
         this.value=value;
         this.row=row;
     }
@@ -21,7 +21,7 @@ public class LC2545SortTheStudentByKthScore {
         int k = 2;
 
         //Approach 1
-        int[][] result=sortTheStudents(score,k);
+        int[][] result = sortTheStudents(score,k);
 
         for(int i=0;i<score.length;i++){
             for(int j=0;j<score[i].length;j++){
@@ -33,7 +33,8 @@ public class LC2545SortTheStudentByKthScore {
         System.out.println("#############");
 
         //Approach 2
-        int[][] result1=sortTheStudentsOptimal(score,k);
+        int[][] score1=new int[][]{{10,6,9,1},{7,5,11,2},{4,8,3,15}};
+        int[][] result1 = sortTheStudentsOptimal(score1,k);
 
         for(int i=0;i<score.length;i++){
             for(int j=0;j<score[i].length;j++){
@@ -48,8 +49,8 @@ public class LC2545SortTheStudentByKthScore {
         int n=score.length;
         int[][] r=new int[n][n];
 
-        PriorityQueue<int[]> pq=new PriorityQueue<>((a,b)->b[k]-a[k]);
-        for(int i=0;i<n;i++)
+        PriorityQueue<int[]> pq=new PriorityQueue<>((a,b)->b[k] - a[k]);
+        for(int i=0; i<n; i++)
             pq.offer(score[i]);
 
         int i=0;
@@ -66,10 +67,10 @@ public class LC2545SortTheStudentByKthScore {
         int n=score.length;
         int m=score[0].length;
 
-        PriorityQueue<Node2> pq=new PriorityQueue<>((a,b)->b.value-a.value);
+        PriorityQueue<Node2> pq=new PriorityQueue<>((a,b)->b.value - a.value);
 
         for(int i=0; i<n; i++){
-            pq.offer(new Node2(score[i][k],i));
+            pq.offer(new Node2(score[i][k], i));
         }
 
         int[][] result=new int[n][m];

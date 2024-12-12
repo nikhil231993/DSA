@@ -6,6 +6,7 @@ public class LC341FlattenIterator {
 
     private List<Integer> fList =null;
     private Iterator<Integer> it;
+
     public NestedIterator(List<NestedInteger> nestedList) {
         fList = new ArrayList<>();
         flattening(nestedList);

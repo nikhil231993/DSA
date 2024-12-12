@@ -13,7 +13,6 @@ public class LC1081SmallestSubsequenceDistinctCharacters {
     public static String smallestSubsequence(String s) {
 
         int n=s.length();
-
         Stack<Integer> st=new Stack();
 
         int[] arr=new int[26];

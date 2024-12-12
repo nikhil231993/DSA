@@ -67,25 +67,25 @@ public class L75ConvertBSTToMinHeap {
         if(root==null)
             return;
         root.value=arr[newIndex[0]++];
-        preorder(root.left,arr,newIndex);
-        preorder(root.right,arr,newIndex);
+        preorder(root.left, arr, newIndex);
+        preorder(root.right, arr, newIndex);
     }
 
     public static int countNode(Node root) {
 
         if(root==null)
             return 0;
-        int left=countNode(root.left);
-        int right=countNode(root.right);
-        return 1+left+right;
+        int left = countNode(root.left);
+        int right = countNode(root.right);
+        return 1 + left + right;
     }
 
     public static void inorder(Node root,int[] arr,int[] index){
 
         if(root==null)
             return;
-        inorder(root.left,arr,index);
-        arr[index[0]++]=root.value;
-        inorder(root.right,arr,index);
+        inorder(root.left, arr, index);
+        arr[index[0]++] = root.value;
+        inorder(root.right, arr, index);
     }
 }

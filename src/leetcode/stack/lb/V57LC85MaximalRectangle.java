@@ -12,6 +12,7 @@ public class V57LC85MaximalRectangle {
                 {1, 1, 1, 1},
                 {1, 1, 1, 1},
                 {1, 1, 0, 0}};
+
         System.out.println(maxArea(M, n, m));
     }
 

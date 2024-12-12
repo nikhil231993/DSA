@@ -5,7 +5,7 @@ import java.util.List;
 
 public class LC52NQueens2 {
 
-	//TC:O(N! *N (This is thr for loop for construct)) as 1st column after  getting selected will have n-1 for next column and so on
+	//TC:O(N! * N (This is the for loop for construct)) as 1st column after getting selected will have n-1 for next column and so on
 	// we run the loop of n positions in each column
 	public static void main(String[] args) {
 
@@ -36,6 +36,7 @@ public class LC52NQueens2 {
 
 	public static void solveSecondApproach(List<List<String>> queen, char[][] board, int[] leftRow, int[] lowerDiagonal,
 			int[] upperDiagonal, int col) {
+
 		if (col == board.length) {
 			queen.add(construct(board));
 			return;
@@ -89,6 +90,7 @@ public class LC52NQueens2 {
 	}
 
 	public static boolean isSafeToBePlaced(char[][] board, int row, int col) {
+
 		int dupRow = row;
 		int dupCol = col;
 

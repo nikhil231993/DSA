@@ -78,7 +78,7 @@ public class LC692TopKFrequentWords {
             map.put(word, map.getOrDefault(word, 0) + 1);
         }
 
-        PriorityQueue<NodeStr> pq = new PriorityQueue<>((a,b) -> a.count == b.count ? b.str.compareTo(a.str) : a.count-b.count);
+        PriorityQueue<NodeStr> pq = new PriorityQueue<>((a,b) -> a.count == b.count ? b.str.compareTo(a.str) : a.count - b.count);
         for (Map.Entry<String, Integer> entry : map.entrySet()) {
             pq.offer(new NodeStr(entry.getValue(), entry.getKey()));
             if (pq.size() > k) {

@@ -20,9 +20,9 @@ public class V55P6RedundantBrackets {
             if(ch=='(' || ch=='+' || ch=='-' || ch=='*' || ch=='/')
                 st.push(ch);
             else{
-                if(ch==')'){
+                if(ch == ')'){
                     boolean redundant=true;
-                    while(st.peek()!='('){
+                    while(st.peek() != '('){
                         char top=st.peek();
                         if(top=='+' || top=='-' || top=='*' || top=='/'){
                             redundant=false;

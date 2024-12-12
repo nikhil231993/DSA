@@ -73,9 +73,9 @@ public class L77LC632SmallestRangeFromKList {
                 NodeValue1 in=new NodeValue1(nums.get(temp.valueRowInArr).get(temp.valueColInArr+1), temp.valueColInArr+1, temp.valueRowInArr);
                 max=Math.max(max,in.value);
                 pq.offer(in);
-            }else{
+            }else
                 break;
-            }
+
         }
         return new int[]{start,end};
 

@@ -23,9 +23,9 @@ public class LC632SmallestRangeFromKList {
     public static void main(String[] args) {
 
         List<List<Integer>> arr=new ArrayList<>();
-        List<Integer> a1= Arrays.asList(4, 10, 15,24,26);
-        List<Integer> a2= Arrays.asList(0,9, 12, 20);
-        List<Integer> a3= Arrays.asList(5, 18, 22,30);
+        List<Integer> a1 = Arrays.asList(4, 10, 15,24,26);
+        List<Integer> a2 = Arrays.asList(0,9, 12, 20);
+        List<Integer> a3 = Arrays.asList(5, 18, 22,30);
         arr.add(a1);
         arr.add(a2);
         arr.add(a3);

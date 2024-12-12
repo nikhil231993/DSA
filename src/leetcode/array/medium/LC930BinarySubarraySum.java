@@ -28,7 +28,7 @@ public class LC930BinarySubarraySum {
             if (m.containsKey(sum - goal)) {
                 count+=m.get(sum-goal);
             }
-            m.put(sum,m.getOrDefault(sum,0)+1);
+            m.put(sum,m.getOrDefault(sum,0) + 1);
         }
         return count;
 

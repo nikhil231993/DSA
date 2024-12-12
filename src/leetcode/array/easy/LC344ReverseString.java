@@ -22,7 +22,7 @@ public class LC344ReverseString {
 	private static char[] reverse(char[] s) {
 
 		int left=0, right=s.length;
-		while(left<right){
+		while(left < right){
 			char temp = s[right];
 			s[right] = s[left];
 			s[left] = temp;

@@ -45,6 +45,7 @@ public class LC14LongestCommomPrefix {
 	private static int minLength(String[] strs) {
 
 		int min = strs[0].length();
+
 		for (int i = 1; i < strs.length; i++) {
 			if (strs[i].length() < min) {
 				min = strs[i].length();

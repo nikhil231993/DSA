@@ -10,11 +10,11 @@ public class LC349UnionOfTwoArrays {
 
     public static void main(String[] args) {
 
-       int n = 5;
-       int[] arr1 =new int[] {1, 2, 3, 4, 5};
+        int n = 5;
+        int[] arr1 =new int[] {1, 2, 3, 4, 5};
 
 		int m = 3;
-       int[] arr2=new int[] {1, 2, 3};
+        int[] arr2=new int[] {1, 2, 3};
 
 		//Approach 1: Brute
 		int[] ans = findUnionBrute(n, m, arr1, arr2);
@@ -59,8 +59,8 @@ public class LC349UnionOfTwoArrays {
         int i=0;
         int j=0;
 
-        while(i<n && j<m){
-            if(arr1[i]<=arr2[j]){
+        while(i < n && j < m){
+            if(arr1[i] <= arr2[j]){
 				if (list.isEmpty() || list.get(list.size() - 1) != arr1[i]) {
                     list.add(arr1[i]);
                 }
@@ -73,13 +73,13 @@ public class LC349UnionOfTwoArrays {
             }
         }
 
-        while(i<n){
+        while(i < n){
 			if (list.isEmpty() || list.get(list.size() - 1) != arr1[i]) {
                 list.add(arr1[i]);
             }
             i++;
         }
-        while(j<m){
+        while(j < m){
 			if (list.isEmpty() || list.get(list.size() - 1) != arr2[j]) {
                 list.add(arr2[j]);
             }

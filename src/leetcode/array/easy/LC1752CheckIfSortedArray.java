@@ -21,7 +21,7 @@ public class LC1752CheckIfSortedArray {
                 count++;
         }
 
-        if(nums[n-1]>nums[0])
+        if(nums[n-1] > nums[0])
             count++;
 
         if(count<=1)

@@ -45,11 +45,10 @@ public class LC295FindMedianFromDataStream {
 
     public static void main(String[] args) {
 
-        int n=4;
         int[] arr=new int[]{5,15,1,3};
 
         LC295FindMedianFromDataStream obj=new LC295FindMedianFromDataStream();
-        for(int num:arr){
+        for(int num : arr){
             obj.addNum(num);
             System.out.println(obj.findMedian());
         }

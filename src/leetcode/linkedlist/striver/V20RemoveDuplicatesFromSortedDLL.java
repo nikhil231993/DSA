@@ -15,11 +15,11 @@ public class V20RemoveDuplicatesFromSortedDLL {
         removeDuplicates(head);
 
         System.out.println("###################    After Removing Duplicates   ###################");
-
         V3DoublyLinkedList.display(head);
     }
 
     private static void removeDuplicates(NodeDLL head) {
+        
         NodeDLL temp=head;
         while(temp!=null && temp.next!=null){
             NodeDLL nextNode=temp.next;

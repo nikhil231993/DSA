@@ -5,7 +5,28 @@ import java.util.LinkedList;
 public class LC705DesignHashSet {
 
 	// Approach 1: Create an array of size 10 raise to 6 + 1 and set 1 to add and set to 0 when asked to remove
-	// Above approach hs issue with array size
+	// Above approach has issue with array size
+	// Note Load Factor=n/k where n=total no of values , k= total bucket size
+	// Load factor should be below 0.75 in java or else it will re hash.
+
+	/**
+	 boolean[] arr;
+	 public MyHashSet() {
+	     arr=new boolean[1000000 + 1];
+	 }
+
+	 public void add(int key) {
+	     arr[key]=true;
+	 }
+
+	 public void remove(int key) {
+	     arr[key]=false;
+	 }
+
+	 public boolean contains(int key) {
+	     return arr[key];
+	 }
+	 */
 
 	int bucketSize = 1000;
 
@@ -52,11 +73,11 @@ public class LC705DesignHashSet {
 		return true;
 	}
 
-	// 3rd Approach
+	// 3rd Approach:
+
 	private int getPos(int key, int index) {
 
-		if (bucket[index] == null)
-			return -1;
+		if(bucket[index]==null) return -1;
 
 		LinkedList<Integer> temp = bucket[index];
 
@@ -70,11 +91,17 @@ public class LC705DesignHashSet {
 	private void addWithGetPos(int key) {
 
 		int i = hashFunction(key);
-		int pos = getPos(key, i);
-		if (pos < 0) {
+
+		if (bucket[i] == null){
 			bucket[i] = new LinkedList<Integer>();
+			bucket[i].add(key);
+			return;
 		}
-		bucket[i].add(key);
+
+		int pos = getPos(key, i);
+		if (pos ==-1) {
+			bucket[i].add(key);
+		}
 	}
 
 	private void removeWithGetPos(int key) {
@@ -82,7 +109,7 @@ public class LC705DesignHashSet {
 		int i = hashFunction(key);
 		int pos = getPos(key, i);
 
-		if (pos < 0)
+		if (pos == -1)
 			return;
 
 		bucket[i].remove(pos);
@@ -92,7 +119,7 @@ public class LC705DesignHashSet {
 
 		int i = hashFunction(key);
 		int pos = getPos(key, i);
-		if (pos < 0)
+		if (pos ==-1)
 			return false;
 		return true;
 	}

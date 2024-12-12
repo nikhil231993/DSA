@@ -11,6 +11,12 @@ public class LC1465MaximumAreaOfCake {
 		int[] hc = new int[] { 1, 2, 4 };
 		int[] vc = new int[] { 1, 3 };
 
+		//To handle below case we use long
+//		int h = 1000000000;
+//		int v = 1000000000;
+//		int[] hc = new int[] { 2};
+//		int[] vc = new int[] { 2};
+
 		System.out.println(area(h, hc, v, vc));
 
 		// h = 5, w = 4, horizontalCuts = [1,2,4], verticalCuts = [1,3]x
@@ -28,6 +34,7 @@ public class LC1465MaximumAreaOfCake {
 
 		Arrays.sort(arr);
 		int max = arr[0];
+
 		for (int i = 1; i < arr.length; i++) {
 			if ((arr[i] - arr[i - 1]) > max)
 				max = arr[i] - arr[i - 1];

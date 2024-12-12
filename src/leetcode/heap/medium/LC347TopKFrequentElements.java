@@ -25,7 +25,7 @@ public class LC347TopKFrequentElements {
 
         Map<Integer,Integer> map=new HashMap<>();
         for(int n:nums){
-            map.put(n,map.getOrDefault(n,0)+1);
+            map.put(n, map.getOrDefault(n,0)+1);
         }
 
         PriorityQueue<Node> pq=new PriorityQueue<Node>((a,b)->a.value-b.value);

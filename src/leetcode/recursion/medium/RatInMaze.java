@@ -16,6 +16,7 @@ public class RatInMaze {
     }
 
     public static ArrayList<String> findPath(int[][] m, int n) {
+
         int[][] visited=new int[n][n];
         ArrayList<String> ans=new ArrayList<>();
         if(m[0][0]==0){
@@ -25,11 +26,13 @@ public class RatInMaze {
 
         solve(0,0,visited, ans,n,m,"");
         return ans;
-        //TC:O(4 raise to m*n)
+
+        //TC:O(m * n * 4 raise to m*n)
         //SC:O(m*n) going through each element
     }
 
     public static void solve(int row, int col, int[][] visited, ArrayList<String> ans,int n,int[][] m ,String path){
+
         if(row==n-1 && col ==n-1) {
             ans.add(path);
             return;

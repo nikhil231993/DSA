@@ -2,8 +2,8 @@ package leetcode.linkedlist.striver;
 
 public class V15LengthOfLoopLinkedList {
 
-    //Approach 1: Parse each element and put it in hashset and then find where loop exist. Then parse again from that point
-    // till u come back to same point and have count incremented. Final count will be the answer.
+    //Approach 1: Parse each element and put it in map with node and step count. The moment u encounter same node in map then
+    //subtract the count at that step and the value in map. That is the length of the cycle
 
     //Approach 2:
 

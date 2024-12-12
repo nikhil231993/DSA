@@ -4,6 +4,32 @@ import java.util.LinkedList;
 
 public class LC706DesignHashMap {
 
+	//Approach 1:
+
+	/**
+	class MyHashMap {
+
+
+		public int[] arr=new int[1000000+1];
+
+		public MyHashMap() {
+			Arrays.fill(arr, -1);
+		}
+
+		public void put(int key, int value) {
+			arr[key]=value;
+		}
+
+		public int get(int key) {
+			return arr[key];
+		}
+
+		public void remove(int key) {
+			arr[key]=-1;
+		}
+	}
+	 */
+
 	public class Node {
 		int key;
 		int value;
@@ -27,43 +53,36 @@ public class LC706DesignHashMap {
 
 	}
 
-	public int hashFunction(int key) {
+	public int hash(int key) {
 		return key % bucketSize;
 	}
 
 	public void put(int key, int value) {
 
-		int i = hashFunction(key);
-
-		if (bucket[i] == null) {
-			bucket[i] = new LinkedList<Node>();
-			LinkedList<Node> list = bucket[i];
-			list.add(new Node(key, value));
-
-		} else {
-
-			for (Node entry : bucket[i]) {
-				if (entry.key == key) {
-					entry.value = value;
+		Node n=new Node(key, value);
+		int i=hash(key);
+		if(bucket[i]==null){
+			bucket[i]=new LinkedList();
+			bucket[i].add(n);
+		}else{
+			for(Node t:bucket[i]){
+				if(t.key==key){
+					t.value=value;
 					return;
 				}
 			}
-			bucket[i].add(new Node(key, value));
+			bucket[i].add(n);
 		}
 	}
 
-	public int getPos(int key) {
+	public int getPos(int key, int i) {
 
-		int i = hashFunction(key);
+		LinkedList<Node> list=bucket[i];
 
-		if (bucket[i] == null)
-			return -1;
-
-		int pos = 0;
-		for (Node entry : bucket[i]) {
-			if (entry.key == key) {
+		int pos=0;
+		for(Node temp:list){
+			if(temp.key==key)
 				return pos;
-			}
 			pos++;
 		}
 		return -1;
@@ -71,27 +90,23 @@ public class LC706DesignHashMap {
 
 	public int get(int key) {
 
-		int i = hashFunction(key);
-		int pos = getPos(key);
-
-		if (pos < 0)
+		int i=hash(key);
+		if(bucket[i]==null)
 			return -1;
-
-		LinkedList<Node> list = bucket[i];
-		Node temp= list.get(pos);
-		return temp.value;
+		int pos=getPos(key, i);
+		if(pos==-1)
+			return -1;
+		return bucket[i].get(pos).value;
 	}
 
 	public void remove(int key) {
 
-		int i = hashFunction(key);
-		int pos = getPos(key);
-		if (pos < 0)
+		int i=hash(key);
+		if(bucket[i]==null)
 			return;
-
-		if (bucket[i] == null)
+		int pos=getPos(key, i);
+		if(pos==-1)
 			return;
-
 		bucket[i].remove(pos);
 	}
 

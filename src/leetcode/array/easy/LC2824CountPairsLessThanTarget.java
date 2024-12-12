@@ -22,8 +22,8 @@ public class LC2824CountPairsLessThanTarget {
     public static int countPairs(List<Integer> nums, int target) {
 
         int count=0;
-        for(int i=0;i<nums.size()-1;i++){
-            for(int j=i+1;j<nums.size();j++){
+        for(int i=0; i<nums.size()-1; i++){
+            for(int j=i+1; j<nums.size(); j++){
                 if(nums.get(i) + nums.get(j) < target)
                     count++;
             }
@@ -31,7 +31,7 @@ public class LC2824CountPairsLessThanTarget {
         return count;
 
         //TC:O(n*n)
-		// SC:O(n)
+		//SC:O(n)
     }
 
     public static int countPairsPointer(List<Integer> nums, int target) {
@@ -40,9 +40,9 @@ public class LC2824CountPairsLessThanTarget {
 
         int count=0, left=0, right=nums.size()-1;
 
-        while(left<right){
-            if(nums.get(left)+nums.get(right)<target){
-                count+=right-left;
+        while(left < right){
+            if(nums.get(left) + nums.get(right) < target){
+                count+=right-left; // This is the condition to remember
                 left++;
             }else{
                 right--;

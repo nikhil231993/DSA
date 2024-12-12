@@ -4,6 +4,7 @@ public class V28DesignBrowserHistoryLC1472 {
 
     /**
     public class Node{
+
         String data;
         Node next;
         Node prev;

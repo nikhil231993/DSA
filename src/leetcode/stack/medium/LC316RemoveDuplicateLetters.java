@@ -23,7 +23,7 @@ public class LC316RemoveDuplicateLetters {
 
         boolean[] visited=new boolean[26];
 
-        for(int i=0; i<s.length(); i++){
+        for(int i=0; i < s.length(); i++){
             Integer ch=s.charAt(i)-'a';
 
             if(visited[ch])

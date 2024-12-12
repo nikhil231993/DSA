@@ -22,13 +22,19 @@ public class LC26RemoveDuplicatesFromSortedArray {
 		removeDuplicates(arr);
 		for (Integer n : arr)
 			System.out.println(n);
+
+		//Approach 3: This is the leetcode solution
+		System.out.println("####### Leetcode Solution ########");
+		int[] nums=new int[]{0,0,1,1,1,2,2,3,3,4};
+		System.out.println(removeDuplicatesSolutionInLeetcode(nums));
 	}
 
 	private static int[] removeDuplicatesBrute(int[] arr1) {
 
 		List<Integer> list=new ArrayList<>();
 		list.add(arr1[0]);
-		for(int i=0;i<arr1.length;i++){
+
+		for(int i=0; i<arr1.length; i++){
 			if(list.get(list.size()-1)!=arr1[i])
 				list.add(arr1[i]);
 		}

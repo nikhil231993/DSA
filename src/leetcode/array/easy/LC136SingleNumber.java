@@ -33,8 +33,8 @@ public class LC136SingleNumber {
 
 		return -1;
 
-		//TC:O(N/2+1)
-		//SC:O(N/2+1)
+		//TC:O(N)
+		//SC:O(N)
 	}
 
 	private static int singleNumber(int[] arr) {

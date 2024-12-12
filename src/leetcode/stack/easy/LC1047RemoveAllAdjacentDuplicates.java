@@ -25,8 +25,8 @@ public class LC1047RemoveAllAdjacentDuplicates {
 
         int n=s.length();
         StringBuilder sb= new StringBuilder();
-        for(int i=0;i<n;i++){
-            if(sb.length() >0 && sb.charAt(sb.length()-1)==s.charAt(i)){
+        for(int i=0; i<n; i++){
+            if(sb.length() > 0 && sb.charAt(sb.length()-1) == s.charAt(i)){
                 sb.deleteCharAt(sb.length()-1);
             }else
                 sb.append(s.charAt(i));
@@ -41,7 +41,7 @@ public class LC1047RemoveAllAdjacentDuplicates {
             if(i==-1)
                 i=0;
             if(i!=j && s.charAt(i)==s.charAt(j)){
-                s=s.substring(0,i)+s.substring(j+1,s.length());
+                s=s.substring(0,i)+s.substring(j+1, s.length());
                 i--;
                 j--;
             }else if(s.charAt(i)!=s.charAt(j)) {

@@ -12,7 +12,7 @@ public class LC1753MaximumScoreFromRemovingStones {
 	
     public static int maximumScore(int a, int b, int c) {
         
-        PriorityQueue<Integer> pq=new PriorityQueue<>((a1,b1)->b1-a1);
+        PriorityQueue<Integer> pq=new PriorityQueue<>((a1,b1) -> b1 - a1);
         pq.offer(a);
         pq.offer(b);
         pq.offer(c);

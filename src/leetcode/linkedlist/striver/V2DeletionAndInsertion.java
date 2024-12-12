@@ -11,28 +11,28 @@ public class V2DeletionAndInsertion {
 
         //delete head at first
         System.out.println("Delete Head : ");
-        Node newHead=deleteHead(head);
+        Node newHead = deleteHead(head);
         display(newHead);
 
         //delete Tail
         System.out.println("Delete Tail : ");
-        Node headAfterTailDeletion=deleteTail(head);
+        Node headAfterTailDeletion = deleteTail(head);
         display(headAfterTailDeletion);
 
         //delete Kth element of the list
         System.out.println("Delete at Kth position : ");
         int[] arr1=new int[]{10,20,30,40,50};
         int k=2;
-        Node head1=new Node(arr1[0]);
+        Node head1 = new Node(arr1[0]);
         V1ConvertArrayToLinkedList.convertArrayToLinkedList(head1, arr1);
-        Node newHead1=deleteAtKPosition(head1,k);
+        Node newHead1 = deleteAtKPosition(head1, k);
         display(newHead1);
 
         //Remove Element with a particular value
         System.out.println("Delete a particular value : ");
         int[] arr2=new int[]{10,20,30,40,50};
-        int value =40;
-        Node head2=new Node(arr2[0]);
+        int value = 40;
+        Node head2 = new Node(arr2[0]);
         V1ConvertArrayToLinkedList.convertArrayToLinkedList(head2, arr2);
         Node newHead2=deleteParticularValue(head2,value);
         display(newHead2);
@@ -40,11 +40,11 @@ public class V2DeletionAndInsertion {
         System.out.println("#############   INSERTION    ################");
 
         System.out.println("Insert at Head : ");
-        int[] arr3=new int[]{10,20,30,40,50};
-        int value3 =5;
-        Node head3=new Node(arr3[0]);
+        int[] arr3 = new int[]{10,20,30,40,50};
+        int value3 = 5;
+        Node head3 = new Node(arr3[0]);
         V1ConvertArrayToLinkedList.convertArrayToLinkedList(head3, arr3);
-        Node newHead3=insertAtHead(head3, value3);
+        Node newHead3 = insertAtHead(head3, value3);
         display(newHead3);
 
         System.out.println("Insert at Last : ");
@@ -52,7 +52,7 @@ public class V2DeletionAndInsertion {
         int value4 =500;
         Node head4=new Node(arr4[0]);
         V1ConvertArrayToLinkedList.convertArrayToLinkedList(head4, arr4);
-        Node newHead4=insertAtTail(head4, value4);
+        Node newHead4 = insertAtTail(head4, value4);
         display(newHead4);
 
         System.out.println("Insert at a particular position : ");
@@ -61,7 +61,7 @@ public class V2DeletionAndInsertion {
         int pos=4;
         Node head5=new Node(arr5[0]);
         V1ConvertArrayToLinkedList.convertArrayToLinkedList(head5, arr5);
-        Node newHead5=insertAtParticularPosition(head5, value5,pos);
+        Node newHead5 = insertAtParticularPosition(head5, value5,pos);
         display(newHead5);
 
         System.out.println("Insert before a particular value : ");
@@ -70,9 +70,46 @@ public class V2DeletionAndInsertion {
         int before=50;
         Node head6=new Node(arr6[0]);
         V1ConvertArrayToLinkedList.convertArrayToLinkedList(head6, arr6);
-        Node newHead6=insertBeforeParticularValue(head6, value6, before);
+        Node newHead6 = insertBeforeParticularValue(head6, value6, before);
         display(newHead6);
     }
+
+    private static Node insertBeforeParticularValueV2(Node head, int value, int before) {
+
+        if(head==null){
+            System.out.println("Not possible");
+            return null;
+        }
+        if(head.data==before){
+            Node n=new Node(value);
+            n.next=head;
+            head=n;
+            return head;
+        }
+        boolean found=false;
+        Node temp=head;
+        Node prev=null;
+        while(temp!=null){
+            if(temp.data==before){
+                Node n= new Node(value);
+                n.next=temp;
+                prev.next=n;
+                found=true;
+                break;
+            }
+            prev=temp;
+            temp=temp.next;
+        }
+
+        if(!found){
+            System.out.println("Not found");
+            return null;
+        }
+
+        return head;
+    }
+
+
 
     private static Node insertBeforeParticularValue(Node head, int value, int before) {
 
@@ -158,8 +195,8 @@ public class V2DeletionAndInsertion {
         }
         Node n=new Node(value3);
         n.next=head;
-        //head=n If we use this then return head else n
-        return n;
+        head=n;  //If we use this then return head else n
+        return head;
     }
 
     private static Node deleteParticularValue(Node head, int value) {
@@ -228,7 +265,7 @@ public class V2DeletionAndInsertion {
         if(head==null)
             return null;
         Node temp=head; //This is not needed in java as in C++ we need to delete the temp for clearing the memory.
-                        // In java garbage collector does by itself
+                        //In java garbage collector does by itself
         head=head.next;
         return head;
     }

@@ -17,7 +17,7 @@ public class Lc1394LuckyNumber {
 		}
 
 		for(int no:arr){
-			if(no==res[no])
+			if(no == res[no])
 				max=Math.max(max,no);
 		}
 		return max;

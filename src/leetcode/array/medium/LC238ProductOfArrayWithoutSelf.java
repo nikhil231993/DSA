@@ -76,7 +76,6 @@ public class LC238ProductOfArrayWithoutSelf {
                }
            }
 			response[i] = product;
-           
         }
 		return response;
 

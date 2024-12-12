@@ -20,9 +20,7 @@ public class LC75SortColors {
     //Dutch National Flag Algo
     private static void sort(int[] nums) {
 
-        int low=0;
-        int mid=0;
-        int high=nums.length-1;
+        int low=0, mid=0, high=nums.length-1;
 
         while(mid<=high){
             if(nums[mid]==0){
@@ -42,6 +40,7 @@ public class LC75SortColors {
     }
 
     public static void swap(int num1,int num2,int[] nums){
+
         int temp=nums[num1];
         nums[num1]=nums[num2];
         nums[num2]=temp;

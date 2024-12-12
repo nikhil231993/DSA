@@ -12,7 +12,7 @@ public class V55P1ReverseStringUsingStack {
 
     public static String reverseString(String str) {
 
-        Stack<Character> st=new Stack();
+        Stack<Character> st = new Stack();
 
         for(int i=0; i< str.length(); i++){
             st.push(str.charAt(i));

@@ -36,7 +36,7 @@ public class LC66PlusOne {
 				digits[i]++;
 				return digits;
 			}
-			digits[i]=0;
+			digits[i] = 0;
 		}
 		int[] new_number = new int[digits.length + 1];
 		new_number[0] = 1;

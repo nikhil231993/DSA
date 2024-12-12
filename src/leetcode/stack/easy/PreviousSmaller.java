@@ -29,7 +29,7 @@ public class PreviousSmaller {
     private static void findPrevMinimumOfEachElement(int[] nums, Stack<Integer> st) {
 
         for(int i=nums.length-1;i>=0;i--){
-            while (!st.isEmpty() && nums[st.peek()]>nums[i] ){
+            while (!st.isEmpty() && nums[st.peek()] > nums[i] ){
                 int index=st.pop();
                 nums[index]=nums[i];
             }
@@ -47,13 +47,11 @@ public class PreviousSmaller {
 	private static List<Integer> leftSmaller(int n, int a[]) {
 
 		Stack<Integer> st = new Stack();
-
 		int[] ans = new int[a.length];
 
 		for (int i = a.length - 1; i >= 0; i--) {
 
 			while (!st.isEmpty() && a[st.peek()] > a[i]) {
-
 				ans[st.peek()] = a[i];
 				st.pop();
 			}

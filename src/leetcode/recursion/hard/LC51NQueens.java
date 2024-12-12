@@ -41,22 +41,23 @@ public class LC51NQueens {
 	public static void solveSecondApproach(List<List<String>> queen, char[][] board, int[] leftRow, int[] lowerDiagonal,
 			int[] upperDiagonal, int col) {
 
-		if (col == board.length) {
+		int n=board.length;
+		if (col == n) {
 			queen.add(construct(board));
 			return;
 		}
-		for (int row = 0; row < board.length; row++) {
+		for (int row = 0; row < n; row++) {
 
 			if (leftRow[row] == 0 && lowerDiagonal[row + col] == 0
-					&& upperDiagonal[board.length - 1 + col - row] == 0) {
+					&& upperDiagonal[n - 1 + col - row] == 0) {
 				leftRow[row] = 1;
 				lowerDiagonal[row + col] = 1;
-				upperDiagonal[board.length - 1 + col - row] = 1;
+				upperDiagonal[n-1 + col - row] = 1;
 				board[row][col] = 'Q';
 				solveSecondApproach(queen, board, leftRow, lowerDiagonal, upperDiagonal, col + 1);
 				leftRow[row] = 0;
 				lowerDiagonal[row + col] = 0;
-				upperDiagonal[board.length - 1 + col - row] = 0;
+				upperDiagonal[n-1 + col - row] = 0;
 				board[row][col] = '.';
 			}
 		}

@@ -31,7 +31,7 @@ public class CodingNinjasMedianInaStream {
             return left.peek();
         }
 
-        if(left.size()>right.size()){
+        if(left.size() > right.size()){
             if(num>left.peek()){
                 right.offer(num);
             }else{
@@ -39,7 +39,7 @@ public class CodingNinjasMedianInaStream {
                 right.offer(left.poll());
             }
         }else{
-            if(num<left.peek()){
+            if(num < left.peek()){
                 left.offer(num);
             }else{
                 right.offer(num);

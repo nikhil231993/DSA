@@ -17,7 +17,7 @@ public class LC2710RemoveTrailingZeros {
 
         int flag=0;
         int count=0;
-        for(int i=num.length()-1;i>=0;i--){
+        for(int i=num.length()-1; i>=0; i--){
 
             if(flag==0 && num.charAt(i)=='0'){
                 count++;
@@ -27,7 +27,7 @@ public class LC2710RemoveTrailingZeros {
             if(flag==1)
                 break;
         }
-        return num.substring(0,num.length()-count);
+        return num.substring(0, num.length()-count);
 
         //TC:O(n)
         //SC:O(1)

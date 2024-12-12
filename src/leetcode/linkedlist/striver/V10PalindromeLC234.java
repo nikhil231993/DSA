@@ -13,7 +13,6 @@ public class V10PalindromeLC234 {
         //Approach 1 : Put the values in stack and while retrieving compare the values
 
         //Approach 2:
-
         System.out.println(palindrome(head));
     }
 
@@ -49,6 +48,7 @@ public class V10PalindromeLC234 {
     }
 
     public static Node reverseHead(Node head) {
+
         if(head==null || head.next== null)
             return head;
 

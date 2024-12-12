@@ -41,7 +41,7 @@ public class LC2404MostFrequentEvenElement {
                 map.put(n, map.getOrDefault(n,0)+1);
         }
 
-        PriorityQueue<Node2> pq=new PriorityQueue<>((a, b)-> a.freq==b.freq?b.key-a.key:a.freq-b.freq);
+        PriorityQueue<Node2> pq=new PriorityQueue<>((a, b)-> a.freq == b.freq ? b.key - a.key : a.freq - b.freq);
         for(Map.Entry<Integer, Integer> m: map.entrySet()){
             pq.offer(new Node2(m.getKey(), m.getValue()));
             if(pq.size()>1)

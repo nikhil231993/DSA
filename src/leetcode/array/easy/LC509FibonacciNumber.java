@@ -14,7 +14,6 @@ public class LC509FibonacciNumber {
 
         //Approach 3: Iterative
         System.out.println(fibForLoop(n));
-
     }
 
     private static int fibIterative(int n) {

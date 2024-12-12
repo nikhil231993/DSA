@@ -10,7 +10,7 @@ public class LC658FindKClosestElements {
     public static void main(String[] args) {
 
        int[]  arr =new int[] {1,3,4,5,6,7,8,9,10,11,20,25};
-       int k = 3, x = 7;
+       int k = 5, x = 30;
 
        //Approach 1 using heap
         System.out.println(findClosestElements(arr,k,x));
@@ -20,17 +20,19 @@ public class LC658FindKClosestElements {
 
         //Approach 3 using binary search
         System.out.println(binarySearch(arr,k,x));
+
+        //Approach 4 using binary search with same condition of low, high and while loop. We need to take only high = n-k-1
+        System.out.println(findClosestElementsModified(arr,k,x));
     }
 
     private static List<Integer> binarySearch(int[] arr, int k, int x) {
         //https://www.youtube.com/watch?v=o-YDQzHoaKM&ab_channel=NeetCode
 
-        int left=0;
-        int right=arr.length-k;
+        int left=0, right=arr.length-k;
 
         while(left<right){
             int mid=left+(right-left)/2;
-            if(x-arr[mid]>arr[mid+k]-x)
+            if(Math.abs(x-arr[mid])> Math.abs(arr[mid+k]-x))
                 left=mid+1;
             else
                 right=mid;
@@ -58,7 +60,7 @@ public class LC658FindKClosestElements {
         }
         List<Integer> result=new ArrayList();
 
-        for(int i=left;i<=right;i++) {
+        for(int i=left; i<=right; i++) {
             result.add(arr[i]);
         }
         return result;
@@ -87,5 +89,24 @@ public class LC658FindKClosestElements {
 
         //TC:O(nlogk)
         //SC:o(n) in worst case
+    }
+
+    public static List<Integer> findClosestElementsModified(int[] arr, int k, int x) {
+
+        int n=arr.length;
+        int low=0, high=n-k-1;
+        while(low<=high){
+            int mid=low+(high-low)/2;
+            if(x-arr[mid]<=arr[mid+k]-x){
+                high=mid-1;
+            }else{
+                low=mid+1;
+            }
+        }
+        List<Integer> list=new ArrayList();
+        for(int i=0; i<k; i++){
+            list.add(arr[low+i]);
+        }
+        return list;
     }
 }

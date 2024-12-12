@@ -44,7 +44,7 @@ public class LC169MajorityElement {
 		}
 		int no=0;
 		for(Map.Entry<Integer,Integer> entry : map.entrySet()){
-			if(entry.getValue() >= size+1){
+			if(entry.getValue() > size){
 				no=entry.getKey();
 			}
 		}

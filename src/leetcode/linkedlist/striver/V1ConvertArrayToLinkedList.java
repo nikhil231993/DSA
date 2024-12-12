@@ -25,7 +25,7 @@ public class V1ConvertArrayToLinkedList {
         }
         System.out.println("Length of the Linked List is : "+ count);
 
-        System.out.println("Search value : "+ searchValue(3,head));
+        System.out.println("Search value : " + searchValue(3, head));
     }
 
     public static boolean searchValue(int value, Node head){

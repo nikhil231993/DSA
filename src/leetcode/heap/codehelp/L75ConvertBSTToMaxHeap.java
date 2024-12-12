@@ -34,7 +34,7 @@ public class L75ConvertBSTToMaxHeap {
         System.out.println();
         System.out.println("========================");
 
-        //Print using level order
+        //Print using Level Order
         levelOrder(l.root);
     }
 

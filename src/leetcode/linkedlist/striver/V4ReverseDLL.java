@@ -4,7 +4,9 @@ public class V4ReverseDLL {
 
     public static void main(String[] args) {
 
-        //Approach 1 : Using a stack
+        //Approach 1: Take a Stack and put the values in the stack
+        //TC:O(2N)
+        //SC:O(N) we use external Stack
 
         //Approach 2
         int[] arr=new int[]{5,10,15,20,25};
@@ -26,16 +28,17 @@ public class V4ReverseDLL {
             return head;
 
         NodeDLL prev=null;
-        NodeDLL current=head;
+        NodeDLL temp=head;
 
-        while(current!=null){
-            prev=current.prev;
-            current.prev=current.next;
-            current.next=prev;
+        while(temp!=null){
+            prev=temp.prev;
+            temp.prev=temp.next;
+            temp.next=prev;
 
-            current=current.prev;
+            temp=temp.prev;
         }
-        return prev.prev;
+        return prev.prev; // here due to swapping above in line 34 prev will be second last node
+        // so we use prev.prev to return the last node which will be the new head
 
         //TC:O(n)
         //SC:O(1)

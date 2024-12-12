@@ -32,7 +32,7 @@ public class V25MergeKSortedListLC23 {
      func(List<Node> lists){
          head=lists[0];
 
-         for(i=1;i<lists.size();i++){
+         for(i=1; i<lists.size(); i++){
              head=mergeLists(head, lists[i]);
          }
          return head;

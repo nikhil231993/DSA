@@ -1,12 +1,13 @@
 package leetcode.linkedlist.striver;
 
-public class V26SortLinkedListLC148 {
+public class  V26SortLinkedListLC148 {
 
     //Approach 1:  Take the values and put it in array and then sort and then parse and put it in new LinkedList
 
     //Approach 2:
     /**
     public ListNode sortList(ListNode head) {
+
         if(head==null || head.next==null)
             return head;
         ListNode middle=findMiddle(head);
@@ -20,10 +21,11 @@ public class V26SortLinkedListLC148 {
     }
 
     public static ListNode findMiddle(ListNode head){
+
         if(head==null || head.next==null)
             return head;
         ListNode slow=head;
-        ListNode fast=head.next;
+        ListNode fast=head.next; // This same can be used in Palindrome question and we can use same while condition as below and don't need extra .next
 
         while(fast!=null && fast.next!=null){
             slow=slow.next;

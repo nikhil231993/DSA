@@ -3,10 +3,11 @@ package leetcode.recursion.easy;
 public class LC125ValidPalindrome {
 
 	public static void main(String[] args) {
-		String s = "race a car";
-//		/System.out.println(validPalindrome(s));
-		System.out.println(validPalindromeInbuilt(s));
 
+		String s = "race a car";
+
+		System.out.println(validPalindrome(s));
+		System.out.println(validPalindromeInbuilt(s));
 	}
 
 	private static boolean validPalindromeInbuilt(String s) {

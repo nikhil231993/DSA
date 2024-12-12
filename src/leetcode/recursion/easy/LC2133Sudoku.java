@@ -8,7 +8,7 @@ public class LC2133Sudoku {
 
 		int[][] matrix1 = { { 1, 1, 1 }, { 1, 2, 3 }, { 1, 2, 3 } };
 
-		System.out.println(solve(matrix1));
+		System.out.println(solve(matrix));
 	}
 
 	public static boolean solve(int[][] matrix) {
@@ -26,6 +26,7 @@ public class LC2133Sudoku {
 	}
 
 	public static boolean isValid(int[][] matrix, int row, int col) {
+
 		for (int i = 0; i < matrix.length; i++) {
 			if (i != col && matrix[row][i] == matrix[row][col])
 				return false;

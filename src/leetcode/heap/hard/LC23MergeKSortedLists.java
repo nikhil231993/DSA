@@ -4,7 +4,7 @@ public class LC23MergeKSortedLists {
 
 //    public ListNode mergeKLists(ListNode[] lists) {
 //
-//        PriorityQueue<ListNode> pq=new PriorityQueue<>((a,b)->a.val-b.val);
+//        PriorityQueue<ListNode> pq = new PriorityQueue<>((a,b)->a.val-b.val);
 //
 //        for(ListNode node: lists){
 //            if(node!=null)

@@ -26,7 +26,7 @@ public class LC1389CreateTargetArray {
 
         ArrayList<Integer>arr=new ArrayList<Integer>();
 
-        for(int i=0;i<nums.length;i++){
+        for(int i=0; i<nums.length; i++){
             arr.add(index[i],nums[i]);
         }
         return arr.stream().mapToInt(a->a).toArray(); //this will become 100% faster in leetcode if we use for to iterate and put into array from list

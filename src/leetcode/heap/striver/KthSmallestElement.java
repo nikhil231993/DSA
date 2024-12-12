@@ -21,6 +21,7 @@ public class KthSmallestElement {
     public static int kSmallest(int[] arr,int k){
 
         PriorityQueue<Integer> pq=new PriorityQueue<>((a,b)-> b - a);
+
         for(int n:arr){
             pq.offer(n);
             if(pq.size()>k)

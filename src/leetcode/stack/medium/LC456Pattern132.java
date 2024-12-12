@@ -23,7 +23,6 @@ public class LC456Pattern132 {
 
             if(nums[i]<secondMax)
                 return true;
-
             while (!maxStack.isEmpty() && nums[maxStack.peek()]<nums[i]){
                 secondMax=Math.max(secondMax, nums[maxStack.pop()]);
             }
@@ -34,5 +33,4 @@ public class LC456Pattern132 {
         //SC:O(n)
         //TC:O(n)
     }
-
 }

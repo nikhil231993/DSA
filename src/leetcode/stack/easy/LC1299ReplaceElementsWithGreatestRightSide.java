@@ -16,7 +16,6 @@ public class LC1299ReplaceElementsWithGreatestRightSide {
         int[] ans=new int[arr.length];
 
         Arrays.fill(ans, -1);
-
         int n=arr.length, largest=-1;
 
         for(int i=n-1; i>=0; i--){

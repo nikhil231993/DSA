@@ -4,7 +4,7 @@ public class  LC45JumpGame2 {
 
 	public static void main(String[] args) {
 
-		int[] nums = new int[] { 2, 3, 1, 1, 4 };
+		int[] nums = new int[] { 1, 0 };
 		System.out.println(jumpGame2(nums));
 	}
 

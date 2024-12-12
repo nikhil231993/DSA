@@ -4,7 +4,7 @@ public class LC698PartitionSum {
 
 	public static void main(String[] args) {
 
-		int[] nums = new int[] { 2,1,4,5,6 };
+		int[] nums = new int[] { 4,3,1,3,4,3,1,2 };
 		int k = 3;
 		System.out.println(canPartitionKSubsets(nums, k));
 	}
@@ -41,6 +41,7 @@ public class LC698PartitionSum {
 		if (flag[i]) {
 			return subsets(requiredBucketSum, bucketSum, i + 1, flag, nums, bucketCount, k);
 		} else {
+
 			flag[i] = true;
 			bucketSum += nums[i];
 			boolean op1 = subsets(requiredBucketSum, bucketSum, i + 1, flag, nums, bucketCount, k);

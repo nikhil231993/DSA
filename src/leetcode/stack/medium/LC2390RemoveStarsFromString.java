@@ -12,7 +12,7 @@ public class LC2390RemoveStarsFromString {
 
     public static String removeStars(String s) {
 
-        Stack<Character> st=new Stack();
+        Stack<Character> st = new Stack();
         for(int i=0; i< s.length(); i++){
             char ch=s.charAt(i);
             if(ch!='*')

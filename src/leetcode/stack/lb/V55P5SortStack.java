@@ -9,7 +9,7 @@ public class V55P5SortStack {
         if(stack.isEmpty())
             return;
 
-        int num=stack.pop();
+        int num = stack.pop();
         sortStack(stack);
         sorting(stack, num);
     }

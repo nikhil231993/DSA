@@ -9,7 +9,7 @@ public class L75MergeTwoBinaryHeaps {
         int b[] = new int[] {12, 7, 9};
 
         //Approach 1
-        //Merge to one array and Arrays.sort()  TC:O(nlogn)
+        //Merge to one array and Arrays.sort()  TC:O(n log n)
 
         //Approach 2
         int[] result=mergeHeaps(a,b,n,m);
@@ -27,7 +27,7 @@ public class L75MergeTwoBinaryHeaps {
         for(Integer num:b){
             arr[i++]=num;
         }
-        buildHeap(arr,arr.length);
+        buildHeap(arr, arr.length);
         return arr;
 
         //TC:O(n+m) build heap time complexity + O(n) to for arr array
@@ -43,14 +43,14 @@ public class L75MergeTwoBinaryHeaps {
 
     public static void heapify(int[] arr, int size, int index){
 
-        int largest=index;
-        int left=2*index+1;
-        int right=2*index+2;
+        int largest=index, left=2*index+1, right=2*index+2;
 
-        if(left< size && arr[largest]<arr[left])
+        if(left < size && arr[largest]<arr[left])
             largest=left;
-        if(right< size && arr[largest]<arr[right])
+
+        if(right < size && arr[largest]<arr[right])
             largest=right;
+
         if(largest!=index){
             int temp=arr[index];
             arr[index]=arr[largest];

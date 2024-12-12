@@ -11,8 +11,8 @@ public class gfgLargestElementInAnArray {
         System.out.println(largest(arr,n));
     }
 
-    public static int largest(int arr[], int n)
-    {
+    public static int largest(int arr[], int n) {
+
         int max=Integer.MIN_VALUE;
         for(int i=0;i<n;i++){
             if(arr[i]>max)

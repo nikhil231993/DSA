@@ -5,5 +5,9 @@ bin
 .settings
 untitled
 .idea/workspace.xml
+.idea/compiler.xml
+.idea/encodings.xml
+.idea/libraries
+.idea/jarRepositories.xml
 .idea/vcs.xml
 DSA.iml

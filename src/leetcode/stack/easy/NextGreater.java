@@ -7,6 +7,7 @@ public class NextGreater {
     public static void main(String[] args) {
 
         int[] nums=new int[]{1,8,7,4,5,6,3,29,90};
+
         Stack<Integer> st=new Stack<>();
 
         //Approach 1 : Brute force with TC :O(n square)
@@ -20,7 +21,7 @@ public class NextGreater {
     private static void findNextGreater(int[] nums, Stack<Integer> st) {
 
         for(int i=0;i<nums.length;i++){
-            while (!st.isEmpty() && nums[st.peek()]<nums[i]){
+            while (!st.isEmpty() && nums[st.peek()] < nums[i]){
                 int index=st.pop();
                 nums[index]=nums[i];
             }

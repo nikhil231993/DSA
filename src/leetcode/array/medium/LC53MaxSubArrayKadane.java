@@ -10,14 +10,14 @@ public class LC53MaxSubArrayKadane {
 
 	private static int maxSubArray(int[] arr) {
 
-		int sum = 0;
-		int currentMaxSum = Integer.MIN_VALUE;
+		int sum = 0, currentMaxSum = Integer.MIN_VALUE;
+
 		for (int i = 0; i < arr.length; i++) {
+
 			sum += arr[i];
 			if (sum >= currentMaxSum) {
 				currentMaxSum = sum;
 			}
-
 			if (sum < 0)
 				sum = 0;
 		}

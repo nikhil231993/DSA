@@ -10,11 +10,10 @@ public class LC11ContainerWithMostWater {
 
 	private static int container(int[] height) {
 
-		int left = 0;
-		int right = height.length - 1;
-		int vol = 0;
+		int left = 0, right = height.length - 1;
+		int vol = Integer.MIN_VALUE;
 		
-		while(left<right) {
+		while(left < right) {
 			vol = Math.max(Math.min(height[left], height[right]) * (right - left), vol);
 
 			if (height[left] < height[right]) {

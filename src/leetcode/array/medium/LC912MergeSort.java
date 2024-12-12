@@ -8,6 +8,7 @@ public class LC912MergeSort {
     public static void main(String[] args) {
 
         int[] nums = new int[]{5,1,1,2,0,0};
+        nums=new int[]{8,3,4,6,1,5,7,2};
         int[] result=sortArray(nums);
         for(int n: result)
             System.out.println(n);

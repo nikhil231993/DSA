@@ -44,7 +44,6 @@ public class V57gfgCelebrity {
             if(M[i][candidate]!=1 && candidate!=i)
                 return -1;
         }
-
         return candidate;
     }
 

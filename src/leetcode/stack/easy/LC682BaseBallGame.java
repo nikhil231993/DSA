@@ -36,7 +36,7 @@ public class LC682BaseBallGame {
 
         int sum=0;
         while(!st.isEmpty()){
-            sum+=Integer.parseInt(st.pop());
+            sum += Integer.parseInt(st.pop());
         }
         return sum;
 

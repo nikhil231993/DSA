@@ -8,17 +8,17 @@ public class LC1512GoodPairs {
         
        int[] nums =new int[] {5,5,5,5,5};
        
-       //Approach 1: Brute
-       System.out.println(numIdenticalPairs(nums));
+        //Approach 1: Brute
+        System.out.println(numIdenticalPairs(nums));
        
-       //Approach 2: Better Good for interview
+        //Approach 2: Better Good for interview
         System.out.println(numIdenticalPairsBetter(nums));
 
         //Approach 3: Optimal
         System.out.println(numIdenticalPairsOptimal(nums));
     }
 
-    private static int numIdenticalPairsBetter(int[] nums) {
+    private static int  numIdenticalPairsBetter(int[] nums) {
 
         int n=nums.length;
 
@@ -40,8 +40,8 @@ public class LC1512GoodPairs {
     public static int numIdenticalPairs(int[] nums) {
         
         int count=0;
-        for(int i=0;i<nums.length-1;i++){
-            for(int j=i+1;j<nums.length;j++){
+        for(int i=0; i<nums.length-1; i++){
+            for(int j=i+1; j<nums.length; j++){
                 if(nums[i]==nums[j]){
                     count++;
                 }
@@ -50,7 +50,7 @@ public class LC1512GoodPairs {
         return count;
 
         //TC:O(n square)
-        //SC:O(1)
+        //SC:O(n) if all elements are distinct
     }
 
     public static int numIdenticalPairsOptimal(int[] A) {

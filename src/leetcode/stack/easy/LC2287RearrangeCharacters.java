@@ -16,7 +16,7 @@ public class LC2287RearrangeCharacters {
 
         Integer min=Integer.MAX_VALUE;
 
-        for(int i=0; i<freqs.length ;i++){
+        for(int i=0; i<freqs.length; i++){
 
             if(freqt[i]!=0){
                 min=Math.min(freqs[i]/freqt[i], min);

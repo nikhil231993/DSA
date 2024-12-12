@@ -37,8 +37,8 @@ public class LC2011PerformingOperations {
     public static int finalValueAfterOperations(String[] operations) {
 
         int val=0;
-        for(int i=0;i<operations.length;i++){
-            for(int j=0;j<operations[i].length();j++){
+        for(int i=0; i<operations.length; i++){
+            for(int j=0; j<operations[i].length(); j++){
                 if(operations[i].charAt(j)=='+'){
                     val++;
                     break;

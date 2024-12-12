@@ -35,10 +35,10 @@ public class LC46Permutations {
 
 		for (int i = index; i < nums.length; i++) {
 			swap(i, index, nums);
-			permutationsSecondApproach(nums, list, index + 1);
+			permutationsSecondApproach(nums, list, i + 1);
 			swap(i, index, nums);
 		}
-		// TC:n! * n
+		// TC:n! * n (to save the result)
 		// SC:O(n) auxiliary space + n! to save result
 	}
 
@@ -56,6 +56,7 @@ public class LC46Permutations {
 			return;
 		}
 		for (int i = 0; i < nums.length; i++) {
+
 			if (!flag[i]) {
 				flag[i] = true;
 				arr.add(nums[i]);
@@ -63,8 +64,9 @@ public class LC46Permutations {
 				flag[i] = false;
 				arr.remove(arr.size() - 1);
 			}
-			// TC:n!(permutatino combinations) * n(loop)
-			// SC:O(n)(flag array)+O(n)auxiliary space i.e depth+size of list
+
+			// TC:n!(permutation combinations) * n(loop)
+			// SC:O(n)(flag array) + O(n)auxiliary space i.e depth+size of list
 		}
 	}
 }

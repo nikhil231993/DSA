@@ -64,8 +64,8 @@ public class LC1331RankTransform {
     public static int[] arrayRankTransformUsingHeap(int[] arr) {
 
         PriorityQueue<NodeRank> pq=new PriorityQueue<>((a, b)->a.element-b.element);
-        for(int i=0;i<arr.length;i++){
-            pq.offer(new NodeRank(arr[i],i));
+        for(int i=0; i<arr.length; i++){
+            pq.offer(new NodeRank(arr[i], i));
         }
 
         int rank=1;

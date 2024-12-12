@@ -7,6 +7,7 @@ public class LC1332RemovePalindromicSubsequences {
 	public static void main(String[] args) {
 
 		System.out.println("Enter string to check: ");
+
 		Scanner scan = new Scanner(System.in);
 		String s = scan.nextLine();
 

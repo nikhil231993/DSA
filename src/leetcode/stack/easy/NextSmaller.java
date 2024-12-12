@@ -2,14 +2,15 @@ package leetcode.stack.easy;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Stack;
 import java.util.stream.Collectors;
 
 public class NextSmaller {
 
     public static void main(String[] args) {
-    	
-        int[] nums=new int[]{1,5,3,4,6,7,2,8,9};
+
+        int[] nums=new int[]{2,1,4,3};
 
         // Approach 1 : Brute force which is n square in TC where we have two loops
 
@@ -29,13 +30,21 @@ public class NextSmaller {
 		// Approach 3
 		ArrayList<Integer> ans = nextSmallerElement(arr, arr.size());
         		
-        for(Integer n: ans)
+        for(Integer n : ans)
         	System.out.println(n);
+
+        System.out.println("###################################");
+
+        // Approach 4
+        ArrayList<Integer> ans1 = nextSmallerElementSelf(arr, arr.size());
+
+        for(Integer n: ans1)
+            System.out.println(n);
     }
 
     private static void findNextMinimumOfEachElement(int[] nums, Stack<Integer> st) {
 
-        for(int i=0;i<nums.length;i++){
+        for(int i=0; i<nums.length; i++){
             while(!st.isEmpty() && nums[st.peek()]>nums[i]){
                 int index=st.pop();
                 nums[index]=nums[i];
@@ -54,7 +63,6 @@ public class NextSmaller {
 	public static ArrayList<Integer> nextSmallerElement(ArrayList<Integer> arr, int n) {
 
 		Stack<Integer> st = new Stack();
-
 		int[] arr1 = new int[arr.size()];
 
 		for (int i = 0; i < arr.size(); i++) {
@@ -76,4 +84,22 @@ public class NextSmaller {
 
 		return result;
 	}
+
+    static ArrayList<Integer> nextSmallerElementSelf(ArrayList<Integer> arr, int n){
+
+        Stack<Integer> st=new Stack();
+        ArrayList<Integer> result=new ArrayList(Collections.nCopies(arr.size(), -1));
+
+        for(int i=0; i<arr.size(); i++){
+            while(!st.isEmpty() && arr.get(st.peek()) > arr.get(i)){
+                result.set(st.pop(), arr.get(i));
+            }
+            st.push(i);
+        }
+
+        while(!st.isEmpty()){
+            result.set(st.pop(), -1);
+        }
+        return result;
+    }
 }

@@ -33,7 +33,7 @@ public class LC1054Barcodes {
             map.put(barcodes[i], map.getOrDefault(barcodes[i],0)+1);
         }
 
-        PriorityQueue<Node1> pq=new PriorityQueue<>((a,b)->b.count-a.count);
+        PriorityQueue<Node1> pq=new PriorityQueue<>((a,b)->b.count - a.count);
         for(Map.Entry<Integer, Integer> m:map.entrySet()){
             pq.offer(new Node1(m.getKey(),m.getValue()));
         }
@@ -55,7 +55,7 @@ public class LC1054Barcodes {
                 result[i++]=newNum;
                 if(newC>0)
                     pq.offer(new Node1(newNum, newC));
-                pq.offer(new Node1(num,c));
+                pq.offer(new Node1(num, c));
                 continue;
             }
             result[i++]=num;

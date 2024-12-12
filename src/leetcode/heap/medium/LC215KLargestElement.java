@@ -84,7 +84,7 @@ public class LC215KLargestElement {
         }
         return pq.peek();
 
-        //TC:o(N log K)
+        //TC:O(N log K)
         //SC:O(k)
     }
 

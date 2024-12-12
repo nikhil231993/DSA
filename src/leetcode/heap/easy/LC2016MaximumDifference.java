@@ -20,7 +20,7 @@ public class LC2016MaximumDifference {
 
             for(int j=i+1;j<nums.length;j++){
 
-                if(nums[j]>nums[i] && nums[j]-nums[i]>maxDiff){
+                if(nums[j] > nums[i] && nums[j]-nums[i] > maxDiff){
                     maxDiff=nums[j]-nums[i];
                 }
             }
@@ -40,7 +40,7 @@ public class LC2016MaximumDifference {
             if (min > nums[i])
                 min = nums[i];
             if(nums[i]!=min)
-                maxDiff = Math.max(nums[i] - min,maxDiff);
+                maxDiff = Math.max(nums[i] - min, maxDiff);
         }
         return maxDiff;
 

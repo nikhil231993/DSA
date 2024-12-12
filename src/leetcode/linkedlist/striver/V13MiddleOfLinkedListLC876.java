@@ -2,6 +2,7 @@ package leetcode.linkedlist.striver;
 
 public class V13MiddleOfLinkedListLC876 {
 
+    //Here we use Tortoise and Hare algo but the condition of loop is different compared to V10 8:28
     //Approach 1: Count the entire length of LL and then delete the node in next parse which is at (N/2)+1;
 
     /**
@@ -39,5 +40,6 @@ public class V13MiddleOfLinkedListLC876 {
     }
      TC:O(N/2)
      SC:O(1)
+
      */
 }

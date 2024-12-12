@@ -24,11 +24,12 @@ public class LC1209RemoveAllAdjacentDuplicates2 {
 		String s = "abcd";
 		int k = 2;
 		System.out.println(removeDuplicates(s, k));
+		System.out.println(removeDuplicatesSelf(s, k));
 	}
 
 	public static String removeDuplicates(String s, int k) {
 
-		Stack<Node> stack = new Stack<Node>();
+		Stack<Node> stack = new Stack<>();
 
 		for (int i = 0; i < s.length(); i++) {
 
@@ -58,5 +59,34 @@ public class LC1209RemoveAllAdjacentDuplicates2 {
 
 		//TC:O(n)
 		//SC:O(n)
+	}
+
+	public static String removeDuplicatesSelf(String s, int k) {
+
+		Stack<Node> st=new Stack();
+		int n=s.length();
+		for(int i=0; i<n; i++){
+			char c=s.charAt(i);
+			if(!st.isEmpty() && st.peek().key==c){
+				Node n1=st.pop();
+				if(n1.value==k-1)
+					continue;
+				else{
+					Node n2=new Node(c, n1.value+1);
+					st.push(n2);
+				}
+			}else if(st.isEmpty() || st.peek().key!=c){
+				st.push(new Node(c, 1));
+			}
+		}
+
+		String str="";
+		while(!st.isEmpty()){
+			Node n3=st.pop();
+			for(int i=0;i<n3.value;i++){
+				str=n3.key + str;
+			}
+		}
+		return str;
 	}
 }

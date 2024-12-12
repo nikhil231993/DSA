@@ -2,7 +2,7 @@ package leetcode.linkedlist.easy;
 
 public class LC1290BinaryNumberToInteger {
 
-    //Approach 1
+    //Approach 1: We get the length and then traverse using binary to decimal formula
 
     /**
      int len=0;

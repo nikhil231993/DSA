@@ -27,10 +27,10 @@ public class V11AddOneToLL {
         Node resultHead1=secondApproach(head1);
         System.out.println("##################### Result #########");
         V2DeletionAndInsertion.display(resultHead1);
-
     }
 
     private static Node secondApproach(Node head) {
+
         int carry=helper(head);
         if(carry==1){
             Node n= new Node(1);
@@ -40,7 +40,7 @@ public class V11AddOneToLL {
         return head;
     }
 
-    private static int helper(Node head) {
+    private static int  helper(Node head) {
 
         if(head==null)
             return 1;
@@ -58,7 +58,7 @@ public class V11AddOneToLL {
 
     private static Node firstApproach(Node head){
 
-        head= V10PalindromeLC234.reverseHead(head);
+        head = V10PalindromeLC234.reverseHead(head);
 
         Node temp=head;
         int carry=1;
@@ -76,10 +76,48 @@ public class V11AddOneToLL {
             Node n=new Node(carry);
             head= V10PalindromeLC234.reverseHead(head);
             n.next=head;
-            return n;
+            head=n;
+            return head;
         }
         return null;
+
         //TC:O(3N)
         //SC:O(N) stack i.e two times
     }
+
+    //Optimized Approach 1: Self done
+
+    /**
+    public static Node addOne(Node head) {
+
+        if(head==null)
+            return head;
+        Node newHead=reverse(head);
+        int carry=1;
+        Node temp=newHead;
+        while(temp!=null && carry!=0){
+            temp.data=temp.data+carry;
+            carry=temp.data/10;
+            temp.data=temp.data%10;
+            temp=temp.next;
+        }
+        if(carry!=0){
+            Node n=new Node(carry);
+            n.next=head;
+            head=n;
+        }
+
+        reverse(newHead);
+        return head;
+    }
+
+    public static Node reverse(Node head){
+        if(head==null || head.next==null) return head;
+        Node newHead=reverse(head.next);
+        Node front=head.next;
+        front.next=head;
+        head.next=null;
+        return newHead;
+    }
+    */
 }

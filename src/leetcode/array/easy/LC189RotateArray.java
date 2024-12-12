@@ -10,7 +10,7 @@ public class LC189RotateArray {
 		System.out.println("No of times array has to be right rotated: ");
 		int k = scan.nextInt();
 		int[] arr = new int[] { 1, 2, 3, 4, 5, 6, 7 };
-		k = k % arr.length;  // This when the size of array is less than k
+		k = k % arr.length;  // This will help when the size of array is less than k
 
 
 		reverse(arr, 0, arr.length - 1);

@@ -14,7 +14,7 @@ public class LC88MergeSortedArray {
 
         //Approach 2: Optimal in constant space
         System.out.println("#############");
-        optimal(arr1,arr2);
+        optimal(arr1, arr2);
         for(int n:arr1)
             System.out.println(n);
     }
@@ -55,7 +55,7 @@ public class LC88MergeSortedArray {
 
         int left=0, right=0, index=0;
 
-        while(left<n && right<m ){
+        while( left<n && right<m ){
 
             if(arr1[left]>=arr2[right]){
                 r[index++]=arr2[right];

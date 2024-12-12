@@ -13,12 +13,14 @@ class Pair{
     }
 }
 
-
 public class LC2289MakeArrayNonDecreasing {
 
     public static void main(String[] args) {
 
         int[] nums =new int[] {10,1,2,3,4,6,1,2,3};
+        nums=new int[]{7,14,4,14,13,2,6,13};
+        //nums=new int[]{10,5,4,6,5,4,3,2,1};
+        nums=new int[]{6,5,4,3,2};
         System.out.println(totalSteps(nums));
     }
 
@@ -36,7 +38,7 @@ public class LC2289MakeArrayNonDecreasing {
                 st.pop();
             }
             ans=Math.max(ans, count);
-            st.push(new Pair(nums[i],count));
+            st.push(new Pair(nums[i], count));
         }
         return ans;
 

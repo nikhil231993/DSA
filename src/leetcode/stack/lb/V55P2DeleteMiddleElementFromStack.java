@@ -9,6 +9,10 @@ public class V55P2DeleteMiddleElementFromStack {
     public static void main(String[] args) {
 
         Stack<Integer> st=new Stack<>();
+        st.push(1);
+        st.push(2);
+        st.push(3);
+        st.push(4);
         st.push(5);
         st.push(6);
         st.push(7);
@@ -30,7 +34,7 @@ public class V55P2DeleteMiddleElementFromStack {
 
     public static void solve(Stack<Integer> st, int N, int[] count){
 
-        if(count[0]==N/2){
+        if(count[0] == N/2){ // N/2 is used as we calculate from top
             st.pop();
             return;
         }

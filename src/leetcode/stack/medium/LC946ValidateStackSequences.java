@@ -20,7 +20,7 @@ public class LC946ValidateStackSequences {
         for(int i=0; i<pushed.length;){ // we can write i++ here also. There is no difference
 
             st.push(pushed[i]);
-            while(!st.isEmpty() && st.peek()==popped[j]){
+            while(!st.isEmpty() && st.peek() == popped[j]){
                 st.pop();
                 j++;
             }

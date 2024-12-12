@@ -62,11 +62,11 @@ public class LC1636SortArrayByFrequency {
 	public static int[] frequencySort(int[] nums) {
 
 		HashMap<Integer, Integer> map=new HashMap();
-		for(int i=0;i< nums.length;i++){
+		for(int i=0; i< nums.length; i++){
 			map.put(nums[i], map.getOrDefault(nums[i],0)+1);
 		}
 
-		PriorityQueue<Node2> pq=new PriorityQueue<Node2>((a, b)->a.freq==b.freq?b.num-a.num:a.freq-b.freq);
+		PriorityQueue<Node2> pq=new PriorityQueue<Node2>((a, b)->a.freq == b.freq ? b.num-a.num : a.freq-b.freq);
 
 		for(Map.Entry<Integer, Integer> m: map.entrySet()){
 			pq.offer(new Node2(m.getKey(), m.getValue()));

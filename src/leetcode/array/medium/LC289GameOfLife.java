@@ -35,7 +35,6 @@ public class LC289GameOfLife {
 					game[i][j] = -1;
 				if (game[i][j] == 0 && live_neighbour == 3)
 					game[i][j] = 2;
-
 			}
 		}
 

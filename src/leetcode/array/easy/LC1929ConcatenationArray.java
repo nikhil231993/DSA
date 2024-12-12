@@ -35,8 +35,8 @@ public class LC1929ConcatenationArray {
 
         int[] ans=new int[2*nums.length];
         int j=0;
-        for(int k=0;k<2;k++){
-            for(int i=0;i<nums.length;i++){
+        for(int k=0; k<2; k++){
+            for(int i=0; i<nums.length; i++){
                 ans[j++]=nums[i];
             }
         }

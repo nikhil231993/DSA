@@ -1,7 +1,5 @@
 package leetcode.array.extra;
 
-import java.util.Arrays;
-
 public class RepeatingAndMissingNumbers {
 
     public static void main(String[] args) {
@@ -29,7 +27,8 @@ public class RepeatingAndMissingNumbers {
         long s2=0,s2n=0;
         sn=(n*(n+1))/2;
         s2n=(n*(n+1)*(2*n+1))/6;
-        for(int i=0;i<n;i++){
+
+        for(int i=0; i<n; i++){
             s+=num[i];
             s2+=num[i]*num[i];
         }
@@ -40,7 +39,7 @@ public class RepeatingAndMissingNumbers {
         long repeating=(val+first)/2;
         long missing=val-repeating;
 
-        return new int[]{(int)repeating,(int)missing};
+        return new int[]{(int)repeating, (int) missing};
 
         //TC:O(n)
         //SC:O(1)
@@ -54,9 +53,8 @@ public class RepeatingAndMissingNumbers {
             arr[num[i]]++;
         }
 
-        int repeating=-1;
-        int missing=-1;
-        for(int i=1;i<=num.length;i++){
+        int repeating=-1, missing=-1;
+        for(int i=1; i<=num.length; i++){
             int count=arr[i];
             if(count==2)
                 repeating=i;
