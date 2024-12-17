@@ -14,6 +14,7 @@ class Singleton {
 }
 
 public class Test {
+
     public static void main(String[] args) throws Exception {
 
         Singleton instance1 = Singleton.getInstance();
@@ -25,7 +26,7 @@ public class Test {
 
         System.out.println("Instance 1: " + instance1);
         System.out.println("Instance 2: " + instance2);
-        System.out.println("Same instance? " + (instance1 == instance2));
+        System.out.println("Same instance ? " + (instance1 == instance2));
     }
 }
 
