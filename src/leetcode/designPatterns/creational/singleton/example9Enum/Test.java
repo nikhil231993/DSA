@@ -1,4 +1,4 @@
-package leetcode.designPatterns.creational.singleton.example8Enum;
+package leetcode.designPatterns.creational.singleton.example9Enum;
 
 enum Singleton {
 

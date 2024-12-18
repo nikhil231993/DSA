@@ -1,4 +1,4 @@
-package leetcode.designPatterns.creational.singleton.example5BreakSingletonUsingClone.solution1;
+package leetcode.designPatterns.creational.singleton.example6BreakSingletonUsingClone.solution1;
 
 class Singleton implements Cloneable {
 

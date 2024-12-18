@@ -1,4 +1,4 @@
-package leetcode.designPatterns.creational.singleton.example4InnerClass;
+package leetcode.designPatterns.creational.singleton.example5InnerClass;
 
 public class Main {
 

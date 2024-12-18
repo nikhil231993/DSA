@@ -1,21 +1,16 @@
-package leetcode.designPatterns.creational.singleton.example3.threeInstance;
+package leetcode.designPatterns.creational.singleton.example3;
 
 public class Singleton {
 
     private String name;
-    private static int id=1;
 
     private static Singleton singleton=null;
 
-    private Singleton(){
-        id++;
-    }
-
     public static Singleton getInstance(){
 
-        if(id<4){
+        if(singleton==null){
             synchronized (Singleton.class){
-                if(id<=4){
+                if(singleton==null){
                     singleton=new Singleton();
                 }
             }

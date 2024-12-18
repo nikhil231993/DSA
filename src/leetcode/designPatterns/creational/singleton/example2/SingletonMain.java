@@ -2,27 +2,17 @@ package leetcode.designPatterns.creational.singleton.example2;
 
 public class SingletonMain {
 
+    //1. we want one instance so constructor should be private
+    //2. static instance
+    //3. static getter
+    //4. final class so subclass also cannot create instance using Reflections
+
     public static void main(String[] args) {
 
-            Singleton singleton1= Singleton.getInstance();
-            singleton1.setName("Nikhil");
-            System.out.println(singleton1.hashCode());
-            System.out.println(singleton1.getName());
+        Singleton singleton1= Singleton.getInstance();
+        System.out.println(singleton1.hashCode());
 
-            Singleton singleton2= Singleton.getInstance();
-            singleton2.setName("Rahul");
-            System.out.println(singleton2.hashCode());
-
-            System.out.println("Singleton 2: ");
-            System.out.println(singleton2.getName());
-            System.out.println("Singleton 1: ");
-            System.out.println(singleton1.getName());
-
-            Singleton singleton3= Singleton.getInstance();
-            System.out.println(singleton3.hashCode());
-            Singleton singleton4= Singleton.getInstance();
-            System.out.println(singleton4.hashCode());
-            Singleton singleton5= Singleton.getInstance();
-            System.out.println(singleton5.hashCode());
+        Singleton singleton2= Singleton.getInstance();
+        System.out.println(singleton2.hashCode());
     }
 }

@@ -1,15 +1,20 @@
-package leetcode.designPatterns.creational.singleton.example7SerializationAndDeserialization.problem;
+package leetcode.designPatterns.creational.singleton.example8SerializationAndDeserialization.solution;
 
 import java.io.*;
 
 class Singleton implements Serializable {
 
+    private static final long serialVersionUID = 1L;
     private static final Singleton instance = new Singleton();
 
     private Singleton() {}
 
     public static Singleton getInstance() {
         return instance;
+    }
+
+    protected Object readResolve() { // Overriding this solves the problem
+        return getInstance();
     }
 }
 

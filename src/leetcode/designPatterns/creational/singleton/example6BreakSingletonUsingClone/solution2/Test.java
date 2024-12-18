@@ -1,4 +1,4 @@
-package leetcode.designPatterns.creational.singleton.example5BreakSingletonUsingClone.problem;
+package leetcode.designPatterns.creational.singleton.example6BreakSingletonUsingClone.solution2;
 
 class Singleton implements Cloneable {
 
@@ -12,12 +12,11 @@ class Singleton implements Cloneable {
 
     @Override
     protected Object clone() throws CloneNotSupportedException {
-        return super.clone();  // Creates a new instance via cloning
+        return getInstance(); // Instead of returning exception we call the getInstance() method
     }
 }
 
 public class Test {
-
     public static void main(String[] args) throws CloneNotSupportedException {
 
         Singleton instance1 = Singleton.getInstance();
@@ -25,6 +24,6 @@ public class Test {
 
         System.out.println("Instance 1: " + instance1);
         System.out.println("Instance 2: " + instance2);
-        System.out.println("Same instance ? " + (instance1 == instance2));
+        System.out.println("Same instance? " + (instance1 == instance2));
     }
 }

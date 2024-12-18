@@ -1,4 +1,4 @@
-package leetcode.designPatterns.creational.singleton.example4InnerClass;
+package leetcode.designPatterns.creational.singleton.example5InnerClass;
 
 public class Singleton {
 
@@ -8,7 +8,7 @@ public class Singleton {
     }
 
     private static class InnerSingleton{
-        private static Singleton instance=new Singleton();
+        private static final Singleton instance=new Singleton();
     }
 
     public static Singleton getInstance(){

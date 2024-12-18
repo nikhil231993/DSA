@@ -2,9 +2,13 @@ package leetcode.designPatterns.creational.singleton.example2;
 
 public class Singleton {
 
-    private String name;
+    //https://www.geeksforgeeks.org/java-singleton-design-pattern-practices-examples/
 
-    private static Singleton singleton=null;
+    private static Singleton singleton=null; // Volatile ensures visibility
+    //volatile can be used but is not mandatory
+
+    private Singleton(){
+    }
 
     public static Singleton getInstance(){
 
@@ -16,13 +20,5 @@ public class Singleton {
             }
         }
         return singleton;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getName() {
-        return name;
     }
 }
