@@ -20,8 +20,9 @@ public class Main {
         ILogger critical1=critical.loggerInstance();
         critical1.log();
 
-        //In simple factory there was an issue of OCP in CreateFactory as we had to hadd another if else or switch condition
+        //In simple factory there was an issue of OCP in CreateFactory as we had to had another if else or switch condition
         //to add new logger which we solved here by another abstraction of LoggerFactory
+
         //Now if we want FatalLogger only 3 steps are need
         //1. extend ILogger and create FatalLogger
         //2. ILoggerFactory and create FatalLoggerFactory and return ILogger instance of type FatalLogger

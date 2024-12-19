@@ -8,6 +8,8 @@ public class Singleton {
     //volatile can be used but is not mandatory
 
     private Singleton(){
+        if(singleton!=null)
+            throw new IllegalArgumentException();
     }
 
     public static Singleton getInstance(){

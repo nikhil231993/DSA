@@ -1,6 +1,6 @@
 package leetcode.designPatterns.creational.prototype.product;
 
-public class ProductPrototype extends Prototype {
+public class ProductPrototype implements PrototypeInterface {
 
     private String name;
     private String  description;
@@ -13,8 +13,8 @@ public class ProductPrototype extends Prototype {
     }
 
     @Override
-    public Prototype clonePrototype() {
-        return new ProductPrototype(name, description,price);
+    public leetcode.designPatterns.creational.prototype.product.PrototypeInterface clonePrototype() {
+        return new ProductPrototype(name, description, price);
     }
 
     @Override

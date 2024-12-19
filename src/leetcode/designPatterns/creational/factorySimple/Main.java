@@ -7,6 +7,7 @@ public class Main {
 
         LoggerFactory courseFactory=new LoggerFactory();
         ILogger course1=courseFactory.getCourseFactory("INFO");
+
         //Since we use ILogger then it follows DIP
         //OCP is followed as new loggers can be easily created in factory
         //client does not make any changes

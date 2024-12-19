@@ -8,23 +8,27 @@ public class Main {
         Observer restaurant=new ObserverRestaurant("Dominos");
         Observer deliveryPartner=new ObserverDeliveryPartner("Swiggy");
 
-        OrderStatusTracker orderStatusTracker=new OrderStatusTracker();
-        orderStatusTracker.registerObservers(customerObserver);
-        orderStatusTracker.registerObservers(restaurant);
-        orderStatusTracker.registerObservers(deliveryPartner);
+        OrderStatusTracker orderStatusTracker1=new OrderStatusTracker();
+        orderStatusTracker1.registerObservers(customerObserver);
+        orderStatusTracker1.registerObservers(restaurant);
+        orderStatusTracker1.registerObservers(deliveryPartner);
+
+        OrderStatusTracker orderStatusTracker2=new OrderStatusTracker();
+        orderStatusTracker2.registerObservers(customerObserver);
+        orderStatusTracker2.registerObservers(restaurant);
 
         Order order1=new Order("Pizza", 1, "Placed");
-        orderStatusTracker.addOrder(order1);
+        orderStatusTracker1.addOrder(order1);
 
         System.out.println("==============================================================");
 
-        Order order2=new Order("Biryani", 2, "Placed");
-        orderStatusTracker.addOrder(order2);
+        Order order2=new Order("Clothes", 2, "Placed");
+        orderStatusTracker2.addOrder(order2);
 
         System.out.println("==============================================================");
 
-        Order order3=new Order("Buger", 3, "Placed");
-        orderStatusTracker.unregisterObservers(deliveryPartner);
-        orderStatusTracker.addOrder(order3);
+        Order order3=new Order("Shoes", 3, "Placed");
+        //orderStatusTracker1.unregisterObservers(deliveryPartner);
+        orderStatusTracker2.addOrder(order3);
     }
 }

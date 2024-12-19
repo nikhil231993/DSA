@@ -1,24 +1,24 @@
 package leetcode.designPatterns.creational.factoryAbstract.example2;
 
-public class ModernFurniture implements IFurnitureFactory{
+public class TraditionalFurnitureFactory implements IFurnitureFactory{
 
     @Override
     public ISofa createSofa() {
-        return new ModernSofa();
+        return new TraditionalSofa();
     }
 
     @Override
     public ITable createTable() {
-        return new ModernTable();
+        return new TraditionalTable();
     }
 
     @Override
     public IChair createChair() {
-        return new ModernChair();
+        return new TraditionalChair();
     }
 
     @Override
     public IAlmirah createAlmirah() {
-        return new ModernAlmirah();
+        return new TraditionalAlmirah();
     }
 }

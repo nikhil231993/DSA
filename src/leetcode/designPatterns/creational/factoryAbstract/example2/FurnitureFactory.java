@@ -6,9 +6,9 @@ public class FurnitureFactory {
 
         switch (type){
             case "modern":
-                return new ModernFurniture();
+                return new ModernFurnitureFactory();
             case "traditional":
-                return new TraditionalFurniture();
+                return new TraditionalFurnitureFactory();
         }
         return null;
     }

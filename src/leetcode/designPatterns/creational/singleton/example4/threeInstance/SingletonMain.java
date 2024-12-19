@@ -19,6 +19,9 @@ public class SingletonMain {
             System.out.println(singleton1.getName());
 
             Singleton singleton3= Singleton.getInstance();
+            System.out.println("Singleton 3: ");
+            singleton3.setName("Kavya");
+            System.out.println(singleton3.getName());
             System.out.println(singleton3.hashCode());
             Singleton singleton4= Singleton.getInstance();
             System.out.println(singleton4.hashCode());

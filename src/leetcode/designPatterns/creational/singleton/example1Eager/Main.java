@@ -6,5 +6,9 @@ public class Main {
 
         Singleton.someStaticMethod();
         System.out.println(Singleton.getInstance());
+
+        //Below we have used static block for eager initialization
+        SingletonStaticBlock s=SingletonStaticBlock.INSTANCE;
+        System.out.println(s);
     }
 }

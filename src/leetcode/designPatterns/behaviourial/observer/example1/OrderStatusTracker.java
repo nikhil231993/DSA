@@ -22,7 +22,7 @@ public class OrderStatusTracker implements ITracker { //This is subject or obser
         notifyObservers(order);
     }
 
-    public void notifyObservers(Order order){ //This method cab ne private but in that case we have to extend a class
+    public void notifyObservers(Order order){ //This method cab be private but in that case we have to extend a abstract ITracker class
         // as in interface methods by default are public
         for(Observer observer:observers){
             observer.update(order);

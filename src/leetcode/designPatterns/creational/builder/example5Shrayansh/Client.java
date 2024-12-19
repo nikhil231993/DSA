@@ -12,7 +12,6 @@ public class Client {
 
         System.out.println(engineerStudent.toString());
         System.out.println(mbaStudent.toString());
-
     }
 }
 

@@ -1,6 +1,6 @@
-package leetcode.designPatterns.behaviourial.observer.example2Shrayansh.observer;
+package leetcode.designPatterns.behaviourial.observer.example3Shrayansh.observer;
 
-import leetcode.designPatterns.behaviourial.observer.example2Shrayansh.observable.StockObservable;
+import leetcode.designPatterns.behaviourial.observer.example3Shrayansh.observable.StockObservable;
 
 public class MobileAlterObserverImpl implements NotificationAlertObserver {
 

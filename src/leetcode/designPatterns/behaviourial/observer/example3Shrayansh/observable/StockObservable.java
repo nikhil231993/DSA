@@ -1,6 +1,6 @@
-package leetcode.designPatterns.behaviourial.observer.example2Shrayansh.observable;
+package leetcode.designPatterns.behaviourial.observer.example3Shrayansh.observable;
 
-import leetcode.designPatterns.behaviourial.observer.example2Shrayansh.observer.NotificationAlertObserver;
+import leetcode.designPatterns.behaviourial.observer.example3Shrayansh.observer.NotificationAlertObserver;
 
 public interface StockObservable {
 
