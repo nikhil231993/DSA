@@ -35,7 +35,7 @@ public class LC46Permutations {
 
 		for (int i = index; i < nums.length; i++) {
 			swap(i, index, nums);
-			permutationsSecondApproach(nums, list, i + 1);
+			permutationsSecondApproach(nums, list, index + 1);
 			swap(i, index, nums);
 		}
 		// TC:n! * n (to save the result)

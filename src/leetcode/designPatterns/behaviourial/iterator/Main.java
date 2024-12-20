@@ -8,7 +8,7 @@ public class Main {
         Product product2=new Product("Laptop", 1100.00);
         Product product3=new Product("Shoe", 200.00);
 
-        Inventory inventory=new Inventory();
+        InventoryAggregator inventory=new InventoryAggregator();
         inventory.addProduct(product1);
         inventory.addProduct(product2);
         inventory.addProduct(product3);

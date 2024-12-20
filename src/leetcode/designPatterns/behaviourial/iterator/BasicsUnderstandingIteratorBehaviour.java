@@ -32,7 +32,6 @@ public class BasicsUnderstandingIteratorBehaviour {
         while(itr4.hasNext())
             System.out.println(itr4.next());
 
-
         System.out.println("List : ");
 
         List<Integer> list=new ArrayList<>();
@@ -65,6 +64,5 @@ public class BasicsUnderstandingIteratorBehaviour {
         Iterator itr5=queue.iterator();
         while(itr5.hasNext())
             System.out.println(itr5.next());
-
     }
 }
