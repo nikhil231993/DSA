@@ -1,6 +1,6 @@
 package leetcode.designPatterns.structural.bridge;
 
-public interface ImplNavigation {
+public interface ImplementationNavigation {
 
     //Implementation Layer
 

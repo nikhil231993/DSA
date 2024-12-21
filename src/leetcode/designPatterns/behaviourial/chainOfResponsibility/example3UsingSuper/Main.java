@@ -7,7 +7,7 @@ public class Main {
         //1. We can even setHandler i.e., the next handler within the handler at runtime
         //2. we can have multiple successor
         //3. we can pass two handler in parameter so that based on success or failure we can decide which handler to use
-        // OrderPreparationHandler orderPreparationHandler = new OrderPreparationHandler(successHandler, failureHandler);
+        //   eq: OrderPreparationHandler orderPreparationHandler = new OrderPreparationHandler(successHandler, failureHandler);
 
         String order= "delivery";
 
@@ -21,12 +21,12 @@ public class Main {
         orderPreparationHandler.setHandler(paymentProcessingHandler);
         paymentProcessingHandler.setHandler(deliveryAssignmentHandler);
         deliveryAssignmentHandler.setHandler(orderTrackingHandler);
-        //orderTrackingHandler.setHandler(orderValidationHandler); if we add this it will be a recursive call
-        //orderTrackingHandler.setHandler(orderTrackingHandler); same here. We should have some break condition
+        //orderTrackingHandler.setHandler(orderValidationHandler); //if we add this it will be a recursive call
+        //orderTrackingHandler.setHandler(orderTrackingHandler); //same here. We should have some break condition
 
         orderValidationHandler.processOrder(order);
         orderValidationHandler.processOrder("preparing");
-        orderValidationHandler.processOrder("tracking");
+        orderValidationHandler.processOrder("tracking1"); //If we use "tracking1" instead of "tracking" we will get StackOverFlow Exception because of line 24
         orderValidationHandler.processOrder("payment");
         orderValidationHandler.processOrder("validation");
     }

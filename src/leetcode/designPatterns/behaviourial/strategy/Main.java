@@ -5,8 +5,8 @@ public class Main {
     public static void main(String[] args) {
 
         //In this case Payment Processor has a relationship with Payment Strategy which is aggregation
-        //as the strategy object is created here
-        //Here context which is PaymentProcessor is first created
+        //as the strategy object is created in this class instead of Payment Processor class
+        //Here context which is "PaymentProcessor" is first created
 
         PaymentProcessor paymentProcessor=new PaymentProcessor();
 

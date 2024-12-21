@@ -13,7 +13,7 @@ public class Developer implements EmployeeComponent{
 
     @Override
     public void displayInfo() {
-        System.out.println("Developer: " +name+ " Salary is Rs : "+salary);
+        System.out.println("Developer: " + name + " Salary is Rs : " + salary);
     }
 
     @Override

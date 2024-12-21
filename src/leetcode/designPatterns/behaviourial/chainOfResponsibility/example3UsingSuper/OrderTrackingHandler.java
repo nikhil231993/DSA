@@ -5,8 +5,12 @@ public class OrderTrackingHandler extends OrderHandler {
     @Override
     public void processOrder(String order) {
 
-        if(order.equalsIgnoreCase("tracking"))
+        if(order.equalsIgnoreCase("tracking")){
             System.out.println("Tracking order: " + order);
+            PaymentProcessingHandler paymentProcessingHandler=new PaymentProcessingHandler();
+            setHandler(paymentProcessingHandler);
+            orderHandler.processOrder(order);
+        }
         else if(orderHandler!=null)
             orderHandler.processOrder(order);
     }

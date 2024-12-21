@@ -22,7 +22,7 @@ public class Team implements EmployeeComponent{
     public void displayInfo() {
 
         System.out.println("Team is : "+ name);
-        for(EmployeeComponent member: team)
+        for(EmployeeComponent member : team)
             member.displayInfo();
     }
 
@@ -30,7 +30,7 @@ public class Team implements EmployeeComponent{
     public double calculateSalary() {
 
         double totalSalary=0.0;
-        for(EmployeeComponent member: team)
+        for(EmployeeComponent member : team)
             totalSalary+=member.calculateSalary();
         return totalSalary;
     }

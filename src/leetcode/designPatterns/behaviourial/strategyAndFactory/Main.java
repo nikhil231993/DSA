@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        //In this the payment processor has a strategy, but it is composition as the object is created inside it.
+        //In this the payment processor has a strategy, but it is composition as the object is created inside "Payment processor" class.
         //Here context which is PaymentProcessor is first created
 
         PaymentProcessor paymentProcessor=new PaymentProcessor();

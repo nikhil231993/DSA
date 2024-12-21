@@ -1,11 +1,11 @@
 package leetcode.designPatterns.structural.bridge;
 
-public class UberEats extends NavigationSystem {
+public class AbstractionUberEats extends AbstractionNavigationSystem {
 
     //Abstraction
     private String name;
 
-    public UberEats(String name){
+    public AbstractionUberEats(String name){
         this.name=name;
     }
 

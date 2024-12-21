@@ -13,7 +13,7 @@ public class Employee implements  EmployeeComponent{
 
     @Override
     public void displayInfo() {
-        System.out.println("Employee: " +name+ " Salary is Rs : "+salary);
+        System.out.println("Employee: " + name + " Salary is Rs : " + salary);
     }
 
     @Override

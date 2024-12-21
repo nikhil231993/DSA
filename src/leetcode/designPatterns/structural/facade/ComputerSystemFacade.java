@@ -26,6 +26,6 @@ public class ComputerSystemFacade {
         diskDrive.bootFromDisk();
         networkInterface.connectToNetwork();
         cpu.executeInstructions();
-        System.out.println("Computer is ready to use.");
+        System.out.println("Computer is ready to use...");
     }
 }

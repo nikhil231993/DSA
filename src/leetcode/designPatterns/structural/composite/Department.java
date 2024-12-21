@@ -20,8 +20,8 @@ public class Department implements EmployeeComponent{
     @Override
     public void displayInfo() {
 
-        System.out.println("Department is : "+ name);
-        for(EmployeeComponent member: department)
+        System.out.println("Department is : " + name);
+        for(EmployeeComponent member : department)
             member.displayInfo();
     }
 
@@ -29,7 +29,7 @@ public class Department implements EmployeeComponent{
     public double calculateSalary() {
 
         double toatalSalary=0.0;
-        for(EmployeeComponent member: department)
+        for(EmployeeComponent member : department)
             toatalSalary+=member.calculateSalary();
         return toatalSalary;
     }

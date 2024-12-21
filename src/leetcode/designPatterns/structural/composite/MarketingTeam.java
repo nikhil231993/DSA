@@ -20,8 +20,8 @@ public class MarketingTeam implements EmployeeComponent{
     @Override
     public void displayInfo() {
 
-        System.out.println("Marketing Team is : "+this.name);
-        for(EmployeeComponent employeeComponent:marketingList)
+        System.out.println("Marketing Team is : " + this.name);
+        for(EmployeeComponent employeeComponent : marketingList)
             employeeComponent.displayInfo();
     }
 
@@ -29,8 +29,8 @@ public class MarketingTeam implements EmployeeComponent{
     public double calculateSalary() {
 
         double salary=0.0;
-        System.out.println("Marketing Team is : "+ name);
-        for(EmployeeComponent employeeComponent:marketingList)
+        System.out.println("Marketing Team is : " + name);
+        for(EmployeeComponent employeeComponent : marketingList)
             salary+=employeeComponent.calculateSalary();
         return salary;
     }

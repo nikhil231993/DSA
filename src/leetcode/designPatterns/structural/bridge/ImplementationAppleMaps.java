@@ -1,6 +1,6 @@
 package leetcode.designPatterns.structural.bridge;
 
-public class ImplementationAppleMaps implements ImplNavigation {
+public class ImplementationAppleMaps implements ImplementationNavigation {
 
     @Override
     public void navigateTo(String destination) {
