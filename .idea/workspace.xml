@@ -5,36 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72d35191-61fd-46f6-abe8-9b648fcd26f6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/oopsConcepts/ConstructorPackage/Base.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/oopsConcepts/ConstructorPackage/Derived.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/oopsConcepts/ConstructorPackage/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/oopsConcepts/polymorphismWithAbstractClass/AbstractTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/oopsConcepts/polymorphismWithAbstractClass/ConcreteTestClass1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/oopsConcepts/polymorphismWithAbstractClass/ConcreteTestClass2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/oopsConcepts/polymorphismWithAbstractClass/MainTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/DesignATM/ATM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/DesignATM/ATMRoomMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/DesignATM/ATMStates/ATMState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/DesignATM/ATMStates/CashWithdrawalState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/DesignATM/ATMStates/CheckBalanceState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/DesignATM/ATMStates/HasCardState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/DesignATM/ATMStates/IdleState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/DesignATM/ATMStates/SelectOperationState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/DesignATM/AmountWithdrawal/CashWithdrawProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/DesignATM/AmountWithdrawal/FiveHundredWithdrawProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/DesignATM/AmountWithdrawal/OneHundredWithdrawProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/DesignATM/AmountWithdrawal/TwoThousandWithdrawProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/DesignATM/Card.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/DesignATM/TransactionType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/DesignATM/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/DesignATM/UserBankAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/VendingMachine/Coin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/VendingMachine/Inventory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/VendingMachine/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/VendingMachine/ItemShelf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/VendingMachine/ItemType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/VendingMachine/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/VendingMachine/VendingMachine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/VendingMachine/VendingStates/DispenseState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/VendingMachine/VendingStates/HasMoneyState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/VendingMachine/VendingStates/IdleState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/VendingMachine/VendingStates/SelectionState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/VendingMachine/VendingStates/State.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/behaviourial/chainOfResponsibility/example2/OrderHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/behaviourial/chainOfResponsibility/example2/OrderHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/behaviourial/chainOfResponsibility/example2/OrderPreparationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/behaviourial/chainOfResponsibility/example2/OrderPreparationHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/behaviourial/chainOfResponsibility/example3UsingSuper/DeliveryAssignmentHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/behaviourial/chainOfResponsibility/example3UsingSuper/DeliveryAssignmentHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/behaviourial/chainOfResponsibility/example3UsingSuper/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/behaviourial/chainOfResponsibility/example3UsingSuper/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/behaviourial/chainOfResponsibility/example3UsingSuper/OrderPreparationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/behaviourial/chainOfResponsibility/example3UsingSuper/OrderPreparationHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/behaviourial/chainOfResponsibility/example3UsingSuper/OrderTrackingHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/behaviourial/chainOfResponsibility/example3UsingSuper/OrderTrackingHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/behaviourial/strategy/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/behaviourial/strategy/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/behaviourial/strategyAndFactory/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/behaviourial/strategyAndFactory/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/behaviourial/template/Template.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/behaviourial/template/Template.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/structural/bridge/ImplNavigation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/structural/bridge/ImplementationNavigation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/structural/bridge/ImplementationAppleMaps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/structural/bridge/ImplementationAppleMaps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/structural/bridge/ImplementationGoogleMaps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/structural/bridge/ImplementationGoogleMaps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/structural/bridge/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/structural/bridge/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/structural/bridge/NavigationSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/structural/bridge/AbstractionNavigationSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/structural/bridge/UberEats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/structural/bridge/AbstractionUberEats.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/structural/bridge/UberRides.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/structural/bridge/AbstractionUberRides.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/structural/composite/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/structural/composite/Department.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/structural/composite/Developer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/structural/composite/Developer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/structural/composite/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/structural/composite/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/structural/composite/MarketingTeam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/structural/composite/MarketingTeam.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/structural/composite/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/structural/composite/Team.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/structural/facade/ComputerSystemFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/structural/facade/ComputerSystemFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/behaviourial/observer/example2/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/behaviourial/observer/example2/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/behaviourial/observer/example3Shrayansh/observable/IphoneObservableImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/behaviourial/observer/example3Shrayansh/observable/IphoneObservableImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/creational/builder/example5Shrayansh/Director.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/creational/builder/example5Shrayansh/Director.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/recursion/medium/LC131PalindromePartitioning.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/recursion/medium/LC131PalindromePartitioning.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +52,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
+        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -70,24 +75,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/Users/nikhilthulaseedharan/Nikhil/DSA/src/leetcode/designPatterns/oopsConcepts/polymorphismWithAbstractClass",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "editor.preferences.tabs"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/nikhilthulaseedharan/Nikhil/DSA/src/leetcode/designPatterns/Problems&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/leetcode/designPatterns/Problems" />
       <recent name="$PROJECT_DIR$/src/leetcode/designPatterns/oopsConcepts/polymorphismWithAbstractClass" />
       <recent name="$PROJECT_DIR$/src/leetcode/designPatterns/oopsConcepts/multipleinheritance/example2" />
       <recent name="$PROJECT_DIR$/src/leetcode/designPatterns/oopsConcepts/multipleinheritance/example1" />
       <recent name="$PROJECT_DIR$/src/leetcode/designPatterns/oopsConcepts" />
-      <recent name="$PROJECT_DIR$/src/leetcode/binarytree/udemy" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="leetcode.designPatterns.oopsConcepts.polymorphismWithAbstractClass" />
@@ -95,65 +100,65 @@
       <recent name="leetcode.stack.lb" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.leetcode.designPatterns.structural.proxy.Main">
+  <component name="RunManager" selected="Application.ATMRoomMain">
+    <configuration name="ATMRoomMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.designPatterns.Problems.DesignATM.ATMRoomMain" />
+      <module name="DSA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.designPatterns.Problems.DesignATM.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.designPatterns.creational.builder.example5Shrayansh.Client" />
+      <module name="DSA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.designPatterns.creational.builder.example5Shrayansh.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LC131PalindromePartitioning" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.recursion.medium.LC131PalindromePartitioning" />
+      <module name="DSA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.recursion.medium.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LC46Permutations" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.recursion.medium.LC46Permutations" />
+      <module name="DSA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.recursion.medium.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.designPatterns.oopsConcepts.ConstructorPackage.Main" />
+      <option name="MAIN_CLASS_NAME" value="leetcode.designPatterns.Problems.VendingMachine.Main" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.designPatterns.oopsConcepts.ConstructorPackage.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="leetcode.designPatterns.behaviourial.chainOfResponsibility.example2.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.designPatterns.behaviourial.chainOfResponsibility.example2.Main" />
-      <module name="DSA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.designPatterns.behaviourial.chainOfResponsibility.example2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="leetcode.designPatterns.oopsConcepts.polymorphismWithAbstractClass.MainTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.designPatterns.oopsConcepts.polymorphismWithAbstractClass.MainTest" />
-      <module name="DSA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.designPatterns.oopsConcepts.polymorphismWithAbstractClass.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="leetcode.designPatterns.structural.composite.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.designPatterns.structural.composite.Main" />
-      <module name="DSA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.designPatterns.structural.composite.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="leetcode.designPatterns.structural.proxy.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.designPatterns.structural.proxy.Main" />
-      <module name="DSA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.designPatterns.structural.proxy.*" />
+          <option name="PATTERN" value="leetcode.designPatterns.Problems.VendingMachine.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -163,11 +168,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.leetcode.designPatterns.structural.proxy.Main" />
-        <item itemvalue="Application.leetcode.designPatterns.structural.composite.Main" />
+        <item itemvalue="Application.ATMRoomMain" />
+        <item itemvalue="Application.LC46Permutations" />
+        <item itemvalue="Application.LC131PalindromePartitioning" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.leetcode.designPatterns.behaviourial.chainOfResponsibility.example2.Main" />
-        <item itemvalue="Application.leetcode.designPatterns.oopsConcepts.polymorphismWithAbstractClass.MainTest" />
+        <item itemvalue="Application.Client" />
       </list>
     </recent_temporary>
   </component>
@@ -932,11 +937,6 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetcode/designPatterns/structural/decorator/ExtraCheeseDecoratorFoodItem.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="389" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/leetcode/designPatterns/structural/decorator/ExtraCheeseDecoratorFoodItem.java</url>
           <line>18</line>
           <option name="timeStamp" value="390" />
         </line-breakpoint>
@@ -979,6 +979,46 @@
           <url>file://$PROJECT_DIR$/src/leetcode/designPatterns/structural/proxy/Main.java</url>
           <line>12</line>
           <option name="timeStamp" value="410" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/designPatterns/behaviourial/chainOfResponsibility/example3UsingSuper/Main.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="412" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/designPatterns/creational/builder/example5Shrayansh/Director.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="413" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/designPatterns/Problems/VendingMachine/Main.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="417" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/designPatterns/Problems/VendingMachine/Main.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="418" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/designPatterns/Problems/VendingMachine/Main.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="419" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/recursion/medium/LC131PalindromePartitioning.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="421" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/recursion/medium/LC131PalindromePartitioning.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="422" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/designPatterns/Problems/DesignATM/ATMRoomMain.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="423" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/leetcode/binarytree/Test.java</url>
@@ -1114,6 +1154,24 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="408" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/leetcode/designPatterns/behaviourial/observer/example2/Order.java</url>
+          <line>30</line>
+          <properties class="leetcode.designPatterns.behaviourial.observer.example2.Order" method="updateStatus">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="411" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/leetcode/designPatterns/creational/builder/example5Shrayansh/Director.java</url>
+          <line>6</line>
+          <properties class="leetcode.designPatterns.creational.builder.example5Shrayansh.Director" method="&lt;init&gt;">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="414" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

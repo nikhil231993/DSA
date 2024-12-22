@@ -28,7 +28,7 @@ public class LC131PalindromePartitioning {
         for(int i=index;i<s.length();i++){
             if(isPalindrome(index, i, s)){
                 subList.add(s.substring(index, i+1));
-                partitionFunction(subList, finalResult,  s, i+1);
+                partitionFunction(subList, finalResult,  s, index+1);
                 subList.remove(subList.size()-1);
             }
         }

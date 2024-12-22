@@ -4,8 +4,8 @@ public class Order {
 
     private String id;
     private String name;
-
     public IObservableStatusTracker tracker;
+
     public Order(String id, String name){
         this.id=id;
         this.name=name;
@@ -29,6 +29,6 @@ public class Order {
     }
 
     public void updateStatus(Order order){
-        this.tracker.notifyObservers(order);
+        this.tracker.notifyObservers(order); // we can use this here and no need to pass order above
     }
 }
