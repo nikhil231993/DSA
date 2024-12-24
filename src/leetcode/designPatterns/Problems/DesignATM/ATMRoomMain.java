@@ -14,7 +14,7 @@ public class ATMRoomMain {
         atmRoom.atm.getCurrentATMState().insertCard(atmRoom.atm, atmRoom.user.card);
         atmRoom.atm.getCurrentATMState().authenticatePin(atmRoom.atm, atmRoom.user.card, 112211);
         atmRoom.atm.getCurrentATMState().selectOperation(atmRoom.atm, atmRoom.user.card, TransactionType.CASH_WITHDRAWAL);
-        atmRoom.atm.getCurrentATMState().cashWithdrawal(atmRoom.atm, atmRoom.user.card, 2700);
+        atmRoom.atm.getCurrentATMState().cashWithdrawal(atmRoom.atm, atmRoom.user.card, 10000);
         atmRoom.atm.printCurrentATMStatus();
     }
 
