@@ -1,6 +1,6 @@
 package leetcode.designPatterns.Problems.Elevator;
 
-public class ElevatorDemo {
+public class Main {
 
     public static void main(String[] args) {
 

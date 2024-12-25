@@ -16,6 +16,7 @@ public class ElevatorController {
     }
 
     public void moveElevatorToFloor(int floorNum) {
+
         controlStrategy = new FirstComeFirstServeElevatorControlStrategy();
         System.out.println("Control strategy: " +controlStrategy.hashCode());
 

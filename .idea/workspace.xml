@@ -5,100 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72d35191-61fd-46f6-abe8-9b648fcd26f6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Chess/AccountStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Chess/Board.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Chess/ChessDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Chess/Chess_LLD_UML.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Chess/Color.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Chess/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Chess/GameStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Chess/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Chess/Move.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Chess/Piece.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Chess/PieceBishop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Chess/PieceKing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Chess/PieceKnight.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Chess/PiecePawn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Chess/PieceQueen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Chess/PieceRook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Chess/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Chess/Spot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Elevator/Button.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Elevator/Display.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Elevator/Elevator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Elevator/ElevatorControlStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Elevator/ElevatorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Elevator/ElevatorCurrState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Elevator/ElevatorDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Elevator/ElevatorDirection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Elevator/ElevatorMgr.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Elevator/ElevatorSelectionStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Elevator/ElevatorStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Elevator/ElevatorSystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Elevator/ExternalRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Elevator/ExternalRequestsProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Elevator/FirstComeFirstServeElevatorControlStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Elevator/InternalRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Elevator/InternalRequestsProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Elevator/OddEvenElevatorSelStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Elevator/ScanAlgorithmElevatorControlStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Elevator/Sensor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Elevator/ShortestSeekTimeElevatorControlStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Elevator/ZoneElevatorSelStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Elevator/elevator_lld_uml.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Irctc/Config/ConfigReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Irctc/Login/EmailOtpStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Irctc/Login/LoginManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Irctc/Login/LoginStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Irctc/Login/LoginStrategyEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Irctc/Login/ThirdPartyStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Irctc/Login/UsernamePasswordStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Irctc/MultiThreadingDemos/Problem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Irctc/MultiThreadingDemos/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Irctc/Payment/CreditCardPayment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Irctc/Payment/NetBankingPayment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Irctc/Payment/PaymentFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Irctc/Payment/PaymentManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Irctc/Payment/PhonepeCreditCardPayment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Irctc/Payment/PhonepeNetbankingPayment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Irctc/Payment/PhonepePaymentFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Irctc/Payment/PhonepeUPIPayment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Irctc/Payment/RazorpayCreditCardPayment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Irctc/Payment/RazorpayNetbankingPayment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Irctc/Payment/RazorpayPaymentFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Irctc/Payment/RazorpayUPIPayment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Irctc/Payment/UPIPayment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Irctc/irctc_booking_uml.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Irctc/login_payment_uml.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/MeetingScheduler/Calendar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/MeetingScheduler/CalendarMgr.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/MeetingScheduler/INotificationSender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/MeetingScheduler/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/MeetingScheduler/Meeting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/MeetingScheduler/MeetingManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/MeetingScheduler/MeetingSchedulerSystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/MeetingScheduler/NotificationMgr.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/MeetingScheduler/PushNotificationSender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/MeetingScheduler/SMSNotificationSender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/MeetingScheduler/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/RecommendationSystem/CollaborativeStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/RecommendationSystem/DataIngestor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/RecommendationSystem/DataPreprocessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/RecommendationSystem/FeedbackCollector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/RecommendationSystem/JSONDataIngestor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/RecommendationSystem/LowerCaseFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/RecommendationSystem/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/RecommendationSystem/PopularityBasedStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/RecommendationSystem/Recommendation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/RecommendationSystem/RecommendationEngine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/RecommendationSystem/RecommendationStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/RecommendationSystem/RecommendationSystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/RecommendationSystem/RemoveStopWordsFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/RecommendationSystem/UserProfile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/RecommendationSystem/XMLDataIngestor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/RecommendationSystem/uml.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/DesignATM/ATMRoomMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/DesignATM/ATMRoomMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Elevator/ElevatorDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/Elevator/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +67,7 @@
       <recent name="leetcode.stack.lb" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.leetcode.designPatterns.Problems.RecommendationSystem.Main">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="ATMRoomMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode.designPatterns.Problems.DesignATM.ATMRoomMain" />
       <module name="DSA" />
@@ -174,8 +81,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC131PalindromePartitioning" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.recursion.medium.LC131PalindromePartitioning" />
+    <configuration name="LC46Permutations" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.recursion.medium.LC46Permutations" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -187,12 +94,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC46Permutations" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.recursion.medium.LC46Permutations" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.designPatterns.Problems.Elevator.Main" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.recursion.medium.*" />
+          <option name="PATTERN" value="leetcode.designPatterns.Problems.Elevator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -228,11 +135,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.leetcode.designPatterns.Problems.RecommendationSystem.Main" />
         <item itemvalue="Application.leetcode.designPatterns.Problems.MeetingScheduler.Main" />
         <item itemvalue="Application.ATMRoomMain" />
         <item itemvalue="Application.LC46Permutations" />
-        <item itemvalue="Application.LC131PalindromePartitioning" />
       </list>
     </recent_temporary>
   </component>
