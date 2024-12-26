@@ -7,12 +7,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-public class BookMyShow {
+public class BookMyShowMain {
 
     MovieController movieController;
     TheatreController theatreController;
 
-    BookMyShow() {
+    BookMyShowMain() {
         movieController = new MovieController();
         theatreController = new TheatreController();
     }
@@ -20,7 +20,7 @@ public class BookMyShow {
 
     public static void main(String args[]) {
 
-        BookMyShow bookMyShow = new BookMyShow();
+        BookMyShowMain bookMyShow = new BookMyShowMain();
 
         bookMyShow.initialize();
 
