@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class ChessDemo {
 
     public static void main(String[] args) {
+
         Player player1 = new Player("keerti", true);
         Player player2 = new Player("amit", false);
 
