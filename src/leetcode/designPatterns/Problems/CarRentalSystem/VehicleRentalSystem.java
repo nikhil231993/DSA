@@ -27,11 +27,8 @@ public class VehicleRentalSystem {
 
     //remove users
 
-
     //add stores
 
     //remove stores
-
-
 
 }
