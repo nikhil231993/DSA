@@ -49,6 +49,7 @@ public class Game {
 
         if (currPiece.canMove(board, startSpot, endSpot)) {
             currPiece.move(board, startSpot, endSpot);
+            move.setPieceKilled(endSpot.getPiece());
             endSpot.setPiece(currPiece);
             startSpot.setPiece(null);
             currMoveIndex++;

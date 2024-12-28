@@ -2,7 +2,7 @@ package leetcode.designPatterns.Problems.Chess;
 
 import java.util.Scanner;
 
-public class ChessDemo {
+public class Main {
 
     public static void main(String[] args) {
 
