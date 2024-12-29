@@ -5,6 +5,7 @@ import java.util.Arrays;
 public class DP4FrogKJumps {
 
     public static void main(String[] args) {
+
         int[] height=new int[]{30,10,60,10,60,50};
         int n=6;
         int k=2;
@@ -16,18 +17,13 @@ public class DP4FrogKJumps {
         int[] dp=new int[n];
         Arrays.fill(dp,-1);
         System.out.println(memoization(dp,height,n-1,k));
-        //TC:O(N*K)
-        //SC:O(N) recursion +O(N)array
 
         //Tabulation
         int[] dp1=new int[n];
         Arrays.fill(dp1,-1);
         System.out.println(tabulation(dp1,height,n,k));
-        //TC:O(N*K)
-        //SC:O(N)array
 
         //we cannot space optimise as it will be O(k) or O(N) as we need k states here
-
     }
 
 
@@ -35,7 +31,7 @@ public class DP4FrogKJumps {
 
         dp1[0]=0;
 
-        for(int m=1;m<n;m++){
+        for(int m=1; m<n; m++){
             int min=Integer.MAX_VALUE;
             int jump=0;
             for(int i=1;i<=k;i++){
@@ -46,7 +42,10 @@ public class DP4FrogKJumps {
             }
             dp1[m]=min;
         }
-        return dp1[n-1];
+        return dp1[n-1]; // dp[n] if m<=n;
+
+        //TC:O(N*K)
+        //SC:O(N)array
     }
 
     private static int memoization(int[] dp, int[] height, int n, int k) {
@@ -65,6 +64,9 @@ public class DP4FrogKJumps {
             }
         }
         return dp[n-1]=min;
+
+        //TC:O(N*K)
+        //SC:O(N) recursion +O(N)array
     }
 
     private static int recursion(int[] height, int n, int k) {

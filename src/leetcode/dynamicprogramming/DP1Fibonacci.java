@@ -3,7 +3,9 @@ package leetcode.dynamicprogramming;
 import java.util.Arrays;
 
 public class DP1Fibonacci {
+
     public static void main(String[] args) {
+
         int n=4;
 
         //Recursion
@@ -21,50 +23,60 @@ public class DP1Fibonacci {
 
         //Space optimization
         System.out.println(fibSpaceOptimization(n));
-        //TC:O(N)
-        //SC:O(1)
-
     }
 
     private static int recursion(int n) {
+
         if(n<=1)
             return n;
-        return recursion(n-1)+recursion(n-2);
+        return recursion(n-1) + recursion(n-2);
+
         //TC:O(2 raise to N)
         //SC:O(N) recursion stack
     }
 
     private static int fibSpaceOptimization(int n) {
 
-        int f1=0;
-        int f2=1;
-        for(int i=2;i<=n;i++){
-            int curr=f1+f2;
-            f1=f2;
-            f2=curr;
+        if(n==0) return n;
+
+        int prev2=0;
+        int prev=1;
+
+        for(int i=2; i<=n; i++){
+            int curr=prev2+prev;
+            prev2=prev;
+            prev=curr;
         }
-        return f2;
+        return prev;
+
+        //TC:O(N)
+        //SC:O(1)
     }
 
     private static int fibTabulation(int n, int[] dp1) {
 
+        if(n==0) return n;
+
         dp1[0]=0;
         dp1[1]=1;
-        for(int i=2;i<=n;i++){
-            dp1[i]=dp1[i-1]+dp1[i-2];
+        for(int i=2; i<=n; i++){
+            dp1[i] = dp1[i-1] + dp1[i-2];
         }
         return dp1[n];
+
         //TC:O(N)
         //TC:O(N) dp array only
     }
 
     private static int fib(int[] dp, int n) {
+
         if(n<=1)
             return n;
         if(dp[n]!=-1)
             return dp[n];
-        return dp[n]=fib(dp,n-1)+fib(dp,n-2);
-        //TC:O(N) since it is linear and we do not compute it each time
-        //SC:O(N) recursion stack+ O(N) dp array
+        return dp[n] = fib(dp,n-1) + fib(dp,n-2);
+
+        //TC:O(N) since it is linear, and we do not compute already computed value again
+        //SC:O(N) recursion stack + O(N) dp array
     }
 }
