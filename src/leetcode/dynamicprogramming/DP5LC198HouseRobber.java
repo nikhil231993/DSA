@@ -13,7 +13,7 @@ public class DP5LC198HouseRobber {
         System.out.println(recursion(nums,n-1));
 
         //Memoization
-        int[] dp=new int[n+1];
+        int[] dp=new int[n];
         Arrays.fill(dp,-1);
         System.out.println(memoization(nums,dp,n-1));
 
@@ -22,16 +22,16 @@ public class DP5LC198HouseRobber {
         Arrays.fill(dp1,-1);
         System.out.println(tabulation(nums,dp,n-1));
 
-        //Space
+        //Tabulation
         System.out.println(space(nums,n-1));
     }
 
     private static int space(int[] nums, int n) {
 
         int prev=nums[0];
-        int prev2=0;        //palceholder
+        int prev2=0;//palceholder
 
-        for(int i=1;i<=n;i++){
+        for(int i=1; i<=n; i++){
             int pick=nums[i];
             if(i>1)
                 pick+=prev2;
@@ -51,7 +51,7 @@ public class DP5LC198HouseRobber {
 
         dp[0]=nums[0];
         int neg=0;//palceholder
-        for(int i=1;i<=n;i++){
+        for(int i=1;i<=n;i++){ //i<=n
             int pick=nums[i];
             if(i>1)
                 pick+=dp[i-2];
