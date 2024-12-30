@@ -14,7 +14,7 @@ public class DP1Fibonacci {
         //Memoization method (top dow same as recursion)
         int[] dp=new int[n+1];
         Arrays.fill(dp,-1);
-        System.out.println(fib(dp,n));
+        System.out.println(fibMemoization(dp,n));
 
         //Tabulation (Bottom up approach)
         int[] dp1=new int[n+1];
@@ -65,16 +65,16 @@ public class DP1Fibonacci {
         return dp1[n];
 
         //TC:O(N)
-        //TC:O(N) dp array only
+        //SC:O(N) dp array only
     }
 
-    private static int fib(int[] dp, int n) {
+    private static int fibMemoization(int[] dp, int n) {
 
         if(n<=1)
             return n;
         if(dp[n]!=-1)
             return dp[n];
-        return dp[n] = fib(dp,n-1) + fib(dp,n-2);
+        return dp[n] = fibMemoization(dp,n-1) + fibMemoization(dp,n-2);
 
         //TC:O(N) since it is linear, and we do not compute already computed value again
         //SC:O(N) recursion stack + O(N) dp array
