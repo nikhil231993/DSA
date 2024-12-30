@@ -31,7 +31,7 @@ public class DP2LC70ClimbingStairs {
             return 1;
         if(n==1)
             return 1;
-        return recursion(n-1)+recursion(n-2);
+        return recursion(n-1) + recursion(n-2);
 
         //TC:O(2 raise to N)
         //SC:O(N) recursion stack
