@@ -77,7 +77,7 @@ public class DP5MaximumNonAdjacentSum {
 
         if(n==0)
             return nums[0];
-        if(n<0)
+        if(n<0)     // we dont need this condition and we can use same condition of if i>1 instead
             return 0;
 
         if(dp[n]!=-1)

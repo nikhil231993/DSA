@@ -5,6 +5,7 @@ import java.util.Arrays;
 public class DP7NinjaCoding {
 
     public static void main(String[] args) {
+
         int[][] matrix=new int[][]{{10,40,70},
                 {20,50,80},
                 {30,60,90}};
@@ -20,9 +21,7 @@ public class DP7NinjaCoding {
                 dp[i][j]=-1;
             }
         }
-        System.out.println(memoization(matrix,dp,n-1,3));
-        //TC:O(N*4*3)
-        //SC:O(N) stack+O(N*4)dp array
+        System.out.println(memoization(matrix, dp,n-1,3));
 
         int[][] dp1=new int[n][4];
         for(int[] r:dp)
@@ -31,7 +30,6 @@ public class DP7NinjaCoding {
 
         //Space optimization
         System.out.println(space(n,matrix));
-
     }
 
     private static int space(int n, int[][] matrix) {
@@ -58,6 +56,7 @@ public class DP7NinjaCoding {
             prev=current;
         }
         return prev[3];
+
         //SC:O(N*4)
         //TC:O(4)
     }
@@ -68,7 +67,7 @@ public class DP7NinjaCoding {
         dp1[0][0]=Math.max(matrix[0][1],matrix[0][2]);
         dp1[0][1]=Math.max(matrix[0][0],matrix[0][2]);
         dp1[0][2]=Math.max(matrix[0][1],matrix[0][0]);
-        dp1[0][0]=Math.max(Math.max(matrix[0][0],matrix[0][1]),matrix[0][2]);
+        dp1[0][3]=Math.max(Math.max(matrix[0][0],matrix[0][1]),matrix[0][2]);
 
         for(int day=1;day<n;day++){
             for(int last=0;last<=3;last++){
@@ -83,35 +82,40 @@ public class DP7NinjaCoding {
             }
         }
         return dp1[n-1][3];
+
         //TC:O(N*4*3)
         //SC:O(N*4)
     }
 
-    private static int memoization(int[][] matrix, int[][] dp, int n, int last) {
+    private static int memoization(int[][] matrix, int[][] dp, int days, int last) {
 
-        if(n==0){
+        if(dp[days][last]!=-1) return dp[days][last];
+
+        if(days==0){
             int max=0;
             for(int i=0;i<3;i++){
                 if(i!=last){
                     max=Math.max(max,matrix[0][i]);
                 }
             }
-            return max;
+            return dp[days][last]=max;
         }
 
-        if(dp[n][last]!=-1)
-            return dp[n][last];
+        if(dp[days][last]!=-1)
+            return dp[days][last];
 
         int max=0;
 
         for(int i=0;i<3;i++){
             if(i!=last){
-                int points=matrix[n][i]+memoization(matrix,dp,n-1,i);
+                int points=matrix[days][i]+memoization(matrix,dp,days-1,i);
                 max=Math.max(points,max);
             }
         }
-        return dp[n][last]=max;
+        return dp[days][last]=max;
 
+        //TC:O(N*4*3)
+        //SC:O(N) stack + O(N*4)dp array
     }
 
     private static int recursion(int[][] matrix, int n, int last) {

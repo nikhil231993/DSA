@@ -133,7 +133,7 @@ public class DP6LC213HouseRobber2 {
     private static int space(int[] nums, int n) {
 
         int prev=nums[0];
-        int prev2=0;        //placeholder
+        int prev2=0;           //placeholder
 
         for(int i=1;i<n;i++){ //if we pass n=n-1 in calling function then it is i<=n
             int pick=nums[i];

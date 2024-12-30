@@ -3,6 +3,7 @@ package leetcode.dynamicprogramming;
 public class DP10LC64MinimumPathSum {
 
     public static void main(String[] args) {
+
         int[][] grid = new int[][]{{1, 3, 1}, {1, 5, 1}, {4, 2, 1}};
         int n = grid.length;
         int m = grid[0].length;
@@ -32,6 +33,7 @@ public class DP10LC64MinimumPathSum {
     }
 
     private static int space(int n, int m,int[][] grid) {
+
         int[] prev=new int[n];
 
         for (int i = 0; i < n; i++) {
@@ -55,6 +57,7 @@ public class DP10LC64MinimumPathSum {
             prev=current;
         }
         return prev[m - 1];
+
         //TC:O(m*n)
         //TC:O(n) 1 D array
     }
@@ -68,13 +71,13 @@ public class DP10LC64MinimumPathSum {
                 if (i == 0 && j == 0)
                     dp1[i][j] = grid[i][j];
                 else {
-                    int up = (int)(10e9), left = (int)(10e9);
+                    int up = grid[i][j], left = grid[i][j];
                     if (i > 0)
-                        up = grid[i][j] + dp1[i - 1][j];
+                        up += dp1[i - 1][j];
                     else
                         up=(int)(1e9);//so that current path is neglected
                     if (j > 0)
-                        left = grid[i][j] + dp1[i][j - 1];
+                        left += dp1[i][j - 1];
                     else
                         left=(int)(1e9);//so that current path is neglected
                     dp1[i][j] = Math.min(up, left);
@@ -82,6 +85,7 @@ public class DP10LC64MinimumPathSum {
             }
         }
         return dp1[n - 1][m - 1];
+
         //TC:O(m*n)
         //TC:O(n*m) dp array
     }
@@ -100,8 +104,9 @@ public class DP10LC64MinimumPathSum {
         int up = grid[n][m] + memoization(n - 1, m, dp, grid);
         int left = grid[n][m] + memoization(n, m - 1, dp, grid);
         return dp[n][m] = Math.min(up, left);
+
         //TC:O(m*n)
-        //TC:O(path length i.e n-1+m-1)+O(n*m) dp array
+        //TC:O(path length i.e n-1+m-1) + O(n*m) dp array
     }
 
     private static int recursion(int n, int m, int[][] grid) {
@@ -115,9 +120,9 @@ public class DP10LC64MinimumPathSum {
         int up = grid[n][m] + recursion(n - 1, m, grid);
         int left = grid[n][m] + recursion(n, m - 1, grid);
         return Math.min(up, left);
+
         //TC:O(2 raise to n*m)
         //TC:O(path length i.e n-1+m-1)
-
     }
 }
 

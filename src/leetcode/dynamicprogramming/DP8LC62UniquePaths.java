@@ -1,8 +1,11 @@
 package leetcode.dynamicprogramming;
 
+import java.util.Arrays;
+
 public class DP8LC62UniquePaths {
 
     public static void main(String[] args) {
+
         int m = 3, n = 7;
 
         //Recursion
@@ -10,12 +13,9 @@ public class DP8LC62UniquePaths {
 
         //Memoization
         int[][] dp=new int[m][n];
-        for(int i=0;i<m;i++) {
-            for (int j = 0; j < n; j++) {
-                dp[i][j] = -1;
-            }
-        }
-        System.out.println( memoization(m-1,n-1,dp));
+        for(int[] r: dp)
+            Arrays.fill(r, -1);
+        System.out.println(memoization(m-1,n-1,dp));
 
         //Tabulation
         int[][] dp1=new int[m][n];
@@ -49,7 +49,7 @@ public class DP8LC62UniquePaths {
             prev=current;
         }
         return prev[n-1];
-        //Recursion
+
         //TC:O(m*n)
         //SC:O(n*m) dp arrays
     }
@@ -71,38 +71,43 @@ public class DP8LC62UniquePaths {
             }
         }
         return dp[m-1][n-1];
-        //Recursion
+
         //TC:O(m*n)
         //SC:O(n*m) dp arrays
     }
 
     private static int memoization(int m, int n, int[][] dp) {
+
         if(n==0 && m==0)
             return 1;
+
         if(m<0 || n<0)
             return 0;
+
         if(dp[m][n]!=-1)
             return dp[m][n];
+
         int up =memoization(m-1,n,dp);
         int left=memoization(m,n-1,dp);
 
         return dp[m][n]=up+left;
-        //Recursion
+
         //TC:O(m*n)
-        //SC:O(unique paths )i.e.n+m +O(n*m) dp arrays
+        //SC:O(path length) i.e.(n-1) + (m-1) + O(n*m) dp arrays
     }
 
     private static int recursion(int m, int n) {
+
             if(n==0 && m==0)
                  return 1;
              if(m<0 || n<0)
                  return 0;
-             int up =recursion(m-1,n);
-             int left=recursion(m,n-1);
+             int up = recursion(m-1,n);
+             int left = recursion(m,n-1);
 
              return up+left;
-             //Recursion
-             //TC:O(2 raise to m*n)
-             //SC:O(unique paths )i.e.n+m
+
+             //TC:O(2 raise to m*n) 14:56
+             //SC:O(path length) i.e.(n-1) + (m-1)
     }
 }
