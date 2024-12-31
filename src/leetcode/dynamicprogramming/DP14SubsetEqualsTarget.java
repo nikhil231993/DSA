@@ -5,7 +5,8 @@ import java.util.Arrays;
 public class DP14SubsetEqualsTarget {
 
     public static void main(String[] args) {
-        int[] arr=new int[]{1,2,3,4};
+
+        int[] arr=new int[]{2,5,1,6,7};
         int n= arr.length;
         int target=4;
 
@@ -19,24 +20,28 @@ public class DP14SubsetEqualsTarget {
             Arrays.fill(row,-1);
         System.out.println(memoization(n-1,target,arr,dp));
 
-        //Tabulation
-          boolean[][] dp1=new boolean[n][target+1];
-          System.out.println(tabulation(n,target,dp1,arr));
+        //Tabulation (for tabulation we can take dp with true or false)
+        boolean[][] dp1=new boolean[n][target+1];
+        System.out.println(tabulation(n,target,dp1,arr));
 
         //Space optimization
         System.out.println(space(n,target,arr));
     }
 
     private static boolean space(int n, int k, int[] arr) {
+
         boolean[] prev=new boolean[k+1];
-        boolean[] curr=new boolean[k+1];
-        for(int i=0;i<n;i++)
-           prev[0]= curr[0]=true;
+
+        prev[0]=true;
         if(arr[0]<=k)
             prev[arr[0]]=true;
 
         for(int i=1;i<n;i++){
+
+            boolean[] curr=new boolean[k+1];
+            curr[0]=true;
             for(int target=1;target<=k;target++){
+
                 boolean notpick=prev[target];
                 boolean pick=false;
                 if(arr[i]<=target)
@@ -52,6 +57,7 @@ public class DP14SubsetEqualsTarget {
 
         for(int i=0;i<n;i++)
             dp[i][0]=true;
+
         if(arr[0]<=k)
             dp[0][arr[0]]=true;
 
@@ -65,8 +71,9 @@ public class DP14SubsetEqualsTarget {
             }
         }
         return dp[n-1][k];
+
         //TC:O(N*target)
-        //SC:o(N*target) dp array
+        //SC:O(N*target) dp array
     }
 
     private static boolean memoization(int n, int target, int[] arr, int[][] dp) {
@@ -83,8 +90,10 @@ public class DP14SubsetEqualsTarget {
         boolean pick=false;
         if(arr[n]<=target)
             pick=memoization(n-1,target-arr[n],arr,dp);
-        dp[n][target]=notpick|| pick?1:0;
+
+        dp[n][target]=notpick || pick?1:0;
         return notpick || pick;
+
         //TC:O(N*target)
         //SC:o(N*target) dp array+O(N) stack
     }
@@ -101,6 +110,7 @@ public class DP14SubsetEqualsTarget {
         if(arr[n]<=target)
                 pick=recursion(n-1,target-arr[n],arr);
         return notpick || pick;
+
         //TC:O(2 raise to N)
         //SC:O(N) auxiliary stack
     }

@@ -8,7 +8,6 @@ public class Lecture10LC90Subset2 {
 
 	public static void main(String[] args) {
 
-
 		//Approach 1: Use the LC 78 logic and put the result in set and then finally convert to list
 		//This will need both set and list which will add extra TC and SC
 

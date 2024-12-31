@@ -7,6 +7,11 @@
     <list default="true" id="72d35191-61fd-46f6-abe8-9b648fcd26f6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP12LC931MinimumFallingSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP12LC931MinimumFallingSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP13LC1493CherryPick2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP13LC1493CherryPick2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP14SubsetEqualsTarget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP14SubsetEqualsTarget.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP15EqualSubsetSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP15EqualSubsetSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP17CountSubsetsWithSumK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP17CountSubsetsWithSumK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/recursion/medium/Lecture10LC90Subset2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/recursion/medium/Lecture10LC90Subset2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,9 +73,9 @@
       <recent name="leetcode.stack.lb" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DP12LC931MinimumFallingSum">
-    <configuration name="DP10LC64MinimumPathSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicprogramming.DP10LC64MinimumPathSum" />
+  <component name="RunManager" selected="Application.DP15EqualSubsetSum">
+    <configuration name="DP14SubsetEqualsTarget" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicprogramming.DP14SubsetEqualsTarget" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -82,8 +87,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DP12LC931MinimumFallingSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicprogramming.DP12LC931MinimumFallingSum" />
+    <configuration name="DP15EqualSubsetSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicprogramming.DP15EqualSubsetSum" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -95,12 +100,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DP5LC198HouseRobber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicprogramming.DP5LC198HouseRobber" />
+    <configuration name="L7FirstPrintAllSubsequenceWithSumK" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.recursion.striver.L7FirstPrintAllSubsequenceWithSumK" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.dynamicprogramming.*" />
+          <option name="PATTERN" value="leetcode.recursion.striver.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -108,12 +113,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DP7NinjaCoding" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicprogramming.DP7NinjaCoding" />
+    <configuration name="L7SecondPrintAnyOneSubsequenceWithSumK" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.recursion.striver.L7SecondPrintAnyOneSubsequenceWithSumK" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.dynamicprogramming.*" />
+          <option name="PATTERN" value="leetcode.recursion.striver.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,12 +126,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DP9LC63UniquePaths2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.dynamicprogramming.DP9LC63UniquePaths2" />
+    <configuration name="Lecture10LC90Subset2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.recursion.medium.Lecture10LC90Subset2" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.dynamicprogramming.*" />
+          <option name="PATTERN" value="leetcode.recursion.medium.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -136,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DP12LC931MinimumFallingSum" />
-        <item itemvalue="Application.DP10LC64MinimumPathSum" />
-        <item itemvalue="Application.DP9LC63UniquePaths2" />
-        <item itemvalue="Application.DP7NinjaCoding" />
-        <item itemvalue="Application.DP5LC198HouseRobber" />
+        <item itemvalue="Application.DP15EqualSubsetSum" />
+        <item itemvalue="Application.DP14SubsetEqualsTarget" />
+        <item itemvalue="Application.L7SecondPrintAnyOneSubsequenceWithSumK" />
+        <item itemvalue="Application.L7FirstPrintAllSubsequenceWithSumK" />
+        <item itemvalue="Application.Lecture10LC90Subset2" />
       </list>
     </recent_temporary>
   </component>
@@ -265,7 +270,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP14SubsetEqualsTarget.java</url>
-          <line>12</line>
+          <line>13</line>
           <option name="timeStamp" value="96" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -1012,6 +1017,16 @@
           <url>file://$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP7NinjaCoding.java</url>
           <line>122</line>
           <option name="timeStamp" value="440" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP14SubsetEqualsTarget.java</url>
+          <line>4</line>
+          <option name="timeStamp" value="441" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP14SubsetEqualsTarget.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="442" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/leetcode/binarytree/Test.java</url>

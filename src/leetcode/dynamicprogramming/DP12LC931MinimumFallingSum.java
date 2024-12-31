@@ -38,7 +38,7 @@ public class DP12LC931MinimumFallingSum {
         }
         int min2=Integer.MAX_VALUE;
         //tabulation(n,m,matrix,dp2);
-        tabulationSelf(n,m,matrix,dp2);
+        tabulationSelf(n,m,matrix,dp2);  //31:26
         for(int j=0;j<m;j++){
             min2=Math.min(min2,dp2[n-1][j]);
         }
@@ -60,7 +60,7 @@ public class DP12LC931MinimumFallingSum {
             int[] curr=new int[m];
             for(int j=0;j<m;j++){
                 if(i==0)
-                    curr[j]=matrix[i][j];
+                    curr[j]=matrix[i][j]; // DP 10 we used curr because in the current loop it i curr. even if u use previous it will work
                 else{
                     int topLeft=matrix[i][j];
                     if(i>0 && j>0)
@@ -159,11 +159,13 @@ public class DP12LC931MinimumFallingSum {
                 dp2[i][j]=Math.min(upper,Math.min(upperLeft,upperRight));
             }
         }
+
         //TC:O(N*M)+O(N) last for loop
         //SC:O(n*m) dp array
     }
 
     public static int recursion(int i, int j, int n, int m, int[][] matrix){
+
         if(j<0 || j>m)
             return (int)1e9;
         if(i==0)
@@ -179,6 +181,7 @@ public class DP12LC931MinimumFallingSum {
     }
 
     public static int memoization(int i, int j, int n, int m, int[][] matrix,int[][] dp1){
+
         if(j<0 || j>m)
             return (int)1e9;
         if(i==0)
@@ -191,6 +194,7 @@ public class DP12LC931MinimumFallingSum {
         int upperRight=matrix[i][j]+memoization(i-1,j+1,n,m,matrix,dp1);
 
         return dp1[i][j]=Math.min(upper,Math.min(upperLeft,upperRight));
+
         //TC:O(N*M)
         //SC:O(N) stack +O(n*m) dp array
     }

@@ -8,6 +8,7 @@ public class DP17CountSubsetsWithSumK {
     // where n is the no of zeroes an multiply the result we have solved it in next
 
     public static void main(String[] args) {
+
         int[] nums=new int[]{1,2,3,3};
         int n=nums.length;
         int sum=3;
@@ -74,6 +75,7 @@ public class DP17CountSubsetsWithSumK {
     }
 
     private static int memoization(int[] nums, int i, int sum, int[][] dp) {
+
         if(sum==0)
             return 1;
         if(i==0){
