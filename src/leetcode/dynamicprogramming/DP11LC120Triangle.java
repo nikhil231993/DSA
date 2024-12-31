@@ -6,6 +6,7 @@ import java.util.List;
 public class DP11LC120Triangle {
 
     public static void main(String[] args) {
+
         int[][] tri =new int[][] {{2},{3,4},{6,5,7},{4,1,8,3}};
 
         List<List<Integer>> triangle=new ArrayList<>();
@@ -28,16 +29,16 @@ public class DP11LC120Triangle {
 
         //Memoization
         System.out.println(minimumTotalMemoization(triangle));
-        //TC:O(N)
-        //SC:o(n*m) dp array +O(N) recursion stack
 
+        //Tabulation
         System.out.println(tabulation(triangle));
 
+        //Space
         System.out.println(space(triangle,triangle.size()));
-
     }
 
     private static int space(List<List<Integer>> triangle,int n) {
+
         int[] prev=new int[n];
         for(int j=0;j<triangle.size();j++){
             prev[j]=triangle.get(n-1).get(j);
@@ -59,6 +60,7 @@ public class DP11LC120Triangle {
     }
 
     private static int tabulation(List<List<Integer>> triangle) {
+
         int n=triangle.size();
         int m=triangle.get(n-1).size();
 
@@ -86,6 +88,7 @@ public class DP11LC120Triangle {
             }
         }
         return dp[0][0];
+
         //TC:O(n*m)
         //SC:O(n*m) dp
     }
@@ -104,8 +107,12 @@ public class DP11LC120Triangle {
 
         return recursionMemoization(0,0,triangle,n,m,dp);
 
+        //TC:O(N)
+        //SC:o(n*m) dp array + O(N) recursion stack
     }
+
     public static int recursionMemoization(int i, int j, List<List<Integer>> list, int n, int m,int[][] dp){
+
         if(i==n-1){
             return list.get(n-1).get(j);
         }
@@ -117,15 +124,17 @@ public class DP11LC120Triangle {
         int diag=list.get(i).get(j)+recursionMemoization(i+1,j+1,list,n,m,dp);
         return dp[i][j]=Math.min(d,diag);
     }
+
     public static int minimumTotal(List<List<Integer>> triangle) {
 
         int n=triangle.size();
         int m=triangle.get(n-1).size();
 
         return recursion(0,0,triangle,n,m);
-
     }
+
     public static int recursion(int i, int j, List<List<Integer>> list, int n, int m){
+
         if(i==n-1){
             return list.get(n-1).get(j);
         }
@@ -133,6 +142,7 @@ public class DP11LC120Triangle {
         int d=list.get(i).get(j)+recursion(i+1,j,list,n,m);
         int diag=list.get(i).get(j)+recursion(i+1,j+1,list,n,m);
         return Math.min(d,diag);
+
         //TC:O(2 raise to N)
         //SC:O(N)
     }

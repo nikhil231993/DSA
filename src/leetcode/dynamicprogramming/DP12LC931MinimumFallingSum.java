@@ -3,6 +3,7 @@ package leetcode.dynamicprogramming;
 public class DP12LC931MinimumFallingSum {
 
     public static void main(String[] args) {
+
        int[][] matrix =new int[][] {{2,1,3},{6,5,4},{7,8,9}};
 
        //Recursion
@@ -89,16 +90,18 @@ public class DP12LC931MinimumFallingSum {
                      upperLeft=matrix[i][j]+dp2[i-1][j-1];
                 int upperRight=(int)1e9;
                 if(j+1<m)
-                 upperRight=matrix[i][j]+dp2[i-1][j+1];
+                  upperRight=matrix[i][j]+dp2[i-1][j+1];
 
                 dp2[i][j]=Math.min(upper,Math.min(upperLeft,upperRight));
             }
         }
+
         //TC:O(N*M)+O(N) last for loop
         //SC:O(n*m) dp array
     }
 
     public static int recursion(int i, int j, int n, int m, int[][] matrix){
+
         if(j<0 || j>m)
             return (int)1e9;
         if(i==0)
@@ -109,6 +112,7 @@ public class DP12LC931MinimumFallingSum {
         int upperRight=matrix[i][j]+recursion(i-1,j+1,n,m,matrix);
 
         return Math.min(upper,Math.min(upperLeft,upperRight));
+
         //TC:O(3 raise to n)
         //SC:O(N)
     }
