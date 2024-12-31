@@ -3,7 +3,7 @@ package leetcode.dynamicprogramming;
 public class DP12LC931MinimumFallingSum {
 
     public static void main(String[] args) {
-
+        
        int[][] matrix =new int[][] {{2,1,3},{6,5,4},{7,8,9}};
 
        //Recursion
@@ -37,7 +37,8 @@ public class DP12LC931MinimumFallingSum {
             }
         }
         int min2=Integer.MAX_VALUE;
-        tabulation(n,m,matrix,dp2);
+        //tabulation(n,m,matrix,dp2);
+        tabulationSelf(n,m,matrix,dp2);
         for(int j=0;j<m;j++){
             min2=Math.min(min2,dp2[n-1][j]);
         }
@@ -45,14 +46,77 @@ public class DP12LC931MinimumFallingSum {
 
         //Space optimization
         int min3=Integer.MAX_VALUE;
-       int[] p=space(n,m,matrix);
-       for(int i=0;i<p.length;i++)
+        int[] p=space(n,m,matrix);
+        int[] p1=spaceSelf(n,m, matrix);
+        for(int i=0;i<p.length;i++)
            min3=Math.min(min3,p[i]);
         System.out.println(min3);
+    }
 
+    public static int[] spaceSelf(int n, int m, int[][] matrix){
+
+        int[] prev=new int[m];
+        for(int i=0;i<n;i++){
+            int[] curr=new int[m];
+            for(int j=0;j<m;j++){
+                if(i==0)
+                    curr[j]=matrix[i][j];
+                else{
+                    int topLeft=matrix[i][j];
+                    if(i>0 && j>0)
+                        topLeft+=prev[j-1];
+                    else
+                        topLeft=(int)(1e9);
+                    int top=matrix[i][j];
+                    if(i>0)
+                        top+=prev[j];
+                    else
+                        top=(int)(1e9);
+                    int topRight=matrix[i][j];
+                    if(i>0 && j+1<m)
+                        topRight+=prev[j+1];
+                    else
+                        topRight=(int)(1e9);
+
+                    curr[j]=Math.min(topLeft, Math.min(top, topRight));
+                }
+            }
+            prev=curr;
+        }
+        return prev;
+    }
+
+    private static void tabulationSelf(int n, int m, int[][] matrix, int[][] dp) {
+
+        for(int i=0;i<n;i++){
+            for(int j=0;j<m;j++){
+                if(i==0)
+                    dp[i][j]=matrix[i][j];
+                else{
+                    int topLeft=matrix[i][j];
+                    if(i>0 && j>0)
+                        topLeft+=dp[i-1][j-1];
+                    else
+                        topLeft=(int)(1e9);
+                    int top=matrix[i][j];
+                    if(i>0)
+                        top+=dp[i-1][j];
+                    else
+                        top=(int)(1e9);
+                    int topRight=matrix[i][j];
+                    if(i>0 && j+1<m)
+                        topRight+=dp[i-1][j+1];
+                    else
+                        topRight=(int)(1e9);
+
+                    dp[i][j]=Math.min(topLeft, Math.min(top, topRight));
+                }
+            }
+        }
     }
 
     private static int[] space(int n, int m, int[][] matrix) {
+
         int[] prev=new int[m];
         for(int j=0;j<m;j++)
             prev[j]=matrix[0][j];
@@ -90,18 +154,16 @@ public class DP12LC931MinimumFallingSum {
                      upperLeft=matrix[i][j]+dp2[i-1][j-1];
                 int upperRight=(int)1e9;
                 if(j+1<m)
-                  upperRight=matrix[i][j]+dp2[i-1][j+1];
+                 upperRight=matrix[i][j]+dp2[i-1][j+1];
 
                 dp2[i][j]=Math.min(upper,Math.min(upperLeft,upperRight));
             }
         }
-
         //TC:O(N*M)+O(N) last for loop
         //SC:O(n*m) dp array
     }
 
     public static int recursion(int i, int j, int n, int m, int[][] matrix){
-
         if(j<0 || j>m)
             return (int)1e9;
         if(i==0)
@@ -112,7 +174,6 @@ public class DP12LC931MinimumFallingSum {
         int upperRight=matrix[i][j]+recursion(i-1,j+1,n,m,matrix);
 
         return Math.min(upper,Math.min(upperLeft,upperRight));
-
         //TC:O(3 raise to n)
         //SC:O(N)
     }
