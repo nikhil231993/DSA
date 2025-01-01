@@ -46,6 +46,7 @@ public class DP17CountSubsetsWithSumKWithZero {
         // Fill the DP array for subsequent rows
         for (int ind = 1; ind < n; ind++) {
             int[] curr=new int[k+1];
+            curr[0]=1;
             for (int target = 0; target <= k; target++) {
                 // Not taking the current element
                 int notTaken = prev[target];

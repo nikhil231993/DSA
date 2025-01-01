@@ -15,7 +15,7 @@ public class DP17CountSubsetsWithSumK {
 
         int[] nums=new int[]{1,4,4,5};
         int n=nums.length;
-        int sum=1;
+        int sum=5;
 
         //Recursion
         System.out.println(recursion(nums,n-1,sum));
@@ -39,11 +39,12 @@ public class DP17CountSubsetsWithSumK {
     private static int space(int[] nums, int n, int K) {
 
         int[] prev=new int[K+1];
-        int[] curr=new int[K+1];
-           curr[0]=prev[0]=1;
+           prev[0]=1;
            prev[nums[0]]=1;
 
         for(int i=1;i<n;i++){
+            int[] curr=new int[K+1];
+            curr[0]=1;
             for(int sum=1;sum<=K;sum++){
                 int np=prev[sum];
                 int p=0;
@@ -54,6 +55,7 @@ public class DP17CountSubsetsWithSumK {
             prev=curr;
         }
         return prev[K];
+
         //TC:O(N*Sum)
         //SC:O(sum)
     }
@@ -62,11 +64,12 @@ public class DP17CountSubsetsWithSumK {
 
         for(int i=0;i<n;i++)
             dp1[i][0]=1;
+
         if(nums[0]<=K)
            dp1[0][nums[0]]=1;
 
         for(int i=1;i<n;i++){
-            for(int sum=1;sum<=K;sum++){
+            for(int sum=1;sum<=K;sum++){ // here it is starting from 1 because we have already set for sum=0 above
                 int np=dp1[i-1][sum];
                 int p=0;
                 if(nums[i]<=sum)
