@@ -39,7 +39,9 @@ public class DP17CountSubsetsWithSumKWithZero {
         int[] prev=new int[k+1];
         if(num[0]==0)
             prev[0]=2;
-        else prev[0]=1;
+        else
+            prev[0]=1;
+
         if(num[0]!=0 && num[0]<=k)
             prev[num[0]]=1;
 
@@ -71,7 +73,8 @@ public class DP17CountSubsetsWithSumKWithZero {
 
         if(num[0]==0)
             dp[0][0]=2;
-        else dp[0][0]=1;
+        else
+            dp[0][0]=1;
         if(num[0]!=0 && num[0]<=k)
             dp[0][num[0]]=1;
 

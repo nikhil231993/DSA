@@ -22,7 +22,7 @@ public class DP18CountPartitionsWithGivenDifference {
         //s1-s2=d
         //totalsum=s1+s2;
         //totalsum-s2-s2=d
-        //s2=(totalsum-d)/2
+        //s2=(totalsum-d)  //10:32
 
         //edge case
         //totalsum-d cannot go less than as all numbers are positive

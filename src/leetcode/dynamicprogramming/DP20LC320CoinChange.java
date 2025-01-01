@@ -62,7 +62,7 @@ public class DP20LC320CoinChange {
             if(t%coins[0]==0)
                 dp1[0][t]=t/coins[0];
             else
-                dp1[0][t]=(int)(1e9);
+                dp1[0][t]=(int)(1e9); // check this condition
 
         for(int i=1;i<n;i++){
             for(int target=0;target<=amount;target++){
