@@ -5,9 +5,10 @@ import java.util.Arrays;
 public class DP23UnBoundedKnapsack {
 
     public static void main(String[] args) {
-        int wt[] =new int[] {2,4,6};
-        int val[] =new int[] {5,11 ,13};
-        int W=10;
+
+        int wt[] =new int[] {1, 3, 4, 5};
+        int val[] =new int[] {6, 1, 7, 7};
+        int W=8 ;
 
         //Recursion
         int n=wt.length;
@@ -28,12 +29,13 @@ public class DP23UnBoundedKnapsack {
     }
 
     private static int space(int n, int w, int[] wt, int[] val) {
+
         int[] prev=new int[w+1];
-        int[] curr=new int[w+1];
         for(int i=0;i<=w;i++)
             prev[i]=((int)i/wt[0])*val[0];
 
         for(int i=1;i<n;i++){
+            int[] curr=new int[w+1];
             for(int tar=0;tar<=w;tar++){
                 int notPick=0+prev[tar];
 
@@ -68,6 +70,7 @@ public class DP23UnBoundedKnapsack {
     }
 
     private static int memoization(int i, int w, int[] wt, int[] val, int[][] dp) {
+
         if(i==0){
             return ((w/wt[i])*val[i]);
         }
@@ -77,7 +80,7 @@ public class DP23UnBoundedKnapsack {
 
         int notPick=0+recursion(i-1,w,wt,val);
 
-        int pick=0;
+        int pick=-(int)(1e9);
         if(wt[i]<=w)
             pick=val[i]+recursion(i,w-wt[i],wt,val);
 
@@ -95,13 +98,13 @@ public class DP23UnBoundedKnapsack {
 
         int notPick=0+recursion(i-1,w,wt,val);
 
-        int pick=0;
+        int pick=-(int)(1e9);
         if(wt[i]<=w)
             pick=val[i]+recursion(i,w-wt[i],wt,val);
 
         return Math.max(notPick,pick);
 
-        //TC:>>O(2 raise to N) or exponential
-        //SC:>>o(N) recursion stack or O(weight)
+        //TC:O(2 raise to N) or exponential
+        //SC:O(N) recursion stack or O(weight)
     }
 }
