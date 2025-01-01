@@ -7,14 +7,12 @@ import java.util.Arrays;
 public class DP20LC320CoinChange {
 
     public static void main(String[] args) {
+
        int[] coins =new int[] {1,2,5};
        int amount = 11;
 
        //Recursion
         System.out.println(coinChange(coins,amount));
-
-        //TC:>>O(2 raise N) or exponential
-        //SC:>>O(N) .i.e O(target)
 
         //Memoization
         int n= coins.length;
@@ -34,8 +32,8 @@ public class DP20LC320CoinChange {
     }
 
     private static int space(int[] coins, int amount, int n) {
+
         int[] prev=new int[amount+1];
-        int[] curr=new int[amount+1];
         for(int t=0;t<=amount;t++)
             if(t%coins[0]==0)
                 prev[t]=t/coins[0];
@@ -43,8 +41,9 @@ public class DP20LC320CoinChange {
                 prev[t]=(int)(1e9);
 
         for(int i=1;i<n;i++){
-            for(int target=0;target<=amount;target++){
+            int[] curr=new int[amount+1];
 
+            for(int target=0;target<=amount;target++){
                 int np=0+prev[ target];
                 int p=(int)1e9;
                 if(coins[i]<=target)
@@ -89,13 +88,13 @@ public class DP20LC320CoinChange {
         if(dp[index][amount]!=-1)
             return dp[index][amount];
 
-
         int np=0+recursion(index-1, coins, amount);
         int p=(int)1e9;
         if(coins[index]<=amount)
             p=1+recursion(index, coins, amount-coins[index]);
 
         return dp[index][amount]=Math.min(np, p);
+
         //TC:O(N*amount)
         //SC:O(n*amount)+O(N) recursion
     }
@@ -126,12 +125,14 @@ public class DP20LC320CoinChange {
             return (int)1e9;
         }
 
-
         int np=0+recursion(index-1, coins, amount);
         int p=(int)1e9;
         if(coins[index]<=amount)
             p=1+recursion(index, coins, amount-coins[index]);
 
         return Math.min(np, p);
+
+        //TC:>>O(2 raise N) or exponential
+        //SC:>>O(N) .i.e O(target)
     }
 }

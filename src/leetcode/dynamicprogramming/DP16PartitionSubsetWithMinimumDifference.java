@@ -34,7 +34,7 @@ public class DP16PartitionSubsetWithMinimumDifference {
             dp[0][arr[0]]=true;
 
         for(int i=1;i<n;i++){
-            for(int target=1;target<=K;target++){
+            for(int target=1;target<=K;target++){ // we can use target =0 as well
                 boolean notpick=dp[i-1][target];
                 boolean pick=false;
                 if(arr[i]<=target)

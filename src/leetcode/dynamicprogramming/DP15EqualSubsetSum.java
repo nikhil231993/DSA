@@ -47,7 +47,7 @@ public class DP15EqualSubsetSum { // watch video DP 16 at 14:00
         for(int i=1;i<n;i++){
             boolean[] curr=new boolean[k+1];
             curr[0]=true;
-            for(int target=1; target<=k; target++){
+            for(int target=1; target<=k; target++){// we can use target equal to 0 as well
                 boolean notpick=prev[target];
                 boolean pick=false;
                 if(arr[i]<=target)
@@ -63,11 +63,12 @@ public class DP15EqualSubsetSum { // watch video DP 16 at 14:00
 
         for(int i=0;i<n;i++)
             dp[i][0]=true;
+
         if(arr[0]<=k)
             dp[0][arr[0]]=true;
 
         for(int i=1;i<n;i++){
-            for(int target=1; target<=k; target++){
+            for(int target=1; target<=k; target++){// we can use target equal to 0 as well
                 boolean notpick=dp[i-1][target];
                 boolean pick=false;
                 if(arr[i]<=target)
@@ -94,6 +95,7 @@ public class DP15EqualSubsetSum { // watch video DP 16 at 14:00
             pick=memoization(n-1,target-arr[n],arr,dp);
         dp[n][target]=notpick|| pick?1:0;
         return notpick || pick;
+
         //TC:O(N*target)
         //SC:o(N*target) dp array+O(N) stack
     }

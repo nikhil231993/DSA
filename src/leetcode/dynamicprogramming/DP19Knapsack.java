@@ -4,7 +4,8 @@ import java.util.Arrays;
 
 public class DP19Knapsack {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) { // watch 11:03
+
         int wt[] =new int[] {1,2,4,5};
         int val[] =new int[] {5,4,8,6};
         int W=6;
@@ -19,7 +20,6 @@ public class DP19Knapsack {
             Arrays.fill(r,-1);
         System.out.println(memoization(n-1,W,wt,val,dp));
 
-
         //Tabulation
         int[][] dp1=new int[n][W+1];
         System.out.println(tabulation(n,W,wt,val,dp1));
@@ -28,60 +28,57 @@ public class DP19Knapsack {
         System.out.println(space(n,W,wt,val));
     }
 
-    private static int space(int n, int W, int[] wt, int[] val) {
+    private static int space(int n, int wt, int[] weight, int[] value) {
 
-        int[] prev=new int[W+1];
-        int[] curr=new int[W+1];
-        for(int i=wt[0];i<=W;i++)
-            prev[i]=val[0];
-
-        //Above is base case as we have to have minimum first no to select it
+        int[] prev=new int[wt+1];
+        for(int w=weight[0];w<=wt;w++){
+            if(weight[0]<=w)
+                prev[w]=value[0];
+        }
 
         for(int i=1;i<n;i++){
-            for(int w=0;w<=W;w++){
-                int notPick=0+prev[w];
-
+            int[] curr=new int[wt+1];
+            for(int w=0;w<=wt;w++){
+                int notpick=0+prev[w];
                 int pick=-(int)(1e9);
-                if(wt[i]<=w)
-                    pick=val[i]+prev[w-wt[i]];
-
-                curr[w]= Math.max(notPick,pick);
+                if(weight[i]<=w){
+                    pick=value[i]+prev[w-weight[i]];
+                }
+                curr[w]=Math.max(notpick, pick);
             }
             prev=curr;
         }
-        return prev[W];
+        return prev[wt];
+
         //TC:O(N*W)
         //SC:O(W)
-
     }
 
-    private static int tabulation(int n, int W, int[] wt, int[] val, int[][] dp1) {
+    private static int tabulation(int n, int wt, int[] weight, int[] value, int[][] dp) {
 
-        for(int i=0;i<=W;i++){
-            if(i>=wt[0])
-                dp1[0][i]=val[0];
+        for(int w=weight[0];w<=wt;w++){
+            if(weight[0]<=w)
+                dp[0][w]=value[0];
         }
-
-
-        //Above is base case as we have to have minimum first no to select it
 
         for(int i=1;i<n;i++){
-            for(int w=0;w<=W;w++){
-                int notPick=0+dp1[i-1][w];
-
+            for(int w=0;w<=wt;w++){
+                int notpick=0+dp[i-1][w];
                 int pick=-(int)(1e9);
-                if(wt[i]<=w)
-                    pick=val[i]+dp1[i-1][w-wt[i]];
-
-                dp1[i][w]= Math.max(notPick,pick);
+                if(weight[i]<=w){
+                    pick=value[i]+dp[i-1][w-weight[i]];
+                }
+                dp[i][w]=Math.max(notpick, pick);
             }
         }
-        return dp1[n-1][W];
+        return dp[n-1][wt];
+
         //TC:O(N*W)
         //SC:O(n*w) dp array
     }
 
     private static int memoization(int i, int w, int[] wt, int[] val, int[][] dp) {
+
         if(i==0){
             if(wt[i]<=w)
                 return val[i];
@@ -100,7 +97,7 @@ public class DP19Knapsack {
         return dp[i][w]= Math.max(notPick,pick);
 
         //TC:O(N*W)
-        //SC:o(N) recursion stack +O(n*w) dp array
+        //SC:O(N) recursion stack + O(n*w) dp array
     }
 
     private static int recursion(int i, int w, int[] wt, int[] val) {
@@ -120,6 +117,6 @@ public class DP19Knapsack {
         return Math.max(notPick,pick);
 
         //TC:O(2 raise to N)
-        //SC:o(N) recursion stack
+        //SC:O(N) recursion stack
     }
 }
