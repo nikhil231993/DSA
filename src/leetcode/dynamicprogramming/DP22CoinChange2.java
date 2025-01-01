@@ -5,8 +5,9 @@ import java.util.Arrays;
 public class DP22CoinChange2 {
 
     public static void main(String[] args) {
-        int[] coins =new int[] {1,2,3};
-        int amount = 4;
+
+        int[] coins =new int[] {1,2,5};
+        int amount = 5;
 
         //Recursion
         System.out.println(coinChange(coins,amount));
@@ -20,24 +21,22 @@ public class DP22CoinChange2 {
 
         //Tabulation
         int[][] dp1=new int[n][amount+1];
-        for(int[] r:dp1)
-            Arrays.fill(r,0);
         System.out.println(tabulation(coins,amount,dp1,n));
 
         //space
         System.out.println(space(coins,amount,n));
-
     }
 
     private static int space(int[] coins, int amount, int n) {
+
         int[] prev=new int[amount+1];
-        int[] curr=new int[amount+1];
         for(int t=0;t<=amount;t++){
             if(t%coins[0]==0)
                 prev[t]=1;
         }
 
         for(int i=1;i<n;i++){
+            int[] curr=new int[amount+1];
             for(int target=0;target<=amount;target++){
 
                 int np=prev[ target];
@@ -50,6 +49,7 @@ public class DP22CoinChange2 {
             prev=curr;
         }
         return prev[amount];
+
         //TC:O(N*amount)
         //SC:O(amount)
     }
@@ -73,6 +73,7 @@ public class DP22CoinChange2 {
             }
         }
         return dp1[n-1][amount];
+
         //TC:O(N*amount)
         //SC:O(n*amount)
     }
@@ -92,6 +93,7 @@ public class DP22CoinChange2 {
             p=recursion(index, coins, amount-coins[index]);
 
         return dp[index][amount]=np+ p;
+
         //TC:O(N*amount)
         //SC:O(n*amount)+O(N) recursion
     }
@@ -100,7 +102,6 @@ public class DP22CoinChange2 {
 
         int n=coins.length;
         return memoization(n-1,coins, amount,dp);
-
     }
 
     public static int coinChange(int[] coins, int amount) {
