@@ -1,8 +1,9 @@
 package leetcode.dynamicprogramming;
 
-public class DP16APartitionSubsetWithMinimumDifference {
+public class DP16PartitionSubsetWithMinimumDifference {
 
     public static void main(String[] args) {
+
         int[] arr=new int[]{2,3,7};
         int n= arr.length;
         int totalSum=0;

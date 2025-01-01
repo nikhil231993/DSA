@@ -1,9 +1,8 @@
 package leetcode.dynamicprogramming;
 
 import java.util.Arrays;
-import java.util.SortedMap;
 
-public class DP15EqualSubsetSum {
+public class DP15EqualSubsetSum { // watch video DP 16 at 14:00
 
     public static void main(String[] args) {
 
@@ -44,6 +43,7 @@ public class DP15EqualSubsetSum {
         prev[0]=true;
         if(arr[0]<=k)
             prev[arr[0]]=true;
+
         for(int i=1;i<n;i++){
             boolean[] curr=new boolean[k+1];
             curr[0]=true;
@@ -65,6 +65,7 @@ public class DP15EqualSubsetSum {
             dp[i][0]=true;
         if(arr[0]<=k)
             dp[0][arr[0]]=true;
+
         for(int i=1;i<n;i++){
             for(int target=1; target<=k; target++){
                 boolean notpick=dp[i-1][target];

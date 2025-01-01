@@ -4,14 +4,18 @@ import java.util.Arrays;
 
 public class DP17CountSubsetsWithSumK {
 
+    //Two Solutions for number having 0
+    //Solution 1:
     //if numbers range from 0 to n instead of 1 to n then find 2 raise to n
     // where n is the no of zeroes an multiply the result we have solved it in next
+    //Solution 2:
+    // we add conditions which is done in next DP17
 
     public static void main(String[] args) {
 
-        int[] nums=new int[]{1,2,3,3};
+        int[] nums=new int[]{1,4,4,5};
         int n=nums.length;
-        int sum=3;
+        int sum=1;
 
         //Recursion
         System.out.println(recursion(nums,n-1,sum));
@@ -33,6 +37,7 @@ public class DP17CountSubsetsWithSumK {
     }
 
     private static int space(int[] nums, int n, int K) {
+
         int[] prev=new int[K+1];
         int[] curr=new int[K+1];
            curr[0]=prev[0]=1;
@@ -70,6 +75,7 @@ public class DP17CountSubsetsWithSumK {
             }
         }
         return dp1[n-1][K];
+
         //TC:O(N*Sum)
         //SC:O(N*sum) dp array
     }
@@ -78,11 +84,8 @@ public class DP17CountSubsetsWithSumK {
 
         if(sum==0)
             return 1;
-        if(i==0){
-            if(nums[i]==sum)
-                return 1;
-            return 0;
-        }
+        if(i==0)
+            return nums[0]==sum?1:0;
 
         if(dp[i][sum]!=-1)
             return dp[i][sum];
@@ -91,9 +94,10 @@ public class DP17CountSubsetsWithSumK {
         int p=0;
         if(nums[i]<=sum)
             p=memoization(nums,i-1,sum-nums[i],dp);
-        return dp[i][sum]=np+p;
+        return dp[i][sum]=((np+p)%(int)(1e9+7));
+
         //TC:O(N*Sum)
-        //SC:O(N*sum) dp array +O(N)stack
+        //SC:O(N*sum) dp array + O(N)stack
     }
 
     private static int recursion(int[] nums, int i,int sum) {
@@ -112,7 +116,7 @@ public class DP17CountSubsetsWithSumK {
             p=recursion(nums,i-1,sum-nums[i]);
         return np+p;
 
-        //TC:o(2 raise to n)
-        //Sc:o(n) recursion stack
+        //TC:O(2 raise to n)
+        //Sc:O(n) recursion stack
     }
 }
