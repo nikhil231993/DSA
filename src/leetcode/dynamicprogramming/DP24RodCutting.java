@@ -1,11 +1,11 @@
 package leetcode.dynamicprogramming;
 
-import javax.sound.midi.Soundbank;
 import java.util.Arrays;
 
 public class DP24RodCutting {
 
     public static void main(String[] args) {
+
         int price[] = {1,5,8,9,10,17,17,20};
 
         int n = 8;
@@ -25,18 +25,18 @@ public class DP24RodCutting {
             Arrays.fill(r,0);
         System.out.println(tabulation(n,price,n,dp1));
 
+        //Space
         System.out.println(space(n,price,n));
-
     }
 
     private static int space(int n, int[] price, int N) {
-        int[] prev=new int[n+1];
-        int[] curr=new int[n+1];
 
+        int[] prev=new int[n+1];
         for(int rl=0;rl<=N;rl++)
            prev[rl]=rl*price[0];
 
         for(int i=1;i<n;i++){
+            int[] curr=new int[n+1];
             for(int tar=0;tar<=N;tar++){
                 int np=0+prev[tar];
                 int p=-(int)(1e9);
@@ -48,24 +48,26 @@ public class DP24RodCutting {
             prev=curr;
         }
         return prev[N];
+
         //TC:O(N*m)
         //SC:O(N)dp i.e price N
     }
 
     private static int tabulation(int n, int[] price, int N, int[][] dp1) {
-    for(int rl=0;rl<=N;rl++)
-        dp1[0][rl]=rl*price[0];
 
-    for(int i=1;i<n;i++){
-        for(int tar=0;tar<=N;tar++){
-            int np=0+dp1[i-1][tar];
-            int p=-(int)(1e9);
-            int rodLength=i+1;
-            if(rodLength<=tar)
-                p=price[i]+dp1[i][tar-rodLength];
-             dp1[i][tar]=Math.max(p,np);
+        for(int rl=0;rl<=N;rl++)
+            dp1[0][rl]=rl*price[0];
+
+        for(int i=1;i<n;i++){
+            for(int tar=0;tar<=N;tar++){
+                int np=0+dp1[i-1][tar];
+                int p=-(int)(1e9);
+                int rodLength=i+1;
+                if(rodLength<=tar)
+                    p=price[i]+dp1[i][tar-rodLength];
+                 dp1[i][tar]=Math.max(p,np);
+            }
         }
-    }
         return dp1[n-1][N];
         //TC:O(N*m)
         //SC:O(N*m)dp array i.e price N
