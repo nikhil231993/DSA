@@ -5,13 +5,14 @@ import java.util.Arrays;
 public class DP30LC538ConvertOneStringToAnotherMInInsertAndDelete {
 
     public static void main(String[] args) {
+
         String word1 = "abcd", word2 = "anc";
 
         int index1=word1.length();
         int index2=word2.length();
 
         //Recursion
-        System.out.println(index1+index2-2*recursion(word1,word2,index1,index2));
+        System.out.println(index1+index2-2*recursion(word1, word2, index1, index2));
         //index1+index2-2*lcs(len)
 
         //Memoization
@@ -22,19 +23,20 @@ public class DP30LC538ConvertOneStringToAnotherMInInsertAndDelete {
 
         //Tabulation
         int[][] dp1=new int[index1+1][index2+1];
-        for(int[] r:dp1)
-            Arrays.fill(r,-1);
         System.out.println(index1+index2-2*tabulation(word1,word2,index1,index2,dp1));
 
         //Space
         System.out.println(index1+index2-2*space(word1,word2,index1,index2));
+
         //Solution
-        //We have to find longest common subsequence and then apply
+        //We have to find the length of longest common subsequence and then apply n+m-2(len)
     }
 
     private static int space(String s1, String s2, int index1, int index2) {
 
         int[] prev=new int[index2+1];
+        for(int j=0;j<=index2;j++)
+            prev[j]=0;
 
         for(int ind1=1;ind1<=index1;ind1++){
             int[] curr=new int[index2+1];
@@ -50,6 +52,7 @@ public class DP30LC538ConvertOneStringToAnotherMInInsertAndDelete {
     }
 
     private static int tabulation(String s1, String s2, int index1, int index2, int[][] dp1) {
+
       for(int i=0;i<=index1;i++)
           dp1[i][0]=0;
         for(int j=0;j<=index2;j++)
@@ -67,20 +70,23 @@ public class DP30LC538ConvertOneStringToAnotherMInInsertAndDelete {
     }
 
     private static int memoization(String s1, String s2, int index1, int index2, int[][] dp) {
-        if(index1==0 || index2==0)
+
+        if(index1<0 || index2<0)
             return 0;
         if(dp[index1][index2]!=-1)
             return dp[index1][index2];
-        if(s1.charAt(index1-1)==s2.charAt(index2-1))
+        if(s1.charAt(index1)==s2.charAt(index2))
             return dp[index1][index2]=1+recursion(s1,s2,index1-1,index2-1);
         return dp[index1][index2]= Math.max(recursion(s1,s2,index1-1,index2),recursion(s1,s2,index1,index2-1));
     }
 
     private static int recursion(String s1, String s2, int index1, int index2) {
-        if(index1==0 || index2==0)
+
+        if(index1<0 || index2<0)
             return 0;
-        if(s1.charAt(index1-1)==s2.charAt(index2-1))
+        if(s1.charAt(index1)==s2.charAt(index2))
             return 1+recursion(s1,s2,index1-1,index2-1);
+
         return Math.max(recursion(s1,s2,index1-1,index2),recursion(s1,s2,index1,index2-1));
     }
 }

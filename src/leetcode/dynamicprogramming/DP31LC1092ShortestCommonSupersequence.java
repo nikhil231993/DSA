@@ -31,7 +31,6 @@ public class DP31LC1092ShortestCommonSupersequence {
                 sb.append(str2.charAt(j-1));
                 j--;
             }
-
         }
 
         while(i>0){
@@ -45,7 +44,7 @@ public class DP31LC1092ShortestCommonSupersequence {
         System.out.println(sb.reverse().toString());
 
         //we have to find the length of both string and then reduce common string
-        //i.e. n+m-len(lcs)
+        //i.e. n+m-len(lcs) 8:28 video
     }
 
     private static int tabulation(String str1, String str2, int index1, int index2, int[][] dp) {

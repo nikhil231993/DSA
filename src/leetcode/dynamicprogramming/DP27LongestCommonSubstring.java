@@ -1,7 +1,5 @@
 package leetcode.dynamicprogramming;
 
-import java.util.Arrays;
-
 public class DP27LongestCommonSubstring {
 
     public static void main(String[] args) {
@@ -14,8 +12,6 @@ public class DP27LongestCommonSubstring {
 
         //Tabulation
         int[][] dp=new int[index1+1][index2+1];
-        for(int[] r:dp)
-        Arrays.fill(r,-1);
 
         //If we go with recursion we would need one more state and will be difficult that is why we use tabulation
         //tabulation

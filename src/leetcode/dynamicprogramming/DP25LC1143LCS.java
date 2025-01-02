@@ -2,7 +2,7 @@ package leetcode.dynamicprogramming;
 
 import java.util.Arrays;
 
-public class DP25LC1143LCS {
+public class DP25LC1143LCS { //not matching split calls 24:06
 
     public static void main(String[] args) {
 
