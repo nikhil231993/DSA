@@ -2,7 +2,7 @@ package leetcode.dynamicprogramming;
 
 import java.util.Arrays;
 
-public class DP30LC538ConvertOneStringToAnotherMInInsertAndDelete {
+public class DP30LC583ConvertOneStringToAnotherMinInsertAndDelete {
 
     public static void main(String[] args) {
 
@@ -12,14 +12,14 @@ public class DP30LC538ConvertOneStringToAnotherMInInsertAndDelete {
         int index2=word2.length();
 
         //Recursion
-        System.out.println(index1+index2-2*recursion(word1, word2, index1, index2));
+        System.out.println(index1+index2-2*recursion(word1, word2, index1-1, index2-1));
         //index1+index2-2*lcs(len)
 
         //Memoization
         int[][] dp=new int[index1+1][index2+1];
         for(int[] r:dp)
             Arrays.fill(r,-1);
-        System.out.println(index1+index2-2*memoization(word1,word2,index1,index2,dp));
+        System.out.println(index1+index2-2*memoization(word1,word2,index1-1,index2-1,dp));
 
         //Tabulation
         int[][] dp1=new int[index1+1][index2+1];
@@ -53,7 +53,7 @@ public class DP30LC538ConvertOneStringToAnotherMInInsertAndDelete {
 
     private static int tabulation(String s1, String s2, int index1, int index2, int[][] dp1) {
 
-      for(int i=0;i<=index1;i++)
+        for(int i=0;i<=index1;i++)
           dp1[i][0]=0;
         for(int j=0;j<=index2;j++)
             dp1[0][j]=0;
@@ -87,6 +87,6 @@ public class DP30LC538ConvertOneStringToAnotherMInInsertAndDelete {
         if(s1.charAt(index1)==s2.charAt(index2))
             return 1+recursion(s1,s2,index1-1,index2-1);
 
-        return Math.max(recursion(s1,s2,index1-1,index2),recursion(s1,s2,index1,index2-1));
+        return Math.max(recursion(s1,s2,index1-1,index2), recursion(s1,s2,index1,index2-1));
     }
 }

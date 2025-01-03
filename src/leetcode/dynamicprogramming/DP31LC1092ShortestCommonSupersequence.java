@@ -5,6 +5,7 @@ import java.util.Arrays;
 public class DP31LC1092ShortestCommonSupersequence {
 
     public static void main(String[] args) {
+
         String str1 = "abac", str2 = "cab";
         int index1=str1.length();
         int index2=str2.length();

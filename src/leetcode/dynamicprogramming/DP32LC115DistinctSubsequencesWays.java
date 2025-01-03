@@ -2,12 +2,12 @@ package leetcode.dynamicprogramming;
 
 import java.util.Arrays;
 
-public class DP32LC115DistinctSubsequences {
+public class DP32LC115DistinctSubsequencesWays {
 
     public static void main(String[] args) {
 
         //String s = "rabbbit", t = "";
-        String s="banana",t="ban";
+        String s="ba",t="b";
 
         int index1=s.length();
         int index2=t.length();
@@ -56,6 +56,7 @@ public class DP32LC115DistinctSubsequences {
 
         for(int i=0;i<=index1;i++)
             dp1[i][0]=1;
+        // This is because for "rabbit" to "" where "" is a subsequence if we use "r", "ra" or any subsequence we can form ""
 
         //Below we start from 1 because for all j=0 it should be 1. We can even omit it as by default it is 0 same LCS where we dont have to initialize anything
         for(int j=1;j<=index2;j++)
@@ -63,6 +64,7 @@ public class DP32LC115DistinctSubsequences {
 
         for(int ind1=1;ind1<=index1;ind1++){
             for(int ind2=1;ind2<=index2;ind2++){
+
                 if(s.charAt(ind1-1)==t.charAt(ind2-1)){
                     dp1[ind1][ind2]=dp1[ind1-1][ind2-1]+dp1[ind1-1][ind2];
                 }else{
@@ -77,8 +79,10 @@ public class DP32LC115DistinctSubsequences {
     }
 
     private static int memoization(String s, String t, int index1, int index2,int[][] dp) {
-        if(index2==0)
+
+        if(index2==0) // it is index2 < 0 and then shifted by 1
             return 1;
+
         if(index1==0)
             return 0;
 
@@ -86,7 +90,7 @@ public class DP32LC115DistinctSubsequences {
             return dp[index1][index2];
 
         if(s.charAt(index1-1)==t.charAt(index2-1))
-            return dp[index1][index2]=memoization(s,t,index1-1,index2-1,dp)+ memoization(s,t,index1-1,index2,dp);
+            return dp[index1][index2]=memoization(s,t,index1-1,index2-1,dp) + memoization(s,t,index1-1,index2,dp);
         return dp[index1][index2]=memoization(s,t,index1-1,index2,dp);
 
         //TC:O(index1 * index2)
@@ -97,6 +101,7 @@ public class DP32LC115DistinctSubsequences {
 
         if(index2==0) // we ideally use <0 but similar to LCS we increase the index by 1
             return 1;
+
         if(index1==0)
             return 0;
 
