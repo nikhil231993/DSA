@@ -21,7 +21,7 @@ public class DP25LC1143LCS { //not matching split calls 24:06
         System.out.println(lcsMemoization(text1, text2,index1-1,index2-1, dp));
 
         //Tabulation
-        //we can do tabulation without shifting of index but it will be more tricky
+        //we can do tabulation without shifting of index, but it will be more tricky
         int[][] dp1=new int[index1+1][index2+1];
         System.out.println(tabulation(text1, text2, index1, index2, dp1));
 
@@ -64,10 +64,12 @@ public class DP25LC1143LCS { //not matching split calls 24:06
             for(int id2=1;id2<=index2;id2++){
                 if(text1.charAt(id1-1)==text2.charAt(id2-1))
                      dp1[id1][id2]=1+dp1[id1-1][id2-1];
-                else dp1[id1][id2]=Math.max(dp1[id1-1][id2],dp1[id1][id2-1]);
+                else
+                    dp1[id1][id2]=Math.max(dp1[id1-1][id2],dp1[id1][id2-1]);
             }
         }
         return dp1[index1][index2];
+
         //TC:O(index1*index2)
         //SC:O(index2*index2) dp array
     }

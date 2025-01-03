@@ -106,7 +106,7 @@ public class DP32LC115DistinctSubsequencesWays {
             return 0;
 
         if(s.charAt(index1-1)==t.charAt(index2-1))
-            return recursion(s,t,index1-1,index2-1)+ recursion(s,t,index1-1,index2);
+            return recursion(s,t,index1-1,index2-1) + recursion(s,t,index1-1,index2);
         return recursion(s,t,index1-1,index2);
 
         //TC:O(2 raise to index1 * 2 raise to index2)

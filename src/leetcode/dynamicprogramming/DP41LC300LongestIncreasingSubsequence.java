@@ -5,8 +5,13 @@ import java.util.Arrays;
 public class DP41LC300LongestIncreasingSubsequence {
 
     public static void main(String[] args) {
+
+        //f(3,0) Length of LIS starting from 3rd index , whose previousIndex is 0
+
         int[] nums =new int[] {10,9,2,5,3,7,101,18};
+        nums=new int[]{5,4,11,1,16,8};
         int n=nums.length;
+
         //Recursion
         System.out.println(recursion(n,nums,0,-1));
 
@@ -16,12 +21,10 @@ public class DP41LC300LongestIncreasingSubsequence {
         int[][] dp=new int[n][n+1];
         for(int[] r: dp)
             Arrays.fill(r,-1);
-        System.out.println(memoization(n,nums,0,-1,dp));
+        System.out.println(memoization(n, nums, 0,-1, dp));
 
         //Tabulation
         int[][] dp1=new int[n+1][n+1];
-        for(int[] r: dp1)
-            Arrays.fill(r,0);
         System.out.println(tabulation(n,nums,0,-1,dp1));
 
         //Space
@@ -47,14 +50,17 @@ public class DP41LC300LongestIncreasingSubsequence {
             }
         }
         return max;
+
         //TC:O(N square)
         //SC:O(N)
         //Above solution is used to trace back the LIS
     }
 
     private static int space(int n, int[] nums, int index, int prevIndex, int[][] dp1) {
+
         int[] ahead=new int[n+1];
         //Above we don't have to write as we have already set everything to 0
+
         for(int ind=n-1;ind>=0;ind--){
             int[] curr=new int[n+1];
             for(int prevI=ind-1;prevI>=-1;prevI--){
@@ -65,12 +71,13 @@ public class DP41LC300LongestIncreasingSubsequence {
                     p=1+ahead[ind+1];
                 //For second param in dp will have coordinate shift
                curr[prevI+1]=Math.max(np,p);
-                //TC:O(N*N)
-                //SC:O(N*N) dp array
             }
             ahead=curr;
         }
         return ahead[prevIndex+1];
+
+        //TC:O(N*N)
+        //SC:O(N*N) dp array
     }
 
     private static int tabulation(int n, int[] nums, int index, int prevIndex, int[][] dp1) {
@@ -78,46 +85,56 @@ public class DP41LC300LongestIncreasingSubsequence {
         for(int j=0;j<=n;j++)
             dp1[n][j]=0;
         //Above we don't have to write as we have already set everything to 0
+
         for(int ind=n-1;ind>=0;ind--){
             for(int prevI=ind-1;prevI>=-1;prevI--){
+
                 int np=0+dp1[ind+1][prevI+1];
                 //For second param in dp will have coordinate shift
+
                 int p=0;
                 if(prevI==-1 || nums[ind]>nums[prevI])
                     p=1+dp1[ind+1][ind+1];
                 //For second param in dp will have coordinate shift
+
                 dp1[ind][prevI+1]=Math.max(np,p);
-                //TC:O(N*N)
-                //SC:O(N*N) dp array
             }
         }
         return dp1[index][prevIndex+1];
+
+        //TC:O(N*N)
+        //SC:O(N*N) dp array
     }
 
     private static int memoization(int n, int[] nums, int index, int prevIndex, int[][] dp) {
+
         if(index==n)
             return 0;
+
         if(dp[index][prevIndex+1]!=-1)
             return dp[index][prevIndex+1];
 
         int np=0+memoization(n,nums,index+1,prevIndex,dp);
         int p=0;
         if(prevIndex==-1 || nums[index]>nums[prevIndex])
-            p=1+memoization(n,nums,index+1,index,dp);
+            p=1+memoization(n,nums,index+1, index,dp);
         return dp[index][prevIndex+1]=Math.max(np,p);
+
         //TC:O(N*N)
         //SC:O(N) recursion +O(N*N)
     }
 
     private static int recursion(int n, int[] nums, int index, int prevIndex) {
+
         if(index==n)
             return 0;
 
         int np=0+recursion(n,nums,index+1,prevIndex);//not pick so prevIndex remains same
         int p=0;
         if(prevIndex==-1 || nums[index]>nums[prevIndex])
-            p=1+recursion(n,nums,index+1,index);//pick so prevIndex becomes current index
+            p=1+recursion(n,nums,index+1,index);    //pick so prevIndex becomes current index
         return Math.max(np,p);
+
         //TC:O(2 raise to N)
         //SC:O(N)
     }

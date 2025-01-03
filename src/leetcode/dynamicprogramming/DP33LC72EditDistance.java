@@ -89,7 +89,7 @@ public class DP33LC72EditDistance {
 
     private static int recursion(String s1, String s2, int index1, int index2) {
 
-        if(index1==0) //it is index<0 then then shifted by 1 here and also in return statement
+        if(index1==0) //it is index<0 then shifted by 1 here and also in return statement it was index2+1
             return index2;
         if(index2==0)
             return index1;
