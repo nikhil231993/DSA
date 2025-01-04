@@ -8,6 +8,7 @@ import java.util.List;
 public class DP44LargestDivisibleSubset {
 
     public static void main(String[] args) {
+
         int[] nums =new int[] {1,2,3};
         int n=nums.length;
         Arrays.sort(nums);//Mandatory step
@@ -16,6 +17,7 @@ public class DP44LargestDivisibleSubset {
     }
 
     private static List<Integer> divisibleSubset(int[] nums, int n) {
+
         int[] hash=new int[n];
         for(int i=0;i<n;i++)
             hash[i]=i;
@@ -48,7 +50,7 @@ public class DP44LargestDivisibleSubset {
         Collections.reverse(result);
         return result;
 
-        //TC:O(nlogn)+O(n square)+O(n)tracking back
+        //TC:O(nlogn) for sorting + O(n square) + O(n)tracking back
         //SC:O(N)
     }
 }

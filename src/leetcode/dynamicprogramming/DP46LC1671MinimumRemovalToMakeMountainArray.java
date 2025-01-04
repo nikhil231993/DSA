@@ -2,15 +2,17 @@ package leetcode.dynamicprogramming;
 
 import java.util.Arrays;
 
-public class DP46LC1671 {
+public class DP46LC1671MinimumRemovalToMakeMountainArray {
+
     public static void main(String[] args) {
+
         int[] nums=new int[]{2,1,1,5,6,2,3,1};
         int n=nums.length;
-
         System.out.println(n-longestBitonic(nums, n));
     }
 
     private static int longestBitonic(int[] arr, int n) {
+
         int[] dp1=new int[n];
         Arrays.fill(dp1,1);
 
@@ -35,8 +37,7 @@ public class DP46LC1671 {
 
         int max=0;
         for(int i=0;i<n;i++){
-            //Below condition is added or else we might get only strictly increasing or strictly decreasing sequence
-            //which will not be mountain
+            //Additional conditions to check for largest mountain array-- make sure dp1&&dp2 are >1 in the max sum of dp1+dp2 ,this ensures there are atleast 2 elements in both inc and dec sequences
             if(dp1[i]>1 && dp2[i]>1)
                 max=Math.max(max,dp1[i]+dp2[i]-1);
         }

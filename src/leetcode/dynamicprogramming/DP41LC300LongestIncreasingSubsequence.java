@@ -40,13 +40,11 @@ public class DP41LC300LongestIncreasingSubsequence {
         Arrays.fill(dp,1);
         int max=0;
         for(int i=0;i<n;i++){
-            for(int j=0;j<i;j++){
-                if(nums[i]>nums[j]
-                        //&& dp[j]+1>dp[i] we can also do like this or using math.max as shown below
-                ){
-                    dp[i]=Math.max(dp[j]+1,dp[i]);
+            for(int j=0;j<i;j++) {
+                if (nums[i] > nums[j] && 1 + dp[j] > dp[i]) {
+                    dp[i] = 1 + dp[j];
+                    max = Math.max(max, dp[i]);
                 }
-                max=Math.max(max,dp[i]);
             }
         }
         return max;
@@ -87,7 +85,7 @@ public class DP41LC300LongestIncreasingSubsequence {
         //Above we don't have to write as we have already set everything to 0
 
         for(int ind=n-1;ind>=0;ind--){
-            for(int prevI=ind-1;prevI>=-1;prevI--){
+            for(int prevI=ind-1;prevI>=-1;prevI--){ //prevI should be before ind
 
                 int np=0+dp1[ind+1][prevI+1];
                 //For second param in dp will have coordinate shift

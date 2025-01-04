@@ -1,18 +1,21 @@
 package leetcode.dynamicprogramming;
 
-import java.sql.SQLOutput;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class DP42PrintLIS {
 
     public static void main(String[] args) {
+
         int[] nums =new int[] {10,9,2,5,3,6,7,101,18};
+        nums=new int[]{5,6,3,4,7,6};
         int n=nums.length;
 
-        print(nums,n);
+        System.out.println(print(nums,n));
     }
 
-    private static void print(int[] nums, int n) {
+    private static List<Integer> print(int[] nums, int n) {
 
         int[] dp=new int[n];
         Arrays.fill(dp,1);
@@ -24,11 +27,11 @@ public class DP42PrintLIS {
         int index=0;
         for(int i=0;i<n;i++){
             for(int j=0;j<i;j++){
-                if(nums[i]>nums[j]){
-                    dp[i]=Math.max(dp[i],1+dp[j]);
+                if(nums[i]>nums[j] && dp[i]<1+dp[j]){
+                    dp[i]=1+dp[j];
+                    hash[i]=j;
                 }
                 if(dp[i]>max){
-                    hash[i]=j;
                     index=i;
                     max=dp[i];
                 }
@@ -37,14 +40,16 @@ public class DP42PrintLIS {
         }
         System.out.println("Length is: "+max);
 
+        List<Integer> list=new ArrayList<>();
         int variable=index;
-        while(variable!=hash[variable]){
-            System.out.println(nums[variable]);
-            variable=hash[variable];
+        list.add(0,nums[variable]);
+        while(variable!=hash[variable]) {
+            variable = hash[variable];
+            list.add(0,nums[variable]);
         }
-        System.out.println(hash[variable]);
-    }
-    //TC:O(n square)
-    //SC:O(N)
+        return list;
 
+        //TC:O(n square)
+        //SC:O(N)
+    }
 }

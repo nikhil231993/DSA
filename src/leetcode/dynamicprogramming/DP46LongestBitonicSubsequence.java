@@ -2,9 +2,10 @@ package leetcode.dynamicprogramming;
 
 import java.util.Arrays;
 
-public class DP46Bitonic {
+public class DP46LongestBitonicSubsequence {
 
     public static void main(String[] args) {
+
         int[] arr=new int[]{1, 11, 2, 10, 4, 5, 2, 1};
         int n=arr.length;
 
@@ -12,6 +13,7 @@ public class DP46Bitonic {
     }
 
     private static int longestBitonic(int[] arr, int n) {
+
         int[] dp1=new int[n];
         Arrays.fill(dp1,1);
 

@@ -5,7 +5,8 @@ import java.util.Arrays;
 public class DP47LC673NoOfLIS {
 
     public static void main(String[] args) {
-        int[] nums=new int[]{1,5,4,3,2,6,7,2};
+
+        int[] nums=new int[]{1,3,5,4,7,6};
         int n=nums.length;
 
         System.out.println(noOfLIS(nums,n));
