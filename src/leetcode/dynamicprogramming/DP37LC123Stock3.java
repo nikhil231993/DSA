@@ -5,6 +5,7 @@ import java.util.Arrays;
 public class DP37LC123Stock3 {
 
     public static void main(String[] args) {
+        
         int[] prices =new int[] {3,3,5,0,0,3,1,4};
         int n=prices.length;
 
@@ -54,7 +55,8 @@ public class DP37LC123Stock3 {
             ahead=curr;
         }
         return ahead[1][2];
-        //TC:o(N*2*3)
+
+        //TC:O(N*2*3)
         //SC:O(2*3) constant space
     }
 
@@ -89,17 +91,22 @@ public class DP37LC123Stock3 {
             }
         }
         return dp1[0][1][2];
+
         //TC:o(N*2*3)
         //SC:O(N*2*3) dp array
     }
 
     private static int memoization(int[] prices, int n, int buy, int cap, int index, int[][][] dp) {
+
         if(cap==0)
             return 0;
+
         if(index==n)
             return 0;
+
         if(dp[index][buy][cap]!=-1)
             return dp[index][buy][cap];
+
         int profit=Integer.MIN_VALUE;
         if(buy==1){
             profit=Math.max(-prices[index]+recursion(prices,n,0,cap,index+1),
@@ -109,7 +116,8 @@ public class DP37LC123Stock3 {
                     0+recursion(prices,n,0,cap,index+1));
         }
         return dp[index][buy][cap]=profit;
-        //TC:o(N*2*3)
+
+        //TC:O(N*2*3)
         //SC:O(N) stack+ O(N*2*3) dp array
     }
 
@@ -128,7 +136,8 @@ public class DP37LC123Stock3 {
                     0+recursion(prices,n,0,cap,index+1));
         }
         return profit;
-        //TC:o(exponential)
+
+        //TC:O(exponential)
         //SC:O(N) stack
     }
 }

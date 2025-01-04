@@ -5,6 +5,7 @@ import java.util.Arrays;
 public class DP38LC188Stock4 {
 
     public static void main(String[] args) {
+
         int k = 2;
         int[] prices =new int[] {3,2,6,5,0,3};
         int n=prices.length;
@@ -30,10 +31,10 @@ public class DP38LC188Stock4 {
 
         //Space
         System.out.println(space(n,prices,k));
-
     }
 
     private static int space(int n, int[] prices, int cap) {
+
         int[][] ahead=new int[2][cap+1];
 
         //we can ignore above two base cases if we initialize dp array to 0
@@ -54,7 +55,8 @@ public class DP38LC188Stock4 {
             ahead=curr;
         }
         return ahead[1][cap];
-        //TC:o(N*2*k)
+
+        //TC:O(N*2*k)
         //SC:O(N*2*k) dp array
     }
 
@@ -90,7 +92,8 @@ public class DP38LC188Stock4 {
             }
         }
         return dp1[0][1][cap];
-        //TC:o(N*2*k)
+
+        //TC:O(N*2*k)
         //SC:O(N*2*k) dp array
     }
 
@@ -112,11 +115,13 @@ public class DP38LC188Stock4 {
                     0+recursion(n,prices,index+1,0,cap));
         }
         return dp[index][buy][cap]= profit;
+
         //TC:O(N*2*K)
-        // SC:O(N)+O(N*2*k) dp array
+        //SC:O(N)+O(N*2*k) dp array
     }
 
     private static int recursion(int n, int[] prices, int index, int buy, int cap) {
+
         if(cap==0)
             return 0;
         if(index==n)
@@ -130,8 +135,8 @@ public class DP38LC188Stock4 {
                     0+recursion(n,prices,index+1,0,cap));
         }
         return profit;
-        //TC:O(exponential)
-        // SC:O(N)
 
+        //TC:O(exponential)
+        //SC:O(N)
     }
 }

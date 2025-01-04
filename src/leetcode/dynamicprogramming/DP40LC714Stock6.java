@@ -3,7 +3,9 @@ package leetcode.dynamicprogramming;
 import java.util.Arrays;
 
 public class DP40LC714Stock6 {
+
     public static void main(String[] args) {
+
         int[] prices =new int[] {1,3,7,5,10,3};
         int fee=3;
 
@@ -51,7 +53,6 @@ public class DP40LC714Stock6 {
 
     private static int tabulation(int[] prices, int buy, int index, int[][] dp1,int n,int fee) {
 
-
         dp1[n][0]=0;
         dp1[n][1]=0;
 
@@ -70,6 +71,7 @@ public class DP40LC714Stock6 {
     }
 
     private static int memoization(int[] prices, int buy, int index, int[][] dp,int fee) {
+
         if(index==prices.length)
             return 0;
 
@@ -106,7 +108,7 @@ public class DP40LC714Stock6 {
         }
         return profit;
 
-        //buy ==1 means u can buy
+        //buy==1 means u can buy
         //TC:O(2 raise to N)
         //SC:O(N) recursion stack
     }

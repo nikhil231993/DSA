@@ -36,7 +36,6 @@ public class DP42PrintLIS {
                     max=dp[i];
                 }
             }
-
         }
         System.out.println("Length is: "+max);
 

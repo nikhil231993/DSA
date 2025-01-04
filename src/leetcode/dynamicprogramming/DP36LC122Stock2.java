@@ -5,7 +5,8 @@ import java.util.Arrays;
 public class DP36LC122Stock2 {
 
     public static void main(String[] args) {
-//        int[] prices =new int[] {7,1,5,3,6,4};
+
+//      int[] prices =new int[] {7,1,5,3,6,4};
         int[] prices =new int[] {1,3,2,8,4,9};
 
         //Recursion
@@ -52,9 +53,8 @@ public class DP36LC122Stock2 {
 
     private static int tabulation(int[] prices, int buy, int index, int[][] dp1,int n) {
 
-
-        dp1[n][0]=0;
-        dp1[n][1]=0;
+        for(int j=0;j<=buy;j++)
+            dp1[n][j]=0;
 
         for(int ind=n-1;ind>=0;ind--){
             for(int by=0;by<=1;by++){
@@ -71,6 +71,7 @@ public class DP36LC122Stock2 {
     }
 
     private static int memoization(int[] prices, int buy, int index, int[][] dp) {
+
         if(index==prices.length)
             return 0;
 

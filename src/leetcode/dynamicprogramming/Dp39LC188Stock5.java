@@ -4,7 +4,8 @@ import java.util.Arrays;
 
 public class Dp39LC188Stock5 {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) { // Video 1:13
+
         int[] prices =new int[] {1,2,3,0,2};
         int n=prices.length;
 
@@ -18,20 +19,15 @@ public class Dp39LC188Stock5 {
         System.out.println(memoization(n,prices,0,1,dp));
 
         //Tabulation
-        //Here we have n+1 because of sell case where we have index+1
-        // also here dp should be 0 else it will add negative value as well
+        //Here we have n+2 because of sell case where we have index+2
+        //also here dp should be 0 else it will add negative value as well
         int[][] dp1=new int[n+2][2];
-        for(int[] r:dp1)
-            Arrays.fill(r,0);
         System.out.println(tabulation(n,prices,0,1,dp1));
 
         //Space
         //System.out.println(space(n,prices,0,1));
-        //we cannot do space optimization as we would have to store/
-        //3 rows because of n+2
-
+        //we cannot do space optimization as we would have to store 3 rows ahead because of n+2
     }
-
 
     private static int tabulation(int n, int[] prices, int index, int buy, int[][] dp1) {
 
@@ -53,6 +49,7 @@ public class Dp39LC188Stock5 {
     }
 
     private static int memoization(int n, int[] prices, int index, int buy, int[][] dp) {
+
         if(index>=n)
             return 0;
 
