@@ -10,8 +10,7 @@ public class DP56LC221MaximalSquare {
         int colLen=matrix[0].length;
 
         int[][] m=new int[rowLen][colLen];
-        for(int i=0;i<rowLen;i++)
-        {
+        for(int i=0;i<rowLen;i++) {
             for(int j=0;j<colLen;j++){
                 if(matrix[i][j]=='0')
                     m[i][j]=0;
@@ -32,8 +31,10 @@ public class DP56LC221MaximalSquare {
         //Assign row  and col as the value itself as they themselves will be the ans
         for(int i=0;i<rowLen;i++)
             dp[i][0]=matrix[i][0];
+
         for(int j=0;j<colLen;j++)
             dp[0][j]=matrix[0][j];
+
         for(int i=1;i<rowLen;i++){
             for(int j=1;j<colLen;j++){
                 if(matrix[i][j]==0)

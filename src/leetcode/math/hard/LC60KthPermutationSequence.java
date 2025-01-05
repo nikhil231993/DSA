@@ -37,7 +37,7 @@ public class LC60KthPermutationSequence {
         }
         return ans;
 
-        //TC:O(n * n (where this n is for remove function) );
-        //SC:O(n)
+        //TC: O(n * n (where this n is for remove function));
+        //SC: O(n)
     }
 }

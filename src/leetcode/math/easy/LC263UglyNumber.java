@@ -23,5 +23,8 @@ public class LC263UglyNumber {
             else return false;
         }
         return true;
+
+        //TC:O(log n) as log N base 2+ log n base 3 + log n base 3= log N
+        //SC:O(log n)
     }
 }

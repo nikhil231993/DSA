@@ -6,6 +6,7 @@ import java.util.Stack;
 public class DP55LC85MaximumRectangleAreaWith1s {
 
     public static void main(String[] args) {
+
         char[][] matrix = new char[][]{{'1','0','1','0','0'},
                 {'1','0','1','1','1'},
                 {'1','1','1','1','1'},
@@ -25,7 +26,7 @@ public class DP55LC85MaximumRectangleAreaWith1s {
         }
         System.out.println("Max area is:" + max);
 
-        //TC:o(n * (m * time complexity of calculation code))
+        //TC:O(n * (m * time complexity of calculation code))
     }
 
     public static int largestRectangleArea(int[] arr) {

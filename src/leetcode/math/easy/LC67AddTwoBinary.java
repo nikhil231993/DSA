@@ -50,7 +50,7 @@ public class LC67AddTwoBinary {
 		return s;
 
 		//SC:O(n) for stack
-		//TC:O(2 *n )
+		//TC:O(2 *n)
 	}
 
 	public static String addBinaryWithoutStringBuilder(String a, String b) {

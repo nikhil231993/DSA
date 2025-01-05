@@ -15,7 +15,8 @@ public class LC9PalindromeNumber {
 
 	private static boolean isPalindromeUsingString(int x) {
 
-		if(x<0) return false;
+		if(x<0)
+			return false;
 		String str=String.valueOf(x);
 		int length=str.length();
 

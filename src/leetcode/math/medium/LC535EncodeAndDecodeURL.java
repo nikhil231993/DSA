@@ -7,6 +7,7 @@ public class LC535EncodeAndDecodeURL {
 	public static void main(String[] args) {
 
 		String longUrl = "https://leetcode.com/problems/design-tinyurl";
+
 		HashMap<String, String> urlMapping = new HashMap();
 		HashMap<String, String> code = new HashMap();
 		System.out.println(encode(longUrl, urlMapping, code));

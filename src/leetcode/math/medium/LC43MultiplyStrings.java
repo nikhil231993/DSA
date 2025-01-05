@@ -33,6 +33,7 @@ public class LC43MultiplyStrings {
 		while (j < result.length) {
 			sb.append(result[j++]);
 		}
+
 		return sb.toString();
 	}
 }

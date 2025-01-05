@@ -1,6 +1,7 @@
 package leetcode.math.medium;
 
 import java.util.HashMap;
+import java.util.HashSet;
 
 public class LC593ValidSquare {
 
@@ -13,6 +14,10 @@ public class LC593ValidSquare {
 
 		//This cannot be done by set as for (0,0),(1,1),(0,0) and (1,1) it will fail
 		System.out.println(validSquare(p1, p2, p3, p4));
+	}
+
+	public static int cal(int[] p1, int[] p2){
+		return ((p2[1]-p1[1])*(p2[1]-p1[1])) + ((p2[0]-p1[0])*(p2[0]-p1[0]));
 	}
 
 	public static boolean validSquare(int[] p1, int[] p2, int[] p3, int[] p4) {
@@ -33,8 +38,8 @@ public class LC593ValidSquare {
 		else
 			return false;
 
-		// SC:O(6)
-		// TC:O(6)
+		//SC:O(6)
+		//TC:O(6)
 	}
 
 	public static int calculate(int[] a, int[] b) {

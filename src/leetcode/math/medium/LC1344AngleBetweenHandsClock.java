@@ -31,7 +31,7 @@ public class LC1344AngleBetweenHandsClock {
         double hour_degree=(hour%12)*30+((double)minutes/60)*30; // it will work without %12 also but it will be negative
         return Math.min(Math.abs(hour_degree-min_degree), 360-Math.abs(hour_degree-min_degree)); //also it can be min_degree-hour_degree as well
 
-        //TC:O(1)
-        //SC:O(1)
+        //TC: O(1)
+        //SC: O(1)
     }
 }

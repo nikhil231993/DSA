@@ -67,7 +67,7 @@ public class LC2AddTwoNumbers {
         }
         return l.next;
 
-        //TC:O(n) where n is the length of the largest LinkedList
-        //SC:O(n) length of the new LinkedList
+        // TC:O(n) where n is the length of the largest LinkedList
+        // SC:O(n) length of the new LinkedList
     }
 }

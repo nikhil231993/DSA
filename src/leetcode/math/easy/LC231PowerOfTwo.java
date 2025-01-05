@@ -6,7 +6,7 @@ public class LC231PowerOfTwo {
 
         int n=536870912;
 
-        //Approach 1 Brute force
+        //Approach 1: Brute force
         System.out.println(isPowerOfTwo(n));
 
         //Approach 2

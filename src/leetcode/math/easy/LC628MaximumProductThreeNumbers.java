@@ -17,7 +17,7 @@ public class LC628MaximumProductThreeNumbers {
 
 	private static int maximumProduct(int[] num) {
 
-		// 1st Approach is to use min heap and maxheap but here it will be nlogn TC as
+		// 1st Approach is to use min heap and maxheap but here it will be TC: (nlogn) as
 		// insertion and deletion in a heap takes log n time
 
 		PriorityQueue<Integer> maxHeap=new PriorityQueue<>((a,b)->b-a);

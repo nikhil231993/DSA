@@ -4,7 +4,7 @@ public class LC343IntegerBreak {
 
 	public static void main(String[] args) {
 
-		int n = 10;
+		int n = 20;
 		System.out.println(integerBreak(n));
 	}
 

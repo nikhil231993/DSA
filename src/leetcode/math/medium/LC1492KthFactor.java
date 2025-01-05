@@ -8,7 +8,7 @@ public class LC1492KthFactor {
 
     public static void main(String[] args) {
 
-        int n=12, k=3;
+        int n=64, k=3;
 
         //Approach 1
         System.out.println(kthFactor(n,k));

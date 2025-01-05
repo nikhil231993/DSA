@@ -6,10 +6,10 @@ public class LC8StringToIntegerAtoi {
 
 		//String s = "2147483648"; //below commented out code fails for this input as the second last check will be correct but
 		//in the next iteration it becomes negative value
-		String s = "2147483647";
-		//s="21474836460";
+		String s = "42";
+		s="2147483648";
 
-		//Approach 1:
+		//Approach 1: This is wrong
 		System.out.println(myAtoi(s));
 
 		//Approach 2:
