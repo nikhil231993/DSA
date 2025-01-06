@@ -12,9 +12,6 @@ public class LC22GenerateParenthesis {
 
 		generate(n, 0, 0, "", result);
 		System.out.println(result);
-
-		// TC:O(2 raise to n)
-		// SC:O(2 raise to n) for recursion stack and O(n) to store values
 	}
 
 	private static void generate(int n, int left, int right, String s, List<String> result) {
@@ -35,5 +32,6 @@ public class LC22GenerateParenthesis {
 		}
 
 		//TC:O(2 raise to n)
+		// SC:O(2 raise to n) for recursion stack and O(n) to store values
 	}
 }

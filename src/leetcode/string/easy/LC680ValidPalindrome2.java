@@ -1,6 +1,6 @@
 package leetcode.string.easy;
 
-public class LC680ValidPalindrome2 {
+public class  LC680ValidPalindrome2 {
 
 	public static void main(String[] args) {
 
@@ -18,7 +18,7 @@ public class LC680ValidPalindrome2 {
 				start++;
 				end--;
 			} else {
-//				return isPalindrome(s, start + 1, end) || isPalindrome(s, start, end - 1);
+				// return isPalindrome(s, start + 1, end) || isPalindrome(s, start, end - 1);
 				// can also be return as below
 				if (isPalindrome(s, start + 1, end))
 					return true;

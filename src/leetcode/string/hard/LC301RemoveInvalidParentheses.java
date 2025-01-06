@@ -65,7 +65,7 @@ public class LC301RemoveInvalidParentheses {
     }
 
     public static void removeInvalidParentheses(String s, HashSet<String> set, int count) {
-
+        // This code is important to find invalid parenthesis for any question
         if(count<0)
             return;
 
@@ -75,7 +75,7 @@ public class LC301RemoveInvalidParentheses {
             }
             return;
         }
-        for(int i=0;i<s.length();i++){
+        for(int i=0;i<s.length();i++){ // we can add acechk for character also but it wont make any difference
             String start=s.substring(0,i);
             String remain=s.substring(i+1);
             removeInvalidParentheses(start+remain, set, count-1);
@@ -90,10 +90,10 @@ public class LC301RemoveInvalidParentheses {
             if(ch=='(')
                 st.push(ch);
             else if(ch==')'){
-                if(st.isEmpty() || st.peek()!='(')
-                    st.push(')');
-                else if(st.peek()=='(')
+                if(!st.isEmpty() && st.peek()=='(') // we can remove st.peek()!='(' here
                     st.pop();
+                else
+                    st.push(')');
             }
         }
         return st.size();
@@ -107,10 +107,10 @@ public class LC301RemoveInvalidParentheses {
             if(ch=='(')
                 st.push(ch);
             else if(ch==')'){
-                if(st.isEmpty()) // we can remove st.peek()!='(' here
-                    st.push(')');
-                else if(st.peek()=='(')
+                if(!st.isEmpty() && st.peek()=='(') // we can remove st.peek()!='(' here
                     st.pop();
+                else
+                    st.push(')');
             }
         }
         return st.size()==0;

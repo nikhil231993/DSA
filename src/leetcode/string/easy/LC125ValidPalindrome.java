@@ -57,7 +57,7 @@ public class LC125ValidPalindrome {
 		}
 		return true;
 
-		// SC:O(1)
-		// TC:O(n)
+		//SC:O(1)
+		//TC:O(n)
 	}
 }

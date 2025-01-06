@@ -26,7 +26,7 @@ public class LC392IsSubsequence {
         }
         return false;
 
-        //TC:0(n) where n is the length of the largest string
-        //SC:O(1)
+        //TC: 0(n) where n is the length of the largest string
+        //SC: O(1)
     }
 }

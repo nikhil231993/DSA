@@ -34,7 +34,7 @@ public class LC6ZigzagConversion {
 
         return sb[0].toString();
 
-        //TC:O(n)
-        //SC:O(n)
+        // TC:O(n)
+        // SC:O(n)
      }
 }

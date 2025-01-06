@@ -37,8 +37,8 @@ public class LC205IsomorphicStrings {
 
         return true;
 
-        //TC:O(n)
-        //SC:O(256 * 2)
+        // TC:O(n)
+        // SC:O(256 * 2)
     }
 
     public static boolean isIsomorphicBetter(String s, String t) {

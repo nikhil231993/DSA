@@ -44,6 +44,6 @@ public class LC76MinimumWindowSubstring {
             }
             right++;
         }
-        return startingIndex == -1 ? "" : s.substring(startingIndex,startingIndex+minLen);
+        return startingIndex == -1 ? "" : s.substring(startingIndex, startingIndex+minLen);
     }
 }

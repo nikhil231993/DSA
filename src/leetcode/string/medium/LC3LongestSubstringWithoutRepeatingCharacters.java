@@ -9,6 +9,7 @@ public class LC3LongestSubstringWithoutRepeatingCharacters {
 	public static void main(String[] args) {
 
 		String str = "pwwkew";
+		str="abcabcdab";
 
 		//Approach 1: Brute Generate all the combinations which is TC O(N square)
 		System.out.println(bruteApproach(str));
@@ -30,7 +31,7 @@ public class LC3LongestSubstringWithoutRepeatingCharacters {
 			Set<Character > se = new HashSet <>();
 			for (int j = i; j < str.length(); j++) // nested loop for getting different string starting with str[i]
 			{
-				if (se.contains(str.charAt(j))) {// if element if found so mark it as ans and break from the loop
+				if (se.contains(str.charAt(j))) {// if element found so mark it as ans and break from the loop
 
 					maxans = Math.max(maxans, j - i);
 					break;

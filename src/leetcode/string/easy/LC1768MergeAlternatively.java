@@ -26,7 +26,7 @@ public class LC1768MergeAlternatively {
         }
         return sb.toString();
 
-        //TC:O(n+m)
-        //SC:O(n+m)
+        // TC:O(n+m)
+        // SC:O(n+m)
     }
 }

@@ -2,7 +2,7 @@ package leetcode.string.easy;
 
 import java.util.Stack;
 
-public class LC1614ValidParenthesesString {
+public class LC1614MaxDepthParenthesis {
 
     public static void main(String[] args) {
 

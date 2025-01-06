@@ -29,7 +29,7 @@ public class LC415AddTwoStrings {
 			result.append(carry);
 		return result.reverse().toString();
 
-		// SC:O(n+1) n will be the length of the largest string
-		// TC:O(n)
+		//SC:O(n+1) n will be the length of the largest string
+		//TC:O(n)
 	}
 }

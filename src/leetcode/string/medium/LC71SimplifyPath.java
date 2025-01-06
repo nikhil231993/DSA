@@ -7,6 +7,8 @@ public class LC71SimplifyPath {
 	public static void main(String[] args) {
 
 		String path = "/home/user/Documents/../Pictures";
+		path="/../";
+		path="/home//test/./.../..";
 		System.out.println(simplifyPath(path));
 	}
 

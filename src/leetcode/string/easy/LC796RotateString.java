@@ -56,7 +56,7 @@ public class LC796RotateString {
         int n=s.length(), m=goal.length();
         if(n!=m)
             return false;
-        for(int i=0;i<n;i++){
+        for(int i=0; i<n; i++){
             if(func(s, goal, 0, i))
                 return true;
         }

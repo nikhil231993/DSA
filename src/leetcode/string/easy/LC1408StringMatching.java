@@ -25,7 +25,7 @@ public class LC1408StringMatching {
         }
         return new ArrayList<>(set);
 
-        //TC:O(n square) + O(n log n)
-        //SC:O(n+n) for set and list
+        //TC: O(n square) + O(n log n)
+        //SC: O(n+n) for set and list
     }
 }

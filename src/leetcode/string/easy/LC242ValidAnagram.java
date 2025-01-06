@@ -54,7 +54,7 @@ public class LC242ValidAnagram {
         }
         return count==t.length() && count == s.length();
 
-        //TC:O(t+s)
-        //SC:O(t)
+        //TC: O(t+s)
+        //SC: O(t)
     }
 }

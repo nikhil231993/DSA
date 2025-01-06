@@ -2,7 +2,7 @@ package leetcode.string.medium;
 
 import java.util.Stack;
 
-public class LC1249MinimumRemoveToMakeValdiParenthesis {
+public class LC1249MinimumRemoveToMakeValidParenthesis {
 
 	public static void main(String[] args) {
 
@@ -54,8 +54,8 @@ public class LC1249MinimumRemoveToMakeValdiParenthesis {
 		}
 		return str;
 
-		//TC:O(2N)
-		//SC:O(1)
+		// TC:O(2N)
+		// SC:O(1)
 	}
 
 	private static String minimumRemoveUsingStack(String s) {

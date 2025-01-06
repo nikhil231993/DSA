@@ -29,6 +29,8 @@ public class LC49GroupAnagrams {
 			for (int i = 0; i < s.length(); i++) {
 				ch[s.charAt(i) - 'a']++;
 			}
+			for(char c:ch)
+				System.out.println(c);
 			String key = new String(ch);
 			//System.out.println(key);
 			if (!map.containsKey(key)) {

@@ -56,8 +56,8 @@ public class LC151ReverseWordsInAString {
 		}
 		return sb.toString().trim();
 
-		// SC:O(N-spaces)
-		// TC:O(N)
+		// SC: O(N-spaces)
+		// TC: O(N)
 	}
 
 	public static String reverseWordsOptimized(String s) {

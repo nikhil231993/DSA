@@ -35,7 +35,7 @@ public class LC30SubstringWithConcatenation {
 
             for(int j=0;j<size;j++){
 
-                int startPos= i + (j*len); //mi is to shift in array to right
+                int startPos= i + (j*len); //i is to shift in array to right
                 int endPos=startPos+len;
                 String subString=s.substring(startPos, endPos);
 

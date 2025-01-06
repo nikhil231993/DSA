@@ -17,6 +17,7 @@ public class LC28FindFirstOccurrenceInAString {
 	}
 
 	public static int strStrBrute(String haystack, String needle) {
+
 		return haystack.indexOf(needle);
 	}
 

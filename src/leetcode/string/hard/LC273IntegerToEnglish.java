@@ -11,9 +11,9 @@ public class LC273IntegerToEnglish {
 
     private static String numberToWords(int num) {
 
-        String[] ones=new String[]{"","One","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten","Eleven","Twelve",
+        String[] ones=new String[]{ "","One","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten","Eleven","Twelve",
         "Thirteen","Fourteen","Fifteen","Sixteen","Seventeen","Eighteen","Nineteen"};
-        String[] tens=new String[]{"","Ten","Twenty","Thirty","Forty","Fifty","Sixty","Seventy","Eighty","Ninety"};
+        String[] tens=new String[]{ "","Ten","Twenty","Thirty","Forty","Fifty","Sixty","Seventy","Eighty","Ninety"};
 
         if(num==0)
             return "Zero";

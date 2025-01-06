@@ -39,7 +39,7 @@ public class LC345ReverseVowels {
         String answer = new String(word);
         return answer;
 
-        //TC:O(n)
-        //SC:O(n)
+        // TC:O(n)
+        // SC:O(n)
     }
 }

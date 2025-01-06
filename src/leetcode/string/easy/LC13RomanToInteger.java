@@ -95,7 +95,7 @@ public class LC13RomanToInteger {
 		return sum;
 
 		//TC:O(n);
-		//SC:O(n)
+		//SC:O(constant values given in question)
 	}
 
 	public static int romanToIntOptimized(String s) {
@@ -124,5 +124,8 @@ public class LC13RomanToInteger {
 			prev=num;
 		}
 		return sum;
+
+		//TC:O(n);
+		//SC:O(constant values given in question)
 	}
 }

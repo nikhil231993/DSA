@@ -47,7 +47,7 @@ public class LC227BasicCalculator2 {
 		}
 		return result;
 
-		//TC:O(n)
-		//SC:O(n) in worst case where all the characters are pushed into stack
+		//TC: O(n)
+		//SC: O(n) in worst case where all the characters are pushed into stack
 	}
 }

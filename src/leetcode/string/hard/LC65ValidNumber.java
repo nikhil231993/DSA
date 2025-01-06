@@ -6,6 +6,7 @@ public class LC65ValidNumber {
 
         String s="3E+7";
         s="005047e+6";
+        s="2e-";
         System.out.println(isBoolean(s));
     }
 
