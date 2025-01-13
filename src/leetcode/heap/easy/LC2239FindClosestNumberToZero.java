@@ -41,8 +41,8 @@ public class LC2239FindClosestNumberToZero {
             }
         return n;
 
-        //TC:O(n)
-        //SC:O(1)
+        // TC:O(n)
+        // SC:O(1)
     }
     
     public static int findClosestNumberHeap(int[] nums) {

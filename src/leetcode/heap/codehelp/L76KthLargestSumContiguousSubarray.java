@@ -57,7 +57,7 @@ public class L76KthLargestSumContiguousSubarray {
 
         return arr[size-K];
 
-        //TC:O(n square log n square)
-        //SC:O(n square)
+        // TC:O(n square log n square)
+        // SC:O(n square)
     }
 }

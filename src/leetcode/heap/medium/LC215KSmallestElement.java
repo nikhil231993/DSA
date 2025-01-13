@@ -22,7 +22,7 @@ public class LC215KSmallestElement {
         }
         return pq.peek();
 
-        //TC:O(log n)
-        //SC:O(K)
+        // TC:O(log n)
+        // SC:O(K)
     }
 }

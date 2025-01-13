@@ -18,7 +18,7 @@ public class LC2278PercentageOfLetterInString {
                 count++;
         return (int)(((double)count/(double)s.length())*100);
 
-        //TC:O(n)
-        //SC:O(1)
+        // TC:O(n)
+        // SC:O(1)
     }
 }

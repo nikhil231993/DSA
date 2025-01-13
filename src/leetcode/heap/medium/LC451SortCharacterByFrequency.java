@@ -70,6 +70,7 @@ public class LC451SortCharacterByFrequency {
     public static String frequencySortOptimised(String s) {
 
         Map<Character, Integer> map = new HashMap<>();
+
         for (int i = 0; i<s.length(); i++) {
             Character c = s.charAt(i);
             map.put(c, map.getOrDefault(c, 0) +1);

@@ -36,7 +36,7 @@ public class LC215KLargestElement {
     private static  int usingCustomHeap(int[] nums, int k ,int n){
 
         for(int i=n/2-1;i>=0;i--){
-            heapify(nums,n,i);
+            heapifyTopToBottom(nums,n,i);
         }
        // TC:O(N) for build max heap
 
@@ -88,20 +88,20 @@ public class LC215KLargestElement {
         //SC:O(k)
     }
 
-    public static void heapify(int[] arr, int n,int i){
+    public static void heapifyTopToBottom(int[] arr, int n, int i){
 
         int left=2*i+1;
         int right=2*i+2;
         int largest=i;
-        if(left< n && arr[left]>arr[largest])
+        if(left < n && arr[left] > arr[largest])
             largest=left;
-        if(right<n && arr[right]>arr[largest])
+        if(right < n && arr[right] > arr[largest])
             largest=right;
         if(largest!=i){
             int temp=arr[largest];
             arr[largest]=arr[i];
             arr[i]=temp;
-            heapify(arr,n,largest);
+            heapifyTopToBottom(arr,n,largest);
         }
     }
 
@@ -109,7 +109,7 @@ public class LC215KLargestElement {
 
         int removed=nums[0];
         nums[0]=nums[--n];
-        heapify(nums, n,0);
+        heapifyTopToBottom(nums, n,0);
         return removed;
     }
 }

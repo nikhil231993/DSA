@@ -27,6 +27,7 @@ public class LC1642FurthestBuildingYouCanReach {
                 return i;
         }
         return heights.length-1;
+
         //TC:(ladders log ladders)
         //SC:O(ladders)
     }

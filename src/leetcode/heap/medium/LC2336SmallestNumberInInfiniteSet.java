@@ -37,6 +37,7 @@ public class LC2336SmallestNumberInInfiniteSet {
     public static void main(String[] args) {
 
         SmallestInfiniteSet obj = new SmallestInfiniteSet();
+
         int param_1 = obj.popSmallest();
         obj.addBack(1);
         System.out.println(param_1);

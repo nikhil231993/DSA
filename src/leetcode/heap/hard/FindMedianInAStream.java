@@ -10,7 +10,7 @@ public class FindMedianInAStream {
     //Function to insert heap.
     public static void insertHeap(int x) {
 
-        if(smaller.size()==0) {
+        if(smaller.size() == 0) {
             smaller.offer(x);
             return;
         }

@@ -15,7 +15,7 @@ class KthLargest {
         for(Integer n: nums){
             if(pq.size()<k)
                 pq.offer(n);
-            else if(pq.size()==k && pq.peek()<=n)
+            else if(pq.size() == k && pq.peek() <= n)
                 pq.offer(n);
             if(pq.size()>k)
                 pq.poll();

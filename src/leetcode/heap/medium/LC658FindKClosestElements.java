@@ -10,7 +10,9 @@ public class LC658FindKClosestElements {
     public static void main(String[] args) {
 
        int[]  arr =new int[] {1,3,4,5,6,7,8,9,10,11,20,25};
-       int k = 5, x = 30;
+       arr=new int[]{1,2,3,4,5,6,7,8,9,10,11,12,13,14};
+       //int k = 5, x = 30;
+       int k=4, x=7;
 
        //Approach 1 using heap
         System.out.println(findClosestElements(arr,k,x));
@@ -72,7 +74,7 @@ public class LC658FindKClosestElements {
     public static  List<Integer> findClosestElements(int[] arr, int k, int x) {
 
         PriorityQueue<Node> pq=new PriorityQueue<>(
-                (a,b)->a.value==b.value?b.key-a.key : b.value-a.value);
+                (a,b)-> a.value==b.value ? b.key-a.key : b.value-a.value);
 
         for(Integer n:arr){
             pq.offer(new Node(Math.abs(x-n),n));

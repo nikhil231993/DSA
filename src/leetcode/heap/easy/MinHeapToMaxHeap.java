@@ -18,6 +18,9 @@ public class MinHeapToMaxHeap {
             maxHeapify(arr,arr.length,i);
         }
         return arr;
+
+        //TC:O(n log n)
+        //SC:O(1)
     }
 
     private static void maxHeapify(int[] arr, int n, int index) {

@@ -67,8 +67,8 @@ public class LC692TopKFrequentWords {
 
         return result;
 
-        //TC:O(n)+o(nlog k)
-        //SC:O(k)
+        // TC:O(n)+o(nlog k)
+        // SC:O(k)
     }
 
     public static List<String> topKFrequentOptimised(String[] words, int k) {

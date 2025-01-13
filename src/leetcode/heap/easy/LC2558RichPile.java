@@ -24,6 +24,7 @@ public class LC2558RichPile {
             pq.offer(newNum);
             k--;
         }
+        
         long sum=0;
         while(!pq.isEmpty()){
             sum+=pq.poll();

@@ -75,7 +75,7 @@ public class GfgMergeKSortedArray {
         PriorityQueue<SubNode> pq=new PriorityQueue<>((a,b)->a.val-b.val);
 
         for(int i=0;i<k;i++){
-            SubNode node=new SubNode(arr[i][0],i,0);
+            SubNode node=new SubNode(arr[i][0], i, 0);
             pq.offer(node);
         }//TC:O(k)
 
@@ -86,7 +86,7 @@ public class GfgMergeKSortedArray {
             int arrPos= temp.arrPos;
             int valPosInArr=temp.valPosInArr;
 
-            if(valPosInArr+1<arr[arrPos].length){
+            if(valPosInArr+1 < arr[arrPos].length){
                 SubNode inertVal=new SubNode(arr[arrPos][valPosInArr+1], arrPos, valPosInArr+1);
                 pq.offer(inertVal);
             }
@@ -94,6 +94,6 @@ public class GfgMergeKSortedArray {
         return result;
     }
 
-    //TC:O(k log k)
-    //SC:k as at any moment heap has only k elements at the max
+    //TC: O(k log k)
+    //SC: k as at any moment heap has only k elements at the max
 }

@@ -45,6 +45,6 @@ public class PriorityQueueClass {
 
         Node n=pq1.poll();
 
-        System.out.println(n.value+"---"+n.key);
+        System.out.println(n.value + "---" + n.key);
     }
 }

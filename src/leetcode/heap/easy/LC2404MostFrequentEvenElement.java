@@ -18,7 +18,6 @@ class Node2 {
 
 public class LC2404MostFrequentEvenElement {
 
-
     public static void main(String[] args) {
 
         int[] nums =new int[] {0,1,2,2,4,4,1};
@@ -75,8 +74,8 @@ public class LC2404MostFrequentEvenElement {
         }
         return element==Integer.MAX_VALUE?-1:element;
 
-        //TC:O(n)
-        //SC:O(n) in worst case where each element is unique
+        // TC:O(n)
+        // SC:O(n) in worst case where each element is unique
     }
 
     public static int mostFrequentEvenOptimised(int[] nums) {

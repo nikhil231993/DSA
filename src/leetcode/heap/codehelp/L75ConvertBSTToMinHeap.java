@@ -32,9 +32,9 @@ public class L75ConvertBSTToMinHeap {
         // and L<R from question so the equation is N<L<R which is same as converting inorder result to preorder traversal
 
         //Step 1. Below will return sorted order
-        inorder(tree.root,arr,index);
+        inorder(tree.root, arr, index);
 
-        //Step 2. Below will create tree where left< right
+        //Step 2. Below will create tree where left < right
         int[] newIndex=new int[]{0};
         preorder(tree.root,arr,newIndex);
 

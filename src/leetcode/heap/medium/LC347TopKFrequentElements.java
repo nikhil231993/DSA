@@ -20,8 +20,8 @@ public class LC347TopKFrequentElements {
 
     public static void main(String[] args) {
 
-        int[] nums=new int[]{1};
-        int k=1;
+        int[] nums=new int[]{1, 1,1,2,2,3};
+        int k=2;
 
         Map<Integer,Integer> map=new HashMap<>();
         for(int n:nums){

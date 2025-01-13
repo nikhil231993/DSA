@@ -74,7 +74,7 @@ public class LC632SmallestRangeFromKList {
         }
         return new int[]{start,end};
 
-        //TC:O(n*klog k)
-        //SC:O(log k)
+        // TC:O(n*klog k)
+        // SC:O(log k)
     }
 }

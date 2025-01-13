@@ -29,7 +29,7 @@ public class L75ConvertBSTToMaxHeap {
         inorder(l.root,arr,index);
 
         int[] newIndex=new int[]{0};
-        postOrder(l.root,arr,newIndex);
+        postOrder(l.root, arr, newIndex);
 
         System.out.println();
         System.out.println("========================");

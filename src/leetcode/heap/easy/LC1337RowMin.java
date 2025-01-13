@@ -20,9 +20,10 @@ public class LC1337RowMin {
        int[][] mat = new int[][]
                {{1,1,0,0,0},
                 {1,1,1,1,0},
-                    {1,0,0,0,0},
-                        {1,1,0,0,0},
-                            {1,1,1,1,1}};
+                {1,0,0,0,0},
+                {1,1,0,0,0},
+                {1,1,1,1,1}};
+
        int k = 3;
        int[] result=kWeakestRows(mat,k);
 
@@ -61,7 +62,7 @@ public class LC1337RowMin {
 
     public static int required(int[] mat, int target){
 
-        int low=0;
+        int low=0, ans=0;
         int high=mat.length-1;
         while(low<=high){
             int mid=low+(high-low)/2;

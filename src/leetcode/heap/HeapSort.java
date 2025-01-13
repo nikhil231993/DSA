@@ -42,7 +42,7 @@ public class HeapSort {
             arr[0]=temp;
             heapify(arr,0,i);
         }
-        //TC:O(nlogn)
+        // TC:O(nlogn)
     }
 
     private static void buildHeap(int[] arr, int n) {

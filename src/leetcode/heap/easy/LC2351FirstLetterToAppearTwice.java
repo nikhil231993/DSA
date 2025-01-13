@@ -42,7 +42,7 @@ public class LC2351FirstLetterToAppearTwice {
         }
         throw new IllegalArgumentException();
 
-        //TC:O(n) in chase all characters are unique
-        //SC:O(n)
+        // TC:O(n) in chase all characters are unique
+        // SC:O(n)
     }
 }

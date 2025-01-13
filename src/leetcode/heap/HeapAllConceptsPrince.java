@@ -57,9 +57,9 @@ public class HeapAllConceptsPrince {
         for(int i=0;i<=size/2-1;i++){
             System.out.println("Parent is : "+ arr[i]);
             if(2*i+1<size)
-                System.out.println("Left node is : "+ arr[2*i+1]);
+                System.out.println("Left Node is : "+ arr[2*i+1]);
             if(2*i+2<size)
-                System.out.println("Right node is : "+arr[2*i+2]);
+                System.out.println("Right Node is : "+arr[2*i+2]);
         }
     }
 

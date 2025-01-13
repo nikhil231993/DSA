@@ -61,7 +61,7 @@ public class L75IsBinaryTreeHeap {
 
         if(root==null)
             return true;
-        if(index>=totalNodes)
+        if(index >= totalNodes)
             return false;
         return isCBT(root.left,2*index+1,totalNodes) && isCBT(root.right,2*index+2,totalNodes);
     }

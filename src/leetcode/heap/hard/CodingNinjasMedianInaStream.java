@@ -47,7 +47,7 @@ public class CodingNinjasMedianInaStream {
             }
         }
 
-        if(left.size()==right.size())
+        if(left.size() == right.size())
             return (left.peek()+right.peek())/2;
         else
             return left.peek();

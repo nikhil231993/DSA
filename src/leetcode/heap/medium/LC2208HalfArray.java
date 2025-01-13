@@ -1,6 +1,7 @@
 package leetcode.heap.medium;
 
 import java.util.PriorityQueue;
+
 public class LC2208HalfArray {
 
     public static void main(String[] args) {
@@ -31,7 +32,7 @@ public class LC2208HalfArray {
         }
         return 0;
 
-        //TC:O(n log n)
-        //SC:O(n)
+        // TC:O(n log n)
+        // SC:O(n)
     }
 }

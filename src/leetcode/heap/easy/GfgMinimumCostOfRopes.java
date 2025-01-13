@@ -9,7 +9,7 @@ public class GfgMinimumCostOfRopes {
         int[] arr=new int[]{4,3,2,6};
         int n=4;
         System.out.println(minCost(arr,n));
-}
+    }
 
     public static int minCost(int arr[], int n) {
 

@@ -36,8 +36,8 @@ public class LC973KClosestPointsToOrigin {
         }
         return result;
 
-        //TC:n log k
-        //SC:K
+        // TC:n log k
+        // SC:K
     }
 
     //Approach 2: There is no approach diff only the way diff is calculated is different

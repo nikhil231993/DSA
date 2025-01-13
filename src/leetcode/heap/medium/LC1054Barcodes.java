@@ -43,8 +43,8 @@ public class LC1054Barcodes {
 
         while(!pq.isEmpty()){
 
-            Integer num=pq.peek().value;
-            Integer c=pq.peek().count;
+            Integer num = pq.peek().value;
+            Integer c = pq.peek().count;
             pq.poll();
 
             if(i>0 && num==result[i-1]){

@@ -24,6 +24,7 @@ public class LC1962Pile {
             pq.offer(newNum);
             k--;
         }
+
         int sum=0;
         while(!pq.isEmpty())
             sum+=pq.poll();

@@ -51,7 +51,7 @@ public class LC387FirstUniqueCharacterInString {
         }
         return -1;
 
-        //TC:O(n) where n is the string length + O(26)
-        //SC:O(n) where n is the unique characters in the string
+        // TC:O(n) where n is the string length + O(26)
+        // SC:O(n) where n is the unique characters in the string
     }
 }

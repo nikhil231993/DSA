@@ -13,7 +13,7 @@ public class BuildMinHeapPrince {
         System.out.println("Min Heap is : ");
         print(arr.length,arr);
 
-        //Time complexity for build heap is O(n) which is as per proof
+        //TC for build heap is O(n) which is as per proof
         //SC:O(log n)
     }
 

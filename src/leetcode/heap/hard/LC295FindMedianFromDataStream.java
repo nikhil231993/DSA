@@ -13,7 +13,7 @@ public class LC295FindMedianFromDataStream {
 
     public void addNum(int num) {
 
-        if(left.size()==0){
+        if(left.size() == 0){
             left.offer(num);
             return;
         }

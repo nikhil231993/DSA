@@ -17,6 +17,7 @@ class Node4 {
 
     protected int val;
     protected int index;
+
     public Node4(int val, int index) {
         this.val = val;
         this.index = index;
