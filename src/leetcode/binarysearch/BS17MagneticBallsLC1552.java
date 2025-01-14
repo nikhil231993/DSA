@@ -44,7 +44,7 @@ public class BS17MagneticBallsLC1552 {
         }
         return false;
 
-        //TC:nlog n + log(arr[n-1]-arr[0])*O(n)
-        //SC:O(1)
+        // TC:nlog n + log(arr[n-1]-arr[0])*O(n)
+        // SC:O(1)
     }
 }

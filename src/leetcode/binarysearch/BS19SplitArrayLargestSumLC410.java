@@ -13,14 +13,14 @@ public class BS19SplitArrayLargestSumLC410 {
 
         int n=nums.length, max=Integer.MIN_VALUE, sum=0;
 
-        for(int i=0;i<n;i++){
+        for(int i=0; i<n; i++){
             max=Math.max(max, nums[i]);
             sum+=nums[i];
         }
 
         int low=max, high=sum, ans=0;
-        while(low<=high){
-            int mid=low+(high-low)/2;
+        while(low <= high){
+            int mid = low+(high-low)/2;
             if(possible(mid, nums, k)){
                 high=mid-1;
                 ans=mid;

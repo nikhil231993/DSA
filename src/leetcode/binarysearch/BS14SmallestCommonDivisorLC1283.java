@@ -26,7 +26,8 @@ public class BS14SmallestCommonDivisorLC1283 {
             if(minValue(nums, mid, threshold)){
                 ans=mid;
                 high=mid-1;
-            }else low=mid+1;
+            }else
+                low=mid+1;
         }
         return ans;
     }
@@ -40,6 +41,6 @@ public class BS14SmallestCommonDivisorLC1283 {
         return sum<=threshold;
 
 		//TC:O(log max((arr[]))* n
-        //SC: O(1)
+        //SC:O(1)
     }
 }

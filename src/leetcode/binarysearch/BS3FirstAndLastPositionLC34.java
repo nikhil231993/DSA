@@ -42,8 +42,8 @@ public class BS3FirstAndLastPositionLC34 {
         }
         return ans;
 
-        //TC:O(log n)
-        //SC:O(1)
+        // TC:O(log n)
+        // SC:O(1)
     }
 
     private static int firstOccurrence(int[] nums, int target) {
@@ -53,7 +53,7 @@ public class BS3FirstAndLastPositionLC34 {
         while(low<=high){
 
             int mid=low+(high-low)/2;
-            if(nums[mid]==target) {
+            if(nums[mid] == target) {
                 ans = mid;
                 high = mid - 1;
             } else if(nums[mid]>target){

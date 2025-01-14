@@ -29,6 +29,7 @@ public class BS8SingleElementInSortedArray {
 
         //Approach 2 using binary search
         int n=nums.length;
+
         if(n == 1)
             return nums[0];
         if(nums[0]!=nums[1])

@@ -32,8 +32,8 @@ public class BS17AggressiveCows {
         }
         return ans;
 
-		// TC:nlog n + log(arr[n-1]-arr[0])*O(n)
-		// SC:O(1)
+		//TC:nlog n + log(arr[n-1]-arr[0])*O(n)
+		//SC:O(1)
     }
 
     public static boolean canPlace(int pos, int[] stalls, int k){

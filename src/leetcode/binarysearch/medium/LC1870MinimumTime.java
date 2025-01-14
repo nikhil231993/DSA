@@ -10,6 +10,7 @@ public class LC1870MinimumTime {
         //hour =2.01
         //Expected=10000000
         double hour = 2.7;
+
         System.out.println(minSpeedOnTime(dist,hour));
     }
 
@@ -23,7 +24,7 @@ public class LC1870MinimumTime {
             if(total_hour_so_far > hour)
                 return false;
         }
-        total_hour_so_far += dist[dist.length - 1] / speed; //This is for the last fraction 0.66666666 in this example
+        total_hour_so_far += dist[dist.length - 1] / speed;  //This is for the last fraction 0.66666666 in this example
         return total_hour_so_far <= hour ? true : false;
     }
 

@@ -42,7 +42,7 @@ public class BS22KthElementTwoSortedArrays {
         }
         return 0;
 
-        //TC:O(log(min(n1,n2)))
-        //SC:O(1)
+        // TC:O(log(min(n1,n2)))
+        // SC:O(1)
     }
 }

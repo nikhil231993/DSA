@@ -18,7 +18,7 @@ public class BS20MinimiseMaxGasDifference {
     public static void main(String[] args) {
 
         int n=4,k=5;
-        int[] arr=new int[]{1,2,3,4};
+        int[] arr=new int[]{1,13,17,23};
 
         //Approach 1
         System.out.println(minimiseMaxDistance(arr,k));
@@ -100,7 +100,7 @@ public class BS20MinimiseMaxGasDifference {
         }
         return ans;
 
-        //TC:O( n log n) + O(n)
+        //TC:O(n log n) + O(n)
         //SC:O(1)
     }
 

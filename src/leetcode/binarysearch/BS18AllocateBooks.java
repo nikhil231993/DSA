@@ -4,11 +4,13 @@ public class BS18AllocateBooks {
 
     public static void main(String[] args) {
 
-//        int n=4, m=5;
-//        int[] arr=new int[]{12, 34, 67, 90};
+//      int n=4, m=5;
+//      int[] arr=new int[]{12, 34, 67, 90};
 
         int n=5, m=4;
         int[] arr=new int[]{25, 46, 28, 49, 24};
+
+        //Approach 1: Brute will be TC:O(n square) and we will take each value and check if it can be taken
         System.out.println(findPages(arr,n,m));
     }
 
@@ -51,7 +53,7 @@ public class BS18AllocateBooks {
             return true;
         return false;
 
-        //TC:O(log (sum-max+1))* O(n)
-        //SC:O(1)
+        // TC:O(log (sum-max+1))* O(n)
+        // SC:O(1)
     }
 }

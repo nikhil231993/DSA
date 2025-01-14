@@ -22,7 +22,7 @@ public class LC278FirstBadVersion {
         }
         return ans;
         
-        //TC:O(n log n)
+        //TC:O(nlogn)
         //SC:O(1)		
     }
 

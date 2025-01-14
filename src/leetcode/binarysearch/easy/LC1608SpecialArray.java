@@ -13,7 +13,7 @@ public class LC1608SpecialArray {
         int low=0;
         int high=Integer.MIN_VALUE;
 
-        for(int i=0;i<nums.length;i++){
+        for(int i=0; i<nums.length; i++){
             high=Math.max(high, nums[i]);
         }
 

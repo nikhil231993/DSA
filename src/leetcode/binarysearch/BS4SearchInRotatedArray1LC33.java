@@ -15,6 +15,7 @@ public class BS4SearchInRotatedArray1LC33 {
         int n=nums.length, low=0, high=n-1;
 
         while(low<=high){
+
             int mid=low+(high-low)/2;
 
             if(nums[mid]==target)

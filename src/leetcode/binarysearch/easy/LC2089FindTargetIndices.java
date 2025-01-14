@@ -64,8 +64,8 @@ public class LC2089FindTargetIndices {
 		}
 		return ans;
 
-		// TC:O(log n)
-		// SC:O(1)
+		//TC:O(log n)
+		//SC:O(1)
 	}
 
 	private static int firstOccurrence(int[] nums, int target) {

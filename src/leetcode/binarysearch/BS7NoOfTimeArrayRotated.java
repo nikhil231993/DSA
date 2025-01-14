@@ -13,24 +13,25 @@ public class BS7NoOfTimeArrayRotated {
 
         int low=0, high=n-1, ans=Integer.MAX_VALUE, index=-1;
 
-        while(low<=high){
-            int mid=low+(high-low)/2;
+        while(low <= high){
 
-            if(nums[low]<=nums[high]){
-                if(ans>nums[low]){
+            int mid = low+(high-low)/2;
+
+            if(nums[low] <= nums[high]){
+                if(ans > nums[low]){
                     ans=nums[low];
                     index=low;
                     break;
                 }
             }
-            if(nums[low]<=nums[mid]){
-                if(ans>nums[low]){
+            if(nums[low] <= nums[mid]){
+                if(ans > nums[low]){
                     ans=nums[low];
                     index=low;
                 }
                 low=mid+1;
             }else{
-                if(ans>nums[mid]){
+                if(ans > nums[mid]){
                     ans=nums[mid];
                     index=mid;
                 }

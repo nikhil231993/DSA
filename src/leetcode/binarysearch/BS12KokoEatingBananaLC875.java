@@ -5,7 +5,7 @@ public class BS12KokoEatingBananaLC875 {
     public static void main(String[] args) {
 
         int[] piles=new int[]{3,6,7,11};
-        int h=8;
+        int h=18;
         //int[] piles =new int[] {30,11,23,4,20};
         //int h = 5;
 

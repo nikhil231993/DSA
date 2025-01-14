@@ -40,7 +40,7 @@ public class LC2064ProductsDistributionToStore {
             return true;
         return  false;
 
-        //TC: log (max element)* n
-        //SC: O(1)
+        //TC:log (max element)* n
+        //SC:O(1)
     }
 }

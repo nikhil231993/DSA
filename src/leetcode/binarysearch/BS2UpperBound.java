@@ -26,7 +26,7 @@ public class BS2UpperBound {
         }
         return ans;
         
-        //TC: O(log n)
-        //SC: O(1)
+        //TC:O(log n)
+        //SC:O(1)
     }
 }

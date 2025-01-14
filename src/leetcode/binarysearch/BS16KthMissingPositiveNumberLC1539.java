@@ -5,7 +5,7 @@ public class BS16KthMissingPositiveNumberLC1539 {
     public static void main(String[] args) {
 
         int[] arr =new int[] {2,3,4,7,11};
-        int k = 5;
+        int k = 3;
 
         //Approach 1
         System.out.println(findKthPositive(arr,k));
@@ -34,8 +34,8 @@ public class BS16KthMissingPositiveNumberLC1539 {
         //arr[high]-arr[high]+high+1+k
         return k+high+1;
 
-		// TC: O(log n)
-		// SC: O(n)
+		//TC:O(log n)
+		//SC:O(n)
     }
 
     public static int findKthPositive(int[] arr, int k) {

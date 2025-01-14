@@ -56,6 +56,6 @@ public class BS2FloorAndCeil {
 
         //TC:O(log n)
         //SC:O(1)
-        //Same as lower bound problem
+        // Same as lower bound problem
     }
 }

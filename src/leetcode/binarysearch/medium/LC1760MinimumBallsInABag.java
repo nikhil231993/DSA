@@ -21,7 +21,7 @@ public class LC1760MinimumBallsInABag {
         int ans=0;
         while(low<=high){
             int mid=low+(high-low)/2;
-            if(canSplit(mid, nums,maxOperations)){
+            if(canSplit(mid, nums, maxOperations)){
                 ans=mid;
                 high=mid-1;
             }else{
@@ -38,7 +38,7 @@ public class LC1760MinimumBallsInABag {
 
         int operations=0;
         for(int i=0;i<nums.length;i++){
-            operations+=(nums[i]-1)/mid;//mid is the desired weight. This is the formula to find operations
+            operations+=(nums[i]-1)/mid; //mid is the desired weight. This is the formula to find operations
         }
         if(operations>op)
             return false;

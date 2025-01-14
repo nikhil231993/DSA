@@ -26,7 +26,7 @@ public class BS11NthRoot {
         return -1;
     }
 
-    public static int root(int k, int n,int mid){
+    public static int root(int k, int n, int mid){
 
         Long ans=1l;
         for(int i=1;i<=k;i++) {

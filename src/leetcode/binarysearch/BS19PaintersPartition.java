@@ -7,8 +7,8 @@ public class BS19PaintersPartition {
 
     public static void main(String[] args) {
 
-//        ArrayList<Integer> num = new ArrayList<>(Arrays.asList(7,2,5,10,8));
-//        int k = 2;
+//      ArrayList<Integer> num = new ArrayList<>(Arrays.asList(7,2,5,10,8));
+//      int k = 2;
 
         ArrayList<Integer> num = new ArrayList<>(Arrays.asList(10, 20, 30, 40));
         int k = 2;

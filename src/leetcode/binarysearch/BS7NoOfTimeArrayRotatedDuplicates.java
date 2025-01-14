@@ -17,7 +17,7 @@ public class BS7NoOfTimeArrayRotatedDuplicates {
             int mid=low+(high-low)/2;
 
             //Add below block only to optimize if needed
-            if(nums[low]<nums[high]){
+            if(nums[low] < nums[high]){
                 if(ans>nums[low]) {
                     ans = nums[low];
                     index = low;
@@ -25,8 +25,8 @@ public class BS7NoOfTimeArrayRotatedDuplicates {
                 break;
             }
 
-            if(nums[low]==nums[mid] && nums[mid]==nums[high]){
-                if(ans>nums[low]){
+            if(nums[low] == nums[mid] && nums[mid] == nums[high]){
+                if(ans > nums[low]){
                     ans=nums[low];
                     index=low;
                 }
@@ -35,14 +35,14 @@ public class BS7NoOfTimeArrayRotatedDuplicates {
                 continue;
             }
 
-            if(nums[low]<=nums[mid]){
-                if(ans>nums[low]){
+            if(nums[low] <= nums[mid]){
+                if(ans > nums[low]){
                     ans=nums[low];
                     index=low;
                 }
                 low=mid+1;
             }else{
-                if(ans>nums[mid]){
+                if(ans > nums[mid]){
                     ans=nums[mid];
                     index=mid;
                 }

@@ -49,7 +49,7 @@ public class BS15ShipCapacityLC1011 {
             return true;
         return false;
 
-        //TC:o(log(maxsum-min+1)*n)
+        //TC:O(log(maxsum-min+1)*n)
         //SC:O(1)
     }
 }

@@ -27,7 +27,7 @@ public class LC374GuessHigherOrLower {
         return 0;
 
         //TC:O(log n)
-        //SC:O(1
+        //SC:O(1)
     }
 
     private static int guess(int mid) {

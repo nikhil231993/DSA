@@ -56,6 +56,6 @@ public class BS13BouquetsLC1482 {
         return false;
     }
 
-    //TC:O(n * log (max-min+1)) i.e., 7-13
-    //SC:O(1)
+    // TC:O(n * log (max-min+1)) i.e., 7-13
+    // SC:O(1)
 }

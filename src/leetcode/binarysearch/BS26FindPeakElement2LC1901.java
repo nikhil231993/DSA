@@ -83,7 +83,7 @@ public class BS26FindPeakElement2LC1901 {
         }
         return new int[]{-1,-1};
 
-        //TC:o(n*m)
+        //TC:O(n*m)
         //SC:O(1)
     }
 }

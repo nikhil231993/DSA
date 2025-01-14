@@ -65,7 +65,7 @@ public class BS23RowsWithMaxOnesLC2643 {
         }
         return ans;
 
-        //TC:O(n log m)
+        //TC:O(nlogm)
         //SC:O(1)
     }
 }

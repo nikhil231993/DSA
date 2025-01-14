@@ -32,8 +32,8 @@ public class BS27MedianInRowWiseSortedArrayLCPremium {
         int low=Integer.MAX_VALUE, high=Integer.MIN_VALUE;
 
         for(int i=0;i<R;i++){
-            low=Math.min(matrix[i][0],low);
-            high=Math.max(matrix[i][C-1],high);
+            low=Math.min(matrix[i][0], low);
+            high=Math.max(matrix[i][C-1], high);
         }
 
         int required=R*C/2;
