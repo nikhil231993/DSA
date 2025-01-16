@@ -6,7 +6,7 @@ public class V1ConvertArrayToLinkedList {
 
         int[] arr=new int[]{2,1,3,8};
 
-        Node head=new Node(arr[0]);
+        Node head = new Node(arr[0]);
         convertArrayToLinkedList(head, arr);
 
         //Traversal of LinkedList

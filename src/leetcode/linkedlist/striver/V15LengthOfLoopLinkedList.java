@@ -9,6 +9,7 @@ public class V15LengthOfLoopLinkedList {
 
     /**
     public static int lengthOfLoop(Node head) {
+
         if(head==null)
             return 0;
         Node slow=head;

@@ -37,7 +37,8 @@ public class V4ReverseDLL {
 
             temp=temp.prev;
         }
-        return prev.prev; // here due to swapping above in line 34 prev will be second last node
+        return prev.prev;
+        // here due to swapping above in line 34 prev will be second last node
         // so we use prev.prev to return the last node which will be the new head
 
         //TC:O(n)

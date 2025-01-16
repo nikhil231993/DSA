@@ -2,7 +2,7 @@ package leetcode.linkedlist.striver;
 
 public class V16DeleteMiddleLinkedListLC2095 {
 
-    //Approach 1: Traverse and count. Again traverse till the count/2 reduces to 0
+    //Approach 1: Traverse and count. Again traverse till the count/2 reduces to 0 TC:O(N)+O(N/2)
 
     //Approach 2: Here we do slight changes in Tortoise and Hare Algo where fast pointer takes one extra step
 
@@ -33,7 +33,7 @@ public class V16DeleteMiddleLinkedListLC2095 {
      public ListNode deleteMiddle(ListNode head) {
 
      if(head==null || head.next==null)
-     return null;
+            return null;
 
      ListNode slow=head;
      ListNode fast=head;

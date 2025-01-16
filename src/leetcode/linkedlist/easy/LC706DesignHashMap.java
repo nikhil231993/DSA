@@ -115,6 +115,7 @@ public class LC706DesignHashMap {
 		LC706DesignHashMap m = new LC706DesignHashMap();
 
 		System.out.println(m.get(1));
+
 		m.put(1, 10);
 		m.put(2, 20);
 		System.out.println(m.get(2));

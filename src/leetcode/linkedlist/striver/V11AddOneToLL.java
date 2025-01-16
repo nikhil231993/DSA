@@ -15,6 +15,7 @@ public class V11AddOneToLL {
         System.out.println("##################### Result #########");
         V2DeletionAndInsertion.display(resultHead);
 
+        //Above approach TC wil be O(3N) and SC will be O(1) so we optimize on TC in next
         System.out.println("########### APPROACH 2 ############");
 
         //Approach 2

@@ -24,7 +24,7 @@ public class V21ReverseLinkedListInGroupLC25 {
         while(temp!=null){
             Node KNode=findKNode(temp, k);
             if(KNode==null){
-                if(prevNode!=null)
+                if(prevNode!=null) //This if condition is not needed it will work withotu this
                     prevNode.next=temp;
                 break;
             }

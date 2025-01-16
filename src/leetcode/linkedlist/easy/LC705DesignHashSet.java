@@ -131,6 +131,7 @@ public class LC705DesignHashSet {
 		System.out.println(lc.containsWithGetPos(1));
 		lc.add(1);
 		lc.remove(1);
+
 		System.out.println(lc.containsWithGetPos(1));
 	}
 }

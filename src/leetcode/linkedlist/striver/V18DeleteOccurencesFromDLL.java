@@ -2,6 +2,8 @@ package leetcode.linkedlist.striver;
 
 public class V18DeleteOccurencesFromDLL {
 
+    //Approach 3 is simple to understand
+
     /**
     public static Node deleteAllOccurrences(Node head, int k) {
 

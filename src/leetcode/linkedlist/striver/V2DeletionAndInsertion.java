@@ -4,7 +4,7 @@ public class V2DeletionAndInsertion {
 
     public static void main(String[] args) {
 
-        int[] arr=new int[]{2,1,3,8};
+        int[] arr=new int[]{2, 1, 3, 8};
 
         Node head=new Node(arr[0]);
         V1ConvertArrayToLinkedList.convertArrayToLinkedList(head, arr);
@@ -21,7 +21,7 @@ public class V2DeletionAndInsertion {
 
         //delete Kth element of the list
         System.out.println("Delete at Kth position : ");
-        int[] arr1=new int[]{10,20,30,40,50};
+        int[] arr1=new int[]{10, 20, 30, 40, 50};
         int k=2;
         Node head1 = new Node(arr1[0]);
         V1ConvertArrayToLinkedList.convertArrayToLinkedList(head1, arr1);
@@ -30,7 +30,7 @@ public class V2DeletionAndInsertion {
 
         //Remove Element with a particular value
         System.out.println("Delete a particular value : ");
-        int[] arr2=new int[]{10,20,30,40,50};
+        int[] arr2=new int[]{10, 20, 30, 40, 50};
         int value = 40;
         Node head2 = new Node(arr2[0]);
         V1ConvertArrayToLinkedList.convertArrayToLinkedList(head2, arr2);

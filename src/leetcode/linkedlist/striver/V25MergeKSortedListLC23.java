@@ -11,7 +11,7 @@ public class V25MergeKSortedListLC23 {
             Node temp=lists[i];
             while(temp!=null){              //N
                 arr.add(temp.val);
-                temp-=temp.next;
+                temp=temp.next;
             }
         }
         sort(arr);  //MlogM where M=KN

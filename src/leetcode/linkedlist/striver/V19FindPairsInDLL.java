@@ -39,7 +39,7 @@ public class V19FindPairsInDLL {
         NodeDLL start=head;
         while(start.data < tail.data){
             if(start.data + tail.data == k){
-                list.add(new int[]{start.data, tail.data});
+                list.add(new int[]{ start.data, tail.data });
                 start=start.next;
                 tail=tail.prev;
             }else if(start.data + tail.data > k)
@@ -48,6 +48,6 @@ public class V19FindPairsInDLL {
                 start=start.next;
         }
         //TC:O(2N)
-        //SC: O(1)+ space for answers
+        //SC:O(1)+ space for answers
     }
 }

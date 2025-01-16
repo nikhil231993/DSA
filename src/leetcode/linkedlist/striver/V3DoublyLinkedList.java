@@ -62,8 +62,8 @@ public class V3DoublyLinkedList {
         int[] arr7=new int[]{5,10,15,20,25};
         NodeDLL head7=new NodeDLL(arr7[0]);
         convertArrayToDLL(head7, arr7);
-        //NodeDLL newHead7=insertionBeforeKthNode(head7, -1, 5);
-        NodeDLL newHead7=insertionBeforeKthNodeV2(head7, -1, 5);
+        NodeDLL newHead7=insertionBeforeKthNode(head7, -1, 5);
+        //NodeDLL newHead7=insertionBeforeKthNodeV2(head7, -1, 5);
         display(newHead7);
 
         System.out.println("Insert before a Node ");
@@ -262,7 +262,7 @@ public class V3DoublyLinkedList {
             temp=temp.next;
         }
 
-        //Handle size more than teh DLL
+        //Handle size more than the DLL
         if(temp==null){
             System.out.println("Specified location is more");
             return null;
