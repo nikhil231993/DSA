@@ -45,7 +45,7 @@ public class LC2149SortSignsUnequal {
 
             int index=neg.size()*2;
             for(int i=neg.size(); i<pos.size(); i++)
-                nums[index++]=pos.get(i);
+                nums[index++] = pos.get(i);
         }
     }
 }

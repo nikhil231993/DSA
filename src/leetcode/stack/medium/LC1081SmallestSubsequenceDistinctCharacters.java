@@ -42,7 +42,7 @@ public class LC1081SmallestSubsequenceDistinctCharacters {
         }
         return sb.toString();
 
-        //TC:O(n)
-        //SC:O(n+n) + last result string
+        // TC:O(n)
+        // SC:O(n+n) + last result string
     }
 }

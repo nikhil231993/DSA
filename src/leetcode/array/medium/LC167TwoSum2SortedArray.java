@@ -27,7 +27,7 @@ public class LC167TwoSum2SortedArray {
 		}
 		return new int[] {};
 
-		// SC:O(1)
 		// TC:O(n)
+		// SC:O(1)
 	}
 }

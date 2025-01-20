@@ -41,8 +41,8 @@ public class LC2149SortSigns {
         }
         return A;
 
-        //TC:O(2n)
-        //SC:O(2n)
+        // TC:O(2n)
+        // SC:O(2n)
     }
 
     public static int[] rearrangeArray(int[] nums) {

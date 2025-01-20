@@ -105,7 +105,7 @@ public class LC128orPremiumLongestConsecutiveSequence {
                  count=1;
                  lastSmaller=num[i];
             }
-             len=Math.max(len,count);
+             len=Math.max(len, count);
             }
             return len;
 

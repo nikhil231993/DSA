@@ -40,7 +40,7 @@ public class LC682BaseBallGame {
         }
         return sum;
 
-        //TC:O(n)
-        //SC:O(n)
+        // TC:O(n)
+        // SC:O(n)
     }
 }

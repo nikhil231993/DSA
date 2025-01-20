@@ -45,12 +45,14 @@ public class gfgLeadersInArray {
         int n=num.length;
         List<Integer> ans=new ArrayList<>();
         int max=Integer.MIN_VALUE;
-        for(int i=n-1;i>0;i--){
+
+        for(int i=n-1; i>0; i--){
             if(num[i]>max)
                 ans.add(0,num[i]); // add at 0 adds all the element at first or else we have to reverse it
             max=Math.max(max,num[i]);
         }
         return ans;
+
         //TC:O(N)
         //SC:(1) as we are not using anything to find the answer. We are using ans to only store the values
     }

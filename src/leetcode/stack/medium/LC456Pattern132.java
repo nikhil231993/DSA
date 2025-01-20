@@ -6,7 +6,7 @@ public class LC456Pattern132 {
 
     public static void main(String[] args) {
 
-        int[] nums =new int[] {9,4,2,8,3,1,2};
+        int[] nums = new int[] {9,4,2,8,3,1,2};
         System.out.println(find132pattern(nums));
     }
 

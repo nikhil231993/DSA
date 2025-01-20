@@ -25,7 +25,7 @@ public class LC901StockSpan {
         public int next(int price) {
 
             int span=1;
-            while(!st.isEmpty() && st.peek().key<=price){
+            while(!st.isEmpty() && st.peek().key <= price){
                 span+=st.peek().span;
                 st.pop();
             }

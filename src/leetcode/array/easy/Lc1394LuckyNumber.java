@@ -12,11 +12,11 @@ public class Lc1394LuckyNumber {
 
 		int[] res=new int[501];
 		int max=-1;
-		for(int no:arr){
+		for(int no : arr){
 			res[no]++;
 		}
 
-		for(int no:arr){
+		for(int no : arr){
 			if(no == res[no])
 				max=Math.max(max,no);
 		}

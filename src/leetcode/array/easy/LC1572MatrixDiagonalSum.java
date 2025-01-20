@@ -20,7 +20,7 @@ public class LC1572MatrixDiagonalSum {
         int n=mat.length, sum=0, mid=n/2;
 
         for(int i=0; i<mat.length; i++){
-            sum+=mat[i][i]+mat[i][n-1-i];
+            sum += mat[i][i] + mat[i][n-1-i];
         }
         if(n%2 ==1)
             return sum-mat[mid][mid];

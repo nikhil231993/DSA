@@ -24,8 +24,8 @@ public class LC2287RearrangeCharacters {
         }
         return min;
 
-        //TC:O(N1+N2+N1)
-        //SC:O(N1+N2)
+        // TC:O(N1+N2+N1)
+        // SC:O(N1+N2)
     }
 
     public static int[] findFreq(String s){

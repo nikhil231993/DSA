@@ -50,8 +50,8 @@ public class LC287FindDuplicateNumber {
 		}
 		return -1;
 
-		// SC:O(1)
-		// TC:O(n)
+		//SC:O(1)
+		//TC:O(n)
 	}
 
 	private static int duplicateNumberWithHashSet(int[] nums) {

@@ -22,7 +22,7 @@ public class LC2942CharInWords {
         }
         return list;
 
-        //TC:O(n) and TC of indexOf function
-        //SC:O(1)
+        // TC:O(n) and TC of indexOf function
+        // SC:O(1)
     }
 }

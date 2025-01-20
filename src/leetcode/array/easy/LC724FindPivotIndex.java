@@ -56,7 +56,7 @@ public class LC724FindPivotIndex {
 		}
 		return -1;
 
-		//TC:O(n square)
-		//SC:O(n
+		// TC:O(n square)
+		// SC:O(n
 	}
 }

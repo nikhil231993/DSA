@@ -7,6 +7,8 @@ public class LC856ScoreParenthesesIMP {
     public static void main(String[] args) {
 
         String s = "(()(()()))";
+        s="(())";
+        s="(()())";
         System.out.println(scoreOfParentheses(s));
     }
 

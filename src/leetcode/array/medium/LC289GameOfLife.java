@@ -23,7 +23,9 @@ public class LC289GameOfLife {
 		for(int i=0;i<n;i++) {
 			for(int j=0;j<m;j++) {
 				int live_neighbour=0;
+
 				for(int k=0;k<8;k++) {
+
 					int row = i + x_axis[k];
 					int col = j + y_axis[k];
 					

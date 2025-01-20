@@ -8,6 +8,9 @@ public class V12InfixToPostFix {
 
         String s="h^m^q^(7-4)";
         s="a+b+c";
+        //s="a^b^c";
+        //s="(a+b)*c";
+        //s="a*b*c";
         System.out.println(infixToPostfix(s));
     }
 
@@ -44,7 +47,7 @@ public class V12InfixToPostFix {
                 st.pop();
             }else{
 
-                while(!st.isEmpty() && (prec(st.peek())>=prec(ch) && associativity(ch)=='L')){
+                while(!st.isEmpty() && (prec(st.peek()) >= prec(ch) && associativity(ch) == 'L')){
                     result.append(st.pop());
                 }
                 st.push(ch);

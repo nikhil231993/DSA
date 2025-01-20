@@ -45,8 +45,8 @@ public class gfgLeftRotateRightRotateAnArrayByKPlaces {
         reverse(num,0, n-1-k);
         reverse(num,n-k, n-1);
 
-        //TC:O(N)
-        //SC:O(N) as we are using the same array
+        // TC:O(N)
+        // SC:O(N) as we are using the same array
     }
 
     private static void reverse(int[] num, int start, int end) {

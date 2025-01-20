@@ -24,7 +24,7 @@ public class LC11ContainerWithMostWater {
 
 		return vol;
 
-		// TC:O(n)
-		// SC:O(1)
+		//TC:O(n)
+		//SC:O(1)
 	}
 }

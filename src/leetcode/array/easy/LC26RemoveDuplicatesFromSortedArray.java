@@ -56,8 +56,8 @@ public class LC26RemoveDuplicatesFromSortedArray {
 			arr[++j] = 0;
 		}
 
-		//TC:O(n)
-		//SC:O(1) we are using existing array
+		// TC:O(n)
+		// SC:O(1) we are using existing array
 	}
 
 	public static int removeDuplicatesSolutionInLeetcode(int[] nums) {

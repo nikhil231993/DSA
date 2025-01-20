@@ -4,6 +4,8 @@ public class gfgSecondLargest {
 
     public static void main(String[] args) {
 
+        //Brute is sort the array and parse it from n-2 till 0 and compare each of the element with last one
+
         int[] arr=new int[]{12, 35, 1, 10,34, 1};
         System.out.println(getSecondLargest(arr));
     }

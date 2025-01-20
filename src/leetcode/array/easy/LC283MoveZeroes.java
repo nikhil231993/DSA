@@ -34,8 +34,8 @@ public class LC283MoveZeroes {
 		}
 		return result;
 
-		//SC:O(n)
 		//TC:O(n)
+		//SC:O(n)
 	}
 
 	private static int[] maxZerores(int[] arr) {

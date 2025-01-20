@@ -7,6 +7,7 @@ public class LC581ShortestUnsortedContinuousSubarray {
     public static void main(String[] args) {
 
        int[] nums =new int[] {1,5,2,4,6};
+       nums=new int[]{2, 6, 4, 8, 10, 9,15};
        System.out.println(findUnsortedSubarray(nums));
     }
 

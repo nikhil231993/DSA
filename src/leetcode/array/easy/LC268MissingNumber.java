@@ -33,7 +33,7 @@ public class LC268MissingNumber {
 
         //This is better in case of large numbers as it cannot cross the large number
         int XOR1=0, XOR2=0;
-        for(int i=0;i<num.length;i++){
+        for(int i=0; i<num.length; i++){
             XOR1=XOR1^num[i];
             XOR2=XOR2^i;
         }

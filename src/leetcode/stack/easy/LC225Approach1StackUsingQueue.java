@@ -15,7 +15,6 @@ public class LC225Approach1StackUsingQueue {
         Queue<Integer> output=new LinkedList();
 
         public LC225Approach1StackUsingQueue() {
-
         }
 
         public void push(int x) {
@@ -41,6 +40,7 @@ public class LC225Approach1StackUsingQueue {
         public int top() {
 
             int value=-1;
+
             if(input.isEmpty())
                 return value;
             else{

@@ -17,7 +17,7 @@ public class LC1248NiceSubarray {
 
         int n=nums.length;
 
-        for(int i=0; i<n;i++){
+        for(int i=0; i<n; i++){
             if(nums[i]%2==0)
                 nums[i]=0;
             else if(nums[i]%2==1)

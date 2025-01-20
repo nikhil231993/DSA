@@ -54,8 +54,8 @@ public class LC1TwoSum {
 		}
 		return new int[] {};
 
-		// SC:O(1)
-		// TC:O(n2)
+		//SC:O(1)
+		//TC:O(n square)
 	}
 
 	// Best Approach

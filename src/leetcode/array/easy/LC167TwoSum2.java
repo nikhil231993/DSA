@@ -26,7 +26,7 @@ public class LC167TwoSum2 {
         }
         return new int[]{};
 
-        //SC:O(1)
         //TC:O(n)
+        //SC:O(1)
     }
 }

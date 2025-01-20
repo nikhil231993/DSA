@@ -80,7 +80,7 @@ public class MergeSortedArrays {
                 break;
             gap=(gap/2)+(gap%2);
 
-            //TC:O(log base 2(m+n))*(m+n)
+            //TC:O(log base 2(m+n)) * (m+n)
         }
     }
 

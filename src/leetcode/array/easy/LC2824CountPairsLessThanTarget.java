@@ -50,5 +50,8 @@ public class LC2824CountPairsLessThanTarget {
         }
 
         return count;
+
+        //TC:O(nlogn)
+        //SC:O(1)
     }
 }

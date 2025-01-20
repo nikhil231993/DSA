@@ -57,7 +57,7 @@ public class LC1512GoodPairs {
 
         int res = 0;
         int[] count = new int[101];
-        for (int a: A) {
+        for (int a : A) {
             res += count[a]++;
         }
         return res;

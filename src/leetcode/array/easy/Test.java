@@ -1,10 +1,15 @@
 package leetcode.array.easy;
 
 import java.text.DecimalFormat;
+import java.util.Arrays;
 
 public class Test {
 
 	public static void main(String[] args) {
+
+		int[] arr=new int[]{10,20,30,40,50};
+		Arrays.sort(arr);
+
 
 		DecimalFormat df = new DecimalFormat("###.####");
 		System.out.println(df.format(3.70065));

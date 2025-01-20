@@ -69,7 +69,7 @@ public class LC1331RankTransform {
         }
 
         int rank=1;
-        int[] rankArray=new int[arr.length];
+        int[] rankArray = new int[arr.length];
         int previous=-1;
         int previousRank=-1;
         while(!pq.isEmpty()){

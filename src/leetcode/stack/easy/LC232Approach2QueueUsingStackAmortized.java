@@ -5,13 +5,12 @@ import java.util.Stack;
 public class LC232Approach2QueueUsingStackAmortized {
 
     //1. We keep two diff stack to maintain push and pop
-    //2. This will be amortized
+    //2. This will be amortized. Pop is costlier
 
     Stack<Integer> input=new Stack<>();
     Stack<Integer> output=new Stack<>();
 
     public LC232Approach2QueueUsingStackAmortized() {
-
     }
 
     public void push(int x) {

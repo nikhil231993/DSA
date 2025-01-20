@@ -42,7 +42,7 @@ public class LC695MaxAreaOfIsland {
 
 		return area;
 
-		// SC:O(1)
-		// TC:O(n*m)
+		//SC:O(1)
+		//TC:O(n*m)
 	}
 }

@@ -10,7 +10,7 @@ public class LC525ContiguousSubarray {
 
         int[] nums = new int[]{0,1,0};
 
-        //Approach 1: Optimal Similar to LC560
+        //Approach 1:Optimal Similar to LC560
         System.out.println(findMaxLength(nums));
     }
 

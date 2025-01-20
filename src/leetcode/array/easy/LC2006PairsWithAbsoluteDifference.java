@@ -49,8 +49,8 @@ public class LC2006PairsWithAbsoluteDifference {
         }
         return count;
 
-        //TC:O(n)
-        //SC:O(1)
+        // TC:O(n)
+        // SC:O(1)
     }
 
     public static int countKDifference(int[] nums, int k) {

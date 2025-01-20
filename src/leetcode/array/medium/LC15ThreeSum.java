@@ -27,7 +27,6 @@ public class LC15ThreeSum {
 	private static List<List<Integer>> optimalSolution(int[] n) {
 
 		Arrays.sort(n);
-
 		List<List<Integer>> t=new ArrayList();
 
 		for (int i = 0; i < n.length - 2; i++) {

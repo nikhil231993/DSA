@@ -74,26 +74,27 @@ public class LC73SetMatrixZeroes {
                 }
             }
         }
-
+        //See if the first row needs to be set to zero as well
         if(matrix[0][0]==0){
             for(int j=0;j<matrix[0].length;j++){
                     matrix[0][j]=0;
             }
         }
-
+        //See if the first column needs to be set to zero as well
         if(col0==0){
             for(int i=0;i<matrix.length;i++){
                     matrix[i][0]=0;
             }
         }
+
         //TC:O(n*m)+O(n*m)
         //SC:O(1)
     }
 
     public static void setZeroes(int[][] matrix) {
 
-        int n=matrix.length;
-        int m=matrix[0].length;
+        int n = matrix.length;
+        int m = matrix[0].length;
         int[] col=new int[m];
         int[] row=new int[n];
 

@@ -10,12 +10,23 @@ public class LC1470ShuffleArray {
        //Approach 1
        int[] r=shuffle(nums,n);
        for(int n1:r)
-           System.out.println(n1);
+           System.out.print(n1);
+
+        System.out.println();
+        System.out.println("######################");
 
        //Approach 2
         int[] r1=shuffleBetter(nums,n);
         for(int n1:r1)
-            System.out.println(n1);
+            System.out.print(n1);
+
+        System.out.println();
+        System.out.println("######################");
+
+        //Approach 3
+        int[] r2=shuffleBetter(nums,n);
+        for(int n1:r2)
+            System.out.print(n1);
     }
 
     public static int[] shuffle(int[] nums, int n) {
@@ -55,6 +66,18 @@ public class LC1470ShuffleArray {
         while(i<n && j<2*n){
             result[k++]=nums[i++];
             result[k++]=nums[j++];
+        }
+        return result;
+    }
+
+    public static int[] shuffleSelf(int[] nums, int n) {
+
+        int[] result=new int[nums.length];
+        int k=0;
+        for(int i=0;i<nums.length/2;i++){
+            result[k]=nums[i];
+            result[k+1]=nums[i+n];
+            k=k+2;
         }
         return result;
     }

@@ -27,7 +27,7 @@ public class LC844BackSpaceStringComparison {
 		int count=0;
 
 		StringBuilder sb=new StringBuilder();
-		for(int i=n-1;i>=0;i--){
+		for(int i=n-1; i>=0; i--){
 
 			char ch=s.charAt(i);
 			if(ch=='#'){

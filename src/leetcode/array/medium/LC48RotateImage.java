@@ -45,8 +45,8 @@ public class LC48RotateImage {
 			}
 		}
 
-		//TC:O(M*N)+O(M*N)
-		//SC:O(1)
+		// TC:O(M*N)+O(M*N)
+		// SC:O(1)
 	}
 
 	public static void rotateApproach2(int[][] matrix) {

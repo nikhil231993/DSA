@@ -20,7 +20,7 @@ public class NextGreater {
 
     private static void findNextGreater(int[] nums, Stack<Integer> st) {
 
-        for(int i=0;i<nums.length;i++){
+        for(int i=0; i<nums.length; i++){
             while (!st.isEmpty() && nums[st.peek()] < nums[i]){
                 int index=st.pop();
                 nums[index]=nums[i];
@@ -33,6 +33,6 @@ public class NextGreater {
         }
 
         //TC:O(N + N)
-        //SC:O(N) worst case if it is an increasing array
+        //SC:O(N) worst case if it is an decreasing array
     }
 }

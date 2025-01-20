@@ -23,7 +23,7 @@ public class  LC45JumpGame2 {
 		}
 		return count;
 
-		// TC:O(n)
-		// SC:O(1)
+		//TC:O(n)
+		//SC:O(1)
 	}
 }

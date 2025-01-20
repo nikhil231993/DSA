@@ -19,14 +19,15 @@ public class LC349UnionOfTwoArrays {
 		//Approach 1: Brute
 		int[] ans = findUnionBrute(n, m, arr1, arr2);
 		for (int num : ans)
-			System.out.println(num);
+			System.out.print(num);
 
+		System.out.println();
 		System.out.println("#######################");
 
 		//Approach 2: Optimal
 		int[] result = findUnion(n, m, arr1, arr2, new ArrayList<>());
 		for (int num : result)
-			System.out.println(num);
+			System.out.print(num);
     }
 
 	private static int[] findUnionBrute(int n, int m, int[] arr1, int[] arr2) {

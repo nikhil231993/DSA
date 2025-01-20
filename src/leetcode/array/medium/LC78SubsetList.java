@@ -31,7 +31,7 @@ public class LC78SubsetList {
 		single.remove(single.size() - 1);
 		test(nums, i + 1, single, t);
 
-		//TC:O(2 raise to n)
-		//SC:O(2 raise to n)
+		//TC:O (2 raise to n)
+		//SC:O (2 raise to n)
 	}
 }

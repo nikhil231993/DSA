@@ -31,7 +31,7 @@ public class gfgSecondLargestAndSecondSmallest {
                 secondSmallest = nums[i];
             }
         }
-        return new int[]{secondMax, secondSmallest };
+        return new int[]{ secondMax, secondSmallest };
 
         //TC:O(n)
         //SC:O(1)

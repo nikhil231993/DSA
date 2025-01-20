@@ -20,7 +20,7 @@ public class LC930BinarySubarraySum {
         int count=0;
         HashMap<Integer,Integer> m=new LinkedHashMap<>();
 
-        for(int i=0;i<nums.length;i++){
+        for(int i=0; i<nums.length; i++){
             sum+=nums[i];
             if(sum==goal){
                 count++;

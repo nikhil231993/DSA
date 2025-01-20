@@ -21,7 +21,7 @@ public class LC1748SumOfUniqueElements {
 		}
 		return sum;
 
-		// SC:O(n)
-		// TC:O(n)
+		//SC:O(n)
+		//TC:O(n)
 	}
 }

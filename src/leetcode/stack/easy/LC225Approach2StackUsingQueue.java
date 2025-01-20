@@ -43,6 +43,7 @@ public class LC225Approach2StackUsingQueue {
         }
 
         public boolean empty() {
+
             return q1.isEmpty();
         }
     }

@@ -29,7 +29,7 @@ public class LC149MaxPointsInLine {
                     slope=((double)(point2[1]-point1[1])/(double)(point2[0]-point1[0]));
                 }
                 map.put(slope, map.getOrDefault(slope,0)+1);
-                max=Math.max(map.get(slope),max);
+                max=Math.max(map.get(slope), max);
             }
         }
         return max+1;

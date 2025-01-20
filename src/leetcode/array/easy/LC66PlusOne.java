@@ -42,7 +42,7 @@ public class LC66PlusOne {
 		new_number[0] = 1;
 		return new_number;
 
-		//TC:O(n)
-		//SC:O(1)
+		// TC:O(n)
+		// SC:O(1)
 	}
 }

@@ -44,8 +44,8 @@ public class LC316RemoveDuplicateLetters {
 
         return sb.toString();
 
-        //TC:O(n)
-        //SC:O(n+n) + last result string
+        // TC:O(n)
+        // SC:O(n+n) + last result string
     }
 }
 

@@ -42,7 +42,7 @@ public class LC1929ConcatenationArray {
         }
         return ans;
 
-        //TC:O(2*n)
-        //SC:O(2n) for ans
+        // TC:O(2*n)
+        // SC:O(2n) for ans
     }
 }

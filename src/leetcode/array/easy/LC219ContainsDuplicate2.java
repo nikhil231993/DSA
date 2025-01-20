@@ -26,7 +26,7 @@ public class LC219ContainsDuplicate2 {
 		}
 		return false;
 
-		//TC:O(n)
-		//SC:O(n)
+		// TC:O(n)
+		// SC:O(n)
 	}
 }

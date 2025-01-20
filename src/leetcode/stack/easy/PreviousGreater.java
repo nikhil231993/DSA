@@ -33,6 +33,6 @@ public class PreviousGreater {
         }
 
         //TC:O(N + N)
-        //SC:O(N) worst case if it is an increasing array
+        //SC:O(N) worst case if it is an decreasing array
     }
 }

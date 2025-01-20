@@ -38,6 +38,7 @@ public class LC225Approach3StackUsingOneQueue {
         }
 
         public boolean empty() {
+
             return q1.isEmpty();
         }
 

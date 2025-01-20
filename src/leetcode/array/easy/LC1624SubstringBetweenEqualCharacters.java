@@ -17,7 +17,7 @@ public class LC1624SubstringBetweenEqualCharacters {
 
 		for(int i=0; i<s.length(); i++) {
 			if(msp.containsKey(s.charAt(i))) {
-				int diff=i-msp.get(s.charAt(i));
+				int diff = i - msp.get(s.charAt(i));
 				if(diff>maxDiff)
 					maxDiff = diff;
 			} else {

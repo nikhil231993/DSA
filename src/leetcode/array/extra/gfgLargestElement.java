@@ -16,7 +16,7 @@ public class gfgLargestElement {
             max=Math.max(max,num);
         return max;
 
-        //TC:O(n)
-        //SC:O(1)
+        // TC:O(n)
+        // SC:O(1)
     }
 }

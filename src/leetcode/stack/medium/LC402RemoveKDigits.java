@@ -9,6 +9,7 @@ public class LC402RemoveKDigits {
         String num = "54321";
 //        String num="1432219";
         num="142999";
+        num="12345";
         int k = 3;
         System.out.println(removeKdigits(num, k));
     }

@@ -27,7 +27,7 @@ public class LC1423MaximumPointsYouCanObtainFromCards {
 		}
 		return maxSum;
 
-		//TC:O(k) + O(k)
+		//TC:O(k)+O(k)
 		//SC:O(1)
 	}
 }

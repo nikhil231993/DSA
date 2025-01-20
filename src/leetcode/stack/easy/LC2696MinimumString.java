@@ -32,7 +32,7 @@ public class LC2696MinimumString {
         }
         return st.size();
 
-        //TC:O(n)
-        //SC:O(n)
+        // TC:O(n)
+        // SC:O(n)
     }
 }

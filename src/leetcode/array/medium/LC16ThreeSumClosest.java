@@ -36,7 +36,7 @@ public class LC16ThreeSumClosest {
         }
         return ans;
 
-        //TC:O(n square)
-        //SC:O(1)
+        // TC:O(n square)
+        // SC:O(1)
     }
 }

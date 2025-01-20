@@ -73,7 +73,7 @@ public class LC532KDiffPairs {
         }
         return count;
 
-        //TC:O(n)
-        //SC:O(n)
+        // TC:O(n)
+        // SC:O(n)
     }
 }

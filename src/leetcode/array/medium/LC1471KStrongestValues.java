@@ -39,7 +39,7 @@ public class LC1471KStrongestValues {
             if(pq.size()>k)
                 pq.poll();
         }
-        int[] r=new int[k];
+        int[] r = new int[k];
         int i=0;
         while(!pq.isEmpty()){
             r[i++]=pq.poll().key;

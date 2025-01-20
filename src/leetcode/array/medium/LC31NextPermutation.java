@@ -14,7 +14,7 @@ public class LC31NextPermutation {
 
 	private static void nextPermutation(int[] nums) {
 
-		int idx1 = -1, idx2 = -1;
+		int idx1=-1, idx2=-1;
 
 		for (int i = nums.length - 2; i >= 0; i--) {
 			if (nums[i] < nums[i + 1]) {

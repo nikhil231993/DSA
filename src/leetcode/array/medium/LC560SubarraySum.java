@@ -15,7 +15,7 @@ public class LC560SubarraySum {
 		//Approach 2: Better
 		System.out.println(subarraySum(nums, k));
 
-		//Approach 3: Optimal
+		//Approach 3:Optimal
 		System.out.println(subarraySumOptimal(nums, k));
 	}
 

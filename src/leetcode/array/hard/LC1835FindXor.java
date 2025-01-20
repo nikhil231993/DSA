@@ -17,10 +17,10 @@ public class LC1835FindXor {
 
         int n=arr1.length, m=arr2.length;
         int xor1=0, xor2=0;
-        for(int i=0;i<n;i++){
+        for(int i=0; i<n; i++){
             xor1^=arr1[i];
         }
-        for(int j=0;j<m;j++){
+        for(int j=0; j<m; j++){
             xor2^=arr2[j];
         }
         return xor1 & xor2;

@@ -12,14 +12,15 @@ public class LC1389CreateTargetArray {
         //Approach 1:
         int[] result=createTargetArray(nums,index);
         for(int n:result)
-            System.out.println(n);
+            System.out.print(n);
 
+        System.out.println();
         System.out.println("#######");
 
         //Approach 2:
         int[] result1=createTargetArrayWithSpace(nums,index);
         for(int n:result1)
-            System.out.println(n);
+            System.out.print(n);
     }
 
     public static int[] createTargetArray(int[] nums, int[] index) {
@@ -38,17 +39,12 @@ public class LC1389CreateTargetArray {
     public static int[] createTargetArrayWithSpace(int[] nums, int[] index) {
 
         int[] target = new int[nums.length];
-        int count = 0;
-        while (count < target.length) {
-            if (index[count] >= count) {
-                target[index[count]] = nums[count];
-            }
-            else{
-                for (int i = count; i > index[count]; i--)
-                    target[i] = target[i - 1];
-                target[index[count]] = nums[count];
-            }
-            count++;
+        int i = 0;
+        while (i < index.length) {
+            for (int k = target.length - 1; k > index[i]; k--)
+                target[k] = target[k - 1];
+            target[index[i]] = nums[i];
+            i++;
         }
         return target;
 

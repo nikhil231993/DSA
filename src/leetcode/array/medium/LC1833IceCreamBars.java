@@ -19,7 +19,7 @@ public class LC1833IceCreamBars {
         }
         int count=0;
         while(!pq.isEmpty()){
-            if(pq.peek()<=coins){
+            if(pq.peek() <= coins){
                 count++;
                 coins-=pq.peek();
                 pq.poll();

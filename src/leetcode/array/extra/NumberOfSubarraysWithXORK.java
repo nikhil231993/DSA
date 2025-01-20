@@ -38,8 +38,8 @@ public class NumberOfSubarraysWithXORK {
         }
         return cnt;
 
-        //TC:O(n square)
-        //SC:O(1)
+        // TC:O(n square)
+        // SC:O(1)
     }
 
     private static int optimal(int[] num, int target) {

@@ -34,7 +34,7 @@ public class LC2418SortThePeople {
 
         PriorityQueue<Node> pq=new PriorityQueue<>((a, b)->b.height-a.height);
 
-        for(int i=0;i<names.length;i++){
+        for(int i=0; i<names.length; i++){
             pq.offer(new Node(names[i], heights[i]));
         }
 

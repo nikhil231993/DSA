@@ -39,7 +39,7 @@ public class LC599MinimumIndexSumOfTwoLists {
         }
         return result.toArray(new String[result.size()]);
 
-        //TC:O(n+m)
-        //SC:O(k)
+        // TC:O(n+m)
+        // SC:O(k)
     }
 }

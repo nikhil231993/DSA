@@ -22,7 +22,7 @@ public class LC56MergeIntervals {
 	private static List<List<Integer>> merge(int[][] twoDim) {
 
 		int n=twoDim.length;
-		Arrays.sort(twoDim, (a, b) -> a[0] - b[0]);// nlog(n)
+		Arrays.sort(twoDim, (a, b) -> a[0] - b[0]);  // nlog(n)
 
 		List<List<Integer>> ans=new ArrayList<>();
 

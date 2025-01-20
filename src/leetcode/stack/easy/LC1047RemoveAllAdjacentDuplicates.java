@@ -28,7 +28,7 @@ public class LC1047RemoveAllAdjacentDuplicates {
         for(int i=0; i<n; i++){
             if(sb.length() > 0 && sb.charAt(sb.length()-1) == s.charAt(i)){
                 sb.deleteCharAt(sb.length()-1);
-            }else
+            } else
                 sb.append(s.charAt(i));
         }
         return sb.toString();

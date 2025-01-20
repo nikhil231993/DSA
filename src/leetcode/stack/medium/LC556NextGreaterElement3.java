@@ -16,7 +16,7 @@ public class LC556NextGreaterElement3 {
 
 		int n1 = ch.length;
 		for (int i = n1 - 2; i >= 0; i--) {
-			if (ch[i] < ch[i + 1]) { // first dip from the left
+			if (ch[i] < ch[i + 1]) {  //first dip from the left
 				idx1 = i;
 				break;
 			}

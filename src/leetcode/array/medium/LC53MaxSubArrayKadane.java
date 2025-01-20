@@ -23,7 +23,7 @@ public class LC53MaxSubArrayKadane {
 		}
 		return currentMaxSum;
 
-		//TC:O(n)
-		//SC:O(1)
+		// TC:O(n)
+		// SC:O(1)
 	}
 }

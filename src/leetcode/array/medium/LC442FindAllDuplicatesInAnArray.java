@@ -16,7 +16,7 @@ public class LC442FindAllDuplicatesInAnArray {
 	public static List<Integer> findDuplicates(int[] nums) {
 
 		List<Integer> arr=new ArrayList();
-		for(int i=0;i<nums.length;i++){
+		for(int i=0; i<nums.length; i++){
 			int idx=Math.abs(nums[i]);
 			if(nums[idx-1]<0)
 	            arr.add(Math.abs(nums[i]));
@@ -25,7 +25,7 @@ public class LC442FindAllDuplicatesInAnArray {
 		}
 		return arr;
 
-		  //TC:O(n)
-		  //SC:O(1)
+		//TC:O(n)
+		//SC:O(1)
 	}
 }

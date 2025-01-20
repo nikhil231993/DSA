@@ -50,9 +50,9 @@ public class LC509FibonacciNumber {
             return 0;
         if(n==1 || n==2)
             return 1;
-        return fibUsingRecursion(n-1)+fibUsingRecursion(n-2);
+        return fibUsingRecursion(n-1) + fibUsingRecursion(n-2);
 
-        //TC:O(2 raise to n)
-        //SC:O(log(n))
+        // TC:O(2 raise to n)
+        // SC:O(N)
     }
 }

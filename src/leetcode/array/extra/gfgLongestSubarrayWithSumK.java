@@ -34,7 +34,7 @@ public class gfgLongestSubarrayWithSumK {
             }
 
             if(sum==k)
-                len=Math.max(len,r-l+1);
+                len=Math.max(len, r-l+1);
             r++;
         }
         return len;

@@ -44,8 +44,8 @@ public class LC88MergeSortedArray {
             right--;
         }
 
-        //TC:O(n+m)
-        //SC:O(1)
+        // TC:O(n+m)
+        // SC:O(1)
     }
 
     private static int[] withExtraSpace(int[] arr1, int[] arr2) {

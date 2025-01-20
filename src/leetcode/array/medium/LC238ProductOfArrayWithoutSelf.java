@@ -33,7 +33,7 @@ public class LC238ProductOfArrayWithoutSelf {
 		int p2=1;
 		
 		
-		for(int i=0;i<nums.length;i++) {
+		for(int i=0; i<nums.length; i++) {
 			ans[i]*=p1;
 			p1 *= nums[i];
 			int j = nums.length - i - 1;

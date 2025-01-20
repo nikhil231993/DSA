@@ -45,7 +45,7 @@ public class NextSmaller {
     private static void findNextMinimumOfEachElement(int[] nums, Stack<Integer> st) {
 
         for(int i=0; i<nums.length; i++){
-            while(!st.isEmpty() && nums[st.peek()]>nums[i]){
+            while(!st.isEmpty() && nums[st.peek()] > nums[i]){
                 int index=st.pop();
                 nums[index]=nums[i];
             }
@@ -93,6 +93,7 @@ public class NextSmaller {
         for(int i=0; i<arr.size(); i++){
             while(!st.isEmpty() && arr.get(st.peek()) > arr.get(i)){
                 result.set(st.pop(), arr.get(i));
+                result.add(st.pop(), arr.get(i));
             }
             st.push(i);
         }

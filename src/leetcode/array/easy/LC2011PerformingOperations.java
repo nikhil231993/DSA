@@ -23,7 +23,7 @@ public class LC2011PerformingOperations {
         int n=operations.length;
         int count=0;
         for(int i=0; i<n; i++){
-            if(operations[i].charAt(0)=='+' || operations[i].charAt(2)=='+')
+            if(operations[i].charAt(0)=='+' || operations[i].charAt(2)=='+')  // if(operations[i].charAt(1)=='+')
                 count++;
             else
                 count--;

@@ -19,7 +19,7 @@ public class LC2798NumberEmplyeesTarget {
         }
         return count;
 
-		// TC:O(n)
-		// SC:O(1)
+		//TC:O(n)
+		//SC:O(1)
     }
 }

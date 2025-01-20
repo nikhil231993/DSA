@@ -43,7 +43,7 @@ public class LC1465MaximumAreaOfCake {
 			max = h - arr[arr.length - 1];
 		return max;
 
-		// TC:O(n log n)
-		// SC:O(1)
+		//TC:O(n log n)
+		//SC:O(1)
 	}
 }

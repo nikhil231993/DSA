@@ -1,23 +1,28 @@
 package leetcode.stack.medium;
 
-import java.util.Stack;
 
-public class LC2288ApplyDiscounts {
+public class LC2288ApplyDiscountsNFA {
 
     public static void main(String[] args) {
 
         String sentence = "there are $1 $2 and 5$ candies in the shop";
         int discount = 50;
         System.out.println(discountPrices(sentence, discount));
+
+        //sentence ="706hzu76jjh7yufr5x9ot60v149k5 $7651913186 pw2o $6"
+        //discount=28
+
+        //To handle above case we use double or long
     }
 
     public static String discountPrices(String sentence, int discount) {
 
         String[] str=sentence.split(" ");
         String ans="";
+
         for(int i=0; i<str.length; i++){
             if(isValid(str[i])){
-                long val=Long.parseLong(str[i].substring(1));
+                Long val=Long.parseLong(str[i].substring(1));  // double val=Double.parseDouble(str[i].substring(1));
                 ans+=("$"+ String.format("%.2f", val*(1-discount/100.0d)));
             }else{
                 ans+= str[i];

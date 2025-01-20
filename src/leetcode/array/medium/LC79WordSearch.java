@@ -31,7 +31,7 @@ public class LC79WordSearch {
 
 		if(k == word.length())
 			return true;
-		if(i<0 || j<0 || i>=n || j>=m || board[i][j]!=word.charAt(k))
+		if( i<0 || j<0 || i>=n || j>=m || board[i][j] != word.charAt(k))
 			return false;
 		char ch=board[i][j];
 		board[i][j]='#';

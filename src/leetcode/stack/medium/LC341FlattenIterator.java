@@ -12,6 +12,7 @@ public class LC341FlattenIterator {
         flattening(nestedList);
         it = fList.iterator();
     }
+
     public void flattening(List<NestedInteger> nestedList){
         for(NestedInteger currEl : nestedList){
             if(currEl.isInteger()){
@@ -21,6 +22,7 @@ public class LC341FlattenIterator {
             }
         }
     }
+
     @Override
     public Integer next() {
         if(it.hasNext()){

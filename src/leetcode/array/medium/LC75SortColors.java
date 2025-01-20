@@ -40,7 +40,6 @@ public class LC75SortColors {
     }
 
     public static void swap(int num1,int num2,int[] nums){
-
         int temp=nums[num1];
         nums[num1]=nums[num2];
         nums[num2]=temp;

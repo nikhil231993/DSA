@@ -39,7 +39,7 @@ public class V13EvaluatePostFix {
         }
         return st.peek();
 
-        //TC:O(n)
-        //SC:O(n)
+        // TC:O(n)
+        // SC:O(n)
     }
 }

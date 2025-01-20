@@ -15,7 +15,8 @@ public class LC503NextGreaterElement2 {
 
 		System.out.println("###########################");
 
-		int[] result2 = nextGreaterElementsSelf(nums); // we cannot use Stack while loop because  when we again go through it in 2*n cycle we will have last value in
+		int[] result2 = nextGreaterElementsSelf(nums);
+		// we cannot use Stack with while loop because  when we again go through it in 2*n cycle we will have last value 4 in place of 3 i.e. 2,3,4,0,4
 		// which will lead to -1 in result. Debug and see the issue.
 
 		for (int n : result2)

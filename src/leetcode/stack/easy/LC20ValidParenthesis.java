@@ -32,7 +32,7 @@ public class LC20ValidParenthesis {
             return true;
         return false;
 
-        //TC:O(n)
-        //SC:O(n)
+        // TC:O(n)
+        // SC:O(n)
     }
 }

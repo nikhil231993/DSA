@@ -30,8 +30,7 @@ public class LC733FloodFill {
 		image(image, sr - 1, sc, oldColor, newColor);
 		image(image, sr, sc + 1, oldColor, newColor);
 
-		// TC:O(n*m) worst case where we haev to color everything
-		// SC:O(n*m) stack has all the elements
-
+		//TC:O(n*m) worst case where we have to color everything
+		//SC:O(n*m) stack has all the elements
 	}
 }

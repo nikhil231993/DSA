@@ -7,6 +7,7 @@ public class LC1021RemoveOutermostParentheses {
     public static void main(String[] args) {
 
         String s="(()())(())";
+        s="(())";
         System.out.println(removeOuterParentheses(s));
     }
 

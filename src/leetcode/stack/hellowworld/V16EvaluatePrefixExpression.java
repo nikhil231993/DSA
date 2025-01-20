@@ -17,7 +17,7 @@ public class V16EvaluatePrefixExpression {
 
         for(int i=n-1; i>=0; i--){
 
-            char ch=s.charAt(i);
+            char ch = s.charAt(i);
             if(ch==' ')
                 continue;
             else if(Character.isDigit(ch)){
