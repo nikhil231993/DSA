@@ -31,7 +31,7 @@ public class G14LC130SurroundedRegions {
         int vis[][] = new int[n][m];
 
         // traverse first row and last row
-        for(int j = 0 ; j<m;j++) {
+        for(int j = 0 ; j<m; j++) {
             // check for unvisited Os in the boundary rws
             // first row
             if(vis[0][j] == 0 && board[0][j] == 'O') {

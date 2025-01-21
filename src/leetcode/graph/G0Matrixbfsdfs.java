@@ -117,8 +117,8 @@ public class G0Matrixbfsdfs {
         //TC:O(m) as we pass through the actual edges only and all others are by default 0
 
         System.out.println("Print Matrix: ");
-        for (int i=0;i<=n;i++) {
-            for (int j=0;j<=n;j++) {
+        for (int i=0; i<=n; i++) {
+            for (int j=0; j<=n; j++) {
                 System.out.print(matrix[i][j] + " ");
             }
             System.out.println();

@@ -48,7 +48,7 @@ public class G38LC787CheapestFlight {
 
         List<List<PairSrcDest>> adjList=new ArrayList<>();
 
-        for(int i=0;i<V;i++){
+        for(int i=0; i<V; i++){
             adjList.add(new ArrayList<>());
         }
 

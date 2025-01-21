@@ -49,7 +49,7 @@ public class G8LC200NumberOfIslands {
         int[] y_axis=new int[]{0,-1,0,1};//check for all 4 directions
 
         int count=0;
-        for(int i=0;i<n;i++){
+        for(int i=0; i<n; i++){
             for(int j=0;j<m;j++){
                 if(grid[i][j]=='1' && visited[i][j]==0){
                     count++;

@@ -37,7 +37,7 @@ public class G25LC802EventualSafeStatesUsingTopoSort {
         }
 
         Queue<Integer> q=new LinkedList<>();
-        for(int i=0;i<indegree.length;i++){
+        for(int i=0; i<indegree.length; i++){
             if(indegree[i]==0){
                 q.offer(i);
             }

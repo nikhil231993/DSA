@@ -22,7 +22,6 @@ public class G49LC1319NoOfOperations {
         if (connections.length < n - 1) {
             return -1;
         }
-
         List<List<Integer>> adjList = buildGraph(n, connections);
 
         boolean[] visited = new boolean[n];
@@ -64,7 +63,7 @@ public class G49LC1319NoOfOperations {
 
     private static int noOfOperations(int n, int[][] connections) {
 
-        DisjointSetBySize ds=new DisjointSetBySize(n);
+        DisjointSetBySize ds = new DisjointSetBySize(n);
         int countExtraEdges=0;
 
         for(int[] r: connections){

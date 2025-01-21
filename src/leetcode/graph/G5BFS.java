@@ -60,7 +60,7 @@ public class G5BFS {
     private static void adjacencyList(List<List<Integer>> arr,int n, int m, Scanner scan) {
 
         System.out.println("Creating " +n +" List:");
-        for(int i=0;i<=n;i++)
+        for(int i=0; i<=n; i++)
             arr.add(new ArrayList<>());
 
         System.out.println("Enter the edges values: ");

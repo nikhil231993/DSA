@@ -19,7 +19,7 @@ public class G9LC733FloodFill {
         int[] y_axis=new int[]{0,-1,0,1};
 
         // Using dfs
-        dfsTraversal(image,ans,n,m,oldColor,sr,sc,color,x_axis,y_axis);
+        dfsTraversal(image, ans, n, m, oldColor, sr, sc, color, x_axis, y_axis);
 
         System.out.println("Using DFS: ");
 

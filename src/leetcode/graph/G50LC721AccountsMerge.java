@@ -21,7 +21,7 @@ public class G50LC721AccountsMerge {
 
         int noOfNames=accounts.size();
         //Create a map with key and value where key is the email id and value is the list(0);
-        Map<String,Integer> emailToNode=new HashMap<>();
+        Map<String,Integer> emailToNode = new HashMap<>();
 
         //Also a disjoint set is needed;
         DisjointSetBySize ds=new DisjointSetBySize(noOfNames);

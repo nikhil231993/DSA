@@ -105,7 +105,7 @@ public class G32DijkstraAlgoUGWeight {
 
         List<List<PairG32>> adjList=new ArrayList<>();
 
-        for(int i=0;i<V;i++)
+        for(int i=0; i<V; i++)
             adjList.add(new ArrayList<>());
 
         for(int i=0;i<E;i++){

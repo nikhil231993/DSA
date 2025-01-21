@@ -5,18 +5,20 @@ import java.util.Map;
 
 public class G53LC947Stones {
     public static void main(String[] args) {
+
         int[][] stones =new int[][] {{0,0},{0,1},{1,0},{1,2},{2,1},{2,2}};
         System.out.println(stonesRemoved(stones));
     }
 
     private static int stonesRemoved(int[][] stones) {
+
         int n=stones.length;//This is no of stones
         //Find out the dimensions of matrix. Consider the max values or row and col as dimensions
         int maxr=0;
         int maxc=0;
         for(int[] r:stones){
-            maxr=Math.max(maxr,r[0]);
-            maxc=Math.max(maxc,r[1]);
+            maxr=Math.max(maxr, r[0]);
+            maxc=Math.max(maxc, r[1]);
         }
 
         //Do the union considering columns as an extension of row

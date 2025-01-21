@@ -76,9 +76,9 @@ public class G36BinaryMaze {
                 int nrow=row+xaxis[k];
                 int ncol=col+yaxis[k];
 
-                if(nrow>=0 && nrow<n && ncol>=0 && ncol<m && grid[nrow][ncol]==1){
+                if(nrow >= 0 && nrow < n && ncol >= 0 && ncol < m && grid[nrow][ncol] == 1){
 
-                    if(nrow==dest[0]&& ncol==dest[1])
+                    if(nrow == dest[0] && ncol == dest[1])
                         return dis+1;
                     if(distance[nrow][ncol] > dis+1){
                         distance[nrow][ncol] = dis+1;

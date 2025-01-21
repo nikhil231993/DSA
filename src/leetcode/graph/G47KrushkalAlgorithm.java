@@ -52,7 +52,7 @@ public class G47KrushkalAlgorithm {
 
         //Creating a list of edge having wt, u, v
         //O(N+E) is TC here
-        List<Edge> edgeList=new ArrayList<>();
+        List<Edge> edgeList = new ArrayList<>();
         for(int[] row:edges){
             edgeList.add(new Edge(row[2], row[0], row[1]));
         }
@@ -68,7 +68,8 @@ public class G47KrushkalAlgorithm {
         List<PairEdges> pairEdge=new ArrayList<>();
 
         //O(M*4*alpha*2)
-        for(Edge edge:edgeList){
+        for(Edge edge : edgeList){
+
             int u=edge.u;
             int v=edge.v;
             int wt=edge.wt;

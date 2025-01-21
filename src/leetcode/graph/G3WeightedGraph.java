@@ -64,7 +64,6 @@ public class G3WeightedGraph {
             System.out.println("]");
             System.out.println();
         }
-
         //SC:O(2*Edges)
     }
 
@@ -99,7 +98,6 @@ public class G3WeightedGraph {
             }
           System.out.println();
         }
-
         //SC:O(n*n)
     }
 }

@@ -37,7 +37,7 @@ public class G22TopoSortBFSKahnAlgo {
                 q.offer(i);
             }
         }
-        List<Integer> list=new ArrayList<>();
+        List<Integer> list = new ArrayList<>();
         while(!q.isEmpty()){
 
             Integer node=q.poll();
@@ -51,8 +51,8 @@ public class G22TopoSortBFSKahnAlgo {
         }
         return list;
 
-        //SC:O(N) queue + O(N) indegree + O(N)toposort
         //TC:O(N+E)
+        //SC:O(N) queue + O(N) indegree + O(N)toposort
     }
 
     private static void adjacencyList(List<List<Integer>> arr,int n, int m, Scanner scan) {

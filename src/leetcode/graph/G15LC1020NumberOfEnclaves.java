@@ -46,8 +46,8 @@ public class G15LC1020NumberOfEnclaves {
         }
 
         int count=0;
-        for(int i=0;i<nr;i++){
-            for(int j=0;j<nc;j++){
+        for(int i=0; i<nr; i++){
+            for(int j=0; j<nc; j++){
                 if(visited[i][j]==0 && grid[i][j]==1)
                     count++;
             }

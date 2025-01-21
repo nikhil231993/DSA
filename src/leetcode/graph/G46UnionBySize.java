@@ -56,7 +56,7 @@ public class G46UnionBySize {
         ds.unionBySize(4,5);
         ds.unionBySize(6,7);
         ds.unionBySize(5,6);
-        if(ds.findParent(3)==ds.findParent(7))
+        if(ds.findParent(3) == ds.findParent(7))
             System.out.println("Same");
         else
             System.out.println("Not same");

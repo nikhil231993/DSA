@@ -3,8 +3,10 @@ package leetcode.graph;
 import java.util.ArrayList;
 import java.util.List;
 
-public class G51NumberOfIslands2 {
+public class G51LC305NumberOfIslands2 {
+
     public static void main(String[] args) {
+
         int n = 4, m = 5;
         int[][] operators = {{0, 0}, {0, 0}, {1, 1}, {1, 0}, {0, 1},
                 {0, 3}, {1, 3}, {0, 4}, {3, 2}, {2, 2}, {1, 2}, {0, 2}
@@ -25,6 +27,7 @@ public class G51NumberOfIslands2 {
         //Answer list
         List<Integer> ans=new ArrayList<>();
         for(int i=0;i<operators.length;i++){
+
             int row=operators[i][0];
             int col=operators[i][1];
 
@@ -43,6 +46,7 @@ public class G51NumberOfIslands2 {
             for(int k=0;k<4;k++){
                 int nrow=row+xaxis[k];
                 int ncol=col+yaxis[k];
+
                 //Here we should multiply by column
                 int nnode=nrow*m+ncol;
                 int node=row*m+col;
@@ -58,9 +62,10 @@ public class G51NumberOfIslands2 {
         }
         return ans;
 
-        //Time Complexity: O(Q*4α) ~ O(Q) where Q = no. of queries. The term 4α is so small that it can be considered constant.
-        //
-        //Space Complexity: O(Q) + O(N*M) + O(N*M), where Q = no. of queries, N = total no. of rows, M = total no. of columns. The last two terms are for the parent and the size array used inside the Disjoint set data structure. The first term is to store the answer.
+        // Time Complexity: O(Q*4α) ~ O(Q) where Q = no. of queries.
+        // The term 4α is so small that it can be considered constant.
+        // Space Complexity: O(Q) + O(N*M) + O(N*M), where Q = no. of queries,
+        // N = total no. of rows, M = total no. of columns. The last two terms are for the parent and the size array used inside the Disjoint set data structure.
+        // The first term is to store the answer.
     }
-
 }

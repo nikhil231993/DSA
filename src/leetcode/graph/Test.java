@@ -1,19 +1,30 @@
 package leetcode.graph;
 
-import java.util.Arrays;
-import java.util.PriorityQueue;
-import java.util.TreeSet;
+import java.util.*;
 
 public class Test {
 
     public static void main(String[] args) {
+
+        Set<List<String>> set=new HashSet<>();
+        List<String> list1=new ArrayList<>();
+        list1.add("Nikhil");
+        list1.add("Kavya");
+
+        List<String> list2=new ArrayList<>();
+        list2.add("Nikhil");
+        list2.add("Kavya");
+        set.add(list1);
+        set.add(list2);
+
+        System.out.println(set.size());
 
         System.out.println("++++++++");
         String s="Nikhil";
 
         char[] ch=s.toCharArray();
         ch[0]='k';
-        System.out.println(s);
+        System.out.println("Original word:" + s);
         System.out.println(ch);
 
         System.out.println("++++++++");

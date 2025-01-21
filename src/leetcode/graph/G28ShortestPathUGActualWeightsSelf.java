@@ -50,8 +50,8 @@ public class G28ShortestPathUGActualWeightsSelf {
             Integer node=q.poll();
 
             for(PairG28 vertex: adjlist.get(node)){
-                if(dist[vertex.node]>dist[node]+vertex.weight){
-                    dist[vertex.node]=vertex.weight+dist[node];
+                if(dist[vertex.node] > dist[node]+vertex.weight){
+                    dist[vertex.node] = vertex.weight+dist[node];
                     q.offer(vertex.node);
                 }
             }

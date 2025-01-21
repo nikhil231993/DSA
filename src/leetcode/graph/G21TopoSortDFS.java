@@ -41,7 +41,7 @@ public class G21TopoSortDFS {
 
         visited[i]=1;
         for(Integer vertex: arr.get(i)){
-            if(visited[vertex]==0)
+            if(visited[vertex] == 0)
                 topoSort(arr, n, m, visited, s, vertex);
         }
         s.push(i);

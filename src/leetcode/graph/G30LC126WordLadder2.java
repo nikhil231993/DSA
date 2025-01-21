@@ -35,7 +35,7 @@ public class G30LC126WordLadder2 {
 
         //we can usedonlevel array also to store values added inside contains check below
 
-        List<List<String>> result=new ArrayList<>();
+        List<List<String>> result = new ArrayList<>();
         while(!q.isEmpty()){
             List<String> individualList=q.poll();
 
@@ -53,7 +53,7 @@ public class G30LC126WordLadder2 {
             if(word.equals(endWord)){
                 if(result.size()==0){
                     result.add(individualList);
-                }else if (individualList.size()==result.get(0).size()){
+                }else if (individualList.size() == result.get(0).size()){
                     result.add(individualList);
                 }
             }
@@ -61,6 +61,7 @@ public class G30LC126WordLadder2 {
             for(int i=0;i<word.length();i++){
                 char[] replacedArray=word.toCharArray();
                 char temp=replacedArray[i]; //This line is not needed as the actual word is not changed
+
                 for(char c='a';c<='z';c++){
                     replacedArray[i]=c;
                     String s=new String(replacedArray);
@@ -70,7 +71,7 @@ public class G30LC126WordLadder2 {
                         individualList.remove(individualList.size()-1);
                     }
                 }
-                replacedArray[i]=temp;//This line is not needed as the actual word is not changed
+                replacedArray[i]=temp; //This line is not needed as the actual word is not changed
             }
         }
         return  result;

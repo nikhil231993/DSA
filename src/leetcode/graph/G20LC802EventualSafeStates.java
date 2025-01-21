@@ -17,7 +17,7 @@ public class G20LC802EventualSafeStates {
         int m=graph[0].length;
         List<List<Integer>> adjList=new ArrayList<>();
 
-        for(int i=0;i<n;i++){
+        for(int i=0; i<n; i++){
             adjList.add(new ArrayList<>());
         }
 

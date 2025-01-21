@@ -55,9 +55,9 @@ public class G39MinimumMultiplicationToReachEnd {
 
                if(vertex==end)
                    return level+1;
-               if(dist[vertex] > level+1){
-                   dist[vertex]=level+1;
-                   q.offer(new PairG39(level+1,vertex));
+               if(dist[vertex] > level + 1){
+                   dist[vertex] = level + 1;
+                   q.offer( new PairG39(level+1,vertex));
                }
             }
         }

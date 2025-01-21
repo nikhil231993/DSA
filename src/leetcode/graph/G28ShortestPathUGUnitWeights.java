@@ -56,17 +56,17 @@ public class G28ShortestPathUGUnitWeights {
 
     private static void shortestPathUsingWithoutVisitedArray(List<List<Integer>> adjlist, int V, int e, int src,int[] dist) {
 
-        Arrays.fill(dist,(int)(1e9));
+        Arrays.fill(dist, (int)(1e9));
         dist[src]=0;
 
-        Queue<Integer> q=new LinkedList();
+        Queue<Integer> q = new LinkedList();
         q.offer(src);
 
         while(!q.isEmpty()){
             Integer node=q.poll();
             for(Integer vertex: adjlist.get(node)){
-                if(dist[vertex]>dist[node]+1){
-                    dist[vertex]=1+dist[node];
+                if(dist[vertex] > dist[node]+1){
+                    dist[vertex] = 1+dist[node];
                     q.offer(vertex);
                 }
             }
@@ -93,8 +93,10 @@ public class G28ShortestPathUGUnitWeights {
 
         while(!q.isEmpty()){
             Integer node=q.poll();
+
             for(Integer vertex:adjlist.get(node)){
                 if(visited[vertex]==0){
+
                     visited[vertex]=1;
                     dist[vertex]=1+dist[node];
                     q.offer(vertex);

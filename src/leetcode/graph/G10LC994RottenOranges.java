@@ -33,14 +33,14 @@ public class G10LC994RottenOranges {
         Queue<Oranges> q=new LinkedList();
         int freshOranges=0;
 
-        for(int i=0;i<n;i++){
-            for(int j=0;j<m;j++){
-                if(grid[i][j]==2){
+        for(int i=0; i<n; i++){
+            for(int j=0; j<m; j++){
+                if(grid[i][j] == 2){
                     q.offer(new Oranges(i, j, 0));
                 //  visited[i][j]=2; will work without this //marking as rotten
                 }
 
-                if(grid[i][j]==1)
+                if(grid[i][j] == 1)
                     freshOranges++;
             }
         }

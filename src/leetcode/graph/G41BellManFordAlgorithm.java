@@ -31,7 +31,7 @@ public class G41BellManFordAlgorithm {
 
     private static int[] bellManFord(int n, int e, int[][] edges,int src) {
 
-        int[] dist=new int[n];
+        int[] dist = new int[n];
         Arrays.fill(dist,(int)(1e9));
         dist[src]=0;
 

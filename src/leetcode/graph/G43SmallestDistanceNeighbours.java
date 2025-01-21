@@ -146,10 +146,10 @@ public class G43SmallestDistanceNeighbours {
 		int count=Integer.MAX_VALUE;
 		int maxCity=Integer.MAX_VALUE;
 		
-		for(int city=0;city<n;city++) {
+		for(int city=0; city<n; city++) {
 			int cnt = 0;
-			for(int adCity=0;adCity<n;adCity++) {
-				if(costMatrix[city][adCity]<=distanceThreshold) {
+			for(int adCity=0; adCity<n; adCity++) {
+				if(costMatrix[city][adCity] <= distanceThreshold) {
 					cnt++;
 				}
 			}

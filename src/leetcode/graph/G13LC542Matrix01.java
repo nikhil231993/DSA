@@ -41,7 +41,7 @@ public class G13LC542Matrix01 {
         int[][] dist=new int[n][m];
 
         Queue<PairG13> q=new LinkedList();
-        for(int i=0;i<n;i++){
+        for(int i=0; i<n; i++){
             for(int j=0;j<m;j++){
                 if(mat[i][j]==0){
                     visited[i][j]=1;

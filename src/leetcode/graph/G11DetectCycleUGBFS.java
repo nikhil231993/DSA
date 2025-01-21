@@ -125,7 +125,7 @@ public class G11DetectCycleUGBFS {
             int parent=q.peek().parent;
             q.poll();
 
-            for(Integer vertex:arr.get(node)){
+            for(Integer vertex : arr.get(node)){
                 if(visited[vertex]==0){
                     q.offer(new PairParent(vertex,node));
                     visited[vertex]=1;

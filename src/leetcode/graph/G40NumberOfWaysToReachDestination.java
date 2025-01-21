@@ -48,7 +48,7 @@ public class G40NumberOfWaysToReachDestination {
         Arrays.fill(distance,(int)(1e18));
         distance[0]=0;
 
-        long[] ways=new long[n]; // we use long heer because time constraint is <=10 raise to 9 in leetcode so the value can be beyond integer range
+        long[] ways=new long[n]; // we use long hear because time constraint is <=10 raise to 9 in leetcode so the value can be beyond integer range
         Arrays.fill(ways,0);
         ways[0]=1;
         int mod=(int)(1e9+7);
@@ -65,10 +65,10 @@ public class G40NumberOfWaysToReachDestination {
                 int vert=vertexPair.node;
                 long vertDistance=vertexPair.distance;
 
-                if(vertDistance+dis<distance[vert]){
+                if(vertDistance+dis < distance[vert]){
                     distance[vert]=vertDistance+dis;
                     pq.offer(new PairG40(vert,vertDistance+dis));
-                    ways[vert]=ways[node] % mod;
+                    ways[vert] = ways[node] % mod;
                 }else if(vertDistance+dis==distance[vert]){
                     ways[vert]=(ways[vert]+ways[node]) % mod;
                 }

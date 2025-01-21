@@ -74,8 +74,8 @@ public class G45PrimAlgorithm {
                 continue;;
             visited[node]=1;
 
-            parent[node]=parentNode;
-            key[node]=weight;
+            parent[node] = parentNode;
+            key[node] = weight;
             //E
             for(PairNodeWeight vertex:adjList.get(node)){
                 int weigh=vertex.weight;

@@ -43,7 +43,7 @@ public class G27ShortestPathDAG {
 		
 		List<List<PairG27>> adjList=new ArrayList();
 		
-		for(int i=0;i<V;i++) {
+		for(int i=0; i<V; i++) {
 			adjList.add(new ArrayList<PairG27>());
 		}
 		
@@ -54,7 +54,7 @@ public class G27ShortestPathDAG {
 		// Toposort
 		int[] visited = new int[V];
 		Stack<Integer> st=new Stack<>();
-		for(int i=0;i<V;i++) {
+		for(int i=0; i<V; i++) {
 			if (visited[i] == 0) {
 				dfsTopo(adjList, V, E, st, visited, i);
 			}

@@ -27,7 +27,7 @@ public class G24LC210CourseSchedule2 {
 
         List<List<Integer>> list=new ArrayList<>();
 
-        for(int i=0;i<numCourses;i++){
+        for(int i=0; i<numCourses; i++){
             list.add(new ArrayList<>());
         }
 

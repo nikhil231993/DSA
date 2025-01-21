@@ -46,9 +46,9 @@ public class G6DFS {
 
         visited[i]=true;
         dfs.add(i);
-        for(Integer vertex: arr.get(i)){
+        for(Integer vertex : arr.get(i)){
             if(!visited[vertex]){
-                dfsRecursive(arr,dfs,visited,vertex);
+                dfsRecursive(arr, dfs, visited, vertex);
             }
         }
     }
@@ -56,7 +56,7 @@ public class G6DFS {
     private static void adjacencyList(List<List<Integer>> arr, int n, int m, Scanner scan) {
 
         System.out.println("Creating " +n +" List:");
-        for(int i=0;i<=n;i++)
+        for(int i=0; i<=n; i++)
             arr.add(new ArrayList<>());
 
         System.out.println("Enter the edges values: ");

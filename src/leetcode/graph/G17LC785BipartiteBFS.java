@@ -50,12 +50,12 @@ public class G17LC785BipartiteBFS {
         q.offer(i);
 
         while(!q.isEmpty()){
-            Integer node=q.poll();
+            Integer node = q.poll();
             for(Integer vertex: adjList.get(node)){
                 if(color[vertex]==-1){
                     color[vertex]=1-color[node];
                     q.add(vertex);
-                }else if(color[vertex]==color[node]){
+                }else if(color[vertex] == color[node]){
                     return false;
                 }
             }

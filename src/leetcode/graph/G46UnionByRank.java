@@ -45,7 +45,7 @@ public class G46UnionByRank {
 
     public static void main(String[] args) {
 
-        DisjointSetByRank ds=new DisjointSetByRank(7);
+        DisjointSetByRank ds = new DisjointSetByRank(7);
         ds.unionByRank(1,2);
         ds.unionByRank(2,3);
         ds.unionByRank(4,5);

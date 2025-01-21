@@ -24,7 +24,7 @@ public class G7LC547NumberOfProvince {
 
         ArrayList<ArrayList<Integer>> adjList=new ArrayList<>();
 
-        for(int i=0;i<matrix.length;i++){
+        for(int i=0; i<matrix.length; i++){
             adjList.add(new ArrayList<>());
         }
 

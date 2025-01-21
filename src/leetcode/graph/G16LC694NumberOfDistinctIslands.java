@@ -13,7 +13,7 @@ class PairG16{
     }
 }
 
-public class G16PremiumNumberOfDistinctIslands {
+public class G16LC694NumberOfDistinctIslands {
 
     public static void main(String[] args) {
 

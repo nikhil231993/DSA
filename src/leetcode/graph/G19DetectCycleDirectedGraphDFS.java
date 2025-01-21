@@ -40,10 +40,10 @@ public class G19DetectCycleDirectedGraphDFS {
         visited[i]=1;
         pathVisited[i]=1;
         for(Integer vertex:arr.get(i)){
-            if(visited[vertex]==0) {
+            if(visited[vertex] == 0) {
                 if (cycle(arr, n, m, visited, pathVisited, vertex))
                     return true;
-            }else if(pathVisited[vertex]==1)
+            }else if(pathVisited[vertex] == 1)
                 return true;
         }
         pathVisited[i]=0;

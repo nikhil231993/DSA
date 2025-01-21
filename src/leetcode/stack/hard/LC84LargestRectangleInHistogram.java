@@ -49,7 +49,7 @@ public class LC84LargestRectangleInHistogram {
 		return area;
 	}
 
-	// Below is easy Hello world approach
+	//Below is easy Hello world approach
 
 	public static int largestRectangleAreaHelloWorld(int[] arr) {
 

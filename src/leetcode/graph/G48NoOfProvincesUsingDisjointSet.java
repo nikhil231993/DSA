@@ -4,7 +4,7 @@ public class G48NoOfProvincesUsingDisjointSet {
 
     public static void main(String[] args) {
 
-        int[][] matrix=new int[][]{{1,1,0},{1,1,0},{0,0,1}};
+        int[][] matrix = new int[][]{{1,1,0},{1,1,0},{0,0,1}};
         System.out.println("Number of provinces are: " + countProvinces(matrix));
     }
 
@@ -14,6 +14,7 @@ public class G48NoOfProvincesUsingDisjointSet {
 
         //Step 1: Parse through the matrix and find the union of each cell where values are 1
         DisjointSetBySize ds=new DisjointSetBySize(n);
+
         for(int i=0;i<n;i++){
             for(int j=0;j<m;j++){
                 if(i!=j && matrix[i][j]==1){
@@ -31,7 +32,7 @@ public class G48NoOfProvincesUsingDisjointSet {
         }
         return count;
 
-        //TC: O( n * m *4 * alpha) for matrix in step 1 + O(n) no of nodes for step 2
+        //TC: O( n * m * 4 * alpha) for matrix in step 1 + O(n) no of nodes for step 2
         //SC: O(N) parent + O(N) size array
     }
 }

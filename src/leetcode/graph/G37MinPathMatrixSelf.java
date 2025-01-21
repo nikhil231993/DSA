@@ -53,7 +53,7 @@ public class G37MinPathMatrixSelf {
                 if (nrow >= 0 && nrow < n && ncol >= 0 && ncol < m) {
                     if (distance + heights[nrow][ncol] < diff[nrow][ncol]) {
                         diff[nrow][ncol] = distance + heights[nrow][ncol];
-                        pq.offer(new PairG37(diff[nrow][ncol], nrow, ncol));
+                        pq.offer( new PairG37(diff[nrow][ncol], nrow, ncol));
                     }
                 }
             }

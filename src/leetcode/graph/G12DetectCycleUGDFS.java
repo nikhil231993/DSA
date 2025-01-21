@@ -60,7 +60,7 @@ public class G12DetectCycleUGDFS {
         int[] visited=new int[n+1];
         for(int i=1;i<=n;i++){
             if(visited[i]==0){
-                if(cycle(i,arr,n,m,visited,-1)){
+                if(cycle(i, arr, n, m, visited,-1)){
                     return true;
                 }
             }

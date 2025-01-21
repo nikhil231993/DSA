@@ -19,7 +19,7 @@ public class G36LC1091BinaryMatrix {
 
     private static int shortestDistanceInMaze(int[][] grid, int[] source, int[] dest,int n, int m) {
 
-        if(grid[0][0]==1 || grid[m-1][n-1]==1) {
+        if(grid[0][0] == 1 || grid[m-1][n-1] == 1) {
             return -1;
         }
 
