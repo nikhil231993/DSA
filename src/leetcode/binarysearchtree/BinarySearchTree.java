@@ -203,7 +203,7 @@ public class BinarySearchTree {
 	}
 
 	private boolean isValid(Node root, long minValue, long maxValue) {
-
+		// For input [2147483647] we need to use long as it is out of integer range
 		if(root==null)
 			return true;
 		if(root.data >=maxValue || root.data<=minValue )

@@ -71,7 +71,7 @@ public class BinarySearchTreeMain {
 		System.out.println("Kth Largest Element:");
 		System.out.println(bst.kthLargestElementOptimized(root,9));
 		//Above using Morris Traversal
-		System.out.println("Kth Largest Element suing Morris traversal:");
+		System.out.println("Kth Largest Element using Morris traversal:");
 		System.out.println(bst.kthLargestUsingMorris(root,9));
 
 		//Valid BST
