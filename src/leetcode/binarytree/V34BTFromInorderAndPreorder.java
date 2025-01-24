@@ -7,7 +7,7 @@ public class V34BTFromInorderAndPreorder {
 //        if(preorder.length==0 || inorder.length==0)
 //            return null;
 //
-//        HashMap<Integer, Integer> map=new HashMap<>();
+//        HashMap<Integer, Integer> map = new HashMap<>();
 //        for(int i=0;i<inorder.length; i++){
 //            map.put(inorder[i], i);
 //        }

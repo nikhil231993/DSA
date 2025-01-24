@@ -57,7 +57,7 @@ public class LC2385AmountOfTimeToInfect {
 //                    }
 //                }
 //
-//                if (flag == 1) {
+//                if (flag==1) {
 //                    max++;
 //                }
 //            }

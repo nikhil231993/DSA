@@ -27,6 +27,12 @@ public class BinaryTreeUsingLinkedListMain {
 		System.out.println("\nLevel order traversal data is: ");
 		bt.levelOrderTraversal(bt.root);
 
+		// Leetcode
+		// LC 102
+		System.out.println("Level order Traversal and adding to list: ");
+		List<List<Integer>> result1 = bt.levelOrder(bt.root);
+		System.out.println(result1);
+
 		System.out.println("\nSearching value in BT(Binary Tree) Using Inorder Traversal: ");
 		bt.inDepthFirstSearch(bt.root, 50);
 
@@ -40,12 +46,6 @@ public class BinaryTreeUsingLinkedListMain {
 		bt.levelOrderTraversal(bt.root);
 
 		System.out.println();
-
-		// Leetcode
-		// LC 102
-		System.out.println("Level order Traversal and adding to list: ");
-		List<List<Integer>> result1 = bt.levelOrder(bt.root);
-		System.out.println(result1);
 
 		// Iterative preorder traversal
 		System.out.println("Iterative preorder traversal: ");
@@ -116,6 +116,7 @@ public class BinaryTreeUsingLinkedListMain {
 		System.out.println();
 		System.out.println("Boundary Traversal: ");
 		System.out.println(bt.boundaryTraversal(bt.root));
+		System.out.println(bt.boundaryOfBinaryTreeSelf(bt.root));
 
 		// Vertical traversal
 		System.out.println();

@@ -12,7 +12,7 @@ public class LC112PathSum {
 //
 //        if(root==null) return false;
 //        s+=root.val;
-//        if(s==sum && root.left==null && root.right==null) return true;
+//        if( s==sum && root.left == null && root.right == null) return true;
 //        if(func(root.left, sum, s)) return true;
 //        if(func(root.right, sum, s)) return true;
 //        return false;

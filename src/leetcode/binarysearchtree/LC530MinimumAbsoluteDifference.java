@@ -4,6 +4,7 @@ public class LC530MinimumAbsoluteDifference {
 
 //    TreeNode prev=null;
 //    public int getMinimumDifference(TreeNode root) {
+//
 //        int[] min=new int[1];
 //        min[0]=Integer.MAX_VALUE;
 //        func(root, min);
@@ -11,6 +12,7 @@ public class LC530MinimumAbsoluteDifference {
 //    }
 //
 //    public void func(TreeNode root, int[] min){
+//
 //        if(root == null)
 //            return;
 //        func(root.left, min);

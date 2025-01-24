@@ -26,7 +26,9 @@ public class LC257BinaryTreePathsString {
 //        dfs(paths, path+"->", root.left);
 //        dfs(paths, path+"->", root.right);
 //
-//        //TC:O(logn) or O(h)
-//        //Tc:O(H)
+//        //TC:O(nlogn) because O(n) for parsing each node and logn is to add the string into result as the
+          // length of teh string is can be from h =height of the tree to n = skewed tree
+          // so h=logn which is height of the tree
+//        //SC:O(H)
 //    }
 }

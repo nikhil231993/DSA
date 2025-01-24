@@ -10,8 +10,8 @@ public class LC108ConvertSortedArrayToBST {
 //        if(low>high) return null;
 //        int mid = (low+(high-low)/2);
 //        TreeNode node = new TreeNode(nums[mid]);
-//        node.left=func(nums, low, mid-1);
-//        node.right=func(nums, mid+1, high);
+//        node.left = func(nums, low, mid-1);
+//        node.right = func(nums, mid+1, high);
 //        return node;
 //    }
 }

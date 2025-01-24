@@ -50,6 +50,7 @@ public class LC1042FlowerPlanting {
     }
 
     public static boolean isSafe(int i, int node, int[] color,List<List<Integer>> adjList){
+
         for(Integer vertex: adjList.get(node)){
             if(color[vertex]==i)
                 return false;

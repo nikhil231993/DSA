@@ -4,7 +4,7 @@ public class LC437PathSum3 {
 
 //    Approach 1
 
-//    private  int[] count=new int[1];
+//    private  int[] count = new int[1];
 //    public int pathSum(TreeNode root, int targetSum) {
 //
 //        if(root==null)
@@ -54,6 +54,4 @@ public class LC437PathSum3 {
 //            func(root.right, sum-root.val);
 //        }
 //    }
-
-
 }

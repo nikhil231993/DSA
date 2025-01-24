@@ -10,7 +10,7 @@ public class LC113PathSum2 {
 //    }
 //
 //    public static void func(TreeNode root, int sum, int s, List<List<Integer>> list, List<Integer> ans){
-//        if(root==null)
+//        if(root == null)
 //            return;
 //        s+=root.val;
 //        ans.add(root.val);

@@ -54,6 +54,7 @@ public class BinaryTreeUsingLinkedList {
 
 		Queue<Node> queue = new LinkedList<>();
 		queue.add(root);
+
 		while (!queue.isEmpty()) {
 			Node temp = queue.peek();
 			queue.remove();
@@ -547,7 +548,7 @@ public class BinaryTreeUsingLinkedList {
 
 			for (int i = 0; i < size; i++) {
 				Node node = q.poll();
-				int index = i;
+
 				if (leftToRight)
 					arr.add(0, node.data);
 				else
@@ -586,7 +587,7 @@ public class BinaryTreeUsingLinkedList {
 		//addLeavesInorder(root, result);
 		//addLeavesPostOrder(root, result);
 
-		//rightBoundary(root, result); //below is to learn how to di t using recursion
+		//rightBoundary(root, result); //below is to learn how to it using recursion
 		Stack<Integer> st=new Stack<>();
 		rightBoundaryRecursion(root.right,result,st);
 
@@ -644,12 +645,13 @@ public class BinaryTreeUsingLinkedList {
 
 	private void leftBoundaryRecursion(Node root, List<Integer> result) {
 
-		if(root==null) return;
+		if(root==null)
+			return;
 		if(!isLeaf(root)){
 			result.add(root.data);
 		}
 		if(root.left!=null)
-			leftBoundaryRecursion(root.left,result);
+			leftBoundaryRecursion(root.left, result);
 		else if(root.left==null) // we can only have else without condition
 			leftBoundaryRecursion(root.right, result);
 	}
@@ -689,6 +691,7 @@ public class BinaryTreeUsingLinkedList {
 	}
 
 	private boolean isLeaf(Node root) {
+
 		if (root.left == null && root.right == null)
 			return true;
 		return false;
@@ -743,10 +746,10 @@ public class BinaryTreeUsingLinkedList {
 		}
 
 		List<List<Integer>> list = new ArrayList();
-		
-		for(TreeMap<Integer, PriorityQueue<Integer>> h:map.values()) {
+
+		for(TreeMap<Integer, PriorityQueue<Integer>> h : map.values()) {
 			List<Integer> l=new ArrayList<Integer>();
-			for(PriorityQueue<Integer> nodes: h.values()) {
+			for(PriorityQueue<Integer> nodes : h.values()) {
 //				System.out.println(nodes.toString());
 				while(!nodes.isEmpty()) {
 					l.add(nodes.poll());
@@ -788,7 +791,7 @@ public class BinaryTreeUsingLinkedList {
 		arr.addAll(map.values());
 		return arr;
 
-		// TC:O(n) I feel it should be O(nlogn ) as it is treemap (This is mentioned in GFG)
+		// TC:O(n) I feel it should be O(nlogn) as it is treemap (This is mentioned in GFG)
 		// SC:O(n)
 
 		// we cannot use recursive traversal directly in this
@@ -1092,6 +1095,7 @@ public class BinaryTreeUsingLinkedList {
 		Map<Node, Boolean> visited = new HashMap();
 		visited.put(target, true);
 		int max = 0; // we can use count variable also but return count-1 at the end;
+
 		while (!q.isEmpty()) {
 			int flag = 0;
 			int size = q.size();
@@ -1163,7 +1167,7 @@ public class BinaryTreeUsingLinkedList {
 		if(leftH==rightH)
 			return (1<<leftH)-1;
 
-		return 1+countNodes(root.left)+countNodes(root.right); //we do not need else as shown in video
+		return 1 + countNodes(root.left) + countNodes(root.right); //we do not need else as shown in video
 
 		//TC:O(logN) square
 		//SC:O(N)
@@ -1301,5 +1305,65 @@ public class BinaryTreeUsingLinkedList {
 
 		//TC:O(N)
 		//SC:O(1)
+	}
+
+	public List<Integer> boundaryOfBinaryTreeSelf(Node root) {
+
+		if(root==null)
+			new ArrayList();
+		List<Integer> list=new ArrayList();
+		list.add(root.data);
+		if(root.left==null && root.right==null)
+			return list;
+
+		leftBoundarySelf(root.left, list);
+		leavesSelf(root, list);
+
+		Stack<Integer> st=new Stack();
+		rightBoundarySelf(root.right, list, st);
+
+		while(!st.isEmpty()){
+			list.add(st.pop());
+		}
+		return list;
+	}
+
+	public static void leftBoundarySelf(Node root, List<Integer> list){
+
+		if(root==null)
+			return;
+
+		if(root.left==null && root.right==null)
+			return;
+		list.add(root.data);
+		if(root.left==null)
+			leftBoundarySelf(root.right, list);
+		else
+			leftBoundarySelf(root.left, list);
+	}
+
+	public static void rightBoundarySelf(Node root, List<Integer> list, Stack<Integer> st){
+
+		if(root==null)
+			return;
+
+		if(root.left==null && root.right==null)
+			return;
+		st.push(root.data);
+		if(root.right==null)
+			rightBoundarySelf(root.left, list, st);
+		else
+			rightBoundarySelf(root.right, list, st);
+	}
+
+	public static void leavesSelf(Node root, List<Integer> list){
+
+		if(root==null)
+			return;
+
+		if(root.left==null && root.right==null)
+			list.add(root.data);
+		leavesSelf(root.left, list);
+		leavesSelf(root.right, list);
 	}
 }

@@ -199,7 +199,7 @@ public class BinarySearchTree {
 
 		if(root==null)
 			return true;
-		return isValid(root,Long.MIN_VALUE,Long.MAX_VALUE);
+		return isValid(root, Long.MIN_VALUE, Long.MAX_VALUE);
 	}
 
 	private boolean isValid(Node root, long minValue, long maxValue) {
@@ -575,13 +575,14 @@ public class BinarySearchTree {
 
 	public static boolean searchLevelWithoutQueue(Node root, int value) {
 
-		if(root==null) return false;
+		if(root==null)
+			return false;
+
 		Node current=root;
 		while(current!=null){
 
 			if(current.data==value)
 				return true;
-
 			else if(current.data<value)
 				current=current.right;
 			else if(current.data>value)
@@ -624,7 +625,7 @@ public class BinarySearchTree {
 
 		while(true){
 
-			if(current.data>value){
+			if(current.data > value){
 				if(current.left==null){
 					current.left=node;
 					break;

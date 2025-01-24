@@ -32,9 +32,9 @@ public class LC226InvertBinaryTree {
 //
 //        invertTree(root.left);
 //        invertTree(root.right);
-//        TreeNode temp=root.left;
-//        root.left=root.right;
-//        root.right=temp;
+//        TreeNode temp = root.left;
+//        root.left = root.right;
+//        root.right = temp;
 //        return root;
 //    }
 }

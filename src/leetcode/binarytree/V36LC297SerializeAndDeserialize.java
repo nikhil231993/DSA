@@ -34,7 +34,7 @@ public class V36LC297SerializeAndDeserialize {
     // Decodes your encoded data to tree.
     public Node deserialize(String data) {
 
-        if(data=="")
+        if(data == "")
             return null;
 
         String[] str=data.split(" ");
