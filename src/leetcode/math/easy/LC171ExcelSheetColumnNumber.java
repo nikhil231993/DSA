@@ -16,7 +16,7 @@ public class LC171ExcelSheetColumnNumber {
 		}
 		return result;
 
-		//TC: O(n)
-		//SC: O(1)
+		//TC:O(n)
+		//SC:O(1)
 	}
 }

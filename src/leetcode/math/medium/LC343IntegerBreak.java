@@ -20,7 +20,7 @@ public class LC343IntegerBreak {
 		}
 		return n * product;
 
-		// TC:O(n)
-		// SC:O(1)
+		//TC:O(n)
+		//SC:O(1)
 	}
 }

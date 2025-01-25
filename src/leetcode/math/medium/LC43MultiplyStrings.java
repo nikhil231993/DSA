@@ -35,5 +35,10 @@ public class LC43MultiplyStrings {
 		}
 
 		return sb.toString();
+
+		//Time complexity: O(M⋅N)
+		//During multiplication, we perform N operations for each of the M digits of the second number,
+		//so we need M⋅N time for it.
+		//Space complexity: O(M+N).
 	}
 }

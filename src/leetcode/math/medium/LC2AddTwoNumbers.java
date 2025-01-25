@@ -40,8 +40,8 @@ public class LC2AddTwoNumbers {
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 
         int sum=0, carry=0;
-        ListNode l=new ListNode(-1);
-        ListNode temp=l;
+        ListNode dummy=new ListNode(-1);
+        ListNode temp=dummy;
 
         while(l1!=null || l2!=null){
 
@@ -58,16 +58,17 @@ public class LC2AddTwoNumbers {
             ListNode n=new ListNode(sum%10);
             carry=sum/10;
             temp.next=n;
-            temp=temp.next;
+            temp=temp.next; // we can also use temp=n to move to next
         }
 
         if(carry!=0){
             ListNode n1=new ListNode(carry);
-            temp.next=n1;
+            temp.next=n1; // we can also use temp=n to move to next
         }
-        return l.next;
+        return dummy.next;
 
-        // TC:O(n) where n is the length of the largest LinkedList
+        // TC : O(max(m,n)). Assume that m and n represents the length of l1 and l2 respectively,
+        // the algorithm above iterates at most max(m,n) times.
         // SC:O(n) length of the new LinkedList
     }
 }

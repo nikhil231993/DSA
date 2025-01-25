@@ -31,6 +31,9 @@ public class LC462MinimumEqual2 {
 			minop+=Math.abs(no-median);
 		}
 		return minop;
+
+		//Time complexity : O(nlogn). Sorting will take O(nlogn) time.
+		//Space complexity : O(1). Only single extra variable is used.
 	}
 
 	public static int minMovesBetter(int[] nums) {
@@ -44,7 +47,7 @@ public class LC462MinimumEqual2 {
 		}
 		return minMoves;
 
-		//SC: O(1)
-		//TC: O(n log n)
+		//Time complexity : O(nlogn). Sorting will take O(nlogn) time.
+		//Space complexity : O(1). No extra space required.
 	}
 }

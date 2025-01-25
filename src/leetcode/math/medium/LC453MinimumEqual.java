@@ -9,11 +9,39 @@ public class LC453MinimumEqual {
 
 		int[] num = new int[] { 1,2,3,4 };
 
+		//Approach 1: Brute Not necessary to learn
+		System.out.println(minMovesLeetcode(num));
+
 		// Approach 1
 		System.out.println(minMoves(num));
 
 		// Approach 2 logical and better than first
 		System.out.println(minMovesDec(num));
+	}
+
+	public static int minMovesLeetcode(int[] nums) {
+
+		int min = 0, max = nums.length - 1, count = 0;
+		while (true) {
+			for (int i = 0; i < nums.length; i++) {
+				if (nums[max] < nums[i]) {
+					max = i;
+				}
+				if (nums[min] > nums[i]) {
+					min = i;
+				}
+			}
+			if (nums[max] == nums[min]) {
+				break;
+			}
+			for (int i = 0; i < nums.length; i++) {
+				if (i != max) {
+					nums[i]++;
+				}
+			}
+			count++;
+		}
+		return count;
 	}
 
 	private static int minMovesDec(int[] num) {

@@ -65,6 +65,6 @@ public class LC231PowerOfTwo {
         }
         return true;
 
-        //TC:O(log n) to  base 2 as the number is getting divided by 2
+        //TC:O(log n) to  base 2 as the number is getting divided by 2 everytime
     }
 }

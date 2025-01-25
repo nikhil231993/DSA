@@ -23,6 +23,7 @@ public class LC258AddDigits {
 
         int sum=0;
         while(true){
+
             while(num!=0){
                 sum+=num%10;
                 num=num/10;

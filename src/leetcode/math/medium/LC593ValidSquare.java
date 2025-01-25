@@ -29,7 +29,7 @@ public class LC593ValidSquare {
 		int max = 0;// To check diagonal
 
 		for (int val : arr) {
-			max = Math.max(max, val);
+			max=Math.max(max, val);
 			map.put(val, map.getOrDefault(val, 0) + 1);
 		}
 

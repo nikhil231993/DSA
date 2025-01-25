@@ -39,7 +39,7 @@ public class LC535EncodeAndDecodeURL {
 		String s ="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 		char[] ch=new char[6];
 
-		for(int i=0;i<ch.length;i++) {
+		for(int i=0; i<ch.length; i++) {
 			ch[i] = s.charAt((int) (Math.random() * 1000 % 62));
 		}
 		String hashed=new String(ch);

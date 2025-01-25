@@ -45,7 +45,7 @@ public class LC8StringToIntegerAtoi {
 				else
 					return Integer.MAX_VALUE;
 			}
-			ans=ans*10+no;
+			ans= ans *10 + no;
 			i++;
 		}
 		return ans * sign;

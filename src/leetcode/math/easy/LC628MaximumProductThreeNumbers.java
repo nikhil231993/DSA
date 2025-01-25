@@ -1,6 +1,7 @@
 package leetcode.math.easy;
 
 import java.util.PriorityQueue;
+import java.util.Arrays;
 
 public class LC628MaximumProductThreeNumbers {
 
@@ -8,16 +9,27 @@ public class LC628MaximumProductThreeNumbers {
 
 		int[] num = new int[] { -10, -2, -3, 4 };
 
-		//Approach 1
-		System.out.println(maximumProduct(num));
+		//Approach 1: Leetcode
+		System.out.println(maximumProductLeetcode(num));
 
 		//Approach 2
+		System.out.println(maximumProduct(num));
+
+		//Approach 3
 		System.out.println(maximumProductBetter(num));
+	}
+
+	public static int maximumProductLeetcode(int[] nums) {
+
+		Arrays.sort(nums);
+		return Math.max(nums[0] * nums[1] * nums[nums.length - 1], nums[nums.length - 1] * nums[nums.length - 2] * nums[nums.length - 3]);
+		//First two numbers can be negative so we multiply those two and last positive number
+		//Or we get answer by multiplying top 3 positive numbers
 	}
 
 	private static int maximumProduct(int[] num) {
 
-		// 1st Approach is to use min heap and maxheap but here it will be TC: (nlogn) as
+		// 2st Approach is to use min heap and maxheap but here it will be TC: (nlogn) as
 		// insertion and deletion in a heap takes log n time
 
 		PriorityQueue<Integer> maxHeap=new PriorityQueue<>((a,b)->b-a);

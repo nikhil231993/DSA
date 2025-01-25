@@ -50,7 +50,7 @@ public class LC67AddTwoBinary {
 		return s;
 
 		//SC:O(n) for stack
-		//TC:O(2 *n)
+		//TC:O(2 * n)
 	}
 
 	public static String addBinaryWithoutStringBuilder(String a, String b) {
@@ -78,6 +78,9 @@ public class LC67AddTwoBinary {
 		if(carry!=0)
 			s=carry+s;
 		return s;
+
+		//TC: O(max(N,M)), where N and M are lengths of the input strings a and b.
+		//SC: O(max(N,M)) to keep the answer.
 	}
 
 	public static String addBinary(String a, String b) {

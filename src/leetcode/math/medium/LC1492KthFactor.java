@@ -56,7 +56,7 @@ public class LC1492KthFactor {
             if(pq.size()>k)
                 pq.poll();
         }
-        return pq.size()<k?-1:pq.peek();
+        return pq.size()<k ? -1 : pq.peek();
     }
 
     public static int kthFactorBest(int n, int k) {

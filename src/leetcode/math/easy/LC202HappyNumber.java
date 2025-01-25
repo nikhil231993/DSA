@@ -42,6 +42,9 @@ public class LC202HappyNumber {
 			 n = n / 10;
 		 }
 		 return sum;
+
+		 //TC:(log base 10 to n) where log n is the time taken to find no of digits in a number
+		 //SC:O(1)
 	 }
 
 	public static boolean isHappy(int n) {
@@ -65,6 +68,6 @@ public class LC202HappyNumber {
 		return false;
 
 		//SC:O(log n)
-		//TC:(logn) where log n is the time taken to find no of digits in a number
+		//TC:(log base 10 to n) where log n is the time taken to find no of digits in a number
 	}
 }
