@@ -5,54 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72d35191-61fd-46f6-abe8-9b648fcd26f6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/array/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/array/easy/LC1470ShuffleArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/array/easy/LC1470ShuffleArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS10SquareRootLC69.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS10SquareRootLC69.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS1IntroductionLC704.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS1IntroductionLC704.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS2FloorAndCeil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS2FloorAndCeil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS2InsertPositionLC35.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS2InsertPositionLC35.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS2LowerBound.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS2LowerBound.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS2UpperBound.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS2UpperBound.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS3CountOccurences.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS3CountOccurences.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS3FirstAndLastPositionLC34.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS3FirstAndLastPositionLC34.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS4SearchInRotatedArray1LC33.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS4SearchInRotatedArray1LC33.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS5SearchInRotatedArray2LC81.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS5SearchInRotatedArray2LC81.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS6MinimumSortedArray1LC153.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS6MinimumSortedArray1LC153.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS6MinimumSortedArray2LC154.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS6MinimumSortedArray2LC154.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS7NoOfTimeArrayRotated.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS7NoOfTimeArrayRotated.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS7NoOfTimeArrayRotatedDuplicates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS7NoOfTimeArrayRotatedDuplicates.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS8SingleElementInSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS8SingleElementInSortedArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS9FindPeakElementLC162.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS9FindPeakElementLC162.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS9FindPeakElementLC852.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS9FindPeakElementLC852.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/string/easy/LC1207UniqueOccurences.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/easy/LC1207UniqueOccurences.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/string/easy/LC13RomanToInteger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/easy/LC13RomanToInteger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/string/easy/LC1408StringMatching.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/easy/LC1408StringMatching.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/string/easy/LC14LongestCommonPrefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/easy/LC14LongestCommonPrefix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/string/easy/LC1768MergeAlternatively.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/easy/LC1768MergeAlternatively.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/string/easy/LC1903LargestOddNumberSubString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/easy/LC1903LargestOddNumberSubString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/string/easy/LC205IsomorphicStrings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/easy/LC205IsomorphicStrings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/string/easy/LC242ValidAnagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/easy/LC242ValidAnagram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/string/easy/LC345ReverseVowels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/easy/LC345ReverseVowels.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/string/easy/LC392IsSubsequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/easy/LC392IsSubsequence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/string/easy/LC415AddTwoStrings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/easy/LC415AddTwoStrings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/string/easy/LC680ValidPalindrome2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/easy/LC680ValidPalindrome2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS13BouquetsLC1482.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS13BouquetsLC1482.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS14SmallestCommonDivisorLC1283.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS14SmallestCommonDivisorLC1283.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS15ShipCapacityLC1011.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS15ShipCapacityLC1011.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS16KthMissingPositiveNumberLC1539.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS16KthMissingPositiveNumberLC1539.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS17AggressiveCows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS17AggressiveCows.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS17MagneticBallsLC1552.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS17MagneticBallsLC1552.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS18AllocateBooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS18AllocateBooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS19PaintersPartition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS19PaintersPartition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS19SplitArrayLargestSumLC410.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS19SplitArrayLargestSumLC410.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS21MedianTwoSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS21MedianTwoSortedArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS22KthElementTwoSortedArrays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS22KthElementTwoSortedArrays.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS23RowsWithMaxOnesLC2643.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS23RowsWithMaxOnesLC2643.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/leetcode/string/easy/LC796RotateString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/easy/LC796RotateString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/string/easy/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/easy/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/string/hard/LC273IntegerToEnglish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/hard/LC273IntegerToEnglish.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/string/hard/LC301RemoveInvalidParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/hard/LC301RemoveInvalidParentheses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/string/hard/LC30SubstringWithConcatenation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/hard/LC30SubstringWithConcatenation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/string/hard/LC65ValidNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/hard/LC65ValidNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/string/medium/LC1249MinimumRemoveToMakeValidParenthesis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/medium/LC1249MinimumRemoveToMakeValidParenthesis.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/string/medium/LC12IntegerToRoman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/medium/LC12IntegerToRoman.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/string/medium/LC151ReverseWordsInAString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/medium/LC151ReverseWordsInAString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/string/medium/LC1781SumOfBeauty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/medium/LC1781SumOfBeauty.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/string/medium/LC22GenerateParenthesis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/medium/LC22GenerateParenthesis.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/string/medium/LC3LongestSubstringWithoutRepeatingCharacters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/medium/LC3LongestSubstringWithoutRepeatingCharacters.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/string/medium/LC49GroupAnagrams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/medium/LC49GroupAnagrams.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/string/medium/LC5LongestPalindromicSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/medium/LC5LongestPalindromicSubstring.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/string/medium/LC6ZigzagConversion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/medium/LC6ZigzagConversion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/string/medium/LC71SimplifyPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/medium/LC71SimplifyPath.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +79,7 @@
       <recent name="leetcode.stack.lb" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Test">
+  <component name="RunManager" selected="Application.LC796RotateString">
     <configuration name="BS2LowerBound" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode.binarysearch.BS2LowerBound" />
       <module name="DSA" />
@@ -141,8 +106,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC301RemoveInvalidParentheses" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.string.hard.LC301RemoveInvalidParentheses" />
+    <configuration name="LC30SubstringWithConcatenation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.string.hard.LC30SubstringWithConcatenation" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -154,12 +119,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC30SubstringWithConcatenation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.string.hard.LC30SubstringWithConcatenation" />
+    <configuration name="LC796RotateString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.string.easy.LC796RotateString" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.string.hard.*" />
+          <option name="PATTERN" value="leetcode.string.easy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -182,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LC796RotateString" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.BS2UpperBound" />
         <item itemvalue="Application.BS2LowerBound" />
         <item itemvalue="Application.LC30SubstringWithConcatenation" />
-        <item itemvalue="Application.LC301RemoveInvalidParentheses" />
       </list>
     </recent_temporary>
   </component>

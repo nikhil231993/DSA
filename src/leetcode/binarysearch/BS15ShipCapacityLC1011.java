@@ -45,7 +45,7 @@ public class BS15ShipCapacityLC1011 {
                 sum=weights[i];
             }
         }
-        if(count<=days)
+        if(count <= days)
             return true;
         return false;
 

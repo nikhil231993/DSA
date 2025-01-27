@@ -14,6 +14,9 @@ public class LC796RotateString {
 
         //Approach 3: Self
         System.out.println(rotateStringSelf(s,goal));
+
+        //Approach 4: Self Best Learn this and after this KMP which is the best solution
+        System.out.println(rotateStringSelfBest(s,goal));
     }
 
     public static boolean rotateString(String s, String goal) {
@@ -69,6 +72,35 @@ public class LC796RotateString {
             if(s.charAt(i) == goal.charAt(j%(goal.length()))){
                 j++;
             }else return false;
+        }
+        return true;
+    }
+
+    public static boolean rotateStringSelfBest(String s, String goal) {
+
+        if(s.length()!=goal.length())
+            return false;
+        int n=s.length();
+        int m=goal.length();
+
+        for(int i=0;i<n;i++){
+
+            if(rotate(0, i, s, goal))
+                return true;
+        }
+        return false;
+    }
+
+    public static boolean rotate(int id1, int id2, String s, String goal){
+
+        int n=s.length();
+        int m=goal.length();
+        while(id1<n){
+
+            if(s.charAt(id1)!=goal.charAt(id2%m))
+                return false;
+            id1++;
+            id2++;
         }
         return true;
     }

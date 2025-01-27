@@ -45,7 +45,7 @@ public class BS19SplitArrayLargestSumLC410 {
             return true;
         return false;
 
-        //TC:O(log (sum-max+1))* O(n)
-        //SC:O(1)
+        // TC:O(log (sum-max+1))* O(n)
+        // SC:O(1)
     }
 }

@@ -117,7 +117,7 @@ public class BS21MedianTwoSortedArray {
                 else
                     return (double)(Math.max(l1,l2)+Math.min(r1,r2))/2.0;
             }
-            else if(l1>r2)
+            else if(l1 > r2)
                 high=mid1-1;
             else
                 low=mid1+1;

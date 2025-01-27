@@ -45,7 +45,7 @@ public class BS17AggressiveCows {
                 count++;
                 last=stalls[i];
             }
-            if(count>=k)
+            if(count >= k)
                 return true;
         }
         return false;

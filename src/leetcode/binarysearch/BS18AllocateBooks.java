@@ -42,7 +42,7 @@ public class BS18AllocateBooks {
 
         int count=1, sum=arr[0];
 
-        for(int i=1;i<arr.length;i++){
+        for(int i=1; i<arr.length; i++){
             sum+=arr[i];
             if(sum > pages){
                 count++;

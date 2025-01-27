@@ -17,7 +17,7 @@ public class BS17MagneticBallsLC1552 {
 
         int n=position.length, low=1, high=position[n-1]-position[0], ans=1;
 
-        while(low<=high){
+        while(low <= high){
             int mid=low+(high-low)/2;
 
             if(isPossible(mid, position, m)){

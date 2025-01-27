@@ -40,8 +40,8 @@ public class BS23RowsWithMaxOnesLC2643 {
 
         int maxValue=0, index=-1;
 
-        for(int i=0;i<n;i++){
-            int count=m-findSmallestOneIndex(arr[i], m, 1);
+        for(int i=0; i<n; i++){
+            int count = m-findSmallestOneIndex(arr[i], m, 1);
             if(count>maxValue){
                 maxValue=count;
                 index=i;

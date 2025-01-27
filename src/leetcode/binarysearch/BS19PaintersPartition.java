@@ -26,7 +26,7 @@ public class BS19PaintersPartition {
 
         int low=max, high=sum, ans=0;
 
-        while(low<=high){
+        while(low <= high){
             int mid=low+(high-low)/2;
             if(possible(mid, boards, k)){
                 high=mid-1;

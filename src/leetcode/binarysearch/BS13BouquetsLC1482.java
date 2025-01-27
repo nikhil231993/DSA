@@ -19,7 +19,7 @@ public class BS13BouquetsLC1482 {
             return -1; // Make sure to check these kind of edge cases
         int min=Integer.MAX_VALUE, max=Integer.MIN_VALUE;
 
-        for(int i=0;i<n;i++){
+        for(int i=0; i<n; i++){
             min=Math.min(min, bloomDay[i]);
             max=Math.max(max, bloomDay[i]);
         }

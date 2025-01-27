@@ -18,7 +18,7 @@ public class BS16KthMissingPositiveNumberLC1539 {
 
         int low=0, high=arr.length-1;
 
-        while(low<=high){
+        while(low <= high){
             int mid=low+(high-low)/2;
             int missingNumber=arr[mid]-mid-1;
 
