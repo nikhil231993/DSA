@@ -15,9 +15,9 @@ public class BS9FindPeakElementLC852 {
 
         int n=arr.length-1, low = 1, high = n-1;
 
-        if(arr[0]>arr[1])
+        if(arr[0] > arr[1])
             return 0;
-        if(arr[n]>arr[n-1])
+        if(arr[n] > arr[n-1])
             return n;
 
         while (low <= high) {

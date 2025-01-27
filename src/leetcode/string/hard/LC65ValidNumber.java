@@ -47,7 +47,7 @@ public class LC65ValidNumber {
 
     public static boolean isDigit(char ch){
 
-        if(ch>='0' && ch<='9')
+        if(ch >= '0' && ch <= '9')
             return true;
         return false;
     }

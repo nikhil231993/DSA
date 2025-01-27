@@ -20,7 +20,7 @@ public class LC71SimplifyPath {
 			if(path.charAt(i)=='/')
 				continue;
 			String temp="";
-			while (i < path.length() && path.charAt(i) != '/') {
+			while (i<path.length() && path.charAt(i) != '/') {
 				temp+=path.charAt(i);
 				i++;
 			}

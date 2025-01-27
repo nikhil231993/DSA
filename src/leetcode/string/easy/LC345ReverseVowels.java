@@ -17,12 +17,12 @@ public class LC345ReverseVowels {
         while (start < end) {
             
             // Move start pointer until it points to a vowel
-            while (start < end && vowels.indexOf(word[start]) == -1) {
+            while (start < end && vowels.indexOf(s.charAt(start)) == -1) {
                 start++;
             }
 
             // Move end pointer until it points to a vowel
-            while (start < end && vowels.indexOf(word[end]) == -1) {
+            while (start < end && vowels.indexOf(s.charAt(end)) == -1) {
                 end--;
             }
 

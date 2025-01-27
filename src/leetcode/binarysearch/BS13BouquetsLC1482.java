@@ -16,7 +16,7 @@ public class BS13BouquetsLC1482 {
 
         int n=bloomDay.length;
         if(n < m*k)
-            return -1;
+            return -1; // Make sure to check these kind of edge cases
         int min=Integer.MAX_VALUE, max=Integer.MIN_VALUE;
 
         for(int i=0;i<n;i++){

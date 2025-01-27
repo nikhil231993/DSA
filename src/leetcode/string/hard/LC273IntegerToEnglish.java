@@ -34,4 +34,9 @@ public class LC273IntegerToEnglish {
             return (tens[num/10]+" "+convert(num%10,tens,ones)).trim();
         }return ones[num];
     }
+
+    //TC: log base 10 to number
+    //because the number of recursive calls is proportional to the number of digits in the number, which grows logarithmically with the size of the number.
+    //SC: log base 10 to number
+    //mainly because of the recursion stack. Each recursive call adds a frame to the stack until the base case is reached, leading to space usage proportional to the number of digits in the number.
 }

@@ -21,7 +21,7 @@ public class BS3FirstAndLastPositionLC34 {
 
         int first = firstOccurrence(nums,target);
         int last = lastOccurrence(nums,target);
-        return new int[]{first,last};
+        return new int[]{ first, last };
     }
 
     private static int lastOccurrence(int[] nums, int target) {
@@ -34,7 +34,7 @@ public class BS3FirstAndLastPositionLC34 {
             if(nums[mid]==target) {
                 ans = mid;
                 low = mid + 1;
-            } else if(nums[mid]>target){
+            } else if(nums[mid] > target){
                 high = mid - 1;
             }else{
                 low=mid+1;
@@ -56,7 +56,7 @@ public class BS3FirstAndLastPositionLC34 {
             if(nums[mid] == target) {
                 ans = mid;
                 high = mid - 1;
-            } else if(nums[mid]>target){
+            } else if(nums[mid] > target){
                 high = mid - 1;
             }else{
                 low=mid+1;

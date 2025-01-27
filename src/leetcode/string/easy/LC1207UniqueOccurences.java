@@ -43,7 +43,7 @@ public class LC1207UniqueOccurences {
 
         for (int currValue : freqMap.values()) {
             if (seen.contains(currValue)) {
-                return false;     // terminate as soon as a duplicate is detected
+                return false;     //terminate as soon as a duplicate is detected
             } else {
                 seen.add(currValue);
             }

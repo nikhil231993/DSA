@@ -25,7 +25,6 @@ public class BS10SquareRootLC69 {
 
         //TC:O(log n)
         //SC:O(1)
-
         //Reason for dividing x by m is to avoid the overflow. If we want to use
         //normal binary search we can use with long variable
     }

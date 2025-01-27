@@ -12,6 +12,7 @@ public class LC30SubstringWithConcatenation {
     }
 
     public static List<Integer> findSubstring(String s, String[] words) {
+
         //Step 1: create a map with words array and frequency
         //Step 2: create a copy of map
         //Step 3: start from 0 index and form a substring of length of words[0]

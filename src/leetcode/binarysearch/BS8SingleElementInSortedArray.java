@@ -40,7 +40,7 @@ public class BS8SingleElementInSortedArray {
         int low=1;
         int high=n-2;
 
-        while(low<=high){
+        while(low <= high){
             int mid=low+(high-low)/2;
 
             if(nums[mid]!=nums[mid-1] && nums[mid]!=nums[mid+1])

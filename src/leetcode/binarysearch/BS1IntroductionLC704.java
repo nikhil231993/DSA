@@ -52,7 +52,8 @@ public class BS1IntroductionLC704 {
 
         // Perform the steps:
         int mid = (low + high) / 2;
-        if (nums[mid] == target) return mid;
+        if (nums[mid] == target)
+            return mid;
         else if (target > nums[mid])
             return binarySearchRecursion(nums, mid + 1, high, target);
         return binarySearchRecursion(nums, low, mid - 1, target);

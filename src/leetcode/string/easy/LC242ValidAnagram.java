@@ -1,5 +1,6 @@
 package leetcode.string.easy;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -9,11 +10,47 @@ public class LC242ValidAnagram {
 
         String s = "rac", t = "car";
 
-        //Approach 1
-        System.out.println(isAnagram(s,t));
+        //Approach 1: Brute force
+        System.out.println(isAnagramLeetcode(s, t));
+
+        //It is same as Approach 2 but here we decrease the freq and see if anything has negative frequency
+        System.out.println(isAnagramLeetCodeFreq(s, t));
 
         //Approach 2
+        System.out.println(isAnagram(s,t));
+
+        //Approach 3
         System.out.println(isAnagramApproach2(s,t));
+    }
+
+    public static boolean isAnagramLeetCodeFreq(String s, String t) {
+
+        if (s.length() != t.length()) {
+            return false;
+        }
+        int[] table = new int[26];
+        for (int i = 0; i < s.length(); i++) {
+            table[s.charAt(i) - 'a']++;
+        }
+        for (int i = 0; i < t.length(); i++) {
+            table[t.charAt(i) - 'a']--;
+            if (table[t.charAt(i) - 'a'] < 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public static boolean isAnagramLeetcode(String s, String t) {
+
+        if (s.length() != t.length()) {
+            return false;
+        }
+        char[] str1 = s.toCharArray();
+        char[] str2 = t.toCharArray();
+        Arrays.sort(str1);
+        Arrays.sort(str2);
+        return Arrays.equals(str1, str2);
     }
 
     public static boolean isAnagram(String s, String t) {

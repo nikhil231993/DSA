@@ -16,7 +16,7 @@ public class LC13RomanToInteger {
 		//Approach 2
 		System.out.println(romanToIntegerWithoutUsingMap(s));
 
-		//Approach 3
+		//Approach 3: Best
 		System.out.println(romanToIntOptimized(s));
 
 		//	Symbol       Value
@@ -125,7 +125,10 @@ public class LC13RomanToInteger {
 		}
 		return sum;
 
-		//TC:O(n);
-		//SC:O(constant values given in question)
+		//Time complexity : O(1).
+		//As there is a finite set of roman numerals, the maximum number possible number can be 3999, which in roman numerals is MMMCMXCIX. As such the time complexity is O(1).
+		//If roman numerals had an arbitrary number of symbols, then the time complexity would be proportional to the length of the input, i.e. O(n). This is assuming that looking up the value of each symbol is O(1).
+		//Space complexity : O(1).
+		//Because only a constant number of single-value variables are used, the space complexity is O(1).
 	}
 }

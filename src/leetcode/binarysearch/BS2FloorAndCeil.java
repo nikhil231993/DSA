@@ -30,8 +30,8 @@ public class BS2FloorAndCeil {
         else
             return ans;
 
-        //TC:O(log n)
-        //SC:O(1)
+        // TC:O(log n)
+        // SC:O(1)
     }
 
     private static int ceil(int[] arr, int x) {

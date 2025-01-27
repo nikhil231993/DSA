@@ -32,6 +32,6 @@ public class LC22GenerateParenthesis {
 		}
 
 		//TC:O(2 raise to n)
-		// SC:O(2 raise to n) for recursion stack and O(n) to store values
+		//SC:O(2 raise to n) for recursion stack and O(n) to store values
 	}
 }

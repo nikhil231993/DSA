@@ -18,12 +18,12 @@ public class BS6MinimumSortedArray1LC153 {
             int mid=low+(high-low)/2;
 
             //if below condition is true that means it is the pivot point and low will be the answer
-            if(nums[low] <= nums[high]){
+            if(nums[low]<=nums[high]){
                 ans=Math.min(ans, nums[low]);
                 break;
             }
             //for array like this where l, m will point to 2 and h will point to 1 i.e [2,1] we need <=
-            if(nums[low] <= nums[mid]){
+            if(nums[low]<=nums[mid]){
                 ans=Math.min(ans, nums[low]);
                 low=mid+1;
             }else{

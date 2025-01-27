@@ -65,6 +65,7 @@ public class LC301RemoveInvalidParentheses {
     }
 
     public static void removeInvalidParentheses(String s, HashSet<String> set, int count) {
+
         // This code is important to find invalid parenthesis for any question
         if(count<0)
             return;
@@ -80,6 +81,11 @@ public class LC301RemoveInvalidParentheses {
             String remain=s.substring(i+1);
             removeInvalidParentheses(start+remain, set, count-1);
         }
+
+        //TC:O(2 raise to n)
+        //since in the worst case we will have only left parentheses in the expression and for every bracket we will have two options i.e. whether to remove it or consider it. Considering that the expression has N parentheses, the time
+        //SC:O(N)
+        //because we are resorting to a recursive solution and for a recursive solution there is always stack space used as internal function states are saved onto a stack during recursion. The maximum depth of recursion decides the stack space used. Since we process one character at a time and the base case for the recursion is when we have processed all of the characters of the expression string, the size of the stack would be O(N). Note that we are not considering the space required to store the valid expressions. We only count the intermediate space here.
     }
 
     public static int validate(String s){

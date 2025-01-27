@@ -70,6 +70,7 @@ public class LC5LongestPalindromicSubstring {
 	}
 
 	public static boolean isPalindrome(String s, int start, int end){
+
 		while(start<end){
 			if(s.charAt(start)!=s.charAt(end))
 				return false;

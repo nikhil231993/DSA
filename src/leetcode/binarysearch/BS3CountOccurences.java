@@ -15,7 +15,7 @@ public class BS3CountOccurences {
 
         int first=firstOccurrence(nums,target);
         int last=lastOccurrence(nums,target);
-        return new int[]{first,last};
+        return new int[]{ first , last };
     }
 
     private static int lastOccurrence(int[] nums, int target) {

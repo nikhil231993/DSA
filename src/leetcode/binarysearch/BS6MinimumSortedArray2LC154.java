@@ -4,7 +4,7 @@ public class BS6MinimumSortedArray2LC154 {
 
     public static void main(String[] args) {
 
-        int[] nums=new int[]{3,3,1,3};
+        int[] nums = new int[]{3,3,1,3};
         System.out.println(findMin(nums));
     }
 

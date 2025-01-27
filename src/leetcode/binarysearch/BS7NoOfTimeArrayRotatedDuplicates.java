@@ -35,8 +35,8 @@ public class BS7NoOfTimeArrayRotatedDuplicates {
                 continue;
             }
 
-            if(nums[low] <= nums[mid]){
-                if(ans > nums[low]){
+            if(nums[low]<=nums[mid]){
+                if(ans>nums[low]){
                     ans=nums[low];
                     index=low;
                 }

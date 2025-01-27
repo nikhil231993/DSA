@@ -37,7 +37,7 @@ public class BS4SearchInRotatedArray1LC33 {
         }
         return -1;
 
-        //TC:O(log n)
-        //SC:O(1)
+        // TC:O(log n)
+        // SC:O(1)
     }
 }

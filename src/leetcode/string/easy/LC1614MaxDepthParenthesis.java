@@ -8,10 +8,10 @@ public class LC1614MaxDepthParenthesis {
 
         String s = "(1+(2*3)+((8)/4))+1";
 
-        //Approach 1
+        //Approach 1:
         System.out.println(maxDepth(s));
 
-        //Approach 2
+        //Approach 2:
         System.out.println(maxDepthBetter(s));
     }
 

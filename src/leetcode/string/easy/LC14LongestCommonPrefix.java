@@ -20,7 +20,7 @@ public class LC14LongestCommonPrefix {
 
 	private static String longestCommonPrefixWithWhile(String[] s) {
 
-		String first = s[0];
+		String first=s[0];
 		for (int i = 1; i < s.length; i++) {
 			while (s[i].indexOf(first) != 0) {
 				first = first.substring(0, first.length() - 1);

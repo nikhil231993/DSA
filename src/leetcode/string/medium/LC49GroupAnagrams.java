@@ -37,7 +37,6 @@ public class LC49GroupAnagrams {
 				map.put(key, new ArrayList());
 			}
 			map.get(key).add(s);
-
 		}
 		return new ArrayList<>(map.values());
 
@@ -62,7 +61,8 @@ public class LC49GroupAnagrams {
 		}
 		return new ArrayList<>(map.values());
 
-		// TC:O(NKlogK) n total no of strings k length of each string as we are sorting
+		//TC:O(NKlogK) n total no of strings k length of each string as we are sorting
 		// the strings
+		//SC:O(NK)
 	}
 }

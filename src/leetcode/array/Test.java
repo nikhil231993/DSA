@@ -1,12 +1,13 @@
 package leetcode.array;
 
-import java.nio.channels.InterruptedByTimeoutException;
 import java.util.*;
 import java.util.stream.Collectors;
 
 public class Test {
 
     public static void main(String[] args) {
+
+        System.out.println(-5%5);
 
         System.out.println(Math.random()*1000);
 

@@ -31,7 +31,7 @@ public class BS7NoOfTimeArrayRotated {
                 }
                 low=mid+1;
             }else{
-                if(ans > nums[mid]){
+                if(ans>nums[mid]){
                     ans=nums[mid];
                     index=mid;
                 }

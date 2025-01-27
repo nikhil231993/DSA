@@ -14,15 +14,11 @@ public class LC1768MergeAlternatively {
         int i=0, j=0;
         StringBuilder sb=new StringBuilder();
 
-        while(i<n1 && j<n2){
-            sb.append(word1.charAt(i++));
-            sb.append(word2.charAt(j++));
-        }
-        while(i<n1){
-            sb.append(word1.charAt(i++));
-        }
-        while(j<n2){
-            sb.append(word2.charAt(j++));
+        while(i<n1 || j<n2){
+            if(i<n1)
+                 sb.append(word1.charAt(i++));
+            if(j<n2)
+                sb.append(word2.charAt(j++));
         }
         return sb.toString();
 

@@ -9,6 +9,7 @@ public class LC1408StringMatching {
     public static void main(String[] args) {
 
         String[] words=new String[]{"mass","as","hero","superhero"};
+
         System.out.println(stringMatching(words));
     }
 

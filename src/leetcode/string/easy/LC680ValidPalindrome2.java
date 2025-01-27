@@ -6,6 +6,7 @@ public class  LC680ValidPalindrome2 {
 
 		String str = "abcba";
 
+		//Both are same approaches but second is little easy to understand
 		System.out.println(validPalindrome(str));
 		System.out.println(validPalindromeOptimized(str));
 	}

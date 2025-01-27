@@ -66,7 +66,7 @@ public class LC796RotateString {
     public static boolean func(String s, String goal, int start, int j){
 
         for(int i=start;i<s.length();i++){
-            if(s.charAt(i)==goal.charAt(j%(goal.length()))){
+            if(s.charAt(i) == goal.charAt(j%(goal.length()))){
                 j++;
             }else return false;
         }

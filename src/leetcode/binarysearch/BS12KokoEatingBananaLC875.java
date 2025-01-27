@@ -32,7 +32,7 @@ public class BS12KokoEatingBananaLC875 {
         }
         return ans;
 
-        //TC:O(N)* log (max(element)) + O(N)
+        //TC:O(N)*log (max(element)) + O(N)
         //SC:O(1)
     }
 

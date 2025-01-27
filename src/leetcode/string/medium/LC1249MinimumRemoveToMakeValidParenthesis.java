@@ -54,8 +54,8 @@ public class LC1249MinimumRemoveToMakeValidParenthesis {
 		}
 		return str;
 
-		// TC:O(2N)
-		// SC:O(1)
+		//TC:O(2N)
+		//SC:O(1)
 	}
 
 	private static String minimumRemoveUsingStack(String s) {

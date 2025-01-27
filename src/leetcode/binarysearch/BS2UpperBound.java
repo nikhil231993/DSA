@@ -5,7 +5,7 @@ public class BS2UpperBound {
     public static void main(String[] args) {
 
         int[] arr=new int[]{2,3,6,7,8,8,11,11,11,12};
-		int x = 8;
+		int x = 6;
         System.out.println(upperBound(arr,x));
     }
 
@@ -26,7 +26,7 @@ public class BS2UpperBound {
         }
         return ans;
         
-        //TC:O(log n)
-        //SC:O(1)
+        // TC:O(log n)
+        // SC:O(1)
     }
 }

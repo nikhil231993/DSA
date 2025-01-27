@@ -47,14 +47,14 @@ public class LC1470ShuffleArray {
         int i=0, j=0;
         int flag=0;
         while(i<n || j<n){
-            if(flag==0){
+           // if(flag==0){
                 result[k++]=temp[i++];
                 flag=1;
-            }
-            else {
+            //}
+            //else {
                 result[k++] = temp1[j++];
-                flag = 0;
-            }
+              //  flag = 0;
+            //}
         }
         return result;
     }

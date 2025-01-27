@@ -1,5 +1,6 @@
 package leetcode.string.easy;
 
+import java.util.Arrays;
 import java.util.HashMap;
 
 public class LC205IsomorphicStrings {
@@ -13,6 +14,28 @@ public class LC205IsomorphicStrings {
 
         //Approach 2
         System.out.println(isIsomorphicBetter(s,t));
+
+
+    }
+
+    public static boolean isIsomorphicSelf(String s, String t) {
+
+        int n=s.length();
+        int m=t.length();
+        int[] sh=new int[256];
+        Arrays.fill(sh, -1);
+        int[] th=new int[256];
+        Arrays.fill(th, -1);
+
+        for(int i=0;i<n;i++){
+            int cs=s.charAt(i);
+            int ts=t.charAt(i);
+            if(sh[cs]!=th[ts])
+                return false;
+            sh[cs]=i;
+            th[ts]=i;
+        }
+        return true;
     }
 
     public static boolean isIsomorphic(String s, String t) {
