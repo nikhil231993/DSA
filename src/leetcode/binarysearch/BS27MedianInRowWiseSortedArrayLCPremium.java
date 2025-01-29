@@ -18,12 +18,22 @@ public class BS27MedianInRowWiseSortedArrayLCPremium {
                 {7,11,12,14,16}
         };
 
+        //        int[][] M =new int[][] {
+        //                {1,1,2},
+        //                {2,3,3},
+        //                {1,3,4}
+        //        };
+
         //        int[][] M=new int[][]{{1,5,7,10,11},{2,3,4,5,10},{10,10,12,14,16}};
 
         //        int[][] M =new int[][] {{1, 2 ,3},
         //                {3,3,3},
         //                {3,3,9}
         //        };
+
+        //Approach 1: two for loops and sort the and return list(m*n/2)
+
+        //Approach 2
         System.out.println(median(M,R,C));
     }
 
@@ -31,13 +41,13 @@ public class BS27MedianInRowWiseSortedArrayLCPremium {
 
         int low=Integer.MAX_VALUE, high=Integer.MIN_VALUE;
 
-        for(int i=0;i<R;i++){
-            low=Math.min(matrix[i][0], low);
-            high=Math.max(matrix[i][C-1], high);
+        for(int i=0; i<R; i++){
+            low = Math.min(matrix[i][0], low);
+            high = Math.max(matrix[i][C-1], high);
         }
 
         int required=R*C/2;
-        while(low<=high){
+        while(low <= high){
             int mid=low+(high-low)/2;
             int no=find(matrix, mid, R, C);
             if(no<=required){

@@ -55,7 +55,7 @@ public class BS24SearchInSortedMatrix1LC74 {
 
         int low=0, high=matrix.length-1;
 
-        while(low<=high){
+        while(low <= high){
             int mid=low+(high-low)/2;
             if(matrix[mid]==target)
                 return true;

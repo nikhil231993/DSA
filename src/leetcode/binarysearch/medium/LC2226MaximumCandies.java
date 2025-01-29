@@ -36,7 +36,7 @@ public class LC2226MaximumCandies{
         for(int i=0;i<candies.length;i++){
             count+=candies[i]/mid;
         }
-        if(count>=n)
+        if(count >= n)
             return true;
         return  false;
 

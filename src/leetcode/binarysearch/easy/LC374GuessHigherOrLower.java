@@ -6,7 +6,7 @@ public class LC374GuessHigherOrLower {
 
     public static void main(String[] args) {
 
-        int n=2;
+        int n = 2;
         System.out.println(guessNumber(n));
     }
 

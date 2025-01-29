@@ -17,7 +17,7 @@ public class LC1608SpecialArray {
             high=Math.max(high, nums[i]);
         }
 
-        while(low<=high){
+        while(low <= high){
             int mid=low+(high-low)/2;
             int count=find(mid, nums);
             if(count==mid){

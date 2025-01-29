@@ -5,19 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72d35191-61fd-46f6-abe8-9b648fcd26f6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS13BouquetsLC1482.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS13BouquetsLC1482.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS14SmallestCommonDivisorLC1283.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS14SmallestCommonDivisorLC1283.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS15ShipCapacityLC1011.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS15ShipCapacityLC1011.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS16KthMissingPositiveNumberLC1539.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS16KthMissingPositiveNumberLC1539.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS17AggressiveCows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS17AggressiveCows.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS17MagneticBallsLC1552.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS17MagneticBallsLC1552.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS18AllocateBooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS18AllocateBooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS19PaintersPartition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS19PaintersPartition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS19SplitArrayLargestSumLC410.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS19SplitArrayLargestSumLC410.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS21MedianTwoSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS21MedianTwoSortedArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS22KthElementTwoSortedArrays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS22KthElementTwoSortedArrays.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS23RowsWithMaxOnesLC2643.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS23RowsWithMaxOnesLC2643.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/string/easy/LC796RotateString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/string/easy/LC796RotateString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS24SearchInSortedMatrix1LC74.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS24SearchInSortedMatrix1LC74.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS25SearchInSortedMatrix2LC240.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS25SearchInSortedMatrix2LC240.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS26FindPeakElement2LC1901.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS26FindPeakElement2LC1901.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/BS27MedianInRowWiseSortedArrayLCPremium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/BS27MedianInRowWiseSortedArrayLCPremium.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/easy/LC1351CountNegativeNumbersInGrid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/easy/LC1351CountNegativeNumbersInGrid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/easy/LC1608SpecialArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/easy/LC1608SpecialArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/easy/LC2089FindTargetIndices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/easy/LC2089FindTargetIndices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/easy/LC278FirstBadVersion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/easy/LC278FirstBadVersion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/easy/LC374GuessHigherOrLower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/easy/LC374GuessHigherOrLower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/easy/LC744SmallestLetterGreaterThanTarget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/easy/LC744SmallestLetterGreaterThanTarget.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/medium/LC1870MinimumTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/medium/LC1870MinimumTime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/medium/LC2064ProductsDistributionToStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/medium/LC2064ProductsDistributionToStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/binarysearch/medium/LC2226MaximumCandies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/binarysearch/medium/LC2226MaximumCandies.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,9 +80,9 @@
       <recent name="leetcode.stack.lb" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LC796RotateString">
-    <configuration name="BS2LowerBound" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.binarysearch.BS2LowerBound" />
+  <component name="RunManager" selected="Application.LC1870MinimumTime">
+    <configuration name="BS27MedianInRowWiseSortedArrayLCPremium" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.binarysearch.BS27MedianInRowWiseSortedArrayLCPremium" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -106,12 +107,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC30SubstringWithConcatenation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.string.hard.LC30SubstringWithConcatenation" />
+    <configuration name="LC1870MinimumTime" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.binarysearch.medium.LC1870MinimumTime" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.string.hard.*" />
+          <option name="PATTERN" value="leetcode.binarysearch.medium.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -147,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LC1870MinimumTime" />
+        <item itemvalue="Application.BS27MedianInRowWiseSortedArrayLCPremium" />
         <item itemvalue="Application.LC796RotateString" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.BS2UpperBound" />
-        <item itemvalue="Application.BS2LowerBound" />
-        <item itemvalue="Application.LC30SubstringWithConcatenation" />
       </list>
     </recent_temporary>
   </component>
@@ -501,7 +502,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetcode/binarysearch/medium/LC1870MinimumTime.java</url>
-          <line>19</line>
+          <line>52</line>
           <option name="timeStamp" value="179" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -511,7 +512,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetcode/binarysearch/BS27MedianInRowWiseSortedArrayLCPremium.java</url>
-          <line>38</line>
+          <line>48</line>
           <option name="timeStamp" value="183" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -681,7 +682,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/leetcode/binarysearch/medium/LC1870MinimumTime.java</url>
-          <line>39</line>
+          <line>72</line>
           <option name="timeStamp" value="245" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -1158,6 +1159,16 @@
           <url>file://$PROJECT_DIR$/src/leetcode/graph/G26AlienDictionary.java</url>
           <line>60</line>
           <option name="timeStamp" value="482" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/binarysearch/medium/LC1870MinimumTime.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="486" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/binarysearch/medium/LC1870MinimumTime.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="488" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/leetcode/binarytree/Test.java</url>

@@ -22,8 +22,8 @@ public class LC278FirstBadVersion {
         }
         return ans;
         
-        //TC:O(nlogn)
-        //SC:O(1)		
+        // TC:O(nlogn)
+        // SC:O(1)
     }
 
     private static boolean isBadVersion(int mid) {

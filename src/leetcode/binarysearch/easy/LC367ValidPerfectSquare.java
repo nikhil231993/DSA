@@ -6,6 +6,7 @@ public class LC367ValidPerfectSquare {
 
         int num=5;
         System.out.println(isPerfectSquare(num));
+        //for value 5 num/mid==mid thats why we use double to avoid decimal scenarios
     }
 
     public static boolean isPerfectSquare(int num) {
