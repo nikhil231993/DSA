@@ -58,7 +58,7 @@ public class L76MergeKSortedArray {
         }
         return result;
 
-        //TC:O(k logk) + O(n*k  log k)
+        //TC:O(k logk)+O(n*k  log k)
         //SC:k as at any moment heap has only k elements at the max + O(n*k) for storing the data
     }
 

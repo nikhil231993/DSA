@@ -26,7 +26,7 @@ public class L75KSmallestElement {
             pq.offer(arr[i]);
         }
         for(int i=k;i<arr.length;i++){
-            if(arr[i]<pq.peek()){
+            if(arr[i] < pq.peek()){
                 pq.poll();
                 pq.offer(arr[i]);
             }

@@ -40,7 +40,7 @@ public class L75ConvertBSTToMaxHeap {
 
     private static void postOrder(Node root, int[] arr, int[] newIndex) {
 
-        if(root==null)
+        if(root == null)
             return;
         postOrder(root.left,arr,newIndex);
         postOrder(root.right,arr,newIndex);

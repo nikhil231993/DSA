@@ -7,7 +7,8 @@ public class LC2530MaximalScore {
     public static void main(String[] args) {
 
        int[] nums =new int[] {10,10,10,10,10};
-       //nums ={672579538,806947365,854095676,815137524}; k=3; Since it fails for this output we use long in solution
+       //nums ={672579538,806947365,854095676,815137524}; k=3;
+        // Since it fails for this output we use long in solution
        int k = 5;
        System.out.println(maxKelements(nums,k));
     }
@@ -29,7 +30,7 @@ public class LC2530MaximalScore {
         }
         return sum;
 
-        //TC:O(n log n)
+        //TC:O(nlogn)
         //SC:O(n)
     }
 }

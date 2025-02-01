@@ -23,7 +23,7 @@ public class HeapSort {
     private static void print(int[] arr,int n){
 
         System.out.println("Heap is: ");
-        for(int i=0;i<=n/2-1;i++){
+        for(int i=0; i<=n/2-1; i++){
             System.out.println("Parent is : "+ arr[i]);
             if(2*i+1<n)
                 System.out.println("Left node is : "+ arr[2*i+1]);
@@ -40,7 +40,7 @@ public class HeapSort {
             int temp=arr[i];
             arr[i]=arr[0];
             arr[0]=temp;
-            heapify(arr,0,i);
+            heapify(arr,0, i);
         }
         // TC:O(nlogn)
     }

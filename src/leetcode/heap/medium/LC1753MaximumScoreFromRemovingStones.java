@@ -31,7 +31,7 @@ public class LC1753MaximumScoreFromRemovingStones {
         }
         return count;
 
-        // TC:O(3 log 3)
-        // SC:O(3
+        //TC:O(3 log 3)
+        //SC:O(3
     }
 }

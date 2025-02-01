@@ -78,7 +78,7 @@ public class LC506Rankings {
 
         PriorityQueue<Node4> pq = new PriorityQueue<>((a,b) -> b.val - a.val);
         int n = score.length;
-        for (int i =0; i< n; i++) {
+        for (int i = 0; i< n; i++) {
             pq.offer(new Node4(score[i], i));
         }
         String[] ans = new String[n];

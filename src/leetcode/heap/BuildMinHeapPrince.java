@@ -8,7 +8,7 @@ public class BuildMinHeapPrince {
         int lastInternalNode=arr.length/2-1;
 
         for(int i=lastInternalNode; i>=0; i--){
-            minHeapify(arr,arr.length,i);
+            minHeapify(arr, arr.length, i);
         }
         System.out.println("Min Heap is : ");
         print(arr.length,arr);
@@ -43,7 +43,7 @@ public class BuildMinHeapPrince {
             int temp=arr[smallest];
             arr[smallest]=arr[index];
             arr[index]=temp;
-            minHeapify(arr,n,smallest);
+            minHeapify(arr, n, smallest);
         }
     }
 }

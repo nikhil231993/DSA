@@ -9,7 +9,7 @@ public class LC973KClosestPointsToOrigin {
         int[][] points =new int[][] {{3,3},{5,-1},{-2,4}};
         int k = 2;
 
-        int[][] result=kClosest(points,k);
+        int[][] result = kClosest(points,k);
 
         for(int[] r: result)
             System.out.println(r[0]+" "+r[1]);

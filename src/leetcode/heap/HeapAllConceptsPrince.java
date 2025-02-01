@@ -106,7 +106,6 @@ public class HeapAllConceptsPrince {
             arr[index]=temp;
             heapifyTopToBottom(smallest);
         }
-
         //TC:O(log n)
         //SC:O(log n)
     }

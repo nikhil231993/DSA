@@ -22,9 +22,9 @@ public class LC387FirstUniqueCharacterInString {
 
         for(int i=0;i<s.length();i++){
             if(m.containsKey(s.charAt(i)))
-                m.put(s.charAt(i),-1);
+                m.put(s.charAt(i), -1);
             else
-                m.put(s.charAt(i),i);
+                m.put(s.charAt(i), i);
         }
 
         int index=Integer.MAX_VALUE;

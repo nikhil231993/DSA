@@ -66,7 +66,7 @@ public class L75ConvertBSTToMinHeap {
 
         if(root==null)
             return;
-        root.value=arr[newIndex[0]++];
+        root.value = arr[newIndex[0]++];
         preorder(root.left, arr, newIndex);
         preorder(root.right, arr, newIndex);
     }

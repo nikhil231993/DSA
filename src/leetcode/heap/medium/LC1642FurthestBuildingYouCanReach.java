@@ -7,7 +7,9 @@ public class LC1642FurthestBuildingYouCanReach {
     public static void main(String[] args) {
 
         int[] heights = new int[]{4,2,7,6,9,14,12};
-        int bricks = 5, ladders = 1;
+        heights=new int[]{4,12,2,7,3,18,20,3,19};
+        //int bricks = 5, ladders = 1;
+        int bricks=10, ladders=2;
         System.out.println(furthestBuilding(heights,bricks,ladders));
     }
 
@@ -16,6 +18,7 @@ public class LC1642FurthestBuildingYouCanReach {
         PriorityQueue<Integer> pq=new PriorityQueue();
 
         for(int i=0;i < heights.length-1; i++){
+
             int gap=heights[i+1]-heights[i];
             if(gap>0)
                 pq.offer(gap);

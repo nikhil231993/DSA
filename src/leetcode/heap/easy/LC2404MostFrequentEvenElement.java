@@ -74,8 +74,8 @@ public class LC2404MostFrequentEvenElement {
         }
         return element==Integer.MAX_VALUE?-1:element;
 
-        // TC:O(n)
-        // SC:O(n) in worst case where each element is unique
+        //TC:O(n)
+        //SC:O(n) in worst case where each element is unique
     }
 
     public static int mostFrequentEvenOptimised(int[] nums) {

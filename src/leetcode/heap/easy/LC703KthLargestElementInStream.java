@@ -31,6 +31,10 @@ class KthLargest {
         if(pq.size()>size)
             pq.poll();
         return pq.peek();
+
+        //TC:Let M be the size of the initial stream nums given in the constructor, and let N be the number of calls to add
+        //O((M+N).log k)
+        //SC:O(k)
     }
 }
 

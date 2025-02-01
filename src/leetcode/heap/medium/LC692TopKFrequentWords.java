@@ -36,6 +36,8 @@ public class LC692TopKFrequentWords {
 
         //Approach 2:
         System.out.println(topKFrequentOptimised(words,k));
+
+        //Best Approach is Bucket Sort and Trie combination. Learn if time permits
     }
 
     public static List<String> topKFrequent(String[] words, int k) {
@@ -67,7 +69,7 @@ public class LC692TopKFrequentWords {
 
         return result;
 
-        // TC:O(n)+o(nlog k)
+        // TC:O(n) + O(nlog k)
         // SC:O(k)
     }
 

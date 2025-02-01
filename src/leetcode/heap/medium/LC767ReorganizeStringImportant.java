@@ -51,7 +51,7 @@ public class LC767ReorganizeStringImportant {
         }
         return sb.toString();
 
-        // TC:O(n log n)
-        // SC:O(n) worst case
+        //TC:O(n log n)
+        //SC:O(n) worst case
     }
 }

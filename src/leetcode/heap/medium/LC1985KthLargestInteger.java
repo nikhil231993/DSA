@@ -21,7 +21,7 @@ public class LC1985KthLargestInteger {
         }
         return pq.peek();
 
-        // TC:O(n log k)
-        // SC:O(k)
+        //TC:O(n log k)
+        //SC:O(k)
     }
 }

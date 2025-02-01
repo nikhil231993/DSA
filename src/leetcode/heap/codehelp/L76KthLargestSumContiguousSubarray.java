@@ -35,7 +35,7 @@ public class L76KthLargestSumContiguousSubarray {
         //O(k)
         return pq.peek();
 
-        //TC:O(n square * log k)
+        //TC:O(n square * log k) This is because all the combinations of subarray is n(n+1)/2
         //SC:O(k)
     }
 
@@ -57,7 +57,7 @@ public class L76KthLargestSumContiguousSubarray {
 
         return arr[size-K];
 
-        // TC:O(n square log n square)
-        // SC:O(n square)
+        //TC:O(n square log n square)
+        //SC:O(n square)
     }
 }

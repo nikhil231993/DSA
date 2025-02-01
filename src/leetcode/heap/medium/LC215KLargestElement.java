@@ -23,7 +23,7 @@ public class LC215KLargestElement {
         int r2=usingMaxHeap(nums1, k ,n);
         System.out.println(r2);
 
-        // Approach 3: Best Approach
+        // Approach 4: Best Approach
         //Below is the best method
         //1) Create a min heap of size k
         //2) check if size of heap > k then pop
@@ -31,6 +31,9 @@ public class LC215KLargestElement {
 
         int r3=usingMinHeap(nums1, k , n);
         System.out.println(r3);
+
+        //Best Approach
+        //Approach 5: Learn quick select if possible and time is present
     }
 
     private static  int usingCustomHeap(int[] nums, int k ,int n){

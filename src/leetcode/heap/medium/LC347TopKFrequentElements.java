@@ -20,8 +20,10 @@ public class LC347TopKFrequentElements {
 
     public static void main(String[] args) {
 
-        int[] nums=new int[]{1, 1,1,2,2,3};
+        int[] nums=new int[]{1,1,1,2,2,3};
         int k=2;
+
+        //Qucik Select is best solution .Learn if time permits
 
         Map<Integer,Integer> map=new HashMap<>();
         for(int n:nums){
@@ -41,7 +43,7 @@ public class LC347TopKFrequentElements {
             System.out.println(pq.poll().key);
         }
 
-        //TC: O(NlogK)
+        //TC:O(NlogK)
         //SC:O(N) for map and O(K) for priority queue
     }
 }

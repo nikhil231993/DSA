@@ -26,6 +26,8 @@ public class LC451SortCharacterByFrequency {
 
         //Approach 2: Since for s = "tree" both "eert" and "eetr" are correct so we do need to compare the character which has same freq and thus lexicography check can be avoided
         System.out.println(frequencySortOptimised(s));
+
+        //Bucket Sort is the best solution
     }
 
     public static String frequencySort(String s) {

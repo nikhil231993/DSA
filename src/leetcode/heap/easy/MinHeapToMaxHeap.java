@@ -29,10 +29,10 @@ public class MinHeapToMaxHeap {
         int right = 2 * index + 2;
         int largest = index;
 
-        if (left < n && arr[left] > arr[largest])
+        if (left<n && arr[left]>arr[largest])
             largest = left;
 
-        if (right < n && arr[right] > arr[largest])
+        if (right<n && arr[right]>arr[largest])
             largest = right;
 
         if (largest != index) {

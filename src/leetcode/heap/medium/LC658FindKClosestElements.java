@@ -9,12 +9,12 @@ public class LC658FindKClosestElements {
 
     public static void main(String[] args) {
 
-       int[]  arr =new int[] {1,3,4,5,6,7,8,9,10,11,20,25};
-       arr=new int[]{1,2,3,4,5,6,7,8,9,10,11,12,13,14};
-       //int k = 5, x = 30;
-       int k=4, x=7;
+        int[]  arr =new int[] {1,3,4,5,6,7,8,9,10,11,20,25};
+        arr=new int[]{1,2,3,4,5,6,7,8,9,10,11,12,13,14};
+        //int k = 5, x = 30;
+        int k=4, x=7;
 
-       //Approach 1 using heap
+        //Approach 1 using heap
         System.out.println(findClosestElements(arr,k,x));
 
         //Approach 2 using 2 pointer
@@ -34,7 +34,7 @@ public class LC658FindKClosestElements {
 
         while(left<right){
             int mid=left+(right-left)/2;
-            if(Math.abs(x-arr[mid])> Math.abs(arr[mid+k]-x))
+            if(Math.abs(x-arr[mid]) > Math.abs(arr[mid+k]-x))
                 left=mid+1;
             else
                 right=mid;

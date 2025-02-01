@@ -19,6 +19,7 @@ public class LC2351FirstLetterToAppearTwice {
     public static char repeatedCharacter(String s) {
 
         Map<Character, Integer> m=new HashMap();
+
         for(int i=0; i<s.length(); i++){
             if(m.containsKey(s.charAt(i)))
                 return s.charAt(i);
@@ -34,6 +35,7 @@ public class LC2351FirstLetterToAppearTwice {
     public static char repeatedCharacterOptimised(String s) {
 
         Map<Character, Integer> m=new HashMap();
+
         for(int i=0; i<s.length(); i++){
             if(m.containsKey(s.charAt(i)))
                 return s.charAt(i);

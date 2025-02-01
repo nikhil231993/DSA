@@ -17,7 +17,7 @@ public class LC2239FindClosestNumberToZero {
 
     public static void main(String[] args) {
 
-       int[] nums =new int[] {-4,-2,1,4,8};
+        int[] nums =new int[] {-4,-2,1,4,8};
 
         //Approach 1
         System.out.println(findClosestNumber(nums));

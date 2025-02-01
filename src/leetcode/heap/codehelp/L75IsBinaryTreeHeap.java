@@ -50,9 +50,9 @@ public class L75IsBinaryTreeHeap {
 
     private static boolean maxHeap(Node root) {
 
-        if(root.right==null && root.left==null)
+        if(root.right == null && root.left == null)
             return true;
-        if(root.right==null)
+        if(root.right == null)
             return root.left.value<root.value;
         return root.left.value<root.value && root.right.value< root.value && maxHeap(root.left) && maxHeap(root.right);
     }

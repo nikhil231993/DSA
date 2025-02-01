@@ -36,7 +36,7 @@ public class L75MergeTwoBinaryHeaps {
 
     public static void buildHeap(int[] arr, int size){
 
-        for(int i=size/2-1;i>=0;i--){
+        for(int i=size/2-1; i>=0; i--){
             heapify(arr,size,i);
         }
     }

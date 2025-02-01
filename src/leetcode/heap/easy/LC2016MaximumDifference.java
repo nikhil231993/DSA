@@ -4,7 +4,7 @@ public class LC2016MaximumDifference {
 
     public static void main(String[] args) {
 
-        int[] nums =new int[] {7,1,5,4};
+        int[] nums = new int[] {7,1,5,4};
 
         //Approach 1
         System.out.println(maximumDifference(nums));

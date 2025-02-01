@@ -57,8 +57,8 @@ public class GfgMergeKSortedArray {
     private static ArrayList<Integer> mergeBruteForce(int[][] arr, int k) {
 
         ArrayList<Integer> list=new ArrayList<>();
-        for(int i=0;i<arr.length;i++){
-            for(int j=0;j<arr[0].length;j++){
+        for(int i=0; i<arr.length; i++){
+            for(int j=0; j<arr[0].length; j++){
                 list.add(arr[i][j]);
             }
         }

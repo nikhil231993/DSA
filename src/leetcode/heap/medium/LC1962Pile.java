@@ -31,7 +31,7 @@ public class LC1962Pile {
 
         return sum;
 
-        //TC:O(n log n)
+        //TC:O(nlogn)
         //SC:O(n)
     }
 }

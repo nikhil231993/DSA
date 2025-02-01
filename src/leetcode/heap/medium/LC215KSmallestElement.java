@@ -9,6 +9,9 @@ public class LC215KSmallestElement {
         int[] arr=new int[]{7, 10, 4, 20, 15};
         int n=arr.length;
         System.out.println(kthSmallest(arr, 0, 4, 4));
+
+        //Best Approach
+        //Approach 5: Learn quick select if possible and time is present
     }
 
     public static int kthSmallest(int[] arr, int l, int r, int k) {

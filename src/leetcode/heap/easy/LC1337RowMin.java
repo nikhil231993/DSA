@@ -55,7 +55,7 @@ public class LC1337RowMin {
         int[] arr=new int[pq1.size()];
         int l=0;
         while(!pq1.isEmpty()){
-            arr[l++]=pq1.poll().row;
+            arr[l++] = pq1.poll().row;
         }
         return arr;
     }
@@ -72,6 +72,6 @@ public class LC1337RowMin {
                 low=mid+1;
             }
         }
-        return high+1;
+        return high+1; //low
     }
 }

@@ -19,9 +19,8 @@ public class LC2710RemoveTrailingZeros {
         int count=0;
         for(int i=num.length()-1; i>=0; i--){
 
-            if(flag==0 && num.charAt(i)=='0'){
+            if(flag==0 && num.charAt(i)=='0')
                 count++;
-            }
             else flag=1;
 
             if(flag==1)
