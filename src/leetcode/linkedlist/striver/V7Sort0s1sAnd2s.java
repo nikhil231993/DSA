@@ -44,7 +44,7 @@ public class V7Sort0s1sAnd2s {
         }
 
         one.next=twoHead.next;
-        two.next=null;
+        two.next=null; //This is mandatory. Just dry num and see for input 1,0,2,1,0,2,1
 
         Node newHead=zeroHead.next;
         return newHead;

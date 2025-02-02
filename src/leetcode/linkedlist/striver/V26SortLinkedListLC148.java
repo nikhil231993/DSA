@@ -53,16 +53,12 @@ public class  V26SortLinkedListLC148 {
             }
             temp=temp.next;
         }
-        while(list1!=null){
-            temp.next=list1;
-            list1=list1.next;
-            temp=temp.next;
-        }
-        while(list2!=null){
+         if(list1==null){
             temp.next=list2;
-            list2=list2.next;
-            temp=temp.next;
-        }
+         }
+         if(list2==null){
+            temp.next=list1;
+         }
         return dummy.next;
     }
      TC:O(log n )(N+N/2(findMiddle))

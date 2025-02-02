@@ -25,7 +25,8 @@ public class V9ReverseLinkedListLC206 {
      SC:O(1)
      */
 
-    //Approach 3
+    //Approach 3: Recursive
+
     /**
     public ListNode reverseList(ListNode head) {
 
@@ -40,6 +41,5 @@ public class V9ReverseLinkedListLC206 {
     }
      TC:O(n)
      SC:O(n) stack space
-
     */
 }

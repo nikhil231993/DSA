@@ -125,7 +125,7 @@ public class V2DeletionAndInsertion {
         }
         boolean found=false;
         Node temp=head;
-        while(temp!=null){
+        while(temp.next!=null){
             if(temp.next.data==before){
                 Node n= new Node(value);
                 n.next=temp.next;

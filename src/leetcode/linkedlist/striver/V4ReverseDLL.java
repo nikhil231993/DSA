@@ -13,11 +13,11 @@ public class V4ReverseDLL {
 
         NodeDLL head=new NodeDLL(arr[0]);
 
-        System.out.println("Convert Array to DLL");
+        System.out.println("Convert Array to DLL : ");
         V3DoublyLinkedList.convertArrayToDLL(head, arr);
         V3DoublyLinkedList.display(head);
 
-        System.out.println("Reverse DLL");
+        System.out.println("Reversed DLL : ");
         NodeDLL newHead=reverseDLL(head);
         V3DoublyLinkedList.display(newHead);
     }

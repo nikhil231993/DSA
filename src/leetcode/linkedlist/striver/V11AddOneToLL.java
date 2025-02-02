@@ -91,7 +91,7 @@ public class V11AddOneToLL {
     /**
     public static Node addOne(Node head) {
 
-        if(head==null)
+        if(head == null)
             return head;
         Node newHead=reverse(head);
         int carry=1;

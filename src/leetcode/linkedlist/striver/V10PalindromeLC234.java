@@ -34,8 +34,8 @@ public class V10PalindromeLC234 {
         Node first=head;
         Node second=newHead;
 
-        while(second!=null){
-            if(first.data!=second.data){
+        while(second != null){
+            if(first.data != second.data){
                 reverseHead(newHead);
                 return false;
             }

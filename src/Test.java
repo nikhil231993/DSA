@@ -41,6 +41,7 @@ public class Test {
             if (count == breakingPoint-1) {
                 break;
             }
+            count++;
             temp1 = temp1.next;
         }
         Node newHead = temp1.next;

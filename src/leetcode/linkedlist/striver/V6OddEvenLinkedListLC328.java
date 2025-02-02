@@ -17,7 +17,7 @@ public class V6OddEvenLinkedListLC328 {
         ListNode evenHead=head.next;
 
         while(even!=null && even.next !=null){
-            odd.next=odd.next.next;
+            odd.next=odd.next.next; // if we change order of this and below line we will get NPE because even changes before odd changes
             even.next=even.next.next;
             odd=odd.next;
             even=even.next;

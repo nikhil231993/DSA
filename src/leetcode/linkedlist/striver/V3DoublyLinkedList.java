@@ -71,7 +71,7 @@ public class V3DoublyLinkedList {
         NodeDLL head8=new NodeDLL(arr8[0]);
         convertArrayToDLL(head8, arr8);
         //NodeDLL newHead8=insertionBeforeNode(head8, -1, head8.next.next);
-        NodeDLL newHead8=insertionBeforeNodeV2(head8, -1, head8.next.next.next.next); // This is done by me
+        NodeDLL newHead8=insertionBeforeNodeV2(head8, -1, head8.next.next.next); // This is done by me
         display(newHead8);
 
         System.out.println("Insert At end of DLL ");
@@ -108,13 +108,10 @@ public class V3DoublyLinkedList {
 
                 NodeDLL prev=temp.prev;
                 temp.prev=null;
-                if(temp.next!=null)
-                    temp.next.prev=null;
                 n.prev=prev;
                 prev.next=n;
                 n.next =temp;
-                if(temp.next!=null)
-                    n.next.prev=n;
+                temp.prev=n;
             }
             temp=temp.next;
         }
