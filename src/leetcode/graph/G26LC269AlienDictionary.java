@@ -7,8 +7,8 @@ public class G26LC269AlienDictionary {
     public static void main(String[] args) {
 
         String[] words =new String[] {"wrt","wrf","er","ett","rftt"};
-        words=new String[]{"z", "z"};
-        words=new String[]{"abc", "ab"};
+        //words=new String[]{"z", "z"};
+        //words=new String[]{"abc", "ab"};
         System.out.println(alienOrder(words));
     }
 

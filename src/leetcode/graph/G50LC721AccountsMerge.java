@@ -59,9 +59,9 @@ public class G50LC721AccountsMerge {
             if(mergeList.get(i).size()==0) continue;
             //If present then sort it
             Collections.sort(mergeList.get(i));
-            System.out.println("+++++++");
-            System.out.println(mergeList.get(i));
-            System.out.println("+++++++");
+//            System.out.println("+++++++");
+//            System.out.println(mergeList.get(i));
+//            System.out.println("+++++++");
             //Create new ArrayList to add value;
             List<String> tempList=new ArrayList<>();
             tempList.add(accounts.get(i).get(0));

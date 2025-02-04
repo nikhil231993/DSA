@@ -101,7 +101,7 @@ public class G32DijkstraAlgoDGWeightSelf {
             adjList.add(new ArrayList<>());
 
         for(int i=0;i<E;i++){
-                adjList.get(edge[i][0]).add(new PairG32(edge[i][1],edge[i][2]));
+            adjList.get(edge[i][0]).add(new PairG32(edge[i][1],edge[i][2]));
         }
 
         Queue<PairG32> q=new PriorityQueue<>((a,b)->a.weight-b.weight);

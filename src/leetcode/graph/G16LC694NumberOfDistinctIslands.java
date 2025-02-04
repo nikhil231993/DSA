@@ -106,7 +106,7 @@ public class G16LC694NumberOfDistinctIslands {
         for(int k=0;k<4;k++){
             int nrow=row+xaxis[k];
             int ncol=col+yaxis[k];
-            if(nrow>=0 && nrow<n && ncol>=0 && ncol<m && visited[nrow][ncol]==0&& grid[nrow][ncol]==1){
+            if(nrow>=0 && nrow<n && ncol>=0 && ncol<m && visited[nrow][ncol]==0 && grid[nrow][ncol]==1){
                 dfs(nrow,ncol,n,m,visited,grid,xaxis,yaxis,list,rorigin,corigin);
                  }
             }

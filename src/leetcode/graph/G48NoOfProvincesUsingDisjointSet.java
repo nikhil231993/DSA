@@ -18,7 +18,7 @@ public class G48NoOfProvincesUsingDisjointSet {
         for(int i=0;i<n;i++){
             for(int j=0;j<m;j++){
                 if(i!=j && matrix[i][j]==1){
-                    ds.unionBySize(i,j);
+                    ds.unionBySize(i, j);
                 }
             }
         }

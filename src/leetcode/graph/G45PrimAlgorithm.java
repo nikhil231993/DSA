@@ -71,7 +71,7 @@ public class G45PrimAlgorithm {
 
             //Once visited we need not visit again as minimum is found
             if(visited[node]==1)
-                continue;;
+                continue;
             visited[node]=1;
 
             parent[node] = parentNode;

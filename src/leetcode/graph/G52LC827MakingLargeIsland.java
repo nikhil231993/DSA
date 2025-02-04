@@ -9,7 +9,6 @@ public class G52LC827MakingLargeIsland {
 
        int[][] grid =new int[][] {{1,1},{1,1}};
         System.out.println(makingLargeIsland(grid));
-
     }
 
     private static int makingLargeIsland(int[][] grid) {
