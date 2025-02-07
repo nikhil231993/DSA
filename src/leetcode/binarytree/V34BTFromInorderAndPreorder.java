@@ -8,7 +8,7 @@ public class V34BTFromInorderAndPreorder {
 //            return null;
 //
 //        HashMap<Integer, Integer> map = new HashMap<>();
-//        for(int i=0;i<inorder.length; i++){
+//        for(int i=0; i<inorder.length; i++){
 //            map.put(inorder[i], i);
 //        }
 //        int preLen=preorder.length-1;
@@ -17,6 +17,7 @@ public class V34BTFromInorderAndPreorder {
 //    }
 //
 //    public static TreeNode func(int[] preorder, int preStart, int preEnd, int[] inorder, int inStart, int inEnd, HashMap<Integer, Integer> map){
+//
 //        if(preStart>preEnd || inStart>inEnd) return null;
 //
 //        TreeNode root = new TreeNode(preorder[preStart]);

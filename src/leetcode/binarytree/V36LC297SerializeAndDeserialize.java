@@ -8,7 +8,7 @@ public class V36LC297SerializeAndDeserialize {
     // Encodes a tree to a single string.
     public String serialize(Node root) {
 
-        if(root==null)
+        if(root == null)
             return "";
         Queue<Node> q=new LinkedList();
         q.offer(root);

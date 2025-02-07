@@ -5,7 +5,7 @@ public class V35BTFromInorderAndPostorder {
 //    public TreeNode buildTree(int[] inorder, int[] postorder) {
 //
 //        Map<Integer, Integer> map = new HashMap();
-//        for(int i=0;i< inorder.length; i++)
+//        for(int i=0; i< inorder.length; i++)
 //            map.put(inorder[i], i);
 //        TreeNode node=buildingTree(postorder, 0, postorder.length-1,
 //                inorder, 0, inorder.length-1,  map);
@@ -13,6 +13,7 @@ public class V35BTFromInorderAndPostorder {
 //    }
 //
 //    public static TreeNode buildingTree(int[] postorder, int postStart, int postEnd, int[] inorder, int inStart, int inEnd, Map<Integer, Integer> map){
+//
 //        if(inStart>inEnd || postStart>postEnd)
 //            return null;
 //

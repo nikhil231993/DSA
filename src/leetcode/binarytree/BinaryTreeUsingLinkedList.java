@@ -10,7 +10,6 @@ import java.util.Queue;
 import java.util.Stack;
 import java.util.TreeMap;
 
-
 class Tuple {
 
 	protected Node node;
@@ -112,8 +111,8 @@ public class BinaryTreeUsingLinkedList {
 			postorderTraversal(root.right);
 			System.out.print(root.data + "-->");
 
-			// TC:O(N)
-			// SC:O(H) in case of normal tree or O(N) in case of skewed tree
+			//TC:O(N)
+			//SC:O(H) in case of normal tree or O(N) in case of skewed tree
 		}
 	}
 
@@ -297,9 +296,9 @@ public class BinaryTreeUsingLinkedList {
 			if (temp.left != null)
 				st.push(temp.left);
 
-			// TC:O(N)
-			// SC:O(N) which is stack space in case of tree having more right nodes refer
-			// note or else it will be O(H)
+			//TC:O(N)
+			//SC:O(N) which is stack space in case of tree having more right nodes refer
+			//note or else it will be O(H)
 		}
 		return list;
 	}
@@ -350,8 +349,8 @@ public class BinaryTreeUsingLinkedList {
 		}
 		return result;
 
-		// TC:O(N)
-		// SC:O(2N) only considering stack
+		//TC:O(N)
+		//SC:O(2N) only considering stack
 	}
 
 	public List<Integer>  iterativePostOrderUsing1Stack(Node root2) {
@@ -433,8 +432,8 @@ public class BinaryTreeUsingLinkedList {
 		int rightLen = maxDepthRecursive(root.right);
 		return 1 + Math.max(leftLen, rightLen);
 
-		// TC:O(N) as we have to travel each node
-		// SC:O(H) but O(N) in case of skewed tree
+		//TC:O(N) as we have to travel each node
+		//SC:O(H) but O(N) in case of skewed tree
 	}
 
 	public int  maxDepthIterative(Node root) {
@@ -507,8 +506,8 @@ public class BinaryTreeUsingLinkedList {
 		diameter[0] = Math.max(left + right, diameter[0]);
 		return 1 + Math.max(left, right);
 
-		// TC:O(N)
-		// SC:O(H) in case of normal tree but O(N) in case of skewed tree
+		//TC:O(N)
+		//SC:O(H) in case of normal tree but O(N) in case of skewed tree
 	}
 
 	public int maxPath(Node root) {
