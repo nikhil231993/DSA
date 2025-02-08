@@ -37,7 +37,7 @@ public class LC763PartitionLabels {
         }
         return list;
 
-        //TC:O(2n)
-        //SC:O(n) for map in worst case + O(n) for list
+        // TC:O(2n)
+        // SC:O(n) for map in worst case + O(n) for list
     }
 }

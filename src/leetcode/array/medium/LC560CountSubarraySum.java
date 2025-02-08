@@ -3,7 +3,7 @@ package leetcode.array.medium;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 
-public class LC560SubarraySum {
+public class LC560CountSubarraySum {
 
 	public static void main(String[] args) {
 

@@ -24,7 +24,7 @@ public class LC1470ShuffleArray {
         System.out.println("######################");
 
         //Approach 3
-        int[] r2=shuffleBetter(nums,n);
+        int[] r2=shuffleSelf(nums,n);
         for(int n1:r2)
             System.out.print(n1);
     }

@@ -9,9 +9,40 @@ public class V12MinimumWindowSubstringLC76 {
         String s = "ADOBECODEBANC", t = "ABC";
 
         //Approach 1 : Brute force Generate all the combinations
+        System.out.println(minWindowBrute(s, t));
 
         //Approach 2:
         System.out.println(minWindow(s, t));
+    }
+
+    private static String minWindowBrute(String s, String t) {
+
+        int ns=s.length();
+        int nt=t.length();
+        int startIndex=-1;
+        int minLen=Integer.MAX_VALUE;
+
+        for(int i=0; i<ns;i++){
+
+            int count=0;
+            int[] ch=new int[256];
+            for(int j=0; j<nt; j++)
+                ch[t.charAt(j)-'A']++;
+            for(int k=i; k<ns; k++){
+
+                if(ch[s.charAt(k)-'A']>0)
+                    count++;
+                ch[s.charAt(k)-'A']--;
+                if(count==nt){
+                    if(minLen>(k-i+1)){
+                        minLen=k-i+1;
+                        startIndex=i;
+                        break;
+                    }
+                }
+            }
+        }
+        return startIndex==-1?"":s.substring(startIndex, startIndex+minLen);
     }
 
     public static String minWindow(String s, String t) {

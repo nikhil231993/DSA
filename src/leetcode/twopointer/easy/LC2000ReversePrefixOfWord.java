@@ -40,8 +40,8 @@ public class LC2000ReversePrefixOfWord {
         }
         return word;
 
-        //TC:O(n)
-        //SC:O(n)
+        // TC:O(n)
+        // SC:O(n)
     }
 
     public static String reversePrefix(String word, char ch) {

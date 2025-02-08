@@ -3,7 +3,7 @@ package leetcode.twopointer.striver;
 import java.util.HashMap;
 import java.util.HashSet;
 
-public class V6LongestSubstringAtmostKDistinctCharactersPremium {
+public class V6LongestSubstringAtmostKDistinctCharactersLC340Premium {
 
     public static void main(String[] args) {
 

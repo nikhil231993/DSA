@@ -14,7 +14,7 @@ public class V9BinarySubarraySumLC930 {
         //Approach 2: Better
         System.out.println(numSubarraysWithSumUsingMap(nums, goal));
 
-        //Approach 3: Best getting rid of space
+        //Approach 3: Best getting rid of extra space. We can do this because there are no negative
         System.out.println(numSubarraysWithSum(nums, goal));
 
         //we cannot use "if" instead of "while" as in counting we will miss some subarrays. Take an example and try out

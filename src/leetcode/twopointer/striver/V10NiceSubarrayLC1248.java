@@ -16,7 +16,7 @@ public class V10NiceSubarrayLC1248 {
                 nums[i]=1;
         }
 
-        //Approach 1 : Brute will be generate all solutions
+        //Approach 1 : Brute will be to generate all solutions
 
         //Approach 2: Better
         System.out.println(numSubarraysWithSumUsingMap(nums, goal));

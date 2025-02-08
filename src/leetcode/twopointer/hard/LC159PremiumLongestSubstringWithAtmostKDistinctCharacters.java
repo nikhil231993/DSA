@@ -3,7 +3,7 @@ package leetcode.twopointer.hard;
 import java.util.HashMap;
 import java.util.HashSet;
 
-public class PremiumLongestSubstringWithAtmostKDistinctCharacters {
+public class LC159PremiumLongestSubstringWithAtmostKDistinctCharacters {
 
     public static void main(String[] args) {
 

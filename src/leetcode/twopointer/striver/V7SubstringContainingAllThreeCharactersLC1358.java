@@ -17,6 +17,9 @@ public class  V7SubstringContainingAllThreeCharactersLC1358 {
         //Approach 2: Better is slight modification of brute
         System.out.println(betterNumberOfSubstrings(s));
 
+        //Striver Solution
+        System.out.println(brute(s)); //better here will to add n-j to calcaulate count
+
         //Approach 3: Best
         System.out.println(bestNumberOfSubstrings(s));
 
@@ -25,6 +28,22 @@ public class  V7SubstringContainingAllThreeCharactersLC1358 {
 
         //we cannot use "if" instead of "while" as in counting we will miss some subarrays. Take an example and try out
         //When we want to find longest length we can use as its to find max length
+    }
+
+    private static int brute(String s) {
+
+
+        int n=s.length(), count=0;
+        for(int i=0;i<n;i++){
+
+            int[] arr=new int[3];
+            for(int j=i; j<n; j++){
+                arr[s.charAt(j)-'a']=1;
+                if(arr[0]+arr[1]+arr[2]==3)
+                        count++;
+            }
+        }
+        return count;
     }
 
     private static int bestNumberOfSubstringsApproach(String s) {

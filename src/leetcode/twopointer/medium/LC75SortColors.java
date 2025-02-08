@@ -29,8 +29,8 @@ public class LC75SortColors {
             }
         }
 
-        //TC:O(n)
-        //SC:O(1)
+        // TC:O(n)
+        // SC:O(1)
     }
 
     public static void swap(int i, int j, int[] nums){

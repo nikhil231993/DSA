@@ -35,8 +35,8 @@ public class LC1679MaxNumberOfKSumPairs {
         }
         return count;
 
-        //TC:O(n)
-        //SC:O(n)
+        // TC:O(n)
+        // SC:O(n)
     }
 
     public static int maxOperations(int[] nums, int k) {

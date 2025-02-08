@@ -3,7 +3,7 @@ package leetcode.slidingwindow.easy;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class gfgMaxSumSubarray {
+public class gfgMaxSumSubarraySizeK {
 
     public static void main(String[] args) {
 

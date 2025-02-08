@@ -3,7 +3,7 @@ package leetcode.twopointer.hard;
 import java.util.HashMap;
 import java.util.HashSet;
 
-public class PremiumLongestSubStringWithAtmostTwoDistinctCharacters {
+public class LC340PremiumLongestSubStringWithAtmostTwoDistinctCharacters {
 
     public static void main(String[] args) {
 
@@ -101,6 +101,7 @@ public class PremiumLongestSubStringWithAtmostTwoDistinctCharacters {
     }
 
     private static int subArrayWithAtmostTwo(String s, int k) {
+
         HashMap<Character, Integer> map=new HashMap<>();
         int left=0;
         int right=0;

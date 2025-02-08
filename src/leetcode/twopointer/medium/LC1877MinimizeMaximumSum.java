@@ -20,7 +20,7 @@ public class LC1877MinimizeMaximumSum {
         }
         return max;
 
-        //TC:O(nlogn)
-        //SC:O(1)
+        // TC:O(nlogn)
+        // SC:O(1)
     }
 }
