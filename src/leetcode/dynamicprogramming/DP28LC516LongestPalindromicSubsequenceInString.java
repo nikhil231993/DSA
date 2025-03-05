@@ -7,8 +7,8 @@ public class DP28LC516LongestPalindromicSubsequenceInString {
     public static void main(String[] args) {
 
         String s="bbabcbcab";
-        StringBuilder sb=new StringBuilder(s);
-        String sReverse=sb.reverse().toString();
+        StringBuilder sb = new StringBuilder(s);
+        String sReverse = sb.reverse().toString();
 
         int index1=s.length();
         int index2=sReverse.length();
@@ -99,8 +99,8 @@ public class DP28LC516LongestPalindromicSubsequenceInString {
             return dp[index1][index2];
 
         if(s1.charAt(index1)==s2.charAt(index2))
-            return dp[index1][index2]=1+recursion(s1,s2,index1-1,index2-1);
-        return  dp[index1][index2]=Math.max(recursion(s1,s2,index1-1,index2),recursion(s1,s2,index1,index2-1));
+            return dp[index1][index2]=1+memoization(s1,s2,index1-1,index2-1, dp);
+        return  dp[index1][index2]=Math.max(memoization(s1,s2,index1-1,index2, dp), memoization(s1,s2,index1,index2-1, dp));
         //TC:O(index1*index2)
         //SC:O(index1+index2)+O(index1*index2) dp array
     }

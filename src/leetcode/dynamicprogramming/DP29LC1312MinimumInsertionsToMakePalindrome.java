@@ -7,10 +7,11 @@ public class DP29LC1312MinimumInsertionsToMakePalindrome {
     public static void main(String[] args) {
 
         String s ="leetcode";
+        s="abcdc";
         int n=s.length();
 
-        StringBuilder sb=new StringBuilder(s);
-        String sReverse=sb.reverse().toString();
+        StringBuilder sb = new StringBuilder(s);
+        String sReverse = sb.reverse().toString();
 
         int index1=s.length();
         int index2=sReverse.length();
@@ -75,14 +76,17 @@ public class DP29LC1312MinimumInsertionsToMakePalindrome {
 
     private static int memoization(String s1, String s2, int index1, int index2, int[][] dp) {
 
-        if(index1<0 || index2<0)
+        if(index1<1 || index2<0)
             return 0;
-        if(dp[index1][index1]!=-1)
+
+        if(dp[index1][index2]!=-1)
             return dp[index1][index2];
 
         if(s1.charAt(index1)==s2.charAt(index2))
-            return dp[index1][index2]=1+memoization(s1,s2,index1-1,index2-1,dp);
-        return dp[index1][index2]=Math.max(memoization(s1,s2,index1-1,index2,dp),memoization(s1,s2,index1,index2-1,dp));
+            return dp[index1][index2]=1+memoization(s1,s2,index1-1,index2-1, dp);
+        return  dp[index1][index2]=Math.max(memoization(s1,s2,index1-1,index2, dp), memoization(s1,s2,index1,index2-1, dp));
+        //TC:O(index1*index2)
+        //SC:O(index1+index2)+O(index1*index2) dp array
     }
 
     private static int recursion(String s1, String s2, int index1, int index2) {

@@ -7,6 +7,8 @@ public class DP30LC583ConvertOneStringToAnotherMinInsertAndDelete {
     public static void main(String[] args) {
 
         String word1 = "abcd", word2 = "anc";
+        word1 = "abc";
+        word2 = "a";
 
         int index1=word1.length();
         int index2=word2.length();

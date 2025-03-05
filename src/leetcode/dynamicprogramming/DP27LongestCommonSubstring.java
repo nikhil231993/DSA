@@ -6,6 +6,8 @@ public class DP27LongestCommonSubstring {
 
         String s1="abcd";
         String s2="abcde";
+        s1="abcjklp";
+        s2="acjkp";
 
         int index1=s1.length();
         int index2=s2.length();
@@ -56,7 +58,7 @@ public class DP27LongestCommonSubstring {
 
                 if(s1.charAt(ind1-1)==s2.charAt(ind2-1)){
                     dp[ind1][ind2]=1+dp[ind1-1][ind2-1];
-                    ans=Math.max(ans,dp[ind1][ind2]);
+                    ans=Math.max(ans, dp[ind1][ind2]);
                 }
                 else
                     dp[ind1][ind2]=0;

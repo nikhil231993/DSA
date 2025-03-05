@@ -16,7 +16,7 @@ public class DP26PrintLCS {
 
         //Memoization
         int[][] dp1=new int[index1+1][index2+1];
-        for(int[] r:dp1)
+        for(int[] r : dp1)
             Arrays.fill(r,-1);
         System.out.println(memoization(text1, text2,index1-1, index2-1, dp1));
 

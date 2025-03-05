@@ -21,11 +21,11 @@ public class DP31LC1092ShortestCommonSupersequence {
         int j=index2;
         StringBuilder sb=new StringBuilder();
         while(i>0 && j>0){
-            if(str1.charAt(i-1)==str2.charAt(j-1)){
+            if(str1.charAt(i-1) == str2.charAt(j-1)){
                 sb.append(str1.charAt(i-1));
                 i--;
                 j--;
-            }else if(dp[i-1][j]>dp[i][j-1]){
+            }else if(dp[i-1][j] > dp[i][j-1]){
                 sb.append(str1.charAt(i-1));
                 i--;
             }else{
