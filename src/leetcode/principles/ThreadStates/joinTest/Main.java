@@ -9,7 +9,8 @@ public class Main {
         Thread thread=new Thread(()->{
             System.out.println(Thread.currentThread());
             try {
-                Thread.sleep(1000000);
+                Thread.sleep(100000);
+                System.out.println("our thread");
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
@@ -19,20 +20,18 @@ public class Main {
 
         Thread thread2=new Thread(()->{
             System.out.println(Thread.currentThread());
+            System.out.println("our thread-2");
         }, "our thread-2");
 
         thread2.start();
 
-
+        // Due to below join()s this system will stop till this also completes
         try {
-
-            thread.join();// due to this system will stop till this also completes
+            thread.join();
             thread2.join();
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-
-
 
         System.out.println("Main waiting");
     }

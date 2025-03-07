@@ -26,5 +26,9 @@ public class VolatileIssue {
 
         setter.start();
         runner.start();
+
+        new Thread(()->{
+            System.out.println("Flag has been set to true!");
+        }).start();
     }
 }

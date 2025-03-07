@@ -3,8 +3,8 @@ package leetcode.principles.Thread.ObjectLevelLock;
 public class Employee {
 
     //1. If inside the synchronized block we use the same object then even though they are executed using diff threads they cannot run parallely
-    //2. but if the objects are different then they can executed vy any thread and also in parallel
-    //3. StingBuffer is a Thread safe class wheres StingBuilder is not
+    //2. but if the objects are different then they can executed by any thread and also in parallel
+    //3. StingBuffer is a Thread safe class whereas StingBuilder is not
 
     public void display(){
         synchronized (this) {
