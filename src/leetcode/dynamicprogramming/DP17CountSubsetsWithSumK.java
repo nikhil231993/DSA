@@ -7,7 +7,7 @@ public class DP17CountSubsetsWithSumK {
     //Two Solutions for number having 0
     //Solution 1:
     //if numbers range from 0 to n instead of 1 to n then find 2 raise to n
-    // where n is the no of zeroes an multiply the result we have solved it in next
+    // where n is the no of zeroes and multiply the result we have solved it in next
     //Solution 2:
     // we add conditions which is done in next DP17
 
@@ -18,22 +18,20 @@ public class DP17CountSubsetsWithSumK {
         int sum=5;
 
         //Recursion
-        System.out.println(recursion(nums,n-1,sum));
+        System.out.println(recursion(nums,n-1, sum));
 
         //Memoization
         int[][] dp=new int[n][sum+1];
         for(int[] r:dp)
             Arrays.fill(r,-1);
-        System.out.println(memoization(nums,n-1,sum,dp));
+        System.out.println(memoization(nums,n-1, sum, dp));
 
         //Tabulation
         int[][] dp1=new int[n][sum+1];
-        for(int[] r:dp1)
-            Arrays.fill(r,0);
-        System.out.println(tabulation(nums,n,sum,dp1));
+        System.out.println(tabulation(nums, n, sum, dp1));
 
         //Space
-        System.out.println(space(nums,n,sum));
+        System.out.println(space(nums, n, sum));
     }
 
     private static int space(int[] nums, int n, int K) {
@@ -68,8 +66,8 @@ public class DP17CountSubsetsWithSumK {
         if(nums[0]<=K)
            dp1[0][nums[0]]=1;
 
-        for(int i=1;i<n;i++){
-            for(int sum=1;sum<=K;sum++){ // here it is starting from 1 because we have already set for sum=0 above
+        for(int i=1; i<n; i++){
+            for(int sum=1; sum<=K; sum++){ // here it is starting from 1 because we have already set for sum=0 above
                 int np=dp1[i-1][sum];
                 int p=0;
                 if(nums[i]<=sum)
@@ -103,7 +101,7 @@ public class DP17CountSubsetsWithSumK {
         //SC:O(N*sum) dp array + O(N)stack
     }
 
-    private static int recursion(int[] nums, int i,int sum) {
+    private static int recursion(int[] nums, int i, int sum) {
 
         if(sum==0)
             return 1;

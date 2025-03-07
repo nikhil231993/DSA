@@ -6,13 +6,13 @@ public class LC268MissingNumber {
 
         int[] num=new int[] {9,6,4,2,3,5,7,0,1};
 
-		// Approach 1: Brute as we do summation here
+		//Approach 1: Brute as we do summation here
         System.out.println(missingNumber(num));
 
-		// Approach 2: Optimal
+		//Approach 2: Optimal
         System.out.println(xor(num));
 
-		// Approach 3: Optimal
+		//Approach 3: Optimal
 		System.out.println(xorAnotherApproach(num));
     }
 

@@ -8,7 +8,7 @@ public class DP9LC63UniquePaths2 {
 
         int m=obstacleGrid.length;
         int n=obstacleGrid[0].length;
-
+        //Recursion
         System.out.println(recursion(m-1, n-1, obstacleGrid));
 
         if(obstacleGrid[0][0]==1)//This is to handle test case[[1]] which means we cannot start
@@ -20,15 +20,11 @@ public class DP9LC63UniquePaths2 {
                 dp[i][j]=-1;
             }
         }
+        //Memoization
         System.out.println(memoization(m-1,n-1,dp,obstacleGrid));
 
         //Tabulation
         int[][] dp1=new int[m][n];
-        for(int i=0;i<m;i++) {
-            for (int j = 0; j < n; j++) {
-                dp1[i][j] = -1;
-            }
-        }
         System.out.println(tabulation(m,n,dp1,obstacleGrid));
 
         //Space optimization
@@ -46,8 +42,8 @@ public class DP9LC63UniquePaths2 {
         int top=recursion(n-1, m, matrix);
         return top+left;
 
-        //TC:O(2 raise to m*n)
-        //SCO(unique paths )i.e.n+m
+        //TC: O(2 raise to m*n)
+        //SC: O(unique paths )i.e.n+m
     }
 
     private static int space(int n, int m, int[][] obstacleGrid) {
@@ -106,12 +102,16 @@ public class DP9LC63UniquePaths2 {
 
         if(n==0 && m==0)
             return 1;
+
         if(m<0 || n<0)
             return 0;
+
         if(obstacleGrid[m][n]==1)
             return 0;
+
         if(dp[m][n]!=-1)
             return dp[m][n];
+
         int up = memoization(m-1,n,dp,obstacleGrid);
         int left= memoization(m,n-1,dp,obstacleGrid);
 

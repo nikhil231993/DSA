@@ -6,7 +6,7 @@ public class LC121BuySellStock1 {
 
 		int[] prices = new int[] { 7, 1, 5, 3, 6, 10 };
 
-		//Approach 1:Brute
+		// Approach 1:Brute
 		System.out.println(maxProfitBrute(prices));
 
 		//Approach 2:Optimal

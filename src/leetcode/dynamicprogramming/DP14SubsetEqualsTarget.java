@@ -11,7 +11,7 @@ public class DP14SubsetEqualsTarget { //7:59
         int target=4;
 
         //Recursion
-        System.out.println(recursion(n-1,target,arr));
+        System.out.println(recursion(n-1, target, arr));
 
         //Memoization
         //Assuming constraints are 10 raise to 3
@@ -31,8 +31,8 @@ public class DP14SubsetEqualsTarget { //7:59
     private static boolean space(int n, int k, int[] arr) {
 
         boolean[] prev=new boolean[k+1];
-
         prev[0]=true;
+
         if(arr[0]<=k)
             prev[arr[0]]=true;
 

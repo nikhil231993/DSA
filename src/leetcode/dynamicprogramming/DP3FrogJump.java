@@ -7,7 +7,8 @@ public class DP3FrogJump {
     public static void main(String[] args) {
 
         int[] height=new int[]{30,10,60,10,60,50};
-        int n=6;
+        height=new int[]{10, 20, 30, 10};
+        int n=height.length;
 
         //recursion
         System.out.println(recursion(n-1, height));
@@ -19,14 +20,12 @@ public class DP3FrogJump {
 
         //Tabulation -->Bottom Up
         //Step is the below
-        int[] dp1=new int[n+1];
-        Arrays.fill(dp1,-1);
-        System.out.println(tabulation(n-1, height, dp1));
+        int[] dp1=new int[n];
+        System.out.println(tabulation(n, height, dp1));
 
         //Even if we use n+1 it will work
         int[] dp2=new int[n+1];
-        Arrays.fill(dp, -1);
-        System.out.println(tabulationReference(n-1, height, dp2));
+        System.out.println(tabulationReference(n, height, dp2));
 
         //Space Optimization
         System.out.println(spaceOptimized(n,height));
@@ -47,16 +46,15 @@ public class DP3FrogJump {
 
     public static int tabulationReference(int n, int[] heights, int[] dp){
 
-
         dp[0]=0;
-        for(int i=1;i<=n;i++){
+        for(int i=1;i<n;i++){
             int left=dp[i-1]+Math.abs(heights[i]-heights[i-1]);
             int right=Integer.MAX_VALUE;
             if(i>1)
                 right=dp[i-2]+Math.abs(heights[i]-heights[i-2]);
             dp[i]=Math.min(left, right);
         }
-        return dp[n];
+        return dp[n-1];
     }
 
     private static int spaceOptimized(int n, int[] height) {
@@ -86,7 +84,7 @@ public class DP3FrogJump {
         dp[0]=0;
 
         //Step lines after the base case
-        for(int i=1;i<=n;i++){
+        for(int i=1;i<n;i++){
             int left=dp[i-1]+Math.abs(height[i]-height[i-1]);
             int right=Integer.MAX_VALUE;
             if(i>1)
@@ -94,7 +92,7 @@ public class DP3FrogJump {
 
             dp[i]=Math.min(left, right);
         }
-        return dp[n]; //as it is 1 based indexing
+        return dp[n-1]; //as it is 1 based indexing
 
         //TC: O(N)
         //SC: O(N)dp array

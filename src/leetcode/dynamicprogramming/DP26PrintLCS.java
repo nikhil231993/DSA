@@ -30,11 +30,11 @@ public class DP26PrintLCS {
         char[] ch=new char[dp2[index1][index2]]; //last cell determines the len of LCS so we used it here
         int k=ch.length-1;
         while(i>0 && j>0){
-            if(text1.charAt(i-1)==text2.charAt(j-1)){
+            if(text1.charAt(i-1) == text2.charAt(j-1)){
                 ch[k]=text1.charAt(i-1);
                 k--;
                 i--;j--;
-            }else if(dp2[i-1][j]>dp2[i][j-1]){
+            }else if(dp2[i-1][j] > dp2[i][j-1]){
                 i--;
             }else {
                 j--;

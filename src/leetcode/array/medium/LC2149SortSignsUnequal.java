@@ -11,7 +11,7 @@ public class LC2149SortSignsUnequal {
 
         sort(num);
 
-        for(int n:num)
+        for(int n : num)
             System.out.println(n);
     }
 
@@ -39,10 +39,9 @@ public class LC2149SortSignsUnequal {
             }
         else{
             for(int i=0; i<neg.size(); i++){
-                nums[2*i]=pos.get(i);
-                nums[2*i+1]=neg.get(i);
+                nums[2*i] = pos.get(i);
+                nums[2*i+1] = neg.get(i);
             }
-
             int index=neg.size()*2;
             for(int i=neg.size(); i<pos.size(); i++)
                 nums[index++] = pos.get(i);

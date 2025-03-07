@@ -71,7 +71,7 @@ public class LC169MajorityElement {
 		//Step 2: Do this only if there is no guarantee of maj element exist
 		int c=0;
 		for (int i=0; i<nums.length; i++){
-			if(nums[i]==maj)
+			if(nums[i] == maj)
 				c++;
 		}
 		if(c > nums.length/2)

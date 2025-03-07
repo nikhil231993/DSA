@@ -38,7 +38,7 @@ public class DP19Knapsack {
 
         for(int i=1;i<n;i++){
             int[] curr=new int[wt+1];
-            for(int w=0;w<=wt;w++){
+            for(int w=0; w<=wt; w++){
                 int notpick=0+prev[w];
                 int pick=-(int)(1e9);
                 if(weight[i]<=w){

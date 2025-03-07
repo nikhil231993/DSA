@@ -74,7 +74,7 @@ public class LC349UnionOfTwoArrays {
             }
         }
 
-        while(i < n){
+        while(i<n){
 			if (list.isEmpty() || list.get(list.size() - 1) != arr1[i]) {
                 list.add(arr1[i]);
             }

@@ -12,7 +12,7 @@ public class LC66PlusOne {
 
 		String c = String.valueOf(n);
 
-		//Below is just to convert a Number to Array
+		// Below is just to convert a Number to Array
 		int[] digits = new int[c.length()];
 		int i = c.length() - 1;
 		while (n != 0 && i >= 0) {

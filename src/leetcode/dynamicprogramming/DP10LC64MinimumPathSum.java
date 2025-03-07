@@ -21,11 +21,6 @@ public class DP10LC64MinimumPathSum {
 
         //Tabulation
         int[][] dp1 = new int[n][m];
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++) {
-                dp1[i][j] = -1;
-            }
-        }
         System.out.println(tabulation(n, m, dp1, grid));
 
         //Space
@@ -59,7 +54,7 @@ public class DP10LC64MinimumPathSum {
         return prev[m - 1];
 
         //TC:O(m*n)
-        //TC:O(n) 1 D array
+        //SC:O(n) 1 D array
     }
 
     private static int tabulation(int n, int m, int[][] dp1, int[][] grid) {
@@ -75,11 +70,11 @@ public class DP10LC64MinimumPathSum {
                     if (i > 0)
                         up += dp1[i - 1][j];
                     else
-                        up=(int)(1e9);//so that current path is neglected
+                        up=(int)(1e9); //so that current path is neglected
                     if (j > 0)
                         left += dp1[i][j - 1];
                     else
-                        left=(int)(1e9);//so that current path is neglected
+                        left=(int)(1e9); //so that current path is neglected
                     dp1[i][j] = Math.min(up, left);
                 }
             }
@@ -87,7 +82,7 @@ public class DP10LC64MinimumPathSum {
         return dp1[n - 1][m - 1];
 
         //TC:O(m*n)
-        //TC:O(n*m) dp array
+        //SC:O(n*m) dp array
     }
 
     private static int memoization(int n, int m, int[][] dp, int[][] grid) {
@@ -106,7 +101,7 @@ public class DP10LC64MinimumPathSum {
         return dp[n][m] = Math.min(up, left);
 
         //TC:O(m*n)
-        //TC:O(path length i.e n-1+m-1) + O(n*m) dp array
+        //SC:O(path length i.e n-1+m-1) + O(n*m) dp array
     }
 
     private static int recursion(int n, int m, int[][] grid) {
@@ -122,7 +117,7 @@ public class DP10LC64MinimumPathSum {
         return Math.min(up, left);
 
         //TC:O(2 raise to n*m)
-        //TC:O(path length i.e n-1+m-1)
+        //SC:O(path length i.e n-1 + m-1)
     }
 }
 

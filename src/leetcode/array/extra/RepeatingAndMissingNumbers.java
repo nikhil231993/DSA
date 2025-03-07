@@ -39,7 +39,7 @@ public class RepeatingAndMissingNumbers {
         long repeating=(val+first)/2;
         long missing=val-repeating;
 
-        return new int[]{(int)repeating, (int) missing};
+        return new int[]{ (int) repeating, (int) missing};
 
         //TC:O(n)
         //SC:O(1)

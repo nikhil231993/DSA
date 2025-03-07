@@ -84,8 +84,8 @@ public class LC15ThreeSum {
 		List<List<Integer>> ans = new ArrayList<>(st);
 		return ans;
 
-		//TC: O(N cube * log(no. of unique triplets)), where N = size of the array.
-		//SC: O(2 * no. of the unique triplets) as we are using a set data structure and a list to store the triplets.
+		//TC:O(N cube * log(no. of unique triplets)), where N = size of the array.
+		//SC:O(2 * no. of the unique triplets) as we are using a set data structure and a list to store the triplets.
 	}
 
 	private static List<List<Integer>> betterThreeSum(int[] nums) {

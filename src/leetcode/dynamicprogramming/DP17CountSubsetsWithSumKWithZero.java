@@ -13,9 +13,9 @@ public class DP17CountSubsetsWithSumKWithZero {
 
     public static void main(String[] args) {
 
-        int[] nums=new int[]{0,2,0,5};
+        int[] nums=new int[]{2,0,4};
         int n=nums.length;
-        int sum=7;
+        int sum=6;
 
         //Recursion
         System.out.println(recursion(nums,n-1,sum));
@@ -72,9 +72,9 @@ public class DP17CountSubsetsWithSumKWithZero {
     public static int tabulation(int[] num, int n, int k, int[][] dp) {
 
         if(num[0]==0)
-            dp[0][0]=2;
+            dp[0][0]=2; //I am at index =0, sum=0 and num[0]=0
         else
-            dp[0][0]=1;
+            dp[0][0]=1; //I am at index =0, sum=0 and num[0]!=0 then only one case that is not take
         if(num[0]!=0 && num[0]<=k)
             dp[0][num[0]]=1;
 

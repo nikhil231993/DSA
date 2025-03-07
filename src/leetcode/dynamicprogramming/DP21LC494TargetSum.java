@@ -11,7 +11,7 @@ public class DP21LC494TargetSum {
         int n=arr.length;
 
         int totalSum=0;
-        for(int i=0;i<n;i++)
+        for(int i=0; i<n; i++)
             totalSum+=arr[i];
 
         if(totalSum-d <0 || ((totalSum-d)%2)!=0)

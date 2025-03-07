@@ -22,7 +22,7 @@ public class LC31NextPermutation {
 				break;
 			}
 		}
-		if (idx1 < 0) {
+		if (idx1<0) {
 			reverse(0, nums.length - 1, nums);
 		} else {
 			for (int i = nums.length - 1; i >= 0; i--) {

@@ -13,7 +13,7 @@ public class LC599MinimumIndexSumOfTwoLists {
 
         String[] r=findRestaurant(list1,list2);
 
-        for(String s:r)
+        for(String s : r)
             System.out.println(s);
     }
 

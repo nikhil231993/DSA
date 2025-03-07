@@ -31,8 +31,7 @@ public class LC238ProductOfArrayWithoutSelf {
 		Arrays.fill(ans, 1);
 		int p1=1;
 		int p2=1;
-		
-		
+
 		for(int i=0; i<nums.length; i++) {
 			ans[i]*=p1;
 			p1 *= nums[i];
@@ -59,17 +58,17 @@ public class LC238ProductOfArrayWithoutSelf {
 		}
 		return ans;
 
-		// SC:O(n)
-		// TC:O(n)
+		//TC:O(n)
+		//SC:O(n)
 	}
 
 	private static int[] product(int[] nums) {
 
         int product=1;
 		int[] response = new int[nums.length];
-        for(int i=0;i<nums.length;i++){
+        for(int i=0; i<nums.length; i++){
            product=1;
-           for(int j=0;j<nums.length;j++){
+           for(int j=0; j<nums.length; j++){
 
                if(i!=j){
                    product*=nums[j];
@@ -79,7 +78,7 @@ public class LC238ProductOfArrayWithoutSelf {
         }
 		return response;
 
-        //SC:O(1)
 		//TC:O(n square)
+        //SC:O(1)
 	}
 }

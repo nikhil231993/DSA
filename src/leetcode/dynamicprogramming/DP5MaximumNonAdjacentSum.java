@@ -15,7 +15,7 @@ public class DP5MaximumNonAdjacentSum {
         //Memoization
         //Step 1 : Create dp array
         //Step 2 : add if condition
-        //Step 3: Assign result to dp[n] or dp[n-1];
+        //Step 3 : Assign result to dp[n] or dp[n-1];
         int[] dp=new int[n]; //or n+1
         Arrays.fill(dp,-1);
         System.out.println(memoization(nums,dp,n-1));
@@ -23,10 +23,9 @@ public class DP5MaximumNonAdjacentSum {
         //Tabulation
         //Step 1 : Create dp array same as above
         //Step 2 : Change method call to dp
-        //Step 3: Assign result to dp[n] or dp[n-1];
+        //Step 3 : Assign result to dp[n] or dp[n-1];
         int[] dp1=new int[n]; //or n+1
-        Arrays.fill(dp1,-1);
-        System.out.println(tabulation(nums,dp1,n)); //or n-1
+        System.out.println(tabulation(nums, dp1, n)); //or n-1
 
         //Space optimization
         System.out.println(space(nums,n));
@@ -55,10 +54,10 @@ public class DP5MaximumNonAdjacentSum {
 
     private static int tabulation(int[] nums, int[] dp, int n) {
 
-       dp[0]=nums[0];
-       int negIndex=0;//just a placeholder
+        dp[0]=nums[0];
+        int negIndex=0;//just a placeholder
 
-        for(int i=1; i<n;i++) { //or i<=n
+        for(int i=1; i<n; i++) { //or i<=n
             int pick = nums[i] ;
             if(i>1) //or i>=2
                 pick+=dp[i - 2];
@@ -77,7 +76,7 @@ public class DP5MaximumNonAdjacentSum {
 
         if(n==0)
             return nums[0];
-        if(n<0)     // we dont need this condition and we can use same condition of if i>1 instead
+        if(n<0)     // we don't need this condition and we can use same condition of if i>1 instead
             return 0;
 
         if(dp[n]!=-1)
@@ -86,10 +85,10 @@ public class DP5MaximumNonAdjacentSum {
         int pick=nums[n]+memoization(nums,dp,n-2);
         int notpick=0+memoization(nums,dp,n-1);
 
-        return dp[n]=Math.max(pick,notpick);
+        return dp[n]=Math.max(pick, notpick);
 
         //TC:O(N)
-        //TC:O(N) stack+O(N) dp array
+        //SC:O(N) stack + O(N) dp array
     }
 
     private static int recursion(int[] nums, int n) {
@@ -102,7 +101,7 @@ public class DP5MaximumNonAdjacentSum {
         int pick=nums[n]+recursion(nums,n-2);
         int notpick=0+recursion(nums,n-1);
 
-        return Math.max(pick,notpick);
+        return Math.max(pick, notpick);
 
         //TC:O(2 raise to N close to)
     }

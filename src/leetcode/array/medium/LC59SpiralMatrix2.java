@@ -44,7 +44,7 @@ public class LC59SpiralMatrix2 {
 		}
 		return matrix;
 
-		// SC:O(m*n)
-		// TC:O(m*n)
+		//SC:O(m*n)
+		//TC:O(m*n)
 	}
 }

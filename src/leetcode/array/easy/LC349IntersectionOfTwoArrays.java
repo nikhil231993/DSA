@@ -84,7 +84,7 @@ public class LC349IntersectionOfTwoArrays {
 
         return n1;
 
-        // TC:O(nlogn)+(mlogm)
-        // SC:O(n+m)
+        //TC:O(n log n) + (m log m)
+        //SC:O(n+m)
     }
 }

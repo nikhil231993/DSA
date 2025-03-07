@@ -56,7 +56,7 @@ public class DP20LC320CoinChange {
         return prev[amount];
     }
 
-    private static int tabulation(int[] coins, int amount, int[][] dp1,int n) {
+    private static int tabulation(int[] coins, int amount, int[][] dp1, int n) {
 
         for(int t=0;t<=amount;t++)
             if(t%coins[0]==0)
@@ -122,7 +122,7 @@ public class DP20LC320CoinChange {
         if(index==0){
             if(amount%coins[index]==0)
                 return amount/coins[index];
-            return (int)1e9;
+            return (int)1e9;  //We return this value because we are not able to achieve the target
         }
 
         int np=0+recursion(index-1, coins, amount);

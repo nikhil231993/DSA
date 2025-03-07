@@ -7,7 +7,7 @@ public class gfgLongestSubarrayWithSumK {
 
     public static void main(String[] args) {
 
-        int[] arr=new int[]{1,2,3,1,1,1,1,0,0,0,4,2,3,0,0,0,0,0,0,0,0};
+        int[] arr=new int[]{ 1,2,3,1,1,1,1,0,0,0,4,2,3,0,0,0,0,0,0,0,0 };
         int k=3;
 
         //Approach 1: Brute is generating all sub arrays

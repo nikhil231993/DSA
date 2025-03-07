@@ -50,7 +50,7 @@ public class LC54SpiralMatrix {
 		}
 		return output;
 
-		// SC:O(m*n)
-		// TC:O(m*n)
+		//SC:O(m*n)
+		//TC:O(m*n)
 	}
 }

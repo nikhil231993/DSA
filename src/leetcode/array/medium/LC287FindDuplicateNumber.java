@@ -35,8 +35,8 @@ public class LC287FindDuplicateNumber {
 		}
 		return ptr1;
 
-		// TC:O(n)
-		// SC:O(1)
+		//TC:O(n)
+		//SC:O(1)
 	}
 
 	private static int duplicateNumber(int[] nums) {

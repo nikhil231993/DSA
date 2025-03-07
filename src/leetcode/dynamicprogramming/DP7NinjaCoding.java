@@ -57,8 +57,8 @@ public class DP7NinjaCoding {
         }
         return prev[3];
 
-        //SC:O(N*4)
-        //TC:O(4)
+        //TC:O(N*4*3)
+        //SC:O(4)*2
     }
 
     private static int tabulation(int[][] dp1, int n,int[][] matrix) {
@@ -124,7 +124,7 @@ public class DP7NinjaCoding {
             int max=0;
             for(int i=0;i<3;i++){
                 if(i!=last){
-                    max=Math.max(matrix[0][i],max);
+                    max=Math.max(matrix[0][i], max);
                 }
             }
             return max;

@@ -65,12 +65,6 @@ public class DP11LC120Triangle {
         int m=triangle.get(n-1).size();
 
         int[][] dp=new int[n][n];
-        for(int i=0;i<n;i++){
-            for(int j=0;j<m;j++){
-                dp[i][j]=-1;
-            }
-        }
-
         return recursionTabulation(0,0,triangle,n,m,dp);
     }
 
@@ -82,8 +76,8 @@ public class DP11LC120Triangle {
 
         for(int i=n1-2;i>=0;i--){
             for(int j=i;j>=0;j--){
-                int d=triangle.get(i).get(j)+dp[i+1][j];
-                int diag=triangle.get(i).get(j)+dp[i+1][j+1];
+                int d = triangle.get(i).get(j) + dp[i+1][j];
+                int diag = triangle.get(i).get(j) + dp[i+1][j+1];
                  dp[i][j]=Math.min(d,diag);
             }
         }

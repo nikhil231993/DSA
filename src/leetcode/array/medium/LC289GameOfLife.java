@@ -6,8 +6,8 @@ public class LC289GameOfLife {
 
 		int[][] game = new int[][] { { 0, 1, 0 }, { 0, 0, 1 }, { 1, 1, 1 }, { 0, 0, 0 } };
 		
-		int n=game.length;
-		int m=game[0].length;
+		int n = game.length;
+		int m = game[0].length;
 		game(game, n, m);
 
 		for (int[] row : game)

@@ -49,7 +49,7 @@ public class gfgLeadersInArray {
         for(int i=n-1; i>0; i--){
             if(num[i]>max)
                 ans.add(0,num[i]); // add at 0 adds all the element at first or else we have to reverse it
-            max=Math.max(max,num[i]);
+            max=Math.max(max, num[i]);
         }
         return ans;
 

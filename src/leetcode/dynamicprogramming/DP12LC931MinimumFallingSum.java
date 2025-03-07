@@ -6,7 +6,7 @@ public class DP12LC931MinimumFallingSum {
         
        int[][] matrix =new int[][] {{2,1,3},{6,5,4},{7,8,9}};
 
-       //Recursion
+        //Recursion
         int n=matrix.length;
         int m=matrix[0].length;
 
@@ -31,16 +31,11 @@ public class DP12LC931MinimumFallingSum {
 
         //Tabulation
         int[][] dp2=new int[n][m];
-        for(int i=0;i<n;i++){
-            for(int j=0;j<m;j++){
-                dp2[i][j]=-1;
-            }
-        }
         int min2=Integer.MAX_VALUE;
         //tabulation(n,m,matrix,dp2);
         tabulationSelf(n,m,matrix,dp2);  //31:26
         for(int j=0;j<m;j++){
-            min2=Math.min(min2,dp2[n-1][j]);
+            min2=Math.min(min2, dp2[n-1][j]);
         }
         System.out.println(min2);
 
@@ -48,8 +43,8 @@ public class DP12LC931MinimumFallingSum {
         int min3=Integer.MAX_VALUE;
         int[] p=space(n,m,matrix);
         int[] p1=spaceSelf(n,m, matrix);
-        for(int i=0;i<p.length;i++)
-           min3=Math.min(min3,p[i]);
+        for(int i=0;i<p1.length;i++)
+           min3=Math.min(min3, p1[i]);
         System.out.println(min3);
     }
 
@@ -175,7 +170,8 @@ public class DP12LC931MinimumFallingSum {
         int upperLeft=matrix[i][j]+recursion(i-1,j-1,n,m,matrix);
         int upperRight=matrix[i][j]+recursion(i-1,j+1,n,m,matrix);
 
-        return Math.min(upper,Math.min(upperLeft,upperRight));
+        return Math.min(upper, Math.min(upperLeft, upperRight));
+
         //TC:O(3 raise to n)
         //SC:O(N)
     }
@@ -186,6 +182,7 @@ public class DP12LC931MinimumFallingSum {
             return (int)1e9;
         if(i==0)
             return matrix[0][j];
+
         if(dp1[i][j]!=-1)
             return dp1[i][j];
 

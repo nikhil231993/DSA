@@ -82,8 +82,8 @@ public class DP25LC1143LCS { //not matching split calls 24:06
         if(dp[index1][index2]!=-1)
             return dp[index1][index2];
         if(text1.charAt(index1)==text2.charAt(index2))
-            return dp[index1][index2]=1+lcsMemoization(text1,text2,index1-1,index2-1,dp);
-        return dp[index1][index2]=Math.max(lcsMemoization(text1,text2,index1-1,index2,dp),lcsMemoization(text1,text2,index1,index2-1,dp));
+            return dp[index1][index2]=1+lcsMemoization(text1, text2, index1-1, index2-1, dp);
+        return dp[index1][index2] = Math.max(lcsMemoization(text1, text2, index1-1, index2, dp), lcsMemoization(text1, text2, index1, index2-1, dp));
 
         //TC:O(index1*index2)
         //SC:O(index1+index2) stack as we omit alternate from each string at each step+
@@ -94,12 +94,12 @@ public class DP25LC1143LCS { //not matching split calls 24:06
 
         if(index1<0 || index2<0)
             return 0;
-        if(text1.charAt(index1)==text2.charAt(index2))
-            return 1+recursion(text1,text2,index1-1,index2-1);
+        if(text1.charAt(index1) == text2.charAt(index2))
+            return 1+recursion(text1, text2, index1-1, index2-1);
 
-        return Math.max(recursion(text1,text2,index1-1,index2), recursion(text1,text2,index1,index2-1));
+        return Math.max(recursion(text1, text2, index1-1, index2), recursion(text1, text2, index1, index2-1));
 
-        //TC:O(2^index1* 2^index2)
+        //TC:O(2^index1 * 2^index2)
         //SC:O(index1+index2) as we omit alternate from each string at each step
     }
 }

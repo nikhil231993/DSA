@@ -22,7 +22,7 @@ public class LC75SortColors {
 
         int low=0, mid=0, high=nums.length-1;
 
-        while(mid<=high){
+        while(mid <= high){
             if(nums[mid]==0){
                 swap(low,mid,nums);
                 low++;

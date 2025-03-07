@@ -19,10 +19,9 @@ public class DP5LC198HouseRobber {
 
         //Tabulation
         int[] dp1=new int[n+1];
-        Arrays.fill(dp1,-1);
-        System.out.println(tabulation(nums,dp,n-1));
+        System.out.println(tabulation(nums,dp1,n-1));
 
-        //Tabulation
+        //Space Optimization
         System.out.println(space(nums,n-1));
     }
 

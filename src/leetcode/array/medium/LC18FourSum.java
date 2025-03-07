@@ -96,10 +96,10 @@ public class LC18FourSum {
         int n=nums.length;
         Set<List<Integer>> s=new HashSet<>();
         List<List<Integer>> result=new ArrayList<>();
-        for(int i=0;i<n;i++){
-            for(int j=i+1;j<n;j++){
-                for(int k=j+1;k<n;k++){
-                    for(int l=k+1;l<n;l++){
+        for(int i=0; i<n; i++){
+            for(int j=i+1; j<n; j++){
+                for(int k=j+1; k<n; k++){
+                    for(int l=k+1; l<n; l++){
 
                         //Below is used because since first we add left to right and then assign to long,
                         //before assigning to long if value exceeds integer limit it will be a

@@ -4,8 +4,8 @@ public class gfgSecondLargestAndSecondSmallest {
 
     public static void main(String[] args) {
 
-        int[] nums=new int[]{1,2,4,7,7,5};
-        int[] result= getSecondOrderElements(nums);
+        int[] nums = new int[]{1,2,4,7,7,5};
+        int[] result = getSecondOrderElements(nums);
 
         System.out.println("SecondLargest: "+ result[0]);
         System.out.println("SecondSmallest: "+ result[1]);

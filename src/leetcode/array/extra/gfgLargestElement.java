@@ -12,7 +12,7 @@ public class gfgLargestElement {
     public static int largest(int arr[], int n) {
 
         int max=Integer.MIN_VALUE;
-        for(Integer num:arr)
+        for(Integer num : arr)
             max=Math.max(max,num);
         return max;
 

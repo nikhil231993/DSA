@@ -112,7 +112,6 @@ public class DP6LC213HouseRobber2 {
         return Math.max(pick, notpick);
     }
 
-
     public static int rob(int[] nums) {
 
         int n=nums.length;

@@ -10,10 +10,10 @@ public class LC56MergeIntervals {
 
 		int[][] twoDim = new int[][] { { 1, 3 }, { 2, 6 }, { 8, 10 }, { 15, 18 } };
 
-		//Approach 1: brute (Not needed)
+		//Approach 1: Brute (Not needed)
 		System.out.println(merge(twoDim));
 
-		//Approach 2: optimal
+		//Approach 2: Optimal
 		int[][] r = mergeIntervals(twoDim);
 		for (int[] n : r)
 			System.out.println(n[0] + " " + n[1]);
@@ -67,7 +67,7 @@ public class LC56MergeIntervals {
 		res.add(new int[] { start, end });
 		return res.toArray(new int[0][]);
 
-		// SC:O(1)
-		// TC:O(nlogn)+o(n)
+		//TC:O(nlogn)+O(n)
+		//SC:O(1)
 	}
 }

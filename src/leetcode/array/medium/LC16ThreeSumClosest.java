@@ -21,7 +21,7 @@ public class LC16ThreeSumClosest {
 
             int start=i+1, end=nums.length-1;
             while(start < end){
-                int sum=nums[i]+nums[start]+nums[end];
+                int sum=nums[i] + nums[start] + nums[end];
                 if(sum==target)
                     return target;
                 if(Math.abs(sum-target) < diff){

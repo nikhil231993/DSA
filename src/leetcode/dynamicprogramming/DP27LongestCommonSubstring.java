@@ -52,6 +52,7 @@ public class DP27LongestCommonSubstring {
             dp[i][0]=0;
         for(int j=0;j<=index2;j++)
             dp[0][j]=0;
+
         int ans=0;
         for(int ind1=1;ind1<=index1;ind1++){
             for(int ind2=1;ind2<=index2;ind2++){

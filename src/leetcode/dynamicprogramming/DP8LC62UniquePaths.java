@@ -19,14 +19,9 @@ public class DP8LC62UniquePaths {
 
         //Tabulation
         int[][] dp1=new int[m][n];
-        for(int i=0;i<m;i++) {
-            for (int j = 0; j < n; j++) {
-                dp1[i][j] = -1;
-            }
-        }
         System.out.println(tabulation(m,n,dp1));
 
-        //Space optimization
+        //Space Optimization
         System.out.println(space(m,n));
     }
 
@@ -57,7 +52,7 @@ public class DP8LC62UniquePaths {
     private static int tabulation(int m, int n, int[][] dp) {
 
         dp[0][0]=1;
-        for(int i=0;i<m;i++) {
+        for(int i=0; i<m; i++) {
             for (int j = 0; j < n; j++) {
                 if(i==0 && j==0) dp[i][j]=1;
                 else{

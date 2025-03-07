@@ -30,8 +30,8 @@ public class LC724FindPivotIndex {
 		 }
 		 return -1;
 
-		 //TC:O(2*n)
-		 //SC:O(1)
+		 //TC: O(2*n)
+		 //SC: O(1)
 	}
 
 	public static int pivotIndex(int[] nums) {

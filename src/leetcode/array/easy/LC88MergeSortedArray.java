@@ -8,7 +8,7 @@ public class LC88MergeSortedArray {
         int[] arr2=new int[]{1,2,3};
 
         //Approach 1: Brute
-        int[] result=withExtraSpace(arr1,arr2);
+        int[] result = withExtraSpace(arr1,arr2);
         for(int n:result)
             System.out.println(n);
 

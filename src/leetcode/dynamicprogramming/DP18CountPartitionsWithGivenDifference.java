@@ -74,9 +74,9 @@ public class DP18CountPartitionsWithGivenDifference {
 
        //Adding same as memoization condition
         if(arr[0]==0)
-            dp1[0][0]=2;
+            dp1[0][0]=2;  //I am at index =0, sum=0 and num[0]=0
         else
-            dp1[0][0]=1;
+            dp1[0][0]=1; //I am at index =0, sum=0 and num[0]!=0 then only one case that is not take
         //Above is first base case
 
         if(arr[0]!=0 && arr[0]<=K)

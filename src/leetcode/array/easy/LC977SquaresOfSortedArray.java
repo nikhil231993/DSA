@@ -39,7 +39,7 @@ public class LC977SquaresOfSortedArray {
 		int[] result = new int[nums.length];
 		int l = 0, r = nums.length - 1, k = result.length - 1;
 
-		while (l <= r) {
+		while (l<=r) {
 			if (nums[l] * nums[l] >= nums[r] * nums[r]) {
 				result[k--] = nums[l] * nums[l];
 				l++;

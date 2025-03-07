@@ -28,7 +28,7 @@ public class LC1752CheckIfSortedArray {
             return true;
         return false;
 
-        // TC:O(n)
-        // SC:O(1)
+        //TC:O(n)
+        //SC:O(1)
     }
 }

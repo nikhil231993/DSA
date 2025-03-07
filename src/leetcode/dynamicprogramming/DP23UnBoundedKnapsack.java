@@ -31,7 +31,7 @@ public class DP23UnBoundedKnapsack {
     private static int space(int n, int w, int[] wt, int[] val) {
 
         int[] prev=new int[w+1];
-        for(int i=0;i<=w;i++)
+        for(int i=0; i<=w; i++)
             prev[i]=((int)i/wt[0])*val[0];
 
         for(int i=1;i<n;i++){

@@ -68,7 +68,7 @@ public class DP15EqualSubsetSum { // watch video DP 16 at 14:00
             dp[0][arr[0]]=true;
 
         for(int i=1;i<n;i++){
-            for(int target=1; target<=k; target++){// we can use target equal to 0 as well
+            for(int target=1; target<=k; target++){ // we can use target equal to 0 as well
                 boolean notpick=dp[i-1][target];
                 boolean pick=false;
                 if(arr[i]<=target)
@@ -107,7 +107,7 @@ public class DP15EqualSubsetSum { // watch video DP 16 at 14:00
         if(n==0)
             return target==arr[0];
 
-        boolean notpick=recursion(n-1,target,arr);
+        boolean notpick=recursion(n-1, target, arr);
         boolean pick=false;
         if(arr[n]<=target)
             pick=recursion(n-1,target-arr[n],arr);

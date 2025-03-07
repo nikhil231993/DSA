@@ -20,7 +20,7 @@ public class LC55JumpGame {
 
         return goal==0;
 
-        // TC:O(n)
-        // SC:O(1)
+        //TC:O(n)
+        //SC:O(1)
     }
 }

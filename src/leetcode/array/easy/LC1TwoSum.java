@@ -39,8 +39,8 @@ public class LC1TwoSum {
 		}
 		return new int[] {};
 
-		// SC:O(n)
-		// TC:O(n)
+		//TC:O(n)
+		//SC:O(n)
 	}
 
 	private static int[] twoSum(int[] nums, int target) {
@@ -54,8 +54,8 @@ public class LC1TwoSum {
 		}
 		return new int[] {};
 
-		//SC:O(1)
 		//TC:O(n square)
+		//SC:O(1)
 	}
 
 	// Best Approach
@@ -81,7 +81,7 @@ public class LC1TwoSum {
 		}
 		return result;
 
-		// SC:O(1)
-		// TC:O(greater than n  but less than n square)
+		//TC:O(greater than n  but less than n square)
+		//SC:O(1)
 	}
 }

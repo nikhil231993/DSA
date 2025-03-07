@@ -21,7 +21,7 @@ public class DP4FrogKJumps {
         //Tabulation
         int[] dp1=new int[n];
         Arrays.fill(dp1,-1);
-        System.out.println(tabulation(dp1,height,n,k));
+        System.out.println(tabulation(dp1, height, n, k));
 
         //we cannot space optimise as it will be O(k) or O(N) as we need k states here
     }
@@ -34,7 +34,7 @@ public class DP4FrogKJumps {
         for(int m=1; m<n; m++){
             int min=Integer.MAX_VALUE;
             int jump=0;
-            for(int i=1;i<=k;i++){
+            for(int i=1; i<=k; i++){
                 if(m-i>=0) {
                     jump = dp1[m - i] + Math.abs(height[m] - height[m - i]);
                     min = Math.min(jump, min);

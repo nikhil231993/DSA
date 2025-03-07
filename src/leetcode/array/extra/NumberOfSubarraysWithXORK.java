@@ -7,7 +7,7 @@ public class NumberOfSubarraysWithXORK {
     public static void main(String[] args) {
 
         int[] num=new int[]{4, 2, 2, 6, 4};
-        int target=6;
+        int target = 6;
 
         //Approach 1: Brute 3 loops
 

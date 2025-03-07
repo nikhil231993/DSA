@@ -8,9 +8,9 @@ public class LC73SetMatrixZeroes {
         int[][] matrix1 =new int[][] {{0,1,2,0},{3,4,5,2},{1,3,1,5}};
         int[][] matrix2 =new int[][] {{0,1,2,0},{3,4,5,2},{1,3,1,5}};
 
-        //Approach 1: Iterate and mark all the 1's in o's row and column as -1 and then put 0 instead of -1 in other parse
+        //Approach 1: Iterate and mark all the 1's in 0's row and column as -1 and then put 0 instead of -1 in other parse
         //TC:O(n*m)(n+m) + O(n*m)
-        setZeroes(matrix1);
+        setZeroesBrute(matrix1);
 
         for(int[] m:matrix1){
             for(int m1:m){

@@ -11,7 +11,7 @@ public class DP24RodCutting {
         int n = 8;
 
         //Recursion
-        System.out.println(recursion(n-1,price,n));
+        System.out.println(recursion(n-1, price, n));
 
         //Memoization
         int[][] dp=new int[n][n+1];
@@ -93,7 +93,7 @@ public class DP24RodCutting {
         //SC:O(N*m)dp array+O(N) stack i.e price N
     }
 
-    private static int recursion(int i, int[] price,int n) {
+    private static int recursion(int i, int[] price, int n) {
 
         if(i==0){
             return n*price[i];

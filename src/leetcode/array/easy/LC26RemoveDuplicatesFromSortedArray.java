@@ -61,8 +61,9 @@ public class LC26RemoveDuplicatesFromSortedArray {
 	}
 
 	public static int removeDuplicatesSolutionInLeetcode(int[] nums) {
+
 		int k=0;
-		for(int i=1;i<nums.length;i++){
+		for(int i=1; i<nums.length; i++){
 			if(nums[k]!=nums[i]){
 				nums[++k]=nums[i];
 			}

@@ -30,7 +30,7 @@ public class LC48RotateImage {
 		for (int i = 0; i < matrix.length-1; i++) {
 
 			//since diagonals remain intact we start from i+1
-			for (int j = i+1; j < matrix[0].length; j++) {
+			for (int j = i+1; j < matrix[0].length; j++) {  //we can also use for(int j=0; j<i;j++)
 				int temp = matrix[j][i];
 				matrix[j][i] = matrix[i][j];
 				matrix[i][j] = temp;
@@ -45,8 +45,8 @@ public class LC48RotateImage {
 			}
 		}
 
-		// TC:O(M*N)+O(M*N)
-		// SC:O(1)
+		//TC:O(M*N)+O(M*N)
+		//SC:O(1)
 	}
 
 	public static void rotateApproach2(int[][] matrix) {
@@ -54,7 +54,7 @@ public class LC48RotateImage {
 		int n=matrix.length;
 		int m=matrix[0].length;
 		for(int i=0;i<n;i++){
-			for(int j=i+1;j<m;j++){
+			for(int j=i+1;j<m;j++){ // we can also use for(int j=0; j<i;j++)
 				int temp=matrix[i][j];
 				matrix[i][j]=matrix[j][i];
 				matrix[j][i]=temp;

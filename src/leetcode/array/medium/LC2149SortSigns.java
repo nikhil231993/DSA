@@ -35,7 +35,7 @@ public class LC2149SortSigns {
         }
 
         // Positives on even indices, negatives on odd.
-        for(int i=0;i<n/2;i++){
+        for(int i=0; i<n/2; i++){
             A[2*i] = pos.get(i);
             A[2*i+1] = neg.get(i);
         }

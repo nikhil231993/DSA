@@ -15,7 +15,7 @@ public class LC560CountSubarraySum {
 		//Approach 2: Better
 		System.out.println(subarraySum(nums, k));
 
-		//Approach 3:Optimal
+		//Approach 3: Optimal
 		System.out.println(subarraySumOptimal(nums, k));
 	}
 
@@ -27,7 +27,7 @@ public class LC560CountSubarraySum {
 			 int sum =0;
 			 for (int j = i; j < n; j++) {
 				 sum = sum+nums[j];
-				 if(sum ==k) {
+				 if(sum == k) {
 					 count++;
 				 }
 			 }

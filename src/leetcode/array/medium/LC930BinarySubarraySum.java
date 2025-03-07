@@ -12,6 +12,35 @@ public class LC930BinarySubarraySum {
 
         //Approach 1: Optimal Refer LC560 for brute force as both are same
         System.out.println(numSubarraysWithSum(nums, goal));
+
+        //Approach 2: Optimal
+        System.out.println(numSubarraysWithSumOptimal(nums, goal));
+    }
+
+    private static int numSubarraysWithSumOptimal(int[] nums, int goal) {
+
+        int atLeastGoal=func(nums, goal);
+        int atLeastLessThanGoal=func(nums, goal-1);
+        return atLeastGoal-atLeastLessThanGoal;
+    }
+
+    private static int func(int[] nums, int goal) {
+
+        int r=0, l=0, n=nums.length, count=0, sum=0;
+
+        while(r<n){
+            sum+=nums[r];
+
+            while(sum>goal){
+                sum-=nums[l];
+                l++;
+            }
+
+            if(sum<=goal)
+                count+=r-l+1;
+            r++;
+        }
+        return count;
     }
 
     public static int numSubarraysWithSum(int[] nums, int goal) {

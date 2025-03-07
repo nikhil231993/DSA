@@ -24,7 +24,7 @@ public class LC2545SortTheStudentByKthScore {
         int[][] result = sortTheStudents(score,k);
 
         for(int i=0; i<score.length; i++){
-            for(int j=0;j<score[i].length;j++){
+            for(int j=0; j<score[i].length; j++){
                 System.out.print(result[i][j]);
             }
             System.out.println();

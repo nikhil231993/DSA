@@ -98,16 +98,19 @@ public class LC128orPremiumLongestConsecutiveSequence {
 
         for(int i=0; i<num.length; i++){
 
-             if(num[i]-1 == lastSmaller){
-                 count++;
-                 lastSmaller=num[i];
-             }else if(num[i]!=lastSmaller){
-                 count=1;
-                 lastSmaller=num[i];
+            if(num[i]==lastSmaller)
+                continue;
+
+            if(num[i]-1 == lastSmaller){
+                count++;
+                lastSmaller=num[i];
+            }else {
+                count=1;
+                lastSmaller=num[i];
             }
-             len=Math.max(len, count);
-            }
-            return len;
+            len=Math.max(len, count);
+        }
+        return len;
 
         //TC:O(n log n)
         //SC:O(1)

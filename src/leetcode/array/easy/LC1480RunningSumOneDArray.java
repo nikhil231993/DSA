@@ -34,9 +34,8 @@ public class LC1480RunningSumOneDArray {
 
     public static void runningSum(int[] nums) {
 
-        for (int i=1; i<nums.length; i++){
+        for (int i=1; i<nums.length; i++)
             nums[i]+=nums[i-1];
-        }
 
         //TC:O(n)
         //SC:O(1)

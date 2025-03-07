@@ -25,7 +25,7 @@ public class gfgLeftRotateRightRotateAnArrayByKPlaces {
 
     private static void rightRotate(int[] num, int k) {
 
-        int n=num.length;
+        int n = num.length;
         k=k%n;
 
         reverse(num,0,n-1);

@@ -8,7 +8,7 @@ public class LC525ContiguousSubarray {
 
         //This question is similar to https://practice.geeksforgeeks.org/problems/longest-sub-array-with-sum-k0809/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=longest-sub-array-with-sum-k
 
-        int[] nums = new int[]{0,1,0};
+        int[] nums = new int[]{ 0, 1, 0};
 
         //Approach 1:Optimal Similar to LC560
         System.out.println(findMaxLength(nums));

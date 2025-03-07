@@ -7,9 +7,9 @@ public class MergeSortedArrays {
     public static void main(String[] args) {
 
        int n = 4;
-       int[] arr1 =new int[] {1,4,8,10};
+       int[] arr1 = new int[] {1,4,8,10};
        int m = 3;
-       int[] arr2=new int[] {2,3,9};
+       int[] arr2 = new int[] {2,3,9};
 
        //Approach 1: Brute
       brute(n,arr1,m,arr2);

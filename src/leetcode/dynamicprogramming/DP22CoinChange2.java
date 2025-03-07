@@ -56,7 +56,7 @@ public class DP22CoinChange2 {
 
     private static int tabulation(int[] coins, int amount, int[][] dp1,int n) {
 
-        for(int t=0;t<=amount;t++){
+        for(int t=0; t<=amount; t++){
             if(t%coins[0]==0)
                 dp1[0][t]=1;
         }

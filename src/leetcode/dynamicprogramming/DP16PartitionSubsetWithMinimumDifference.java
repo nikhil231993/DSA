@@ -4,7 +4,7 @@ public class DP16PartitionSubsetWithMinimumDifference {
 
     public static void main(String[] args) {
 
-        int[] arr=new int[]{2,3,7};
+        int[] arr=new int[]{2,3,7,6};
         int n= arr.length;
         int totalSum=0;
         for(int i=0;i<n;i++)
@@ -13,14 +13,14 @@ public class DP16PartitionSubsetWithMinimumDifference {
         //Tabulation
         //Assuming constraints are 10 raise to 3
         boolean[][] dp=new boolean[n][totalSum+1];
-        tabulation(n,totalSum,arr,dp);
+        tabulation(n, totalSum, arr, dp);
 
         int min=(int)1e9;
 
-        for(int s1=0;s1<=totalSum;s1++){
+        for(int s1=0; s1<=totalSum/2; s1++){
             if(dp[n-1][s1]==true){
                 int s2=totalSum-s1;
-                min=Math.min(min,Math.abs(s2-s1));
+                min=Math.min(min, Math.abs(s2-s1));
             }
         }
         System.out.println(min);

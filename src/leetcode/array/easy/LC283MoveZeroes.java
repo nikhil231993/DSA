@@ -6,7 +6,7 @@ public class LC283MoveZeroes {
 
 		int[] arr = new int[] { 0,1,0,3,12 };
 
-		//Approach 1: Brute
+		//Approach 1:Brute
 		int[] r=maxZeroesBrute(arr);
 		for (int num : r)
 			System.out.println(num);
