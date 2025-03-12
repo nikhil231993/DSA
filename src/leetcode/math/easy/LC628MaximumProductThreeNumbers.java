@@ -9,13 +9,15 @@ public class LC628MaximumProductThreeNumbers {
 
 		int[] num = new int[] { -10, -2, -3, 4 };
 
-		//Approach 1: Leetcode
+		//Approach 1: In this we use n cube that is 3 for loops and try all combinations to find the max product
+
+		//Approach 2: Leetcode
 		System.out.println(maximumProductLeetcode(num));
 
-		//Approach 2
+		//Approach 3
 		System.out.println(maximumProduct(num));
 
-		//Approach 3
+		//Approach 4
 		System.out.println(maximumProductBetter(num));
 	}
 
@@ -47,7 +49,7 @@ public class LC628MaximumProductThreeNumbers {
 		int min1=minHeap.poll();
 		int min2=minHeap.poll();
 
-		return Math.max(max1*max2*max3,max1*min1*min2);
+		return Math.max(max1 * max2 * max3, max1 * min1 * min2);
 	}
 
 	public static int maximumProductBetter(int[] nums) {
@@ -77,7 +79,6 @@ public class LC628MaximumProductThreeNumbers {
 			if (nums[i] < min1) {
 				min2 = min1;
 				min1 = nums[i];
-
 			} else if (nums[i] < min2) {
 				min2 = nums[i];
 			}

@@ -13,7 +13,7 @@ public class LC1446ConsecutiveCharacters {
 
         int count=1, max=1;
         int n=s.length();
-        for(int i=1;i<n;i++){
+        for(int i=1; i<n; i++){
             if(s.charAt(i)==s.charAt(i-1))
                 count++;
             if(s.charAt(i)!=s.charAt(i-1))

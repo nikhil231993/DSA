@@ -14,23 +14,23 @@ public class LC75SortColors {
 
     public static void sortColors(int[] nums) {
 
-        int start=0, mid=0, last=nums.length-1;
+        int low=0, mid=0, high=nums.length-1;
 
-        while(mid<=last){
+        while(mid<=high){
             if(nums[mid]==0){
-                swap(start,mid,nums);
-                start++;
+                swap(low,mid,nums);
+                low++;
                 mid++;
             }else if(nums[mid]==1)
                 mid++;
             else{
-                swap(mid,last,nums);
-                last--;
+                swap(mid,high,nums);
+                high--;
             }
         }
 
-        // TC:O(n)
-        // SC:O(1)
+        //TC:O(n)
+        //SC:O(1)
     }
 
     public static void swap(int i, int j, int[] nums){

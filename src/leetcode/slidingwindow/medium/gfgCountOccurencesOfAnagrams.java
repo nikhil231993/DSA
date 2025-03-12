@@ -26,7 +26,7 @@ public class gfgCountOccurencesOfAnagrams {
             map.put(pat.charAt(i), map.getOrDefault(pat.charAt(i),0)+1);
         }
 
-        while(right<n){
+        while(right < n){
             if(map.getOrDefault(txt.charAt(right),0)>0)
                 count++;
             map.put(txt.charAt(right), map.getOrDefault(txt.charAt(right),0)-1);

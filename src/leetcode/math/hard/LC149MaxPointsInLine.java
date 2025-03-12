@@ -35,6 +35,6 @@ public class LC149MaxPointsInLine {
         return max+1;
 
         //TC:O(n square)
-        //SC:O(n square) in case all are different
+        //SC:O(n) in case all are different
     }
 }

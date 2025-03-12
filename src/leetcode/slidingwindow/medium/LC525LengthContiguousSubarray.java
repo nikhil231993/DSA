@@ -56,9 +56,9 @@ public class LC525LengthContiguousSubarray {
                 len=Math.max(len, i+1);
             if(map.containsKey(sum)){
                 len=Math.max(len, i-map.get(sum));
-            }else{
-                map.put(sum,i);
             }
+            if(!map.containsKey(sum))
+                map.put(sum,i);
         }
         return len;
         //TC:o(N)

@@ -26,7 +26,7 @@ public class LC2000ReversePrefixOfWord {
 
             char c=word.charAt(i);
             st.push(c);
-            if(c==ch){
+            if(c == ch){
                 while (!st.isEmpty()){
                     sb.append(st.pop());
                 }

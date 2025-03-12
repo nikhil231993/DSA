@@ -58,11 +58,9 @@ public class LC930BinarySubArrayWIthSum {
 
     public static int numSubarraysWithSumUsingMap(int[] nums, int goal) {
 
-        int count=0;
-
         HashMap<Integer, Integer> map=new HashMap<>();
-        int n=nums.length;
-        int sum=0;
+        int n=nums.length, sum=0, count=0;
+
         for(int i=0; i<n; i++){
 
             sum+=nums[i];

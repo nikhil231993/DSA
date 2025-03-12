@@ -17,10 +17,10 @@ public class LC268MissingNumber {
 
 	private static int missingNumberBettter(int[] nums) {
 
-		int n=nums.length;
-		for(int i=0;i<nums.length;i++){
-			n^=i;
-			n^=nums[i];
+		int n = nums.length;
+		for(int i=0; i<nums.length; i++){
+			n ^= i;
+			n ^= nums[i];
 		}
 		return n;
 

@@ -18,6 +18,7 @@ public class gfgFirstNegativeNumbers {
             System.out.println(n);
 
         System.out.println("***********************");
+
         //Approach 3: Best
         long[] r2=printFirstNegativeIntegerBest(A, N, K);
         for(long n: r2)

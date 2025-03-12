@@ -15,19 +15,19 @@ public class LC1781SumOfBeauty {
 
         int n=s.length(), sum=0;
 
-        for(int i=0;i<n;i++){
+        for(int i=0; i<n; i++){
 
             HashMap<Character, Integer> map=new HashMap<>();
-            for(int j=i;j<n;j++){
+            for(int j=i; j<n; j++){
 
                 char ch=s.charAt(j);
                 map.put(ch, map.getOrDefault(ch,0)+1);
 
                 int max=Integer.MIN_VALUE, min=Integer.MAX_VALUE;
-                for(Map.Entry<Character, Integer> m:map.entrySet()){
-                    if(m.getValue()>max)
+                for(Map.Entry<Character, Integer> m : map.entrySet()){
+                    if(m.getValue() > max)
                         max=m.getValue();
-                    if(m.getValue()<min)
+                    if(m.getValue() < min)
                         min=m.getValue();
                 }
                 sum+=max-min;

@@ -21,8 +21,8 @@ public class LC7ReverseInteger {
 		}
 		return ans;
 
-		//TC: O(log bas10 n) where n is the length of the integer
+		//TC:O(log bas10 n) where n is the length of the integer
 		//When we divide any number continuously by any digit the TC will be base to that number
-		//SC: O(1)
+		//SC:O(1)
 	}
 }

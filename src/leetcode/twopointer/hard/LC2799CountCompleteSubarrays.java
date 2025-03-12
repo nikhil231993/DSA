@@ -26,9 +26,9 @@ public class LC2799CountCompleteSubarrays {
 
     private static int better(int[] nums, int k) {
 
-        int atMostEqualToK=subarray(nums, k);
-        int atMostEqualToLessThanK=subarray(nums, k-1);
-        return atMostEqualToK-atMostEqualToLessThanK;
+        int atMostEqualToK = subarray(nums, k);
+        int atMostEqualToLessThanK = subarray(nums, k-1);
+        return atMostEqualToK - atMostEqualToLessThanK;
 
         // TC:O(2*2n)
         // SC:O(n) if all are distinct
@@ -45,11 +45,11 @@ public class LC2799CountCompleteSubarrays {
             while(map.size()>k){
 
                 map.put(nums[left], map.get(nums[left])-1);
-                if(map.get(nums[left])==0)
+                if(map.get(nums[left]) == 0)
                     map.remove(nums[left]);
                 left++;
             }
-            if(map.size()<=k){
+            if(map.size() <= k){
                 count+=right-left+1;
             }
             right++;

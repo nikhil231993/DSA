@@ -25,7 +25,7 @@ public class LC202HappyNumber {
 
 		 }while(slow!=fast);
 
-		 if(slow==1)
+		 if(slow == 1)
 		 	return true;
 		 return false;
 
@@ -67,7 +67,7 @@ public class LC202HappyNumber {
 			return true;
 		return false;
 
-		//SC:O(log n)
 		//TC:(log base 10 to n) where log n is the time taken to find no of digits in a number
+		//SC:O(log n)
 	}
 }

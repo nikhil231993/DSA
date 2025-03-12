@@ -50,7 +50,7 @@ public class LC1358NoOfSubstringContainingAllCharacters {
                     map.remove(s.charAt(left));
                 left++;
             }
-            if(map.size()<=k)
+            if(map.size() <= k)
                 count+=right-left+1;
             right++;
         }

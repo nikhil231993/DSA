@@ -8,41 +8,42 @@ public class LC535EncodeAndDecodeURL {
 
 		String longUrl = "https://leetcode.com/problems/design-tinyurl";
 
-		HashMap<String, String> urlMapping = new HashMap();
-		HashMap<String, String> code = new HashMap();
-		System.out.println(encode(longUrl, urlMapping, code));
+		HashMap<String, String> shortToLong=new HashMap();
+		HashMap<String, String> longToShort=new HashMap();
+		System.out.println(encode(longUrl, longToShort, shortToLong));
 	}
 
-	private static String decode(String shortUrl,HashMap<String, String> urlMapping,HashMap<String, String> code) {
-
-		return code.get(shortUrl);
+	private static String decode(String shortUrl,HashMap<String, String> longToShort,HashMap<String, String> shortToLong) {
+		return shortToLong.get(shortUrl);
 	}
 
-	private static String encode(String longUrl, HashMap<String, String> urlMapping, HashMap<String, String> code) {
+	private static String encode(String longUrl, HashMap<String, String> longToShort, HashMap<String, String> shortToLong) {
 
 		//https://leetcode.com/problems/encode-and-decode-tinyurl/solutions/1110551/js-python-java-c-easy-map-solution-w-explanation/?orderBy=most_votes
-		if (urlMapping.containsKey(longUrl))
-			return urlMapping.get(longUrl);
+		if(longToShort.containsKey(longUrl))
+			return longToShort.get(longUrl);
 
-		String hash = hashFunction();
+		String code=hash(longUrl);
+		String shortUrl="http://tinyurl.com/"+code;
 
-		while (code.containsKey(hash))
-			hash = hashFunction();
-		String shortUrl = "http://tinyurl.com/" + hash;
-		urlMapping.put(longUrl, shortUrl);
-		code.put(shortUrl, longUrl);
-		return urlMapping.get(longUrl);
+		while(shortToLong.containsKey(shortUrl)){
+			code=hash(longUrl);
+			shortUrl="http://tinyurl.com/"+code;
+		}
+		shortToLong.put(shortUrl, longUrl);
+		longToShort.put(longUrl, shortUrl);
+		return shortUrl;
 	}
 
-	private static String hashFunction() {
+	public static String hash(String url){
 
-		String s ="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-		char[] ch=new char[6];
+		String str="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 
-		for(int i=0; i<ch.length; i++) {
-			ch[i] = s.charAt((int) (Math.random() * 1000 % 62));
+		StringBuilder sb=new StringBuilder();
+		for(int i=0;i<6;i++){
+			int index=(int)((Math.random()*1000) % 62);
+			sb.append(str.charAt(index));
 		}
-		String hashed=new String(ch);
-		return hashed;
+		return sb.toString();
 	}
 }

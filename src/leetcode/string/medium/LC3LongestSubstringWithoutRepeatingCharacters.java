@@ -48,9 +48,7 @@ public class LC3LongestSubstringWithoutRepeatingCharacters {
 	private static int lengthOfLongestSubstringUsingMap(String s) {
 
 		HashMap<Character, Integer> m = new HashMap();
-		int left = 0;
-		int right = 0;
-		int len = 0;
+		int left = 0, right = 0, len = 0;
 		while (right < s.length()) {
 			if (m.containsKey(s.charAt(right))) {
 				left = Math.max(m.get(s.charAt(right)) + 1, left);
@@ -68,9 +66,8 @@ public class LC3LongestSubstringWithoutRepeatingCharacters {
 	public static int lengthOfLongestSubstringUsingHashSet(String s) {
 
 		HashSet<Character> h = new HashSet<>();
-		int left = 0;
-		int right = 0;
-		int len = 0;
+		int left = 0, right = 0, len = 0;
+
 		while (right < s.length()) {
 
 			if (!h.contains(s.charAt(right))) {

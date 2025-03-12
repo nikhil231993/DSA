@@ -31,7 +31,7 @@ public class LC1248CountNumberOfNiceSubarrays {
 
         int atLeastGoal=numSubarraySum(nums, goal);
         int atLeastLessThanGoal=numSubarraySum(nums, goal-1);
-        return atLeastGoal-atLeastLessThanGoal;
+        return atLeastGoal - atLeastLessThanGoal;
 
         //TC:O(2*2N)
         //SC:O(1)

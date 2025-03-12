@@ -38,7 +38,7 @@ public class LC71SimplifyPath {
 			res = "/" + st.pop() + res;
 		}
 	
-		if (res.length()==0)
+		if (res.length() == 0)
 			res = "/";
 		return res;
 

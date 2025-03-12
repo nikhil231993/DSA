@@ -99,10 +99,10 @@ public class LC67AddTwoBinary {
 				sum += b.charAt(j--) - '0';
 			}
 			result.append(sum % 2);// we can use stack for this step. then we don't have to reverse as we can pop the ans in correct order
-			carry = sum / 2;
+			carry = sum / 2;       // we can use result.insert(0, sum%2). Then we do not have to reverse the string
 		}
-		if (carry != 0) { // we can use sum instead of carry
-			result.append(carry);
+		if (carry != 0) { 			// we can use sum instead of carry
+			result.append(carry);   // we can use result.insert(0, sum%2). Then we do not have to reverse the string
 		}
 		return result.reverse().toString();
 

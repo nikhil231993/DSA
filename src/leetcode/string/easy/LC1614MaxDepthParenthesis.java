@@ -20,7 +20,7 @@ public class LC1614MaxDepthParenthesis {
         int max=Integer.MIN_VALUE;
         Stack<Character> st=new Stack();
 
-        for(int i=0;i<s.length();i++){
+        for(int i=0; i<s.length(); i++){
             char ch=s.charAt(i);
             if(ch=='('){
                 st.push(ch);

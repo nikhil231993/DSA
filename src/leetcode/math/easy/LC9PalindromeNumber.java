@@ -67,7 +67,7 @@ public class LC9PalindromeNumber {
 		int y = x;
 		int num = 0;
 		while (x != 0) {
-			if(num>Integer.MAX_VALUE/10 || num<Integer.MIN_VALUE/10)//Not mandatory
+			if(num > Integer.MAX_VALUE/10 || num < Integer.MIN_VALUE/10)//Not mandatory
 				return false;                                       //Not mandatory
 			num = num * 10 + x % 10;
 			x = x / 10;

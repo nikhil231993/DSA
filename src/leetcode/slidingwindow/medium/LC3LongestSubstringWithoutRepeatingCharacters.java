@@ -16,7 +16,7 @@ public class LC3LongestSubstringWithoutRepeatingCharacters {
         //Approach 2: Better
         System.out.println(lengthOfLongestSubstringUsingHashSet(str));
 
-        //Approach 2 better
+        //Approach 3: Best
         System.out.println(lengthOfLongestSubstringUsingMap(str));
     }
 

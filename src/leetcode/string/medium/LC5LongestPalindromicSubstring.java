@@ -25,8 +25,8 @@ public class LC5LongestPalindromicSubstring {
 			int left=i, right=i;
 
 			//odd string length
-			while(left>=0 && right < n && s.charAt(left)==s.charAt(right)){
-				if(right-left+1>len){
+			while(left>=0 && right < n && s.charAt(left) == s.charAt(right)){
+				if(right-left+1 > len){
 					len=right-left+1;
 					sub=s.substring(left, right+1);
 				}
@@ -37,8 +37,8 @@ public class LC5LongestPalindromicSubstring {
 			left=i;
 			right=i+1;
 			//even string length
-			while(left>=0 && right<n && s.charAt(left)==s.charAt(right)){
-				if(right-left+1>len){
+			while(left>=0 && right<n && s.charAt(left) == s.charAt(right)){
+				if(right-left+1 > len){
 					len=right-left+1;
 					sub=s.substring(left, right+1);
 				}

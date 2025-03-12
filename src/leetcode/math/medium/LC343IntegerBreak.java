@@ -12,8 +12,8 @@ public class LC343IntegerBreak {
 
 		if (n == 2 || n == 3 || n==1)
 			return n - 1;
-		int product = 1;
 
+		int product = 1;
 		while (n > 4) {
 			n = n - 3;
 			product = product * 3;

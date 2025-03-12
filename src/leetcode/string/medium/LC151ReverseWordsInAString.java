@@ -30,9 +30,9 @@ public class LC151ReverseWordsInAString {
 			while(i>=0 && s.charAt(i)!= ' ')
 				i--;
 			if(sb.length()==0) {
-				sb.append(s.substring(i+1,j+1));
+				sb.append(s.substring(i+1, j+1));
 			}else {
-				sb.append(" "+s.substring(i+1,j+1));//we can also use + instead of concat
+				sb.append(" "+s.substring(i+1, j+1));//we can also use + instead of concat
 			}
 		}
 		if(sb.charAt(sb.length()-1)==' ')
@@ -73,9 +73,8 @@ public class LC151ReverseWordsInAString {
 			int j=i;
 			while(i>=0 && s.charAt(i)!=' ')
 				i--;
-			if(s.substring(i+1, j+1).length()!=0){
-				sb.append(s.substring(i+1, j+1));
-				sb.append(" ");
+			if(s.substring(i+1, j+1).length()!=0){  //if(j-i>0) we can replace with this condition also
+				sb.append(s.substring(i+1, j+1)).append(" ");
 			}
 		}
 		return sb.deleteCharAt(sb.length()-1).toString();

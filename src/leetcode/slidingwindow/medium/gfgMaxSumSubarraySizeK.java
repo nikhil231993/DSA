@@ -1,6 +1,6 @@
 package leetcode.slidingwindow.medium;
 
-public class gfgMaxSumSubaaraySizeK {
+public class gfgMaxSumSubarraySizeK {
 
     public static void main(String[] args) {
 
@@ -15,9 +15,9 @@ public class gfgMaxSumSubaaraySizeK {
         int n=arr.length;
         int r=0, l=0, max=Integer.MIN_VALUE, sum=0;
 
-        while(r<n){
-
+        while(r < n){
             sum+=arr[r];
+
             while((r-l+1)>k){
                 sum-=arr[l];
                 l++;

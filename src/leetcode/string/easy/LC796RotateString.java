@@ -95,7 +95,7 @@ public class LC796RotateString {
 
         int n=s.length();
         int m=goal.length();
-        while(id1<n){
+        while(id1 < n){
 
             if(s.charAt(id1)!=goal.charAt(id2%m))
                 return false;

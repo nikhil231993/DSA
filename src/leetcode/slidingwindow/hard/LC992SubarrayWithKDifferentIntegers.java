@@ -45,7 +45,7 @@ public class LC992SubarrayWithKDifferentIntegers {
                     map.remove(nums[left]);
                 left++;
             }
-            if(map.size()<=k){
+            if(map.size() <= k){
                 count+=right-left+1;
             }
             right++;

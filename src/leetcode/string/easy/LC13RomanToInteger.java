@@ -109,11 +109,9 @@ public class LC13RomanToInteger {
 		map.put('D',500);
 		map.put('M',1000);
 
-		int num=0;
-		int prev=0;
-		int sum=0;
-		int n=s.length();
-		for(int i=n-1;i>=0;i--){
+		int num=0, prev=0, sum=0, n=s.length();
+
+		for(int i=n-1; i>=0; i--){
 			num=map.get(s.charAt(i));
 
 			if(num>=prev){

@@ -19,9 +19,8 @@ public class LC763PartitionLabels {
         //Step 3: the moment u reach last letter then that is the string length
 
         HashMap<Character, Integer> map=new HashMap();
-        for(int i=0;i<s.length();i++){
+        for(int i=0; i<s.length(); i++)
             map.put(s.charAt(i), i);
-        }
 
         int prev=-1;
         int max=0;
@@ -37,7 +36,7 @@ public class LC763PartitionLabels {
         }
         return list;
 
-        // TC:O(2n)
-        // SC:O(n) for map in worst case + O(n) for list
+        //TC:O(n)
+        //SC:O(n) for map in worst case + O(n) for list but both can be considered as constant that 26 letters at max
     }
 }

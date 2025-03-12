@@ -3,7 +3,7 @@ package leetcode.slidingwindow.hard;
 import java.util.HashMap;
 import java.util.HashSet;
 
-public class PremiumLongestSubstringWithKUnqiueCharacters {
+public class LC340orPremiumLongestSubstringWithKUnqiueCharacters {
 
     //LC: https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/
     //GFG: https://practice.geeksforgeeks.org/problems/longest-k-unique-characters-substring0853/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=longest-k-unique-characters-substring

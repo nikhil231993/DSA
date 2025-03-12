@@ -15,20 +15,20 @@ public class LC6ZigzagConversion {
         int n=s.length();
         StringBuilder[] sb=new StringBuilder[row];
 
-        for(int i=0;i<row;i++){
+        for(int i=0; i<row; i++){
             sb[i]=new StringBuilder();
         }
         int ch=0;
         while(ch<n){
-            for(int id=0;id<row && ch<n;id++) {
+            for(int id=0; id<row && ch<n; id++) {
                 sb[id].append(s.charAt(ch++));
             }
-            for(int id=row-2;id>=1 && ch< n;id--){
+            for(int id=row-2; id>=1 && ch< n; id--){
                 sb[id].append(s.charAt(ch++));
             }
         }
 
-        for(int j=1;j<row;j++){
+        for(int j=1; j<row; j++){
             sb[0].append(sb[j]);
         }
 

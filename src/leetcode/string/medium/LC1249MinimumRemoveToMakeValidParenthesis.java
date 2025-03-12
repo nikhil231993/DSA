@@ -11,7 +11,7 @@ public class LC1249MinimumRemoveToMakeValidParenthesis {
 		//Approach 1:
 		System.out.println(minimumRemoveUsingStack(s));
 
-		//Approach 2 Better Approach as no space is taken
+		//Approach 2: Better Approach as no space is taken
 		System.out.println(minimumRemoveWithoutUsingStack(s));
 	}
 

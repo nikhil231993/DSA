@@ -24,7 +24,7 @@ public class gfgMaxSumSubarraySizeK {
         int left=0, right=0;
         long sum=0, maxSum=-1l;
 
-        while(right<n){
+        while(right < n){
             sum+=arr.get(right);
             if(right-left+1==k){
                 if(maxSum<sum){

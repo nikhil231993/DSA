@@ -22,15 +22,15 @@ public class LC273IntegerToEnglish {
 
     public static String convert(int num, String[] tens, String[] ones){
 
-        if(num>=1000000000){
+        if(num >= 1000000000){
             return (convert(num/1000000000,tens,ones)+" Billion "+convert(num%1000000000,tens,ones)).trim();
-        }else if(num>=1000000){
+        }else if(num >= 1000000){
             return (convert(num/1000000,tens,ones)+" Million "+convert(num%1000000,tens,ones)).trim();
-        }else if(num>=1000){
+        }else if(num >= 1000){
             return (convert(num/1000,tens,ones)+" Thousand "+convert(num%1000,tens,ones)).trim();
-        }else if(num>=100){
+        }else if(num >= 100){
             return (convert(num/100,tens,ones)+" Hundred "+convert(num%100,tens,ones)).trim();
-        }else if(num>=20){
+        }else if(num >= 20){
             return (tens[num/10]+" "+convert(num%10,tens,ones)).trim();
         }return ones[num];
     }

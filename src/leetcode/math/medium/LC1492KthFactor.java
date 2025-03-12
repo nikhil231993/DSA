@@ -38,10 +38,10 @@ public class LC1492KthFactor {
 
         List<Integer> list=new ArrayList<>();
         for(int i=1;i<=n;i++){
-            if(n%i==0)
+            if(n%i == 0)
                 list.add(i);
         }
-        if(list.size()<k)
+        if(list.size() < k)
             return -1;
         return list.get(k-1);
     }

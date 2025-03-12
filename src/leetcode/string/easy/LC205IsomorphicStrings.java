@@ -14,8 +14,6 @@ public class LC205IsomorphicStrings {
 
         //Approach 2
         System.out.println(isIsomorphicBetter(s,t));
-
-
     }
 
     public static boolean isIsomorphicSelf(String s, String t) {

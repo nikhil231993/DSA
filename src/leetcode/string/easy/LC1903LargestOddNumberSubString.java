@@ -12,9 +12,9 @@ public class LC1903LargestOddNumberSubString {
 
         int n=num.length()-1;
 
-        for(int i=n;i>=0;i--){
-            int no=num.charAt(i)-'0';
-            if(no%2==1)
+        for(int i=n; i>=0; i--){
+            int no = num.charAt(i)-'0';
+            if(no%2 == 1)
                 return num.substring(0, i+1);
         }
         return "";

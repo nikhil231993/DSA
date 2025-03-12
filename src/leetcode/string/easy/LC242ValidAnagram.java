@@ -13,7 +13,7 @@ public class LC242ValidAnagram {
         //Approach 1: Brute force
         System.out.println(isAnagramLeetcode(s, t));
 
-        //It is same as Approach 2 but here we decrease the freq and see if anything has negative frequency
+        //It is same as Approach 2 mentioned below but here we decrease the freq and see if anything has negative frequency
         System.out.println(isAnagramLeetCodeFreq(s, t));
 
         //Approach 2

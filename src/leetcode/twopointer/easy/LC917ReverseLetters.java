@@ -28,7 +28,7 @@ public class LC917ReverseLetters {
 
         StringBuilder sb=new StringBuilder();
 
-        for(int i=0; i<n; i++){
+        for(int i=0;i<n;i++){
             if(Character.isLetter(s.charAt(i))){
                 sb.append(st.pop());
             }else

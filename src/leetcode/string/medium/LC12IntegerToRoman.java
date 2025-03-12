@@ -14,10 +14,10 @@ public class LC12IntegerToRoman {
         String[] roman=new String[]{"M","CM","D","CD","C","XC","L","XL","X","IX","V","IV","I"};
 
         StringBuilder sb=new StringBuilder();
-        for(int i=0;i<numR.length;i++){
-            while(num>=numR[i]){
+        for(int i=0; i<numR.length; i++){
+            while(num >= numR[i]){
                 sb.append(roman[i]);
-                num-=numR[i];
+                num -= numR[i];
             }
         }
         return sb.toString();

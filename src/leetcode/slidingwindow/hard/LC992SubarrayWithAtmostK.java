@@ -68,11 +68,10 @@ public class LC992SubarrayWithAtmostK {
     }
 
     private static int count(int[] nums,int k) {
-        int n=nums.length;
-        int count=0;
-        int l=0;
-        int r=0;
+
+        int n=nums.length, count=0, l=0, r=0;
         HashMap<Integer,Integer> m=new HashMap<>();
+
         while(r<n){
             Integer rc=nums[r];
             if(m.containsKey(rc))

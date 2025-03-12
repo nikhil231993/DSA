@@ -15,12 +15,12 @@ public class LC1877MinimizeMaximumSum {
         Arrays.sort(nums);
         int left=0, right=nums.length-1, max=Integer.MIN_VALUE;
 
-        while(left<right){
+        while(left < right){
             max=Math.max(max, nums[right--]+nums[left++]);
         }
         return max;
 
-        // TC:O(nlogn)
-        // SC:O(1)
+        //TC:O(nlogn)
+        //SC:O(1)
     }
 }

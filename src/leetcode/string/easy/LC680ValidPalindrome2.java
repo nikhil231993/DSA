@@ -8,6 +8,7 @@ public class  LC680ValidPalindrome2 {
 
 		//Both are same approaches but second is little easy to understand
 		System.out.println(validPalindrome(str));
+
 		System.out.println(validPalindromeOptimized(str));
 	}
 

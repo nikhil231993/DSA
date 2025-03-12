@@ -16,7 +16,7 @@ public class LC1344AngleBetweenHandsClock {
     private static double angleClockSame(int hour, int minutes) {
 
         double min_degree=minutes*6;
-        double hour_degree=(((hour % 12+(double)minutes/60)/12)*360);  //https://www.youtube.com/watch?v=38pOVOeEB4Y&ab_channel=NareshGupta
+        double hour_degree=(((hour % 12 + (double)minutes/60)/12)*360);  //https://www.youtube.com/watch?v=38pOVOeEB4Y&ab_channel=NareshGupta
         //%360 is added to avoid value to come in negative. In leetcode values are only from 1 to 12 for hours
         //thats why it works double hour_degree=(((hour+(double)minutes/60)/12)*360) % 360
         // we can also do %12 for hour

@@ -20,7 +20,7 @@ public class LC22GenerateParenthesis {
 		// 1.left parenthesis count should be less than n
 		// 2.right parenthesis count should be less than left
 
-		if (s.length() == 2 * n) {
+		if (s.length() == 2*n) {
 			result.add(s);
 			return;
 		}

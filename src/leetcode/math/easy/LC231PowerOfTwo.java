@@ -58,8 +58,8 @@ public class LC231PowerOfTwo {
 
         if(n<=0)
             return false;
-        while(n!=1){
-            if(n%2==1)
+        while(n != 1){
+            if(n%2 == 1)
                 return false;
             n=n/2;
         }

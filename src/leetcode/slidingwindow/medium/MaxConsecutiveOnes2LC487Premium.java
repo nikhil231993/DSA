@@ -1,6 +1,6 @@
 package leetcode.slidingwindow.medium;
 
-public class MaxConsecutiveOnes2LC485Premium {
+public class MaxConsecutiveOnes2LC487Premium {
 
     //Question: we can flip atmost one 0 to one. So find the max length;
 

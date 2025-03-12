@@ -35,7 +35,7 @@ public class V6LongestSubstringAtmostKDistinctCharactersLC340Premium {
                     map.remove(s.charAt(left));
                 left++;
             }
-            if(map.size()<=k)
+            if(map.size() <= k)
                 maxLen=Math.max(maxLen, right-left+1);
             right++;
         }

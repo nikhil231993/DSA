@@ -32,7 +32,7 @@ public class LC462MinimumEqual2 {
 		}
 		return minop;
 
-		//Time complexity : O(nlogn). Sorting will take O(nlogn) time.
+		//Time complexity : O(n log n). Sorting will take O(n log n) time.
 		//Space complexity : O(1). Only single extra variable is used.
 	}
 
@@ -47,7 +47,7 @@ public class LC462MinimumEqual2 {
 		}
 		return minMoves;
 
-		//Time complexity : O(nlogn). Sorting will take O(nlogn) time.
+		//Time complexity : O(n log n). Sorting will take O(n log n) time.
 		//Space complexity : O(1). No extra space required.
 	}
 }

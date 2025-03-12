@@ -58,7 +58,7 @@ public class LC60KthPermutationSequence {
         int fact=1;
         k=k-1;
 
-        List<Integer> list=new ArrayList<>();
+        List<Integer> list = new ArrayList<>();
         for(int i=1;i<n;i++){
             fact=fact*i;
             list.add(i);

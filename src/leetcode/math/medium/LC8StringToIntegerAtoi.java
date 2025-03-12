@@ -12,7 +12,7 @@ public class LC8StringToIntegerAtoi {
 		//Approach 1: This is wrong
 		System.out.println(myAtoi(s));
 
-		//Approach 2:
+		//Approach 2: This is correct approach
 		System.out.println(myAtoiBetter(s));
 	}
 
@@ -36,10 +36,10 @@ public class LC8StringToIntegerAtoi {
 		int ans = 0;
 		while (i < s.length() && ((int) s.charAt(i) >= 48 && (int) s.charAt(i) <= 57)) {
 
-			int no= s.charAt(i) - '0';//below commented out code fails for this input as the second last check will be correct but
+			int no = s.charAt(i) - '0';//below commented out code fails for this input as the second last check will be correct but
 			//in the next iteration it becomes negative value
 			int calc=(Integer.MAX_VALUE-no)/10;
-			if(ans>calc){
+			if(ans > calc){
 				if(sign==-1)
 					return Integer.MIN_VALUE;
 				else

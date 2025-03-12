@@ -40,6 +40,6 @@ public class LC28FindFirstOccurrenceInAString {
 		}
 		return -1;
 
-		// TC:O(m*n)
+		//TC:O(m*n)
 	}
 }

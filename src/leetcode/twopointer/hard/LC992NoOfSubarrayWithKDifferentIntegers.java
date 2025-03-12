@@ -3,7 +3,7 @@ package leetcode.twopointer.hard;
 import java.util.HashMap;
 import java.util.HashSet;
 
-public class LC992SubarrayWithKDifferentIntegers {
+public class LC992NoOfSubarrayWithKDifferentIntegers {
 
     public static void main(String[] args) {
 

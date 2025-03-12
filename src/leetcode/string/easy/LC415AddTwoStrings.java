@@ -26,7 +26,7 @@ public class LC415AddTwoStrings {
 			carry = sum / 10;
 		}
 		if (carry != 0)
-			result.append(carry);    //result.insert(0, carry); if we use this we do not have to reverse the String
+			result.append( carry );    //result.insert(0, carry); if we use this we do not have to reverse the String
 		return result.reverse().toString();
 
 		//SC:O(n+1) n will be the length of the largest string

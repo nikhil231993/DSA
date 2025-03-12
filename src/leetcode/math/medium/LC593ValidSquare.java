@@ -33,7 +33,7 @@ public class LC593ValidSquare {
 			map.put(val, map.getOrDefault(val, 0) + 1);
 		}
 
-		if (map.get(max) == 2 && map.size() == 2) //This condition very important as diagonal should have only 2 values and max map size should be 2
+		if (map.get(max)== 2 && map.size() == 2) //This condition very important as diagonal should have only 2 values and max map size should be 2
 			return true;
 		else
 			return false;

@@ -1,10 +1,5 @@
 package leetcode.string.easy;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.List;
-
 public class LC14LongestCommonPrefix {
 
 	public static void main(String[] args) {
@@ -16,6 +11,45 @@ public class LC14LongestCommonPrefix {
 
 		//Approach 2
 		System.out.println(longestCommonPrefixWithWhile(s));
+
+		//Approach 3: Binary Search
+		System.out.println(longestCommonPrefixBS(s));
+	}
+
+	private static String longestCommonPrefixBS(String[] s) {
+
+
+		if(s==null || s.length==0)
+			return "";
+		int n=s.length;
+		int minLen=Integer.MAX_VALUE;
+
+		for(int i=0;i<n;i++){
+			minLen=Math.min(minLen, s[i].length());
+		}
+
+		int low=0;
+		int high=minLen;
+
+		while(low<=high){
+			int mid=low+(high-low)/2;
+			if(isPrefix(mid, s))
+				low=mid+1;
+			else
+				high=mid-1;
+		}
+		return s[0].substring(0, (low+high)/2);
+	}
+
+	private static boolean isPrefix(int mid, String[] s) {
+
+		int n=s.length;
+		String prefix=s[0].substring(0, mid);
+		for(int i=1; i<n; i++){
+			if(!s[i].startsWith(prefix)) //if(s[i].indexOf(prefix)!=0)
+				return false;
+		}
+		return true;
 	}
 
 	private static String longestCommonPrefixWithWhile(String[] s) {

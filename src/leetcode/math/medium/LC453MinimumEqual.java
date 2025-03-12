@@ -84,7 +84,7 @@ public class LC453MinimumEqual {
 		int minOperation = arraySum - arr_size * smallest;
 		return minOperation;
 
-		// SC: O(1)
-		// TC: O(n)
+		//TC: O(n)
+		//SC: O(1)
 	}
 }

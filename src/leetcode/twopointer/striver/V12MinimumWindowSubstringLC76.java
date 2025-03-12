@@ -55,7 +55,7 @@ public class V12MinimumWindowSubstringLC76 {
             map.put(t.charAt(i), map.getOrDefault(t.charAt(i),0)+1);
         }
 
-        while(right<n){
+        while(right < n){
 
             if(map.getOrDefault(s.charAt(right),0)>0)
                 count++;

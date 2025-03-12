@@ -45,9 +45,9 @@ public class LC1679MaxNumberOfKSumPairs {
         int left=0, right=nums.length-1, count=0;
 
         while(left<right){
-            if(nums[left]+nums[right]>k)
+            if(nums[left] + nums[right]>k)
                 right--;
-            else if(nums[left]+nums[right]<k)
+            else if(nums[left] + nums[right]<k)
                 left++;
             else{
                 count++;

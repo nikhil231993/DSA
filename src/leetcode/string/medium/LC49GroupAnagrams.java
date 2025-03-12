@@ -26,22 +26,23 @@ public class LC49GroupAnagrams {
 		for (String s : str) {
 
 			char[] ch = new char[26];
-			for (int i = 0; i < s.length(); i++) {
+			for (int i = 0; i < s.length(); i++)
 				ch[s.charAt(i) - 'a']++;
-			}
-			for(char c:ch)
-				System.out.println(c);
+
 			String key = new String(ch);
-			//System.out.println(key);
-			if (!map.containsKey(key)) {
+
+			if (!map.containsKey(key))
 				map.put(key, new ArrayList());
-			}
+
 			map.get(key).add(s);
 		}
 		return new ArrayList<>(map.values());
 
-		// TC:O(NK) where N is the total no of strings and K is the avg length of each string
-		// SC:O(N)
+		//Time Complexity: O(NK), where N is the length of strs, and K is the maximum length of a
+		//string in strs. Counting each string is linear in the size of the string,
+		//and we count every string.
+
+		//Space Complexity: O(NK), the total information content stored in ans.
 	}
 
 	private static List<List<String>> groupedAnagrams(List<String> str) {

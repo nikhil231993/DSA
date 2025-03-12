@@ -32,7 +32,7 @@ public class LC424LongestRepeatingCharacterReplacement {
             arr[s.charAt(right)-'A']++;
             maxfreq=Math.max(maxfreq, arr[s.charAt(right)-'A']);
 
-            if((right-left+1)-maxfreq>k){
+            if((right-left+1)-maxfreq > k){
                 arr[s.charAt(left)-'A']--;
                 left++;
             }
@@ -44,7 +44,7 @@ public class LC424LongestRepeatingCharacterReplacement {
         }
         return maxLen;
 
-        //TC:O(n+n)
+        //TC:O(n) we remove O(n) as the inner if loop only moves only if condition fails
         //SC:O(26)
     }
 

@@ -58,13 +58,13 @@ public class LC1207UniqueOccurences {
             result[i+1000]++;
         }
         Arrays.sort(result);
-        for(int i=0;i<result.length-1;i++){
+        for(int i=0; i<result.length-1; i++){
             if(result[i]!=0 && result[i]==result[i+1])
                 return false;
         }
         return true;
 
-        //TC: O(2001 log 2001)
-        //SC: O(2000)
+        //TC:O(2001 log 2001)
+        //SC:O(2000)
     }
 }
