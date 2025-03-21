@@ -42,7 +42,7 @@ public class LC2288ApplyDiscountsNFA {
         else if(str.length()<=1)
             return false;
 
-        for(int i=1; i<str.length(); i++){
+        for(int i=1;i<str.length();i++){
             if(!Character.isDigit(str.charAt(i)))
                 return false;
         }

@@ -52,7 +52,7 @@ public class L76MergeKSortedArray {
             int valueCol=temp.valueColInArr;
             int valueRow=temp.valueRowInArr;
 
-            if(valueCol+1<arr[valueRow].length){
+            if(valueCol+1 < arr[valueRow].length){
                 pq.offer(new NodeValue(arr[valueRow][valueCol+1],valueCol+1,valueRow));
             }
         }

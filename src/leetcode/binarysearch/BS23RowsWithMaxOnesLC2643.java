@@ -57,7 +57,7 @@ public class BS23RowsWithMaxOnesLC2643 {
 
         while(low<=high){
             int mid=low+(high-low)/2;
-            if(num[mid]>=target){
+            if(num[mid]>=target){ // we can use num[mid]>target which is upperbound and in that case use target =0
                 ans=mid;
                 high=mid-1;
             }else

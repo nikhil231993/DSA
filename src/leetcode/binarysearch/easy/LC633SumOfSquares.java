@@ -18,8 +18,6 @@ public class LC633SumOfSquares {
         while(left <= right){
             long value=left*left + right*right;
             if(value == c){
-                System.out.println(left);
-                System.out.println(right);
                 return true;
             }
             else if(value>c)

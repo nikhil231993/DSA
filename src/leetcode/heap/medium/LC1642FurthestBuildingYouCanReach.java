@@ -17,7 +17,7 @@ public class LC1642FurthestBuildingYouCanReach {
 
         PriorityQueue<Integer> pq=new PriorityQueue();
 
-        for(int i=0;i < heights.length-1; i++){
+        for(int i=0; i<heights.length-1; i++){
 
             int gap=heights[i+1]-heights[i];
             if(gap>0)

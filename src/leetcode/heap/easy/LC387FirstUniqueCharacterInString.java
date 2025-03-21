@@ -20,7 +20,7 @@ public class LC387FirstUniqueCharacterInString {
 
         Map<Character, Integer> m=new HashMap();
 
-        for(int i=0;i<s.length();i++){
+        for(int i=0; i<s.length(); i++){
             if(m.containsKey(s.charAt(i)))
                 m.put(s.charAt(i), -1);
             else
@@ -28,7 +28,7 @@ public class LC387FirstUniqueCharacterInString {
         }
 
         int index=Integer.MAX_VALUE;
-        for(Map.Entry<Character,Integer> map:m.entrySet()){
+        for(Map.Entry<Character,Integer> map : m.entrySet()){
             if(map.getValue() < index && map.getValue()!=-1)
                 index=map.getValue();
         }

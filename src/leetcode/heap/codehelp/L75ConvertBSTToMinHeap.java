@@ -35,7 +35,7 @@ public class L75ConvertBSTToMinHeap {
         inorder(tree.root, arr, index);
 
         //Step 2. Below will create tree where left < right
-        int[] newIndex=new int[]{0};
+        int[] newIndex = new int[]{0};
         preorder(tree.root,arr,newIndex);
 
         System.out.println();

@@ -39,7 +39,7 @@ public class LC150ReversePolishNotations {
         }
         return st.pop();
 
-        // TC:O(n)
-        // SC:O(n)
+        //TC:O(n)
+        //SC:O(n)
     }
 }

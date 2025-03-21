@@ -31,8 +31,8 @@ public class LC703LeetcodeBruteSolution {
 
     private int getIndex(int val) {
 
-        int left = 0;
-        int right = stream.size() - 1;
+        int left = 0, right = stream.size() - 1;
+
         while (left <= right) {
             int mid = (left + right) / 2;
             int midElement = stream.get(mid);

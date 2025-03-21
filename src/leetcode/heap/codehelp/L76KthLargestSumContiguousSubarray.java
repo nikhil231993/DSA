@@ -22,9 +22,9 @@ public class L76KthLargestSumContiguousSubarray {
 
         PriorityQueue<Integer> pq=new PriorityQueue<>();
 
-        for(int i=0;i<N;i++){
+        for(int i=0; i<N; i++){
             int sum=0;
-            for(int j=i;j<N;j++){
+            for(int j=i; j<N; j++){
 
                 sum+=Arr[j];
                 pq.offer(sum);

@@ -13,7 +13,7 @@ public class BS7NoOfTimeArrayRotatedDuplicates {
 
         int low=0, high=n-1, ans=Integer.MAX_VALUE, index=-1;
 
-        while(low<=high){
+        while(low <= high){
             int mid=low+(high-low)/2;
 
             //Add below block only to optimize if needed

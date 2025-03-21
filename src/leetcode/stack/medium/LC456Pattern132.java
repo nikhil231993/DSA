@@ -30,7 +30,7 @@ public class LC456Pattern132 {
         }
         return false;
 
-        //SC:O(n)
         //TC:O(n)
+        //SC:O(n)
     }
 }

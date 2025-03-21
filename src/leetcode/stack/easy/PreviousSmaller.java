@@ -28,7 +28,7 @@ public class PreviousSmaller {
 
     private static void findPrevMinimumOfEachElement(int[] nums, Stack<Integer> st) {
 
-        for(int i=nums.length-1;i>=0;i--){
+        for(int i=nums.length-1; i>=0; i--){
             while (!st.isEmpty() && nums[st.peek()] > nums[i] ){
                 int index=st.pop();
                 nums[index]=nums[i];

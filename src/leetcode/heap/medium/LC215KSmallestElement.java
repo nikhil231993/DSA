@@ -18,14 +18,14 @@ public class LC215KSmallestElement {
 
         //Using max heap
         PriorityQueue<Integer> pq=new PriorityQueue<>((a,b)-> b - a);
-        for(int n:arr){
+        for(int n : arr){
             pq.offer(n);
             if(pq.size()>k)
                 pq.poll();
         }
         return pq.peek();
 
-        // TC:O(log n)
-        // SC:O(K)
+        //TC:O(N log K)
+        //SC:O(k)
     }
 }

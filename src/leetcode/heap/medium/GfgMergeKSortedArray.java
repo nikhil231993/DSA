@@ -94,6 +94,6 @@ public class GfgMergeKSortedArray {
         return result;
     }
 
-    //TC: O(k log k)
-    //SC: k as at any moment heap has only k elements at the max
+    //TC:O(k square log k)
+    //SC:k square as at any moment heap has only k elements at the max
 }

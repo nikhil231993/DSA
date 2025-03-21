@@ -44,6 +44,6 @@ public class L75ConvertBSTToMaxHeap {
             return;
         postOrder(root.left,arr,newIndex);
         postOrder(root.right,arr,newIndex);
-        root.value=arr[newIndex[0]++];
+        root.value = arr[newIndex[0]++];
     }
 }

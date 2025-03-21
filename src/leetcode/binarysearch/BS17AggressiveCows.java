@@ -40,7 +40,7 @@ public class BS17AggressiveCows {
 
         int count=1, last=stalls[0];
 
-        for(int i=1;i<stalls.length;i++){
+        for(int i=1; i<stalls.length; i++){
             if(stalls[i]-last >= pos){
                 count++;
                 last=stalls[i];

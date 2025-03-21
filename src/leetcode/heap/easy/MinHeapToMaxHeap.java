@@ -14,12 +14,12 @@ public class MinHeapToMaxHeap {
     public static int[] minToMaxHeap(int n, int[] arr){
 
         int lastInternalNode=arr.length/2-1;
-        for(int i=lastInternalNode;i>=0;i--){
+        for(int i=lastInternalNode; i>=0; i--){
             maxHeapify(arr,arr.length,i);
         }
         return arr;
 
-        //TC:O(n log n)
+        //TC:O(n)
         //SC:O(1)
     }
 

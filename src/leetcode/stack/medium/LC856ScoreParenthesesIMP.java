@@ -43,7 +43,7 @@ public class LC856ScoreParenthesesIMP {
         }
         return sum;
 
-        //TC:O(n)
-        //SC:O(n)
+        // TC:O(n)
+        // SC:O(n)
     }
 }

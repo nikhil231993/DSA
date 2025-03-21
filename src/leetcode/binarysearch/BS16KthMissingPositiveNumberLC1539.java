@@ -40,7 +40,7 @@ public class BS16KthMissingPositiveNumberLC1539 {
 
     public static int findKthPositive(int[] arr, int k) {
 
-        for(int i=0;i<arr.length;i++){
+        for(int i=0; i<arr.length; i++){
             if(arr[i]<=k)
                 k++;
             else

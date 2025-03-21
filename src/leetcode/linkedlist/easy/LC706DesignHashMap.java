@@ -65,7 +65,7 @@ public class LC706DesignHashMap {
 			bucket[i]=new LinkedList();
 			bucket[i].add(n);
 		}else{
-			for(Node t:bucket[i]){
+			for(Node t : bucket[i]){
 				if(t.key==key){
 					t.value=value;
 					return;

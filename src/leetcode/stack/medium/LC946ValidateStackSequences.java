@@ -28,7 +28,7 @@ public class LC946ValidateStackSequences {
         }
         return st.isEmpty();
 
-        // TC:O(2*n)
-        // SC:O(n)
+        //TC:O(2*n)
+        //SC:O(n)
     }
 }

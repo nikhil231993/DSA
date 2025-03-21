@@ -96,7 +96,7 @@ public class LC692TopKFrequentWords {
         Collections.reverse(ans); //O(k log k)
         return ans;
 
-        //TC: O(n log k) + O(k log k)
-        //SC: O(2*k)
+        //TC:O(n log k) + O(k log k)
+        //SC:O(2*k)
     }
 }

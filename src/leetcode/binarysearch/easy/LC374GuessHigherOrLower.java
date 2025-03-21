@@ -14,7 +14,7 @@ public class LC374GuessHigherOrLower {
 
         int low=0, high=n;
 
-        while(low<=high){
+        while(low <= high){
             int mid=low+(high-low)/2;
             int val=guess(mid);
             if(val==0)

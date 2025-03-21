@@ -29,7 +29,6 @@ public class LC1081SmallestSubsequenceDistinctCharacters {
                 continue;
 
             visited[ch]=true;
-
             while(!st.isEmpty() && ch < st.peek() && i < arr[st.peek()]){
                 visited[st.pop()]=false;
             }

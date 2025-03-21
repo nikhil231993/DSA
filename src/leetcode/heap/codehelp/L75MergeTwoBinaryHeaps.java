@@ -37,7 +37,7 @@ public class L75MergeTwoBinaryHeaps {
     public static void buildHeap(int[] arr, int size){
 
         for(int i=size/2-1; i>=0; i--){
-            heapify(arr,size,i);
+            heapify(arr, size, i);
         }
     }
 
@@ -55,7 +55,7 @@ public class L75MergeTwoBinaryHeaps {
             int temp=arr[index];
             arr[index]=arr[largest];
             arr[largest]=temp;
-            heapify(arr,size,largest);
+            heapify(arr, size, largest);
         }
     }
 }

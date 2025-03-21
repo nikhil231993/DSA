@@ -45,8 +45,7 @@ public class BS26FindPeakElement2LC1901 {
 
     private static int findMax(int[][] num, int col, int n, int m) {
 
-        int max=Integer.MIN_VALUE;
-        int maxRowIndex=Integer.MIN_VALUE;
+        int max=Integer.MIN_VALUE, maxRowIndex=Integer.MIN_VALUE;
 
         for(int i=0;i<n;i++){
 
@@ -60,8 +59,7 @@ public class BS26FindPeakElement2LC1901 {
 
     public static int[] findPeakGrid(int[][] mat) {
 
-        int n=mat.length;
-        int m=mat[0].length;
+        int n=mat.length, m=mat[0].length;
 
         for(int i=0;i<n;i++){
             for(int j=0;j<m;j++){

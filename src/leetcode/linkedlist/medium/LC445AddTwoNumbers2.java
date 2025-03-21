@@ -30,7 +30,7 @@ public class LC445AddTwoNumbers2 {
             temp=node;
             carry=sum/10;
         }
-        if(carry!=0){
+        if(carry != 0){
             ListNode node=new ListNode(carry);
             temp.next=node;
             temp=node;

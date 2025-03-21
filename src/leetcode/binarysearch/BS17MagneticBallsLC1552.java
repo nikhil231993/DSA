@@ -33,7 +33,7 @@ public class BS17MagneticBallsLC1552 {
 
         int count=1, last=position[0];
 
-        for(int i=1;i<position.length;i++){
+        for(int i=1; i<position.length; i++){
 
             if(position[i]-last>=distance){
                 count++;

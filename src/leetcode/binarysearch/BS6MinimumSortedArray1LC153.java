@@ -10,8 +10,7 @@ public class BS6MinimumSortedArray1LC153 {
 
     public static int findMin(int[] nums) {
 
-        int n=nums.length;
-        int low=0, high=n-1, ans=Integer.MAX_VALUE;
+        int n=nums.length, low=0, high=n-1, ans=Integer.MAX_VALUE;
 
         while(low<=high){
 

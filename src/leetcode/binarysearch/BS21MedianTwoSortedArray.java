@@ -124,7 +124,7 @@ public class BS21MedianTwoSortedArray {
         }
         return 0.0;
 
-        // TC:log(size small array)
-        // SC:O(1)
+        //TC:log(size small array)
+        //SC:O(1)
     }
 }

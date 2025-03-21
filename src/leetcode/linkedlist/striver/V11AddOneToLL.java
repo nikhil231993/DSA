@@ -121,4 +121,43 @@ public class V11AddOneToLL {
         return newHead;
     }
     */
+
+    /*
+    public static Node addOne(Node head) {
+
+        if(head==null)
+            return null;
+        Node newHead=reverse(head);
+        Node temp=newHead;
+        int carry=1;
+        while(temp!=null){
+            temp.data=temp.data+carry;
+            if(temp.data<10){
+                reverse(newHead);
+                return head;
+            }
+            carry=temp.data/10;
+            temp.data=temp.data%10;
+
+            temp=temp.next;
+        }
+        reverse(newHead);
+        if(carry==1){
+            Node n=new Node(carry);
+            n.next=head;
+            head=n;
+        }
+        return head;
+    }
+
+    public static Node reverse(Node head){
+        if(head==null || head.next==null) return head;
+        Node newHead=reverse(head.next);
+        Node front=head.next;
+        front.next=head;
+        head.next=null;
+        return newHead;
+    }
+    */
+
 }

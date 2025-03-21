@@ -87,8 +87,8 @@ public class NextSmaller {
 
     static ArrayList<Integer> nextSmallerElementSelf(ArrayList<Integer> arr, int n){
 
-        Stack<Integer> st=new Stack();
-        ArrayList<Integer> result=new ArrayList(Collections.nCopies(arr.size(), -1));
+        Stack<Integer> st = new Stack();
+        ArrayList<Integer> result = new ArrayList(Collections.nCopies(arr.size(), -1));
 
         for(int i=0; i<arr.size(); i++){
             while(!st.isEmpty() && arr.get(st.peek()) > arr.get(i)){

@@ -41,7 +41,7 @@ public class BS19PaintersPartition {
 
         int count = 1, sum = 0;
 
-        for (Integer num: a) {
+        for (Integer num : a) {
             sum += num;
             if (sum > mid) {
                 count++;

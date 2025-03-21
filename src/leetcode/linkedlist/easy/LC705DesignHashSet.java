@@ -81,7 +81,7 @@ public class LC705DesignHashSet {
 
 		LinkedList<Integer> temp = bucket[index];
 
-		for (int i = 0; i < temp.size(); i++) {
+		for (int i = 0; i<temp.size(); i++) {
 			if (temp.get(i) == key)
 				return i;
 		}

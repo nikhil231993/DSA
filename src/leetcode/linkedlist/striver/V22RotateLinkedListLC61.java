@@ -34,7 +34,7 @@ public class V22RotateLinkedListLC61 {
             return head;
 
         tail.next=head;
-        k=k%2;
+        k=k%count;
         int pos=count-k;
 
         Node first=head;

@@ -12,7 +12,7 @@ class KthLargest {
     public KthLargest(int k, int[] nums) {
 
         size=k;
-        for(Integer n: nums){
+        for(Integer n : nums){
             if(pq.size()<k)
                 pq.offer(n);
             else if(pq.size() == k && pq.peek() <= n)

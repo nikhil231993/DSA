@@ -26,8 +26,40 @@ public class LC451SortCharacterByFrequency {
 
         //Approach 2: Since for s = "tree" both "eert" and "eetr" are correct so we do need to compare the character which has same freq and thus lexicography check can be avoided
         System.out.println(frequencySortOptimised(s));
+        //code without lexicographical check is mentioned below
 
         //Bucket Sort is the best solution
+    }
+
+    public String frequencySortWithoutLexicographical(String s) {
+
+        PriorityQueue<NodeCharacter> pq=new PriorityQueue<>((a,b)->a.freq-b.freq);
+        int n=s.length();
+        HashMap<Character, Integer> map=new HashMap();
+        for(int i=0;i<n;i++)
+            map.put(s.charAt(i), map.getOrDefault(s.charAt(i),0)+1);
+
+        for(Map.Entry<Character, Integer> m:map.entrySet()){
+            pq.offer(new NodeCharacter(m.getValue(), m.getKey()));
+        }
+
+        PriorityQueue<NodeCharacter> pq1 = new PriorityQueue<>((a, b) ->b.freq - a.freq);
+        while(!pq.isEmpty()){
+            Character s1 = pq.peek().value;
+            int freq = pq.peek().freq;
+            pq.poll();
+            pq1.offer(new NodeCharacter(freq, s1));
+        }
+        StringBuilder sb=new StringBuilder();
+        while(!pq1.isEmpty()){
+            NodeCharacter n1=pq1.poll();
+            int c=n1.freq;
+            char v=n1.value;
+
+            for(int i=0;i<c;i++)
+                sb.append(v);
+        }
+        return sb.toString();
     }
 
     public static String frequencySort(String s) {

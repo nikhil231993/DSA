@@ -32,7 +32,7 @@ public class V1ConvertArrayToLinkedList {
 
         Node temp=head;
         while(temp!=null) {
-            if (temp.data==value)
+            if (temp.data == value)
                 return true;
             temp = temp.next;
         }

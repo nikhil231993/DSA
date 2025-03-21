@@ -17,7 +17,7 @@ public class BS14SmallestCommonDivisorLC1283 {
 
         int max=Integer.MIN_VALUE, n=nums.length;
 
-        for(int i=0;i<n;i++){
+        for(int i=0; i<n; i++){
             max=Math.max(max,nums[i]);
         }
         int low=1, high=max, ans=-1;

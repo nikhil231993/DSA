@@ -50,7 +50,7 @@ public class LC2239FindClosestNumberToZero {
         PriorityQueue<Node3> pq=new PriorityQueue<>((a,b)->
             a.diff == b.diff? a.value - b.value : b.diff - a.diff
         );
-        for(int n: nums){
+        for(int n : nums){
             pq.offer(new Node3(Math.abs(n-0), n));
             if(pq.size()>1){
                 pq.poll();

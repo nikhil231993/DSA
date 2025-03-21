@@ -81,7 +81,7 @@ public class LC506Rankings {
         for (int i = 0; i< n; i++) {
             pq.offer(new Node4(score[i], i));
         }
-        String[] ans = new String[n];
+        String[] ans=new String[n];
         int count = 0;
         while (!pq.isEmpty()) {
 

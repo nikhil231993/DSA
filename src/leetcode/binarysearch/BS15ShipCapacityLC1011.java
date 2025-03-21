@@ -15,7 +15,7 @@ public class BS15ShipCapacityLC1011 {
         //Step 2: find the sum of the total weight of the packages
 
         int totalWeights=0, max=Integer.MIN_VALUE;
-        for(int i=0;i<weights.length;i++){
+        for(int i=0; i<weights.length; i++){
             max=Math.max(max,weights[i]);
             totalWeights+=weights[i];
         }

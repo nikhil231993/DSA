@@ -62,7 +62,7 @@ public class BS27MedianInRowWiseSortedArrayLCPremium {
     public static int find(int[][] matrix, int mid, int R, int C){
 
         int count=0;
-        for(int i=0;i<R;i++){
+        for(int i=0; i<R; i++){
             count+=upperBound(matrix[i], mid);
         }
         return count;

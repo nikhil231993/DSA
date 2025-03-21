@@ -109,8 +109,6 @@ public class V2DeletionAndInsertion {
         return head;
     }
 
-
-
     private static Node insertBeforeParticularValue(Node head, int value, int before) {
 
         if(head==null){
@@ -140,7 +138,6 @@ public class V2DeletionAndInsertion {
             System.out.println("Not found");
             return null;
         }
-
         return head;
     }
 
@@ -265,7 +262,7 @@ public class V2DeletionAndInsertion {
         if(head==null)
             return null;
         Node temp=head; //This is not needed in java as in C++ we need to delete the temp for clearing the memory.
-                        //In java garbage collector does by itself
+                        //In java garbage collector does it by itself
         head=head.next;
         return head;
     }

@@ -22,7 +22,7 @@ public class BS22KthElementTwoSortedArrays {
 
         int left=k;
 
-        while(low<=high){
+        while(low <= high){
             int mid1=low+(high-low)/2;
             int mid2=k-mid1;
             int l1=Integer.MIN_VALUE, l2=Integer.MIN_VALUE;
@@ -42,7 +42,7 @@ public class BS22KthElementTwoSortedArrays {
         }
         return 0;
 
-        // TC:O(log(min(n1,n2)))
-        // SC:O(1)
+        //TC:O(log(min(n1,n2)))
+        //SC:O(1)
     }
 }

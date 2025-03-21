@@ -7,7 +7,6 @@ public class BS3CountOccurences {
         int[] num =new int[]{2,4,6,8,8,8,11,13};
         int target=8;
         int[] result=searchRange(num,target);
-
         System.out.println(result[1] - result[0] + 1);
     }
 

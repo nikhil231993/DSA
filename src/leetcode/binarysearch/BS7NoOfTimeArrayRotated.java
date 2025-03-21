@@ -6,7 +6,7 @@ public class BS7NoOfTimeArrayRotated {
 
         int n = 13;
         int[] arr =new int[] { 66, 67, 7, 10 ,14, 19, 27, 33, 36, 40, 44, 54, 60};
-        System.out.println(findKRotation(arr,n));
+        System.out.println(findKRotation(arr, n));
     }
 
     public static int findKRotation(int nums[], int n) {

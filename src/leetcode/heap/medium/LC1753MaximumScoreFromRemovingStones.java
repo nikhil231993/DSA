@@ -19,15 +19,15 @@ public class LC1753MaximumScoreFromRemovingStones {
         
         int count=0;
         while(pq.size()>1){
-            Integer n1=pq.poll();
-            Integer n2=pq.poll();
-            n1=n1-1;
-            n2=n2-1;
-            count++;
+            int n1=pq.poll();
+            int n2=pq.poll();
+            n1--;
+            n2--;
             if(n1>0)
                 pq.offer(n1);
             if(n2>0)
                 pq.offer(n2);
+            count++;
         }
         return count;
 

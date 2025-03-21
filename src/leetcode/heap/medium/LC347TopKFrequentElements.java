@@ -23,7 +23,7 @@ public class LC347TopKFrequentElements {
         int[] nums=new int[]{1,1,1,2,2,3};
         int k=2;
 
-        //Qucik Select is best solution .Learn if time permits
+        //Quick Select is best solution .Learn if time permits
 
         Map<Integer,Integer> map=new HashMap<>();
         for(int n:nums){

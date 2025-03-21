@@ -37,7 +37,7 @@ public class BS25SearchInSortedMatrix2LC240 {
     public static boolean searchMatrixUsingPartialBS(int[][] matrix, int target) {
 
         int n=matrix.length, m=matrix[0].length;
-        for(int i=0;i<n;i++){
+        for(int i=0; i<n; i++){
             if(target>=matrix[i][0] && target<=matrix[i][m-1])
                 if(binarySearch(matrix[i], n, m, target))
                     return true;

@@ -18,30 +18,25 @@ public class LC378KthSmallestInASortedMatrix {
 
     private static int KthSmallestUsingBinarySearch(int[][] matrix,int k) {
 
-        int size=matrix.length;
-        int lowest=matrix[0][0];
-        int highest=matrix[size-1][size-1];
+        int size=matrix.length, lowest=matrix[0][0], highest=matrix[size-1][size-1];
 
-        while(lowest<=highest){
+        while(lowest <= highest){
             int mid=lowest+(highest-lowest)/2;
             int count = countLessOrEqual(mid, matrix, k);
             if(count<k)
                 lowest=mid+1;
-            else{
+            else
                 highest=mid-1;
-            }
-
         }
         return lowest;
     }
 
     private static int countLessOrEqual(int mid, int[][] matrix, int k) {
 
-        int i=matrix.length-1;
-        int j=0;
-        int count=0;
+        int i=matrix.length-1, j=0, count=0;
+
         while(i>=0 && j<matrix.length){
-            if(matrix[i][j]>mid)
+            if(matrix[i][j] > mid)
                 i--;
             else{
                 count=count+i+1;
@@ -50,8 +45,8 @@ public class LC378KthSmallestInASortedMatrix {
         }
         return count;
 
-        // TC:O(n*log n)
-        // SC:O(1)
+        //TC:O(n*log n)
+        //SC:O(1)
     }
 
     public static int kthSmallest(int[][] matrix, int k) {

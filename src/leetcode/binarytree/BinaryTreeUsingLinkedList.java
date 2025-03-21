@@ -513,6 +513,7 @@ public class BinaryTreeUsingLinkedList {
 	public int maxPath(Node root) {
 
 		int[] max = new int[1];
+		max[0]=Integer.MIN_VALUE;
 		maxPath(root, max);
 		return max[0];
 	}
@@ -1169,7 +1170,7 @@ public class BinaryTreeUsingLinkedList {
 		return 1 + countNodes(root.left) + countNodes(root.right); //we do not need else as shown in video
 
 		//TC:O(logN) square
-		//SC:O(N)
+		//SC:O(log n) stack space
     }
 
 	private static int rightHeight(Node root) {

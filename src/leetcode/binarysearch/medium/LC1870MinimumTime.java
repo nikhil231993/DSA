@@ -19,10 +19,7 @@ public class LC1870MinimumTime {
 
     public static int minSpeedOnTimeSelf(int[] dist, double hour) {
 
-        int n=dist.length;
-        int low=1;
-        int high=(int)1e7;
-        int ans=-1;
+        int n=dist.length, low=1, high=(int)1e7, ans=-1;
 
         while(low<=high){
             int mid=low+(high-low)/2;

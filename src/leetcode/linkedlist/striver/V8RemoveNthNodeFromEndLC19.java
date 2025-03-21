@@ -54,7 +54,6 @@ public class V8RemoveNthNodeFromEndLC19 {
         slow.next=slow.next.next;
 
         return head;
-
     }
      TC:O(len)
      SC:O(1)

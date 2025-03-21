@@ -32,7 +32,7 @@ public class LC2208HalfArray {
         }
         return 0;
 
-        // TC:O(n log n)
-        // SC:O(n)
+        //TC:O(n log n)
+        //SC:O(n)
     }
 }

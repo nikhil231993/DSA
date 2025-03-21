@@ -44,4 +44,22 @@ public class V4ReverseDLL {
         //TC:O(n)
         //SC:O(1)
     }
+
+    //Below code can also be used to achieve this
+    public static NodeDLL reverseDLLSelf(NodeDLL head) {
+
+        if(head==null || head.next==null)
+            return head;
+        NodeDLL temp=head;
+        NodeDLL prev=null;
+        while(temp!=null){
+            NodeDLL swap=temp.next;
+            temp.next=temp.prev;
+            temp.prev=swap;
+            prev=temp;
+            temp=temp.prev;
+
+        }
+        return prev;
+    }
 }

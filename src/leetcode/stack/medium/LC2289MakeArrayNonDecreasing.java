@@ -28,7 +28,6 @@ public class LC2289MakeArrayNonDecreasing {
     public static int totalSteps(int[] nums) {
 
         int n=nums.length;
-
         Stack<Pair> st=new Stack();
 
         int ans=0;

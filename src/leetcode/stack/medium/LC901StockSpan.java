@@ -29,7 +29,7 @@ public class LC901StockSpan {
                 span+=st.peek().span;
                 st.pop();
             }
-            st.push(new Node(price, span));
+            st.push(new Node(price,span));
             return span;
         }
     }

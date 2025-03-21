@@ -15,7 +15,7 @@ public class LC20ValidParenthesis {
 
         Stack<Character> st =new Stack();
 
-        for(int i=0; i< s.length(); i++){
+        for(int i=0; i<s.length(); i++){
             if(s.charAt(i)=='(')
                 st.push(')');
             else if(s.charAt(i)=='[')
@@ -32,7 +32,7 @@ public class LC20ValidParenthesis {
             return true;
         return false;
 
-        // TC:O(n)
-        // SC:O(n)
+        //TC:O(n)
+        //SC:O(n)
     }
 }

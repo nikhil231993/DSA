@@ -21,7 +21,7 @@ public class LC496NextGreaterElement {
 
 		Map<Integer, Integer> map = new HashMap<>();
 		Stack<Integer> st = new Stack<>();
-		for (int i = 0; i < nums2.length; i++){
+		for (int i = 0; i<nums2.length; i++){
 			while (!st.isEmpty() && nums2[st.peek()] < nums2[i]) {
 				map.put(nums2[st.pop()], nums2[i]);
 			}

@@ -37,7 +37,7 @@ public class LC1337RowMin {
 
         PriorityQueue<Node> pq=new PriorityQueue<>((a, b)->a.count == b.count ? b.row - a.row : b.count - a.count);
 
-        for(int i=0; i<mat.length; i++){
+        for(int i=0;i<mat.length;i++){
 
             int no = required(mat[i], 1);
             pq.offer(new Node(i, no));

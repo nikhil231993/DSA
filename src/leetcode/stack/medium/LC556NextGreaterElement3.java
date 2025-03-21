@@ -24,7 +24,7 @@ public class LC556NextGreaterElement3 {
 		if (idx1 == -1)
 			return -1;
 		else {
-			for (int i = n1 - 1; i >= 0; i--) {
+			for (int i = n1 - 1; i>= 0; i--) {
 				if (ch[i] > ch[idx1]) {
 					idx2 = i;
 					break;

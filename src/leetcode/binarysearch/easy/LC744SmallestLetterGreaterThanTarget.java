@@ -27,8 +27,8 @@ public class LC744SmallestLetterGreaterThanTarget {
         }
         return ans;
         
-        // TC:O(n log n)
-        // SC:O(1)
+        //TC:O(log n)
+        //SC:O(1)
     }
 
     public static char nextGreatestLetterAnotherWay(char[] letters, char target) {

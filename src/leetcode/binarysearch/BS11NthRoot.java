@@ -30,6 +30,7 @@ public class BS11NthRoot {
     }
 
     public static int NthRootBrute(int n, int m) {
+
         //Use linear search on the answer space:
         for (int i = 1; i <= m; i++) {
             long val = func(i, n);

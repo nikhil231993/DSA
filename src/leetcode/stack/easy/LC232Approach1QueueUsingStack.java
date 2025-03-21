@@ -25,7 +25,7 @@ public class LC232Approach1QueueUsingStack {
                 while(!input.isEmpty()){
                     output.push(input.pop());
                 }
-                input.push(x);  // This can also be pushed to output stack
+                input.push(x);  //This can also be pushed to output stack
                 while(!output.isEmpty()){
                     input.push(output.pop());
                 }

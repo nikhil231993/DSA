@@ -10,9 +10,8 @@ public class LC1351CountNegativeNumbersInGrid {
 
     private static int countNegative(int[][] grid) {
 
-        int row=grid.length-1;
+        int row=grid.length-1, column=0, count=0;
         int n=grid[0].length;
-        int column=0, count=0;
 
         while(row >= 0 && column < n){
             if(grid[row][column]<0) {
@@ -24,7 +23,7 @@ public class LC1351CountNegativeNumbersInGrid {
         }
         return count;
 
-        // TC:O(m+n)
-        // SC:O(1)
+        //TC:O(m+n)
+        //SC:O(1)
     }
 }

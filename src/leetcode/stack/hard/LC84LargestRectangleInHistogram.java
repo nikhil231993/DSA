@@ -25,7 +25,7 @@ public class LC84LargestRectangleInHistogram {
 		Arrays.fill(leftMin, -1);
 
 		// next smaller
-		for (int i = 0; i < n; i++) {
+		for (int i = 0; i<n; i++) {
 			while (!rightMinStack.isEmpty() && arr[rightMinStack.peek()] > arr[i]) {
 				int index = rightMinStack.pop();
 				rightMin[index] = i;

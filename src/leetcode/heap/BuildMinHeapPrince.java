@@ -14,7 +14,7 @@ public class BuildMinHeapPrince {
         print(arr.length,arr);
 
         //TC for build heap is O(n) which is as per proof
-        //SC:O(log n)
+        //SC:O(1)
     }
 
     private static void print(int size,int[] arr){

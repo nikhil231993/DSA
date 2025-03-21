@@ -33,8 +33,7 @@ public class LC2016MaximumDifference {
 
     public static int maximumDifferenceOptimized(int[] nums) {
 
-        Integer maxDiff=-1;
-        Integer min=Integer.MAX_VALUE;
+        int maxDiff=-1, min=Integer.MAX_VALUE;
 
         for(int i=0; i<nums.length; i++){
             if (min > nums[i])

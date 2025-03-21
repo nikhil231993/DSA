@@ -32,7 +32,7 @@ public class BS1IntroductionLC704 {
 
         // Perform the steps:
         while (low <= high) {
-            int mid = (low + high) / 2;
+            int mid = low+ (high - low) / 2;
             if (nums[mid] == target) 
             	return mid;
             else if (target > nums[mid]) 
@@ -51,7 +51,7 @@ public class BS1IntroductionLC704 {
         if (low > high) return -1; //Base case.
 
         // Perform the steps:
-        int mid = (low + high) / 2;
+        int mid = low+ (high - low) / 2;
         if (nums[mid] == target)
             return mid;
         else if (target > nums[mid])

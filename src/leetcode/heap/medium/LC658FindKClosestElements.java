@@ -52,10 +52,10 @@ public class LC658FindKClosestElements {
 
     private static List<Integer> findClosestElementsUsingTwoPointer(int[] arr, int k, int x) {
 
-        int left=0;
-        int right=arr.length-1;
+        int left=0, right=arr.length-1;
+
         while(right-left>=k){
-            if(Math.abs(arr[left]-x)>Math.abs(arr[right]-x)) //we can write anyway this line as it is abs value
+            if(Math.abs(arr[left]-x) > Math.abs(arr[right]-x)) //we can write anyway this line as it is abs value
                 left++;
             else
                 right--;
@@ -77,7 +77,7 @@ public class LC658FindKClosestElements {
                 (a,b)-> a.value==b.value ? b.key-a.key : b.value-a.value);
 
         for(Integer n:arr){
-            pq.offer(new Node(Math.abs(x-n),n));
+            pq.offer(new Node(Math.abs(x-n), n));
             if(pq.size()>k)
                 pq.poll();
         }

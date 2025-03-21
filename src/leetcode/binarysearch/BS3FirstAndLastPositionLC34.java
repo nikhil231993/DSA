@@ -13,7 +13,7 @@ public class BS3FirstAndLastPositionLC34 {
         int target=8;
         int[] result=searchRange(num,target);
 
-        for(int n:result)
+        for(int n : result)
             System.out.println(n);
     }
 

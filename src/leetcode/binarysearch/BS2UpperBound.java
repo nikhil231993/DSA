@@ -12,8 +12,7 @@ public class BS2UpperBound {
     private static int upperBound(int[] arr, int x) {
 
     	//smallest number which > x
-        int ans=arr.length;
-        int low=0, high=arr.length-1;
+        int ans=arr.length, low=0, high=arr.length-1;
 
         while(low<=high){
             int mid=low+(high-low)/2;

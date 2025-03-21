@@ -30,7 +30,7 @@ public class LC1760MinimumBallsInABag {
         }
         return ans;
 
-        //TC:O(nlogn)
+        //TC:O(logn)
         //sc:O(n)
     }
 

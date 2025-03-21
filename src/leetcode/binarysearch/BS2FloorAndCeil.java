@@ -5,7 +5,9 @@ public class BS2FloorAndCeil {
     public static void main(String[] args) {
 
         int[] arr=new int[]{2,4,6,8,8,8,11,13};
+        arr=new int[]{3, 4, 7, 8, 8, 10};
         int x=8;
+        x=5;
         System.out.println("Ceil number is: " + ceil(arr,x));
         System.out.println("floor number is: " + floorMethod(arr,x));
     }

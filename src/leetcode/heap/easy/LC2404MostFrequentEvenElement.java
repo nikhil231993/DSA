@@ -10,7 +10,7 @@ class Node2 {
     protected Integer key;
     protected Integer freq;
 
-    public Node2(Integer key, Integer freq){
+    public Node2(Integer key,Integer freq){
         this.key=key;
         this.freq=freq;
     }

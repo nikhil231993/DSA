@@ -13,7 +13,7 @@ public class LC2226MaximumCandies{
 
         int low=1, high=Integer.MIN_VALUE;
 
-        for(int i=0;i<candies.length;i++){
+        for(int i=0; i<candies.length; i++){
             high=Math.max(high, candies[i]);
         }
 

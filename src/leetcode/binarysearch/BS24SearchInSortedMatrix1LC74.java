@@ -19,9 +19,8 @@ public class BS24SearchInSortedMatrix1LC74 {
 
     private static boolean searchMatrixUsingBinarySearch(int[][] matrix, int target) {
 
-        int low=0;
         int n=matrix.length, m=matrix[0].length;
-        int high=n*m-1;
+        int low=0, high=n*m-1;
 
         while(low<=high){
             int mid=low+(high-low)/2;

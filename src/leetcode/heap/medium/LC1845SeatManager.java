@@ -26,7 +26,6 @@ public class LC1845SeatManager {
     public static void main(String[] args) {
 
          SeatManager obj = new SeatManager(5);
-
          int param_1 = obj.reserve();
          obj.unreserve(6);
          System.out.println(param_1);

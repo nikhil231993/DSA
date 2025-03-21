@@ -40,7 +40,7 @@ public class LC2710RemoveTrailingZeros {
         }
         return num.substring(0, endIndex+1);
 
-        // TC:O(n) where n is the length of the string
-        // SC:O(1)
+        //TC:O(n) where n is the length of the string
+        //SC:O(1)
     }
 }

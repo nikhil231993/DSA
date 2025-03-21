@@ -56,7 +56,7 @@ public class LC1047RemoveAllAdjacentDuplicates {
 
         Stack<Character> st=new Stack();
 
-        for(int i=0; i< s.length(); i++){
+        for(int i=0; i<s.length(); i++){
 
             Character ch=s.charAt(i);
 

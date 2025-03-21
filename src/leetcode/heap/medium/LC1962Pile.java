@@ -14,7 +14,7 @@ public class LC1962Pile {
     public static int minStoneSum(int[] piles, int k) {
 
         PriorityQueue<Integer> pq=new PriorityQueue<>((a, b)->b-a);
-        for(int i=0;i<piles.length;i++){
+        for(int i=0; i<piles.length; i++){
             pq.offer(piles[i]);
         }
 

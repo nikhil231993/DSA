@@ -30,6 +30,7 @@ public class BS5SearchInRotatedArray2LC81 {
                 high--;
                 continue;
             }
+
             if(nums[low]<=nums[mid]){
                 if(target>=nums[low] && target<=nums[mid]){
                     high=mid-1;

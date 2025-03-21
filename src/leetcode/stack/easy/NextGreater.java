@@ -29,7 +29,7 @@ public class NextGreater {
         }
 
         while(!st.isEmpty()){
-            nums[st.pop()]=-1;
+            nums[st.pop()] = -1;
         }
 
         //TC:O(N + N)

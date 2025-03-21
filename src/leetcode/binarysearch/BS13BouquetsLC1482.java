@@ -25,7 +25,7 @@ public class BS13BouquetsLC1482 {
         }
         int low=min, high=max, ans=-1;
 
-        while(low<=high){
+        while(low <= high){
             int mid=low+(high-low)/2;
 
             if(isPossible(bloomDay,m,k,mid)){

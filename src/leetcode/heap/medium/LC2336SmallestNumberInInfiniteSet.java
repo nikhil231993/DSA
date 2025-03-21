@@ -18,13 +18,11 @@ class SmallestInfiniteSet {
     }
 
     public int popSmallest() {
-
         set.remove(pq.peek());
         return pq.poll();
     }
 
     public void addBack(int num) {
-
         if(!set.contains(num)){
             set.add(num);
             pq.offer(num);
@@ -38,7 +36,7 @@ public class LC2336SmallestNumberInInfiniteSet {
 
         SmallestInfiniteSet obj = new SmallestInfiniteSet();
 
-        int param_1 = obj.popSmallest();
+        int param_1=obj.popSmallest();
         obj.addBack(1);
         System.out.println(param_1);
     }

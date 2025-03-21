@@ -57,8 +57,8 @@ public class LC1209RemoveAllAdjacentDuplicates2 {
 		}
 		return sb.reverse().toString();
 
-		// TC:O(n)
-		// SC:O(n)
+		//TC:O(n)
+		//SC:O(n)
 	}
 
 	public static String removeDuplicatesSelf(String s, int k) {

@@ -15,7 +15,7 @@ public class V16EvaluatePrefixExpression {
         int n=s.length();
         Stack<Integer> st=new Stack<>();
 
-        for(int i=n-1; i>=0; i--){
+        for(int i=n-1;i>=0;i--){
 
             char ch = s.charAt(i);
             if(ch==' ')

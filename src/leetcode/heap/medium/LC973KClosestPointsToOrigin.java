@@ -7,6 +7,7 @@ public class LC973KClosestPointsToOrigin {
     public static void main(String[] args) {
 
         int[][] points =new int[][] {{3,3},{5,-1},{-2,4}};
+        points=new int[][]{{-5,4}, {-6,-5},{4,6}};
         int k = 2;
 
         int[][] result = kClosest(points,k);
@@ -17,11 +18,11 @@ public class LC973KClosestPointsToOrigin {
 
     public static int[][] kClosest(int[][] points, int k) {
 
-        PriorityQueue<int[]> pq=new PriorityQueue<>((a,b)->(((b[0]-0)*(b[0]-0))+(b[1]-0)*(b[1]-0))-((a[0]-0)*(a[0]-0)+(a[1]-0)*(a[1]-0)));
+        PriorityQueue<int[]> pq=new PriorityQueue<>((a,b)->(((b[0]-0)*(b[0]-0))+(b[1]-0)*(b[1]-0)) - ((a[0]-0)*(a[0]-0)+(a[1]-0)*(a[1]-0)));
 
         for(int[] arr:points){
 
-            pq.offer(new int[]{arr[0],arr[1]});
+            pq.offer(new int[]{arr[0], arr[1]});
             if(pq.size()>k){
                 pq.poll();
             }
@@ -36,8 +37,8 @@ public class LC973KClosestPointsToOrigin {
         }
         return result;
 
-        // TC:n log k
-        // SC:K
+        //TC:n log k
+        //SC:K
     }
 
     //Approach 2: There is no approach diff only the way diff is calculated is different

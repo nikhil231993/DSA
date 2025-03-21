@@ -24,6 +24,44 @@ public class LC1054Barcodes {
         int[] result=rearrangeBarcodes(barcodes);
         for(int n:result)
             System.out.println(n);
+
+        System.out.println("**********************");
+
+        int[] result1=rearrangeBarcodesSimplified(barcodes);
+        for(int n:result1)
+            System.out.println(n);
+    }
+
+    private static int[] rearrangeBarcodesSimplified(int[] barcodes) {
+
+        PriorityQueue<Node1> pq=new PriorityQueue<>((a,b)->b.count-a.count);
+        HashMap<Integer, Integer> map=new HashMap();
+        int n=barcodes.length;
+        for(int i=0; i<n;i++){
+            map.put(barcodes[i], map.getOrDefault(barcodes[i],0)+1);
+        }
+
+        for(Map.Entry<Integer, Integer> m:map.entrySet()){
+            pq.offer(new Node1(m.getKey(), m.getValue()));
+        }
+
+        int[] arr=new int[n];
+        int k=0;
+        while(pq.size()>1){
+            Node1 n1=pq.poll();
+            Node1 n2=pq.poll();
+            arr[k++]=n1.value;
+            arr[k++]=n2.value;
+            n1.count--;
+            n2.count--;
+            if(n1.count>0)
+                pq.offer(new Node1(n1.value, n1.count));
+            if(n2.count>0)
+                pq.offer(new Node1(n2.value, n2.count));
+        }
+        if(pq.size()==1)
+            arr[k]=pq.poll().value;
+        return arr;
     }
 
     public static int[] rearrangeBarcodes(int[] barcodes) {

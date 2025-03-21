@@ -13,7 +13,7 @@ public class LC2064ProductsDistributionToStore {
 
         int low=1, high=Integer.MIN_VALUE;
 
-        for(int i=0;i<quantities.length;i++){
+        for(int i=0; i<quantities.length; i++){
             high=Math.max(high, quantities[i]);
         }
 

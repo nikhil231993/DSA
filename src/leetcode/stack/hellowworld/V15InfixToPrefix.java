@@ -7,8 +7,9 @@ public class V15InfixToPrefix {
     public static void main(String[] args) {
 
         String s="x+y/z-w*u";
-        s="a^b*c";
-        s="a*b-c";
+        s="a^b*c-d";
+        s="a*b^c";
+        //s="a*b-c";
         //s="a+b*c";
         System.out.println(conversion(s));
     }

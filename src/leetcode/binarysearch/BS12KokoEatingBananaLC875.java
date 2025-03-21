@@ -20,7 +20,7 @@ public class BS12KokoEatingBananaLC875 {
 
         int low=1, high=max, ans=0;
 
-        while(low<=high){
+        while(low <= high){
             int mid=low+(high-low)/2;
             int count=isPossible(mid,piles,h);
             if(count<=h){

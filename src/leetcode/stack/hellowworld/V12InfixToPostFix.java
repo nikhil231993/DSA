@@ -7,7 +7,8 @@ public class V12InfixToPostFix {
     public static void main(String[] args) {
 
         String s="h^m^q^(7-4)";
-        s="a+b+c";
+        s="a^b*c";
+        s="a^b^c*d";
         //s="a^b^c";
         //s="(a+b)*c";
         //s="a*b*c";

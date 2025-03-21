@@ -39,8 +39,7 @@ public class LC2558RichPile {
         }
 
         // Calculate the sum of the remaining gifts in the array
-        long numberOfRemainingGifts = Arrays.stream(gifts).mapToLong(gift -> gift) // Map to long to avoid overflow
-                .sum();
+        long numberOfRemainingGifts = Arrays.stream(gifts).mapToLong(gift -> gift).sum(); // Map to long to avoid overflow
 
         return numberOfRemainingGifts;
 

@@ -6,6 +6,7 @@ public class LC83RemoveDuplicatesSingleLLSorted {
     public ListNode deleteDuplicates(ListNode head) {
 
         ListNode temp=head;
+
         while(temp!=null && temp.next!=null){
 
             ListNode t2=temp.next;

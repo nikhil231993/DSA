@@ -38,7 +38,7 @@ public class LC215KLargestElement {
 
     private static  int usingCustomHeap(int[] nums, int k ,int n){
 
-        for(int i=n/2-1;i>=0;i--){
+        for(int i=n/2-1; i>=0; i--){
             heapifyTopToBottom(nums,n,i);
         }
        // TC:O(N) for build max heap

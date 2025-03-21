@@ -30,7 +30,7 @@ public class LC503NextGreaterElement2 {
 		int[] ans = new int[nums.length];
 		Arrays.fill(ans, -1);
 
-		for (int i = 0; i < nums.length * 2; i++) {
+		for (int i = 0; i<nums.length*2; i++) {
 
 			while (!st.isEmpty() && nums[st.peek()] < nums[i % nums.length]) {
 				ans[st.pop()] = nums[i % nums.length];

@@ -44,7 +44,7 @@ public class LC581ShortestUnsortedContinuousSubarray {
 
         return rightIndex - leftIndex + 1;
 
-        //TC:O(2*n) parsing array two times
-        //SC:O(2*n) two stack space in worst case
+        //TC: O(2*n) parsing array two times
+        //SC: O(2*n) two stack space in worst case
     }
 }
