@@ -64,7 +64,7 @@ public class G28ShortestPathUGUnitWeights {
 
         while(!q.isEmpty()){
             Integer node=q.poll();
-            for(Integer vertex: adjlist.get(node)){
+            for(Integer vertex : adjlist.get(node)){
                 if(dist[vertex] > dist[node]+1){
                     dist[vertex] = 1+dist[node];
                     q.offer(vertex);

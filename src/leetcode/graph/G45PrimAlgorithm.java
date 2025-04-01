@@ -38,7 +38,7 @@ public class G45PrimAlgorithm {
         System.out.println(minimumWeight(edges,n,src));
     }
 
-    private static int minimumWeight(int[][] edges, int n,int src) {
+    private static int minimumWeight(int[][] edges, int n, int src) {
 
         List<List<PairNodeWeight>> adjList=new ArrayList<>();
         //Create Adjacency List

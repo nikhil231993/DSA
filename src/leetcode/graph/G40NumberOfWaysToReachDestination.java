@@ -45,7 +45,7 @@ public class G40NumberOfWaysToReachDestination {
         }
 
         long[] distance=new long[n];
-        Arrays.fill(distance,(int)(1e18));
+        Arrays.fill(distance,Long.MAX_VALUE);
         distance[0]=0;
 
         long[] ways=new long[n]; // we use long hear because time constraint is <=10 raise to 9 in leetcode so the value can be beyond integer range

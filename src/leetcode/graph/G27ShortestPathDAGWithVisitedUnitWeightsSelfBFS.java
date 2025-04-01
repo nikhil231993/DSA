@@ -54,7 +54,7 @@ public class G27ShortestPathDAGWithVisitedUnitWeightsSelfBFS {
 			for(Integer vertex : adjlist.get(node)){
 				if(visited[vertex] == 0){
 					visited[vertex] = 1;
-					dist[vertex] = 1+dist[node];
+					dist[vertex] = 1 + dist[node];
 					q.offer(vertex);
 				}
 			}

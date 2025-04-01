@@ -13,6 +13,16 @@ class PairG28{
     }
 }
 
+class Node11{
+
+    int edge;
+    int weight;
+    public Node11(int edge, int weight){
+        this.edge=edge;
+        this.weight=weight;
+    }
+}
+
 public class G28ShortestPathUGActualWeightsSelf {
 
     public static void main(String[] args) {
@@ -67,6 +77,11 @@ public class G28ShortestPathUGActualWeightsSelf {
         for(Integer n:dist)
             System.out.println(n);
 
+        System.out.println("################");
+        //https://www.geeksforgeeks.org/problems/shortest-path-in-weighted-undirected-graph/1
+        int[][] edges1 =new int[][] {{1, 2, 2}, {2, 5, 5}, {2, 3, 4}, {1, 4, 1}, {4, 3, 3}, {3, 5, 1}};
+        System.out.println(shortestPath(5, 6, edges1));
+
         //Time Complexity: O(M) { for creating the adjacency list from given list ‘edges’}
         // + O(N + 2M) { for the BFS Algorithm}
         // + O(N) { for adding the final values of the shortest path in the resultant array} ~ O(N+2M).
@@ -74,5 +89,48 @@ public class G28ShortestPathUGActualWeightsSelf {
         //Space Complexity:  O( N) {for the stack storing the BFS}
         // + O(N) {for the resultant array}
         // + O(N) {for the dist array storing updated shortest paths} + O( N+2M) {for the adjacency list} ~ O(N+M) .
+    }
+
+    public static List<Integer> shortestPath(int n, int m, int edges[][]) {
+
+        ArrayList<ArrayList<Node11>> adjList=new ArrayList();
+        for(int i=0;i<=n;i++)
+            adjList.add(new ArrayList());
+        for(int i=0;i<edges.length;i++){
+            adjList.get(edges[i][0]).add(new Node11(edges[i][1], edges[i][2]));
+            adjList.get(edges[i][1]).add(new Node11(edges[i][0], edges[i][2]));
+        }
+
+        int[] dist=new int[n+1];
+        Arrays.fill(dist, (int)(1e9));
+        Queue<Integer> q=new LinkedList();
+        q.offer(1);
+        dist[1]=0;
+        int[] path=new int[n+1];
+        for(int i=0;i<=n;i++)
+            path[i]=i;
+        path[1]=1;
+        while(!q.isEmpty()){
+            Integer node=q.poll();
+
+            for(Node11 vertex: adjList.get(node)){
+                if(dist[vertex.edge]>dist[node]+vertex.weight){
+                    dist[vertex.edge]=dist[node]+vertex.weight;
+                    path[vertex.edge]=node;
+                    q.offer(vertex.edge);
+                }
+            }
+        }
+
+        List<Integer> list=new ArrayList();
+        list.add(dist[n]);
+
+        int variable=n;
+        while(variable!=path[variable]){
+            list.add(1, variable);
+            variable=path[variable];
+        }
+        list.add(1, variable);
+        return list;
     }
 }

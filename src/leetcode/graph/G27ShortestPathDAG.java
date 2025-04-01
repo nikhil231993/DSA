@@ -37,7 +37,7 @@ public class G27ShortestPathDAG {
 
 		int V = 6;
 		int E = 7;
-		int src = 2; //we can take any node as source, and it will work as for not reachable nodes it will give 1e9
+		int src = 4; //we can take any node as source, and it will work as for not reachable nodes it will give 1e9
 
 		// Convert matrix to adjList;
 		

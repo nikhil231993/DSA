@@ -9,7 +9,7 @@ public class  G42FloydWarshall {
         // 1. This is used for multi source shortest path
         // 2. Helps to detect negative cycles
         // 3. we use Adjacency Matrix method here
-        // 4. If it is a undirected graph put same values in both direction same as bellman ford algo
+        // 4. If it is an undirected graph put same values in both direction same as bellman ford algo
         // 5. if i==j i.e. diagonal elements is less than 0 then there is negative cycle
 
       int[][]  matrix = new int[][]{{ 0,1,43 },{ 1,0,6 },{ -1,-1,0 }};
@@ -46,7 +46,7 @@ public class  G42FloydWarshall {
         for(int k=0;k<n;k++){
             for(int i=0;i<matrix.length;i++){
                 for(int j=0;j<matrix[0].length;j++) {
-                        matrix[i][j] = Math.min(matrix[i][j],matrix[i][k]+matrix[k][j]);
+                        matrix[i][j] = Math.min(matrix[i][j], matrix[i][k]+matrix[k][j]);
                 }
             }
         }

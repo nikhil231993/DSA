@@ -64,7 +64,7 @@ public class G43SmallestDistanceNeighbours {
 				int node=pq.peek().node;
 				pq.poll();
 				
-				for(PairG43 vertex:adjList.get(node)) {
+				for(PairG43 vertex : adjList.get(node)) {
 					int v=vertex.node;
 					int edW=vertex.dist;
 					if (distanceNode[v] > distance + edW) {
