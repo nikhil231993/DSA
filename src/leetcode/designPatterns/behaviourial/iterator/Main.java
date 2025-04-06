@@ -13,7 +13,7 @@ public class Main {
         inventory.addProduct(product2);
         inventory.addProduct(product3);
 
-        Iterator iterator = inventory.createIterator();
+        IteratorProduct iterator = inventory.createIterator();
         Product pr = iterator.first();
 
         while(pr!=null){

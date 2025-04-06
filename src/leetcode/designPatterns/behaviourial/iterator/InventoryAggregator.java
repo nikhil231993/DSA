@@ -14,7 +14,7 @@ public class InventoryAggregator {
         products.add(product);
     }
 
-    public Iterator createIterator(){
+    public IteratorProduct createIterator(){
         //Here we can pass an argument like "horizontal" or "vertical" and create iterator and return from here as well
         return new IteratorProductVertical(products);
     }

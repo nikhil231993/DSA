@@ -1,6 +1,6 @@
 package leetcode.designPatterns.behaviourial.iterator;
 
-public interface Iterator<T> {
+public interface IteratorProduct<T> {
 
     Product first();
 

@@ -3,7 +3,7 @@ package leetcode.designPatterns.behaviourial.iterator;
 import java.util.ArrayList;
 import java.util.List;
 
-public class IteratorProductVertical implements Iterator<Product>{ //This is the concrete iterator
+public class IteratorProductVertical implements IteratorProduct<Product>{ //This is the concrete iterator
 
     private List<Product> products =new ArrayList<>();
     private int count=0;

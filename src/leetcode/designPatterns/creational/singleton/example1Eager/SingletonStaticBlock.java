@@ -3,7 +3,7 @@ package leetcode.designPatterns.creational.singleton.example1Eager;
 public class SingletonStaticBlock {
 
     // Eager initialization of the singleton instance
-    public static  SingletonStaticBlock INSTANCE = null;
+    public static SingletonStaticBlock INSTANCE = null;
 
     // Private constructor to prevent instantiation
     private SingletonStaticBlock() {
