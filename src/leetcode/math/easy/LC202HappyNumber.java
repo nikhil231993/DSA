@@ -33,7 +33,7 @@ public class LC202HappyNumber {
 		//TC:(log n) where log n is the time taken to find no of digits in a number
 	}
 
-	 public static int squareDigits(int n) {
+	 private static int squareDigits(int n) {
 
 		 int sum = 0;
 		 while (n != 0) {
@@ -47,7 +47,7 @@ public class LC202HappyNumber {
 		 //SC:O(1)
 	 }
 
-	public static boolean isHappy(int n) {
+	private static boolean isHappy(int n) {
 
 		HashSet<Integer> h = new HashSet();
 

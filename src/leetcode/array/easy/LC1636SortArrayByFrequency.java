@@ -19,6 +19,8 @@ public class LC1636SortArrayByFrequency {
 
 		int[] nums = new int[]{2,3,1,3,2};
 
+		Arrays.sort(nums);
+
 		int[] result=frequencySort(nums);
 		for(int n:result)
 			System.out.println(n);
@@ -59,7 +61,7 @@ public class LC1636SortArrayByFrequency {
 //	}
 	}
 
-	public static int[] frequencySort(int[] nums) {
+	private static int[] frequencySort(int[] nums) {
 
 		HashMap<Integer, Integer> map=new HashMap();
 		for(int i=0; i< nums.length; i++){
@@ -83,5 +85,25 @@ public class LC1636SortArrayByFrequency {
 			}
 		}
 		return result;
+	}
+
+	private int[] frequencySortAlternative(int[] nums) {
+		int n=nums.length;
+		Map<Integer, Integer> freq=new HashMap<>();
+		for(int i=0;i<n;i++)
+			freq.put(nums[i], freq.getOrDefault(nums[i],0)+1);
+
+		Integer[] numsObj=new Integer[n];
+		for(int i=0;i<n;i++)
+			numsObj[i]=nums[i];
+		Arrays.sort(numsObj, (a,b)->{
+			if(freq.get(a).equals(freq.get(b)))
+				return Integer.compare(b,a);
+			else
+				return Integer.compare(freq.get(a), freq.get(b));
+		});
+		for(int i=0;i<n;i++)
+			nums[i]=numsObj[i];
+		return nums;
 	}
 }

@@ -70,7 +70,7 @@ public class LC992SubarrayWithKDifferentIntegers {
         }
         return count;
 
-        //TC:O(n square) * set TC
-        //SC:O(n) in case all the digits are different
+        // TC:O(n square) * set TC
+        // SC:O(n) in case all the digits are different
     }
 }

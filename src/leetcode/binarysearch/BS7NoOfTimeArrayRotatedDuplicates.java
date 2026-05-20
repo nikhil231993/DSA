@@ -9,7 +9,7 @@ public class BS7NoOfTimeArrayRotatedDuplicates {
         System.out.println(findKRotation(arr,n));
     }
 
-    public static int findKRotation(int nums[], int n) {
+    private static int findKRotation(int nums[], int n) {
 
         int low=0, high=n-1, ans=Integer.MAX_VALUE, index=-1;
 
@@ -18,7 +18,7 @@ public class BS7NoOfTimeArrayRotatedDuplicates {
 
             //Add below block only to optimize if needed
             if(nums[low] < nums[high]){
-                if(ans>nums[low]) {
+                if(ans > nums[low]) {
                     ans = nums[low];
                     index = low;
                 }

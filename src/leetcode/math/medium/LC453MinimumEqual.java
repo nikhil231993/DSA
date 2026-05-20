@@ -19,7 +19,7 @@ public class LC453MinimumEqual {
 		System.out.println(minMovesDec(num));
 	}
 
-	public static int minMovesLeetcode(int[] nums) {
+	private static int minMovesLeetcode(int[] nums) {
 
 		int min = 0, max = nums.length - 1, count = 0;
 		while (true) {
@@ -65,7 +65,7 @@ public class LC453MinimumEqual {
 		// TC:O(n)
 	}
 
-	public static int minMoves(int[] arr) {
+	private static int minMoves(int[] arr) {
 
 		//This is same as next solution but little difficult to understand
 		//Here also we decrement elements by 1 instead of increasing n-1 by 1 as both are same

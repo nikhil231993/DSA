@@ -26,7 +26,7 @@ public class V17FindStartingPointLinkedListLC142 {
         ListNode first=head;
         ListNode second=fast;
 
-        while(first!=second){
+        while(first != second){
             first=first.next;
             second=second.next;
         }

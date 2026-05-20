@@ -13,32 +13,30 @@ public class LC14LongestCommonPrefix {
 		System.out.println(longestCommonPrefixWithWhile(s));
 
 		//Approach 3: Binary Search
-		System.out.println(longestCommonPrefixBS(s));
+		System.out.println(longestCommonPrefixBinarySearch(s));
 	}
 
-	private static String longestCommonPrefixBS(String[] s) {
+	private static String longestCommonPrefixBinarySearch(String[] s) {
 
 
 		if(s==null || s.length==0)
 			return "";
-		int n=s.length;
-		int minLen=Integer.MAX_VALUE;
+		int n=s.length, minLen=Integer.MAX_VALUE;
 
 		for(int i=0;i<n;i++){
 			minLen=Math.min(minLen, s[i].length());
 		}
 
-		int low=0;
-		int high=minLen;
+		int low=0, high=minLen;
 
 		while(low<=high){
 			int mid=low+(high-low)/2;
-			if(isPrefix(mid, s))
+			if(isPrefix(mid, s)) // we can store ans=mid
 				low=mid+1;
 			else
 				high=mid-1;
 		}
-		return s[0].substring(0, (low+high)/2);
+		return s[0].substring(0, (low+high)/2);// and use ans here
 	}
 
 	private static boolean isPrefix(int mid, String[] s) {
@@ -71,10 +69,10 @@ public class LC14LongestCommonPrefix {
 		char current;
 		String temp="";
 
-		for(int i=0;i<minLength;i++) {
+		for(int i=0; i<minLength; i++) {
 
 			current=first.charAt(i);
-			for(int j=1;j<s.length;j++) {
+			for(int j=1; j<s.length; j++) {
 				if (current == s[j].charAt(i)) {
 					continue;
 				} else {

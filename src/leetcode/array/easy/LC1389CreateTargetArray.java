@@ -25,7 +25,7 @@ public class LC1389CreateTargetArray {
 
     public static int[] createTargetArray(int[] nums, int[] index) {
 
-        ArrayList<Integer>arr=new ArrayList<Integer>();
+        ArrayList<Integer>arr=new ArrayList<>();
 
         for(int i=0; i<nums.length; i++){
             arr.add(index[i],nums[i]);
@@ -50,5 +50,22 @@ public class LC1389CreateTargetArray {
 
         //TC:O(n square) worst case
         //SC:O(n)
+    }
+
+    private int[] createTargetArrayAlternative(int[] nums, int[] index) {
+        int[] target = new int[nums.length];
+        int count = 0;
+        while (count < target.length) {
+            if (index[count] >= count) {
+                target[index[count]] = nums[count];
+            }
+            else{
+                for (int i = count; i > index[count]; i--)
+                    target[i] = target[i - 1];
+                target[index[count]] = nums[count];
+            }
+            count++;
+        }
+        return target;
     }
 }

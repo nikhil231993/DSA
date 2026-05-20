@@ -9,7 +9,7 @@ public class LC1351CountNegativeNumbersInGrid {
     }
 
     private static int countNegative(int[][] grid) {
-
+        //we will start the calculation from left bottom corner and find no of rows
         int row=grid.length-1, column=0, count=0;
         int n=grid[0].length;
 

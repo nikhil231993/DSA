@@ -26,7 +26,7 @@ public class V11KDifferentIntegersSubarrayLC992 {
         int atMostEqualToLessThanK=subarray(nums, k-1);
         return atMostEqualToK-atMostEqualToLessThanK;
 
-        //TC:O(2*2n)
+        //TC:O(2n)* 2 as we call it for k and k-1
         //SC:O(n) if all are distinct
     }
 

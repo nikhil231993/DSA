@@ -23,7 +23,7 @@ public class LC242ValidAnagram {
         System.out.println(isAnagramApproach2(s,t));
     }
 
-    public static boolean isAnagramLeetCodeFreq(String s, String t) {
+    private static boolean isAnagramLeetCodeFreq(String s, String t) {
 
         if (s.length() != t.length()) {
             return false;
@@ -41,7 +41,7 @@ public class LC242ValidAnagram {
         return true;
     }
 
-    public static boolean isAnagramLeetcode(String s, String t) {
+    private static boolean isAnagramLeetcode(String s, String t) {
 
         if (s.length() != t.length()) {
             return false;
@@ -53,7 +53,7 @@ public class LC242ValidAnagram {
         return Arrays.equals(str1, str2);
     }
 
-    public static boolean isAnagram(String s, String t) {
+    private static boolean isAnagram(String s, String t) {
 
         int[] ch1=new int[26];
         int[] ch2=new int[26];
@@ -61,21 +61,21 @@ public class LC242ValidAnagram {
 
         if(n1!=n2)
             return false;
-        for(int i=0;i<n1;i++){
+        for(int i=0; i<n1; i++){
             ch1[s.charAt(i)-'a']++;
             ch2[t.charAt(i)-'a']++;
         }
-        for(int k=0;k<ch1.length;k++){
+        for(int k=0; k<ch1.length; k++){
             if(ch1[k]!=ch2[k])
                 return false;
         }
         return true;
 
-        //TC:O(255)
-        //SC:O(255)
+        //TC:O(N+M)
+        //SC:O(26)
     }
 
-    public static boolean isAnagramApproach2(String s, String t) {
+    private static boolean isAnagramApproach2(String s, String t) {
 
         Map<Character, Integer> map=new HashMap();
         for(int i=0; i<s.length();i++){
@@ -83,7 +83,7 @@ public class LC242ValidAnagram {
         }
 
         int count=0;
-        for(int i=0; i<t.length();i++){
+        for(int i=0; i<t.length(); i++){
             if(map.getOrDefault(t.charAt(i),0)>0){
                 map.put(t.charAt(i), map.get(t.charAt(i))-1);
                 count++;

@@ -15,7 +15,7 @@ public class BS19PaintersPartition {
         System.out.println(splitArray(num, k));
     }
 
-    public static int splitArray(ArrayList<Integer> boards, int k) {
+    private static int splitArray(ArrayList<Integer> boards, int k) {
 
         int max=Integer.MIN_VALUE, sum=0;
 
@@ -37,7 +37,7 @@ public class BS19PaintersPartition {
         return ans;
     }
 
-    public static boolean possible(int mid, ArrayList<Integer> a, int k) {
+    private static boolean possible(int mid, ArrayList<Integer> a, int k) {
 
         int count = 1, sum = 0;
 

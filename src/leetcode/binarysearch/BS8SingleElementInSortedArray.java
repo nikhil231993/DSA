@@ -25,7 +25,7 @@ public class BS8SingleElementInSortedArray {
         //SC:O(1)
     }
 
-    public static int singleNonDuplicate(int[] nums) {
+    private static int singleNonDuplicate(int[] nums) {
 
         //Approach 2 using binary search
         int n=nums.length;
@@ -37,8 +37,7 @@ public class BS8SingleElementInSortedArray {
         if(nums[n-1]!=nums[n-2])
             return nums[n-1];
 
-        int low=1;
-        int high=n-2;
+        int low=1, high=n-2;
 
         while(low <= high){
             int mid=low+(high-low)/2;

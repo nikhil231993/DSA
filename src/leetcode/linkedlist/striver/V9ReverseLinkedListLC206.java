@@ -21,8 +21,8 @@ public class V9ReverseLinkedListLC206 {
         }
         return prev;
     }
-     TC:O(n)
-     SC:O(1)
+     TC: O(n)
+     SC: O(1)
      */
 
     //Approach 3: Recursive

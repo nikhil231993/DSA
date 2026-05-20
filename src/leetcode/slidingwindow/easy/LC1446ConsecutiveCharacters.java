@@ -9,7 +9,8 @@ public class LC1446ConsecutiveCharacters {
         System.out.println(maxPower(s));
         System.out.println(maxPowerSelf(s));
     }
-    public static int maxPowerSelf(String s) {
+
+    private static int maxPowerSelf(String s) {
 
         int count=1, max=1;
         int n=s.length();
@@ -23,8 +24,7 @@ public class LC1446ConsecutiveCharacters {
         return max;
     }
 
-
-    public static int maxPower(String s) {
+    private static int maxPower(String s) {
 
         int n=s.length(), count=0, maxLen=-1;
         char prev=' ';

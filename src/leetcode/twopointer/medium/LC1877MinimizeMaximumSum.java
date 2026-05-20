@@ -10,7 +10,7 @@ public class LC1877MinimizeMaximumSum {
        System.out.println(minPairSum(nums));
     }
 
-    public static int minPairSum(int[] nums) {
+    private static int minPairSum(int[] nums) {
 
         Arrays.sort(nums);
         int left=0, right=nums.length-1, max=Integer.MIN_VALUE;

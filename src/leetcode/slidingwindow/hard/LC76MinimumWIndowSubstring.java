@@ -45,7 +45,7 @@ public class LC76MinimumWIndowSubstring {
         return startIndex==-1?"":s.substring(startIndex, startIndex+minLen);
     }
 
-    public static String minWindow(String s, String t) {
+    private static String minWindow(String s, String t) {
 
         int startingIndex=-1, right=0, left=0, n=s.length(), count=0;
         Integer minLen=Integer.MAX_VALUE;

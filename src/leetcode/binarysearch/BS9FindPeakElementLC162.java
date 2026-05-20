@@ -8,7 +8,7 @@ public class BS9FindPeakElementLC162 {
         System.out.println(findPeakElement(nums));
     }
 
-    public static int findPeakElement(int[] nums) {
+    private static int findPeakElement(int[] nums) {
 
         int n=nums.length;
         if(n==1)

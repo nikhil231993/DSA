@@ -8,7 +8,7 @@ public class BS9FindPeakElementLC852 {
         System.out.println(peakIndexInMountainArray(arr));
     }
 
-    public static int peakIndexInMountainArray(int[] arr) {
+    private static int peakIndexInMountainArray(int[] arr) {
 
         //Here we need to understand that if we go to max value side we will find the peak element as it cannot be on the
         //other side which is less basically left side
@@ -20,7 +20,7 @@ public class BS9FindPeakElementLC852 {
         if(arr[n] > arr[n-1])
             return n;
 
-        while (low<=high) {
+        while (low <= high) {
             int mid = low + (high - low) / 2;
             if(arr[mid] > arr[mid-1] && arr[mid] > arr[mid+1])
                 return mid;

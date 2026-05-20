@@ -10,10 +10,10 @@ public class LC930BinarySubarraySum {
         int[] nums = new int[]{1,0,1,0,1};
         int goal = 2;
 
-        //Approach 1: Optimal Refer LC560 for brute force as both are same
+        //Approach 1: Refer LC560 for brute force as both are same
         System.out.println(numSubarraysWithSum(nums, goal));
 
-        //Approach 2: Optimal
+        //Approach 2: Optimal using two pointer
         System.out.println(numSubarraysWithSumOptimal(nums, goal));
     }
 
@@ -43,7 +43,7 @@ public class LC930BinarySubarraySum {
         return count;
     }
 
-    public static int numSubarraysWithSum(int[] nums, int goal) {
+    private static int numSubarraysWithSum(int[] nums, int goal) {
 
         int sum=0;
         int count=0;

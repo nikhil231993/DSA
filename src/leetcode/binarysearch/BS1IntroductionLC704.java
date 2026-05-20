@@ -7,25 +7,25 @@ public class BS1IntroductionLC704 {
         //Note: If binary search question comes up in interview tell interviewer first about linear search (brute force)
         //and then move to binary search (optimal)
 
-        int[] a = {3, 4, 6, 7, 9, 12, 16, 17};
+        int[] nums = {3, 4, 6, 7, 9, 12, 16, 17};
         int target = 6;
 
         //Approach 1: Iterative
-        int ind = binarySearch(a, target);
+        int ind = binarySearch(nums, target);
         if (ind == -1)
             System.out.println("The target is not present.");
         else
             System.out.println("The target is at index: " + ind);
 
         //Approach 2: Recursive
-        ind = searchRecursion(a, target);
+        ind = searchRecursion(nums, target);
         if (ind == -1)
             System.out.println("The target is not present.");
         else
             System.out.println("The target is at index: " + ind);
     }
 
-    public static int binarySearch(int[] nums, int target) {
+    private static int binarySearch(int[] nums, int target) {
 
         int n = nums.length; //size of the array.
         int low = 0, high = n - 1;
@@ -46,7 +46,7 @@ public class BS1IntroductionLC704 {
         //SC:O(1)
     }
 
-    public static int binarySearchRecursion(int[] nums, int low, int high, int target) {
+    private static int binarySearchRecursion(int[] nums, int low, int high, int target) {
 
         if (low > high) return -1; //Base case.
 
@@ -62,8 +62,7 @@ public class BS1IntroductionLC704 {
         //SC:O(log n)
     }
 
-    public static int searchRecursion(int[] nums, int target) {
-
+    private static int searchRecursion(int[] nums, int target) {
         return binarySearchRecursion(nums, 0, nums.length - 1, target);
     }
 }

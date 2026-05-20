@@ -9,7 +9,7 @@ public class LC2064ProductsDistributionToStore {
         System.out.println(minimizedMaximum(n, quantities));
     }
 
-    public static int minimizedMaximum(int n, int[] quantities) {
+    private static int minimizedMaximum(int n, int[] quantities) {
 
         int low=1, high=Integer.MIN_VALUE;
 

@@ -19,7 +19,7 @@ public class LC1929ConcatenationArray {
             System.out.println(n);
     }
 
-    public static int[] getConcatenationSingleParse(int[] nums) {
+    private static int[] getConcatenationSingleParse(int[] nums) {
 
         int n=nums.length;
         int[] arr=new int[2*n];
@@ -31,7 +31,7 @@ public class LC1929ConcatenationArray {
         return arr;
     }
 
-    public static int[] getConcatenation(int[] nums) {
+    private static int[] getConcatenation(int[] nums) {
 
         int[] ans=new int[2*nums.length];
         int j=0;
@@ -44,5 +44,15 @@ public class LC1929ConcatenationArray {
 
         // TC:O(2*n)
         // SC:O(2n) for ans
+    }
+
+    private int[] getConcatenationAlternative(int[] nums) {
+        int n=nums.length;
+        int[] arr=new int[2*n];
+
+        for(int i=0; i<arr.length; i++){
+            arr[i]=nums[i%n];
+        }
+        return arr;
     }
 }

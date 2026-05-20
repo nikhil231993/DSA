@@ -88,7 +88,7 @@ public class LC349UnionOfTwoArrays {
         }
 		return list.stream().mapToInt(a -> a).toArray();
 
-        //TC:O(n+m)
-        //SC:O(n+m)
+        // TC:O(n+m)
+        // SC:O(n+m)
     }
 }

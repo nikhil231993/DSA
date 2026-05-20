@@ -6,7 +6,15 @@ public class LC31NextPermutation {
 
 		int[] nums = new int[] { 1, 5,4,3,2 };
 
-		//Approach 1 : Optimal
+		//Approach 1 : brute
+		//1. Generate all possible permutations recursion Lecture 12 and 13
+		//2. find index of which one is given in question
+		//3. Next index is the answer
+		//TC: O(N! * N) where N! factorial to generate all permutations and N is the length of each permutation
+
+		//No better solution in java
+
+		//Approach 3: Optimal
 		nextPermutation(nums);
 		for (Integer n : nums)
 			System.out.println(n);
@@ -22,6 +30,7 @@ public class LC31NextPermutation {
 				break;
 			}
 		}
+		//O(N)
 		if (idx1<0) {
 			reverse(0, nums.length - 1, nums);
 		} else {
@@ -31,8 +40,9 @@ public class LC31NextPermutation {
 					break;
 				}
 			}
+			//O(N)
 			swap(idx1, idx2, nums);
-			reverse(idx1 + 1, nums.length - 1, nums);
+			reverse(idx1 + 1, nums.length - 1, nums); 	//O(N)
 		}
 
 		//TC:O(3N)

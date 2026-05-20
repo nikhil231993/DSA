@@ -11,7 +11,7 @@ public class LC744SmallestLetterGreaterThanTarget {
         System.out.println(nextGreatestLetterAnotherWay(letters,target));
     }
 
-    public static char nextGreatestLetter(char[] letters, char target) {
+    private static char nextGreatestLetter(char[] letters, char target) {
 
         int low=0, high=letters.length-1;
         char ans=letters[0];
@@ -31,11 +31,9 @@ public class LC744SmallestLetterGreaterThanTarget {
         //SC:O(1)
     }
 
-    public static char nextGreatestLetterAnotherWay(char[] letters, char target) {
+    private static char nextGreatestLetterAnotherWay(char[] letters, char target) {
 
-        int n=letters.length;
-        int low=0;
-        int high=n-1;
+        int n=letters.length, low=0, high=n-1;
         char ch=letters[0];
         while(low<=high){
             int mid=low+(high-low)/2;

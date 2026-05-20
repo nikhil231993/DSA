@@ -36,7 +36,7 @@ public class LC2385AmountOfTimeToInfect {
 //                int flag = 0;
 //                int size = q.size();
 //
-//                for (int i = 0; i < size; i++) {
+//                for (int i = 0; i<size; i++) {
 //                    TreeNode node = q.poll();
 //                    if (node.left != null && visited.get(node.left) == null) {
 //                        flag = 1;

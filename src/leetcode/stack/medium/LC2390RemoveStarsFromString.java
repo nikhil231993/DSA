@@ -18,7 +18,7 @@ public class LC2390RemoveStarsFromString {
         System.out.println(removeStarsUsingTwoPointer(s));
     }
 
-    public static String removeStarsUsingTwoPointer(String s) {
+    private static String removeStarsUsingTwoPointer(String s) {
 
         char[] ch = new char[s.length()];
         int j = 0;
@@ -40,7 +40,7 @@ public class LC2390RemoveStarsFromString {
         return answer.toString();
     }
 
-    public static String removeStarsUsingSB(String s) {
+    private static String removeStarsUsingSB(String s) {
 
         int j = 0;
         StringBuilder answer = new StringBuilder();
@@ -54,7 +54,7 @@ public class LC2390RemoveStarsFromString {
         return answer.toString();
     }
 
-    public static String removeStars(String s) {
+    private static String removeStars(String s) {
 
         Stack<Character> st = new Stack();
         for(int i=0; i< s.length(); i++){

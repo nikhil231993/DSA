@@ -23,8 +23,8 @@ public class LC121BuySellStock1 {
 		}
 		return profit;
 
-		//TC:O(n square)
-		//SC:O(n)
+		// TC:O(n square)
+		// SC:O(n)
 	}
 
 	private static int maxProfit(int[] prices) {

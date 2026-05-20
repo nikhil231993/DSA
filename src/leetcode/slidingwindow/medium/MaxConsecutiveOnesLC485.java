@@ -17,11 +17,12 @@ public class MaxConsecutiveOnesLC485 {
                 count=0;
             else
                 count++;
-            max=Math.max(count,max);
+
+            max=Math.max(count, max);
         }
         return max;
 
-        //SC:O(1)
         //TC:O(n)
+        //SC:O(1)
     }
 }

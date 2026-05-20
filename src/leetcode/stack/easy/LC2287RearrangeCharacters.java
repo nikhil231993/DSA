@@ -9,7 +9,7 @@ public class LC2287RearrangeCharacters {
         System.out.println(rearrangeCharacters(s,target));
     }
 
-    public static int rearrangeCharacters(String s, String target) {
+    private static int rearrangeCharacters(String s, String target) {
 
         int[] freqs=findFreq(s);
         int[] freqt=findFreq(target);
@@ -28,7 +28,7 @@ public class LC2287RearrangeCharacters {
         //SC:O(N1+N2)
     }
 
-    public static int[] findFreq(String s){
+    private static int[] findFreq(String s){
 
         int[] freq=new int[26];
         for(int i=0; i<s.length(); i++){

@@ -8,7 +8,7 @@ public class LC345ReverseVowels {
         System.out.println(reverseVowels(s));
     }
 
-    public static String reverseVowels(String s) {
+    private static String reverseVowels(String s) {
 
         char[] word = s.toCharArray();
         int start = 0, end = s.length() - 1;

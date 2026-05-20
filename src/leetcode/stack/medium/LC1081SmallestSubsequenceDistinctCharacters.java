@@ -10,7 +10,7 @@ public class LC1081SmallestSubsequenceDistinctCharacters {
         System.out.println(smallestSubsequence(s));
     }
 
-    public static String smallestSubsequence(String s) {
+    private static String smallestSubsequence(String s) {
 
         int n=s.length();
         Stack<Integer> st=new Stack();
@@ -41,7 +41,7 @@ public class LC1081SmallestSubsequenceDistinctCharacters {
         }
         return sb.toString();
 
-        // TC:O(n)
-        // SC:O(n+n) + last result string
+        //TC:O(n)
+        //SC:O(n+n) + last result string
     }
 }

@@ -26,11 +26,11 @@ public class LC18FourSum {
 
         List<List<Integer>> result=new ArrayList<>();
         for(int i=0; i<n; i++){
-            if(i>0 && nums[i]==nums[i-1])
-                continue;
+            if(i>0 && nums[i]==nums[i-1]) continue;
+
                 for(int j=i+1; j<n; j++){
-                    if(j>i+1 && nums[j]==nums[j-1])
-                        continue;
+                    if(j>i+1 && nums[j]==nums[j-1]) continue;
+
                     int k=j+1;
                     int l=n-1;
 
@@ -68,7 +68,6 @@ public class LC18FourSum {
 
         Set<List<Integer>> s=new HashSet<>();
 
-        List<List<Integer>> list=new ArrayList<>();
         int n=nums.length;
         for(int i=0; i<n; i++){
             for(int j=i+1; j<n; j++){
@@ -85,10 +84,7 @@ public class LC18FourSum {
                 }
             }
         }
-
-        for(List<Integer> listNo:s)
-            list.add(listNo);
-        return list;
+        return new ArrayList<>(s);
     }
 
     private static List<List<Integer>> brute(int[] nums, int target) {

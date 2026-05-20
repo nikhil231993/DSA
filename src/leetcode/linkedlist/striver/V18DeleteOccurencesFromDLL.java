@@ -63,7 +63,7 @@ public class V18DeleteOccurencesFromDLL {
     }
      */
 
-    //Approach 3
+    //Approach 3 Best Code
 
     /**
     public static Node deleteAllOccurrences(Node head, int k) {
@@ -76,7 +76,7 @@ public class V18DeleteOccurencesFromDLL {
 
         Node temp=head;
 
-        while(temp!=null){
+        while(temp != null){
             if(temp.data!=k)
                 temp=temp.next;
             else{

@@ -12,7 +12,7 @@ public class LC71SimplifyPath {
 		System.out.println(simplifyPath(path));
 	}
 
-	private static String simplifyPath(String path) {
+	private static String simplifyPathUsingStack(String path) {
 
 		Stack<String> st=new Stack();
 	
@@ -44,5 +44,28 @@ public class LC71SimplifyPath {
 
 		//TC:O(n)
 		//SC:O(n)
+	}
+
+	private static String simplifyPath(String path) {
+
+		String[] s=path.split("/");
+		int n=s.length;
+		Stack<String> st=new Stack();
+
+		for(int i=0;i<n;i++){
+			if(s[i].equals(".") || s[i].equals(""))
+				continue;
+			else if(s[i].equals("..")){
+				if(!st.isEmpty())
+					st.pop();
+			}else
+				st.push(s[i]);
+		}
+
+		StringBuilder sb=new StringBuilder();
+		for(String str: st){
+			sb.append("/").append(str);
+		}
+		return sb.length()==0?"/":sb.toString();
 	}
 }

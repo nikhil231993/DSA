@@ -52,7 +52,7 @@ public class LC56MergeIntervals {
 		List<int[]> res = new ArrayList<>();
 		Arrays.sort(twoDim, (a, b) -> a[0] - b[0]);// nlog(n)
 
-		int start=twoDim[0][0];
+		int start = twoDim[0][0];
 		int end = twoDim[0][1];
 
 		for (int[] row : twoDim) {

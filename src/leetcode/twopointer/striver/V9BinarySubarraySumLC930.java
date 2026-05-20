@@ -18,7 +18,7 @@ public class V9BinarySubarraySumLC930 {
         System.out.println(numSubarraysWithSum(nums, goal));
 
         //we cannot use "if" instead of "while" as in counting we will miss some subarrays. Take an example and try out
-        //When we want to find the longest length we can use as its to find max length
+        //When we want to find the longest length we can use 'if' as its to find max length
     }
 
     private static int numSubarraysWithSum(int[] nums, int goal) {
@@ -37,6 +37,7 @@ public class V9BinarySubarraySumLC930 {
             return 0;
 
         int right=0, left=0, count=0,n=nums.length, sum=0;
+
         while(right<n){
             sum+=nums[right];
 
@@ -51,12 +52,10 @@ public class V9BinarySubarraySumLC930 {
         return count;
     }
 
-    public static int numSubarraysWithSumUsingMap(int[] nums, int goal) {
+    private static int numSubarraysWithSumUsingMap(int[] nums, int goal) {
 
-        int count=0;
-
+        int count=0, n=nums.length, sum=0;
         HashMap<Integer, Integer> map=new HashMap<>();
-        int n=nums.length, sum=0;
 
         for(int i=0; i<n; i++){
             sum+=nums[i];

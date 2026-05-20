@@ -16,14 +16,13 @@ public class V36LC297SerializeAndDeserialize {
         while(!q.isEmpty()){
 
             Node node=q.poll();
-
-            if(node==null){
-                sb.append("n ");
-                continue;
+            if(node==null)
+                sb.append("# ");
+            else{
+                sb.append(node.data+" ");
+                q.offer(node.left);
+                q.offer(node.right);
             }
-            sb.append(node.data +" ");
-            q.offer(node.left);
-            q.offer(node.right);
         }
         return sb.toString();
 

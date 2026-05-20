@@ -16,26 +16,22 @@ public class LC28FindFirstOccurrenceInAString {
 		//Approach 3: Need to learn KMP algorithm https://www.youtube.com/watch?v=JoF0Z7nVSrA&ab_channel=NeetCode
 	}
 
-	public static int strStrBrute(String haystack, String needle) {
+	private static int strStrBrute(String haystack, String needle) {
 
 		return haystack.indexOf(needle);
 	}
 
 	private static int findOccurrence(String haystack, String needle) {
 
-		int h = haystack.length(), n = needle.length();
+		int n=haystack.length(), m=needle.length();
 
-		for (int i = 0; i < h - n + 1; i++) {
-
-			int k = i;
-			if (haystack.charAt(k) == needle.charAt(0)) {
-				int j = 0;
-				while (j < n && haystack.charAt(k) == needle.charAt(j)) {
-					j++;
-					k++;
-				}
-				if (j == n)
-					return i;
+		for(int i=0; i<n; i++){
+			int k=i;
+			if(haystack.charAt(i) == needle.charAt(0)){
+				int j=0;
+				while(k<n && j<m && haystack.charAt(k++)==needle.charAt(j++))
+					if(j==m)
+						return i;
 			}
 		}
 		return -1;

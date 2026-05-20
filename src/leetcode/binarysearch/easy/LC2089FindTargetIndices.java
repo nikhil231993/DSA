@@ -16,9 +16,30 @@ public class LC2089FindTargetIndices {
 
 		// Approach 2: Better
 		System.out.println(targetIndicesOptimised(num, target));
+
+		//Approach 3: Best linear time
+		System.out.println(targetIndicesSelf(num, target));
     }
 
-    public static List<Integer> targetIndices(int[] nums, int target) {
+	private static List<Integer> targetIndicesSelf(int[] nums, int target) {
+
+		int smallerCount=0, equalCount=0, n=nums.length;
+		for(int i=0;i<n;i++){
+			if(nums[i]==target)
+				equalCount++;
+			else if(nums[i]<target)
+				smallerCount++;
+		}
+
+		if(equalCount==0)
+			return new ArrayList<>();
+		List<Integer> list=new ArrayList<>();
+		for(int i=0;i<equalCount;i++)
+			list.add(smallerCount++);
+		return list;
+	}
+
+	private static List<Integer> targetIndices(int[] nums, int target) {
 
         List<Integer> list=new ArrayList();
         Arrays.sort(nums);
@@ -29,7 +50,7 @@ public class LC2089FindTargetIndices {
         return list;
     }
 
-	public static List<Integer> targetIndicesOptimised(int[] nums, int target) {
+	private static List<Integer> targetIndicesOptimised(int[] nums, int target) {
 
 		List<Integer> list = new ArrayList();
 		Arrays.sort(nums);

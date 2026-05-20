@@ -28,8 +28,7 @@ public class V28DesignBrowserHistoryLC1472 {
             curr.next=n;
             n.prev=curr;
             curr=n;
-
-        TC:O(1)
+            TC:O(1)
         }
 
         public String back(int steps) {
@@ -41,8 +40,7 @@ public class V28DesignBrowserHistoryLC1472 {
                 steps--;
             }
             return curr.data;
-
-        TC:O(steps)
+            TC:O(steps)
         }
 
         public String forward(int steps) {
@@ -54,7 +52,7 @@ public class V28DesignBrowserHistoryLC1472 {
                 steps--;
             }
             return curr.data;
-        TC:O(steps)
+            TC:O(steps)
         }
     }
 

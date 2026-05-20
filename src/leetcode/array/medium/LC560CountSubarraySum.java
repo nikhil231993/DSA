@@ -8,7 +8,8 @@ public class LC560CountSubarraySum {
 	public static void main(String[] args) {
 
 		int[] nums = new int[] { 4, 5, 1, 3, 2, 3, 4 };
-		int k = 9;
+		nums=new int[] { 1, 1, 1};
+		int k = 2;
 
 		//Approach 1: 3 loops
 
@@ -38,7 +39,7 @@ public class LC560CountSubarraySum {
 		 //SC:O(1)
 	}
 
-	public static int subarraySumOptimal(int[] nums, int k) {
+	private static int subarraySumOptimal(int[] nums, int k) {
 
 		int sum = 0;
 		int count = 0;

@@ -17,8 +17,7 @@ public class LC921MinimumAddToMakeParenthesesValid {
 
     private static int optimal(String s) {
 
-        int openBrackets = 0;
-        int minAddsRequired = 0;
+        int openBrackets = 0, minAddsRequired = 0;
 
         for (char c : s.toCharArray()) {
             if (c == '(') {
@@ -36,9 +35,11 @@ public class LC921MinimumAddToMakeParenthesesValid {
 
         // Add the remaining open brackets as closing brackets would be required.
         return minAddsRequired + openBrackets;
+        //TC:O(N)
+        //SC:O(1)
     }
 
-    public static int brute(String s){
+    private static int brute(String s){
 
         int n=s.length();
 
@@ -55,5 +56,8 @@ public class LC921MinimumAddToMakeParenthesesValid {
             }
         }
         return st.size();
+
+        //TC:O(n)
+        //SC:O(N)
     }
 }

@@ -1,8 +1,6 @@
 package leetcode.stack.easy;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Stack;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class PreviousSmaller {
@@ -67,5 +65,26 @@ public class PreviousSmaller {
 
 		//TC:O(N + N)
 		//SC:O(N) worst case if it is an decreasing array
+	}
+
+
+	private static ArrayList<Integer> prevSmaller(int[] arr) {
+
+		int n=arr.length;
+
+		Stack<Integer> st=new Stack<>();
+		int i=n-1;
+		ArrayList<Integer> list=new ArrayList<>(Collections.nCopies(n, -1));
+		while(i>=0){
+			while(!st.isEmpty() && arr[st.peek()]>arr[i]){
+				list.set(st.pop(), arr[i]);
+			}
+			st.push(i);
+			i--;
+		}
+
+		while(!st.isEmpty())
+			list.set(st.pop(), -1);
+		return list;
 	}
 }

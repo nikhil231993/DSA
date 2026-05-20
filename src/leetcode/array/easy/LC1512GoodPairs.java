@@ -37,7 +37,7 @@ public class LC1512GoodPairs {
         //SC:O(n) worst case
     }
 
-    public static int numIdenticalPairs(int[] nums) {
+    private static int numIdenticalPairs(int[] nums) {
         
         int count=0;
         for(int i=0; i<nums.length-1; i++){
@@ -53,7 +53,7 @@ public class LC1512GoodPairs {
         //SC:O(n) if all elements are distinct
     }
 
-    public static int numIdenticalPairsOptimal(int[] A) {
+    private static int numIdenticalPairsOptimal(int[] A) {
 
         int res = 0;
         int[] count = new int[101];

@@ -10,7 +10,7 @@ public class LC168ExcelSheetColumnTitle {
 		System.out.println(convertToTitle(columnNumber));
 	}
 
-	public static String convertToTitle(int columnNumber) {
+	private static String convertToTitle(int columnNumber) {
 
 		StringBuilder result = new StringBuilder();
 		while (columnNumber != 0) {

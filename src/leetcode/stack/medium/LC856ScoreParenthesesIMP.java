@@ -12,7 +12,7 @@ public class LC856ScoreParenthesesIMP {
         System.out.println(scoreOfParentheses(s));
     }
 
-    public static int scoreOfParentheses(String s) {
+    private static int scoreOfParentheses(String s) {
 
         Stack<String> st=new Stack();
         int n=s.length();
@@ -43,7 +43,7 @@ public class LC856ScoreParenthesesIMP {
         }
         return sum;
 
-        // TC:O(n)
-        // SC:O(n)
+        //TC:O(n)
+        //SC:O(n)
     }
 }

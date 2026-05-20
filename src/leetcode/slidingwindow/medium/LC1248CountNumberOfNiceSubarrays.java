@@ -24,7 +24,7 @@ public class LC1248CountNumberOfNiceSubarrays {
         System.out.println(numSubarraysWithSum(nums, goal));
 
         //we cannot use "if" instead of "while" as in counting we will miss some subarrays. Take an example and try out
-        //When we want to find longest length we can use as its to find max length
+        //When we want to find longest length we can use 'if' as its to find max length
     }
 
     private static int numSubarraysWithSum(int[] nums, int goal) {
@@ -57,7 +57,7 @@ public class LC1248CountNumberOfNiceSubarrays {
         return count;
     }
 
-    public static int numSubarraysWithSumUsingMap(int[] nums, int goal) {
+    private static int numSubarraysWithSumUsingMap(int[] nums, int goal) {
 
         HashMap<Integer, Integer> map=new HashMap<>();
         int n=nums.length, sum=0, count=0;

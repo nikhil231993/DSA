@@ -33,7 +33,7 @@ public class V11AddOneToLL {
     private static Node secondApproach(Node head) {
 
         int carry=helper(head);
-        if(carry==1){
+        if(carry == 1){
             Node n= new Node(1);
             n.next=head;
             return n;
@@ -159,5 +159,4 @@ public class V11AddOneToLL {
         return newHead;
     }
     */
-
 }

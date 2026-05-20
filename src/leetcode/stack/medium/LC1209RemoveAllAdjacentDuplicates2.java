@@ -25,9 +25,10 @@ public class LC1209RemoveAllAdjacentDuplicates2 {
 		int k = 2;
 		System.out.println(removeDuplicates(s, k));
 		System.out.println(removeDuplicatesSelf(s, k));
+		System.out.println(removeDuplicatesReadable(s, k));
 	}
 
-	public static String removeDuplicates(String s, int k) {
+	private static String removeDuplicates(String s, int k) {
 
 		Stack<Node> stack = new Stack<>();
 
@@ -61,7 +62,7 @@ public class LC1209RemoveAllAdjacentDuplicates2 {
 		//SC:O(n)
 	}
 
-	public static String removeDuplicatesSelf(String s, int k) {
+	private static String removeDuplicatesSelf(String s, int k) {
 
 		Stack<Node> st=new Stack();
 		int n=s.length();
@@ -88,5 +89,35 @@ public class LC1209RemoveAllAdjacentDuplicates2 {
 			}
 		}
 		return str;
+	}
+
+	private static String removeDuplicatesReadable(String s, int k) {
+		Stack<Node> st=new Stack<>();
+		int n=s.length();
+
+		for(int i=0; i<n; i++){
+			char c=s.charAt(i);
+			if(st.isEmpty() || st.peek().key!=c)
+				st.push(new Node(c, 1));
+			else{
+				if(!st.isEmpty() && st.peek().key==c){
+					int num=st.peek().value;
+					st.pop();
+					st.push(new Node(c, num+1));
+				}
+			}
+			if(st.peek().value==k)
+				st.pop();
+		}
+
+		StringBuilder sb=new StringBuilder();
+		while(!st.isEmpty()){
+			Node node=st.pop();
+			char c=node.key;
+			int val=node.value;
+			for(int i=0; i<val; i++)
+				sb.append(c);
+		}
+		return sb.reverse().toString();
 	}
 }

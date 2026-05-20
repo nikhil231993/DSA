@@ -12,7 +12,7 @@ public class LC763PartitionLabels {
         System.out.println(partitionLabels(s));
     }
 
-    public static List<Integer> partitionLabels(String s) {
+    private static List<Integer> partitionLabels(String s) {
 
         //Step 1: Create a map with last index of each character
         //Step 2: use max indicator to know the last occurrence of a particular letter

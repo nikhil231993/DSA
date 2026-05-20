@@ -23,8 +23,8 @@ public class G9LC733FloodFill {
 
         System.out.println("Using DFS: ");
 
-        for(int i=0;i<n;i++){
-            for(int j=0;j<m;j++){
+        for(int i=0; i<n; i++){
+            for(int j=0; j<m; j++){
                 System.out.print(ans[i][j]);
             }
             System.out.println();
@@ -77,7 +77,7 @@ public class G9LC733FloodFill {
                 int new_row = first + xAxis[i];
                 int new_col = second + yAxis[i];
 
-            if(new_col>=0 && new_col<m && new_row>=0 && new_row<n && image[new_row][new_col]==oldColor && ans[new_row][new_col]!=newColor) {
+            if(new_col>=0 && new_col<m && new_row>=0 && new_row<n && image[new_row][new_col]==oldColor && ans[new_row][new_col]!=newColor) {// ans[new_row][new_col]!=newColor not mandatory condition only improves performance
                 ans[new_row][new_col]=newColor;
                 q.offer(new Pair(new_row,new_col));
                 }
@@ -96,7 +96,7 @@ public class G9LC733FloodFill {
             int new_row=sr+xAxis[i];
             int new_col=sc+yAxis[i];
 
-        if(new_col>=0 && new_col<m && new_row>=0 && new_row<n && image[new_row][new_col]==oldColor && ans[new_row][new_col]!=newColor){
+        if(new_col>=0 && new_col<m && new_row>=0 && new_row<n && image[new_row][new_col]==oldColor && ans[new_row][new_col]!=newColor){ //ans[new_row][new_col]!=newColor not a mandatory condition only improves performance
             dfsTraversal(image,ans,n,m,oldColor,new_row,new_col,newColor,xAxis,yAxis);
             }
         }

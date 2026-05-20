@@ -38,7 +38,7 @@ public class G15LC1020NumberOfEnclaves {
                 dfs(nr-1,c,visited,grid);
         }
 
-        for(int r=0;r<nr;r++){
+        for(int r=0; r<nr; r++){
             if(visited[r][0]==0 && grid[r][0]==1)
                 dfs(r,0,visited,grid);
             if(visited[nc-1][0]==0 && grid[nc-1][0]==1)

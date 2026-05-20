@@ -24,7 +24,6 @@ public class LC1290BinaryNumberToInteger {
      */
 
     //Approach 2:
-
     /**
     public int getDecimalValue(ListNode head) {
         ListNode temp=head;

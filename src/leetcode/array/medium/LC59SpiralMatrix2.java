@@ -11,10 +11,10 @@ public class LC59SpiralMatrix2 {
 				System.out.println(col);
 	}
 
-	public static int[][] spiralOrder(int n) {
+	private static int[][] spiralOrder(int n) {
 
 		int[][] matrix = new int[n][n];
-		int top = 0, left = 0, right = matrix[0].length - 1, bottom = matrix.length - 1;
+		int top = 0, left = 0, right = n - 1, bottom = n - 1;
 		
 		int value=0;
 
@@ -29,13 +29,13 @@ public class LC59SpiralMatrix2 {
 			}
 			right--;
 
-			if (top <= bottom) {
+			if (top <= bottom) { // we don't need this if it is n square matrix
 				for (int i = right; i >= left; i--) {
 					matrix[bottom][i] = ++value;
 				}
 			}
 			bottom--;
-			if (left <= right) {
+			if (left <= right) { // we don't need this if it is n square matrix
 				for (int i = bottom; i >= top; i--) {
 					matrix[i][left] = ++value;
 				}

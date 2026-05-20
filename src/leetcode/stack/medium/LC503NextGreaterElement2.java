@@ -23,7 +23,7 @@ public class LC503NextGreaterElement2 {
 			System.out.println(n);
 	}
 
-	public static int[] nextGreaterElements(int[] nums) {
+	private static int[] nextGreaterElements(int[] nums) {
 
 		Stack<Integer> st = new Stack();
 
@@ -43,7 +43,7 @@ public class LC503NextGreaterElement2 {
 		//SC:O(2 * n)
 	}
 
-	public static int[] nextGreaterElementsSelf(int[] nums) {
+	private static int[] nextGreaterElementsSelf(int[] nums) {
 
 		Stack<Integer> st=new Stack();
 		int n=nums.length;

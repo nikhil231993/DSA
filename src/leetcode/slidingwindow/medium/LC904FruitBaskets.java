@@ -20,13 +20,9 @@ public class LC904FruitBaskets {
         System.out.println(bestFruit(fruits));
     }
 
-    public static int bestFruit(int[] fruits) {
+    private static int bestFruit(int[] fruits) {
 
-        Integer maxLen=Integer.MIN_VALUE;
-
-        int n= fruits.length;
-
-        int right=0, left=0;
+        int maxLen=Integer.MIN_VALUE, n= fruits.length, right=0, left=0;
         HashMap<Integer, Integer> map=new HashMap<>();
 
         while(right< n){
@@ -49,11 +45,9 @@ public class LC904FruitBaskets {
         //SC:O(2) as only two baskets are needed
     }
 
-    public static int betterFruit(int[] fruits) {
+    private static int betterFruit(int[] fruits) {
 
-        Integer maxLen=Integer.MIN_VALUE;
-
-        int n= fruits.length, right=0, left=0;
+        int maxLen=Integer.MIN_VALUE, n= fruits.length, right=0, left=0;
         HashMap<Integer, Integer> map=new HashMap<>();
 
         while(right < n){
@@ -77,9 +71,7 @@ public class LC904FruitBaskets {
 
     private static int bruteFruit(int[] fruits) {
 
-        Integer maxLen=Integer.MIN_VALUE;
-
-        int n= fruits.length;
+        int maxLen = Integer.MIN_VALUE, n= fruits.length;
 
         for(int i=0; i<n; i++){
             HashSet<Integer> set=new HashSet<>();

@@ -54,7 +54,7 @@ public class LC231PowerOfTwo {
         //SC:O(1)
     }
 
-    public static boolean isPowerOfTwo(int n) {
+    private static boolean isPowerOfTwo(int n) {
 
         if(n<=0)
             return false;

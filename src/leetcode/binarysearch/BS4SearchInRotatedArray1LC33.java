@@ -21,7 +21,7 @@ public class BS4SearchInRotatedArray1LC33 {
             if(nums[mid]==target)
                 return mid;
 
-            if(nums[low]<=nums[mid]){
+            if(nums[low] <= nums[mid]){
                 if(target>=nums[low] && target<=nums[mid]){
                     high=mid-1;
                 }else{

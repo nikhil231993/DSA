@@ -2,6 +2,7 @@ package leetcode.twopointer.medium;
 
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.Map;
 
 public class LC1679MaxNumberOfKSumPairs {
 
@@ -17,29 +18,27 @@ public class LC1679MaxNumberOfKSumPairs {
         System.out.println(maxOperationsUsingMap(nums, k));
     }
 
-    public static int maxOperationsUsingMap(int[] nums, int k) {
+    private static int maxOperationsUsingMap(int[] nums, int k) {
 
         int n=nums.length, count=0;
-        HashMap<Integer, Integer> map=new HashMap<>();
-
+        Map<Integer, Integer> map=new HashMap();
         for(int i=0; i<n; i++){
             if(map.containsKey(k-nums[i])){
+                map.put(k-nums[i], map.get(k-nums[i])-1);
                 count++;
-                if(map.get(k-nums[i])==1)
+                if(map.get(k-nums[i])==0)
                     map.remove(k-nums[i]);
-                else
-                    map.put(k-nums[i], map.get(k-nums[i])-1);
-            }else{
-                map.put(nums[i], map.getOrDefault(nums[i], 0)+1);
             }
+            else
+                map.put(nums[i], map.getOrDefault(nums[i],0)+1);
         }
         return count;
 
-        // TC:O(n)
-        // SC:O(n)
+        //TC:O(n)
+        //SC:O(n)
     }
 
-    public static int maxOperations(int[] nums, int k) {
+    private static int maxOperations(int[] nums, int k) {
 
         Arrays.sort(nums);
         int left=0, right=nums.length-1, count=0;

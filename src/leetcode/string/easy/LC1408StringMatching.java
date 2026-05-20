@@ -12,12 +12,12 @@ public class LC1408StringMatching {
         System.out.println(stringMatching(words));
     }
 
-    public static List<String> stringMatching(String[] words) {
+    private static List<String> stringMatching(String[] words) {
 
         HashSet<String> set=new HashSet<>();
 
-        for(int i=0;i<words.length;i++){
-            for(int j=0;j<words.length;j++){
+        for(int i=0; i<words.length; i++){
+            for(int j=0; j<words.length; j++){
                 if(i!=j && words[i].contains(words[j])){
                     set.add(words[j]);
                 }
@@ -25,7 +25,7 @@ public class LC1408StringMatching {
         }
         return new ArrayList<>(set);
 
-        //TC: O(n square) + O(n log n)
+        //TC: O(n square * L square) (checking substring of length L inside string of length L)
         //SC: O(n+n) for set and list
     }
 }

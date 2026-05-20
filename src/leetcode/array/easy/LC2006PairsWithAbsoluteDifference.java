@@ -53,11 +53,11 @@ public class LC2006PairsWithAbsoluteDifference {
         //SC:O(1)
     }
 
-    public static int countKDifference(int[] nums, int k) {
+    private static int countKDifference(int[] nums, int k) {
 
         int count=0;
         HashMap<Integer, Integer> map=new HashMap<>();
-        for(int i=0;i<nums.length;i++){
+        for(int i=0; i<nums.length; i++){
 
             if(map.containsKey(nums[i]-k))
                 count+=map.get(nums[i]-k);

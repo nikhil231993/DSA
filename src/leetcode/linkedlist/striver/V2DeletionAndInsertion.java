@@ -144,10 +144,11 @@ public class V2DeletionAndInsertion {
     private static Node insertAtParticularPosition(Node head, int value, int k) {
 
         if(head==null){
-            if(k==1){
+            if(k==1)
                 return new Node(value);
-            }else{
+            else  {
                 System.out.println("Not possible this combination");
+                return null;
             }
         }
         if(k==1){
@@ -259,8 +260,7 @@ public class V2DeletionAndInsertion {
 
     private static Node deleteHead(Node head) {
 
-        if(head==null)
-            return null;
+        if(head==null) return null;
         Node temp=head; //This is not needed in java as in C++ we need to delete the temp for clearing the memory.
                         //In java garbage collector does it by itself
         head=head.next;

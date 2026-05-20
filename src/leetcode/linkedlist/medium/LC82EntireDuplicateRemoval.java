@@ -23,7 +23,7 @@ public class LC82EntireDuplicateRemoval {
         }
         return dummy.next;
     }
-     TC:O(n)
-     SC:O(1)
+      TC:O(n)
+      SC:O(1)
      */
 }

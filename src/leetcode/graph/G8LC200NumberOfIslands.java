@@ -60,7 +60,7 @@ public class G8LC200NumberOfIslands {
         return count;
     }
 
-    private void dfs(int row, int col, int[] xAxis, int[] yAxis, char[][] grid, int[][] visited,int n,int m) {
+    private void dfs(int row, int col, int[] xAxis, int[] yAxis, char[][] grid, int[][] visited, int n, int m) {
 
         visited[row][col]=1;
 
@@ -75,7 +75,7 @@ public class G8LC200NumberOfIslands {
 
     private int recursion(char[][] grid) {
         
-        int n= grid.length;;
+        int n=grid.length;;
         int m=grid[0].length;
 
         if(n==0)
@@ -107,7 +107,7 @@ public class G8LC200NumberOfIslands {
         //SC:O(n*m) stack has all the elements
     }
 
-    public int numIslandsUsingBfs(char[][] grid) {
+    private int numIslandsUsingBfs(char[][] grid) {
 
         int n=grid.length;
         int m=grid[0].length;
@@ -125,7 +125,7 @@ public class G8LC200NumberOfIslands {
         return count;
     }
 
-    public void bfs(char[][] grid, int[][] visited, int n, int m,int row,int col){
+    private void bfs(char[][] grid, int[][] visited, int n, int m,int row,int col){
 
         visited[row][col]=1;
         Queue<Pair> q=new LinkedList();

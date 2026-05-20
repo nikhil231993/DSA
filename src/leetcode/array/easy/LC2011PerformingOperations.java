@@ -58,7 +58,7 @@ public class LC2011PerformingOperations {
     public static int finalValueAfterOperationsOptimal(String[] operations) {
 
         int x = 0;
-        for(String str : operations) x += (44 - str.charAt(1));
+        for( String str : operations ) x += (44 - str.charAt(1));
         return x;
 
         //TC:O(n)

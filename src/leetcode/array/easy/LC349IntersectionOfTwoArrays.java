@@ -57,6 +57,8 @@ public class LC349IntersectionOfTwoArrays {
 		}
 
 		return arrayList.stream().mapToInt(a -> a).toArray();
+        //TC:O(n log n) + O(m log m) for sorting + O(n*m) for nested loop
+        //SC:O(n+m) for visited array and arrayList
 	}
 
 	private static int[] uniqueIntersection(int n, int m, int[] nums1, int[] nums2, List<Integer> r) {

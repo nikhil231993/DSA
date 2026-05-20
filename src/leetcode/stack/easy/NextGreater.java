@@ -20,7 +20,7 @@ public class NextGreater {
 
     private static void findNextGreater(int[] nums, Stack<Integer> st) {
 
-        for(int i=0; i<nums.length; i++){
+        for(int i=0; i<nums.length; i++){ // we can use while loop also
             while (!st.isEmpty() && nums[st.peek()] < nums[i]){
                 int index=st.pop();
                 nums[index]=nums[i];

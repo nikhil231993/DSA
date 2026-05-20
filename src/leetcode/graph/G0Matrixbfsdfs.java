@@ -8,26 +8,26 @@ public class G0Matrixbfsdfs {
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the no of Vertices: ");
-        int n = scanner.nextInt();
+        int V = scanner.nextInt();
         System.out.println("Enter the no of Edges: ");
-        int m = scanner.nextInt();
+        int E = scanner.nextInt();
 
         System.out.println("***********************************************");
-        int[][] matrix = new int[n+1][n+1];
-        createMatrix(matrix,m,n, scanner);
+        int[][] matrix = new int[V+1][V+1];
+        createMatrix(matrix, E, V, scanner);
 
         System.out.println("***********************************************");
         List<List<Integer>> adjList = new ArrayList<>();
-        convertMatrixToList(matrix, adjList, n, m);
+        convertMatrixToList(matrix, adjList, V, E);
 
         System.out.println("***********************************************");
         List<Integer> bfs = new ArrayList<>();
         System.out.println("BFS Traversal in a Matrix: ");
 
-        int[] visited = new int[n+1];
-        for (int i =1; i<=n; i++) {
+        int[] visited = new int[V+1];
+        for (int i =1; i<=V; i++) {
             if (visited[i] == 0) {
-                bfs(matrix, bfs, i, visited,n);
+                bfs(matrix, bfs, i, visited, V);
             }
         }
         System.out.println(bfs);
@@ -37,10 +37,10 @@ public class G0Matrixbfsdfs {
         List<Integer> dfs = new ArrayList<>();
         System.out.println("DFS Traversal in a Matrix: ");
         //N
-        for (int i =1;i<=n;i++) {
+        for (int i =1;i<=V;i++) {
             if (visited[i] == 0) {
                 //N+2E
-                dfs(matrix, dfs, i, visited,n);
+                dfs(matrix, dfs, i, visited,V);
             }
         }
         System.out.println(dfs);
@@ -50,7 +50,7 @@ public class G0Matrixbfsdfs {
 
         visited[node] = 1;
         dfs.add(node);
-        for (int i = 1;i<=V;i++) {
+        for (int i = 1; i<=V; i++) {
             if (matrix[node][i] == 1 && visited[i] == 0) {
                 dfs(matrix, dfs , i, visited, V);
             }
@@ -69,7 +69,7 @@ public class G0Matrixbfsdfs {
         while (!queue.isEmpty()) {
             int curNode = queue.poll();
             bfs.add(curNode);
-            for (int i =1;i<=V; i++) {
+            for (int i =1; i<=V; i++) {
                 if (matrix[curNode][i] == 1 && visited[i] == 0) {
                     visited[i] = 1;
                     queue.add(i);
@@ -82,14 +82,14 @@ public class G0Matrixbfsdfs {
         //SC:O(N) visited array + O(N) result array
     }
 
-    private static void convertMatrixToList(int[][] matrix, List<List<Integer>> adjList, int vertices, int m) {
+    private static void convertMatrixToList(int[][] matrix, List<List<Integer>> adjList, int V, int m) {
 
-        for (int i =0;i<=vertices;i++) {
+        for (int i =0;i<=V;i++) {
             adjList.add(new ArrayList<>());
         }
 
-        for (int i = 1; i<=vertices; i++) {
-            for (int j = 1; j<=vertices; j++) {
+        for (int i = 1; i<=V; i++) {
+            for (int j = 1; j<=V; j++) {
                 if (matrix[i][j] == 1 && i != j) {
                     adjList.get(i).add(j);
                     //adjList.get(j).add(i);
@@ -103,10 +103,10 @@ public class G0Matrixbfsdfs {
         }
     }
 
-    private static void createMatrix(int[][] matrix, int m, int n, Scanner scanner) {
+    private static void createMatrix(int[][] matrix, int E, int V, Scanner scanner) {
         
         System.out.println("Enter Edge values: ");
-        for (int i=1; i<=m ; i++) {
+        for (int i=1; i<=E ; i++) {
             int u = scanner.nextInt();
             int v = scanner.nextInt();
             matrix[u][v] = 1;
@@ -117,8 +117,8 @@ public class G0Matrixbfsdfs {
         //TC:O(m) as we pass through the actual edges only and all others are by default 0
 
         System.out.println("Print Matrix: ");
-        for (int i=0; i<=n; i++) {
-            for (int j=0; j<=n; j++) {
+        for (int i=0; i<=V; i++) {
+            for (int j=0; j<=V; j++) {
                 System.out.print(matrix[i][j] + " ");
             }
             System.out.println();

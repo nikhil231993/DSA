@@ -1,6 +1,7 @@
 package leetcode.slidingwindow.medium;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class naukriCountWithKDifferentCharacters {
 
@@ -9,12 +10,12 @@ public class naukriCountWithKDifferentCharacters {
         String str="aacfssa";
         int k=3;
         int n=str.length();
-        System.out.println(func(str, k, n)- func(str, k-1, n));
+        System.out.println(count(str, k, n)- count(str, k-1, n));
     }
 
-    public static int func(String s, int k, int n){
+    private static int count(String s, int k, int n){
 
-        HashMap<Character, Integer> map=new HashMap<>();
+        Map<Character, Integer> map=new HashMap<>();
 
         int r=0, l=0, count=0;
         while(r<n){

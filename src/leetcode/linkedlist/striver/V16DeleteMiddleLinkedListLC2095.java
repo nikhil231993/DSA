@@ -38,10 +38,11 @@ public class V16DeleteMiddleLinkedListLC2095 {
      ListNode slow=head;
      ListNode fast=head;
      ListNode prev=null;
+
      while(fast!=null && fast.next!=null){
-     prev=slow;
-     slow=slow.next;
-     fast=fast.next.next;
+        prev=slow;
+        slow=slow.next;
+        fast=fast.next.next;
      }
      prev.next=prev.next.next;
      return head;

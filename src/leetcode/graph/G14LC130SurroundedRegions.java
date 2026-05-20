@@ -22,7 +22,7 @@ public class G14LC130SurroundedRegions {
         }
     }
 
-    public static void solve(char[][] board) {
+    private static void solve(char[][] board) {
 
         int n=board.length;
         int m=board[0].length;
@@ -66,7 +66,7 @@ public class G14LC130SurroundedRegions {
         }
     }
 
-   public static void dfs(int row, int col,int vis[][],
+   private static void dfs(int row, int col,int vis[][],
                     char mat[][], int delrow[], int delcol[]) {
 
         vis[row][col] = 1;
@@ -74,7 +74,7 @@ public class G14LC130SurroundedRegions {
         int m = mat[0].length;
 
         // check for top, right, bottom, left
-        for(int i = 0;i<4;i++) {
+        for(int i=0; i<4; i++) {
             int nrow = row + delrow[i];
             int ncol = col + delcol[i];
             // check for valid coordinates and unvisited Os

@@ -13,11 +13,11 @@ public class LC232Approach2QueueUsingStackAmortized {
     public LC232Approach2QueueUsingStackAmortized() {
     }
 
-    public void push(int x) {
+    private void push(int x) {
         input.push(x);
     }
 
-    public int pop() {
+    private int pop() {
 
         if(!output.isEmpty())
             return output.pop();
@@ -29,7 +29,7 @@ public class LC232Approach2QueueUsingStackAmortized {
         }
     }
 
-    public int peek() {
+    private int peek() {
 
         if(!output.isEmpty())
             return output.peek();
@@ -41,7 +41,7 @@ public class LC232Approach2QueueUsingStackAmortized {
         }
     }
 
-    public boolean empty() {
+    private boolean empty() {
         return output.isEmpty() && input.isEmpty();
     }
 

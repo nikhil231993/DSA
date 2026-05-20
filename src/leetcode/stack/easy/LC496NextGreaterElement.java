@@ -17,7 +17,7 @@ public class LC496NextGreaterElement {
 			System.out.println(x);
 	}
 
-	public static int[] nextGreaterElement(int[] nums1, int[] nums2) {
+	private static int[] nextGreaterElement(int[] nums1, int[] nums2) {
 
 		Map<Integer, Integer> map = new HashMap<>();
 		Stack<Integer> st = new Stack<>();

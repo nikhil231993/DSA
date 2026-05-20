@@ -10,7 +10,7 @@ public class LC149MaxPointsInLine {
         System.out.println(maxPoints(points));
     }
 
-    public static int maxPoints(int[][] points) {
+    private static int maxPoints(int[][] points) {
 
         double slope=0.0;
         int max=0;

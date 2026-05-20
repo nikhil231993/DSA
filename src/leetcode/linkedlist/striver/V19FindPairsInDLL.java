@@ -47,7 +47,7 @@ public class V19FindPairsInDLL {
             else
                 start=start.next;
         }
-        //TC:O(2N)
-        //SC:O(1)+ space for answers
+        //TC: O(2N)
+        //SC: O(1)+ space for answers
     }
 }

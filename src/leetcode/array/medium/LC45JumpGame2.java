@@ -10,20 +10,33 @@ public class  LC45JumpGame2 {
 
 	private static int jumpGame2(int[] nums) {
 
-		int farthest = 0;
-		int curFarthest = 0;
-		int count = 0;
+		int maxfarthest = 0, currentFarthest = 0, count = 0;
 
 		for (int i = 0; i < nums.length-1; i++) {
-			farthest = Math.max( farthest, nums[i] + i);
-			if (i == curFarthest) {
+			maxfarthest = Math.max( maxfarthest, nums[i] + i);
+			if (i == currentFarthest) {
 				count++;
-				curFarthest = farthest;
+				currentFarthest = maxfarthest;
 			}
 		}
 		return count;
 
 		//TC:O(n)
 		//SC:O(1)
+	}
+
+	private static int jump(int[] nums) {
+		if(nums.length==1)
+			return 0;
+		int maxFarthest=nums[0], currFarthest=Integer.MIN_VALUE;
+		int n=nums.length, count=1;
+		for(int i=0;i<n-1;i++){
+			currFarthest=Math.max(currFarthest, nums[i]+i);
+			if(i==maxFarthest){
+				maxFarthest=currFarthest;
+				count++;
+			}
+		}
+		return count;
 	}
 }

@@ -14,8 +14,12 @@ public class LC79WordSearch {
 		//Approach 1:
 		System.out.println(mainSearchApproach(n, m, board, word));
 
+		char[][] board1 = new char[][] { { 'A', 'B', 'C', 'E' },
+				{ 'S', 'F', 'C', 'S' },
+				{ 'A', 'D', 'E', 'E' } };
+
 		//Approach 2:
-		System.out.println(mainSearch(n, m, board, word));
+		System.out.println(mainSearch(n, m, board1, word));
 	}
 
 	private static boolean mainSearchApproach(int n, int m, char[][] board, String word) {

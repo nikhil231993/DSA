@@ -20,7 +20,7 @@ public class BS23RowsWithMaxOnesLC2643 {
         int rowIndex=-1;
         for(int i=0;i<n;i++){
             int count=0;
-            for(int j=0;j<m;j++){
+            for(int j=0; j<m; j++){
                 if(arr[i][j]==1){
                     count++;
                 }
@@ -36,7 +36,7 @@ public class BS23RowsWithMaxOnesLC2643 {
         //SC:O(1)
     }
 
-    public static int rowWithMax1s(int arr[][], int n, int m) {
+    private static int rowWithMax1s(int arr[][], int n, int m) {
 
         int maxValue=0, index=-1;
 
@@ -50,7 +50,7 @@ public class BS23RowsWithMaxOnesLC2643 {
         return index;
     }
 
-    public static int findSmallestOneIndex(int[] num, int m, int target){
+    private static int findSmallestOneIndex(int[] num, int m, int target){
 
         //find lower bound >=1
         int low=0, high=m-1, ans=m;

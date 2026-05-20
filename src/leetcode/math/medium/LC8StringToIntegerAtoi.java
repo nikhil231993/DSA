@@ -51,7 +51,7 @@ public class LC8StringToIntegerAtoi {
 		return ans * sign;
 	}
 
-	public static int myAtoi(String s) {
+	private static int myAtoi(String s) {
 
 		int i = 0;
 		while (i < s.length() && s.charAt(i) == ' ') {

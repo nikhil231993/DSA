@@ -14,7 +14,7 @@ public class BS17AggressiveCows {
 		System.out.println(aggressiveCows(arr, k, n));
     }
 
-	public static int aggressiveCows(int[] stalls, int k, int n) {
+	private static int aggressiveCows(int[] stalls, int k, int n) {
 
         Arrays.sort(stalls);
 
@@ -36,7 +36,7 @@ public class BS17AggressiveCows {
 		//SC:O(1)
     }
 
-    public static boolean canPlace(int pos, int[] stalls, int k){
+    private static boolean canPlace(int pos, int[] stalls, int k){
 
         int count=1, last=stalls[0];
 

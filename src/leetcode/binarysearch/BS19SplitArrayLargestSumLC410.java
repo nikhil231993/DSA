@@ -9,7 +9,7 @@ public class BS19SplitArrayLargestSumLC410 {
         System.out.println(splitArray(num, k));
     }
 
-    public static int splitArray(int[] nums, int k) {
+    private static int splitArray(int[] nums, int k) {
 
         int n=nums.length, max=Integer.MIN_VALUE, sum=0;
 
@@ -30,7 +30,7 @@ public class BS19SplitArrayLargestSumLC410 {
         return ans;
     }
 
-    public static boolean possible(int mid, int[] a, int k) {
+    private static boolean possible(int mid, int[] a, int k) {
 
         int count = 1;
         int sum = 0;

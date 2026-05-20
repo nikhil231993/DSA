@@ -9,10 +9,12 @@ import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.Stack;
 import java.util.TreeMap;
+import leetcode.binarytree.Node;
+import leetcode.binarytree.NodeWithValue;
 
 class Tuple {
 
-	protected Node node;
+	public leetcode.binarytree.Node node;
 	protected int vert;
 	protected int hori;
 
@@ -83,8 +85,8 @@ public class BinaryTreeUsingLinkedList {
 			System.out.print(root.data + "-->");
 			inOrderTraversal(root.right);
 
-			// TC:O(N)
-			// SC:O(H) in case of normal tree or O(N) in case of skewed tree
+			//TC:O(N)
+			//SC:O(H) in case of normal tree or O(N) in case of skewed tree
 		}
 	}
 
@@ -274,8 +276,8 @@ public class BinaryTreeUsingLinkedList {
 			}
 			list.add(l);
 
-			// TC:O(n) as we have to parse all elements
-			// SC:O(n) as we have to store all elements also we do not consider size of l i.e., list as it's small
+			//TC:O(n) as we have to parse all elements
+			//SC:O(n) as we have to store all elements also we do not consider size of l i.e., list as it's small
 		}
 		return list;
 	}
@@ -436,6 +438,35 @@ public class BinaryTreeUsingLinkedList {
 		//SC:O(H) but O(N) in case of skewed tree
 	}
 
+    /** Below is brute solution for diameter of Binary Tree
+	class Solution {
+		int ans = 0;
+
+		public int diameterOfBinaryTree(TreeNode root) {
+			if (root == null) return 0;
+			solve(root);
+			return ans;
+		}
+
+		private void solve(TreeNode root) {
+			if (root == null) return;
+
+			int left = height(root.left);
+			int right = height(root.right);
+
+			ans = Math.max(ans, left + right);
+
+			solve(root.left);
+			solve(root.right);
+		}
+
+		private int height(TreeNode root) {
+			if (root == null) return 0;
+			return 1 + Math.max(height(root.left), height(root.right));
+		}
+	}
+	*/
+
 	public int  maxDepthIterative(Node root) {
 
 		if(root==null)
@@ -567,8 +598,8 @@ public class BinaryTreeUsingLinkedList {
 		}
 		return result;
 
-		// TC:O(N)
-		// SC:O(N)
+		//TC:O(N)
+		//SC:O(N)
 	}
 
 	public List<Integer> boundaryTraversal(Node root) {

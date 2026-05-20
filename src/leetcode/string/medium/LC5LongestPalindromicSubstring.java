@@ -16,7 +16,7 @@ public class LC5LongestPalindromicSubstring {
 		System.out.println(longestPalindrome(s));
 	}
 
-	public static String longestPalindrome(String s) {
+	private static String longestPalindrome(String s) {
 
 		int n=s.length(), len=0;
 		String sub="";
@@ -28,7 +28,7 @@ public class LC5LongestPalindromicSubstring {
 			while(left>=0 && right < n && s.charAt(left) == s.charAt(right)){
 				if(right-left+1 > len){
 					len=right-left+1;
-					sub=s.substring(left, right+1);
+					sub=s.substring(left, right+1); //or store index=left and then return  return s.substring(index, index+len); at last
 				}
 				left--;
 				right++;
@@ -40,7 +40,7 @@ public class LC5LongestPalindromicSubstring {
 			while(left>=0 && right<n && s.charAt(left) == s.charAt(right)){
 				if(right-left+1 > len){
 					len=right-left+1;
-					sub=s.substring(left, right+1);
+					sub=s.substring(left, right+1);  //or store index=left and then return  return s.substring(index, index+len); at last
 				}
 				left--;
 				right++;
@@ -52,7 +52,7 @@ public class LC5LongestPalindromicSubstring {
 		//SC:O(n) if entire string is palindrome
 	}
 
-	public static String longestPalindromeNew(String s) {
+	private static String longestPalindromeNew(String s) {
 
 		String palin="";
 		for(int i=0;i<s.length();i++){
@@ -69,7 +69,7 @@ public class LC5LongestPalindromicSubstring {
 		//TC:O(n square)
 	}
 
-	public static boolean isPalindrome(String s, int start, int end){
+	private static boolean isPalindrome(String s, int start, int end){
 
 		while(start<end){
 			if(s.charAt(start)!=s.charAt(end))

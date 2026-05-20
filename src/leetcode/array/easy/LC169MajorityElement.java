@@ -78,7 +78,7 @@ public class LC169MajorityElement {
 			return maj;
 		return -1;
 
-		// TC:O(N)
-		// SC:O(1)
+		//TC:O(N)
+		//SC:O(1)
 	}
 }

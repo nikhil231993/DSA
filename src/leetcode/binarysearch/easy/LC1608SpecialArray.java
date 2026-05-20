@@ -8,16 +8,15 @@ public class LC1608SpecialArray {
         System.out.println(specialArray(num));
     }
 
-    public static int specialArray(int[] nums) {
+    private static int specialArray(int[] nums) {
 
-        int low=0;
-        int high=Integer.MIN_VALUE;
+        int low=0, high=Integer.MIN_VALUE;
 
         for(int i=0; i<nums.length; i++){
             high=Math.max(high, nums[i]);
         }
 
-        while(low<=high){
+        while(low <= high){
             int mid=low+(high-low)/2;
             int count=find(mid, nums);
             if(count==mid){
@@ -31,7 +30,7 @@ public class LC1608SpecialArray {
         return -1;
     }
 
-    public static int find(int mid, int[] nums){
+    private static int find(int mid, int[] nums){
 
         int count=0;
         for(int i=0; i<nums.length; i++){

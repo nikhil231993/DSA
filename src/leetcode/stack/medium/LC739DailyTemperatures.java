@@ -13,11 +13,10 @@ public class LC739DailyTemperatures {
 			System.out.println(x);
 	}
 
-    public static int[] dailyTemperatures(int[] temperatures) {
+    private static int[] dailyTemperatures(int[] temperatures) {
 
         int n=temperatures.length;
-
-        Stack<Integer> st=new Stack();
+        Stack<Integer> st=new Stack<>();
         int[] ans=new int[n];
 
         for(int i=0; i<n; i++){
@@ -29,7 +28,6 @@ public class LC739DailyTemperatures {
             st.push(i);
         }
         return ans;
-
         //TC:O(n)
         //SC:O(n)
     }

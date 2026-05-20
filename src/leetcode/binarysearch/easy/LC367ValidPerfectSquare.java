@@ -9,7 +9,7 @@ public class LC367ValidPerfectSquare {
         //for value 5 num/mid==mid that's why we use double to avoid decimal scenarios
     }
 
-    public static boolean isPerfectSquare(int num) {
+    private static boolean isPerfectSquare(int num) {
 
         if(num==1)
             return true;
@@ -18,8 +18,9 @@ public class LC367ValidPerfectSquare {
 
         while(low<=high){
             int mid=low+(high-low)/2;
-            if((double)num/mid==mid)
+            if((double)num/mid==mid){ // we can give double above or below
                 return true;
+                }
             else if(num/mid<mid)
                 high=mid-1;
             else

@@ -15,7 +15,7 @@ public class LC1614MaxDepthParenthesis {
         System.out.println(maxDepthBetter(s));
     }
 
-    public static int maxDepth(String s) {
+    private static int maxDepth(String s) {
 
         int max=Integer.MIN_VALUE;
         Stack<Character> st=new Stack();
@@ -39,10 +39,9 @@ public class LC1614MaxDepthParenthesis {
         //SC:O(n)
     }
 
-    public static int maxDepthBetter(String s) {
+    private static int maxDepthBetter(String s) {
 
-        int max=Integer.MIN_VALUE;
-        int count=0;
+        int max=Integer.MIN_VALUE, count=0;
 
         for(int i=0;i<s.length();i++){
             char ch=s.charAt(i);

@@ -11,7 +11,7 @@ public class BS17MagneticBallsLC1552 {
        System.out.println(maxDistance(position,m));
     }
 
-    public static int maxDistance(int[] position, int m) {
+    private static int maxDistance(int[] position, int m) {
 
         Arrays.sort(position);
 
@@ -29,7 +29,7 @@ public class BS17MagneticBallsLC1552 {
         return ans;
     }
 
-    public static boolean isPossible(int distance, int[] position, int m){
+    private static boolean isPossible(int distance, int[] position, int m){
 
         int count=1, last=position[0];
 

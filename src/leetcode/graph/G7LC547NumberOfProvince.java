@@ -63,11 +63,11 @@ public class G7LC547NumberOfProvince {
         //TC:O(N) visited + O(N) queue
     }
 
-    public static int findCircleNum(int[][] isConnected) {
+    private static int findCircleNum(int[][] isConnected) {
 
         int[] visited=new int[isConnected.length];
         int count=0;
-        for(int i=0;i<isConnected.length;i++){
+        for(int i=0; i<isConnected.length; i++){
             if(visited[i]==0){
                 count++;
                 dfs(isConnected, visited, i);
@@ -76,7 +76,7 @@ public class G7LC547NumberOfProvince {
         return count;
     }
 
-    public static void dfs(int[][] isConnected, int[] visited, int i){
+    private static void dfs(int[][] isConnected, int[] visited, int i){
 
         visited[i]=1;
         for(int j=0;j<isConnected.length;j++){

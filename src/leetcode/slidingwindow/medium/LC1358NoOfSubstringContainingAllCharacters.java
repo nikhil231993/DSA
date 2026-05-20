@@ -17,10 +17,10 @@ public class LC1358NoOfSubstringContainingAllCharacters {
         //Approach 2: Better is slight modification of brute
         System.out.println(betterNumberOfSubstrings(s));
 
-        //Approach 3: Best
+        //Approach 3: Best approach
         System.out.println(bestNumberOfSubstrings(s));
 
-        //Approach 4: Using Two Pointer
+        //Approach 4: Using Two Pointer just to learn but above is best approach
         System.out.println(bestNumberOfSubstringsApproach(s));
 
         //we cannot use "if" instead of "while" as in counting we will miss some subarrays. Take an example and try out

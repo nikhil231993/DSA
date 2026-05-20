@@ -10,7 +10,7 @@ public class gfgMaxSumSubarraySizeK {
         System.out.println(maximumSumSubarray(arr, k));
     }
 
-    public static int maximumSumSubarray(int[] arr, int k) {
+    private static int maximumSumSubarray(int[] arr, int k) {
 
         int n=arr.length;
         int r=0, l=0, max=Integer.MIN_VALUE, sum=0;

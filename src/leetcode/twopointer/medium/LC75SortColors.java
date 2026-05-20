@@ -12,7 +12,7 @@ public class LC75SortColors {
             System.out.println(n);
     }
 
-    public static void sortColors(int[] nums) {
+    private static void sortColors(int[] nums) {
 
         int low=0, mid=0, high=nums.length-1;
 
@@ -33,10 +33,10 @@ public class LC75SortColors {
         //SC:O(1)
     }
 
-    public static void swap(int i, int j, int[] nums){
+    private static void swap(int i, int j, int[] nums){
 
-        int temp=nums[i];
-        nums[i]=nums[j];
-        nums[j]=temp;
+        int temp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = temp;
     }
 }

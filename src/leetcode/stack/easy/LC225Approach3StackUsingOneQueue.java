@@ -15,7 +15,7 @@ public class LC225Approach3StackUsingOneQueue {
 
         }
 
-        public void push(int x) {
+        private void push(int x) {
 
             q1.add(x);
             for(int i=0;i<q1.size()-1; i++){
@@ -23,21 +23,21 @@ public class LC225Approach3StackUsingOneQueue {
             }
         }
 
-        public int pop() {
+        private int pop() {
 
             if(q1.isEmpty())
                 return -1;
             return q1.remove();
         }
 
-        public int top() {
+        private int top() {
 
             if(q1.isEmpty())
                 return -1;
             return q1.peek();
         }
 
-        public boolean empty() {
+        private boolean empty() {
 
             return q1.isEmpty();
         }

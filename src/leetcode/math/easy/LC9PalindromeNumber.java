@@ -16,13 +16,13 @@ public class LC9PalindromeNumber {
 		System.out.println(isPalindromeLeetcode(x));
 	}
 
-	public static boolean isPalindromeLeetcode(int x) {
+	private static boolean isPalindromeLeetcode(int x) {
 
 		// Special cases:
-		// As discussed above, when x < 0, x is not a palindrome.
-		// Also if the last digit of the number is 0, in order to be a palindrome,
-		// the first digit of the number also needs to be 0.
+		// 1.when x < 0, x is not a palindrome.
+		// 2. Also, if the last digit of the number is 0, in order to be a palindrome, the first digit of the number also needs to be 0.
 		// Only 0 satisfy this property.
+
 		if (x < 0 || (x % 10 == 0 && x != 0)) {
 			return false;
 		}
@@ -49,23 +49,22 @@ public class LC9PalindromeNumber {
 		if(x<0)
 			return false;
 		String str=String.valueOf(x);
-		int length=str.length();
+		int n=str.length();
 
-		for(int i=0;i<length/2;i++){
-			if(str.charAt(i)!=str.charAt(length-i-1))
+		for(int i=0;i<n/2;i++){
+			if(str.charAt(i)!=str.charAt(n-i-1))
 				return false;
 		}
 		return true;
 	}
 
-	public static boolean isPalindrome(int x) {
+	private static boolean isPalindrome(int x) {
 
 		if(x==0) return true;
 
 		if (x < 0  || (x%10)==0)
 			return false;
-		int y = x;
-		int num = 0;
+		int y = x, num = 0;
 		while (x != 0) {
 			if(num > Integer.MAX_VALUE/10 || num < Integer.MIN_VALUE/10)//Not mandatory
 				return false;                                       //Not mandatory

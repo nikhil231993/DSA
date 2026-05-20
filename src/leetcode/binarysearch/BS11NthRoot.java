@@ -4,6 +4,8 @@ public class BS11NthRoot {
 
     public static void main(String[] args) {
 
+        //https://www.geeksforgeeks.org/problems/find-nth-root-of-m5843/1
+
         int n = 3, m = 27;
 
         //Approach 1(Brute): Pow Exponentiation or two loops as per video
@@ -13,9 +15,9 @@ public class BS11NthRoot {
         System.out.println(NthRoot(n,m));
     }
 
-    public static long func(int b, int exp) {
+    private static long func(int b, int exp) {
 
-        long  ans = 1;
+        long ans = 1;
         long base = b;
         while (exp > 0) {
             if (exp % 2 == 1) {
@@ -29,7 +31,7 @@ public class BS11NthRoot {
         return ans;
     }
 
-    public static int NthRootBrute(int n, int m) {
+    private static int NthRootBrute(int n, int m) {
 
         //Use linear search on the answer space:
         for (int i = 1; i <= m; i++) {
@@ -42,7 +44,7 @@ public class BS11NthRoot {
     }
 
 
-    public static int NthRoot(int n, int m) {
+    private static int NthRoot(int n, int m) {
 
         int low=1, high=m;
         while(low<=high){
@@ -60,7 +62,7 @@ public class BS11NthRoot {
         return -1;
     }
 
-    public static int root(int k, int n, int mid){
+    private static int root(int k, int n, int mid){
 
         Long ans=1l;
         for(int i=1;i<=k;i++) {

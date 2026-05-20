@@ -109,7 +109,7 @@ public class LC73SetMatrixZeroes {
 
         for(int i=0; i<matrix.length; i++){
             for(int j=0; j<matrix[0].length; j++){
-                if(row[i]==1 || col[j]==1)
+                if( row[i] == 1 || col[j] == 1)
                     matrix[i][j]=0;
             }
         }
@@ -124,15 +124,15 @@ public class LC73SetMatrixZeroes {
         int n=matrix[0].length;
         int[][] visited=new int[m][n];
         for(int i=0; i<m;i++){
-            for(int j=0;j<n;j++){
+            for(int j=0; j<n; j++){
                 if(matrix[i][j]==0){
                     setMinus(i,j,matrix,m,n, visited);
                 }
             }
         }
 
-        for(int i=0; i<m;i++){
-            for(int j=0;j<n;j++){
+        for(int i=0; i<m; i++){
+            for(int j=0; j<n; j++){
                 if(matrix[i][j]==-1 && visited[i][j]==1){
                     matrix[i][j]=0;
                 }
@@ -142,13 +142,13 @@ public class LC73SetMatrixZeroes {
 
     public static void setMinus(int row, int col, int[][] matrix,int m,int n, int[][] visited){
 
-        for(int i=0;i<m;i++){
+        for(int i=0; i<m; i++){
             if( matrix[i][col]!=0){
                 matrix[i][col]=-1;
                 visited[i][col]=1;
             }
         }
-        for(int j=0;j<n;j++){
+        for(int j=0; j<n; j++){
             if( matrix[row][j]!=0){
                 matrix[row][j]=-1;
                 visited[row][j]=1;

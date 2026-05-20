@@ -32,7 +32,14 @@ public class LC283MoveZeroes {
 			if(arr[i]!=0)
 				result[j++]=arr[i];
 		}
-		return result;
+
+		for(int i=0;i<j;i++){
+			arr[i]=result[i];
+		}
+		while(j<n){
+			arr[j++]=0;
+		}
+		return arr;
 
 		//TC:O(n)
 		//SC:O(n)

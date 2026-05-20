@@ -7,25 +7,23 @@ public class V12MinimumWindowSubstringLC76 {
     public static void main(String[] args) {
 
         String s = "ADOBECODEBANC", t = "ABC";
+        String s1="ddaaadbbca", t1="abbc";
 
         //Approach 1 : Brute force Generate all the combinations
-        System.out.println(minWindowBrute(s, t));
+        System.out.println(minWindowBrute(s1, t1));
 
         //Approach 2:
-        System.out.println(minWindow(s, t));
+        System.out.println(minWindow(s1, t1));
     }
 
     private static String minWindowBrute(String s, String t) {
 
-        int ns=s.length();
-        int nt=t.length();
-        int startIndex=-1;
-        int minLen=Integer.MAX_VALUE;
+        int ns=s.length(), nt=t.length(), startIndex=-1, minLen=Integer.MAX_VALUE;
 
         for(int i=0; i<ns;i++){
 
             int count=0;
-            int[] ch=new int[256];
+            int[] ch=new int[128];
             for(int j=0; j<nt; j++)
                 ch[t.charAt(j)-'A']++;
             for(int k=i; k<ns; k++){

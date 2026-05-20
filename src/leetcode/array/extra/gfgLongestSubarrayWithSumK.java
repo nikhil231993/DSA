@@ -22,8 +22,7 @@ public class gfgLongestSubarrayWithSumK {
 
     private static int maxLen(int[] arr, int k) {
 
-        int n=arr.length;
-        int r=0 ,l=0, sum=0, len=0;
+        int n=arr.length, r=0 ,l=0, sum=0, len=0;
 
         while(r<n){
             sum+=arr[r];
@@ -33,7 +32,7 @@ public class gfgLongestSubarrayWithSumK {
                 l++;
             }
 
-            if(sum==k)
+            if(sum == k)
                 len=Math.max(len, r-l+1);
             r++;
         }
@@ -46,9 +45,9 @@ public class gfgLongestSubarrayWithSumK {
     private static int maxLength(int[] arr,int k) {
 
         int maxLen=0;
-
         HashMap<Integer,Integer> map=new LinkedHashMap<>();
         int sum=0;
+
         for(int i=0;i<arr.length;i++){
 
             sum+=arr[i];

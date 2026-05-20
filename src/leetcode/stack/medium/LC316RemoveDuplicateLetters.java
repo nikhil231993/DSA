@@ -14,7 +14,7 @@ public class LC316RemoveDuplicateLetters {
         System.out.println(removeDuplicateLettersUsingMap(s));
     }
 
-    public static String removeDuplicateLetters(String s) {
+    private static String removeDuplicateLetters(String s) {
 
         Stack<Integer> st=new Stack<>();
 
@@ -52,7 +52,7 @@ public class LC316RemoveDuplicateLetters {
         //SC:O(n+n) + last result string
     }
 
-    public static String removeDuplicateLettersUsingMap(String s) {
+    private static String removeDuplicateLettersUsingMap(String s) {
 
         int n=s.length();
         HashMap<Character, Integer> map=new HashMap();

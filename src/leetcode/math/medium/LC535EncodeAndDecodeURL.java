@@ -46,4 +46,43 @@ public class LC535EncodeAndDecodeURL {
 		}
 		return sb.toString();
 	}
+
+	/**
+	 * public class Codec {
+	 *
+	 *    Map<String, String> encode=new HashMap();
+	 *    Map<String, String> decode=new HashMap();
+	 *
+	 *     public String encode(String longUrl) {
+	 *         if(encode.containsKey(longUrl))
+	 *             return encode.get(longUrl);
+	 *
+	 *         String hash=generate();
+	 *         while(decode.containsKey(hash))
+	 *             hash=generate();
+	 *
+	 *         String shortUrl="http://tinyurl.com/"+hash;
+	 *         encode.put(longUrl, shortUrl);
+	 *         decode.put(shortUrl, longUrl);
+	 *         return encode.get(longUrl);
+	 *     }
+	 *
+	 *     private static String generate(){
+	 *
+	 *         char[] ch=new char[6];
+	 *         String s="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+	 *         int n=s.length();
+	 *         for(int i=0;i<6;i++){
+	 *             int num=(int)(Math.random()*1000);
+	 *             ch[i]=s.charAt(num%62);
+	 *         }
+	 *         return new String(ch);
+	 *     }
+	 *
+	 *     // Decodes a shortened URL to its original URL.
+	 *     public String decode(String shortUrl) {
+	 *         return decode.get(shortUrl);
+	 *     }
+	 * }
+	 */
 }

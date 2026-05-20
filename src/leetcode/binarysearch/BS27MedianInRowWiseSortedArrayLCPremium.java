@@ -37,7 +37,7 @@ public class BS27MedianInRowWiseSortedArrayLCPremium {
         System.out.println(median(M,R,C));
     }
 
-    public static int median(int matrix[][], int R, int C) {
+    private static int median(int matrix[][], int R, int C) {
 
         int low=Integer.MAX_VALUE, high=Integer.MIN_VALUE;
 
@@ -59,7 +59,7 @@ public class BS27MedianInRowWiseSortedArrayLCPremium {
         return low;
     }
 
-    public static int find(int[][] matrix, int mid, int R, int C){
+    private static int find(int[][] matrix, int mid, int R, int C){
 
         int count=0;
         for(int i=0; i<R; i++){
@@ -68,7 +68,7 @@ public class BS27MedianInRowWiseSortedArrayLCPremium {
         return count;
     }
 
-    public static int upperBound(int[] num, int target){
+    private static int upperBound(int[] num, int target){
 
         int low=0, high=num.length-1, ans=num.length;
 

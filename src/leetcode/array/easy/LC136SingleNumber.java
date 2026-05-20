@@ -10,10 +10,10 @@ public class LC136SingleNumber {
 
 		int[] arr = new int[] { 4, 1, 2, 1, 2 };
 
-		// Approach 1: Using Map
+		//Approach 1: Using Map
 		System.out.println(singleNumberUsingMap(arr));
 
-		// Approach 2: Constant space
+		//Approach 2: Constant space
 		System.out.println(singleNumber(arr));
 	}
 
@@ -40,8 +40,8 @@ public class LC136SingleNumber {
 	private static int singleNumber(int[] arr) {
 
 		int result=0;
-		for (int i = 0; i < arr.length; i++) {
-			result ^= arr[i];
+		for (Integer num: arr) {
+			result ^= num;
 		}
 		return result;
 

@@ -25,7 +25,7 @@ public class V22RotateLinkedListLC61 {
 
         Node tail=head;
         int count=1;
-        while(tail.next!=null){
+        while(tail.next!=null){ // this is done as we need to connect last element to head
             count++;
             tail=tail.next;
         }

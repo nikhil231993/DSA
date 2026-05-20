@@ -7,7 +7,7 @@ public class LC424LongestRepeatingCharacterReplacement {
 
     public static void main(String[] args) {
 
-        String s = "ABAB";
+        String s = "AAAAABABBBB";
         int  k = 2;
 
         //Approach 1: Brute
@@ -19,7 +19,7 @@ public class LC424LongestRepeatingCharacterReplacement {
         //Approach 2: Better optimized to remove 0(26)
         System.out.println(betterCharacterReplacementRemovedLoop(s,k));
 
-        //Approach 3: Best
+        //Approach 3: Best using 'if' instead of 'while'
         System.out.println(bestCharacterReplacement(s,k));
     }
 
@@ -32,7 +32,7 @@ public class LC424LongestRepeatingCharacterReplacement {
             arr[s.charAt(right)-'A']++;
             maxfreq=Math.max(maxfreq, arr[s.charAt(right)-'A']);
 
-            if((right-left+1)-maxfreq > k){
+            if((right-left+1)-maxfreq>k){
                 arr[s.charAt(left)-'A']--;
                 left++;
             }
@@ -44,7 +44,7 @@ public class LC424LongestRepeatingCharacterReplacement {
         }
         return maxLen;
 
-        //TC:O(n) we remove O(n) as the inner if loop only moves only if condition fails
+        //TC:O(n+n)
         //SC:O(26)
     }
 
@@ -101,10 +101,9 @@ public class LC424LongestRepeatingCharacterReplacement {
         //SC:O(26)
     }
 
-    public static int bruteCharacterReplacement(String s, int k) {
+    private static int bruteCharacterReplacement(String s, int k) {
 
-        Integer maxLen=Integer.MIN_VALUE;
-        int n=s.length();
+        int maxLen=Integer.MIN_VALUE, n=s.length();
 
         for(int i=0; i<n; i++){
             int[] arr=new int[26];
@@ -114,11 +113,38 @@ public class LC424LongestRepeatingCharacterReplacement {
                 arr[s.charAt(j)-'A']++;
                 maxFreq=Math.max(maxFreq, arr[s.charAt(j)-'A']);
 
-                if((j-i+1)-maxFreq <=k){
+                if((j-i+1)-maxFreq <= k){
                     maxLen=Math.max(maxLen, j-i+1);
                 }else
                     break;
             }
+        }
+        return maxLen;
+
+        //TC:O(n*n)
+        //SC:O(1)
+    }
+
+    private static int characterReplacement(String s, int k) {
+
+        int n=s.length();
+        int maxLen=0;
+        int left=0, right=0, maxFreq=0;
+        Map<Character, Integer> map=new HashMap();
+        while(right<n){
+            map.put(s.charAt(right), map.getOrDefault(s.charAt(right), 0)+1);
+            maxFreq=Math.max(maxFreq, map.get(s.charAt(right)));
+
+            if(right-left+1 -maxFreq>k){
+
+                map.put(s.charAt(left), map.get(s.charAt(left))-1);
+                if(map.get(s.charAt(left))==0)
+                    map.remove(s.charAt(left));
+                left++;
+            }
+            if(right-left+1 -maxFreq<=k)
+                maxLen=Math.max(maxLen, right-left+1);
+            right++;
         }
         return maxLen;
     }

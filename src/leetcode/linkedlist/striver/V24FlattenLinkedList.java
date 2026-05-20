@@ -70,7 +70,42 @@ public class V24FlattenLinkedList {
         return dummy.bottom;
     }
 
-     TC:(N * O(M+M)) Horizontal node = N Vertical =M
+     TC:(N * O(M+M)) Horizontal node = N Vertical = M
      SC:O(recursive stack space)
+    */
+
+    /**
+    public Node flatten(Node root) {
+        if(root==null || root.next==null)
+            return root;
+        Node nextRoot=flatten(root.next);
+        return merge(root, nextRoot);
+    }
+
+    private static Node merge(Node list1, Node list2){
+
+        if(list1==null)
+            return list2;
+        else if(list2==null)
+            return list1;
+        Node dummy=new Node(-1);
+        Node temp=dummy;
+        while(list1!=null && list2!=null){
+            if(list1.data<=list2.data){
+                temp.bottom=list1;
+                temp=temp.bottom;
+                list1=list1.bottom;
+            }else{
+                temp.bottom=list2;
+                temp=temp.bottom;
+                list2=list2.bottom;
+            }
+        }
+        if(list1!=null)
+            temp.bottom=list1;
+        if(list2!=null)
+            temp.bottom=list2;
+        return dummy.bottom;
+    }
     */
 }

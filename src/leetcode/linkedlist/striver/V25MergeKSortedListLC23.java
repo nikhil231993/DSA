@@ -72,7 +72,7 @@ public class V25MergeKSortedListLC23 {
         return dummy.next;
     }
 
-     TC:KlogK(for loop) + KNlogK(while loop)
-     SC:O(K) as heap has only at max k elements
+     TC: KlogK(for loop) + KNlogK(while loop)
+     SC: O(K) as heap has only at max k elements
      */
 }

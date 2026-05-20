@@ -21,7 +21,7 @@ public class LC628MaximumProductThreeNumbers {
 		System.out.println(maximumProductBetter(num));
 	}
 
-	public static int maximumProductLeetcode(int[] nums) {
+	private static int maximumProductLeetcode(int[] nums) {
 
 		Arrays.sort(nums);
 		return Math.max(nums[0] * nums[1] * nums[nums.length - 1], nums[nums.length - 1] * nums[nums.length - 2] * nums[nums.length - 3]);
@@ -31,7 +31,7 @@ public class LC628MaximumProductThreeNumbers {
 
 	private static int maximumProduct(int[] num) {
 
-		// 2st Approach is to use min heap and maxheap but here it will be TC: (nlogn) as
+		// 1st Approach is to use min heap and maxheap but here it will be TC: (nlogn) as
 		// insertion and deletion in a heap takes log n time
 
 		PriorityQueue<Integer> maxHeap=new PriorityQueue<>((a,b)->b-a);
@@ -52,16 +52,12 @@ public class LC628MaximumProductThreeNumbers {
 		return Math.max(max1 * max2 * max3, max1 * min1 * min2);
 	}
 
-	public static int maximumProductBetter(int[] nums) {
+	private static int maximumProductBetter(int[] nums) {
 
 		// 2nd approach is specific to this case where we need to find only 3 no
 
-		int max1 = Integer.MIN_VALUE;
-		int max2 = Integer.MIN_VALUE;
-		int max3 = Integer.MIN_VALUE;
-
-		int min1 = Integer.MAX_VALUE;
-		int min2 = Integer.MAX_VALUE;
+		int max1 = Integer.MIN_VALUE, max2 = Integer.MIN_VALUE, max3 = Integer.MIN_VALUE;
+		int min1 = Integer.MAX_VALUE, min2 = Integer.MAX_VALUE;
 
 		for (int i = 0; i < nums.length; i++) {
 
@@ -85,7 +81,7 @@ public class LC628MaximumProductThreeNumbers {
 		}
 		return Math.max( max1 * max2 * max3, max1 * min1 * min2 );
 
-		// SC:O(1)
-		// TC:O(n)
+		//TC:O(n)
+		//SC:O(1)
 	}
 }

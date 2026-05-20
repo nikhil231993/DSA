@@ -55,7 +55,7 @@ public class V8RemoveNthNodeFromEndLC19 {
 
         return head;
     }
-     TC:O(len)
-     SC:O(1)
+     TC: O(len)
+     SC: O(1)
      */
 }

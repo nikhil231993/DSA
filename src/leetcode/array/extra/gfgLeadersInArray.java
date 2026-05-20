@@ -8,7 +8,7 @@ public class gfgLeadersInArray {
 
    public static void main(String[] args) {
 
-        int[] num=new int[]{16, 17, 4, 3,5, 2};
+        int[] num=new int[]{16, 17, 4, 3, 5, 2};
 
         //Approach 1
         List<Integer> result=leaders(num);

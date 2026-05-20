@@ -8,10 +8,11 @@ public class LC581ShortestUnsortedContinuousSubarray {
 
        int[] nums =new int[] {1,5,2,4,6};
        nums=new int[]{2, 6, 4, 8, 10, 9,15};
+       nums=new int[]{1, 3, 2, 2, 2};
        System.out.println(findUnsortedSubarray(nums));
     }
 
-    public static int findUnsortedSubarray(int[] nums) {
+    private static int findUnsortedSubarray(int[] nums) {
 
         int n=nums.length;
         Stack<Integer> st1=new Stack();

@@ -18,5 +18,8 @@ public class LC1991 {
             leftSum+=nums[i];
         }
         return -1;
+
+        //TC: O(n)
+        //SC: O(1)
     }
 }

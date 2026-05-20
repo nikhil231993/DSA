@@ -31,7 +31,7 @@ public class LC344ReverseString {
 		}
 		return s;
 
-		//TC:O(n/2)
-		//SC:O(1)
+		// TC:O(n/2)
+		// SC:O(1)
 	}
 }

@@ -44,9 +44,9 @@ public class LC1762BuildingsWithOceanView {
         Stack<Integer> st=new Stack();
         for(int i=0;i<n;i++){
 
-            while(!st.isEmpty() && heights[i]>=heights[st.peek()]){
+            while(!st.isEmpty() && heights[i]>=heights[st.peek()])
                 st.pop();
-            }
+
             st.push(i);
         }
 

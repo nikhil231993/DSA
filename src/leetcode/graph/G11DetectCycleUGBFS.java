@@ -65,7 +65,7 @@ public class G11DetectCycleUGBFS {
             int parent=q.peek().parent;
             q.poll();
 
-            for(int j=0;i<=n;j++){
+            for(int j=0; j<=n; j++){
                 if(visited[j]==0 && matrix[node][j]==1){
                     visited[j]=1;
                     q.offer(new PairParent(j,node));

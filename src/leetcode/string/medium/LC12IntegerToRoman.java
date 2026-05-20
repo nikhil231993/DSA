@@ -8,7 +8,7 @@ public class LC12IntegerToRoman {
         System.out.println(intToRoman(num));
     }
 
-    public static String intToRoman(int num){
+    private static String intToRoman(int num){
         
         int[] numR=new int[]{1000,900,500,400,100,90,50,40,10,9,5,4,1};
         String[] roman=new String[]{"M","CM","D","CD","C","XC","L","XL","X","IX","V","IV","I"};
@@ -24,5 +24,20 @@ public class LC12IntegerToRoman {
 
         //TC:It depends on how many times both loop runs
         //SC:O(2*13) to store both array and result string
+    }
+
+    private static String intToRomanSelf(int num) {
+        int[] arrN=new int[]{1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
+        String[] s=new String[]{"M", "CM", "D" ,"CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
+        StringBuilder sb=new StringBuilder();
+        int i=0;
+        while(num!=0){
+            if(num>=arrN[i]){
+                sb.append(s[i]);
+                num=num-arrN[i];
+            }else
+                i++;
+        }
+        return sb.toString();
     }
 }

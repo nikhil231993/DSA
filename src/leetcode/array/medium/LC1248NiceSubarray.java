@@ -9,7 +9,7 @@ public class LC1248NiceSubarray {
         int[] nums =new int[] {1,1,2,1,1};
         int k = 3;
 
-        //Approach 1: Optimal Refer LC560 for brute force as both are same
+        //Approach 1: Refer LC560 for brute force as both are same
         System.out.println(numberOfSubarrays(nums, k));
 
         //Approach 2: Optimal

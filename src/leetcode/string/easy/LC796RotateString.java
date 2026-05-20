@@ -19,7 +19,7 @@ public class LC796RotateString {
         System.out.println(rotateStringSelfBest(s,goal));
     }
 
-    public static boolean rotateString(String s, String goal) {
+    private static boolean rotateString(String s, String goal) {
 
         return s.length()==goal.length() && (s+s).contains(goal);
 
@@ -27,7 +27,7 @@ public class LC796RotateString {
         //SC:O(n) extra space s
     }
 
-    public static boolean rotateStringBetter(String s, String goal) {
+    private static boolean rotateStringBetter(String s, String goal) {
 
         if(s == null || goal == null) {
             //throw exception on A and B both being null?
@@ -54,7 +54,7 @@ public class LC796RotateString {
         return true;
     }
 
-    public static boolean rotateStringSelf(String s, String goal) {
+    private static boolean rotateStringSelf(String s, String goal) {
 
         int n=s.length(), m=goal.length();
         if(n!=m)
@@ -66,9 +66,9 @@ public class LC796RotateString {
         return false;
     }
 
-    public static boolean func(String s, String goal, int start, int j){
+    private static boolean func(String s, String goal, int start, int j){
 
-        for(int i=start;i<s.length();i++){
+        for(int i=start; i<s.length(); i++){
             if(s.charAt(i) == goal.charAt(j%(goal.length()))){
                 j++;
             }else return false;
@@ -76,12 +76,11 @@ public class LC796RotateString {
         return true;
     }
 
-    public static boolean rotateStringSelfBest(String s, String goal) {
+    private static boolean rotateStringSelfBest(String s, String goal) {
 
         if(s.length()!=goal.length())
             return false;
-        int n=s.length();
-        int m=goal.length();
+        int n=s.length(), m=goal.length();
 
         for(int i=0;i<n;i++){
 
@@ -91,10 +90,9 @@ public class LC796RotateString {
         return false;
     }
 
-    public static boolean rotate(int id1, int id2, String s, String goal){
+    private static boolean rotate(int id1, int id2, String s, String goal){
 
-        int n=s.length();
-        int m=goal.length();
+        int n=s.length(), m=goal.length();
         while(id1 < n){
 
             if(s.charAt(id1)!=goal.charAt(id2%m))

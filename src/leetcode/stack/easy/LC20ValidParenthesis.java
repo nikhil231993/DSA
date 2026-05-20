@@ -6,12 +6,12 @@ public class LC20ValidParenthesis {
 
     public static void main(String[] args) {
 
-        String s = "()[]{}";
+        String s = "()[[]{}";
         // s = "(]"
         System.out.println(isValid(s));
     }
 
-    public static boolean isValid(String s) {
+    private static boolean isValid(String s) {
 
         Stack<Character> st =new Stack();
 
@@ -23,14 +23,12 @@ public class LC20ValidParenthesis {
             else if(s.charAt(i)=='{')
                 st.push('}');
             else{
-                if(st.size()==0 || st.pop()!=s.charAt(i))
+                if(st.isEmpty() || st.pop()!=s.charAt(i))
                     return false;
             }
         }
 
-        if(st.size()==0)
-            return true;
-        return false;
+        return st.isEmpty();
 
         //TC:O(n)
         //SC:O(n)

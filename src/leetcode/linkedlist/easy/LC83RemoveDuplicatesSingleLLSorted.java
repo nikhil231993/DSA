@@ -9,11 +9,11 @@ public class LC83RemoveDuplicatesSingleLLSorted {
 
         while(temp!=null && temp.next!=null){
 
-            ListNode t2=temp.next;
-            while(t2!=null && t2.val==temp.val){
-                t2=t2.next;
+            ListNode nextNode=temp.next;
+            while(nextNode!=null && nextNode.val==temp.val){
+                nextNode=nextNode.next;
             }
-            temp.next=t2;
+            temp.next=nextNode;
             temp=temp.next;
         }
         return head;

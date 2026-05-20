@@ -86,5 +86,7 @@ public class LC1331RankTransform {
             rank++;
         }
         return rankArray;
+        //TC:O(nlogn)
+        //SC:O(n)
     }
 }

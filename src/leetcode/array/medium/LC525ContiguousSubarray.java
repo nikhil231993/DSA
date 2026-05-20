@@ -29,9 +29,8 @@ public class LC525ContiguousSubarray {
             if(sum==0)
                 max=Math.max(max, i+1);
 
-            if(map.containsKey(sum)){
+            if(map.containsKey(sum))
                 max=Math.max(max, i-map.get(sum));
-            }
 
             if(!map.containsKey(sum))
                 map.put(sum, i);

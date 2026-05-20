@@ -11,13 +11,14 @@ public class LC16ThreeSumClosest {
         System.out.println(threeSumClosest(nums, target));
     }
 
-    public static int threeSumClosest(int[] nums, int target) {
+    private static int threeSumClosest(int[] nums, int target) {
 
         Arrays.sort(nums); //O(nlogn)
 
         int diff=Integer.MAX_VALUE;
         int ans=0;
         for(int i=0;i<nums.length-2;i++){
+            if(i>0 && nums[i]==nums[i-1]) continue; // This condition is not needed but it can make it faster
 
             int start=i+1, end=nums.length-1;
             while(start < end){
@@ -36,7 +37,7 @@ public class LC16ThreeSumClosest {
         }
         return ans;
 
-        // TC:O(n square)
-        // SC:O(1)
+        //TC:O(n square)
+        //SC:O(1)
     }
 }

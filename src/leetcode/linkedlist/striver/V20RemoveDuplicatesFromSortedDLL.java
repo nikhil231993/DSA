@@ -32,7 +32,50 @@ public class V20RemoveDuplicatesFromSortedDLL {
                 nextNode.prev=temp;
             temp=temp.next;
         }
-        //TC:O(N)
-        //SC:O(1)
+        //TC: O(N)
+        //SC: O(1)
     }
+
+    /** self 1
+      class Solution {
+          Node removeDuplicates(Node head) {
+              if(head==null || head.next==null)
+                  return head;
+
+              Node temp=head;
+              while(temp!=null){
+
+                  Node prevNode=temp;
+                  while(temp.next!=null && temp.data==temp.next.data){
+                      temp=temp.next;
+                  }
+                  prevNode.next=temp.next;
+                  if(temp.next!=null)
+                      temp.next.prev=prevNode;
+                  temp=temp.next;
+              }
+              return head;
+          }
+      }
+     */
+
+    /** Self 2
+    class Solution {
+        Node removeDuplicates(Node head) {
+            if(head==null || head.next==null)
+                return head;
+            Node temp=head;
+            while(temp!=null){
+                Node nextNode=temp.next;
+                while(nextNode!=null && nextNode.data==temp.data)
+                    nextNode=nextNode.next;
+                temp.next=nextNode;
+                if(nextNode!=null)
+                    nextNode.prev=temp;
+                temp=temp.next;
+            }
+            return head;
+        }
+    }
+     */
 }

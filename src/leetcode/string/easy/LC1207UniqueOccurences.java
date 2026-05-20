@@ -11,14 +11,14 @@ public class LC1207UniqueOccurences {
         //Approach 1
         System.out.println(uniqueOccurrences(arr));
 
-        //Approach 2
+        //Approach 2: This is optimal
         System.out.println(uniqueOccurrencesOneApproach2(arr));
 
         //Approach 3
         System.out.println(uniqueOccurrencesApproach3(arr));
     }
 
-    public static boolean uniqueOccurrences(int[] arr) {
+    private static boolean uniqueOccurrences(int[] arr) {
 
         HashMap<Integer, Integer> map=new HashMap<>();
         for(int n:arr){
@@ -31,7 +31,7 @@ public class LC1207UniqueOccurences {
         //SC:O(2n)
     }
 
-    public static boolean uniqueOccurrencesOneApproach2(int[] arr) {
+    private static boolean uniqueOccurrencesOneApproach2(int[] arr) {
 
         Map<Integer, Integer> freqMap = new HashMap<>();    // maps element in arr to number of occurrences in arr
         for (int currInt : arr) {
@@ -49,9 +49,18 @@ public class LC1207UniqueOccurences {
             }
         }
         return true;
+
+        //TC: O(N).
+        //We iterate over the array arr to find the frequency and store them in the hash map freq.
+        //Then, we insert these frequencies in the hash set freqSet, which has the insertion complexity of O(1).
+        //Hence, the total time complexity is equal to O(N)
+
+        //SC:O(2*N)
+        //We are storing the N frequencies in the hash map freq that takes O(1) space for each element.
+        //We also store the frequency count in the hash set. Therefore, the total space complexity is equal to O(N).
     }
 
-    public static boolean uniqueOccurrencesApproach3(int[] arr) {
+    private static boolean uniqueOccurrencesApproach3(int[] arr) {
 
         int[] result=new int[2001];
         for(int i:arr){

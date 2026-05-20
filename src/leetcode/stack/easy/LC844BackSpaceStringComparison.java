@@ -43,7 +43,7 @@ public class LC844BackSpaceStringComparison {
 		return sb.toString();
 	}
 
-	public static boolean backspaceCompare(String s, String t) {
+	private static boolean backspaceCompare(String s, String t) {
 
 		Stack<Character> s1 = new Stack();
 		Stack<Character> s2 = new Stack();
@@ -76,7 +76,7 @@ public class LC844BackSpaceStringComparison {
 
 		return sb1.reverse().toString().equals(sb2.reverse().toString());
 
-		// TC:O(s+t) s and t are lengths of each string
-		// TC:O(s+t) s and t are lengths of each string
+		//TC:O(s+t) s and t are lengths of each string
+		//TC:O(s+t) s and t are lengths of each string
 	}
 }

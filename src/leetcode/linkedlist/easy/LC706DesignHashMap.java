@@ -80,8 +80,8 @@ public class LC706DesignHashMap {
 		LinkedList<Node> list=bucket[i];
 
 		int pos=0;
-		for(Node temp:list){
-			if(temp.key==key)
+		for(Node temp : list){
+			if(temp.key == key)
 				return pos;
 			pos++;
 		}

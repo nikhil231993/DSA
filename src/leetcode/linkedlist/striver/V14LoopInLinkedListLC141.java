@@ -24,6 +24,6 @@ public class V14LoopInLinkedListLC141 {
         return false;
     }
      TC: This will vary based on example
-     SC:O(1 )
+     SC: O(1)
      */
 }

@@ -24,7 +24,7 @@ public class G21TopoSortDFS {
 
         int[] visited=new int[n];
         Stack<Integer> s=new Stack<>();
-        for(int i=0;i<n;i++){
+        for(int i=0; i<n; i++){
             if(visited[i]==0){
                 topoSort(arr,n,m,visited,s,i);
             }

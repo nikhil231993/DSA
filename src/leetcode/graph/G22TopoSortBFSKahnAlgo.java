@@ -32,7 +32,7 @@ public class G22TopoSortBFSKahnAlgo {
         }
 
         Queue<Integer> q=new LinkedList<>();
-        for(int i=0;i<n;i++){
+        for(int i=0; i<n; i++){
             if(indegree[i]==0){
                 q.offer(i);
             }

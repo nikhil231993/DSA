@@ -9,21 +9,21 @@ public class V2MaxPointsCardLC1423 {
        System.out.println(maxScore(cardPoints,k));
     }
 
-    public static int maxScore(int[] cardPoints, int k) {
+    private static int maxScore(int[] cardPoints, int k) {
 
-        int lsum=0;
+        int leftSum=0;
         for(int i=0; i<k; i++){   //O(k)
-            lsum+=cardPoints[i];
+            leftSum+=cardPoints[i];
         }
 
-        int maxSum=lsum;
-        int rsum=0;
+        int maxSum=leftSum;
+        int rightSum=0;
 
         int l=k-1, r=cardPoints.length-1;
         while(l>=0){  //O(k)
-            lsum-=cardPoints[l--];
-            rsum+=cardPoints[r--];
-            maxSum=Math.max(maxSum, lsum+rsum);
+            leftSum-=cardPoints[l--];
+            rightSum+=cardPoints[r--];
+            maxSum=Math.max(maxSum, leftSum+rightSum);
         }
         return maxSum;
 

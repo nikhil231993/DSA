@@ -12,9 +12,12 @@ public class LC287FindDuplicateNumber {
 		int[] nums = new int[] { 1, 3, 4, 2, 2 };
 
 		//Other approaches are mentioned but they all need extra space
+		System.out.println(duplicateNumberWithHashMap(nums));
 
 		//Approach 4: Optimal Below is the best approach
 		System.out.println(duplicateNumberUsingSlowAndFast(nums));
+
+		System.out.println(duplicateNumber(nums));
 	}
 
 	private static int duplicateNumberUsingSlowAndFast(int[] nums) {

@@ -9,7 +9,7 @@ class NodeValue {
 		this.maxSize = maxSize;
 	}
 }
-public class V53LargestBSTBySizeMain {
+public class V53LargestBSTBySizeMainLC1373 {
 
 	public static void main(String[] args) {
 		BinarySearchTree bst = new BinarySearchTree();

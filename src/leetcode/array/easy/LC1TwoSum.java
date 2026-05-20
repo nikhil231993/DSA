@@ -81,7 +81,7 @@ public class LC1TwoSum {
 		}
 		return result;
 
-		//TC:O(greater than n  but less than n square)
-		//SC:O(1)
+		// TC:O(greater than n  but less than n square)
+		// SC:O(1)
 	}
 }

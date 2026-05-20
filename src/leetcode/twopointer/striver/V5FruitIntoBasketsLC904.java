@@ -48,7 +48,7 @@ public class V5FruitIntoBasketsLC904 {
         //SC:O(2) as only two baskets are needed
     }
 
-    public static int betterFruit(int[] fruits) {
+    private static int betterFruit(int[] fruits) {
 
         Integer maxLen=Integer.MIN_VALUE;
 
@@ -73,7 +73,7 @@ public class V5FruitIntoBasketsLC904 {
 
         return maxLen;
 
-        //TC:O(n+n)
+        //TC:O(n+n) (we are not adding log for map as it will be extremely small value)
         //SC:O(2)
     }
 

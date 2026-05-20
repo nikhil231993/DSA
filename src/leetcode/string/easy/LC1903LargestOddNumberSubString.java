@@ -8,7 +8,7 @@ public class LC1903LargestOddNumberSubString {
         System.out.println(largestOddNumber(num));
     }
 
-    public static String largestOddNumber(String num) {
+    private static String largestOddNumber(String num) {
 
         int n=num.length()-1;
 

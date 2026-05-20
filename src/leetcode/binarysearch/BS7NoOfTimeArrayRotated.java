@@ -9,7 +9,7 @@ public class BS7NoOfTimeArrayRotated {
         System.out.println(findKRotation(arr, n));
     }
 
-    public static int findKRotation(int nums[], int n) {
+    private static int findKRotation(int nums[], int n) {
 
         int low=0, high=n-1, ans=Integer.MAX_VALUE, index=-1;
 

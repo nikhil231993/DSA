@@ -18,7 +18,7 @@ public class V3LongestSubstringWithoutRepeatingCharactersLC3 {
 		System.out.println(lengthOfLongestSubstringUsingMap(str));
 	}
 
-	public  static int bruteApproach(String str){
+	private static int bruteApproach(String str){
 
 		if(str.length()==0)
 			return 0;
@@ -58,7 +58,7 @@ public class V3LongestSubstringWithoutRepeatingCharactersLC3 {
 		//SC:O(256)
 	}
 
-	public static int lengthOfLongestSubstringUsingHashSet(String s) {
+	private static int lengthOfLongestSubstringUsingHashSet(String s) {
 
 		HashSet<Character> h = new HashSet<>();
 		int left = 0, right = 0, len = 0;

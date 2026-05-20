@@ -42,7 +42,7 @@ public class G16LC694NumberOfDistinctIslands {
                     List<String> list=new ArrayList<>();
                     visited[i][j]=1;
                     q.offer(new PairG16(i,j));
-                    bfs(i,j,xaxis,yaxis,visited,grid,n,m,i,j,list,q);
+                    bfs(i, j, xaxis, yaxis, visited, grid, n, m, i, j, list, q);
                     s.add(list);
                 }
             }
@@ -90,7 +90,7 @@ public class G16LC694NumberOfDistinctIslands {
 
                 if(grid[i][j]==1 && visited[i][j]==0){
                     List<String> list=new ArrayList<>();
-                    dfs(i,j,n,m,visited,grid,xaxis,yaxis,list,i,j);
+                    dfs(i, j, n, m, visited, grid, xaxis, yaxis, list, i, j);
                     s.add(list);
                 }
             }
@@ -107,7 +107,7 @@ public class G16LC694NumberOfDistinctIslands {
             int nrow=row+xaxis[k];
             int ncol=col+yaxis[k];
             if(nrow>=0 && nrow<n && ncol>=0 && ncol<m && visited[nrow][ncol]==0 && grid[nrow][ncol]==1){
-                dfs(nrow,ncol,n,m,visited,grid,xaxis,yaxis,list,rorigin,corigin);
+                dfs(nrow, ncol, n, m, visited, grid, xaxis, yaxis, list, rorigin, corigin);
                  }
             }
     }

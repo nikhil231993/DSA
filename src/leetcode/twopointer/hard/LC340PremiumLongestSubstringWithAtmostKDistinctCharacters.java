@@ -8,6 +8,7 @@ public class LC340PremiumLongestSubstringWithAtmostKDistinctCharacters {
     public static void main(String[] args) {
 
         String s="abcddefg";
+        s="aabacbebebe";
         int K=3;
 
         //This is old code, no need to learn this. Learn below three approaches
@@ -21,6 +22,9 @@ public class LC340PremiumLongestSubstringWithAtmostKDistinctCharacters {
 
         //Approach 3: Best
         System.out.println(bestLongest(s,K));
+
+        //Approach 4: Using array instead of map
+        System.out.println(lengthOfLongestSubstringKDistinct(s,K));
     }
 
     private static int bestLongest(String s, int k) {
@@ -97,7 +101,7 @@ public class LC340PremiumLongestSubstringWithAtmostKDistinctCharacters {
         //SC:O(k
     }
 
-    public static int kDistinctChars(int k, String str) {
+    private static int kDistinctChars(int k, String str) {
         return subArrayWithAtmostTwo(k, str);
     }
 
@@ -129,5 +133,27 @@ public class LC340PremiumLongestSubstringWithAtmostKDistinctCharacters {
             right++;
         }
         return len;
+    }
+
+    private static int lengthOfLongestSubstringKDistinct(String s, int k) {
+        int n=s.length();
+        int[] ch=new int[256];
+        int left=0, right=0, max=0,count=0;
+
+        while(right<n){
+            if(ch[s.charAt(right)]==0)
+                count++;
+            ch[s.charAt(right)]++;
+            if(count>k){
+                ch[s.charAt(left)]--;
+                if(ch[s.charAt(left)]==0)
+                    count--;
+                left++;
+            }
+            if(count<=k)
+                max=Math.max(max, right-left+1);
+            right++;
+        }
+        return max;
     }
 }

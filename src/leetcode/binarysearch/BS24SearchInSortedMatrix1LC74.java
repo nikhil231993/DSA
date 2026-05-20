@@ -11,7 +11,7 @@ public class BS24SearchInSortedMatrix1LC74 {
         System.out.println(searchMatrix(matrix,target));
 
         //Approach 2
-        System.out.println(searchMatrixUsingPartialBS(matrix,target));
+        System.out.println(searchMatrixUsingPartialBinarySearch(matrix,target));
 
         //Approach 3
         System.out.println(searchMatrixUsingBinarySearch(matrix,target));
@@ -38,11 +38,11 @@ public class BS24SearchInSortedMatrix1LC74 {
         //SC:O(1)
     }
 
-    private static boolean searchMatrixUsingPartialBS(int[][] matrix, int target) {
+    private static boolean searchMatrixUsingPartialBinarySearch(int[][] matrix, int target) {
 
-        for(int i=0;i<matrix.length;i++){
+        for(int i=0; i<matrix.length; i++){
             if(target>=matrix[i][0] && target<=matrix[i][matrix[i].length-1])
-                return BS(target, matrix[i]);
+                return binarySearch(target, matrix[i]);
         }
         return false;
 
@@ -50,11 +50,11 @@ public class BS24SearchInSortedMatrix1LC74 {
         //SC:O(1)
     }
 
-    private static boolean BS(int target, int[] matrix) {
+    private static boolean binarySearch(int target, int[] matrix) {
 
         int low=0, high=matrix.length-1;
 
-        while(low <= high){
+        while(low<=high){
             int mid=low+(high-low)/2;
             if(matrix[mid]==target)
                 return true;
@@ -68,14 +68,13 @@ public class BS24SearchInSortedMatrix1LC74 {
 
     private static boolean searchMatrix(int[][] matrix, int target) {
 
-        for(int i=0;i<matrix.length;i++){
-            for(int j=0;j<matrix[i].length;j++){
+        for(int i=0; i<matrix.length; i++){
+            for(int j=0; j<matrix[i].length; j++){
                 if(matrix[i][j]==target)
                     return true;
             }
         }
         return false;
-
         //TC:O(n*m)
         //SC:O(1)
     }

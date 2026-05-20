@@ -65,7 +65,7 @@ public class G13LC542Matrix01 {
             //Also we can use mat itself without using any other matrix also in that case just
             //change dist to mat and return mat
 
-            for(int i=0;i<4;i++){
+            for(int i=0; i<4; i++){
                 int nrow=row+xaxis[i];
                 int ncol=col+yaxis[i];
 

@@ -8,7 +8,7 @@ public class LC1768MergeAlternatively {
         System.out.println(mergeAlternately(word1,word2));
     }
 
-    public static String mergeAlternately(String word1, String word2) {
+    private static String mergeAlternately(String word1, String word2) {
 
         int n1=word1.length(), n2=word2.length();
         int i=0, j=0;

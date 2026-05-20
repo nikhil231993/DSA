@@ -50,7 +50,7 @@ public class LC258AddDigits {
         //SC:O(1)
     }
 
-    public static int addDigits(int num) {
+    private static int addDigits(int num) {
 
         if(num == 0)
             return 0;

@@ -93,7 +93,7 @@ public class NextSmaller {
         for(int i=0; i<arr.size(); i++){
             while(!st.isEmpty() && arr.get(st.peek()) > arr.get(i)){
                 result.set(st.pop(), arr.get(i));
-                result.add(st.pop(), arr.get(i));
+                //result.add(st.pop(), arr.get(i));
             }
             st.push(i);
         }

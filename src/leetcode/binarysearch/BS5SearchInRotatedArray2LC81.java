@@ -13,12 +13,10 @@ public class BS5SearchInRotatedArray2LC81 {
         System.out.println(search(num, target));
     }
 
-    public static boolean search(int[] nums, int target) {
+    private static boolean search(int[] nums, int target) {
 
-        int n=nums.length;
-        int low=0;
-        int high=n-1;
-        while(low<=high){
+        int n=nums.length, low=0, high=n-1;
+        while(low <= high){
 
             int mid=low+(high-low)/2;
 
@@ -31,14 +29,14 @@ public class BS5SearchInRotatedArray2LC81 {
                 continue;
             }
 
-            if(nums[low]<=nums[mid]){
-                if(target>=nums[low] && target<=nums[mid]){
+            if(nums[low] <= nums[mid]){
+                if(target >= nums[low] && target <= nums[mid]){
                     high=mid-1;
                 }else{
                     low=mid+1;
                 }
             }else{
-                if(target>=nums[mid] && target <=nums[high]){
+                if(target >= nums[mid] && target <= nums[high]){
                     low=mid+1;
                 }else{
                     high=mid-1;

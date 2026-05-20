@@ -22,7 +22,7 @@ public class LC2418SortThePeople {
         int[] heights =new int[] {180,165,170};
 
         //Approach 1
-        String[] result=sortPeople(names,heights);
+        String[] result = sortPeople(names,heights);
 
         System.out.println("#######");
 

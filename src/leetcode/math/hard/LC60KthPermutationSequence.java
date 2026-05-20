@@ -53,7 +53,7 @@ public class LC60KthPermutationSequence {
         return res.get(k-1);
     }
 
-    public static String getPermutation(int n, int k) {
+    private static String getPermutation(int n, int k) {
 
         int fact=1;
         k=k-1;

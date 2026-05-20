@@ -28,6 +28,6 @@ public class V35BTFromInorderAndPostorder {
 //        return node;
 //
 //        //TC:O(N) depending on hashmap
-//        //SC:O(N)map +O(N) recursion stack
+//        //SC:O(N) map +O(N) recursion stack
 //    }
 }

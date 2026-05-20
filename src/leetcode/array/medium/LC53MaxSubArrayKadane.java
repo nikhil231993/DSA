@@ -13,24 +13,27 @@ public class LC53MaxSubArrayKadane {
 		System.out.println(maxSubArray(arr));
 	}
 
-	public static int maxSubArrayBrute(int[] nums) {
+	private static int maxSubArrayBrute(int[] nums) {
 
-		int maxSubarray = Integer.MIN_VALUE;
-		for (int i = 0; i < nums.length; i++) {
-			int currentSubarray = 0;
-			for (int j = i; j < nums.length; j++) {
-				currentSubarray += nums[j];
-				maxSubarray = Math.max(maxSubarray, currentSubarray);
+		int maxSubarraySum = Integer.MIN_VALUE;
+		int n = nums.length;
+		for (int i = 0; i < n; i++) {
+			int currentSubarraySum = 0;
+			for (int j = i; j < n; j++) {
+				currentSubarraySum += nums[j];
+				maxSubarraySum = Math.max(maxSubarraySum, currentSubarraySum);
 			}
 		}
-		return maxSubarray;
+		return maxSubarraySum;
+		//TC:O(n square)
+		//SC:O(1)
 	}
 
 	private static int maxSubArray(int[] arr) {
 
-		int sum = 0, currentMaxSum = Integer.MIN_VALUE;
+		int sum = 0, currentMaxSum = Integer.MIN_VALUE, n=arr.length;
 
-		for (int i = 0; i < arr.length; i++) {
+		for (int i = 0; i < n; i++) {
 
 			sum += arr[i];
 			if (sum >= currentMaxSum) {

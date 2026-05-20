@@ -8,7 +8,7 @@ public class LC263UglyNumber {
         System.out.println(isUgly(n));
     }
 
-    public static boolean isUgly(int n) {
+    private static boolean isUgly(int n) {
 
         if (n == 0) return false;
         if (n == 1) return true;
@@ -21,7 +21,8 @@ public class LC263UglyNumber {
                 n /= 3;
             else if (n % 5 == 0)
                 n /= 5;
-            else return false;
+            else
+                return false;
         }
         return true;
 

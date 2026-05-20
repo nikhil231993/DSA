@@ -8,35 +8,22 @@ public class LC1839 {
         System.out.println(longestBeautifulSubstring(s));
     }
 
-    public static int longestBeautifulSubstring(String word) {
-
-        int n=word.length();
-        int count=1;
-        int prev=-1;
-        int max=0;
-
-        for(int i=1;i<n;i++){
-            if(word.charAt(i)==word.charAt(i-1)){
-                if(count==5){
-                    if(prev==-1)
-                        max=Math.max(max, i-prev);
-                    else
-                        max=Math.max(max, i-prev+1);
-                }
-                continue;
-            }else if(word.charAt(i)>word.charAt(i-1)){
-                count++;
-            }else{
-                count=1;
-                prev=i;
+    private static int longestBeautifulSubstring(String word) {
+        int n=word.length(), maxLength=0, currLength=1, vowelCount=1;
+        for(int i=1; i<n; i++){
+            if(word.charAt(i)<word.charAt(i-1)){
+                vowelCount=1;
+                currLength=0;
+            }else {
+                if(word.charAt(i)>word.charAt(i-1))
+                    vowelCount++;
             }
-            if(count==5){
-                if(prev==-1)
-                    max=Math.max(max, i-prev);
-                else
-                    max=Math.max(max, i-prev+1);
-            }
+            currLength++;
+            if(vowelCount==5)
+                maxLength=Math.max(maxLength, currLength);
         }
-        return max;
+        return maxLength;
+        //TC:O(n)
+        //SC:O(1)
     }
 }

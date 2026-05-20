@@ -16,7 +16,7 @@ public class LC1629SlowestKey {
 		char ch=keysPressed.charAt(0);
 		int max=releaseTimes[0];
 
-		for(int i=1; i<n; i++){
+		for(int i=1;i<n;i++){
 
 			int diff = releaseTimes[i]-releaseTimes[i-1];
 			if(diff>max){

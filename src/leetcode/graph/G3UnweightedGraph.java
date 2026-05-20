@@ -42,7 +42,7 @@ public class G3UnweightedGraph {
             System.out.println(l);
         }
 
-        //SC:O(2*Edges) This is tp only show space complexity
+        //SC:O(2*Edges) This is to only show space complexity
     }
 
     private static void adjacencyMatrix() {
@@ -73,6 +73,6 @@ public class G3UnweightedGraph {
           System.out.println();
         }
 
-        // SC:O(n*n) This is tp only show space complexity
+        // SC:O(n*n) This is to only show space complexity
     }
 }

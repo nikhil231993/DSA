@@ -8,14 +8,14 @@ public class LC442FindAllDuplicatesInAnArray {
 	public static void main(String[] args) {
 
 		int[] nums = new int[] { 4, 3, 2, 7, 8, 2, 3, 1 };
-		List<Integer> r = findDuplicates(nums);
+		List<Integer> result = findDuplicates(nums);
 
-		System.out.println(r);
+		System.out.println(result);
 	}
 
-	public static List<Integer> findDuplicates(int[] nums) {
+	private static List<Integer> findDuplicates(int[] nums) {
 
-		List<Integer> arr=new ArrayList();
+		List<Integer> arr=new ArrayList<>();
 		for(int i=0; i<nums.length; i++){
 			int idx=Math.abs(nums[i]);
 			if(nums[idx-1]<0)

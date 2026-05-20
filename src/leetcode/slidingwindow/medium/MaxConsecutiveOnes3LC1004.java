@@ -34,7 +34,7 @@ public class MaxConsecutiveOnes3LC1004 {
                 left++;
             }
 
-            if(count<=k)
+            if(count <= k)
                 maxLen=Math.max(maxLen, right-left+1);
             right++;
         }
@@ -52,7 +52,7 @@ public class MaxConsecutiveOnes3LC1004 {
         for(int i=0; i<n;i++){
 
             int count=0;
-            for(int j=i; j<n; j++){
+            for(int j=i;j<n;j++){
                 if(nums[j]==0){
                     count++;
                 }
@@ -68,7 +68,7 @@ public class MaxConsecutiveOnes3LC1004 {
         //SC:O(1)
     }
 
-    public static int longestOnesBest(int[] nums, int k) {
+    private static int longestOnesBest(int[] nums, int k) {
 
         Integer maxLen=Integer.MIN_VALUE;
         int right=0, left=0, count=0, n=nums.length;

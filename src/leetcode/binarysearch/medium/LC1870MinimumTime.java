@@ -17,7 +17,7 @@ public class LC1870MinimumTime {
         System.out.println(minSpeedOnTimeSelf(dist, hour));
     }
 
-    public static int minSpeedOnTimeSelf(int[] dist, double hour) {
+    private static int minSpeedOnTimeSelf(int[] dist, double hour) {
 
         int n=dist.length, low=1, high=(int)1e7, ans=-1;
 
@@ -34,17 +34,17 @@ public class LC1870MinimumTime {
         return ans;
     }
 
-    public static double find(int mid, int[] dist, double hour){
+    private static double find(int mid, int[] dist, double hour){
 
         double val=0.0;
-        for(int i=0;i<dist.length-1;i++){
+        for(int i=0; i<dist.length-1; i++){
             val+=Math.ceil(dist[i]/(double)(mid));
         }
         val+=dist[dist.length-1]/(double)mid;
         return val;
     }
 
-    public static boolean isPossible(double speed, int[] dist, double hour){
+    private static boolean isPossible(double speed, int[] dist, double hour){
 
         double total_hour_so_far = 0;
 
@@ -58,7 +58,7 @@ public class LC1870MinimumTime {
         return total_hour_so_far <= hour ? true : false;
     }
 
-    public static int minSpeedOnTime(int[] dist, double hour) {
+    private static int minSpeedOnTime(int[] dist, double hour) {
 
         int low = 1, high = (int)1e7;
         int ans = -1;

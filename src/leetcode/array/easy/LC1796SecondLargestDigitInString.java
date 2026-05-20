@@ -25,5 +25,8 @@ public class LC1796SecondLargestDigitInString {
             }
         }
         return secondLargest;
+
+        //TC:O(N)
+        //SC:O(1)
     }
 }

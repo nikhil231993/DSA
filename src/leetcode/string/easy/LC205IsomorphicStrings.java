@@ -16,10 +16,10 @@ public class LC205IsomorphicStrings {
         System.out.println(isIsomorphicBetter(s,t));
     }
 
-    public static boolean isIsomorphicSelf(String s, String t) {
+    private static boolean isIsomorphicSelf(String s, String t) {
 
-        int n=s.length();
-        int m=t.length();
+        int n=s.length(), m=t.length();
+
         int[] sh=new int[256];
         Arrays.fill(sh, -1);
         int[] th=new int[256];
@@ -36,7 +36,7 @@ public class LC205IsomorphicStrings {
         return true;
     }
 
-    public static boolean isIsomorphic(String s, String t) {
+    private static boolean isIsomorphic(String s, String t) {
 
         HashMap<Character, Character> m1=new HashMap();
         HashMap<Character, Character> m2=new HashMap();
@@ -62,7 +62,7 @@ public class LC205IsomorphicStrings {
         // SC:O(256 * 2)
     }
 
-    public static boolean isIsomorphicBetter(String s, String t) {
+    private static boolean isIsomorphicBetter(String s, String t) {
 
         int[] ch1=new int[256];
         int[] ch2=new int[256];

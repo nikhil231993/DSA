@@ -18,11 +18,12 @@ public class LC1332RemovePalindromicSubsequences {
 
 	private static int palindrome(String s) {
 
-		if (s.length() == 0 || s.trim().length() == 0)
+		int n=s.length();
+		if (n == 0 || s.trim().isEmpty())
 			return 0;
 		int i=0;
-		while (i < s.length() / 2) {
-			if (s.charAt(i) != s.charAt(s.length() - 1 - i)) {
+		while (i < n / 2) {
+			if (s.charAt(i) != s.charAt(n - 1 - i)) {
 				return 2;
 			}
 			i++;

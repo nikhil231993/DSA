@@ -13,7 +13,7 @@ public class BS2InsertPositionLC35 {
 
         int low=0, high=arr.length-1, ans=arr.length; //Return last hypothetical answer
 
-        while(low<=high){
+        while(low <= high){
             int mid=low+(high-low)/2;
             if(arr[mid]>=x){
                 ans=mid;

@@ -17,7 +17,7 @@ public class LC225Approach2StackUsingQueue {
         public LC225Approach2StackUsingQueue() {
         }
 
-        public void push(int x) {
+        private void push(int x) {
             q2.add(x);
             while(!q1.isEmpty()){
                 q2.add(q1.peek());
@@ -28,21 +28,21 @@ public class LC225Approach2StackUsingQueue {
             q2=q;
         }
 
-        public int pop() {
+        private int pop() {
             if(!q1.isEmpty()){
                 return q1.remove();
             }
             return -1;
         }
 
-        public int top() {
+        private int top() {
             if(!q1.isEmpty()){
                 return q1.peek();
             }
             return -1;
         }
 
-        public boolean empty() {
+        private boolean empty() {
 
             return q1.isEmpty();
         }

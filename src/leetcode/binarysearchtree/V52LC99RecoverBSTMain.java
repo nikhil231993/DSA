@@ -25,7 +25,7 @@ public class V52LC99RecoverBSTMain {
 		bst.inorderRecoverBST(root,list);
 		System.out.println(list);
 
-		//Recover BST
+		// Recover BST
 		bst.recover(root);
 
 		System.out.println("Inorder traversal after recovering");

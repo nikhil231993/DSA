@@ -8,7 +8,7 @@ public class LC556NextGreaterElement3 {
 		System.out.println(nextGreaterElement(n));
 	}
 
-	public static int nextGreaterElement(int n) {
+	private static int nextGreaterElement(int n) {
 
 		char[] ch = String.valueOf(n).toCharArray();
 		int idx1 = -1;
@@ -59,5 +59,4 @@ public class LC556NextGreaterElement3 {
 			end--;
 		}
 	}
-
 }

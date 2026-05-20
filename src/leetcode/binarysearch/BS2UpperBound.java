@@ -9,14 +9,14 @@ public class BS2UpperBound {
         System.out.println(upperBound(arr,x));
     }
 
-    private static int upperBound(int[] arr, int x) {
+    private static int upperBound(int[] arr, int target) {
 
     	//smallest number which > x
         int ans=arr.length, low=0, high=arr.length-1;
 
-        while(low<=high){
+        while(low <= high){
             int mid=low+(high-low)/2;
-            if(arr[mid]>x){
+            if(arr[mid]>target){
               ans=mid;
               high=mid-1;
             }else{
@@ -25,7 +25,7 @@ public class BS2UpperBound {
         }
         return ans;
         
-        // TC:O(log n)
-        // SC:O(1)
+        //TC:O(log n)
+        //SC:O(1)
     }
 }

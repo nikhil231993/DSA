@@ -37,7 +37,7 @@ public class LC2AddTwoNumbers {
         }
     }
 
-    public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+    private static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 
         int sum=0, carry=0;
         ListNode dummy=new ListNode(-1);

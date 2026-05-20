@@ -17,11 +17,11 @@ public class LC225Approach1StackUsingQueue {
         public LC225Approach1StackUsingQueue() {
         }
 
-        public void push(int x) {
+        private void push(int x) {
             input.offer(x);
         }
 
-        public int pop() {
+        private int pop() {
             int value=-1;
             if(input.isEmpty())
                 return value;
@@ -37,7 +37,7 @@ public class LC225Approach1StackUsingQueue {
             return value;
         }
 
-        public int top() {
+        private int top() {
 
             int value=-1;
 
@@ -56,7 +56,7 @@ public class LC225Approach1StackUsingQueue {
             return value;
         }
 
-        public boolean empty() {
+        private boolean empty() {
             return input.isEmpty();
         }
 

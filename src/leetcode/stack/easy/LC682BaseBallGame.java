@@ -8,9 +8,10 @@ public class LC682BaseBallGame {
 
         String[] ops =new String[] {"5","2","C","D","+"};
         System.out.println(calPoints(ops));
+        System.out.println(calPointsSelf(ops));
     }
 
-    public static int calPoints(String[] operations) {
+    private static int calPoints(String[] operations) {
 
         Stack<String> st=new Stack();
 
@@ -42,5 +43,32 @@ public class LC682BaseBallGame {
 
         //TC:O(n)
         //SC:O(n)
+    }
+
+    private static int calPointsSelf(String[] operations) {
+        int n=operations.length;
+        Stack<Integer> st=new Stack();
+        for(int i=0;i<n;i++){
+            String op=operations[i];
+            if(op.equals("+")){
+                int num1=st.pop();
+                int num2=st.pop();
+                st.push(num2);
+                st.push(num1);
+                st.push(num1+num2);
+            }else if(op.equals("C"))
+                st.pop();
+            else if(op.equals("D")){
+                int num=st.peek();
+                st.push(2*num);
+            }else{
+                st.push(Integer.parseInt(op));
+            }
+        }
+        int sum=0;
+        while(!st.isEmpty())
+            sum+=st.pop();
+
+        return sum;
     }
 }

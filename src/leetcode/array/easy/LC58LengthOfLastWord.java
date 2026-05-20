@@ -36,5 +36,7 @@ public class LC58LengthOfLastWord {
 			i--;
 		len=k-i;
 		return len;
+		//TC:O(n)
+		//SC;O(1)
 	}
 }

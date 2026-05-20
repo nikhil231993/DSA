@@ -31,7 +31,8 @@ public class V3DoublyLinkedList {
         int k=6;
         NodeDLL head3=new NodeDLL(arr3[0]);
         convertArrayToDLL(head3, arr3);
-        NodeDLL newHead3=deleteParticularPosition(head3,k);
+        NodeDLL newHead3=deleteParticularPosition(head3,k); //Revise this
+        //deleteParticularPositionSelf(head3,k);
         display(newHead3);
 
         System.out.println("Delete a particular node ");
@@ -245,6 +246,31 @@ public class V3DoublyLinkedList {
         node.next=node.prev=null;
     }
 
+   private  static NodeDLL deleteParticularPositionSelf(NodeDLL head, int pos) {
+        if(pos==0){
+            if(head.next==null)
+                return null;
+            head.next.prev=null;
+            head=head.next;
+            return head;
+        }
+
+        int count=1;
+        NodeDLL temp=head.next;
+        while(temp!=null){
+            if(count==pos){
+                if(temp.next!=null){
+                    temp.next.prev=temp.prev;
+                }
+                temp.prev.next=temp.next;
+                break;
+            }
+            count++;
+            temp=temp.next;
+        }
+        return head;
+    }
+
     private static NodeDLL deleteParticularPosition(NodeDLL head, int k) {
 
         if(head==null)
@@ -319,7 +345,8 @@ public class V3DoublyLinkedList {
     public static void convertArrayToDLL(NodeDLL head, int[] arr) {
 
         NodeDLL temp=head;
-        for(int i=1; i<arr.length;i++){
+        int len=arr.length;
+        for(int i=1; i<len; i++){
             NodeDLL n=new NodeDLL(arr[i]);
             n.prev=temp;
             temp.next=n;

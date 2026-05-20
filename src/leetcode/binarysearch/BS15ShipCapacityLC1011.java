@@ -22,7 +22,7 @@ public class BS15ShipCapacityLC1011 {
 
         int low=max, high=totalWeights, ans=0;
 
-        while(low<=high){ //log n
+        while(low <= high){ //log n
             int mid=low+(high-low)/2;
             if(isPossible(mid,weights,days)){
                 high=mid-1;

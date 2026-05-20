@@ -13,6 +13,7 @@ public class LC2288ApplyDiscountsNFA {
         //discount=28
 
         //To handle above case we use double or long
+        System.out.println(discountPricesOptimised(sentence, discount));
     }
 
     public static String discountPrices(String sentence, int discount) {
@@ -44,6 +45,37 @@ public class LC2288ApplyDiscountsNFA {
 
         for(int i=1;i<str.length();i++){
             if(!Character.isDigit(str.charAt(i)))
+                return false;
+        }
+        return true;
+    }
+
+    private static String discountPricesOptimised(String sentence, int discount) {
+
+        String[] s=sentence.split(" ");
+        int n=s.length;
+        StringBuilder sb=new StringBuilder();
+        for(int i=0;i<n;i++){
+            String str=s[i];
+            if(isValidFun(str)){
+                double val=Long.parseLong(str.substring(1));
+                double disc=val*(1-(discount/100.0d));
+                sb.append("$").append(String.format("%.2f", disc));
+            }else{
+                sb.append(str);
+            }
+            sb.append(" ");
+        }
+        return sb.deleteCharAt(sb.length()-1).toString();
+    }
+
+    private static boolean isValidFun(String s){
+        if(s.length()==1)
+            return false;
+        else if(s.charAt(0)!='$')
+            return false;
+        for(int i=1;i<s.length();i++){
+            if(!Character.isDigit(s.charAt(i)))
                 return false;
         }
         return true;

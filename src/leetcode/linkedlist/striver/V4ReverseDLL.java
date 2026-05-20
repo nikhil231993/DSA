@@ -5,8 +5,8 @@ public class V4ReverseDLL {
     public static void main(String[] args) {
 
         //Approach 1: Take a Stack and put the values in the stack
-        //TC:O(2N)
-        //SC:O(N) we use external Stack
+        // TC:O(2N)
+        // SC:O(N) we use external Stack
 
         //Approach 2
         int[] arr=new int[]{5,10,15,20,25};

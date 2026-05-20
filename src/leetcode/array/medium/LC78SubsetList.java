@@ -13,13 +13,13 @@ public class LC78SubsetList {
 
 	public static List<List<Integer>> subsets(int[] nums) {
 
-		List<List<Integer>> t1 = new ArrayList<>();
-	    test(nums, 0, new ArrayList(), t1);
-		System.out.println(t1);
-		return t1;
+		List<List<Integer>> result = new ArrayList<>();
+	    recursion(nums, 0, new ArrayList<>(), result);
+		System.out.println(result);
+		return result;
 	}
 
-	public static void test(int[] nums, int i, List<Integer> single, List<List<Integer>> t) {
+	public static void recursion(int[] nums, int i, List<Integer> single, List<List<Integer>> t) {
 
 		if (i == nums.length) {
 			t.add(new ArrayList<>(single));
@@ -27,9 +27,9 @@ public class LC78SubsetList {
 		}
 
 		single.add(nums[i]);
-		test(nums, i + 1, single, t);
+		recursion(nums, i + 1, single, t);
 		single.remove(single.size() - 1);
-		test(nums, i + 1, single, t);
+		recursion(nums, i + 1, single, t);
 
 		//TC:O (2 raise to n)
 		//SC:O (2 raise to n)

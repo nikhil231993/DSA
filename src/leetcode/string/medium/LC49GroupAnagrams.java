@@ -38,7 +38,7 @@ public class LC49GroupAnagrams {
 		}
 		return new ArrayList<>(map.values());
 
-		//Time Complexity: O(NK), where N is the length of strs, and K is the maximum length of a
+		//Time Complexity: O(N * K), where N is the length of strs, and K is the maximum length of a
 		//string in strs. Counting each string is linear in the size of the string,
 		//and we count every string.
 
@@ -46,7 +46,6 @@ public class LC49GroupAnagrams {
 	}
 
 	private static List<List<String>> groupedAnagrams(List<String> str) {
-
 
 		HashMap<String, List<String>> map = new HashMap();
 
@@ -62,7 +61,7 @@ public class LC49GroupAnagrams {
 		}
 		return new ArrayList<>(map.values());
 
-		//TC:O(NKlogK) n total no of strings k length of each string as we are sorting
+		//TC:O(N*K*logK) n total no of strings k length of each string as we are sorting
 		// the strings
 		//SC:O(NK)
 	}

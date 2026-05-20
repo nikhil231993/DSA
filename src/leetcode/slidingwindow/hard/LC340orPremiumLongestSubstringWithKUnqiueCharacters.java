@@ -27,7 +27,7 @@ public class LC340orPremiumLongestSubstringWithKUnqiueCharacters {
         //only if we need to find no of subarray or substring of exactly k we need k or k-1
     }
 
-    public static int func(String s, int k){
+    private static int func(String s, int k){
 
         HashSet<Character> set=new HashSet();
         for(int i=0; i<s.length(); i++)

@@ -2,6 +2,7 @@ package leetcode.twopointer.hard;
 
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Set;
 
 public class LC2799CountCompleteSubarrays {
 
@@ -21,7 +22,10 @@ public class LC2799CountCompleteSubarrays {
         System.out.println(better(nums, set.size()));
 
         //we cannot use "if" instead of "while" as in counting we will miss some subarrays. Take an example and try out
-        //When we want to find longest length we can use as its to find max length
+        //When we want to find longest length we can use 'if' as its to find max length
+
+        //Approach 4: Using array instead of map
+        System.out.println(countCompleteSubarrays(nums));
     }
 
     private static int better(int[] nums, int k) {
@@ -76,5 +80,39 @@ public class LC2799CountCompleteSubarrays {
 
         //TC:O(n square) * set TC
         //SC:O(n) in case all the digits are different
+    }
+
+    private static int countCompleteSubarrays(int[] nums) {
+
+        int n=nums.length;
+        Set<Integer> set=new HashSet();
+        for(int i=0;i<n;i++)
+            set.add(nums[i]);
+
+        int k=set.size();
+
+        return count(n, k, nums)-count(n, k-1, nums);
+    }
+
+    private static int count(int n, int k, int[] nums){
+
+        int left=0, right=0, count=0, distinct=0;
+        int[] result=new int[2001];
+        while(right<n){
+            if(result[nums[right]]==0){
+                distinct++;
+            }
+            result[nums[right]]++;
+            while(distinct>k){
+                result[nums[left]]--;
+                if(result[nums[left]]==0)
+                    distinct--;
+                left++;
+            }
+            if(distinct<=k)
+                count+=right-left+1;
+            right++;
+        }
+        return count;
     }
 }

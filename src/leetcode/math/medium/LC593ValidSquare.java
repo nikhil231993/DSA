@@ -16,16 +16,12 @@ public class LC593ValidSquare {
 		System.out.println(validSquare(p1, p2, p3, p4));
 	}
 
-	public static int cal(int[] p1, int[] p2){
-		return ((p2[1]-p1[1])*(p2[1]-p1[1])) + ((p2[0]-p1[0])*(p2[0]-p1[0]));
-	}
-
-	public static boolean validSquare(int[] p1, int[] p2, int[] p3, int[] p4) {
+	private static boolean validSquare(int[] p1, int[] p2, int[] p3, int[] p4) {
 
 		int[] arr = new int[] { calculate(p1, p2), calculate(p1, p3), calculate(p1, p4), calculate(p2, p3),
 				calculate(p3, p4), calculate(p4, p2) };
 
-		HashMap<Integer, Integer> map = new HashMap();
+		HashMap<Integer, Integer> map = new HashMap<>();
 		int max = 0;// To check diagonal
 
 		for (int val : arr) {

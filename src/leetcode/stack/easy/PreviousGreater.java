@@ -1,5 +1,7 @@
 package leetcode.stack.easy;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Stack;
 
 public class PreviousGreater {
@@ -34,5 +36,24 @@ public class PreviousGreater {
 
         //TC:O(N + N)
         //SC:O(N) worst case if it is an decreasing array
+    }
+
+    private static ArrayList<Integer> preGreaterEle(int[] arr) {
+        Stack<Integer> st=new Stack<>();
+        int n=arr.length;
+        int i=n-1;
+        ArrayList<Integer> list=new ArrayList<>(Collections.nCopies(n, -1));
+        while(i>=0){
+            while(!st.isEmpty() && arr[st.peek()]<arr[i]){
+                list.set(st.pop(), arr[i]);
+            }
+            st.push(i);
+            i--;
+        }
+
+        while(!st.isEmpty())
+            list.set(st.pop(), -1);
+
+        return list;
     }
 }

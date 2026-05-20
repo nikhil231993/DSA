@@ -22,7 +22,20 @@ public class Lc1394LuckyNumber {
 		}
 		return max;
 
-		//TC:O(n)
-		//SC:O(500)
+		// TC:O(n)
+		// SC:O(500)
+	}
+
+	private int findLuckyAlternative(int[] arr) {
+		int n=arr.length;
+		int[] result=new int[501];
+		for(int i=0;i<n;i++)
+			result[arr[i]]++;
+		int max=-1;
+		for(int i=0; i<=500; i++){
+			if(result[i]!=0 && result[i]==i)
+				max=Math.max(max, i);
+		}
+		return max;
 	}
 }

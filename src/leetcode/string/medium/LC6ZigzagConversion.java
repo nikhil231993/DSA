@@ -10,7 +10,7 @@ public class LC6ZigzagConversion {
         System.out.println(convert(s, numRows));
     }
 
-    public static String convert(String s, int row){
+    private static String convert(String s, int row){
 
         int n=s.length();
         StringBuilder[] sb=new StringBuilder[row];
@@ -18,13 +18,13 @@ public class LC6ZigzagConversion {
         for(int i=0; i<row; i++){
             sb[i]=new StringBuilder();
         }
-        int ch=0;
-        while(ch<n){
-            for(int id=0; id<row && ch<n; id++) {
-                sb[id].append(s.charAt(ch++));
+        int i=0;
+        while(i<n){
+            for(int id=0; id<row && i<n; id++) {
+                sb[id].append(s.charAt(i++));
             }
-            for(int id=row-2; id>=1 && ch< n; id--){
-                sb[id].append(s.charAt(ch++));
+            for(int id=row-2; id>=1 && i< n; id--){
+                sb[id].append(s.charAt(i++));
             }
         }
 

@@ -20,7 +20,7 @@ public class LC289GameOfLife {
 		int[] x_axis = new int[] { 0, 0, 1, 1, 1, -1, -1, -1 };
 		int[] y_axis = new int[] { 1, -1, 1, 0, -1, 1, 0, -1 };
 		
-		for(int i=0;i<n;i++) {
+		for(int i=0; i<n; i++) {
 			for(int j=0;j<m;j++) {
 				int live_neighbour=0;
 
@@ -49,7 +49,7 @@ public class LC289GameOfLife {
 			}
 		}
 
-		// TC:O(n square)
-		// SC:O(1)
+		//TC:O(n square)
+		//SC:O(1)
 	}
 }

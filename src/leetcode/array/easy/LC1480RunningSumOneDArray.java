@@ -37,7 +37,7 @@ public class LC1480RunningSumOneDArray {
         for (int i=1; i<nums.length; i++)
             nums[i]+=nums[i-1];
 
-        //TC:O(n)
-        //SC:O(1)
+        // TC:O(n)
+        // SC:O(1)
     }
 }

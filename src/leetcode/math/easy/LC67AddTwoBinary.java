@@ -19,13 +19,11 @@ public class LC67AddTwoBinary {
 		System.out.println(addBinaryWithStringAndStack(a, b));
 	}
 
-	public static String addBinaryWithStringAndStack(String a, String b) {
+	private static String addBinaryWithStringAndStack(String a, String b) {
 
-		int n=a.length(), m=b.length();
-		int i=n-1, j=m-1;
-		int carry=0, sum=0;
+		int n=a.length(), m=b.length(), i=n-1, j=m-1, carry=0, sum=0;
 
-		Stack st=new Stack();
+		Stack<Integer> st=new Stack<>();
 		String s="";
 		while(i>=0 || j>=0){
 
@@ -53,11 +51,9 @@ public class LC67AddTwoBinary {
 		//TC:O(2 * n)
 	}
 
-	public static String addBinaryWithoutStringBuilder(String a, String b) {
+	private static String addBinaryWithoutStringBuilder(String a, String b) {
 
-		int n=a.length(), m=b.length();
-		int i=n-1, j=m-1;
-		int carry=0, sum=0;
+		int n=a.length(), m=b.length(), i=n-1, j=m-1, carry=0, sum=0;
 
 		String s="";
 		while(i>=0 || j>=0){
@@ -83,11 +79,9 @@ public class LC67AddTwoBinary {
 		//SC: O(max(N,M)) to keep the answer.
 	}
 
-	public static String addBinary(String a, String b) {
+	private static String addBinary(String a, String b) {
 
-		int sum = 0;
-		int carry = 0;
-		int i = a.length() - 1, j = b.length() - 1;
+		int sum = 0, carry = 0, i = a.length() - 1, j = b.length() - 1;
 		StringBuilder result = new StringBuilder();
 
 		while (i >= 0 || j >= 0) {
@@ -106,7 +100,7 @@ public class LC67AddTwoBinary {
 		}
 		return result.reverse().toString();
 
-		// TC:O(n) where n is the length of larger string
-		// SC:O(n+1) where n is the length of the larger string
+		//TC:O(n) where n is the length of larger string
+		//SC:O(n+1) where n is the length of the larger string
 	}
 }

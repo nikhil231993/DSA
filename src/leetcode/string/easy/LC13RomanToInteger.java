@@ -59,11 +59,11 @@ public class LC13RomanToInteger {
 				break;
 			}
 			
-			if (num < forward) {
+			if (num < forward)
 				sum -= num;
-			} else {
+			 else
 				sum += num;
-			}
+
 			forward = num;
 		}
 		return sum;
@@ -74,22 +74,22 @@ public class LC13RomanToInteger {
 
 	private static int romanToIntegerUsingMap(String s) {
 
-		Map<Character, Integer> keyValueMapping = new LinkedHashMap();
-		keyValueMapping.put('I', 1);
-		keyValueMapping.put('V', 5);
-		keyValueMapping.put('X', 10);
-		keyValueMapping.put('L', 50);
-		keyValueMapping.put('C', 100);
-		keyValueMapping.put('D', 500);
-		keyValueMapping.put('M', 1000);
+		Map<Character, Integer> map = new LinkedHashMap();
+		map.put('I', 1);
+		map.put('V', 5);
+		map.put('X', 10);
+		map.put('L', 50);
+		map.put('C', 100);
+		map.put('D', 500);
+		map.put('M', 1000);
 		
-		int sum = keyValueMapping.get(s.charAt(s.length() - 1));
+		int sum = map.get(s.charAt(s.length() - 1));
 		for (int i = s.length() - 2; i >= 0; i--) {
 
-			if (keyValueMapping.get(s.charAt(i)) < keyValueMapping.get(s.charAt(i + 1))) {
-				sum -= keyValueMapping.get(s.charAt(i));
+			if (map.get(s.charAt(i)) < map.get(s.charAt(i + 1))) {
+				sum -= map.get(s.charAt(i));
 			} else {
-				sum += keyValueMapping.get(s.charAt(i));
+				sum += map.get(s.charAt(i));
 			}
 		}
 		return sum;
@@ -98,7 +98,7 @@ public class LC13RomanToInteger {
 		//SC:O(constant values given in question)
 	}
 
-	public static int romanToIntOptimized(String s) {
+	private static int romanToIntOptimized(String s) {
 
 		HashMap<Character, Integer> map=new HashMap<>();
 		map.put('I',1);

@@ -8,7 +8,7 @@ public class LC55JumpGame {
         System.out.println(canJump(nums));
     }
 
-    public static boolean canJump(int[] nums) {
+    private static boolean canJump(int[] nums) {
 
         int n=nums.length;
         int goal=n-1;

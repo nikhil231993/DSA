@@ -34,7 +34,7 @@ public class LC2824CountPairsLessThanTarget {
 		//SC:O(n)
     }
 
-    public static int countPairsPointer(List<Integer> nums, int target) {
+    private static int countPairsPointer(List<Integer> nums, int target) {
 
         Collections.sort(nums);
 
@@ -51,7 +51,7 @@ public class LC2824CountPairsLessThanTarget {
 
         return count;
 
-        //TC:O(nlogn)
+        //TC:O(n logn for sorting + n for two pointer) => O(n logn)
         //SC:O(1)
     }
 }

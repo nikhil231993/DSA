@@ -39,7 +39,7 @@ public class G19DetectCycleDirectedGraphDFS {
 
         visited[i]=1;
         pathVisited[i]=1;
-        for(Integer vertex:arr.get(i)){
+        for(Integer vertex : arr.get(i)){
             if(visited[vertex] == 0) {
                 if (cycle(arr, n, m, visited, pathVisited, vertex))
                     return true;

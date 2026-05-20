@@ -41,7 +41,7 @@ public class LC917ReverseLetters {
         // SC:O(N+N)( Stack and string builder)
     }
 
-    public static String reverseOnlyLetters(String s) {
+    private static String reverseOnlyLetters(String s) {
 
         String letters="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
         int left=0, right=s.length()-1;

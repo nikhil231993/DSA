@@ -11,7 +11,7 @@ public class LC32LongestValidParenthesis {
         System.out.println(longestValidParenthesesAlternativeStackCondition(s));
     }
 
-    public static int longestValidParentheses(String s) {
+    private static int longestValidParentheses(String s) {
 
         if(s==null || s.length()<2)
             return 0;
@@ -45,7 +45,7 @@ public class LC32LongestValidParenthesis {
         //SC:O(N)
     }
 
-    public static  int longestValidParenthesesAlternativeStackCondition(String s) {
+    private static int longestValidParenthesesAlternativeStackCondition(String s) {
 
         Stack<Integer> st=new Stack();
         int n=s.length();
@@ -61,8 +61,7 @@ public class LC32LongestValidParenthesis {
             }
         }
 
-        int max=0;
-        int last=n;
+        int max=0, last=n;
         while(!st.isEmpty()){
             max=Math.max(max, last-st.peek()-1);
             last=st.pop();

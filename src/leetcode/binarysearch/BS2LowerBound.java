@@ -2,7 +2,7 @@ package leetcode.binarysearch;
 
 public class BS2LowerBound {
 
-    //Note: Smallest index/number which is greater than or equal to
+    //Note: Smallest index/number which is greater than or equal to given value
 
     public static void main(String[] args) {
 
@@ -13,10 +13,9 @@ public class BS2LowerBound {
 
     private static int lowerBound(int[] arr, int x) {
 
-        int low=0, high=arr.length-1;
-        int ans=arr.length;     //Return last hypothetical answer
+        int low=0, high=arr.length-1, ans=arr.length;     //Return last hypothetical answer
 
-        while(low<=high){
+        while(low <= high){
             int mid=low+(high-low)/2;
             if(arr[mid]>=x){
                 ans=mid;

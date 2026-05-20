@@ -23,6 +23,6 @@ public class V49LC1008BstFromPreorder {
 //        node.right=func(preorder, max, count);
 //        return node;
 //    }
-    //TC: we visit single node 3 times so it is 3N
+    //TC:we visit single node 3 times so it is 3N
     //SC:O(1) spart from stack
 }

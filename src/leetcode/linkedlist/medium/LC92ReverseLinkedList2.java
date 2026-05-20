@@ -28,7 +28,7 @@ public class LC92ReverseLinkedList2 {
         ListNode current=head;
         ListNode next=null;
         ListNode prev=null;
-        while(k>=0){
+        while(k >= 0){
             next=current.next;
             current.next=prev;
             prev=current;

@@ -21,19 +21,19 @@ public class gfgSecondLargestAndSecondSmallest {
             if(nums[i] > max){
                 secondMax=max;
                 max=nums[i];
-            }else if(nums[i] > secondMax && nums[i] != max){
+            }else if(nums[i] > secondMax && nums[i] < max){
                 secondMax = nums[i];
             }
             if(nums[i] < smallest){
                 secondSmallest = smallest;
                 smallest = nums[i];
-            }else if(nums[i] < secondSmallest && nums[i] != smallest){
+            }else if(nums[i] < secondSmallest && nums[i] > smallest){
                 secondSmallest = nums[i];
             }
         }
         return new int[]{ secondMax, secondSmallest };
 
-        //TC:O(n)
-        //SC:O(1)
+        // TC:O(n)
+        // SC:O(1)
     }
 }

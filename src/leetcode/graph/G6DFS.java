@@ -32,7 +32,7 @@ public class G6DFS {
         boolean[] visited=new boolean[n+1];
         ArrayList<Integer> dfs=new ArrayList<>();
 
-        for(int i=1;i<=n;i++){
+        for(int i=1; i<=n; i++){
             if(!visited[i]) {
                 dfsRecursive(arr,dfs,visited,i);
             }

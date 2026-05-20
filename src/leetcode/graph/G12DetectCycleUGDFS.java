@@ -119,8 +119,8 @@ public class G12DetectCycleUGDFS {
             matrix[v][u]=1;
         }
         System.out.println("Adjacency Matrix List is: ");
-        for(int i=0;i<=n;i++){
-            for(int j=0;j<=n;j++){
+        for(int i=0; i<=n; i++){
+            for(int j=0; j<=n; j++){
                 System.out.print(matrix[i][j]);
             }
             System.out.println();

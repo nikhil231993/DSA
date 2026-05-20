@@ -12,7 +12,7 @@ public class BS13BouquetsLC1482 {
         System.out.println(minDays(bloomDay,m,k));
     }
 
-    public static int minDays(int[] bloomDay, int m, int k) {
+    private static int minDays(int[] bloomDay, int m, int k) {
 
         int n=bloomDay.length;
         if(n < m*k)
@@ -37,7 +37,7 @@ public class BS13BouquetsLC1482 {
         return ans;
     }
 
-    public static boolean isPossible(int[] bloomDay, int m, int k, int mid){
+    private static boolean isPossible(int[] bloomDay, int m, int k, int mid){
 
         int count=0, noOfBouquets=0;
 
@@ -56,6 +56,6 @@ public class BS13BouquetsLC1482 {
         return false;
     }
 
-    // TC:O(n * log (max-min+1)) i.e., 7-13
-    // SC:O(1)
+    //TC:O(n * log (max-min+1)) i.e., 7-13
+    //SC:O(1)
 }

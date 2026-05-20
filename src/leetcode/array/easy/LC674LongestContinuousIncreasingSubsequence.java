@@ -14,16 +14,18 @@ public class LC674LongestContinuousIncreasingSubsequence {
         int prev=-1;
         int n=nums.length;
         int max=Integer.MIN_VALUE;
+
         for(int i=0;i<n;i++){
             if(prev<nums[i]){
                 count++;
-                prev=nums[i];
             }else{
-                prev=nums[i];
                 count=1;
             }
+            prev=nums[i];
             max=Math.max(max, count);
         }
         return max;
+        //TC:O(n)
+        //SC:O(1)
     }
 }

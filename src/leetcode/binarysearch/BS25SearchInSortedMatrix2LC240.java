@@ -11,7 +11,7 @@ public class BS25SearchInSortedMatrix2LC240 {
         System.out.println(searchMatrix(matrix,target));
 
         //Approach 2
-        System.out.println(searchMatrixUsingPartialBS(matrix,target));
+        System.out.println(searchMatrixUsingPartialBinarySearch(matrix,target));
 
         //Approach 3
         System.out.println(searchMatrixOptimized(matrix,target));
@@ -34,7 +34,7 @@ public class BS25SearchInSortedMatrix2LC240 {
         //SC:O(1)
     }
 
-    public static boolean searchMatrixUsingPartialBS(int[][] matrix, int target) {
+    public static boolean searchMatrixUsingPartialBinarySearch(int[][] matrix, int target) {
 
         int n=matrix.length, m=matrix[0].length;
         for(int i=0; i<n; i++){
@@ -65,8 +65,8 @@ public class BS25SearchInSortedMatrix2LC240 {
 
     private static boolean searchMatrix(int[][] matrix, int target) {
 
-        for(int i=0;i<matrix.length;i++){
-            for(int j=0;j<matrix[i].length;j++){
+        for(int i=0; i<matrix.length; i++){
+            for(int j=0; j<matrix[i].length; j++){
                 if(matrix[i][j]==target)
                     return true;
             }

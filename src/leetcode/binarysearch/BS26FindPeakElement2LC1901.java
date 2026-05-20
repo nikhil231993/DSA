@@ -57,7 +57,7 @@ public class BS26FindPeakElement2LC1901 {
         return maxRowIndex;
     }
 
-    public static int[] findPeakGrid(int[][] mat) {
+    private static int[] findPeakGrid(int[][] mat) {
 
         int n=mat.length, m=mat[0].length;
 

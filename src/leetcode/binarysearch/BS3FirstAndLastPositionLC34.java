@@ -17,11 +17,11 @@ public class BS3FirstAndLastPositionLC34 {
             System.out.println(n);
     }
 
-    public static int[] searchRange(int[] nums, int target) {
+    private static int[] searchRange(int[] nums, int target) {
 
         int first = firstOccurrence(nums,target);
         int last = lastOccurrence(nums,target);
-        return new int[]{ first, last };
+        return new int[] { first, last };
     }
 
     private static int lastOccurrence(int[] nums, int target) {

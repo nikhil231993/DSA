@@ -13,14 +13,16 @@ public class LC54SpiralMatrix {
 		System.out.println(r);
 	}
 
-	public static List<Integer> spiralOrder(int[][] matrix) {
+	private static List<Integer> spiralOrder(int[][] matrix) {
 
 		List<Integer> output = new ArrayList<>();
+		int n = matrix.length;
+		int m = matrix[0].length;
 
 		if (matrix.length == 0)
 			return output;
 
-		int top = 0 , left=0, right = matrix[0].length - 1, bottom = matrix.length - 1;
+		int top = 0 , left=0, right = n - 1, bottom = m - 1;
 
 		while (top <= bottom && left <= right) {
 

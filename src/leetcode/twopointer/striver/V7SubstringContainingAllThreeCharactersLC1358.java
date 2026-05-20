@@ -18,12 +18,12 @@ public class  V7SubstringContainingAllThreeCharactersLC1358 {
         System.out.println(betterNumberOfSubstrings(s));
 
         //Striver Solution
-        System.out.println(brute(s)); //better here will to add n-j to calcaulate count
+        System.out.println(brute(s)); //better here will to add n-j to calculate count
 
-        //Approach 3: Best
+        //Approach 3: Best approach
         System.out.println(bestNumberOfSubstrings(s));
 
-        //Approach 4: Using Two Pointer
+        //Approach 4: Using Two Pointer just to learn
         System.out.println(bestNumberOfSubstringsApproach(s));
 
         //we cannot use "if" instead of "while" as in counting we will miss some subarrays. Take an example and try out
@@ -55,10 +55,8 @@ public class  V7SubstringContainingAllThreeCharactersLC1358 {
 
     private static int bestLongest(String s, int k) {
 
-        int count=0;
-        int right=0, left=0;
+        int count=0, right=0, left=0, n=s.length();
         HashMap<Character, Integer> map= new HashMap<>();
-        int n=s.length();
 
         while(right<n){
 
@@ -69,7 +67,7 @@ public class  V7SubstringContainingAllThreeCharactersLC1358 {
                     map.remove(s.charAt(left));
                 left++;
             }
-            if(map.size()<=k)
+            if(map.size() <= k)
                 count+=right-left+1;
             right++;
         }
@@ -81,8 +79,7 @@ public class  V7SubstringContainingAllThreeCharactersLC1358 {
 
     private static int betterNumberOfSubstrings(String s) {
 
-        int count=0;
-        int n=s.length();
+        int count=0, n=s.length();
 
         for(int i=0; i<n; i++){
 
@@ -135,7 +132,7 @@ public class  V7SubstringContainingAllThreeCharactersLC1358 {
 
             arr[s.charAt(i)-'a']=i;
             if(arr[0]!=-1 && arr[1]!=-1 && arr[2]!=-1){
-                count+=Math.min(arr[0], Math.min(arr[1],arr[2])) +1;
+                count+=Math.min(arr[0], Math.min(arr[1],arr[2])) +1; // with every iteration there  is a substring that ends
             }
         }
 

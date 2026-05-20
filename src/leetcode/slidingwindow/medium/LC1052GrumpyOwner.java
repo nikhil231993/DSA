@@ -14,6 +14,9 @@ public class LC1052GrumpyOwner {
 
         //Approach 3:
         System.out.println(maxCustomers(customers,grumpy,minutes));
+
+        //Approach 4: Usual two pointer
+        System.out.println(maxSatisfied(customers,grumpy,minutes));
     }
 
     //Step 1: find the sum for all the customer when store owner was happy
@@ -32,7 +35,7 @@ public class LC1052GrumpyOwner {
         while(r<customers.length){
             if(grumpy[r]==1)
                 sum+=customers[r];
-            if(r-l+1==minutes){ // we can use while also instead of if also here tested in leetcode
+            if(r-l+1==minutes){  // we can use while also instead of if also here tested in leetcode
                 max=Math.max(max,sum);
                 if(grumpy[l]==1){
                     sum-=customers[l];
@@ -40,6 +43,31 @@ public class LC1052GrumpyOwner {
                 l++;
             }
             r++;
+        }
+        return max;
+    }
+
+    private static int maxSatisfied(int[] customers, int[] grumpy, int minutes) {
+
+        int n=customers.length, left=0, right=0, sum=0, max=0;
+        for(int i=0;i<n;i++){
+            if(grumpy[i]==0)
+                sum+=customers[i];
+        }
+
+        while(right<n){
+            if(grumpy[right]==1)
+                sum+=customers[right];
+            while((right-left+1)>minutes){  // we cna use here if also
+                if(grumpy[left]==1)
+                    sum-=customers[left];
+
+                left++;
+            }
+            if((right-left+1)<=minutes)
+                max=Math.max(max, sum);
+
+            right++;
         }
         return max;
     }

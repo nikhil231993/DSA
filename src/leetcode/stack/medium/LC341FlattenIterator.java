@@ -35,6 +35,38 @@ public class LC341FlattenIterator {
     public boolean hasNext() {
         return it.hasNext();
     }
-
     */
+
+    /**
+     * ublic class NestedIterator implements Iterator<Integer> {
+     *
+     *     private List<Integer> result=new ArrayList();
+     *     int count=0;
+     *     public NestedIterator(List<NestedInteger> nestedList) {
+     *       func(nestedList);
+     *     }
+     *
+     *     public void func(List<NestedInteger> list){
+     *
+     *         for(NestedInteger l: list){
+     *             if(l.isInteger())
+     *                 result.add(l.getInteger());
+     *             else
+     *                 func(l.getList());
+     *         }
+     *     }
+     *
+     *     @Override
+     *     public Integer next() {
+     *         return result.get(count++);
+     *     }
+     *
+     *     @Override
+     *     public boolean hasNext() {
+     *        if(result.size()>count)
+     *             return true;
+     *         return false;
+     *     }
+     * }
+     */
 }

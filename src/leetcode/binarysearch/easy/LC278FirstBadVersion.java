@@ -8,11 +8,11 @@ public class LC278FirstBadVersion {
         System.out.println(firstBadVersion(n));
     }
 
-    public static int firstBadVersion(int n) {
+    private static int firstBadVersion(int n) {
 
         int low=1, high=n, ans=-1;
 
-        while(low<=high){
+        while(low <= high){
             int mid=low+(high-low)/2;
             if(isBadVersion(mid)){
                 ans=mid;

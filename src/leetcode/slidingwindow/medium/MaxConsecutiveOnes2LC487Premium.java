@@ -23,10 +23,10 @@ public class MaxConsecutiveOnes2LC487Premium {
 
         int right=0, left=0, n=nums.length, maxLen=-1, count=0;
 
-        while(right<n){
+        while(right < n){
             if(nums[right]==0)
                 count++;
-            while(count>k){
+            while(count > k){
                 if(nums[left]==0)
                     count--;
                 left++;

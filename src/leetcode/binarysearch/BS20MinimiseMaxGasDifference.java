@@ -52,7 +52,7 @@ public class BS20MinimiseMaxGasDifference {
         //SC:O(n-1)
     }
 
-    public static double minimiseMaxDistance(int []arr, int k){
+    private static double minimiseMaxDistance(int []arr, int k){
 
         int[] howMany=new int[arr.length-1];
 
@@ -83,7 +83,7 @@ public class BS20MinimiseMaxGasDifference {
         //SC:O(1)
     }
 
-    public static double minimiseMaxDistanceUsingBinarySearch(int []arr, int K){
+    private static double minimiseMaxDistanceUsingBinarySearch(int []arr, int K){
 
         double low=0, high=maxValue(arr), ans=0, diff=1e-6;
 
@@ -104,7 +104,7 @@ public class BS20MinimiseMaxGasDifference {
         //SC:O(1)
     }
 
-    public static int isPossible(double mid, int[] arr, int K){
+    private static int isPossible(double mid, int[] arr, int K){
 
         int count=0;
         for(int i=0;i<arr.length-1;i++){
@@ -117,7 +117,7 @@ public class BS20MinimiseMaxGasDifference {
         return count;
     }
 
-    public static double maxValue(int[] arr){
+    private static double maxValue(int[] arr){
 
         double max=0.0;
         for(int i=0;i<arr.length-1;i++){

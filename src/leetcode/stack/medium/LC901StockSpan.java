@@ -17,12 +17,12 @@ public class LC901StockSpan {
 
     class StockSpanner {
 
-        Stack<Node> st=new Stack();
+        Stack<Node> st=new Stack<>();
 
         public StockSpanner() {
         }
 
-        public int next(int price) {
+        private int next(int price) {
 
             int span=1;
             while(!st.isEmpty() && st.peek().key <= price){

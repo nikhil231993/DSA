@@ -24,7 +24,8 @@ public class LC1465MaximumAreaOfCake {
 
 	private static int area(int h, int[] hc, int v, int[] vc) {
 
-		long x = maxDiff(hc, h);
+		long x = maxDiff(hc, h); //if x and yh are defined as int and then even if we give long as below during multiple since during multiplication they were integer output will overflow and result will be wrong
+		// and that is the reason they are defined as long
 		long y = maxDiff(vc, v);
 
 		return (int) ((long) (x * y) % (1000000007)); //long is not needed here

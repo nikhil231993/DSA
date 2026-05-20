@@ -12,7 +12,7 @@ public class LC946ValidateStackSequences {
        System.out.println(validateStackSequences(pushed,popped));
     }
 
-    public static boolean validateStackSequences(int[] pushed, int[] popped) {
+    private static boolean validateStackSequences(int[] pushed, int[] popped) {
 
         Stack<Integer> st=new Stack();
 

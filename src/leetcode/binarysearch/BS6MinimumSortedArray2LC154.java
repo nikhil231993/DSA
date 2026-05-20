@@ -8,7 +8,7 @@ public class BS6MinimumSortedArray2LC154 {
         System.out.println(findMin(nums));
     }
 
-    public static int findMin(int[] nums) {
+    private static int findMin(int[] nums) {
 
         int n=nums.length, low=0, high=n-1, ans=Integer.MAX_VALUE;
 

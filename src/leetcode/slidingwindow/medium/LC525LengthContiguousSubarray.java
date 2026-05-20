@@ -44,7 +44,7 @@ public class LC525LengthContiguousSubarray {
         int len=0;
         int sum=0;
         int n=nums.length;
-        HashMap<Integer, Integer> map=new LinkedHashMap();
+        HashMap<Integer, Integer> map=new HashMap();
         for(int i=0;i<n;i++){
             if(nums[i]==0)
                 nums[i]=-1;

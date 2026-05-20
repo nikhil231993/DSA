@@ -56,7 +56,7 @@ public class G20LC802EventualSafeStates {
 
             for(Integer vertex : adjList.get(i)){
                 if(visited[vertex]==0){
-                    if(dfs(vertex,n,m,visited,pathVis,safeNodes,adjList)){
+                    if(dfs(vertex, n, m, visited, pathVis, safeNodes, adjList)){
                         return true;
                     }
                 }else if(pathVis[vertex]==1){

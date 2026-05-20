@@ -10,10 +10,9 @@ public class LC150ReversePolishNotations {
         System.out.println(evalRPN(tokens));
     }
 
-    public static int evalRPN(String[] tokens) {
+    private static int evalRPN(String[] tokens) {
 
         Stack<Integer> st=new Stack();
-
         int n=tokens.length;
 
         for(int i=0; i<n; i++){

@@ -20,6 +20,9 @@ public class LC159PremiumLongestSubStringWithAtmostTwoDistinctCharacters {
 
         //Approach 3: Best
         System.out.println(bestLongest(s,2));
+
+        //Approach 3: Most Optimized as the question contains only english character and we need to subtract from A as A=65 and a=97
+        System.out.println(lengthOfLongestSubstringTwoDistinct(s,2));
     }
 
     private static int bestLongest(String s, int k) {
@@ -103,9 +106,7 @@ public class LC159PremiumLongestSubStringWithAtmostTwoDistinctCharacters {
     private static int subArrayWithAtmostTwo(String s, int k) {
 
         HashMap<Character, Integer> map=new HashMap<>();
-        int left=0;
-        int right=0;
-        int len=0;
+        int left=0, right=0, len=0;
         int minIndex=0;
         while(right<s.length()){
             char chRight=s.charAt(right);
@@ -129,5 +130,26 @@ public class LC159PremiumLongestSubStringWithAtmostTwoDistinctCharacters {
             right++;
         }
         return len;
+    }
+
+    private static int lengthOfLongestSubstringTwoDistinct(String s, int k) {
+
+        int n=s.length(), left=0, right=0, maxLen=0, count=0;
+        int[] ch=new int[128];
+        while(right<n){
+            if(ch[s.charAt(right)-'A']==0)
+                count++;
+            ch[s.charAt(right)-'A']++;
+            if(count>2){
+                ch[s.charAt(left)-'A']--;
+                if(ch[s.charAt(left)-'A']==0)
+                    count--;
+                left++;
+            }
+            if(count<=2)
+                maxLen=Math.max(maxLen, right-left+1);
+            right++;
+        }
+        return maxLen;
     }
 }

@@ -8,7 +8,7 @@ public class BS10SquareRootLC69 {
         System.out.println(mySqrt(x));
     }
 
-    public static int mySqrt(int x) {
+    private static int mySqrt(int x) {
 
         int low=1, high=x, ans=0;
 

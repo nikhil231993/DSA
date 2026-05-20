@@ -45,6 +45,8 @@ public class V10PalindromeLC234 {
 
         reverseHead(newHead);
         return true;
+        //TC:O(N)
+        //SC:O(N) better approach is iterative reversal as it is constant space algo
     }
 
     public static Node reverseHead(Node head) {

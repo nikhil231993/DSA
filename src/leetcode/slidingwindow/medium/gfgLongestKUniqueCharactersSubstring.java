@@ -7,6 +7,7 @@ public class gfgLongestKUniqueCharactersSubstring {
 
     public static void main(String[] args) {
 
+        // Done in LC340PremiumLongestSubstringWithAtmostKDistinctCharacters
         String s = "aabacbebebe"; int k = 3;
 
         //Approach 1: Brute

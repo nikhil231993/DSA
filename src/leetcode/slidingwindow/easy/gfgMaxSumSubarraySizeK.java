@@ -7,6 +7,8 @@ public class gfgMaxSumSubarraySizeK {
 
     public static void main(String[] args) {
 
+        //Done in gfgMaxSumSubarraySizeK
+
         ArrayList<Integer> Arr=new ArrayList<>(Arrays.asList(100, 200, 300, 400));
         int K=2,N=Arr.size();
 
@@ -41,7 +43,7 @@ public class gfgMaxSumSubarraySizeK {
         //SC:O(n)
     }
 
-    public static long func(int k, ArrayList<Integer> arr, int n){
+    private static long func(int k, ArrayList<Integer> arr, int n){
 
         int left=0, right=0;
         long sum=0, maxSum=-1l;

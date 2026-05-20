@@ -1,6 +1,6 @@
 package leetcode.twopointer.striver;
 
-public class V4MaxOnesLC1004 {
+public class V4MaxOnes3LC1004 {
 
     public static void main(String[] args) {
 
@@ -34,7 +34,7 @@ public class V4MaxOnesLC1004 {
                 left++;
             }
 
-            if(count<=k)
+            if(count <= k)
                 maxLen=Math.max(maxLen, right-left+1);
             right++;
         }
@@ -68,7 +68,7 @@ public class V4MaxOnesLC1004 {
         //SC:O(1)
     }
 
-    public static int longestOnesBest(int[] nums, int k) {
+    private static int longestOnesBest(int[] nums, int k) {
 
         Integer maxLen=Integer.MIN_VALUE;
         int right=0, left=0, count=0, n=nums.length;

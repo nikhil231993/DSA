@@ -52,7 +52,7 @@ public class LC1047RemoveAllAdjacentDuplicates {
         return s;
     }
 
-    public static String removeDuplicates(String s) {
+    private static String removeDuplicates(String s) {
 
         Stack<Character> st=new Stack();
 
@@ -96,5 +96,20 @@ public class LC1047RemoveAllAdjacentDuplicates {
             }
         }
         return new String(ans, 0, j);
+    }
+
+    private static String removeDuplicatesSelf(String s) {
+        int n=s.length();
+        Stack<Character> st=new Stack();
+        for(int i=0;i<n;i++){
+
+            if(!st.isEmpty() && st.peek()==s.charAt(i))
+                st.pop();
+            else st.push(s.charAt(i));
+        }
+        StringBuilder sb=new StringBuilder();
+        for(char ch : st)
+            sb.append(ch);
+        return sb.toString();
     }
 }

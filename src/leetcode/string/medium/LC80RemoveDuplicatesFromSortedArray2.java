@@ -6,9 +6,12 @@ public class LC80RemoveDuplicatesFromSortedArray2 {
 
         int[] nums=new int[]{1,1,1,2,2,3};
         System.out.println(removeDuplicates(nums));
+
+        //optimized
+        System.out.println(removeDuplicatesOptimized(nums));
     }
 
-    public static int removeDuplicates(int[] nums) {
+    private static int removeDuplicates(int[] nums) {
 
         int count=1;
         int i=0;
@@ -25,5 +28,18 @@ public class LC80RemoveDuplicatesFromSortedArray2 {
                 nums[i++]=nums[j];
         }
         return i;
+    }
+
+    private static int removeDuplicatesOptimized(int[] nums) {
+        int n=nums.length;
+        int i=2;
+        for(int j=2;j<n;j++){
+            if(nums[i-2]!=nums[j]){
+                nums[i++]=nums[j];
+            }
+        }
+        return i;
+        //TC:O(n)
+        //SC:O(1)
     }
 }

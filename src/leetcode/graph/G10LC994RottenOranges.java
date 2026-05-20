@@ -25,7 +25,7 @@ public class G10LC994RottenOranges {
         System.out.println(orangesRotting(grid));
     }
 
-    public static int orangesRotting(int[][] grid) {
+    private static int orangesRotting(int[][] grid) {
 
         int n=grid.length;
         int m=grid[0].length;

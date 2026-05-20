@@ -22,8 +22,7 @@ public class V6LongestSubstringAtmostKDistinctCharactersLC340Premium {
 
     private static int bestLongest(String s, int k) {
 
-        Integer maxLen=Integer.MIN_VALUE;
-        int right=0, left=0, n=s.length();
+        int maxLen=Integer.MIN_VALUE, right=0, left=0, n=s.length();
         HashMap<Character, Integer> map= new HashMap<>();
 
         while(right<n){
@@ -47,8 +46,7 @@ public class V6LongestSubstringAtmostKDistinctCharactersLC340Premium {
 
     private static int betterLongest(String s, int k) {
 
-        Integer maxLen=Integer.MIN_VALUE;
-        int right=0, left=0,n=s.length();
+        int maxLen=Integer.MIN_VALUE, right=0, left=0,n=s.length();
         HashMap<Character, Integer> map= new HashMap<>();
 
         while(right<n){
@@ -60,20 +58,19 @@ public class V6LongestSubstringAtmostKDistinctCharactersLC340Premium {
                     map.remove(s.charAt(left));
                 left++;
             }
-            if(map.size()<=k)
+            if(map.size() <= k)
                 maxLen=Math.max(maxLen, right-left+1);
             right++;
         }
         return maxLen;
 
-        //TC:(O(N)+O(N))*  log (256)  This is for map
+        //TC:(O(N)+O(N))* log (256)  This is for map
         //SC:O(K)
     }
 
     private static int bruteLongest(String s, int k) {
 
-        Integer maxLen=Integer.MIN_VALUE;
-        int n=s.length();
+        int maxLen=Integer.MIN_VALUE, n=s.length();
 
         for(int i=0; i<n; i++){
             HashSet<Character> set=new HashSet<>();

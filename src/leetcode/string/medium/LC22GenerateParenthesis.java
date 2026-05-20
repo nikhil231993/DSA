@@ -7,11 +7,14 @@ public class LC22GenerateParenthesis {
 
 	public static void main(String[] args) {
 
-		int n = 2;
-		List<String> result = new ArrayList();
+		int n = 3;
+		List<String> result = new ArrayList<>();
 
 		generate(n, 0, 0, "", result);
 		System.out.println(result);
+
+		n=3;
+		System.out.println(generateParenthesis(n));
 	}
 
 	private static void generate(int n, int left, int right, String s, List<String> result) {
@@ -34,4 +37,30 @@ public class LC22GenerateParenthesis {
 		//TC:O(2 raise to n)
 		//SC:O(2 raise to n) for recursion stack and O(n) to store values
 	}
+
+		private static List<String> generateParenthesis(int n) {
+			List<String> list = new ArrayList<>();
+			StringBuilder sb = new StringBuilder();
+			generateStringBuilder(n, list, 0, 0, sb);
+			return list;
+		}
+
+		private static void generateStringBuilder(int n, List<String> list, int open, int closed, StringBuilder sb) {
+			if (sb.length() == 2 * n) {
+				list.add(sb.toString());
+				return;
+			}
+
+			if (open < n) {
+				sb.append('(');
+				generateStringBuilder(n, list, open + 1, closed, sb);
+				sb.deleteCharAt(sb.length() - 1); // backtrack
+			}
+
+			if (closed < open) {
+				sb.append(')');
+				generateStringBuilder(n, list, open, closed + 1, sb);
+				sb.deleteCharAt(sb.length() - 1); // backtrack
+			}
+		}
 }

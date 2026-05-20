@@ -14,15 +14,15 @@ public class gfgFirstNegativeNumbers {
 
         //Approach 2: Better
         long[] r1=printFirstNegativeInteger(A, N, K);
-        for(long n: r1)
-            System.out.println(n);
+        for(long num: r1)
+            System.out.println(num);
 
         System.out.println("***********************");
 
         //Approach 3: Best
         long[] r2=printFirstNegativeIntegerBest(A, N, K);
-        for(long n: r2)
-            System.out.println(n);
+        for(long num: r2)
+            System.out.println(num);
     }
 
     private static long[] printFirstNegativeIntegerBest(long A[], int N, int K) {
@@ -54,7 +54,7 @@ public class gfgFirstNegativeNumbers {
         //SC:O(1)
     }
 
-    public static long[] printFirstNegativeInteger(long A[], int N, int K) {
+    private static long[] printFirstNegativeInteger(long A[], int N, int K) {
 
         long[] subArr=new long[N-K+1];
         int i=0, left=0, right=0;

@@ -12,13 +12,13 @@ public class LC189RotateArray {
 		int[] arr = new int[] { 1, 2, 3, 4, 5, 6, 7 };
 		k = k % arr.length;  // This will help when the size of array is less than k
 
-
-		reverse(arr, 0, arr.length - 1);
+		int n=arr.length;
+		reverse(arr, 0, n - 1);
 		reverse(arr, 0, k - 1);
-		reverse(arr, k, arr.length - 1);
+		reverse(arr, k, n - 1);
 
 		System.out.println("Rotated array is: ");
-		for (int i = 0; i < arr.length; i++)
+		for (int i = 0; i < n; i++)
 			System.out.println(arr[i]);
 	}
 
@@ -31,5 +31,7 @@ public class LC189RotateArray {
 			start++;
 			end--;
 		}
+		//TC:O(N)
+		//SC:O(1) as we are not using any extra array
 	}
 }

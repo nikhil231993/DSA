@@ -57,20 +57,23 @@ public class  LC680ValidPalindrome2 {
 			if(s.charAt(start)==s.charAt(end)){
 				start++;
 				end--;
-			}else{
+			}else
 				return isValid(s,start+1, end) || isValid(s,start, end-1);
-			}
+
 		}
 		return true;
 	}
 
 	public static boolean isValid(String s, int start, int end){
-		while(start<end){
+		while(start < end){
 			if(s.charAt(start)!=s.charAt(end))
 				return false;
 			start++;
 			end--;
 		}
 		return true;
+
+		//TC:O(N
+		//SC:O(N)
 	}
 }

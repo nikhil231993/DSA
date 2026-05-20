@@ -40,7 +40,7 @@ public class LC151ReverseWordsInAString {
 		return sb.toString();
 	}
 
-	public static String reverseWords(String s) {
+	private static String reverseWords(String s) {
 
 		String[] str = s.split(" ");
 		Stack<String> stack = new Stack();
@@ -63,8 +63,7 @@ public class LC151ReverseWordsInAString {
 
 	public static String reverseWordsOptimized(String s) {
 
-		int n=s.length();
-		int i=n-1;
+		int n=s.length(), i=n-1;
 		StringBuilder sb=new StringBuilder();
 
 		while(i>=0){
@@ -76,6 +75,24 @@ public class LC151ReverseWordsInAString {
 			if(s.substring(i+1, j+1).length()!=0){  //if(j-i>0) we can replace with this condition also
 				sb.append(s.substring(i+1, j+1)).append(" ");
 			}
+		}
+		return sb.deleteCharAt(sb.length()-1).toString();
+	}
+
+	private static String reverseWordsSelf(String s) {
+
+		int n=s.length(), j=n-1;
+		StringBuilder sb=new StringBuilder();
+		while(j>=0){
+
+			while(j>= 0 && s.charAt(j)==' ')
+				j--;
+			if(j<0)
+				break;
+			int k=j;
+			while(j>=0 && s.charAt(j)!=' ')
+				j--;
+			sb.append(s.substring(j+1, k+1)).append(" ");
 		}
 		return sb.deleteCharAt(sb.length()-1).toString();
 	}

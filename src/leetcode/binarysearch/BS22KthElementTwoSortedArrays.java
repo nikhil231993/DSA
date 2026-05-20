@@ -23,8 +23,8 @@ public class BS22KthElementTwoSortedArrays {
         int left=k;
 
         while(low <= high){
-            int mid1=low+(high-low)/2;
-            int mid2=k-mid1;
+            int mid1 = low+(high-low)/2;
+            int mid2 = k-mid1;
             int l1=Integer.MIN_VALUE, l2=Integer.MIN_VALUE;
             int r1=Integer.MAX_VALUE, r2=Integer.MAX_VALUE;
 

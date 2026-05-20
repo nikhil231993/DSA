@@ -31,7 +31,7 @@ public class V1ConvertArrayToLinkedList {
     public static boolean searchValue(int value, Node head){
 
         Node temp=head;
-        while(temp!=null) {
+        while(temp != null) {
             if (temp.data == value)
                 return true;
             temp = temp.next;
@@ -41,9 +41,10 @@ public class V1ConvertArrayToLinkedList {
 
     public static void convertArrayToLinkedList(Node head, int[] arr){
 
+        int len=arr.length;
         Node temp=head;
-        for(int i=1;i<arr.length;i++){
-            Node n=new Node(arr[i]);
+        for(int i=1; i<len; i++){
+            Node n = new Node(arr[i]);
             temp.next=n;
             temp=temp.next; // temp=n;
         }

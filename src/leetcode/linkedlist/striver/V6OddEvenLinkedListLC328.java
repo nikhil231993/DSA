@@ -25,7 +25,7 @@ public class V6OddEvenLinkedListLC328 {
         odd.next=evenHead;
         return head;
     }
-     TC:O(N/2)*2 as we move two steps at a time
-     SC:O(1)
+     TC: O(N/2)*2 as we move two steps at a time
+     SC: O(1)
      */
 }

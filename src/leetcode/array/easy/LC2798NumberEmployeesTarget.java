@@ -1,6 +1,6 @@
 package leetcode.array.easy;
 
-public class LC2798NumberEmplyeesTarget {
+public class LC2798NumberEmployeesTarget {
 
     public static void main(String[] args) {
 
@@ -10,11 +10,11 @@ public class LC2798NumberEmplyeesTarget {
         System.out.println(numberOfEmployeesWhoMetTarget(hours,target));
     }
 
-    public static int numberOfEmployeesWhoMetTarget(int[] hours, int target) {
+    private static int numberOfEmployeesWhoMetTarget(int[] hours, int target) {
 
         int count=0, n=hours.length;
-        for(int i=0; i<n; i++){
-            if(hours[i] >= target)
+        for (int hour : hours) {
+            if (hour >= target)
                 count++;
         }
         return count;

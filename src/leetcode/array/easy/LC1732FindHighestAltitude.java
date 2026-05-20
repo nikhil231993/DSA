@@ -4,7 +4,7 @@ public class LC1732FindHighestAltitude {
 
     public static void main(String[] args) {
 
-        int[] gain = new int[]{-5,1,5,0,-7};
+        int[] gain = new int[]{ -5,1,5,0,-7 };
 
         //Approach 1: Best
         System.out.println(largestAltitude(gain));

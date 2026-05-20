@@ -34,12 +34,12 @@ public class LC268MissingNumber {
         //This is better in case of large numbers as it cannot cross the large number
         int XOR1=0, XOR2=0;
         for(int i=0; i<num.length; i++){
-            XOR1=XOR1^num[i];
-            XOR2=XOR2^i;
+            XOR1 = XOR1 ^ num[i];
+            XOR2 = XOR2 ^ i;
         }
-        XOR2=XOR2^num.length;
+        XOR2=XOR2 ^ num.length;
 
-        return  XOR1^XOR2;
+        return  XOR1 ^ XOR2;
 
         //TC:O(n)
         //SC:O(n)
@@ -50,7 +50,7 @@ public class LC268MissingNumber {
         int n=nums.length, sum=0,i=0;
         int actualsum=(n)*(n+1)/2;
 
-        for( i=0;i<nums.length;i++)
+        for( i=0; i<nums.length; i++)
             sum+=nums[i];
         return actualsum-sum;
 

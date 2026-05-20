@@ -21,7 +21,7 @@ public class LC485MaxConsecutiveOnes {
         }
         return max;
 
-        //TC:O(n)
-        //SC:O(1)
+        // TC:O(n)
+        // SC:O(1)
     }
 }

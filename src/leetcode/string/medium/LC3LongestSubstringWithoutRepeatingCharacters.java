@@ -2,6 +2,7 @@ package leetcode.string.medium;
 
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 
 public class LC3LongestSubstringWithoutRepeatingCharacters {
@@ -9,7 +10,6 @@ public class LC3LongestSubstringWithoutRepeatingCharacters {
 	public static void main(String[] args) {
 
 		String str = "pwwkew";
-		str="abcabcdab";
 
 		//Approach 1: Brute Generate all the combinations which is TC O(N square)
 		System.out.println(bruteApproach(str));
@@ -21,7 +21,7 @@ public class LC3LongestSubstringWithoutRepeatingCharacters {
 		System.out.println(lengthOfLongestSubstringUsingMap(str));
 	}
 
-	public  static int bruteApproach(String str){
+	private  static int bruteApproach(String str){
 
 		if(str.length()==0)
 			return 0;
@@ -29,9 +29,9 @@ public class LC3LongestSubstringWithoutRepeatingCharacters {
 		for (int i = 0; i < str.length(); i++){ // outer loop for traversing the string
 
 			Set<Character > se = new HashSet <>();
-			for (int j = i; j < str.length(); j++) // nested loop for getting different string starting with str[i]
-			{
-				if (se.contains(str.charAt(j))) {// if element found so mark it as ans and break from the loop
+			for (int j = i; j < str.length(); j++){ // nested loop for getting different string starting with str[i]
+
+				if (se.contains(str.charAt(j))){  // if element if found so mark it as ans and break from the loop
 
 					maxans = Math.max(maxans, j - i);
 					break;
@@ -47,7 +47,7 @@ public class LC3LongestSubstringWithoutRepeatingCharacters {
 
 	private static int lengthOfLongestSubstringUsingMap(String s) {
 
-		HashMap<Character, Integer> m = new HashMap();
+		Map<Character, Integer> m = new HashMap();
 		int left = 0, right = 0, len = 0;
 		while (right < s.length()) {
 			if (m.containsKey(s.charAt(right))) {
@@ -63,11 +63,10 @@ public class LC3LongestSubstringWithoutRepeatingCharacters {
 		//SC:O(256)
 	}
 
-	public static int lengthOfLongestSubstringUsingHashSet(String s) {
+	private static int lengthOfLongestSubstringUsingHashSet(String s) {
 
 		HashSet<Character> h = new HashSet<>();
 		int left = 0, right = 0, len = 0;
-
 		while (right < s.length()) {
 
 			if (!h.contains(s.charAt(right))) {
@@ -81,7 +80,7 @@ public class LC3LongestSubstringWithoutRepeatingCharacters {
 		}
 		return len;
 
-		//TC:O(2N)
+		// TC:O(2N)
 		//SC:O(256)
 	}
 }

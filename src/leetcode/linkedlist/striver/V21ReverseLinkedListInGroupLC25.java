@@ -44,8 +44,8 @@ public class V21ReverseLinkedListInGroupLC25 {
         }
         return head;
 
-        //TC:O(N)+O(N)
-        //SC:O(1) no extra space
+        //TC: O(N)+O(N)
+        //SC: O(1) no extra space
     }
 
     private static Node reverse(Node head) {

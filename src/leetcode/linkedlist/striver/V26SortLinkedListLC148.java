@@ -1,5 +1,7 @@
 package leetcode.linkedlist.striver;
 
+import java.util.LinkedList;
+
 public class  V26SortLinkedListLC148 {
 
     //Approach 1:  Take the values and put it in array and then sort and then parse and put it in new LinkedList
@@ -25,7 +27,7 @@ public class  V26SortLinkedListLC148 {
         if(head==null || head.next==null)
             return head;
         ListNode slow=head;
-        ListNode fast=head.next; // This same can be used in Palindrome question and we can use same while condition as below and don't need extra .next
+        ListNode fast=head.next; //This same can be used in Palindrome question and we can use same while condition as below and don't need extra .next
 
         while(fast!=null && fast.next!=null){
             slow=slow.next;
@@ -62,6 +64,6 @@ public class  V26SortLinkedListLC148 {
         return dummy.next;
     }
      TC:O(log n )(N+N/2(findMiddle))
-     SC:O(1)
+     SC:O(1) but actually O(log n) because of recursive stack space
      */
 }

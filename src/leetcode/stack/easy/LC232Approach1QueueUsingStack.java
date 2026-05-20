@@ -16,7 +16,7 @@ public class LC232Approach1QueueUsingStack {
         public LC232Approach1QueueUsingStack() {
         }
 
-        public void push(int x) {
+        private void push(int x) {
 
             if(empty()){
                 input.push(x);
@@ -32,15 +32,15 @@ public class LC232Approach1QueueUsingStack {
             }
         }
 
-        public int pop() {
+        private int pop() {
             return input.pop();
         }
 
-        public int peek() {
+        private int peek() {
             return input.peek();
         }
 
-        public boolean empty() {
+        private boolean empty() {
             return input.isEmpty();
         }
 

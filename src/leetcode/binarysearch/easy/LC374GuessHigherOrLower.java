@@ -10,11 +10,11 @@ public class LC374GuessHigherOrLower {
         System.out.println(guessNumber(n));
     }
 
-    public static int guessNumber(int n) {
+    private static int guessNumber(int n) {
 
         int low=0, high=n;
 
-        while(low <= high){
+        while(low<=high){
             int mid=low+(high-low)/2;
             int val=guess(mid);
             if(val==0)

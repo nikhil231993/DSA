@@ -10,8 +10,7 @@ public class LC1299ReplaceElementsWithGreatestRightSide {
         System.out.println(replaceElements(arr));
     }
 
-    public static int[] replaceElements(int[] arr) {
-
+    private static int[] replaceElements(int[] arr) {
 
         int[] ans=new int[arr.length];
 

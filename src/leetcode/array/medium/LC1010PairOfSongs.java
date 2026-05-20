@@ -26,8 +26,8 @@ public class LC1010PairOfSongs {
 		 }
 		 return count;
 
-		 //TC:O(n2)
-		 //SC:O(1)
+		 //TC: O(n2)
+		 //SC: O(1)
 	}
 
 	private static int pairDivisible(int[] time) {
@@ -46,7 +46,7 @@ public class LC1010PairOfSongs {
 		}
 		return count;
 
-		//TC:O(n)
-		//SC:O(1)
+		//TC: O(n)
+		//SC: O(1)
 	}
 }

@@ -91,4 +91,31 @@ public class LC1249MinimumRemoveToMakeValidParenthesis {
 		//TC:O(N)
 		//SC:O(N)
 	}
+
+	//we can write like this also
+	private static String minRemoveToMakeValid(String s) {
+		int n=s.length();
+		Stack<Integer> st=new Stack();
+		for(int i=0;i<n;i++){
+			char ch=s.charAt(i);
+			if(ch=='(')
+				st.push(i);
+			else if(ch==')'){
+				if(!st.isEmpty() && s.charAt(st.peek())=='(')
+					st.pop();
+				else
+					st.push(i);
+			}
+		}
+		char[] ch=s.toCharArray();
+		while(!st.isEmpty()){
+			ch[st.pop()]='#';
+		}
+		StringBuilder sb=new StringBuilder();
+		for(int i=0;i<n;i++){
+			if(ch[i]!='#')
+				sb.append(ch[i]);
+		}
+		return sb.toString();
+	}
 }

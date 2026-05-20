@@ -8,11 +8,12 @@ public class LC2696MinimumString {
 
         String s = "ABFCACDB";
         System.out.println(minLength(s));
+        System.out.println(minLengthSelf(s));
     }
 
-    public static int minLength(String s) {
+    private static int minLength(String s) {
 
-        Stack<Character> st=new Stack();
+        Stack<Character> st=new Stack<>();
 
         int n=s.length();
 
@@ -31,8 +32,26 @@ public class LC2696MinimumString {
             }
         }
         return st.size();
+        //TC:O(n)
+        //SC:O(n)
+    }
 
-        // TC:O(n)
-        // SC:O(n)
+    private static int minLengthSelf(String s) {
+        int n=s.length();
+        Stack<Character> st=new Stack<>();
+        for(int i=0;i<n;i++){
+            char ch=s.charAt(i);
+            if(ch=='B'){
+                if(!st.isEmpty() && st.peek()=='A')
+                    st.pop();
+                else st.push(ch);
+            }else if(ch=='D'){
+                if(!st.isEmpty() && st.peek()=='C')
+                    st.pop();
+                else st.push(ch);
+            }else
+                st.push(ch);
+        }
+        return st.size();
     }
 }

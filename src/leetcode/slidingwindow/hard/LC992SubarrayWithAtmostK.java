@@ -20,7 +20,7 @@ public class LC992SubarrayWithAtmostK {
         System.out.println(subarray(nums, k));
 
         //we cannot use "if" instead of "while" as in counting we will miss some subarrays. Take an example and try out
-        //When we want to find longest length we can use as its to find max length
+        //When we want to find longest length we can use 'if' as its to find max length
     }
 
     private static int subarray(int[] nums, int k) {

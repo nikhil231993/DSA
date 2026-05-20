@@ -14,7 +14,7 @@ public class BS18AllocateBooks {
         System.out.println(findPages(arr,n,m));
     }
 
-    public static int findPages(int[] arr, int n, int m) {
+    private static int findPages(int[] arr, int n, int m) {
 
         if(m>n)
             return -1;
@@ -38,7 +38,7 @@ public class BS18AllocateBooks {
         return ans;
     }
 
-    public static boolean possible(int pages, int[] arr ,int m){
+    private static boolean possible(int pages, int[] arr ,int m){
 
         int count=1, sum=arr[0];
 
