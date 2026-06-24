@@ -54,11 +54,12 @@ public class G50LC721AccountsMerge {
 
         //Now put the node value and create a new list
         List<List<String>> ans=new ArrayList<>();
+        //N
         for(int i=0;i<accounts.size();i++){
             //check if there are elements in list
             if(mergeList.get(i).size()==0) continue;
             //If present then sort it
-            Collections.sort(mergeList.get(i));
+            Collections.sort(mergeList.get(i));//ElogE
 //            System.out.println("+++++++");
 //            System.out.println(mergeList.get(i));
 //            System.out.println("+++++++");
@@ -67,7 +68,7 @@ public class G50LC721AccountsMerge {
             tempList.add(accounts.get(i).get(0));
 
 //          for(int j=0;j<mergeList.get(i).size();j++){
-            tempList.addAll(mergeList.get(i));
+            tempList.addAll(mergeList.get(i)); //E
 //          }
             ans.add(tempList);
         }
@@ -81,6 +82,5 @@ public class G50LC721AccountsMerge {
         //Space Complexity: O(N)+ O(N) +O(2N) ~ O(N) where N = no. of nodes/indices.
         // The first and second space is for the ‘mergedMail’ and the ‘ans’ array.
         // The last term is for the parent and size array used inside the Disjoint set data structure.
-
     }
 }

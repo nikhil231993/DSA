@@ -11,7 +11,7 @@ public class MinHeapToMaxHeap {
             System.out.println(num);
     }
 
-    public static int[] minToMaxHeap(int n, int[] arr){
+    private static int[] minToMaxHeap(int n, int[] arr){
 
         int lastInternalNode=arr.length/2-1;
         for(int i=lastInternalNode; i>=0; i--){

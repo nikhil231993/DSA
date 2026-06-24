@@ -15,7 +15,7 @@ public class DP24RodCutting {
 
         //Memoization
         int[][] dp=new int[n][n+1];
-        for(int[] r:dp)
+        for(int[] r : dp)
             Arrays.fill(r,-1);
         System.out.println(memoization(n-1,price,n,dp));
 
@@ -81,11 +81,11 @@ public class DP24RodCutting {
         if(dp[i][n]!=-1)
             return dp[i][n];
 
-        int np=0+recursion(i-1,price,n);
+        int np=0+memoization(i-1,price,n, dp);
         int p=-(int)(1e9);
         int rodLength=i+1;
         if(rodLength<=n)
-            p=price[i]+recursion(i,price,n-rodLength);
+            p=price[i]+memoization(i,price,n-rodLength, dp);
 
         return dp[i][n]=Math.max(p,np);
 

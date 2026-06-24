@@ -44,8 +44,8 @@ public class V8LongestRepeatingCharacterReplacementLC424 {
         }
         return maxLen;
 
-        //TC:O(n+n)
-        //SC:O(26)
+        //TC: O(n+n)
+        //SC: O(26)
     }
 
     private static int betterCharacterReplacementRemovedLoop(String s, int k) {

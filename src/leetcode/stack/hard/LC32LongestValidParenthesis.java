@@ -33,13 +33,13 @@ public class LC32LongestValidParenthesis {
         }
 
         int maxLen=Integer.MIN_VALUE;
-        int termIndex=n;
+        int last=n;
 
         while(!st.isEmpty()){
-            maxLen = Math.max(maxLen, termIndex-st.peek()-1);
-            termIndex = st.pop();
+            maxLen = Math.max(maxLen, last-st.peek()-1);
+            last = st.pop();
         }
-        return Math.max(termIndex, maxLen);
+        return Math.max(last, maxLen);
 
         //TC:O(N) + O(k) stack size
         //SC:O(N)

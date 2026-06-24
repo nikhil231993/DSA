@@ -18,14 +18,14 @@ public class DP14SubsetEqualsTarget { //7:59
         int[][] dp=new int[n][target+1];
         for(int[] row:dp)
             Arrays.fill(row,-1);
-        System.out.println(memoization(n-1,target,arr,dp));
+        System.out.println(memoization(n-1, target, arr, dp));
 
         //Tabulation (for tabulation we can take dp with true or false)
         boolean[][] dp1=new boolean[n][target+1];
-        System.out.println(tabulation(n,target,dp1,arr));
+        System.out.println(tabulation(n, target, dp1, arr));
 
         //Space optimization
-        System.out.println(space(n,target,arr));
+        System.out.println(space(n, target, arr));
     }
 
     private static boolean space(int n, int k, int[] arr) {

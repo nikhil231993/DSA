@@ -14,7 +14,7 @@ public class LC215KSmallestElement {
         //Approach 5: Learn quick select if possible and time is present
     }
 
-    public static int kthSmallest(int[] arr, int l, int r, int k) {
+    private static int kthSmallest(int[] arr, int l, int r, int k) {
 
         //Using max heap
         PriorityQueue<Integer> pq=new PriorityQueue<>((a,b)-> b - a);

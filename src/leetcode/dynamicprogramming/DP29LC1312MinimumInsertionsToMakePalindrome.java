@@ -8,6 +8,9 @@ public class DP29LC1312MinimumInsertionsToMakePalindrome {
 
         String s ="leetcode";
         s="abcdc";
+        s="abcaa";
+        s="letelt";
+        s="abc";
         int n=s.length();
 
         StringBuilder sb = new StringBuilder(s);
@@ -76,7 +79,7 @@ public class DP29LC1312MinimumInsertionsToMakePalindrome {
 
     private static int memoization(String s1, String s2, int index1, int index2, int[][] dp) {
 
-        if(index1<1 || index2<0)
+        if(index1<0 || index2<0)
             return 0;
 
         if(dp[index1][index2]!=-1)

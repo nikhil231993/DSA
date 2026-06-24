@@ -3,28 +3,32 @@ package leetcode.graph.medium;
 public class LC1254NumberOfClosedIslands {
 
     public static void main(String[] args) {
-        int[][] grid =new int[][] {{1,1,1,1,1,1,1,0},{1,0,0,0,0,1,1,0},{1,0,1,0,1,1,1,0},{1,0,0,0,0,1,0,1},{1,1,1,1,1,1,1,0}};
-
+        int[][] grid =new int[][] {{1,1,1,1,1,1,1,0},
+                {1,0,0,0,0,1,1,0},
+                {1,0,1,0,1,1,1,0},
+                {1,0,0,0,0,1,0,1},
+                {1,1,1,1,1,1,1,0}
+        };
         System.out.println(closedIsland(grid));;
     }
 
-    public static int closedIsland(int[][] grid) {
-        int n=grid.length;
-        int m=grid[0].length;
-        int delrow[] = {-1, 0, +1, 0};
-        int delcol[] = {0, 1, 0, -1};
+    private static int closedIsland(int[][] grid) {
+        int n=grid.length, m=grid[0].length;
+        int xaxis[] = {-1, 0, +1, 0};
+        int yaxis[] = {0, 1, 0, -1};
         int vis[][] = new int[n][m];
+
         // traverse first row and last row
         for(int j = 0 ; j<m;j++) {
             // check for unvisited Os in the boundary rws
             // first row
             if(vis[0][j] == 0 && grid[0][j] == 0) {
-                dfs(0, j, vis, grid, delrow, delcol);
+                dfs(0, j, vis, grid, xaxis, yaxis);
             }
 
             // last row
             if(vis[n-1][j] == 0 && grid[n-1][j] == 0) {
-                dfs(n-1,j,vis,grid, delrow, delcol);
+                dfs(n-1,j,vis,grid, xaxis, yaxis);
             }
         }
 
@@ -32,12 +36,12 @@ public class LC1254NumberOfClosedIslands {
             // check for unvisited Os in the boundary columns
             // first column
             if(vis[i][0] == 0 && grid[i][0] == 0) {
-                dfs(i, 0, vis, grid, delrow, delcol);
+                dfs(i, 0, vis, grid, xaxis, yaxis);
             }
 
             // last column
             if(vis[i][m-1] == 0 && grid[i][m-1] ==0 ) {
-                dfs(i, m-1, vis, grid, delrow, delcol);
+                dfs(i, m-1, vis, grid, xaxis, yaxis);
             }
         }
 
@@ -45,10 +49,9 @@ public class LC1254NumberOfClosedIslands {
         int count=0;
         for(int i = 0;i<n;i++) {
             for(int j= 0 ;j<m;j++) {
-                if(vis[i][j] == 0 && grid[i][j] == 0)
-                {
+                if(vis[i][j] == 0 && grid[i][j] == 0) {
                     count++;
-                    dfs(i, j, vis, grid, delrow, delcol);
+                    dfs(i, j, vis, grid, xaxis, yaxis);
                 }
 
             }
@@ -56,8 +59,7 @@ public class LC1254NumberOfClosedIslands {
         return count;
     }
 
-    public static void dfs(int row, int col,int vis[][],
-                           int grid[][], int delrow[], int delcol[]) {
+    private static void dfs(int row, int col,int vis[][], int grid[][], int delrow[], int delcol[]) {
         vis[row][col] = 1;
         int n = grid.length;
         int m = grid[0].length;

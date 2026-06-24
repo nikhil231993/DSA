@@ -25,7 +25,7 @@ public class G29LC127WordLadder {
         //SC: set size
     }
 
-    public static int wordLadder(String beginWord, String endWord, List<String> wordList){
+    private static int wordLadder(String beginWord, String endWord, List<String> wordList){
 
         //Create a set to store all the values in list so that it can be removed when it matches
         Set<String> set=new HashSet<>();

@@ -20,7 +20,7 @@ public class V12MinimumWindowSubstringLC76 {
 
         int ns=s.length(), nt=t.length(), startIndex=-1, minLen=Integer.MAX_VALUE;
 
-        for(int i=0; i<ns;i++){
+        for(int i=0; i<ns; i++){
 
             int count=0;
             int[] ch=new int[128];

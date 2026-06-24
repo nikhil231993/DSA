@@ -33,13 +33,13 @@ public class G39MinimumMultiplicationToReachEnd {
         System.out.println(minimumMultiplicationsWithoutUsingDistanceArray(arr,start,end));
     }
 
-    public static int minimumMultiplications(int[] arr, int start,int end){
+    private static int minimumMultiplications(int[] arr, int start,int end){
 
         if(start==end) return 0;
 
         int mod=100000;
         Queue<PairG39> q=new LinkedList<>();
-        q.offer(new PairG39(0,start));
+        q.offer(new PairG39(0, start));
         int[] dist=new int[mod];
         dist[start]=0;
 
@@ -64,7 +64,7 @@ public class G39MinimumMultiplicationToReachEnd {
         return -1;
     }
 
-    public static int minimumMultiplicationsWithoutUsingDistanceArray(int[] arr, int start, int end) {
+    private static int minimumMultiplicationsWithoutUsingDistanceArray(int[] arr, int start, int end) {
 
         if(start==end) return 0;
 

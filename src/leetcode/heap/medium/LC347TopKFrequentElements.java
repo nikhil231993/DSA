@@ -39,11 +39,29 @@ public class LC347TopKFrequentElements {
                 pq.poll(); //log k
         }
 
-        while(!pq.isEmpty()){
+        while(!pq.isEmpty())
             System.out.println(pq.poll().key);
-        }
 
         //TC:O(NlogK)
         //SC:O(N) for map and O(K) for priority queue
+    }
+
+    private int[] topKFrequent(int[] nums, int k) {
+
+        HashMap<Integer, Integer> map=new HashMap<>();
+        for(int no:nums)
+            map.put(no, map.getOrDefault(no, 0)+1);
+        PriorityQueue<Integer> pq=new PriorityQueue<>((a,b)->map.get(a)-map.get(b));
+        int[] ans=new int[k];
+        int i=0;
+        for(Map.Entry<Integer, Integer> m:map.entrySet()){
+            pq.offer(m.getKey());
+            if(pq.size()>k)
+                pq.poll();
+        }
+
+        while(!pq.isEmpty())
+            ans[i++]=pq.poll();
+        return ans;
     }
 }

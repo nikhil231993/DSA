@@ -2,7 +2,7 @@ package leetcode.dynamicprogramming;
 
 import java.util.Arrays;
 
-public class DP22CoinChange2 {
+public class DP22LC518CoinChange2 {
 
     public static void main(String[] args) {
 
@@ -10,7 +10,7 @@ public class DP22CoinChange2 {
         int amount = 5;
 
         //Recursion
-        System.out.println(coinChange(coins,amount));
+        System.out.println(recursion(coins,amount));
 
         //Memoization
         int n= coins.length;
@@ -98,13 +98,13 @@ public class DP22CoinChange2 {
         //SC:O(n*amount)+O(N) recursion
     }
 
-    public static int coinChangeMemoization(int[] coins, int amount,int[][] dp) {
+    private static int coinChangeMemoization(int[] coins, int amount,int[][] dp) {
 
         int n=coins.length;
         return memoization(n-1,coins, amount,dp);
     }
 
-    public static int coinChange(int[] coins, int amount) {
+    private static int recursion(int[] coins, int amount) {
 
         int n=coins.length;
         return recursion(n-1,coins, amount);

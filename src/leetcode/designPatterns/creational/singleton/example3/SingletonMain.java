@@ -9,6 +9,8 @@ public class SingletonMain {
             System.out.println(singleton1.hashCode());
             System.out.println(singleton1.getName());
 
+            System.out.println("**********************");
+
             Singleton singleton2= Singleton.getInstance();
             singleton2.setName("Rahul");
             System.out.println(singleton2.hashCode());

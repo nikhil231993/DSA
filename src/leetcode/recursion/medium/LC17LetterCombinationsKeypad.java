@@ -13,11 +13,10 @@ public class LC17LetterCombinationsKeypad {
 		System.out.println(letterCombinations(digits));
 	}
 
-	public static List<String> letterCombinations(String digits) {
+	private static List<String> letterCombinations(String digits) {
 
-		if (digits.length() == 0) {
+		if (digits.length() == 0)
 			return new ArrayList();
-		}
 
 		Map<Character, String> m = new HashMap();
 		m.put('2', "abc");
@@ -29,9 +28,8 @@ public class LC17LetterCombinationsKeypad {
 		m.put('8', "tuv");
 		m.put('9', "wxyz");
 
-
 		List<String> list = new ArrayList();
-		String temp = "";
+		String temp = ""; // Try using StringBuilder instead of temp to reduce memory footprint
 		combination(m, list, digits, 0, temp);
 
 		// TC: 3 raise to N * n(This is to append the values into list )
@@ -39,7 +37,7 @@ public class LC17LetterCombinationsKeypad {
 		return list;
 	}
 
-	public static void combination(Map<Character, String> m, List<String> list, String digits, int index, String temp) {
+	private static void combination(Map<Character, String> m, List<String> list, String digits, int index, String temp) {
 
 		if (index == digits.length()) {
 			list.add(temp);
@@ -48,8 +46,7 @@ public class LC17LetterCombinationsKeypad {
 
 		String s = m.get(digits.charAt(index));
 
-		for (int i = 0; i < s.length(); i++) {
+		for (int i = 0; i < s.length(); i++)
 			combination(m, list, digits, index + 1, temp + s.charAt(i));
-		}
 	}
 }

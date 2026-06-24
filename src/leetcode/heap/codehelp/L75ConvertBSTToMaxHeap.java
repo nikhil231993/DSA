@@ -26,7 +26,7 @@ public class L75ConvertBSTToMaxHeap {
         int[] arr=new int[count];
         int[] index=new int[]{0};
 
-        inorder(l.root,arr,index);
+        inorder(l.root, arr, index);
 
         int[] newIndex=new int[]{0};
         postOrder(l.root, arr, newIndex);

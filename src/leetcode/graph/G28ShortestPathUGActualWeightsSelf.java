@@ -91,7 +91,7 @@ public class G28ShortestPathUGActualWeightsSelf {
         // + O(N) {for the dist array storing updated shortest paths} + O( N+2M) {for the adjacency list} ~ O(N+M) .
     }
 
-    public static List<Integer> shortestPath(int n, int m, int edges[][]) {
+    private static List<Integer> shortestPath(int n, int m, int edges[][]) {
 
         ArrayList<ArrayList<Node11>> adjList=new ArrayList();
         for(int i=0;i<=n;i++)
@@ -107,16 +107,16 @@ public class G28ShortestPathUGActualWeightsSelf {
         q.offer(1);
         dist[1]=0;
         int[] path=new int[n+1];
-        for(int i=0;i<=n;i++)
+        for(int i=0; i<=n; i++)
             path[i]=i;
         path[1]=1;
         while(!q.isEmpty()){
             Integer node=q.poll();
 
-            for(Node11 vertex: adjList.get(node)){
-                if(dist[vertex.edge]>dist[node]+vertex.weight){
-                    dist[vertex.edge]=dist[node]+vertex.weight;
-                    path[vertex.edge]=node;
+            for(Node11 vertex : adjList.get(node)){
+                if(dist[vertex.edge] > dist[node]+vertex.weight){
+                    dist[vertex.edge] = dist[node]+vertex.weight;
+                    path[vertex.edge] = node;
                     q.offer(vertex.edge);
                 }
             }

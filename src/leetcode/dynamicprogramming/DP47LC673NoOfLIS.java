@@ -33,7 +33,7 @@ public class DP47LC673NoOfLIS {
             max=Math.max(dp[i],max);
         }
         int cnt=0;
-        for(int i=0;i<n;i++){
+        for(int i=0; i<n; i++){
             if(dp[i]==max)
                 cnt+=count[i];
         }

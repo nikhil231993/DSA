@@ -8,7 +8,8 @@ public class HeapSort {
 
     public static void main(String[] args) {
 
-        int arr[] = {1, 3, 5, 4, 6, 13, 10, 9, 8, 15, 17} ;
+        int[] arr = new int[] {1, 3, 5, 4, 6, 13, 10, 9, 8, 15, 17} ;
+        arr=new int[] {1, 2, 3, 4, 5, 6, 7};
 
         int n = arr.length;
         heapSort(arr, n);

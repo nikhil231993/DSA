@@ -16,7 +16,7 @@ class PairG43 {
 	}
 }
 
-public class G43SmallestDistanceNeighbours {
+public class G43LC1334SmallestDistanceNeighbours {
 
 	public static void main(String[] args) {
 
@@ -104,12 +104,11 @@ public class G43SmallestDistanceNeighbours {
 		
 		int[][] costMatrix=new int[n][n];
 		
-		for(int i=0;i<n;i++) {
-			for(int j=0;j<n;j++) {
+		for(int i=0; i<n; i++) {
+			for(int j=0; j<n; j++) {
 				costMatrix[i][j]=(int)(1e9);
-				if(i==j) {
+				if(i==j)
 					costMatrix[i][j]=0;
-				}
 			}
 		}
 		
@@ -149,9 +148,8 @@ public class G43SmallestDistanceNeighbours {
 		for(int city=0; city<n; city++) {
 			int cnt = 0;
 			for(int adCity=0; adCity<n; adCity++) {
-				if(costMatrix[city][adCity] <= distanceThreshold) {
+				if(costMatrix[city][adCity] <= distanceThreshold)
 					cnt++;
-				}
 			}
 			if (cnt <= count) {
 				maxCity = city;

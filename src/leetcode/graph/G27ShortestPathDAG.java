@@ -43,27 +43,26 @@ public class G27ShortestPathDAG {
 		
 		List<List<PairG27>> adjList=new ArrayList();
 		
-		for(int i=0; i<V; i++) {
-			adjList.add(new ArrayList<PairG27>());
-		}
+		for(int i=0; i<V; i++)
+			adjList.add(new ArrayList<>());
+
 		
-		for (int[] r: edge) {
+		for (int[] r: edge)
 			adjList.get(r[0]).add(new PairG27(r[1], r[2]));
-		}
 
 		// Toposort
 		int[] visited = new int[V];
 		Stack<Integer> st=new Stack<>();
 		for(int i=0; i<V; i++) {
 			if (visited[i] == 0) {
-				dfsTopo(adjList, V, E, st, visited, i);
+				dfsTopo(adjList, st, visited, i);
 			}
 		}
 
 		int[] dist = new int[V];
 		Arrays.fill(dist, (int) (1e9));
 
-		shortestDistance(dist, adjList, V, E, src, st);
+		shortestDistance(dist, adjList, V, src, st);
 
 		// Shortest distance are
 		for (Integer n : dist)
@@ -79,7 +78,7 @@ public class G27ShortestPathDAG {
 		// Where N= number of vertices and M= number of edges.
 	}
 
-	private static void shortestDistance(int[] dist, List<List<PairG27>> adjList, int v, int e, int src,Stack<Integer> st) {
+	private static void shortestDistance(int[] dist, List<List<PairG27>> adjList, int v, int src, Stack<Integer> st) {
 
 		dist[src]=0;
 		while (!st.isEmpty()) {
@@ -99,12 +98,12 @@ public class G27ShortestPathDAG {
 		}
 	}
 
-	private static void dfsTopo(List<List<PairG27>> adjList, int V, int E, Stack<Integer> st, int[] visited, int i) {
+	private static void dfsTopo(List<List<PairG27>> adjList, Stack<Integer> st, int[] visited, int i) {
 
 		visited[i] = 1;
 		for (PairG27 vertex : adjList.get(i)) {
 			if (visited[vertex.node] == 0) {
-				dfsTopo(adjList, V, E, st, visited, vertex.node);
+				dfsTopo(adjList,  st, visited, vertex.node);
 			}
 		}
 		st.push(i);

@@ -10,7 +10,8 @@ public class LC868PossibleBipartition {
         System.out.println(possibleBipartition(n,dislikes));
 
     }
-    public static boolean possibleBipartition(int n, int[][] dislikes) {
+
+    private static boolean possibleBipartition(int n, int[][] dislikes) {
 
         List<List<Integer>> adjList=new ArrayList<>();
         for(int i=0;i<=n;i++)
@@ -33,10 +34,10 @@ public class LC868PossibleBipartition {
         return true;
 
     }
+
     private static boolean bfs(int[] color,int i, List<List<Integer>> adjList) {
 
         color[i]=0;
-
         Queue<Integer> q=new LinkedList<>();
         q.offer(i);
         while(!q.isEmpty()){

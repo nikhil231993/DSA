@@ -29,7 +29,7 @@ public class DP15EqualSubsetSum { // watch video DP 16 at 14:00
             Arrays.fill(row,-1);
         System.out.println(memoization(n-1,target,arr,dp));
 
-        //Tabulation and space optimization is same as previous question.Pass target as totalSum/2 as input
+        //Tabulation and space optimization is same as previous question. Pass target as totalSum/2 as input
         boolean[][] dp1=new boolean[n][target+1];
         System.out.println(tabulation(n, target, arr, dp1));
 
@@ -37,7 +37,7 @@ public class DP15EqualSubsetSum { // watch video DP 16 at 14:00
         System.out.println(space(n, target, arr));
     }
 
-    public static boolean space(int n, int k, int[] arr){
+    private static boolean space(int n, int k, int[] arr){
 
         boolean[] prev=new boolean[k+1];
         prev[0]=true;
@@ -59,7 +59,7 @@ public class DP15EqualSubsetSum { // watch video DP 16 at 14:00
         return prev[k];
     }
 
-    public static boolean tabulation(int n, int k, int[] arr, boolean[][] dp){
+    private static boolean tabulation(int n, int k, int[] arr, boolean[][] dp){
 
         for(int i=0;i<n;i++)
             dp[i][0]=true;

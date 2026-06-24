@@ -17,12 +17,12 @@ class SmallestInfiniteSet {
         }
     }
 
-    public int popSmallest() {
+    protected int popSmallest() {
         set.remove(pq.peek());
         return pq.poll();
     }
 
-    public void addBack(int num) {
+    protected void addBack(int num) {
         if(!set.contains(num)){
             set.add(num);
             pq.offer(num);

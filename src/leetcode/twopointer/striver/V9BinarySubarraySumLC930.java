@@ -46,7 +46,7 @@ public class V9BinarySubarraySumLC930 {
                 left++;
             }
             if(sum<=goal)
-                count+=right-left+1;
+                count += right-left+1;
             right++;
         }
         return count;

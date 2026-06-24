@@ -19,8 +19,8 @@ public class DP46LC1671MinimumRemovalToMakeMountainArray {
         int[] dp2=new int[n];
         Arrays.fill(dp2,1);
 
-        for(int i=0;i<n;i++){
-            for(int j=0;j<i;j++){
+        for(int i=0; i<n; i++){
+            for(int j=0; j<i; j++){
                 if(arr[i]>arr[j] && 1+dp1[j]>dp1[i]){
                     dp1[i]=1+dp1[j];
                 }

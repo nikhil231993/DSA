@@ -13,10 +13,9 @@ public class LC841KeyAndRooms {
         keys.add(new ArrayList<>());
 
         System.out.println(canVisitAllRooms(keys));
-
     }
 
-    public static boolean canVisitAllRooms(List<List<Integer>> rooms) {
+    private static boolean canVisitAllRooms(List<List<Integer>> rooms) {
 
         Queue<Integer> q=new LinkedList();
         q.add(0);
@@ -41,6 +40,5 @@ public class LC841KeyAndRooms {
                 return false;
         }
         return true;
-
     }
 }

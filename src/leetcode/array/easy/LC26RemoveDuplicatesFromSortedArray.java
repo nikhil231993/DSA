@@ -60,7 +60,7 @@ public class LC26RemoveDuplicatesFromSortedArray {
 		//SC:O(1) we are using existing array
 	}
 
-	public static int removeDuplicatesSolutionInLeetcode(int[] nums) {
+	private static int removeDuplicatesSolutionInLeetcode(int[] nums) {
 
 		int k=0;
 		for(int i=1; i<nums.length; i++){

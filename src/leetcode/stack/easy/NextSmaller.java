@@ -55,7 +55,6 @@ public class NextSmaller {
         while(!st.isEmpty()){
             nums[st.pop()]=-1;
         }
-
         //TC:O(N + N)
         //SC:O(N) worst case if it is an increasing array
     }

@@ -27,7 +27,7 @@ public class DP26PrintLCS {
         int i=index1;
         int j=index2;
 
-        char[] ch=new char[dp2[index1][index2]]; //last cell determines the len of LCS so we used it here
+        char[] ch = new char[dp2[index1][index2]]; //last cell determines the len of LCS so we used it here
         int k=ch.length-1;
         while(i>0 && j>0){
             if(text1.charAt(i-1) == text2.charAt(j-1)){

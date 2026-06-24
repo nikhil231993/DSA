@@ -28,6 +28,6 @@ public class V2MaxPointsCardLC1423 {
         return maxSum;
 
         //TC:O(k) + O(k)
-        //SC:O(1)
+        //SC: O(1)
     }
 }

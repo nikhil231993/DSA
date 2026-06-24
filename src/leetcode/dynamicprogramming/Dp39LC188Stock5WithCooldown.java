@@ -2,7 +2,7 @@ package leetcode.dynamicprogramming;
 
 import java.util.Arrays;
 
-public class Dp39LC188Stock5 {
+public class Dp39LC188Stock5WithCooldown {
 
     public static void main(String[] args) { // Video 1:13
 
@@ -21,7 +21,7 @@ public class Dp39LC188Stock5 {
         //Tabulation
         //Here we have n+2 because of sell case where we have index+2
         //also here dp should be 0 else it will add negative value as well
-        int[][] dp1=new int[n+2][2];
+        int[][] dp1 = new int[n+2][2];
         System.out.println(tabulation(n,prices,0,1,dp1));
 
         //Space
@@ -33,6 +33,9 @@ public class Dp39LC188Stock5 {
 
         dp1[n][0]=0;
         dp1[n][1]=0;
+        // we can keep the same base case even though it is not needed as everything i 0 by default
+        //for(int j=0;j<=buy;j++)
+        //    dp[n][j]=0;
 
         for(int i=n-1;i>=0;i--){
             for(int b=0;b<=1;b++){

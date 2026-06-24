@@ -57,13 +57,13 @@ public class DP4FrogKJumps {
 
         int min=Integer.MAX_VALUE;
         int jumps=0;
-        for(int i=1;i<=k;i++){
+        for(int i=1; i<=k; i++){
             if(n-i>=0) {
                 jumps = memoization(dp, height, n - i, k) + Math.abs(height[n] - height[n - i]);
                 min = Math.min(min, jumps);
             }
         }
-        return dp[n-1]=min;
+        return dp[n]=min;
 
         //TC:O(N*K)
         //SC:O(N) recursion +O(N)array
@@ -77,7 +77,7 @@ public class DP4FrogKJumps {
         //for loop for k jumps
         int min=Integer.MAX_VALUE;
         int jumps=0;
-        for(int i=1;i<=k;i++){
+        for(int i=1; i<=k; i++){
             if(n-i>=0) {
                 jumps = recursion(height, n - i, k) + Math.abs(height[n] - height[n - i]);
                 min = Math.min(min, jumps);

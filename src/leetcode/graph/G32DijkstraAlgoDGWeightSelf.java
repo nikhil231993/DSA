@@ -93,7 +93,7 @@ public class G32DijkstraAlgoDGWeightSelf {
         return dist;
     }
 
-    private static int[] shortestPath(int[][] edge, int V, int E,int src) {
+    private static int[]  shortestPath(int[][] edge, int V, int E,int src) {
 
         List<List<PairG32>> adjList=new ArrayList<>();
 

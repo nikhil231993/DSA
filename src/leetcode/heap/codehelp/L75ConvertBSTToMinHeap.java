@@ -45,7 +45,7 @@ public class L75ConvertBSTToMinHeap {
         levelOrder(tree.root);
     }
 
-    public static void levelOrder(Node root) {
+    protected static void levelOrder(Node root) {
 
         if(root==null)
             return;
@@ -71,7 +71,7 @@ public class L75ConvertBSTToMinHeap {
         preorder(root.right, arr, newIndex);
     }
 
-    public static int countNode(Node root) {
+    private static int countNode(Node root) {
 
         if(root==null)
             return 0;
@@ -80,7 +80,7 @@ public class L75ConvertBSTToMinHeap {
         return 1 + left + right;
     }
 
-    public static void inorder(Node root,int[] arr,int[] index){
+    protected static void inorder(Node root,int[] arr,int[] index){
 
         if(root==null)
             return;

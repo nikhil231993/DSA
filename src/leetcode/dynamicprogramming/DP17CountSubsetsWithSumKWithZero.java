@@ -7,15 +7,15 @@ public class DP17CountSubsetsWithSumKWithZero {
     //Two Solutions for number having 0
     //Solution 1:
     //if numbers range from 0 to n instead of 1 to n then find 2 raise to n
-    // where n is the no of zeroes an multiply the result we have solved it in next
+    // where n is the no of zeroes and multiply the result we have solved it in next
     //Solution 2:
     // we add conditions which is done in next DP17
 
     public static void main(String[] args) {
 
-        int[] nums=new int[]{2,0,4};
+        int[] nums=new int[]{0, 0, 0, 0, 1};
         int n=nums.length;
-        int sum=6;
+        int sum=1;
 
         //Recursion
         System.out.println(recursion(nums,n-1,sum));

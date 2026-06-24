@@ -46,7 +46,7 @@ public class V57LC85MaximalRectangle {
 
         // next smaller
         for (int i = 0; i < n; i++) {
-            while (!rightMinStack.isEmpty() && arr[rightMinStack.peek()] >= arr[i]) {
+            while (!rightMinStack.isEmpty() && arr[rightMinStack.peek()] >= arr[i]) { // we do not need equal here
                 int index = rightMinStack.pop();
                 rightMin[index] = i;
             }

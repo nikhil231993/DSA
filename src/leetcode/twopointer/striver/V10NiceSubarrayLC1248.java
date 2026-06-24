@@ -10,7 +10,7 @@ public class V10NiceSubarrayLC1248 {
         int  goal = 2;
 
         for(int i=0 ;i <nums.length; i++){
-            if(nums[i]%2==0)
+            if(nums[i]%2 == 0)
                 nums[i]=0;
             else
                 nums[i]=1;
@@ -30,8 +30,8 @@ public class V10NiceSubarrayLC1248 {
 
     private static int numSubarraysWithSum(int[] nums, int goal) {
 
-        int atLeastGoal=numSubarraySum(nums, goal);
-        int atLeastLessThanGoal=numSubarraySum(nums, goal-1);
+        int atLeastGoal = numSubarraySum(nums, goal);
+        int atLeastLessThanGoal = numSubarraySum(nums, goal-1);
         return atLeastGoal-atLeastLessThanGoal;
 
         //TC:O(2*2N)

@@ -1,5 +1,7 @@
 package leetcode.designPatterns.creational.prototype.Network;
 
+import java.util.List;
+
 public class Switch extends NetworkDevice{
 
     private String name;

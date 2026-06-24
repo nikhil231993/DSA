@@ -13,7 +13,7 @@ public class DP17CountSubsetsWithSumK {
 
     public static void main(String[] args) {
 
-        int[] nums=new int[]{1,4,4,5};
+        int[] nums=new int[]{ 1, 4, 4, 5};
         int n=nums.length;
         int sum=5;
 

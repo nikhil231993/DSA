@@ -51,7 +51,7 @@ public class LC2404MostFrequentEvenElement {
         return pq.peek().key;
     }
 
-    public static int mostFrequentEven(int[] nums) {
+    private static int mostFrequentEven(int[] nums) {
 
         Map<Integer, Integer> map=new HashMap();
         for(Integer num:nums){
@@ -78,7 +78,7 @@ public class LC2404MostFrequentEvenElement {
         //SC:O(n) in worst case where each element is unique
     }
 
-    public static int mostFrequentEvenOptimised(int[] nums) {
+    private static int mostFrequentEvenOptimised(int[] nums) {
         
         Map<Integer, Integer> map = new HashMap<>();
         int count=-1;

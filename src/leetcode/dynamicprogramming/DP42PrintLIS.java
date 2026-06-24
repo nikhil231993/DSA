@@ -27,14 +27,14 @@ public class DP42PrintLIS {
         int index=0;
         for(int i=0;i<n;i++){
             for(int j=0;j<i;j++){
-                if(nums[i]>nums[j] && dp[i]<1+dp[j]){
-                    dp[i]=1+dp[j];
-                    hash[i]=j;
+                if(nums[i]>nums[j] && dp[i]<1+dp[j]) {
+                    dp[i] = 1 + dp[j];
+                    hash[i] = j;
                 }
-                if(dp[i]>max){
-                    index=i;
-                    max=dp[i];
-                }
+            }
+            if(dp[i]>max){
+                index=i;
+                max=dp[i];
             }
         }
         System.out.println("Length is: "+max);

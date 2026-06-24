@@ -69,14 +69,10 @@ public class V16MColouringProblem {
 				color[node]=i;
 				if (MColoring(adjList, n, M, node + 1, color) == 1)
 					return 1;
-
 				color[node]=0;
-
 			}
 		}
-
 		return 0;
-
 	}
 
 	private static boolean isSafe(ArrayList<ArrayList<Integer>> adjList, int n, int col, int[] color, int node) {

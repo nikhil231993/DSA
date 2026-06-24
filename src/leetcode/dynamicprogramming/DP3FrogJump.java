@@ -7,7 +7,7 @@ public class DP3FrogJump {
     public static void main(String[] args) {
 
         int[] height=new int[]{30,10,60,10,60,50};
-        height=new int[]{10, 20, 30, 10};
+        height=new int[]{10, 20};
         int n=height.length;
 
         //recursion
@@ -44,7 +44,7 @@ public class DP3FrogJump {
         return dp[n]=Math.min(left, right);
     }
 
-    public static int tabulationReference(int n, int[] heights, int[] dp){
+    private static int tabulationReference(int n, int[] heights, int[] dp){
 
         dp[0]=0;
         for(int i=1;i<n;i++){

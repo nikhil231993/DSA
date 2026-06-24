@@ -96,7 +96,7 @@ public class DP33LC72EditDistance {
 
         if(s1.charAt(index1-1)==s2.charAt(index2-1))
             return 0+recursion(s1,s2,index1-1,index2-1);
-        return 1+Math.min(recursion(s1,s2,index1,index2-1),//Insert where a character is inserted before the prev character so only index2 moves
+        return 1+Math.min(recursion(s1,s2,index1,index2-1), //Insert where a character is inserted before the prev character so only index2 moves
                 Math.min(recursion(s1,s2,index1-1,index2), // Delete the character and move index1
                         recursion(s1,s2,index1-1,index2-1))); // replace guarantees with same value so both index moves
 

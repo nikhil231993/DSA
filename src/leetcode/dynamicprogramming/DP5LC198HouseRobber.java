@@ -50,7 +50,7 @@ public class DP5LC198HouseRobber {
 
         dp[0]=nums[0];
         int neg=0;//palceholder
-        for(int i=1;i<=n;i++){ //i<=n
+        for(int i=1; i<=n; i++){ //i<=n
             int pick=nums[i];
             if(i>1)
                 pick+=dp[i-2];

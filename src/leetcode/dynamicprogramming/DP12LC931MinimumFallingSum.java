@@ -12,7 +12,7 @@ public class DP12LC931MinimumFallingSum {
 
         int min=Integer.MAX_VALUE;
         for(int j=0;j<m;j++){
-            min=Math.min(min,recursion(n-1,j,n-1,m-1,matrix));
+            min=Math.min(min, recursion(n-1,j,n-1,m-1,matrix));
         }
         System.out.println(min);
 
@@ -25,7 +25,7 @@ public class DP12LC931MinimumFallingSum {
         }
         int min1=Integer.MAX_VALUE;
         for(int j=0;j<m;j++){
-            min1=Math.min(min1,memoization(n-1,j,n-1,m-1,matrix,dp1));
+            min1=Math.min(min1, memoization(n-1,j,n-1,m-1,matrix,dp1));
         }
         System.out.println(min1);
 
@@ -34,7 +34,7 @@ public class DP12LC931MinimumFallingSum {
         int min2=Integer.MAX_VALUE;
         //tabulation(n,m,matrix,dp2);
         tabulationSelf(n,m,matrix,dp2);  //31:26
-        for(int j=0;j<m;j++){
+        for(int j=0; j<m; j++){
             min2=Math.min(min2, dp2[n-1][j]);
         }
         System.out.println(min2);
@@ -48,7 +48,7 @@ public class DP12LC931MinimumFallingSum {
         System.out.println(min3);
     }
 
-    public static int[] spaceSelf(int n, int m, int[][] matrix){
+    private static int[] spaceSelf(int n, int m, int[][] matrix){
 
         int[] prev=new int[m];
         for(int i=0;i<n;i++){
@@ -159,7 +159,7 @@ public class DP12LC931MinimumFallingSum {
         //SC:O(n*m) dp array
     }
 
-    public static int recursion(int i, int j, int n, int m, int[][] matrix){
+    private static int recursion(int i, int j, int n, int m, int[][] matrix){
 
         if(j<0 || j>m)
             return (int)1e9;
@@ -176,7 +176,7 @@ public class DP12LC931MinimumFallingSum {
         //SC:O(N)
     }
 
-    public static int memoization(int i, int j, int n, int m, int[][] matrix,int[][] dp1){
+    private static int memoization(int i, int j, int n, int m, int[][] matrix,int[][] dp1){
 
         if(j<0 || j>m)
             return (int)1e9;

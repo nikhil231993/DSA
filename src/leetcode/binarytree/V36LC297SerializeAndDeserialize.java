@@ -6,7 +6,7 @@ import java.util.Queue;
 public class V36LC297SerializeAndDeserialize {
 
     // Encodes a tree to a single string.
-    public String serialize(Node root) {
+    private String serialize(Node root) {
 
         if(root == null)
             return "";
@@ -31,7 +31,7 @@ public class V36LC297SerializeAndDeserialize {
     }
 
     // Decodes your encoded data to tree.
-    public Node deserialize(String data) {
+    private Node deserialize(String data) {
 
         if(data == "")
             return null;

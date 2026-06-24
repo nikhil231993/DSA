@@ -11,7 +11,7 @@ public class GfgMinimumCostOfRopes {
         System.out.println(minCost(arr,n));
     }
 
-    public static int minCost(int arr[], int n) {
+    private static int minCost(int arr[], int n) {
 
         PriorityQueue<Integer> pq=new PriorityQueue();
         for(Integer num : arr)

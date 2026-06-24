@@ -12,11 +12,11 @@ class SeatManager {
             pq.offer(i);
     }
 
-    public int reserve() {
+    protected int reserve() {
         return pq.poll();
     }
 
-    public void unreserve(int seatNumber) {
+    protected void unreserve(int seatNumber) {
         pq.offer(seatNumber);
     }
 }

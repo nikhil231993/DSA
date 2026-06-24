@@ -11,9 +11,12 @@ public class LC2016MaximumDifference {
 
         //Approach 2
         System.out.println(maximumDifferenceOptimized(nums));
+
+        //Approach 3
+        System.out.println(maximumDifferenceSelf(nums));
     }
 
-    public static int maximumDifference(int[] nums) {
+    private static int maximumDifference(int[] nums) {
 
         Integer maxDiff=-1;
         for(int i=0; i<nums.length-1; i++){
@@ -31,7 +34,7 @@ public class LC2016MaximumDifference {
         //SC:O(1
     }
 
-    public static int maximumDifferenceOptimized(int[] nums) {
+    private static int maximumDifferenceOptimized(int[] nums) {
 
         int maxDiff=-1, min=Integer.MAX_VALUE;
 
@@ -45,5 +48,16 @@ public class LC2016MaximumDifference {
 
         //TC:O(n)
         //SC:O(1)
+    }
+
+    private static int maximumDifferenceSelf(int[] nums) {
+        int n=nums.length;
+        int minValue=Integer.MAX_VALUE, maxDiff=-1;
+        for(int i=0;i<n;i++){
+            minValue=Math.min(minValue, nums[i]);
+            if(nums[i]>minValue)
+                maxDiff=Math.max(maxDiff, nums[i]-minValue);
+        }
+        return maxDiff;
     }
 }

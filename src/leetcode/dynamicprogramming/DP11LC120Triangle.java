@@ -25,10 +25,10 @@ public class DP11LC120Triangle {
         System.out.println(triangle);
 
         //Recursion
-        System.out.println(minimumTotal(triangle));
+        System.out.println(recursion(triangle));
 
         //Memoization
-        System.out.println(minimumTotalMemoization(triangle));
+        System.out.println(memoization(triangle));
 
         //Tabulation
         System.out.println(tabulation(triangle));
@@ -87,7 +87,7 @@ public class DP11LC120Triangle {
         //SC:O(n*m) dp
     }
 
-    public  static int minimumTotalMemoization(List<List<Integer>> triangle) {
+    private static int memoization(List<List<Integer>> triangle) {
 
         int n=triangle.size();
         int m=triangle.get(n-1).size();
@@ -101,11 +101,12 @@ public class DP11LC120Triangle {
 
         return recursionMemoization(0,0,triangle,n,m,dp);
 
-        //TC:O(N)
-        //SC:o(n*m) dp array + O(N) recursion stack
+        //Time Complexity: O(N*N), where N is the number of rows. As the total number of different subproblems can go upto N.
+
+        //Space Complexity:O(N) + O(N*N), We are using a recursion stack space of N and an extra DP array of size N*N.
     }
 
-    public static int recursionMemoization(int i, int j, List<List<Integer>> list, int n, int m,int[][] dp){
+    private static int recursionMemoization(int i, int j, List<List<Integer>> list, int n, int m,int[][] dp){
 
         if(i==n-1){
             return list.get(n-1).get(j);
@@ -119,7 +120,7 @@ public class DP11LC120Triangle {
         return dp[i][j]=Math.min(d,diag);
     }
 
-    public static int minimumTotal(List<List<Integer>> triangle) {
+    private static int recursion(List<List<Integer>> triangle) {
 
         int n=triangle.size();
         int m=triangle.get(n-1).size();
@@ -127,7 +128,7 @@ public class DP11LC120Triangle {
         return recursion(0,0,triangle,n,m);
     }
 
-    public static int recursion(int i, int j, List<List<Integer>> list, int n, int m){
+    private static int recursion(int i, int j, List<List<Integer>> list, int n, int m){
 
         if(i==n-1){
             return list.get(n-1).get(j);

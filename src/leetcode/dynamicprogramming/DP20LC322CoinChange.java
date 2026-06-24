@@ -1,10 +1,8 @@
 package leetcode.dynamicprogramming;
 
-import leetcode.recursion.medium.LC50Pow;
-
 import java.util.Arrays;
 
-public class DP20LC320CoinChange {
+public class DP20LC322CoinChange {
 
     public static void main(String[] args) {
 
@@ -58,7 +56,7 @@ public class DP20LC320CoinChange {
 
     private static int tabulation(int[] coins, int amount, int[][] dp1, int n) {
 
-        for(int t=0;t<=amount;t++)
+        for(int t=0; t<=amount; t++)
             if(t%coins[0]==0)
                 dp1[0][t]=t/coins[0];
             else
@@ -132,7 +130,7 @@ public class DP20LC320CoinChange {
 
         return Math.min(np, p);
 
-        //TC:>>O(2 raise N) or exponential
+        //TC:>>O(2 raise N) or exponential as we take it still stand at it
         //SC:>>O(N) .i.e O(target)
     }
 }

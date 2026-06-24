@@ -9,6 +9,9 @@ public class LC767ReorganizeStringImportant {
 
         String s ="aab";
         System.out.println(reorganizeString(s));
+
+        //Optimised approach
+        System.out.println(reorganizeStringSelf(s));
     }
 
     public static String reorganizeString(String s) {
@@ -53,5 +56,45 @@ public class LC767ReorganizeStringImportant {
 
         //TC:O(n log n)
         //SC:O(n) worst case
+    }
+
+    private static String reorganizeStringSelf(String s) {
+
+        var charCounts = new int[26];
+        int maxCount = 0, letter = 0;
+        for (char c : s.toCharArray()) {
+            charCounts[c - 'a']++;
+            if (charCounts[c - 'a'] > maxCount) {
+                maxCount = charCounts[c - 'a'];
+                letter = c - 'a';
+            }
+        }
+
+        if (maxCount > (s.length()+1) / 2) {
+            return "";
+        }
+        var ans = new char[s.length()];
+        int index = 0;
+
+        // Place the most frequent letter
+        while (charCounts[letter] != 0) {
+            ans[index] = (char) (letter + 'a');
+            index += 2;
+            charCounts[letter]--;
+        }
+
+        // Place rest of the letters in any order
+        for (int i = 0; i < charCounts.length; i++) {
+            while (charCounts[i] > 0) {
+                if (index >= s.length()) {
+                    index = 1;
+                }
+                ans[index] = (char) (i + 'a');
+                index += 2;
+                charCounts[i]--;
+            }
+        }
+
+        return String.valueOf(ans);
     }
 }

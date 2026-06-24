@@ -8,6 +8,7 @@ public class DP9LC63UniquePaths2 {
 
         int m=obstacleGrid.length;
         int n=obstacleGrid[0].length;
+
         //Recursion
         System.out.println(recursion(m-1, n-1, obstacleGrid));
 
@@ -42,8 +43,8 @@ public class DP9LC63UniquePaths2 {
         int top=recursion(n-1, m, matrix);
         return top+left;
 
-        //TC: O(2 raise to m*n)
-        //SC: O(unique paths )i.e.n+m
+        //TC:O(2 raise to m+n)
+        //SC:O(unique paths )i.e.n+m
     }
 
     private static int space(int n, int m, int[][] obstacleGrid) {

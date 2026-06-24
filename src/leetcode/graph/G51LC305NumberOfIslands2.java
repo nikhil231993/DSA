@@ -21,7 +21,7 @@ public class G51LC305NumberOfIslands2 {
         int[][] visited=new int[n][m];
 
         //Here we will treat each cell as a separate component
-        DisjointSetBySize ds=new DisjointSetBySize(n*m);
+        DisjointSetBySize ds = new DisjointSetBySize(n*m);
         int count=0;
 
         //Answer list

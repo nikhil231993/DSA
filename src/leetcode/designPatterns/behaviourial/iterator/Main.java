@@ -1,8 +1,21 @@
 package leetcode.designPatterns.behaviourial.iterator;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
 public class Main {
 
     public static void main(String[] args) {
+
+        List<Integer> list=new ArrayList<>();
+        list.add(1);
+        list.add(2);
+
+
+        while(list.iterator().hasNext()) {
+            System.out.println(list.iterator().next());
+        }
 
         Product product1=new Product("Jacket", 100.00);
         Product product2=new Product("Laptop", 1100.00);

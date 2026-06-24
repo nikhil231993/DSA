@@ -42,7 +42,7 @@ public class L75KSmallestElement {
 
     private static int KSmallest(int[] arr, int k) {
 
-        PriorityQueue<Integer> pq=new PriorityQueue<>((a,b)->b-a);
+        PriorityQueue<Integer> pq = new PriorityQueue<>((a,b)->b-a);
 
         for(Integer num:arr){
             pq.offer(num);

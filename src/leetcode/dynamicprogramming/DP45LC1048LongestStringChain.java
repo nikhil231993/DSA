@@ -56,22 +56,22 @@ public class DP45LC1048LongestStringChain {
         return max;
     }
 
-    private static boolean compare(String second, String previous) {
+    private static boolean compare(String current, String previous) {
 
-        if(second.length()!=previous.length()+1)
+        if(current.length()!=previous.length()+1)
             return false;
-        int i=0;
-        int j=0;
-        while(i<second.length()){ // bigger string
-            if(j<previous.length() && second.charAt(i)==previous.charAt(j)){
-                i++;
-                j++;
+        int curr=0;
+        int prev=0;
+        while(curr<current.length()){ // bigger string
+            if(prev<previous.length() && current.charAt(curr)==previous.charAt(prev)){
+                curr++;
+                prev++;
             }else {
-                i++;
+                curr++;
             }
         }
 
-        if(i==second.length() && previous.length()==j)
+        if(curr==current.length() && previous.length()==prev)
             return true;
 
         return false;

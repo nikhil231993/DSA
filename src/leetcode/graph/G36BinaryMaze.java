@@ -20,7 +20,7 @@ public class G36BinaryMaze {
 
     public static void main(String[] args) {
 
-        int[][] grid=new int[][]{{1,1,1,1},{1,1,0,1},{1,1,1,1},{1,1,0,0},{1,0,0,1}};
+        int[][] grid=new int[][]{ {1,1,1,1},{1,1,0,1},{1,1,1,1},{1,1,0,0},{1,0,0,1} };
         int[] source=new int[]{0,0};
         int[] dest=new int[]{1,1};
 

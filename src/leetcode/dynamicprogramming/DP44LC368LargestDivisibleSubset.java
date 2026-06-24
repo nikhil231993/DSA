@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class DP44LargestDivisibleSubset {
+public class DP44LC368LargestDivisibleSubset {
 
     public static void main(String[] args) {
 
@@ -42,7 +42,7 @@ public class DP44LargestDivisibleSubset {
 
         List<Integer> result=new ArrayList<>();
         int variableIndex=index;
-        while(variableIndex!=hash[variableIndex]){
+        while(variableIndex !=hash[variableIndex]){
             result.add(nums[variableIndex]);
             variableIndex=hash[variableIndex];
         }

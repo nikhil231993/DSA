@@ -8,13 +8,13 @@ import java.util.PriorityQueue;
 class NodeValue1{
 
     protected int value;
-    protected int valueColInArr;
-    protected int  valueRowInArr;
+    protected int col;
+    protected int row;
 
-    public NodeValue1(int value, int valueColInArr, int valueRowInArr){
+    public NodeValue1(int value, int col, int row){
         this.value=value;
-        this.valueColInArr=valueColInArr;
-        this.valueRowInArr=valueRowInArr;
+        this.col=col;
+        this.row=row;
     }
 }
 
@@ -69,8 +69,8 @@ public class L77LC632SmallestRangeFromKList {
                 start=min;;
                 end=max;
             }
-            if(temp.valueColInArr+1<nums.get(temp.valueRowInArr).size()){
-                NodeValue1 in=new NodeValue1(nums.get(temp.valueRowInArr).get(temp.valueColInArr+1), temp.valueColInArr+1, temp.valueRowInArr);
+            if(temp.col +1<nums.get(temp.row).size()){
+                NodeValue1 in=new NodeValue1(nums.get(temp.row).get(temp.col+1), temp.col +1, temp.row);
                 max=Math.max(max,in.value);
                 pq.offer(in);
             }else

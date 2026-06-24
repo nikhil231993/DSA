@@ -34,14 +34,14 @@ public class L75MergeTwoBinaryHeaps {
         // SC:O(n+m)
     }
 
-    public static void buildHeap(int[] arr, int size){
+    private static void buildHeap(int[] arr, int size){
 
         for(int i=size/2-1; i>=0; i--){
             heapify(arr, size, i);
         }
     }
 
-    public static void heapify(int[] arr, int size, int index){
+    private static void heapify(int[] arr, int size, int index){
 
         int largest=index, left=2*index+1, right=2*index+2;
 

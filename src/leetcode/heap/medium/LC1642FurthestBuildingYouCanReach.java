@@ -13,11 +13,11 @@ public class LC1642FurthestBuildingYouCanReach {
         System.out.println(furthestBuilding(heights,bricks,ladders));
     }
 
-    public static int furthestBuilding(int[] heights, int bricks, int ladders) {
+    private static int furthestBuilding(int[] heights, int bricks, int ladders) {
 
         PriorityQueue<Integer> pq=new PriorityQueue();
 
-        for(int i=0; i<heights.length-1; i++){
+        for(int i=1; i<heights.length-1; i++){
 
             int gap=heights[i+1]-heights[i];
             if(gap>0)
@@ -27,7 +27,7 @@ public class LC1642FurthestBuildingYouCanReach {
             }
 
             if(bricks<0)
-                return i;
+                return i-1;
         }
         return heights.length-1;
 

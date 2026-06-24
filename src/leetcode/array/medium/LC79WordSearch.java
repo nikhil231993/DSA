@@ -14,12 +14,12 @@ public class LC79WordSearch {
 		//Approach 1:
 		System.out.println(mainSearchApproach(n, m, board, word));
 
-		char[][] board1 = new char[][] { { 'A', 'B', 'C', 'E' },
+		board = new char[][] { { 'A', 'B', 'C', 'E' },
 				{ 'S', 'F', 'C', 'S' },
 				{ 'A', 'D', 'E', 'E' } };
 
 		//Approach 2:
-		System.out.println(mainSearch(n, m, board1, word));
+		System.out.println(mainSearch(n, m, board, word));
 	}
 
 	private static boolean mainSearchApproach(int n, int m, char[][] board, String word) {
@@ -35,27 +35,26 @@ public class LC79WordSearch {
 		return false;
 	}
 
-	private static boolean searchApproach(int i, int j, int n, int m, char[][] board, String word, int k) {
+	private static boolean searchApproach(int row, int col, int n, int m, char[][] board, String word, int index) {
 
-		if (k == word.length()-1) {
+		if (index == word.length()-1)
 			return true;
-		}
 
-		char ch = board[i][j];
-		board[i][j] = '#';
+		char ch = board[row][col];
+		board[row][col] = '#';
 
 		int[] x = new int[]{0, 1, 0, -1};
 		int[] y = new int[]{1, 0, -1, 0};
-		for (int index = 0; index < 4; index++) {
-			int nRow = i + x[index];
-			int nCol = j + y[index];
-			if (nRow < n && nCol < m && nRow >=0 && nCol >= 0 && board[nRow][nCol] != '#' && board[nRow][nCol] == word.charAt(k+1)) {
-				if (search(nRow, nCol, n, m, board, word, k+1)) {
+		for (int i = 0; i < 4; i++) {
+			int nRow = row + x[i];
+			int nCol = col + y[i];
+			if (nRow < n && nCol < m && nRow >=0 && nCol >= 0 && board[nRow][nCol] != '#' && board[nRow][nCol] == word.charAt(index+1)) {
+				if (searchApproach(nRow, nCol, n, m, board, word, index+1)) {
 					return true;
 				}
 			}
 		}
-		board[i][j] = ch;
+		board[row][col] = ch;
 		return false;
 	}
 

@@ -63,15 +63,15 @@ public class DP37LC123Stock3 {
     private static int tabulation(int[] prices, int n, int[][][] dp1) {
 
         //1st base case when index==n
-        for(int j=0;j<=1;j++){
-            for(int k=0;k<=2;k++){
+        for(int j=0; j<=1; j++){
+            for(int k=0; k<=2; k++){
                 dp1[n][j][k]=0;
             }
         }
 
         //2nd  base case when cap==0
-        for(int i=0;i<=n;i++){
-            for(int j=0;j<=1;j++){
+        for(int i=0; i<=n; i++){
+            for(int j=0; j<=1; j++){
                 dp1[i][j][0]=0;
             }
         }

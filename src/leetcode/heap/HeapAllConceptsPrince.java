@@ -40,7 +40,7 @@ public class HeapAllConceptsPrince {
 
     private void heapifyUp(int index) {
 
-        while(index!=0 && arr[(index-1)/2]>arr[index]){
+        while(index!=0 && arr[(index-1)/2] > arr[index]){
             int temp=arr[(index-1)/2];
             arr[(index-1)/2]=arr[index];
             arr[index]=temp;

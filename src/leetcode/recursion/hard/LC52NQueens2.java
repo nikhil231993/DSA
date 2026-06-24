@@ -30,12 +30,12 @@ public class LC52NQueens2 {
 			}
 		}
 
-		solveSecondApproach(queenSecond, board, leftRow, lowerDiagonal, upperDiagonal, 0);
+		solveSecondApproachUsingHashing(queenSecond, board, leftRow, lowerDiagonal, upperDiagonal, 0);
 		System.out.println(queenSecond.size());
 	}
 
-	public static void solveSecondApproach(List<List<String>> queen, char[][] board, int[] leftRow, int[] lowerDiagonal,
-			int[] upperDiagonal, int col) {
+	private static void solveSecondApproachUsingHashing(List<List<String>> queen, char[][] board, int[] leftRow, int[] lowerDiagonal,
+														int[] upperDiagonal, int col) {
 
 		if (col == board.length) {
 			queen.add(construct(board));
@@ -49,7 +49,7 @@ public class LC52NQueens2 {
 				lowerDiagonal[row + col] = 1;
 				upperDiagonal[board.length - 1 + col - row] = 1;
 				board[row][col] = 'Q';
-				solveSecondApproach(queen, board, leftRow, lowerDiagonal, upperDiagonal, col + 1);
+				solveSecondApproachUsingHashing(queen, board, leftRow, lowerDiagonal, upperDiagonal, col + 1);
 				leftRow[row] = 0;
 				lowerDiagonal[row + col] = 0;
 				upperDiagonal[board.length - 1 + col - row] = 0;
@@ -58,7 +58,7 @@ public class LC52NQueens2 {
 		}
 	}
 
-	public static int totalNQueens(int n) {
+	private static int totalNQueens(int n) {
 
 		char[][] board = new char[n][n];
 		for (int i = 0; i < n; i++) {
@@ -89,38 +89,38 @@ public class LC52NQueens2 {
 		}
 	}
 
-	public static boolean isSafeToBePlaced(char[][] board, int row, int col) {
+	private static boolean isSafeToBePlaced(char[][] board, int row, int col) {
 
-		int dupRow = row;
-		int dupCol = col;
+		int r = row;
+		int c = col;
 
-		while (dupRow >= 0 && dupCol >= 0) {
-			if (board[dupRow][dupCol] == 'Q')
+		while (r >= 0 && c >= 0) {
+			if (board[r][c] == 'Q')
 				return false;
-			dupRow--;
-			dupCol--;
+			r--;
+			c--;
 		}
-		dupRow = row;
-		dupCol = col;
-		while (dupCol >= 0) {
-			if (board[dupRow][dupCol] == 'Q')
+		r = row;
+		c = col;
+		while (c >= 0) {
+			if (board[r][c] == 'Q')
 				return false;
-			dupCol--;
+			c--;
 		}
 
-		dupRow = row;
-		dupCol = col;
+		r = row;
+		c = col;
 
-		while (dupRow < board.length && dupCol >= 0) {
-			if (board[dupRow][dupCol] == 'Q')
+		while (r < board.length && c >= 0) {
+			if (board[r][c] == 'Q')
 				return false;
-			dupRow++;
-			dupCol--;
+			r++;
+			c--;
 		}
 		return true;
 	}
 
-	public static List<String> construct(char[][] board) {
+	private static List<String> construct(char[][] board) {
 		List<String> l = new ArrayList();
 
 		for (char[] c : board) {

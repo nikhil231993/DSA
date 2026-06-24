@@ -6,7 +6,9 @@ public class DP31LC1092ShortestCommonSupersequence {
 
     public static void main(String[] args) {
 
-        String str1 = "abac", str2 = "cab";
+        //String str1 = "abac", str2 = "cab";
+        //String str1 = "brute", str2="groot";
+        String str1 = "bleed", str2="blue";
         int index1=str1.length();
         int index2=str2.length();
 

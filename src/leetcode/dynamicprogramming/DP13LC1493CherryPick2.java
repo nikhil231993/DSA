@@ -24,7 +24,7 @@ public class DP13LC1493CherryPick2 {
         System.out.println(memoization(0,0,m-1,grid,n,m,dp));
     }
 
-    public static int memoization(int i, int j1, int j2, int[][] grid,int n, int m,int[][][] dp){
+    private static int memoization(int i, int j1, int j2, int[][] grid,int n, int m,int[][][] dp){
 
         if(i<0|| j1<0 || j2<0 || j1>= m || j2>=m)
             return -(int)1e9;
@@ -58,14 +58,14 @@ public class DP13LC1493CherryPick2 {
         //SC:O(n)+O(n*m*m) dp array
     }
 
-    public static int cherryPickup(int[][] grid) {
+    private static int cherryPickup(int[][] grid) {
 
         int n=grid.length;
         int m=grid[0].length;
         return recursion(0,0,m-1,grid,n,m);
     }
 
-    public static int recursion(int i, int j1, int j2, int[][] grid,int n, int m){
+    private static int recursion(int i, int j1, int j2, int[][] grid,int n, int m){
 
         if(i<0 || j1<0 || j2<0 || j1>= m || j2>=m)
             return -(int)1e9;

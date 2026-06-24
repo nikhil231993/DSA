@@ -20,7 +20,7 @@ public class LC560CountSubarraySum {
 		System.out.println(subarraySumOptimal(nums, k));
 	}
 
-	public static int subarraySum(int[] nums, int k) {
+	private static int subarraySum(int[] nums, int k) {
 
 		 int n = nums.length;
 		 int count = 0;
@@ -41,18 +41,17 @@ public class LC560CountSubarraySum {
 
 	private static int subarraySumOptimal(int[] nums, int k) {
 
-		int sum = 0;
-		int count = 0;
+		int sum = 0, count = 0;
 		HashMap<Integer, Integer> m = new LinkedHashMap<>();
 
 		for (int i = 0; i < nums.length; i++) {
 			sum += nums[i];
-			if (sum == k) {
+			if (sum == k)
 				count++;
-            }
-			if (m.containsKey(sum - k)) {
+
+			if (m.containsKey(sum - k))
 				count += m.get(sum - k);
-			}
+
 			m.put(sum, m.getOrDefault(sum,0) + 1);
 		}
 		return count;

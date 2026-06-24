@@ -25,7 +25,7 @@ public class DP41LC300LongestIncreasingSubsequence {
 
         //Tabulation
         int[][] dp1=new int[n+1][n+1];
-        System.out.println(tabulation(n,nums,0,-1,dp1));
+        System.out.println(tabulation(n, nums,0,-1,dp1));
 
         //Space
         System.out.println(space(n,nums,0,-1,dp1));

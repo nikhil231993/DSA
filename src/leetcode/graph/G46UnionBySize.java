@@ -9,7 +9,7 @@ class DisjointSetBySize{
 
         parent=new int[n+1];
         size=new int[n+1];
-        for(int i=0;i<=n;i++){
+        for(int i=0; i<=n; i++){
             size[i]=1;// As all the nodes are component of itself
             parent[i]=i;
         }
@@ -62,12 +62,12 @@ public class G46UnionBySize {
             System.out.println("Not same");
         ds.unionBySize(3,7);
 
-        if(ds.findParent(3)==ds.findParent(7))
+        if(ds.findParent(3) == ds.findParent(7))
             System.out.println("Same");
         else
             System.out.println("Not same");
 
         //TC:O(4 alpha) for findParent + O(4 alpha) for union
-        //SC:O(n) rank and +o(N) parent
+        //SC:O(n) size and + O(N) parent
     }
 }

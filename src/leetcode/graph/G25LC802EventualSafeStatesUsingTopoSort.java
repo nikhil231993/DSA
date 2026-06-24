@@ -21,7 +21,7 @@ public class G25LC802EventualSafeStatesUsingTopoSort {
         }
 
         for(int i=0; i<graph.length; i++){
-            for(int j=0;j<graph[i].length;j++){
+            for(int j=0;j<graph[i].length; j++){
                 adjList.get(i).add(graph[i][j]);
             }
         }

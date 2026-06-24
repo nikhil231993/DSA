@@ -63,7 +63,7 @@ public class G35PrintShortestPathUG {
         int[] parent=new int[V+1];
 
         //Mark all parents with themselves
-        for(int i=0;i<parent.length;i++)
+        for(int i=0; i<parent.length; i++)
             parent[i]=i;
         parent[src]=src;
 

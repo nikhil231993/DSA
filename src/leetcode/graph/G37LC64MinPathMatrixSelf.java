@@ -2,7 +2,7 @@ package leetcode.graph;
 
 import java.util.PriorityQueue;
 
-public class G37MinPathMatrixSelf {
+public class G37LC64MinPathMatrixSelf {
 
     public static void main(String[] args) {
 

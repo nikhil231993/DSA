@@ -6,32 +6,32 @@ public class DP19Knapsack {
 
     public static void main(String[] args) { // watch 11:03
 
-        int wt[] =new int[] {1,2,4,5};
-        int val[] =new int[] {5,4,8,6};
+        int wt[] = new int[] { 1,2,4,5};
+        int val[] = new int[] { 5,4,8,6};
         int W=6;
 
         //Recursion
         int n=wt.length;
-        System.out.println(recursion(n-1,W,wt,val));
+        System.out.println(recursion( n-1, W, wt, val));
 
         //Memoization
         int[][] dp=new int[n][W+1];
         for(int[] r:dp)
             Arrays.fill(r,-1);
-        System.out.println(memoization(n-1,W,wt,val,dp));
+        System.out.println(memoization(n-1, W, wt, val, dp));
 
         //Tabulation
         int[][] dp1=new int[n][W+1];
-        System.out.println(tabulation(n,W,wt,val,dp1));
+        System.out.println(tabulation( n, W, wt, val, dp1));
 
         //Space
-        System.out.println(space(n,W,wt,val));
+        System.out.println(space( n, W, wt, val));
     }
 
     private static int space(int n, int wt, int[] weight, int[] value) {
 
         int[] prev=new int[wt+1];
-        for(int w=weight[0];w<=wt;w++){
+        for(int w=weight[0];w<=wt;w++){ // we can start here from 0 as well but since dp array is already 0 it is set
             if(weight[0]<=w)
                 prev[w]=value[0];
         }
@@ -61,8 +61,8 @@ public class DP19Knapsack {
                 dp[0][w]=value[0];
         }
 
-        for(int i=1;i<n;i++){
-            for(int w=0;w<=wt;w++){
+        for(int i=1; i<n; i++){
+            for(int w=0; w<=wt; w++){
                 int notpick=0+dp[i-1][w];
                 int pick=-(int)(1e9);
                 if(weight[i]<=w){

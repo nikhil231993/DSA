@@ -19,7 +19,8 @@ public class G32DijkstraAlgoUGWeight {
 
         //IMP:
         //1. Visited works in below example because once a edge is relaxed it cannot have better shortest path to reach
-        //2. Visited does not work in negative case here because it forms negative cycle
+        //2. With negative edges, a shorter path may be discovered later.
+        //    With negative cycles, shortest paths are not even well-defined.
         //3. Visited with negative value behavior with DG having no cycle can be seen in code G32DijkstraAlgoDGWeightSelf.java
 
         int[][] edge = new int[][] { { 0, 2, 4 },
@@ -33,7 +34,7 @@ public class G32DijkstraAlgoUGWeight {
         // as there can be more than one instance of a node in the priority queue whereas in the treeset
         // method it will be O(ElogV)
         // Ans: Yes
-        // Also in here we use (v * ((pop vertex from min heap) + no of edges on each vertex *push into PQ) Here it is V* because we parse everything in for loop also which is present inside
+        // Also in here we use (v * ((pop vertex from min heap) + no of edges on each vertex * push into PQ) Here it is V* because we parse everything in for loop also which is present inside
         // TC  if we use Queue instead of priority queue will be EV
 
         int V=6;
@@ -91,7 +92,7 @@ public class G32DijkstraAlgoUGWeight {
             // we add visited here because once we process the node then that means there is no other way it can have
             // shortest path
 
-            for(PairG32 vertex:adjList.get(node)){
+            for(PairG32 vertex : adjList.get(node)){
                     if(dist[vertex.node]>weight+vertex.weight){
                     dist[vertex.node]=weight+vertex.weight;
                     q.offer(new PairG32(vertex.node,dist[vertex.node]));
@@ -108,15 +109,15 @@ public class G32DijkstraAlgoUGWeight {
         for(int i=0; i<V; i++)
             adjList.add(new ArrayList<>());
 
-        for(int i=0;i<E;i++){
-            adjList.get(edge[i][0]).add(new PairG32(edge[i][1],edge[i][2]));
-            adjList.get(edge[i][1]).add(new PairG32(edge[i][0],edge[i][2]));
+        for(int i=0; i<E; i++){
+            adjList.get(edge[i][0]).add(new PairG32(edge[i][1], edge[i][2]));
+            adjList.get(edge[i][1]).add(new PairG32(edge[i][0], edge[i][2]));
         }
 
         Queue<PairG32> q=new PriorityQueue<>((a,b)->a.weight-b.weight);
         int[] dist=new int[V];
 
-        Arrays.fill(dist,(int)(1e9));
+        Arrays.fill(dist, (int)(1e9));
         dist[src]=0;
 
         q.offer(new PairG32(src,0));
@@ -127,9 +128,9 @@ public class G32DijkstraAlgoUGWeight {
             Integer weight=q.peek().weight;
             q.poll();
 
-            for(PairG32 vertex:adjList.get(node)){
-                if(dist[vertex.node]>weight+vertex.weight){
-                    dist[vertex.node]= weight+vertex.weight;
+            for(PairG32 vertex : adjList.get(node)){
+                if(dist[vertex.node] > weight+vertex.weight){
+                    dist[vertex.node] = weight+vertex.weight;
                     q.offer(new PairG32(vertex.node,dist[vertex.node]));
                 }
             }

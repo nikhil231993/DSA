@@ -28,8 +28,8 @@ public class LC692TopKFrequentWords {
 
     public static void main(String[] args) {
 
-        String[] words =new String[] {"the","day","is","sunny","the","the","the","sunny","is","is","is"};
-        int k = 3;
+        String[] words =new String[] {"zhis","zhis","zhis","zhis","the","day","is","sunny","the","the","the","sunny","is","is","is","me", "me", "me", "me"};
+        int k = 2;
 
         //Approach 1:
         System.out.println(topKFrequent(words,k));
@@ -40,7 +40,7 @@ public class LC692TopKFrequentWords {
         //Best Approach is Bucket Sort and Trie combination. Learn if time permits
     }
 
-    public static List<String> topKFrequent(String[] words, int k) {
+    private static List<String> topKFrequent(String[] words, int k) {
 
         Map<String, Integer> map=new HashMap();
         for(String num:words){
@@ -73,7 +73,7 @@ public class LC692TopKFrequentWords {
         // SC:O(k)
     }
 
-    public static List<String> topKFrequentOptimised(String[] words, int k) {
+    private static List<String> topKFrequentOptimised(String[] words, int k) {
 
         Map<String, Integer> map = new HashMap<>();
         for (String word : words) {

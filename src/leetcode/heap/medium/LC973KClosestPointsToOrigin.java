@@ -16,7 +16,7 @@ public class LC973KClosestPointsToOrigin {
             System.out.println(r[0]+" "+r[1]);
     }
 
-    public static int[][] kClosest(int[][] points, int k) {
+    private static int[][] kClosest(int[][] points, int k) {
 
         PriorityQueue<int[]> pq=new PriorityQueue<>((a,b)->(((b[0]-0)*(b[0]-0))+(b[1]-0)*(b[1]-0)) - ((a[0]-0)*(a[0]-0)+(a[1]-0)*(a[1]-0)));
 
@@ -36,7 +36,6 @@ public class LC973KClosestPointsToOrigin {
             result[i++]=temp;
         }
         return result;
-
         //TC:n log k
         //SC:K
     }

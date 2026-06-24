@@ -7,13 +7,13 @@ import java.util.PriorityQueue;
 class SubNode{
 
     protected int val;
-    protected int arrPos;
-    protected int valPosInArr;
+    protected int row;
+    protected int col;
 
     public SubNode(int val, int arrPos, int valPosInArr){
         this.val=val;
-        this.arrPos=arrPos;
-        this.valPosInArr=valPosInArr;
+        this.row =arrPos;
+        this.col =valPosInArr;
     }
 }
 
@@ -69,7 +69,7 @@ public class GfgMergeKSortedArray {
         //SC:O(n*m)
     }
 
-    public static ArrayList<Integer> mergeKArrays(int[][] arr, int k) {
+    private static ArrayList<Integer> mergeKArrays(int[][] arr, int k) {
 
         ArrayList<Integer> result=new ArrayList<>();
         PriorityQueue<SubNode> pq=new PriorityQueue<>((a,b)->a.val-b.val);
@@ -83,11 +83,11 @@ public class GfgMergeKSortedArray {
 
             SubNode temp=pq.poll();
             result.add(temp.val);
-            int arrPos= temp.arrPos;
-            int valPosInArr=temp.valPosInArr;
+            int row= temp.row;
+            int col=temp.col;
 
-            if(valPosInArr+1 < arr[arrPos].length){
-                SubNode inertVal=new SubNode(arr[arrPos][valPosInArr+1], arrPos, valPosInArr+1);
+            if(col+1 < arr[row].length){
+                SubNode inertVal=new SubNode(arr[row][col+1], row, col+1);
                 pq.offer(inertVal);
             }
         }

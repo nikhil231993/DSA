@@ -1,7 +1,9 @@
 package leetcode.heap.easy;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 public class LC2351FirstLetterToAppearTwice {
 
@@ -16,7 +18,7 @@ public class LC2351FirstLetterToAppearTwice {
         System.out.println(repeatedCharacterOptimised(s));
     }
 
-    public static char repeatedCharacter(String s) {
+    private static char repeatedCharacter(String s) {
 
         Map<Character, Integer> m=new HashMap();
 
@@ -46,5 +48,25 @@ public class LC2351FirstLetterToAppearTwice {
 
         //TC:O(n) in chase all characters are unique
         //SC:O(n)
+    }
+
+    private char repeatedCharacterSet(String s) {
+        Set<Character> set=new HashSet<>();
+        for(int i=0;i<s.length();i++){
+            if(set.contains(s.charAt(i)))
+                return s.charAt(i);
+            set.add(s.charAt(i));
+        }
+        return 'a';
+    }
+
+    private char repeatedCharacterArray(String s) {
+        int[] arr=new int[26];
+        for(int i=0;i<s.length();i++){
+            if(arr[s.charAt(i)-'a']==1)
+                return s.charAt(i);
+            arr[s.charAt(i)-'a']++;
+        }
+        return 'a';
     }
 }

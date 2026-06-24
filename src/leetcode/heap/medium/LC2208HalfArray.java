@@ -1,6 +1,8 @@
 package leetcode.heap.medium;
 
+import java.util.List;
 import java.util.PriorityQueue;
+import java.util.ArrayList;
 
 public class LC2208HalfArray {
 
@@ -8,9 +10,11 @@ public class LC2208HalfArray {
 
         int[]  nums = new int[] {5,19,8,1};
         System.out.println(halveArray(nums));
+
+        // we can improve the nlog n of insertion by using either heapify as it is O(n) or we can put values in a list and use pq.addAll(list) this also takes O(n) TC
     }
 
-    public static int halveArray(int[] nums) {
+    private static int halveArray(int[] nums) {
 
         PriorityQueue<Double> pq=new PriorityQueue<>((a, b)->Double.compare(b,a));
         double sum=0.0;
@@ -34,5 +38,29 @@ public class LC2208HalfArray {
 
         //TC:O(n log n)
         //SC:O(n)
+    }
+
+    private int halveArraySelf(int[] nums) {
+        PriorityQueue<Double> pq=new PriorityQueue<>((a, b)->Double.compare(b,a));
+        List<Double> list=new ArrayList<>();
+        double sum=0.0;
+        for(int i=0;i<nums.length;i++){
+            sum+=nums[i];
+            list.add((double)nums[i]);
+        }
+        pq.addAll(list);
+        int count=0;
+        double newSum=sum;
+        while(!pq.isEmpty()){
+            count++;
+            double num=pq.poll();
+            newSum-=num;
+            double newNum=num/2;
+            newSum+=newNum;
+            pq.offer(newNum);
+            if(newSum<=(sum/2.0))
+                return count;
+        }
+        return 0;
     }
 }

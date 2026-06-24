@@ -30,7 +30,7 @@ public class G40NumberOfWaysToReachDestination {
         //SC:O(N) queue+ O(N) distance +O(N) ways
     }
 
-    public static int countPaths(int n, int[][] roads) {
+    private static int countPaths(int n, int[][] roads) {
 
         List<List<PairG40>> adList=new ArrayList<>();
 

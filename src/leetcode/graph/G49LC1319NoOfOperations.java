@@ -11,13 +11,13 @@ public class G49LC1319NoOfOperations {
 //       int[][] connections =new int[][] {{0,1},{0,2},{1,2}};
 
         int n = 6;
-        int[][] connections =new int[][] {{0,1},{0,2},{0,3},{1,2},{1,3}};
+        int[][] connections =new int[][] {{0,1},{0,2},{0,3},{1,2}};
 
         System.out.println(noOfOperations(n, connections));
         System.out.println(makeConnected(n, connections));
     }
 
-    public static int makeConnected(int n, int[][] connections) {
+    private static int makeConnected(int n, int[][] connections) {
 
         if (connections.length < n - 1) {
             return -1;
@@ -70,7 +70,7 @@ public class G49LC1319NoOfOperations {
             if(ds.findParent(r[0])== ds.findParent(r[1])){
                 countExtraEdges++;
             }else{
-                ds.unionBySize(r[0],r[1]);
+                ds.unionBySize(r[0], r[1]);
             }
         }
 

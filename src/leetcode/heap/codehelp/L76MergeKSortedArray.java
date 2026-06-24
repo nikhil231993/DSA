@@ -7,14 +7,14 @@ import java.util.PriorityQueue;
 class NodeValue{
 
     protected int value;
-    protected int valueColInArr;
-    protected int  valueRowInArr;
+    protected int col;
+    protected int row;
 
-    public NodeValue(int value, int valueColInArr, int valueRowInArr){
+    public NodeValue(int value, int col, int row){
 
         this.value=value;
-        this.valueColInArr=valueColInArr;
-        this.valueRowInArr=valueRowInArr;
+        this.col =col;
+        this.row =row;
     }
 }
 
@@ -23,8 +23,10 @@ public class L76MergeKSortedArray {
     public static void main(String[] args) {
 
         int k=4;
-        int[][] arr=new int[][]{{1,2,3,4},{2,2,3,4},
-                {5,5,6,6},{7,8,9,9}};
+        int[][] arr=new int[][]{{1,2,3,4},
+                {2,2,3,4},
+                {5,5,6,6},
+                {7,8,9,9}};
 
         //Approach 1:
         int[] r = mergeKArrays(arr,k);
@@ -49,8 +51,8 @@ public class L76MergeKSortedArray {
         while(!pq.isEmpty()){
             NodeValue temp=pq.poll();
             result.add(temp.value);
-            int valueCol=temp.valueColInArr;
-            int valueRow=temp.valueRowInArr;
+            int valueCol=temp.col;
+            int valueRow=temp.row;
 
             if(valueCol+1 < arr[valueRow].length){
                 pq.offer(new NodeValue(arr[valueRow][valueCol+1],valueCol+1,valueRow));
@@ -58,7 +60,7 @@ public class L76MergeKSortedArray {
         }
         return result;
 
-        //TC:O(k logk)+O(n*k  log k)
+        //TC:O(k logk) + O(n*k  log k)
         //SC:k as at any moment heap has only k elements at the max + O(n*k) for storing the data
     }
 
@@ -79,7 +81,7 @@ public class L76MergeKSortedArray {
         Arrays.sort(result);
         return result;
 
-        // TC:O(n*k log n*k)
-        // SC:O(n*k)
+        //TC:O(n*k log n*k)
+        //SC:O(n*k)
     }
 }

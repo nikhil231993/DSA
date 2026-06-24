@@ -1,7 +1,5 @@
 package leetcode.graph.medium;
 
-import java.sql.SQLOutput;
-
 class DisjointSet{
 
     public int[] parent=null;
@@ -42,6 +40,7 @@ class DisjointSet{
     }
 }
 public class LC684RedunantConnection {
+
     public static void main(String[] args) {
         int[][] edges = new int[][] {{1,2},{1,3},{2,3}};
 
@@ -53,7 +52,7 @@ public class LC684RedunantConnection {
             System.out.println(n);
     }
 
-    public static int[] findRedundantConnection(int[][] edges) {
+    private static int[] findRedundantConnection(int[][] edges) {
         int n=edges.length;
         DisjointSet ds=new DisjointSet(n);
 

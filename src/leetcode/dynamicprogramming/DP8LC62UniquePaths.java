@@ -93,16 +93,16 @@ public class DP8LC62UniquePaths {
 
     private static int recursion(int m, int n) {
 
-            if(n==0 && m==0)
-                 return 1;
-             if(m<0 || n<0)
-                 return 0;
-             int up = recursion(m-1,n);
-             int left = recursion(m,n-1);
+        if(n==0 && m==0)
+             return 1;
+        if(m<0 || n<0)
+             return 0;
+        int up = recursion(m-1, n);
+        int left = recursion(m, n-1);
 
-             return up+left;
+        return up+left;
 
-             //TC:O(2 raise to m*n) 14:56
-             //SC:O(path length) i.e.(n-1) + (m-1)
+        //TC:O(2 raise to m+n) 14:56 It is m+n if it is two directions and if it is 4 directions then can swirl around from bottom to top and can be m*nf it is two directiosn and if it is 4 direct
+        //SC:O(path length) i.e.(n-1) + (m-1)
     }
 }

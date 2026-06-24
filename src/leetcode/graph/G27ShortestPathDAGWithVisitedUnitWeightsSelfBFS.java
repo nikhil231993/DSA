@@ -30,13 +30,13 @@ public class G27ShortestPathDAGWithVisitedUnitWeightsSelfBFS {
 		}
 
 		//Below is using 2.
-		int[] result = shortestPath(adjlist, V, E, src);
+		int[] result = shortestPath(adjlist, V, src);
 		System.out.println("####################");
 		for (Integer n : result)
 			System.out.println(n);
 	}
 
-	private static int[] shortestPath(List<List<Integer>> adjlist,int V, int E,int src) {
+	private static int[] shortestPath(List<List<Integer>> adjlist,int V, int src) {
 
 		int[] visited=new int[V];
 		int[] dist=new int[V];

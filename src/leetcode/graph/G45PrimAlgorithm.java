@@ -47,7 +47,7 @@ public class G45PrimAlgorithm {
             adjList.add(new ArrayList<>());
         }
         //Adding edges
-        for(int i=0;i<edges.length;i++){
+        for(int i=0; i<edges.length; i++){
             adjList.get(edges[i][0]).add(new PairNodeWeight(edges[i][1],edges[i][2]));
             adjList.get(edges[i][1]).add(new PairNodeWeight(edges[i][0],edges[i][2]));
         }

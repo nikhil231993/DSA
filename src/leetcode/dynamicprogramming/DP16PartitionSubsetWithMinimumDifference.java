@@ -28,8 +28,9 @@ public class DP16PartitionSubsetWithMinimumDifference {
 
     private static void tabulation(int n, int K, int[] arr, boolean[][] dp) {
 
-        for(int i=0;i<n;i++)
+        for(int i=0; i<n; i++)
             dp[i][0]=true;
+
         if(arr[0]<=K)
             dp[0][arr[0]]=true;
 

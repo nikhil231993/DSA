@@ -36,7 +36,7 @@ public class DP23UnBoundedKnapsack {
 
         for(int i=1;i<n;i++){
             int[] curr=new int[w+1];
-            for(int tar=0;tar<=w;tar++){
+            for(int tar=0; tar<=w; tar++){
                 int notPick=0+prev[tar];
 
                 int pick=-(int)10e9;

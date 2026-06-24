@@ -15,11 +15,11 @@ public class G52LC827MakingLargeIsland {
 
         int n=grid.length;
         int m=grid[0].length;
-        DisjointSetBySize ds=new DisjointSetBySize(n*m);
+        DisjointSetBySize ds = new DisjointSetBySize(n*m);
 
         //Step 1: Loop through the matrix and create union
-        for(int i=0;i<grid.length;i++){
-            for(int j=0;j<grid[0].length;j++){
+        for(int i=0;i<n;i++){
+            for(int j=0;j<m;j++){
 
                 //Islands are formed only by 1
                 if(grid[i][j]==0)
@@ -54,15 +54,16 @@ public class G52LC827MakingLargeIsland {
                 for(int k=0;k<4;k++) {
                     int nrow = i + xaxis[k];
                     int ncol = j + yaxis[k];
+                    int nnode = nrow*m+ncol;
                     if(nrow>=0 && nrow<n && ncol>=0 && ncol<m && grid[nrow][ncol]==1) {
-                        int ultimate_Parent=ds.findParent(nrow*m+ncol);
+                        int ultimate_Parent=ds.findParent(nnode);
                         parent.add(ultimate_Parent);
                     }
                 }
 
                 //Step 3: parse through set and find the size of each parent and add it
                 int sumTotal=0;
-                for(Integer p:parent){
+                for(Integer p : parent){
                     sumTotal+=ds.size[p];
                 }
 
@@ -78,10 +79,10 @@ public class G52LC827MakingLargeIsland {
         return max;
 
         //Time Complexity: O(N^2*4)+O(N^2*4) ~ O(N2) where N = total number of rows of the grid.
-        // Inside those nested loops, all the operations are taking apparently constant time.
-        // So, O(N2) for the nested loop only, is the time complexity.
+        //Inside those nested loops, all the operations are taking apparently constant time.
+        //So, O(N2) for the nested loop only, is the time complexity.
 
         //Space Complexity: O(2*N2) where N = the total number of rows of the grid.
-        // This is for the two arrays i.e. parent array and size array of size N2 inside the Disjoint set.
+        //This is for the two arrays i.e. parent array and size array of size N2 inside the Disjoint set.
     }
 }

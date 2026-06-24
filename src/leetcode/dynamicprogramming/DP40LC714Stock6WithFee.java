@@ -2,7 +2,7 @@ package leetcode.dynamicprogramming;
 
 import java.util.Arrays;
 
-public class DP40LC714Stock6 {
+public class DP40LC714Stock6WithFee {
 
     public static void main(String[] args) {
 

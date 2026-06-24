@@ -11,9 +11,10 @@ public class LC1985KthLargestInteger {
         System.out.println(kthLargestNumber(nums,k));
     }
 
-    public static String kthLargestNumber(String[] nums, int k) {
+    private static String kthLargestNumber(String[] nums, int k) {
 
-        PriorityQueue<String> pq = new PriorityQueue<>((a, b) -> a.length() == b.length() ? a.compareTo(b) : a.length() - b.length());
+        PriorityQueue<String> pq = new PriorityQueue<>(
+                (a, b) -> a.length() == b.length() ? a.compareTo(b) : a.length() - b.length());
         for(String n : nums){
             pq.offer(n);
             if(pq.size()>k)

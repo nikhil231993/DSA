@@ -60,6 +60,7 @@ public class G47KrushkalAlgorithm {
         //To sort based on weight to have minimum weight at top
         //O(MlogM)
         Collections.sort(edgeList);
+        //Collections.sort(edgeList, (a, b) -> Integer.compare(a.wt, b.wt));
 
         //Disjoint Set
         DisjointSetBySize ds=new DisjointSetBySize(V);
@@ -74,7 +75,7 @@ public class G47KrushkalAlgorithm {
             int v=edge.v;
             int wt=edge.wt;
 
-            if(ds.findParent(u)!=ds.findParent(v)){
+            if(ds.findParent(u) != ds.findParent(v)){
                 pairEdge.add(new PairEdges(u,v));
                 sum+=wt;
                 ds.unionBySize(u,v);

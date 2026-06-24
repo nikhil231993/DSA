@@ -51,18 +51,18 @@ public class G46UnionByRank {
         ds.unionByRank(4,5);
         ds.unionByRank(6,7);
         ds.unionByRank(5,6);
-        if(ds.findParent(3)==ds.findParent(7))
+        if(ds.findParent(3) == ds.findParent(7))
             System.out.println("Same");
         else
             System.out.println("Not same");
         ds.unionByRank(3,7);
 
-        if(ds.findParent(3)==ds.findParent(7))
+        if(ds.findParent(3) == ds.findParent(7))
             System.out.println("Same");
         else
             System.out.println("Not same");
 
-        //Tc:log(4 alpha) for findParent +log(4 alpha) for union
-        //SC:O(n) rank and +o(N) parent
+        //TC:O(4 alpha) for findParent + O(4 alpha) for union
+        //SC:O(n) rank and + O(N) parent
     }
 }

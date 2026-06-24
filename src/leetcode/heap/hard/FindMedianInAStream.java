@@ -54,7 +54,7 @@ public class FindMedianInAStream {
             System.out.println(getMedian());
         }
 
-        //TC:o(nlogn)
-        //SC:o(n)
+        //TC:O(nlogn)
+        //SC:O(n)
     }
 }

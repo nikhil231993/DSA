@@ -1,0 +1,147 @@
+package leetcode.dynamicprogramming;
+
+import java.util.Arrays;
+
+public class DP7LCLC256PaintHouse {
+
+    public static void main(String[] args) {
+
+        int[][] matrix=new int[][]{{17,2,17},
+                {16,16,5},
+                {14,3,19}};
+        int n=matrix.length;
+
+        System.out.println(recursion(matrix,n-1,3));
+
+        //Memoization
+        int[][] dp=new int[n][4];
+
+        for(int i=0;i<n;i++){
+            for(int j=0;j<4;j++){
+                dp[i][j]=-1;
+            }
+        }
+        System.out.println(memoization(matrix, dp,n-1,3));
+
+        int[][] dp1=new int[n][4];
+        for(int[] r:dp)
+            Arrays.fill(r,-1);
+        System.out.println(tabulation(dp1, n, matrix));
+
+        //Space optimization
+        System.out.println(space(n,matrix));
+    }
+
+    private static int space(int n, int[][] matrix) {
+
+        int[] prev=new int[4];
+        //base case
+        prev[0]=Math.min(matrix[0][1],matrix[0][2]);
+        prev[1]=Math.min(matrix[0][0],matrix[0][2]);
+        prev[2]=Math.min(matrix[0][1],matrix[0][0]);
+        prev[3]=Math.min(Math.min(matrix[0][0],matrix[0][1]),matrix[0][2]);
+
+        for(int day=1;day<n;day++){
+            int[] current=new int[4];
+            for(int last=0;last<=3;last++){
+                int min=Integer.MAX_VALUE;
+                for(int task=0;task<3;task++){
+                    if(task!=last){
+                        int points=matrix[day][task]+prev[task];
+                        min=Math.min(points, min);
+                    }
+                }
+                current[last]=min;
+            }
+            prev=current;
+        }
+        return prev[3];
+
+        //TC:O(N*4*3)
+        //SC:O(4)*2
+    }
+
+    private static int tabulation(int[][] dp1, int n,int[][] matrix) {
+
+        //base case
+        dp1[0][0]=Math.min(matrix[0][1], matrix[0][2]);
+        dp1[0][1]=Math.min(matrix[0][0], matrix[0][2]);
+        dp1[0][2]=Math.min(matrix[0][1], matrix[0][0]);
+        dp1[0][3]=Math.min(Math.min(matrix[0][0], matrix[0][1]), matrix[0][2]);
+
+        for(int day=1;day<n;day++){
+            for(int last=0;last<=3;last++){
+                int min=Integer.MAX_VALUE;
+                for(int task=0;task<3;task++){
+                    if(task!=last){
+                        int points=matrix[day][task]+dp1[day-1][task];
+                        min=Math.min(points, min);
+                    }
+                }
+                dp1[day][last]=min;
+            }
+        }
+        return dp1[n-1][3];
+
+        //TC:O(N*4*3)
+        //SC:O(N*4)
+    }
+
+    private static int memoization(int[][] matrix, int[][] dp, int days, int last) {
+
+        //if(dp[days][last]!=-1) return dp[days][last]; not needed
+
+        if(days==0){
+            int min=Integer.MAX_VALUE;
+            for(int i=0;i<3;i++){
+                if(i!=last){
+                    min=Math.min(min,matrix[0][i]);
+                }
+            }
+            return dp[days][last]=min;
+        }
+
+        if(dp[days][last]!=-1)
+            return dp[days][last];
+
+        int min=Integer.MAX_VALUE;
+
+        for(int i=0;i<3;i++){
+            if(i!=last){
+                int points=matrix[days][i]+memoization(matrix,dp,days-1,i);
+                min=Math.min(points, min);
+            }
+        }
+        return dp[days][last]=min;
+
+        //TC:O(N*4*3)
+        //SC:O(N) stack + O(N*4)dp array
+    }
+
+    private static int recursion(int[][] matrix, int n, int last) {
+
+        if(n==0){
+            int min=Integer.MAX_VALUE;
+            for(int i=0;i<3;i++){
+                if(i!=last){
+                    min=Math.min(matrix[0][i], min);
+                }
+            }
+            return min;
+        }
+
+        int min=Integer.MAX_VALUE;
+        for(int i=0;i<3;i++){
+            if(i!=last) {
+                int points = matrix[n][i] + recursion(matrix, n - 1, i);
+                min = Math.min(points, min);
+            }
+        }
+        return min;
+
+        //Time Complexity: O(3N), where N is the given size of 2D array.
+        // Exponential time complexity due to the recursive nature where each day can have up to 3 choices.
+        //Space Complexity:O(N), As the recursion depth is equal to the number of days (days).
+        // Therefore, the maximum depth of the recursion stack is O(N).
+    }
+}

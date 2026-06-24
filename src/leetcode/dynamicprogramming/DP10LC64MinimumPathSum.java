@@ -116,7 +116,7 @@ public class DP10LC64MinimumPathSum {
         int left = grid[n][m] + recursion(n, m - 1, grid);
         return Math.min(up, left);
 
-        //TC:O(2 raise to n*m)
+        //TC:O(2 raise to n+m)
         //SC:O(path length i.e n-1 + m-1)
     }
 }

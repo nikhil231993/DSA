@@ -12,7 +12,7 @@ public class CodingNinjasMedianInaStream {
             System.out.println(result[i]);
     }
 
-    public static int[] findMedian(int[] arr, int n) {
+    private static int[] findMedian(int[] arr, int n) {
 
         int[] arr1=new int[n];
         PriorityQueue<Integer> left=new PriorityQueue<>((a, b)-> b - a);
@@ -24,7 +24,7 @@ public class CodingNinjasMedianInaStream {
         return arr1;
     }
 
-    public static int func(int num, int n, PriorityQueue<Integer> left, PriorityQueue<Integer> right){
+    private static int func(int num, int n, PriorityQueue<Integer> left, PriorityQueue<Integer> right){
 
         if(left.size()==0){
             left.offer(num);

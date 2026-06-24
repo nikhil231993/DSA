@@ -4,13 +4,16 @@ public class LC14LongestCommomPrefix {
 
 	public static void main(String[] args) {
 
-		String[] strs = new String[] { "dog", "racecar", "car" };
+		String[] strs = new String[] { "rdog", "racecar", "car" };
 
 		//Approach 1:
-		System.out.println(fetchLngestCommonSequence(strs));
+		System.out.println(fetchLongestCommonSequence(strs));
 
 		//Approach 2:
 		System.out.println(fetchLongestCommon(strs));
+
+		//Approach 3:
+		System.out.println(longestCommonPrefixBinarySearch(strs));
 	}
 
 	private static String fetchLongestCommon(String[] strs) {
@@ -24,7 +27,7 @@ public class LC14LongestCommomPrefix {
 		return s;
 	}
 
-	private static String fetchLngestCommonSequence(String[] strs) {
+	private static String fetchLongestCommonSequence(String[] strs) {
 
 		int minLength = minLength(strs);
 		String result = "";
@@ -52,5 +55,36 @@ public class LC14LongestCommomPrefix {
 			}
 		}
 		return min;
+	}
+
+	private static String longestCommonPrefixBinarySearch(String[] strs) {
+		int n=strs.length;
+
+		int min=Integer.MAX_VALUE;
+		for(int i=0;i<n;i++)
+			min=Math.min(min, strs[i].length());
+
+		int low=0, high=min;
+		int ans=0;
+		while(low<=high){
+			int mid=low+(high-low)/2;
+			if(isPrefix(mid, strs)){
+				ans=mid;
+				low=mid+1;
+			}else{
+				high=mid-1;
+			}
+		}
+		return strs[0].substring(0, ans);
+	}
+
+	private static boolean isPrefix(int index, String[] s){
+		String prefix=s[0].substring(0, index);
+		int n=s.length;
+		for(int i=1;i<n;i++){
+			if(s[i].indexOf(prefix)!=0)
+				return false;
+		}
+		return true;
 	}
 }

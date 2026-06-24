@@ -62,7 +62,7 @@ public class G30LC126WordLadder2 {
                 char[] replacedArray=word.toCharArray();
                 char temp=replacedArray[i]; //This line is not needed as the actual word is not changed
 
-                for(char c='a';c<='z';c++){
+                for(char c='a'; c<='z'; c++){
                     replacedArray[i]=c;
                     String s=new String(replacedArray);
                     if(set.contains(s)){

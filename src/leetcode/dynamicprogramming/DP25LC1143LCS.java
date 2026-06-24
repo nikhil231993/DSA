@@ -20,6 +20,12 @@ public class DP25LC1143LCS { //not matching split calls 24:06
             Arrays.fill(r, -1);
         System.out.println(lcsMemoization(text1, text2,index1-1,index2-1, dp));
 
+        //Memoization Right Shift
+        int[][] dp2=new int[index1+1][index2+1];
+        for(int[] r:dp2)
+            Arrays.fill(r, -1);
+        System.out.println(lcsMemoizationRightShift(text1, text2, index1, index2, dp2));
+
         //Tabulation
         //we can do tabulation without shifting of index, but it will be more tricky
         int[][] dp1=new int[index1+1][index2+1];
@@ -75,7 +81,7 @@ public class DP25LC1143LCS { //not matching split calls 24:06
     }
 
 
-    public static int lcsMemoization(String text1, String text2, int index1,int index2,int[][] dp){
+    private static int lcsMemoization(String text1, String text2, int index1,int index2,int[][] dp){
 
         if(index1<0 || index2<0)
             return 0;
@@ -84,6 +90,22 @@ public class DP25LC1143LCS { //not matching split calls 24:06
         if(text1.charAt(index1)==text2.charAt(index2))
             return dp[index1][index2]=1+lcsMemoization(text1, text2, index1-1, index2-1, dp);
         return dp[index1][index2] = Math.max(lcsMemoization(text1, text2, index1-1, index2, dp), lcsMemoization(text1, text2, index1, index2-1, dp));
+
+        //TC:O(index1*index2)
+        //SC:O(index1+index2) stack as we omit alternate from each string at each step+
+        // O(index2*index2) dp array
+    }
+
+    private static int lcsMemoizationRightShift(String text1, String text2, int index1,int index2,int[][] dp){
+
+        if(index1==0 || index2==0)
+            return 0;
+        if(dp[index1][index2]!=-1)
+            return dp[index1][index2];
+        if(text1.charAt(index1-1)==text2.charAt(index2-1))
+            return dp[index1][index2]=1+lcsMemoizationRightShift(text1, text2, index1-1, index2-1, dp);
+        return dp[index1][index2] = Math.max(lcsMemoizationRightShift(text1, text2, index1-1, index2, dp),
+                lcsMemoizationRightShift(text1, text2, index1, index2-1, dp));
 
         //TC:O(index1*index2)
         //SC:O(index1+index2) stack as we omit alternate from each string at each step+

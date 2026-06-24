@@ -37,7 +37,7 @@ public class G28ShortestPathUGUnitWeights {
 
         //Below is using Method 1
         int[] dist=new int[V];
-        shortestPathUsingWithoutVisitedArray(adjlist,V,E,src,dist);
+        shortestPathUsingWithoutVisitedArray(adjlist, V, src, dist);
 
         //Time Complexity: O(M) { for creating the adjacency list from given list ‘edges’}
         // + O(N + 2M) { for the BFS Algorithm}
@@ -54,7 +54,7 @@ public class G28ShortestPathUGUnitWeights {
             System.out.println(n);
     }
 
-    private static void shortestPathUsingWithoutVisitedArray(List<List<Integer>> adjlist, int V, int e, int src,int[] dist) {
+    private static void shortestPathUsingWithoutVisitedArray(List<List<Integer>> adjlist, int V, int src,int[] dist) {
 
         Arrays.fill(dist, (int)(1e9));
         dist[src]=0;
@@ -65,7 +65,7 @@ public class G28ShortestPathUGUnitWeights {
         while(!q.isEmpty()){
             Integer node=q.poll();
             for(Integer vertex : adjlist.get(node)){
-                if(dist[vertex] > dist[node]+1){
+                if(dist[vertex] > dist[node] + 1){
                     dist[vertex] = 1+dist[node];
                     q.offer(vertex);
                 }

@@ -15,9 +15,9 @@ public class G41BellManFordAlgorithm {
         int V=6;
         int E=7;
         int src=0;
-        int[][] edges=new int[][]{{3,2,6}, {5,3,1}, {0,1,5}, {1,5,-3}, {1,2,-2}, {3,4,-2}, {2,4,3}};
+        int[][] edges=new int[][]{ {3,2,6}, {5,3,1}, {0,1,5}, {1,5,-3}, {1,2,-2}, {3,4,-2}, {2,4,3}};
 
-        int[] arr = bellManFord(V,E,edges,src);
+        int[] arr = bellManFord(V, edges, src);
 
         System.out.println("Shortest distance if found is :");
         for(int n:arr)
@@ -29,7 +29,7 @@ public class G41BellManFordAlgorithm {
         //for negative weights or graphs with negative cycle
     }
 
-    private static int[] bellManFord(int n, int e, int[][] edges,int src) {
+    private static int[] bellManFord(int n, int[][] edges,int src) {
 
         int[] dist = new int[n];
         Arrays.fill(dist,(int)(1e9));

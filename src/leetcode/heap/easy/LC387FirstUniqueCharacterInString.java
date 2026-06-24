@@ -16,7 +16,7 @@ public class LC387FirstUniqueCharacterInString {
         System.out.println(firstUniqCharOptimised(s));
     }
 
-    public static int firstUniqChar(String s) {
+    private static int firstUniqChar(String s) {
 
         Map<Character, Integer> m=new HashMap();
 
@@ -38,12 +38,12 @@ public class LC387FirstUniqueCharacterInString {
         //SC:O(n)
     }
 
-    public static int firstUniqCharOptimised(String s) {
+    private static int firstUniqCharOptimised(String s) {
 
-        int[] count = new int[128];
-        for (char c : s.toCharArray()) {
+        int[] count = new int[26];
+        for (char c : s.toCharArray())
             count[c]++;
-        }
+
         for (int i=0; i<s.length(); i++) {
             if (count[s.charAt(i)] == 1) {
                 return i;

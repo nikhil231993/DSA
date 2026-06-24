@@ -38,7 +38,7 @@ public class DP46LongestBitonicSubsequence {
 
         int max=0;
         for(int i=0;i<n;i++){
-            max=Math.max(max,dp1[i]+dp2[i]-1);
+            max=Math.max(max, dp1[i]+dp2[i]-1);
         }
         return max;
 

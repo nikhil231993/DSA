@@ -37,7 +37,7 @@ public class LC743NetworkDelay {
             adjList.get(node).add(new Pair(adjNode, time));
         }
 
-        PriorityQueue<Pair> pq=new PriorityQueue<>((a, b)->(a.time-b.time));
+        PriorityQueue<Pair> pq=new PriorityQueue<>((a, b)->(a.time-b.time)); // we don't have to use priority queue here
         pq.offer(new Pair(k,0));
         int[] dist=new int[n+1];
         Arrays.fill(dist,(int)(1e9));
@@ -65,6 +65,5 @@ public class LC743NetworkDelay {
             maxTime=Math.max(maxTime,dist[i]);
         }
         return maxTime;
-
     }
 }

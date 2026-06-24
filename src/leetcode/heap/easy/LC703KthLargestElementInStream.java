@@ -9,7 +9,7 @@ class KthLargest {
 
     private PriorityQueue<Integer> pq=new PriorityQueue<>();
 
-    public KthLargest(int k, int[] nums) {
+    protected KthLargest(int k, int[] nums) {
 
         size=k;
         for(Integer n : nums){
@@ -22,7 +22,7 @@ class KthLargest {
         }
     }
 
-    public int add(int val) {
+    protected int add(int val) {
 
         if(pq.size()<size)
             pq.offer(val);

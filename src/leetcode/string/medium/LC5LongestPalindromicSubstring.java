@@ -4,6 +4,7 @@ public class LC5LongestPalindromicSubstring {
 
 	public static void main(String[] args) {
 
+		//Similar question 647
 		String s = "abccbs";
 
 		//Approach 1 find all substring which takes O(n square) and then check if each substring is a palindrome or not o(n)

@@ -13,11 +13,10 @@ public class LC2710RemoveTrailingZeros {
         System.out.println(removeTrailingZerosOptimised(num));
     }
 
-    public static  String removeTrailingZeros(String num) {
+    private static  String removeTrailingZeros(String num) {
 
-        int flag=0;
-        int count=0;
-        for(int i=num.length()-1; i>=0; i--){
+        int flag=0, count=0, n=num.length();
+        for(int i=n-1; i>=0; i--){
 
             if(flag==0 && num.charAt(i)=='0')
                 count++;
@@ -26,13 +25,13 @@ public class LC2710RemoveTrailingZeros {
             if(flag==1)
                 break;
         }
-        return num.substring(0, num.length()-count);
+        return num.substring(0, n-count);
 
         //TC:O(n)
         //SC:O(1)
     }
 
-    public static String removeTrailingZerosOptimised(String num) {
+    private static String removeTrailingZerosOptimised(String num) {
 
         int endIndex = num.length()-1;
         while (endIndex >= 0 && num.charAt(endIndex) == '0') {

@@ -30,6 +30,13 @@ public class LC1054Barcodes {
         int[] result1=rearrangeBarcodesSimplified(barcodes);
         for(int n:result1)
             System.out.println(n);
+
+        //Approach 2:
+        System.out.println("********** Most Optimised ************");
+
+        int[] result2=rearrangeBarcodesMostOptimised(barcodes);
+        for(int n:result2)
+            System.out.println(n);
     }
 
     private static int[] rearrangeBarcodesSimplified(int[] barcodes) {
@@ -37,13 +44,11 @@ public class LC1054Barcodes {
         PriorityQueue<Node1> pq=new PriorityQueue<>((a,b)->b.count-a.count);
         HashMap<Integer, Integer> map=new HashMap();
         int n=barcodes.length;
-        for(int i=0; i<n;i++){
+        for(int i=0; i<n;i++)
             map.put(barcodes[i], map.getOrDefault(barcodes[i],0)+1);
-        }
 
-        for(Map.Entry<Integer, Integer> m:map.entrySet()){
+        for(Map.Entry<Integer, Integer> m : map.entrySet())
             pq.offer(new Node1(m.getKey(), m.getValue()));
-        }
 
         int[] arr=new int[n];
         int k=0;
@@ -64,7 +69,7 @@ public class LC1054Barcodes {
         return arr;
     }
 
-    public static int[] rearrangeBarcodes(int[] barcodes) {
+    private static int[] rearrangeBarcodes(int[] barcodes) {
 
         Map<Integer, Integer> map=new HashMap<>();
         for(int i=0;i<barcodes.length;i++){
@@ -101,6 +106,57 @@ public class LC1054Barcodes {
             if(c>0)
                 pq.offer(new Node1(num, c));
         }
+        return result;
+    }
+
+    private static int[] rearrangeBarcodesMostOptimised(int[] barcodes) {
+        int n = barcodes.length;
+        Map<Integer, Integer> map = new HashMap<>();
+
+        // Count frequencies and keep track of the most frequent barcode
+        int maxFreqCode = 0;
+        int maxFreq = 0;
+
+        for (int code : barcodes) {
+            int currentFreq = map.getOrDefault(code, 0) + 1;
+            map.put(code, currentFreq);
+
+            if (currentFreq > maxFreq) {
+                maxFreq = currentFreq;
+                maxFreqCode = code;
+            }
+        }
+
+        int[] result = new int[n];
+        int idx = 0;
+
+        // 1. Put the most frequent element into the even slots first
+        while (maxFreq > 0) {
+            result[idx] = maxFreqCode;
+            idx += 2;
+            maxFreq--;
+        }
+
+        // Remove it from our map so we don't process it again
+        map.remove(maxFreqCode);
+
+        // 2. Put the rest of the elements into the remaining slots
+        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+            int code = entry.getKey();
+            int freq = entry.getValue();
+
+            while (freq > 0) {
+                // If we overshoot the array bounds while skipping by 2,
+                // reset to index 1 to start filling the odd slots!
+                if (idx >= n) {
+                    idx = 1;
+                }
+                result[idx] = code;
+                idx += 2;
+                freq--;
+            }
+        }
+
         return result;
     }
 }

@@ -4,7 +4,7 @@ public class LC50Pow {
 
 	public static void main(String[] args) {
 		double x = 2.0000;
-		int n = -2147483648;
+		int n = -2147483647;
 
 		System.out.println(myPow(x, n));
 //

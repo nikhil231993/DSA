@@ -1,6 +1,6 @@
 package leetcode.binarysearch;
 
-public class BS8SingleElementInSortedArray {
+public class BS8LC540SingleElementInSortedArray {
 
     public static void main(String[] args) {
 

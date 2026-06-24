@@ -18,10 +18,10 @@ public class DP6LC213HouseRobber2 {
         System.out.println(tabulationHouse(nums, nums.length));
 
         //Space
-        System.out.println(rob(nums));
+        System.out.println(space(nums));
     }
 
-    public static int tabulationHouse(int[] nums, int n) {
+    private static int tabulationHouse(int[] nums, int n) {
 
         if(n==1)
             return nums[0];
@@ -42,7 +42,7 @@ public class DP6LC213HouseRobber2 {
         return Math.max(tabulation(numsExceptLast, n-1, dp1), tabulation(numsExceptFirst,n-1, dp2));
     }
 
-    public static int tabulation(int[] nums, int n, int[] dp){
+    private static int tabulation(int[] nums, int n, int[] dp){
 
         dp[0]=nums[0];
         for(int i=1;i<=n;i++){
@@ -55,7 +55,7 @@ public class DP6LC213HouseRobber2 {
         return dp[n];
     }
 
-    public static int memoizationHouse(int[] nums, int n) {
+    private static int memoizationHouse(int[] nums, int n) {
 
         if(n==1)
             return nums[0];
@@ -76,18 +76,18 @@ public class DP6LC213HouseRobber2 {
         return Math.max(memoizationHouse(numsExceptLast, n-1, dp1), memoizationHouse(numsExceptFirst,n-1, dp2));
     }
 
-    public static int memoizationHouse(int[] nums, int n, int[] dp){
+    private static int memoizationHouse(int[] nums, int n, int[] dp){
 
         if(n==0) return nums[0];
-        int notpick=nums[n];
         if(dp[n]!=-1) return dp[n];
+        int notpick=nums[n];
         if(n>1)
             notpick+=memoizationHouse(nums, n-2, dp);
         int pick=0+memoizationHouse(nums, n-1, dp);
         return dp[n]=Math.max(pick, notpick);
     }
 
-    public static int recursionHouse(int[] nums, int n) {
+    private static int recursionHouse(int[] nums, int n) {
 
         if(n==1)
             return nums[0];
@@ -112,7 +112,7 @@ public class DP6LC213HouseRobber2 {
         return Math.max(pick, notpick);
     }
 
-    public static int rob(int[] nums) {
+    private static int space(int[] nums) {
 
         int n=nums.length;
         if(n==1)

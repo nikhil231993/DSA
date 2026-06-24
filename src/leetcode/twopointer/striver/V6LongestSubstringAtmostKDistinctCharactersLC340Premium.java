@@ -28,7 +28,7 @@ public class V6LongestSubstringAtmostKDistinctCharactersLC340Premium {
         while(right<n){
 
             map.put(s.charAt(right), map.getOrDefault(s.charAt(right),0)+1);
-            if(map.size()>k){
+            if(map.size() > k){
                 map.put(s.charAt(left), map.get(s.charAt(left))-1);
                 if(map.get(s.charAt(left))==0)
                     map.remove(s.charAt(left));

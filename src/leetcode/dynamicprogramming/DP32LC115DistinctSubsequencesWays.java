@@ -7,7 +7,9 @@ public class DP32LC115DistinctSubsequencesWays {
     public static void main(String[] args) {
 
         //String s = "rabbbit", t = "";
-        String s="ba",t="b";
+        String s="ba", t="b";
+        s="babgbag";
+        t="bag";
 
         int index1=s.length();
         int index2=t.length();
@@ -94,7 +96,23 @@ public class DP32LC115DistinctSubsequencesWays {
         return dp[index1][index2]=memoization(s,t,index1-1,index2,dp);
 
         //TC:O(index1 * index2)
-        //SC:O(index1+index2)+O(index1*index2)
+        //SC:O(index1+index2) recursion stack space + O(index1*index2)
+    }
+
+    // we can use below logic for base case also
+    private static int memoizationSelf(String s, String t, int index1, int index2,int[][] dp) {
+        if(index2<0)
+            return 1;
+        if(index1<0)
+            return 0;
+
+        if(dp[index1][index2]!=-1)
+            return dp[index1][index2];
+
+        if(s.charAt(index1)==t.charAt(index2))
+            return dp[index1][index2]=memoizationSelf(s,t,index1-1,index2-1,dp) + memoizationSelf(s,t,index1-1,index2,dp);
+        else
+            return dp[index1][index2]=memoizationSelf(s,t,index1-1,index2,dp);
     }
 
     private static int recursion(String s, String t, int index1, int index2) {
@@ -111,5 +129,14 @@ public class DP32LC115DistinctSubsequencesWays {
 
         //TC:O(2 raise to index1 * 2 raise to index2)
         //SC:O(index1+index2)
+    }
+
+    private static int recursionSelf(int i, int j, String s, String t){
+        if(j<0) return 1;
+        if(i<0) return 0;
+
+        if(s.charAt(i)==t.charAt(j))
+            return recursionSelf(i-1, j-1, s, t)+recursionSelf(i-1, j,s , t);
+        return recursionSelf(i-1, j , s, t);
     }
 }

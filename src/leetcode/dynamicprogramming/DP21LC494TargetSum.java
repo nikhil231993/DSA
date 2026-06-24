@@ -26,13 +26,13 @@ public class DP21LC494TargetSum {
         //totalsum-d cannot go less than as all numbers are positive
         //if (totalsum-d)/2 is odd then we cannot find as numbers in array are not decimal
 
-        System.out.println(recursion(n-1,(totalSum-d)/2,arr));
+        System.out.println(recursion(n-1, (totalSum-d)/2, arr));
 
         int[][] dp=new int[n][(totalSum-d)/2+1];
         for(int[] r:dp)
             Arrays.fill(r,-1);
 
-        System.out.println(memoization(n-1,(totalSum-d)/2,arr,dp));
+        System.out.println(memoization(n-1,(totalSum-d)/2, arr, dp));
 
         //tabulation
         int[][] dp1=new int[n][(totalSum-d)/2+1];

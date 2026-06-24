@@ -15,9 +15,11 @@ public class LC2558RichPile {
 
         //Optimal
         System.out.println(pickGifts(gifts,k));
+
+        // we can improve the nlog n of insertion by using either heapify as it is O(n) or we can put values in a list and use pq.addAll(list) this also takes O(n) TC
     }
 
-    public static long pickGiftsBrute(int[] gifts, int k) {
+    private static long pickGiftsBrute(int[] gifts, int k) {
 
         int n = gifts.length;
 
@@ -47,7 +49,7 @@ public class LC2558RichPile {
         //SC:O(1)
     }
 
-    public static long pickGifts(int[] gifts, int k) {
+    private static long pickGifts(int[] gifts, int k) {
 
         PriorityQueue<Long> pq=new PriorityQueue<>((a, b)->Long.compare(b,a));
         for(int i=0;i<gifts.length;i++)

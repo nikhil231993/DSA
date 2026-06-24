@@ -21,7 +21,7 @@ public class LC703LeetcodeBruteSolution {
         Collections.sort(stream);
     }
 
-    public int add(int val) {
+    private int add(int val) {
 
         int index = getIndex(val);
         // Add val to correct position

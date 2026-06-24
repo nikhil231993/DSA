@@ -29,7 +29,7 @@ public class LC215KLargestElement {
         //2) check if size of heap > k then pop
         //3) continue this till we have elements in array
 
-        int r3=usingMinHeap(nums1, k , n);
+        int r3=usingMinHeap(nums1, k);
         System.out.println(r3);
 
         //Best Approach
@@ -77,7 +77,7 @@ public class LC215KLargestElement {
         //SC:O(n)
     }
 
-    private static int usingMinHeap(int[] nums,int k, int n) {
+    private static int usingMinHeap(int[] nums, int k) {
 
         PriorityQueue<Integer> pq=new PriorityQueue<>();
         for(Integer no:nums) {
@@ -108,7 +108,7 @@ public class LC215KLargestElement {
         }
     }
 
-    public static int extractMax(int[] nums, int n){
+    private static int extractMax(int[] nums, int n){
 
         int removed=nums[0];
         nums[0]=nums[--n];

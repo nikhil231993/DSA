@@ -2,6 +2,7 @@ package leetcode.graph.medium;
 
 import java.util.LinkedList;
 import java.util.Queue;
+
 class Pair1162{
     int row;
     int col;
@@ -12,18 +13,17 @@ class Pair1162{
         this.dist=dist;
     }
 }
+
 public class LC1162AsFarAsLand {
 
     public static void main(String[] args) {
         int[][] grid = new int[][]{{1,0,1},{0,0,0},{1,0,1}};
-
         System.out.println(maxDistance(grid));
     }
 
-    public static int maxDistance(int[][] grid) {
+    private static int maxDistance(int[][] grid) {
 
-        int n=grid.length;
-        int m=grid[0].length;
+        int n=grid.length, m=grid[0].length;
         int[][] visited=new int[n][m];
         Queue<Pair1162> q=new LinkedList();
 

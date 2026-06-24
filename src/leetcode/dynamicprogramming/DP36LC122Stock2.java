@@ -56,8 +56,8 @@ public class DP36LC122Stock2 {
         for(int j=0;j<=buy;j++)
             dp1[n][j]=0;
 
-        for(int ind=n-1;ind>=0;ind--){
-            for(int by=0;by<=1;by++){
+        for(int ind=n-1; ind>=0; ind--){
+            for(int by=0; by<=1; by++){
                 int profit=0;
                 if(by==1){
                     profit=Math.max(-prices[ind]+dp1[ind+1][0],0+dp1[ind+1][1]);

@@ -19,7 +19,7 @@ public class LC18FourSum {
         System.out.println(fourSum(nums,target));
     }
 
-    public static List<List<Integer>> fourSum(int[] nums, int target) {
+    private static List<List<Integer>> fourSum(int[] nums, int target) {
 
         int n=nums.length;
         Arrays.sort(nums);
@@ -98,7 +98,7 @@ public class LC18FourSum {
                     for(int l=k+1; l<n; l++){
 
                         //Below is used because since first we add left to right and then assign to long,
-                        //before assigning to long if value exceeds integer limit it will be a
+                        //before assigning to long if value exceeds integer limit it will be a negative value
                         long sum=nums[i];
                         sum+=nums[j];
                         sum+=nums[k];

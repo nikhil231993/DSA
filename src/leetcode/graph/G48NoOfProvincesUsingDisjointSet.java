@@ -15,8 +15,8 @@ public class G48NoOfProvincesUsingDisjointSet {
         //Step 1: Parse through the matrix and find the union of each cell where values are 1
         DisjointSetBySize ds=new DisjointSetBySize(n);
 
-        for(int i=0;i<n;i++){
-            for(int j=0;j<m;j++){
+        for(int i=0; i<n; i++){
+            for(int j=0; j<m; j++){
                 if(i!=j && matrix[i][j]==1){
                     ds.unionBySize(i, j);
                 }
@@ -25,7 +25,7 @@ public class G48NoOfProvincesUsingDisjointSet {
 
         //Step 2: In case of nodes having themselves as parent that is the count of no of provinces
         int count=0;
-        for(int i=0;i<n;i++){
+        for(int i=0; i<n; i++){
             if(ds.parent[i]==i){
                 count++;
             }

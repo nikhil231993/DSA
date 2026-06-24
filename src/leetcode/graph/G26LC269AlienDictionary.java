@@ -12,7 +12,7 @@ public class G26LC269AlienDictionary {
         System.out.println(alienOrder(words));
     }
 
-    public static String alienOrder(String[] words) {
+    private static String alienOrder(String[] words) {
 
         int n = words.length;
         List<List<Integer>> adjList = new ArrayList<>();

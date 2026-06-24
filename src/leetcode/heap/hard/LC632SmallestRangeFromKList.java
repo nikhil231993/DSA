@@ -37,12 +37,9 @@ public class LC632SmallestRangeFromKList {
             System.out.println(n);
     }
 
-    public static int[] smallestRange(List<List<Integer>> nums) {
+    private static int[] smallestRange(List<List<Integer>> nums) {
 
-        int k=nums.size();
-
-        int min=Integer.MAX_VALUE;
-        int max=Integer.MIN_VALUE;
+        int k=nums.size(), min=Integer.MAX_VALUE, max=Integer.MIN_VALUE;
 
         PriorityQueue<NodeValue> pq=new PriorityQueue<>((a, b)->a.value-b.value);
 

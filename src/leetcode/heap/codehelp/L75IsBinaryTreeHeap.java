@@ -54,6 +54,7 @@ public class L75IsBinaryTreeHeap {
             return true;
         if(root.right == null)
             return root.left.value<root.value;
+        if(root.left==null) return false;
         return root.left.value<root.value && root.right.value< root.value && maxHeap(root.left) && maxHeap(root.right);
     }
 

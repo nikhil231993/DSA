@@ -11,7 +11,7 @@ public class LC295FindMedianFromDataStream {
 
     }
 
-    public void addNum(int num) {
+    protected void addNum(int num) {
 
         if(left.size() == 0){
             left.offer(num);
@@ -35,7 +35,7 @@ public class LC295FindMedianFromDataStream {
         }
     }
 
-    public double findMedian() {
+    protected double findMedian() {
 
         if(left.size()==right.size())
             return (left.peek()+right.peek())/2.0;

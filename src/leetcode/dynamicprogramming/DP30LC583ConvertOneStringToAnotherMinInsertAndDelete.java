@@ -7,28 +7,28 @@ public class DP30LC583ConvertOneStringToAnotherMinInsertAndDelete {
     public static void main(String[] args) {
 
         String word1 = "abcd", word2 = "anc";
-        word1 = "abc";
-        word2 = "a";
+        //word1 = "abc";
+        //word2 = "a";
 
         int index1=word1.length();
         int index2=word2.length();
 
         //Recursion
-        System.out.println(index1+index2-2*recursion(word1, word2, index1-1, index2-1));
+        System.out.println(index1 + index2 - 2*recursion(word1, word2, index1-1, index2-1));
         //index1+index2-2*lcs(len)
 
         //Memoization
         int[][] dp=new int[index1+1][index2+1];
         for(int[] r:dp)
             Arrays.fill(r,-1);
-        System.out.println(index1+index2-2*memoization(word1,word2,index1-1,index2-1,dp));
+        System.out.println( index1 + index2 - 2*memoization(word1,word2,index1-1,index2-1,dp));
 
         //Tabulation
         int[][] dp1=new int[index1+1][index2+1];
-        System.out.println(index1+index2-2*tabulation(word1,word2,index1,index2,dp1));
+        System.out.println( index1 + index2 - 2*tabulation(word1,word2,index1,index2,dp1));
 
         //Space
-        System.out.println(index1+index2-2*space(word1,word2,index1,index2));
+        System.out.println( index1 + index2 - 2*space(word1,word2,index1,index2));
 
         //Solution
         //We have to find the length of longest common subsequence and then apply n+m-2(len)

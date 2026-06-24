@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class DP18CountPartitionsWithGivenDifference {
 
-    //In this question we have numbers greater than or equal to 0 watch 1:20
+    //In this question we have numbers greater than or equal to 0 watch 11:20
 
     public static void main(String[] args) {
 

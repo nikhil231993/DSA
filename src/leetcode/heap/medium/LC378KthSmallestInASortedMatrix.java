@@ -33,14 +33,14 @@ public class LC378KthSmallestInASortedMatrix {
 
     private static int countLessOrEqual(int mid, int[][] matrix, int k) {
 
-        int i=matrix.length-1, j=0, count=0;
+        int col=matrix[0].length-1, row=0, count=0;
 
-        while(i>=0 && j<matrix.length){
-            if(matrix[i][j] > mid)
-                i--;
+        while(col>=0 && row<matrix.length){
+            if(matrix[col][row] > mid)
+                col--;
             else{
-                count=count+i+1;
-                j++;
+                count=count+col+1;
+                row++;
             }
         }
         return count;
@@ -49,12 +49,13 @@ public class LC378KthSmallestInASortedMatrix {
         //SC:O(1)
     }
 
-    public static int kthSmallest(int[][] matrix, int k) {
+    private static int kthSmallest(int[][] matrix, int k) {
 
         PriorityQueue<Integer> pq=new PriorityQueue<>((a, b)-> b - a);
+        int n=matrix.length, m=matrix[0].length;
 
-        for(int i=0;i<matrix.length;i++){
-            for(int j=0;j<matrix[i].length;j++){
+        for(int i=0; i<n; i++){
+            for(int j=0;j<m;j++){
                 pq.offer(matrix[i][j]);
                 if(pq.size()>k)
                     pq.poll();

@@ -14,7 +14,7 @@ public class LC525ContiguousSubarray {
         System.out.println(findMaxLength(nums));
     }
 
-    public static int findMaxLength(int[] nums) {
+    private static int findMaxLength(int[] nums) {
 
         int n=nums.length;
         for(int i=0; i<n; i++){

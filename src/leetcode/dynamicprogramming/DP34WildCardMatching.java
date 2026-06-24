@@ -135,4 +135,27 @@ public class DP34WildCardMatching {
         //TC: exponential
         //SC:o(N+M)
     }
+
+    private static boolean memoizationSelf(int i, int j, String s, String p, int[][] dp){
+
+        if(i<0 && j<0)
+            return true;
+        if(i>=0 && j<0 ) return false;
+        if(i<0 && j>=0){
+            for(int k=j;k>=0;k--)
+                if(p.charAt(k)!='*')
+                    return false;
+            return true;
+        }
+        if(dp[i][j]!=-1)
+            return dp[i][j]==1;
+
+        if(s.charAt(i)==p.charAt(j) || p.charAt(j)=='?')
+            return (dp[i][j]=memoizationSelf(i-1, j-1, s, p, dp)?1:0)==1;
+        if(p.charAt(j)=='*'){
+            return (dp[i][j] = (memoizationSelf(i-1, j , s, p, dp) || memoizationSelf(i, j-1, s, p, dp))?1:0)==1;
+
+        }
+        return (dp[i][j]=false?1:0)==1;
+    }
 }

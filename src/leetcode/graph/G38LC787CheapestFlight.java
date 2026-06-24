@@ -88,15 +88,16 @@ public class G38LC787CheapestFlight {
         for(Integer n : dist)
             System.out.println(n);
 
-        if(dist[dest]==(int)(1e9))
+        if(dist[dest] == (int)(1e9))
             return -1;
         return dist[dest];
 
-//        Time Complexity: O( N ) { Additional log(N) of time eliminated here because we’re using a simple queue
-//        rather than a priority queue which is usually used in Dijkstra’s Algorithm }.
-//        Where N = Number of flights / Number of edges.
+        // Time Complexity: O((N+M*K)) (where N is the number of cities, M is the number of flight (edges), and K is the max. number of stops allowed)
 
-//       Space Complexity:  O( |E| + |V| ) { for the adjacency list, priority queue, and the dist array }.
-//       Where E = Number of edges (flights.size()) and V = Number of Airports.
+        // Space Complexity: O(M+N*K)
+
+        //Storing the graph takes O(M) space.
+        //Array to store minimum distance takes O(N) space.
+        //Queue will store N*K elements in the worst case taking O(N*K) space.
     }
 }

@@ -34,7 +34,7 @@ public class LC658FindKClosestElements {
 
         while(left<right){
             int mid=left+(right-left)/2;
-            if(Math.abs(x-arr[mid]) > Math.abs(arr[mid+k]-x))
+            if(x-arr[mid] > arr[mid+k]-x)
                 left=mid+1;
             else
                 right=mid;
@@ -71,7 +71,7 @@ public class LC658FindKClosestElements {
         //SC:O(1)
     }
 
-    public static  List<Integer> findClosestElements(int[] arr, int k, int x) {
+    private static  List<Integer> findClosestElements(int[] arr, int k, int x) {
 
         PriorityQueue<Node> pq=new PriorityQueue<>(
                 (a,b)-> a.value==b.value ? b.key-a.key : b.value-a.value);
@@ -93,7 +93,7 @@ public class LC658FindKClosestElements {
         //SC:o(n) in worst case
     }
 
-    public static List<Integer> findClosestElementsModified(int[] arr, int k, int x) {
+    private static List<Integer> findClosestElementsModified(int[] arr, int k, int x) {
 
         int n=arr.length;
         int low=0, high=n-k-1;

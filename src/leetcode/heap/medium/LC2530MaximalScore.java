@@ -11,9 +11,11 @@ public class LC2530MaximalScore {
         // Since it fails for this output we use long in solution
        int k = 5;
        System.out.println(maxKelements(nums,k));
+
+       // we can improve the nlog n of insertion by using either heapify as it is O(n) or we can put values in a list and use pq.addAll(list) this also takes O(n) TC
     }
 
-    public static long maxKelements(int[] nums, int k) {
+    private static long maxKelements(int[] nums, int k) {
 
         PriorityQueue<Long> pq=new PriorityQueue<>((a, b)->Long.compare(b,a));
         for(int i=0;i<nums.length;i++){
@@ -30,7 +32,7 @@ public class LC2530MaximalScore {
         }
         return sum;
 
-        //TC:O(nlogn)
+        //TC:O(nlog n) for priority queue insertion + O(nlog k)
         //SC:O(n)
     }
 }

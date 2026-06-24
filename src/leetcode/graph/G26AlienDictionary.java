@@ -46,7 +46,7 @@ public class G26AlienDictionary {
         for(int i=0;i<k;i++)
             adList.add(new ArrayList<>());
 
-        for(int i=0;i<words.length-1;i++){
+        for(int i=0; i<n-1; i++){
             String firstString=words[i];
             String secondString=words[i+1];
 

@@ -10,7 +10,7 @@ public class LC252 {
         System.out.println(canAttendMeetings(intervals));
     }
 
-    public static boolean canAttendMeetings(int[][] intervals) {
+    private static boolean canAttendMeetings(int[][] intervals) {
 
         int n=intervals.length;
         Arrays.sort(intervals, (a, b)->a[0]-b[0]);

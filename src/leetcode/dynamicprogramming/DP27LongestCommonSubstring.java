@@ -17,10 +17,10 @@ public class DP27LongestCommonSubstring {
 
         //If we go with recursion we would need one more state and will be difficult that is why we use tabulation
         //tabulation
-        System.out.println(tabulation(s1,s2,index1,index2,dp));
+        System.out.println(tabulation( s1, s2, index1, index2, dp));
 
         //Space
-        System.out.println(space(s1,s2,index1,index2));
+        System.out.println(space( s1, s2, index1, index2));
     }
 
     private static int space(String s1, String s2, int index1, int index2) {
@@ -48,7 +48,7 @@ public class DP27LongestCommonSubstring {
 
     private static int tabulation(String s1, String s2, int index1, int index2, int[][] dp) {
 
-        for(int i=0;i<=index1;i++)
+        for(int i=0; i<=index1; i++)
             dp[i][0]=0;
         for(int j=0;j<=index2;j++)
             dp[0][j]=0;
@@ -66,7 +66,6 @@ public class DP27LongestCommonSubstring {
             }
         }
         return ans;
-
         //TC:O(index1*index2)
         //SC:O(index1*index2)
     }

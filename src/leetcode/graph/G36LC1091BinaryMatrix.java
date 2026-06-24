@@ -7,7 +7,7 @@ public class G36LC1091BinaryMatrix {
 
     public static void main(String[] args) {
 
-        int[][] grid=new int[][]{{1,0,0},{1,1,0},{1,1,0}};
+        int[][] grid=new int[][]{ {1,0,0},{1,1,0},{1,1,0} };
         int n=grid.length;
         int m=grid[0].length;
 
@@ -40,12 +40,11 @@ public class G36LC1091BinaryMatrix {
                 distance[i][j]=(int)(1e9);
             }
         }
-        int[][] visited=new int[n][n];
 
         //Setting source distance to 0
         distance[source[0]][source[1]]=1;
 
-        //Create 4 directions
+        //check 8 directions
         int[] xaxis=new int[]{1,0,-1,0,1,1,-1,-1};
         int[] yaxis=new int[]{0,-1,0,1,1,-1,-1,1};
 
