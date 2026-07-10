@@ -2,7 +2,7 @@ package leetcode.dynamicprogramming;
 
 import java.util.Arrays;
 
-public class DP15EqualSubsetSum { // watch video DP 16 at 14:00
+public class DP15EqualSubsetSumLC416 { // watch video DP 16 at 14:00
 
     public static void main(String[] args) {
 

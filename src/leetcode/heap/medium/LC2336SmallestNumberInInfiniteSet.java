@@ -41,3 +41,33 @@ public class LC2336SmallestNumberInInfiniteSet {
         System.out.println(param_1);
     }
 }
+
+//Best Approach
+/*
+class SmallestInfiniteSet {
+
+    PriorityQueue<Integer> pq=new PriorityQueue<>();
+    Set<Integer> set=new HashSet<>();
+    int curr=1;
+
+    public SmallestInfiniteSet() {
+
+    }
+
+    public int popSmallest() {
+        if(!pq.isEmpty()){
+            int removed=pq.poll();
+            set.remove(removed);
+            return removed;
+        }
+        return curr++;
+    }
+
+    public void addBack(int num) {
+     if(num<curr && !set.contains(num)){
+        set.add(num);
+        pq.offer(num);
+     }
+    }
+}
+ */

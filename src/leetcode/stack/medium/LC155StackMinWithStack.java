@@ -49,12 +49,5 @@ public class LC155StackMinWithStack {
         System.out.println(lc.getMin());
         System.out.println(lc.top());
 
-
-
-
-
-
-
 	}
-
 }

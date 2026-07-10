@@ -64,14 +64,13 @@ public class LC394DecodeString {
             }else if(Character.isLetter(s.charAt(i))){
                 str+=s.charAt(i);
             }else if(s.charAt(i)==']'){
-                String temp=str;
                 StringBuilder sb=new StringBuilder();
                 int val=num.pop();
                 for(int j=0;j<val;j++)
-                    sb.append(temp);
-                str=s1.pop()+sb.toString();
+                    sb.append(str);
+                str=s1.pop()+sb;
             }
         }
-        return str.toString();
+        return str;
     }
 }

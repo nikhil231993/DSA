@@ -79,7 +79,7 @@ public class LC155MinStack {
     public int top() {
         if(st.isEmpty()) return -1;
         long x=st.peek();
-        if(x>=min) return (int)x;
+        if(x>min) return (int)x;
         return (int)min;
     }
 

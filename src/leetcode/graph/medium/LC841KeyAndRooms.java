@@ -41,4 +41,27 @@ public class LC841KeyAndRooms {
         }
         return true;
     }
+
+    public boolean canVisitAllRoomsApproach2(List<List<Integer>> rooms) {
+            int n=rooms.size();
+            int[] visited=new int[n];
+            Queue<Integer> q=new LinkedList<>();
+            q.offer(0);
+            visited[0]=1;
+
+            while(!q.isEmpty()){
+                Integer no=q.poll();
+                for(Integer vertex:rooms.get(no)){
+                    if(visited[vertex]==0){
+                        q.offer(vertex);
+                        visited[vertex]=1;
+                    }
+                }
+            }
+            for(int i=0;i<n;i++)
+                if(visited[i]==0)
+                    return false;
+            return true;
+        }
+
 }

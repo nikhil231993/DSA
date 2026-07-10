@@ -11,7 +11,7 @@ public class LC2208HalfArray {
         int[]  nums = new int[] {5,19,8,1};
         System.out.println(halveArray(nums));
 
-        // we can improve the nlog n of insertion by using either heapify as it is O(n) or we can put values in a list and use pq.addAll(list) this also takes O(n) TC
+        // we can improve the nlogn of insertion by using either heapify as it is O(n) or we can put values in a list and use pq.addAll(list) this also takes O(n) TC
     }
 
     private static int halveArray(int[] nums) {

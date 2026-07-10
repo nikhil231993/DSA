@@ -8,7 +8,7 @@ public class Lecture14LC216CombinationSum3 {
 	public static void main(String[] args) {
 
 		int k = 3;
-		int target = 7;
+		int target = 9;
 
 		List<List<Integer>> list = new ArrayList();
 		combinationSum3(list, new ArrayList(), target, k, 1);
@@ -38,12 +38,8 @@ public class Lecture14LC216CombinationSum3 {
 
 	private static void combinationSum3(List<List<Integer>> list, ArrayList arrayList, int target, int k, int index) {
 
-		if (index > 10) {
-			return;
-		}
-		
-		if (k == 0) {
-			if (target == 0) {
+		if (index>9) {
+			if (k==0 && target == 0) {
 				list.add(new ArrayList<>(arrayList));
 			}
 			return;

@@ -2,12 +2,17 @@ package leetcode.recursion.medium;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.FutureTask;
+import java.util.concurrent.locks.ReentrantLock;
 
 public class LC131PalindromePartitioning {
 
     public static void main(String[] args) {
 
-          String  s = "aab";
+        ReentrantLock lock=new ReentrantLock(true);
+          String  s = "aabb";
           System.out.println(partition(s));
     }
 
@@ -28,7 +33,7 @@ public class LC131PalindromePartitioning {
         for(int i=index;i<s.length();i++){
             if(isPalindrome(index, i, s)){
                 subList.add(s.substring(index, i+1));
-                partitionFunction(subList, finalResult,  s, index+1);
+                partitionFunction(subList, finalResult,  s, i+1);
                 subList.remove(subList.size()-1);
             }
         }
