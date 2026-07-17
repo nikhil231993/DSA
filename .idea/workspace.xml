@@ -5,56 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72d35191-61fd-46f6-abe8-9b648fcd26f6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/company/leetcode75Remaining/LC1071GCDStrings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/company/leetcode75Remaining/LC1161MaximumLevelSumBinaryTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/company/leetcode75Remaining/LC1372LongestZigZagPath.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/company/leetcode75Remaining/LC1448CountGoodNoesInBinaryTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/company/leetcode75Remaining/LC1456MaximumNumberOfVowelsInASubstring.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/company/leetcode75Remaining/LC1493LongSubArrayAfterDeletingOneOne.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/company/leetcode75Remaining/LC1657DetermineIfTwoStringsAreClose.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/company/leetcode75Remaining/LC1926NearestExit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/company/leetcode75Remaining/LC209MinimizeSubarraySum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/company/leetcode75Remaining/LC2130MaximumTwinSumLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/company/leetcode75Remaining/LC2215FindDifferenceOfTwoArrays.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/company/leetcode75Remaining/LC2352EqualRowAndColumnPairs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/company/leetcode75Remaining/LC2542MaximumSubsequenceScore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/company/leetcode75Remaining/LC414ThirdMaximumNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/company/leetcode75Remaining/LC605CanPlaceFlowers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/company/leetcode75Remaining/LC649Dota2Senate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/company/leetcode75Remaining/LC700BinarySearchTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/company/leetcode75Remaining/LC735AsteroidsCollision.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/company/leetcode75Remaining/LC872LeafSimilarTrees.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/company/leetcode75Remaining/LC933NumberOfCalls.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/company/microsoft/CodeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/company/microsoft/FileSystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/company/microsoft/FindAllPeaks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/company/microsoft/InsertDeleteGetMax.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/company/microsoft/LC129SumRootToLeaf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/company/microsoft/LC1365HowManyNumbers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/company/microsoft/LC2553.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/company/microsoft/LC2785CheckArrayIsGood.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/company/microsoft/LC645SetMisMatch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/company/microsoft/LCA2LC1644.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/company/microsoft/LCA3LC1650.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/company/microsoft/LCA4LC1676.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/company/microsoft/MatrixCumulativeSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/company/microsoft/NewLC204CountPrimes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/company/microsoft/NewLC475Heaters.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/company/microsoft/NewLC621TaskScheduler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/deadlock/DeadLock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/deadlock/DeadLockReference.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/producerconsumer/CoffeeMachineExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/producerconsumer/QueueExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/company/google/LC2150.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/company/meta/LC1295.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/company/meta/LC1967.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/company/meta/LC3300.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/company/meta/LC713.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/company/microsoft/LC155MinStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/company/microsoft/LC155MinStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP15EqualSubsetSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/dynamicprogramming/DP15EqualSubsetSumLC416.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/graph/medium/LC841KeyAndRooms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/graph/medium/LC841KeyAndRooms.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/heap/medium/LC2208HalfArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/heap/medium/LC2208HalfArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/heap/medium/LC2336SmallestNumberInInfiniteSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/heap/medium/LC2336SmallestNumberInInfiniteSet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/recursion/medium/LC131PalindromePartitioning.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/recursion/medium/LC131PalindromePartitioning.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/recursion/medium/Lecture14LC216CombinationSum3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/recursion/medium/Lecture14LC216CombinationSum3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/medium/LC155StackMinWithStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/medium/LC155StackMinWithStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/stack/medium/LC394DecodeString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/stack/medium/LC394DecodeString.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,6 +85,7 @@
     "Application.G8LC200NumberOfIslands.executor": "Run",
     "Application.LC1021RemoveOutermostParentheses.executor": "Run",
     "Application.LC125ValidPalindrome.executor": "Run",
+    "Application.LC1295.executor": "Run",
     "Application.LC131PalindromePartitioning.executor": "Run",
     "Application.LC1332RemovePalindromicSubsequences.executor": "Run",
     "Application.LC1365HowManyNumbers.executor": "Run",
@@ -150,11 +107,13 @@
     "Application.LC18FourSum.executor": "Run",
     "Application.LC1926NearestExit.executor": "Run",
     "Application.LC1929ConcatenationArray.executor": "Run",
+    "Application.LC1967.executor": "Run",
     "Application.LC1991.executor": "Run",
     "Application.LC1TwoSum.executor": "Run",
     "Application.LC2089FindTargetIndices.executor": "Run",
     "Application.LC20ValidParenthesis.executor": "Run",
     "Application.LC2149SortSignsUnequal.executor": "Run",
+    "Application.LC2150.executor": "Run",
     "Application.LC2215FindDifferenceOfTwoArrays.executor": "Run",
     "Application.LC2288ApplyDiscountsNFA.executor": "Run",
     "Application.LC2289MakeArrayNonDecreasing.executor": "Run",
@@ -188,6 +147,7 @@
     "Application.LC649Dota2Senate.executor": "Run",
     "Application.LC682BaseBallGame.executor": "Run",
     "Application.LC695MaxAreaOfIsland.executor": "Run",
+    "Application.LC713.executor": "Run",
     "Application.LC735AsteroidsCollision.executor": "Run",
     "Application.LC73SetMatrixZeroes.executor": "Run",
     "Application.LC79WordSearch.executor": "Run",
@@ -253,13 +213,13 @@
       <recent name="leetcode.stack.lb" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.NewLC204CountPrimes">
-    <configuration name="LC2542MaximumSubsequenceScore" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.company.leetcode75Remaining.LC2542MaximumSubsequenceScore" />
+  <component name="RunManager" selected="Application.LC2150">
+    <configuration name="LC1295" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.company.meta.LC1295" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.company.leetcode75Remaining.*" />
+          <option name="PATTERN" value="leetcode.company.meta.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -267,12 +227,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC645SetMisMatch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.company.microsoft.LC645SetMisMatch" />
+    <configuration name="LC1967" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.company.meta.LC1967" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.company.microsoft.*" />
+          <option name="PATTERN" value="leetcode.company.meta.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LC2150" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.company.google.LC2150" />
+      <module name="DSA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.company.google.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LC713" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.company.meta.LC713" />
+      <module name="DSA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.company.meta.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -293,39 +279,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NewLC475Heaters" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.company.microsoft.NewLC475Heaters" />
-      <module name="DSA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.company.microsoft.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NewLC621TaskScheduler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.company.microsoft.NewLC621TaskScheduler" />
-      <module name="DSA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.company.microsoft.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LC2150" />
+        <item itemvalue="Application.LC1295" />
+        <item itemvalue="Application.LC713" />
+        <item itemvalue="Application.LC1967" />
         <item itemvalue="Application.NewLC204CountPrimes" />
-        <item itemvalue="Application.NewLC621TaskScheduler" />
-        <item itemvalue="Application.NewLC475Heaters" />
-        <item itemvalue="Application.LC645SetMisMatch" />
-        <item itemvalue="Application.LC2542MaximumSubsequenceScore" />
       </list>
     </recent_temporary>
   </component>
