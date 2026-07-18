@@ -4,6 +4,7 @@ public class IdleState extends State{
 
     void select(StateController stateController){
         System.out.println("Item selected");
+        System.out.println(stateController.getState());
         stateController.setState(new CheckoutState());
     }
 

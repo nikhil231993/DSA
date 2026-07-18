@@ -6,8 +6,8 @@ public class Main {
 
         StateController stateController=new StateController();
         stateController.getState().select(stateController);
+        System.out.println(stateController.getState());
         stateController.getState().checkout(stateController);
-
-
+        System.out.println(stateController.getState());
     }
 }

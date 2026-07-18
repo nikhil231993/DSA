@@ -3,14 +3,15 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BackgroundAgentGlobalSettings">
+    <option name="selectedModelId" value="auto" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="72d35191-61fd-46f6-abe8-9b648fcd26f6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/company/google/LC2150.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/company/meta/LC1295.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/company/meta/LC1967.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/company/meta/LC3300.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/company/meta/LC713.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/behaviourial/state/striver/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/behaviourial/state/IdleState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/behaviourial/state/IdleState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/designPatterns/behaviourial/state/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/behaviourial/state/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,143 +63,144 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.BS20MinimiseMaxGasDifference.executor": "Run",
-    "Application.BS26FindPeakElement2LC1901.executor": "Run",
-    "Application.BS2FloorAndCeil.executor": "Run",
-    "Application.BS2InsertPositionLC35.executor": "Run",
-    "Application.BS2LowerBound.executor": "Run",
-    "Application.BinarySearchTreeMain.executor": "Run",
-    "Application.BinaryTreeUsingLinkedListMain.executor": "Run",
-    "Application.DeadLock.executor": "Run",
-    "Application.FileSystem.executor": "Run",
-    "Application.FindAllPeaks.executor": "Run",
-    "Application.G10LC994RottenOranges.executor": "Run",
-    "Application.G11DetectCycleUGBFS.executor": "Run",
-    "Application.G26LC269AlienDictionary.executor": "Run",
-    "Application.G27ShortestPathDAG.executor": "Run",
-    "Application.G28ShortestPathUGUnitWeights.executor": "Run",
-    "Application.G30LC126WordLadder2.executor": "Run",
-    "Application.G50LC721AccountsMerge.executor": "Run",
-    "Application.G7LC547NumberOfProvince.executor": "Run",
-    "Application.G8LC200NumberOfIslands.executor": "Run",
-    "Application.LC1021RemoveOutermostParentheses.executor": "Run",
-    "Application.LC125ValidPalindrome.executor": "Run",
-    "Application.LC1295.executor": "Run",
-    "Application.LC131PalindromePartitioning.executor": "Run",
-    "Application.LC1332RemovePalindromicSubsequences.executor": "Run",
-    "Application.LC1365HowManyNumbers.executor": "Run",
-    "Application.LC136SingleNumber.executor": "Run",
-    "Application.LC1389CreateTargetArray.executor": "Run",
-    "Application.LC1431KidsWithGreatestCandies.executor": "Run",
-    "Application.LC1456MaximumNumberOfVowelsInASubstring.executor": "Run",
-    "Application.LC1492KthFactor.executor": "Debug",
-    "Application.LC151ReverseWordsInAString.executor": "Run",
-    "Application.LC159PremiumLongestSubStringWithAtmostTwoDistinctCharacters.executor": "Run",
-    "Application.LC15ThreeSum.executor": "Run",
-    "Application.LC1624SubstringBetweenEqualCharacters.executor": "Run",
-    "Application.LC1657DetermineIfTwoStringsAreClose.executor": "Run",
-    "Application.LC167TwoSum2.executor": "Run",
-    "Application.LC16ThreeSumClosest.executor": "Run",
-    "Application.LC1760MinimumBallsInABag.executor": "Run",
-    "Application.LC1839.executor": "Run",
-    "Application.LC189RotateArray.executor": "Run",
-    "Application.LC18FourSum.executor": "Run",
-    "Application.LC1926NearestExit.executor": "Run",
-    "Application.LC1929ConcatenationArray.executor": "Run",
-    "Application.LC1967.executor": "Run",
-    "Application.LC1991.executor": "Run",
-    "Application.LC1TwoSum.executor": "Run",
-    "Application.LC2089FindTargetIndices.executor": "Run",
-    "Application.LC20ValidParenthesis.executor": "Run",
-    "Application.LC2149SortSignsUnequal.executor": "Run",
-    "Application.LC2150.executor": "Run",
-    "Application.LC2215FindDifferenceOfTwoArrays.executor": "Run",
-    "Application.LC2288ApplyDiscountsNFA.executor": "Run",
-    "Application.LC2289MakeArrayNonDecreasing.executor": "Run",
-    "Application.LC22GenerateParenthesis.executor": "Run",
-    "Application.LC2352EqualRowAndColumnPairs.executor": "Run",
-    "Application.LC2461MaximumSumDistinctK.executor": "Run",
-    "Application.LC2542MaximumSubsequenceScore.executor": "Run",
-    "Application.LC2553.executor": "Run",
-    "Application.LC2696MinimumString.executor": "Run",
-    "Application.LC2778SquaresSpecialElement.executor": "Run",
-    "Application.LC2785CheckArrayIsGood.executor": "Run",
-    "Application.LC2799CountCompleteSubarrays.executor": "Run",
-    "Application.LC283MoveZeroes.executor": "Run",
-    "Application.LC287FindDuplicateNumber.executor": "Run",
-    "Application.LC340PremiumLongestSubstringWithAtmostKDistinctCharacters.executor": "Run",
-    "Application.LC349UnionOfTwoArrays.executor": "Run",
-    "Application.LC367ValidPerfectSquare.executor": "Debug",
-    "Application.LC392IsSubsequence.executor": "Run",
-    "Application.LC394DecodeString.executor": "Run",
-    "Application.LC402RemoveKDigits.executor": "Run",
-    "Application.LC424LongestRepeatingCharacterReplacement.executor": "Run",
-    "Application.LC48RotateImage.executor": "Run",
-    "Application.LC49GroupAnagrams.executor": "Run",
-    "Application.LC503NextGreaterElement2.executor": "Run",
-    "Application.LC532KDiffPairs.executor": "Run",
-    "Application.LC560CountSubarraySum.executor": "Run",
-    "Application.LC581ShortestUnsortedContinuousSubarray.executor": "Debug",
-    "Application.LC605CanPlaceFlowers.executor": "Run",
-    "Application.LC633SumOfSquares.executor": "Run",
-    "Application.LC645SetMisMatch.executor": "Run",
-    "Application.LC649Dota2Senate.executor": "Run",
-    "Application.LC682BaseBallGame.executor": "Run",
-    "Application.LC695MaxAreaOfIsland.executor": "Run",
-    "Application.LC713.executor": "Run",
-    "Application.LC735AsteroidsCollision.executor": "Run",
-    "Application.LC73SetMatrixZeroes.executor": "Run",
-    "Application.LC79WordSearch.executor": "Run",
-    "Application.LC841KeyAndRooms.executor": "Run",
-    "Application.Lecture14LC216CombinationSum3.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.MatrixCumulativeSum.executor": "Run",
-    "Application.MergeSort.executor": "Run",
-    "Application.NewLC204CountPrimes.executor": "Run",
-    "Application.NewLC475Heaters.executor": "Run",
-    "Application.NewLC621TaskScheduler.executor": "Run",
-    "Application.NextSmaller.executor": "Run",
-    "Application.PreviousSmaller.executor": "Run",
-    "Application.ProducerConsumerProblem.executor": "Run",
-    "Application.RatInMaze.executor": "Run",
-    "Application.Test2.executor": "Run",
-    "Application.Test4.executor": "Run",
-    "Application.V12MinimumWindowSubstringLC76.executor": "Run",
-    "Application.V19FindPairsInDLL.executor": "Run",
-    "Application.V1ConvertArrayToLinkedList.executor": "Run",
-    "Application.V21ReverseLinkedListInGroupLC25.executor": "Run",
-    "Application.V2DeletionAndInsertion.executor": "Run",
-    "Application.V3DoublyLinkedList.executor": "Run",
-    "Application.V5FruitIntoBasketsLC904.executor": "Run",
-    "Application.V8LongestRepeatingCharacterReplacementLC424.executor": "Run",
-    "Application.gfgLeftRotateRightRotateAnArrayByKPlaces.executor": "Run",
-    "Application.gfgLongestKUniqueCharactersSubstring.executor": "Run",
-    "Application.gfgLongestSubarrayWithSumK.executor": "Run",
-    "Application.gfgSecondLargest.executor": "Run",
-    "Application.gfgSecondLargestAndSecondSmallest.executor": "Run",
-    "Application.lG16LC694NumberOfDistinctIslands.executor": "Run",
-    "Application.leetcode.company.leetcode75Remaining.LC649Dota2Senate.executor": "Run",
-    "Application.xBS25SearchInSortedMatrix2LC240.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "copilot.chat.legacySessionMetadata.migrated": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/Z00GL32/personal/DSA",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.BS20MinimiseMaxGasDifference.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BS26FindPeakElement2LC1901.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BS2FloorAndCeil.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BS2InsertPositionLC35.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BS2LowerBound.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BinarySearchTreeMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BinaryTreeUsingLinkedListMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DeadLock.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FileSystem.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FindAllPeaks.executor&quot;: &quot;Run&quot;,
+    &quot;Application.G10LC994RottenOranges.executor&quot;: &quot;Run&quot;,
+    &quot;Application.G11DetectCycleUGBFS.executor&quot;: &quot;Run&quot;,
+    &quot;Application.G26LC269AlienDictionary.executor&quot;: &quot;Run&quot;,
+    &quot;Application.G27ShortestPathDAG.executor&quot;: &quot;Run&quot;,
+    &quot;Application.G28ShortestPathUGUnitWeights.executor&quot;: &quot;Run&quot;,
+    &quot;Application.G30LC126WordLadder2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.G50LC721AccountsMerge.executor&quot;: &quot;Run&quot;,
+    &quot;Application.G7LC547NumberOfProvince.executor&quot;: &quot;Run&quot;,
+    &quot;Application.G8LC200NumberOfIslands.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC1021RemoveOutermostParentheses.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC125ValidPalindrome.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC1295.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC131PalindromePartitioning.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC1332RemovePalindromicSubsequences.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC1365HowManyNumbers.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC136SingleNumber.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC1389CreateTargetArray.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC1431KidsWithGreatestCandies.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC1456MaximumNumberOfVowelsInASubstring.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC1492KthFactor.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.LC151ReverseWordsInAString.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC159PremiumLongestSubStringWithAtmostTwoDistinctCharacters.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC15ThreeSum.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC1624SubstringBetweenEqualCharacters.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC1657DetermineIfTwoStringsAreClose.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC167TwoSum2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC16ThreeSumClosest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC1760MinimumBallsInABag.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC1839.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC189RotateArray.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC18FourSum.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC1926NearestExit.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC1929ConcatenationArray.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC1967.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC1991.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC1TwoSum.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC2089FindTargetIndices.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC20ValidParenthesis.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC2149SortSignsUnequal.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC2150.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC2215FindDifferenceOfTwoArrays.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC2288ApplyDiscountsNFA.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC2289MakeArrayNonDecreasing.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC22GenerateParenthesis.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC2352EqualRowAndColumnPairs.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC2461MaximumSumDistinctK.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC2542MaximumSubsequenceScore.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC2553.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC2696MinimumString.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC2778SquaresSpecialElement.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC2785CheckArrayIsGood.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC2799CountCompleteSubarrays.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC283MoveZeroes.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC287FindDuplicateNumber.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC340PremiumLongestSubstringWithAtmostKDistinctCharacters.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC349UnionOfTwoArrays.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC367ValidPerfectSquare.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.LC392IsSubsequence.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC394DecodeString.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC402RemoveKDigits.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC424LongestRepeatingCharacterReplacement.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC48RotateImage.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC49GroupAnagrams.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC503NextGreaterElement2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC532KDiffPairs.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC560CountSubarraySum.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC581ShortestUnsortedContinuousSubarray.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.LC605CanPlaceFlowers.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC633SumOfSquares.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC645SetMisMatch.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC649Dota2Senate.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC682BaseBallGame.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC695MaxAreaOfIsland.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC713.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC735AsteroidsCollision.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC73SetMatrixZeroes.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC79WordSearch.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC841KeyAndRooms.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Lecture14LC216CombinationSum3.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.MatrixCumulativeSum.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MergeSort.executor&quot;: &quot;Run&quot;,
+    &quot;Application.NewLC204CountPrimes.executor&quot;: &quot;Run&quot;,
+    &quot;Application.NewLC475Heaters.executor&quot;: &quot;Run&quot;,
+    &quot;Application.NewLC621TaskScheduler.executor&quot;: &quot;Run&quot;,
+    &quot;Application.NextSmaller.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PreviousSmaller.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ProducerConsumerProblem.executor&quot;: &quot;Run&quot;,
+    &quot;Application.RatInMaze.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Test2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Test4.executor&quot;: &quot;Run&quot;,
+    &quot;Application.V12MinimumWindowSubstringLC76.executor&quot;: &quot;Run&quot;,
+    &quot;Application.V19FindPairsInDLL.executor&quot;: &quot;Run&quot;,
+    &quot;Application.V1ConvertArrayToLinkedList.executor&quot;: &quot;Run&quot;,
+    &quot;Application.V21ReverseLinkedListInGroupLC25.executor&quot;: &quot;Run&quot;,
+    &quot;Application.V2DeletionAndInsertion.executor&quot;: &quot;Run&quot;,
+    &quot;Application.V3DoublyLinkedList.executor&quot;: &quot;Run&quot;,
+    &quot;Application.V5FruitIntoBasketsLC904.executor&quot;: &quot;Run&quot;,
+    &quot;Application.V8LongestRepeatingCharacterReplacementLC424.executor&quot;: &quot;Run&quot;,
+    &quot;Application.gfgLeftRotateRightRotateAnArrayByKPlaces.executor&quot;: &quot;Run&quot;,
+    &quot;Application.gfgLongestKUniqueCharactersSubstring.executor&quot;: &quot;Run&quot;,
+    &quot;Application.gfgLongestSubarrayWithSumK.executor&quot;: &quot;Run&quot;,
+    &quot;Application.gfgSecondLargest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.gfgSecondLargestAndSecondSmallest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.lG16LC694NumberOfDistinctIslands.executor&quot;: &quot;Run&quot;,
+    &quot;Application.leetcode.company.leetcode75Remaining.LC649Dota2Senate.executor&quot;: &quot;Run&quot;,
+    &quot;Application.leetcode.designPatterns.behaviourial.state.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.xBS25SearchInSortedMatrix2LC240.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;copilot.chat.legacySessionMetadata.migrated&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/Z00GL32/personal/DSA&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/leetcode/designPatterns/Problems" />
@@ -216,19 +218,6 @@
   <component name="RunManager" selected="Application.LC2150">
     <configuration name="LC1295" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode.company.meta.LC1295" />
-      <module name="DSA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.company.meta.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LC1967" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.company.meta.LC1967" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
@@ -266,12 +255,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NewLC204CountPrimes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.company.microsoft.NewLC204CountPrimes" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.designPatterns.behaviourial.state.striver.Main" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.company.microsoft.*" />
+          <option name="PATTERN" value="leetcode.designPatterns.behaviourial.state.striver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="leetcode.designPatterns.behaviourial.state.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.designPatterns.behaviourial.state.Main" />
+      <module name="DSA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.designPatterns.behaviourial.state.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -282,17 +284,17 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.LC2150" />
+        <item itemvalue="Application.leetcode.designPatterns.behaviourial.state.Main" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.LC1295" />
         <item itemvalue="Application.LC713" />
-        <item itemvalue="Application.LC1967" />
-        <item itemvalue="Application.NewLC204CountPrimes" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.30387.90" />
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.33813.25" />
       </set>
     </attachedChunks>
   </component>
@@ -1396,6 +1398,11 @@
           <url>file://$PROJECT_DIR$/src/leetcode/company/leetcode75Remaining/LC2352EqualRowAndColumnPairs.java</url>
           <line>38</line>
           <option name="timeStamp" value="507" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/designPatterns/behaviourial/state/striver/Main.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="508" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/leetcode/binarytree/Test.java</url>
