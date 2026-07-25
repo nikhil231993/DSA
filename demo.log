@@ -1,0 +1,14 @@
+[INFO] 2026-07-24T04:57:53.704620Z - This message goes to both console and file
+[ERROR] 2026-07-24T04:57:53.724521Z - This error also goes to both destinations
+[INFO] 2026-07-24T05:09:46.678430Z - This message goes to both console and file
+[ERROR] 2026-07-24T05:09:46.699423Z - This error also goes to both destinations
+[INFO] 2026-07-24T05:10:38.331400Z - This message goes to both console and file
+[ERROR] 2026-07-24T05:10:38.350822Z - This error also goes to both destinations
+[INFO] 2026-07-24T05:12:44.632605Z - This message goes to both console and file
+[ERROR] 2026-07-24T05:24:16.003025Z - This error also goes to both destinations
+[INFO] 2026-07-24T05:24:16.912933Z - This message goes to both console and file
+[ERROR] 2026-07-24T05:24:16.947428Z - This error also goes to both destinations
+[INFO] 2026-07-24T05:36:20.327762Z - This message goes to both console and file
+[ERROR] 2026-07-24T05:36:20.349191Z - This error also goes to both destinations
+[INFO] 2026-07-24T05:38:05.671334Z - This message goes to both console and file
+[ERROR] 2026-07-24T05:38:05.691535Z - This error also goes to both destinations

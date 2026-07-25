@@ -8,38 +8,402 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72d35191-61fd-46f6-abe8-9b648fcd26f6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/ATMWithdrawal/controller/PaymentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/ATMWithdrawal/controller/TransferController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/ATMWithdrawal/controller/WithdrawalController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/ATMWithdrawal/domain/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/ATMWithdrawal/domain/AccountStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/ATMWithdrawal/domain/PaymentMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/ATMWithdrawal/domain/PaymentRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/ATMWithdrawal/domain/PaymentResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/ATMWithdrawal/domain/PaymentStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/ATMWithdrawal/domain/TransactionResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/ATMWithdrawal/domain/TransactionStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/ATMWithdrawal/domain/TransferRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/ATMWithdrawal/domain/WithdrawalRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/ATMWithdrawal/exception/AccountNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/ATMWithdrawal/exception/InsufficientFundsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/ATMWithdrawal/exception/InvalidAccountStateException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/ATMWithdrawal/exception/InvalidAmountException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/ATMWithdrawal/exception/UnsupportedPaymentMethodException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/ATMWithdrawal/processor/BankAccountPaymentProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/ATMWithdrawal/processor/CardPaymentProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/ATMWithdrawal/processor/ExternalCardGateway.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/ATMWithdrawal/processor/MockCardGateway.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/ATMWithdrawal/processor/PaymentProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/ATMWithdrawal/repository/AccountRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/ATMWithdrawal/repository/InMemoryAccountRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/ATMWithdrawal/repository/InMemoryPaymentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/ATMWithdrawal/repository/InMemoryTransactionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/ATMWithdrawal/repository/PaymentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/ATMWithdrawal/repository/TransactionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/ATMWithdrawal/service/PaymentGatewayService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/ATMWithdrawal/service/TransferService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/ATMWithdrawal/service/WithdrawalService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/LoggerSystem/appenders/ConsoleAppender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/LoggerSystem/appenders/DatabaseAppender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/LoggerSystem/appenders/FileAppender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/LoggerSystem/core/LogAppender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/LoggerSystem/core/LogConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/LoggerSystem/core/LogFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/LoggerSystem/core/LogFormatter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/LoggerSystem/core/LogLevel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/LoggerSystem/core/LogMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/LoggerSystem/core/Logger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/LoggerSystem/core/LoggerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/LoggerSystem/filter/LevelFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/LoggerSystem/filter/SourceFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/LoggerSystem/fomatters/DetailedFormatter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/LoggerSystem/fomatters/SimpleFormatter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/LoggerSystem/main/LoggingDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ParkingLot/adapter/PaymentGatewayAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ParkingLot/adapter/RazorpayAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ParkingLot/adapter/StripeAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ParkingLot/controller/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ParkingLot/controller/EntryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ParkingLot/controller/ExitController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ParkingLot/domain/Floor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ParkingLot/domain/ParkingSlot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ParkingLot/domain/Payment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ParkingLot/domain/PricingRule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ParkingLot/domain/Receipt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ParkingLot/domain/Ticket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ParkingLot/domain/Vehicle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ParkingLot/main/ParkingLotSimulation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ParkingLot/repository/FloorRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ParkingLot/repository/PaymentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ParkingLot/repository/PricingRuleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ParkingLot/repository/SlotRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ParkingLot/repository/TicketRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ParkingLot/service/AdminService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ParkingLot/service/PaymentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ParkingLot/service/PricingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ParkingLot/service/ReceiptService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ParkingLot/service/SlotService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ParkingLot/service/TicketService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/PubSub/controller/MessageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/PubSub/controller/PublisherController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/PubSub/controller/SubscriberController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/PubSub/controller/SubscriptionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/PubSub/controller/TopicController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/PubSub/domain/DeliveryChannel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/PubSub/domain/DeliveryStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/PubSub/domain/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/PubSub/domain/MessageDelivery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/PubSub/domain/Priority.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/PubSub/domain/Subscriber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/PubSub/domain/Subscription.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/PubSub/domain/Topic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/PubSub/domain/observer/EmailSubscriber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/PubSub/domain/observer/MessageSubject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/PubSub/domain/observer/RealtimeSubscriber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/PubSub/domain/observer/SubscriberObserver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/PubSub/main/PubSubSimulation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/PubSub/repository/Impl/MessageDeliveryRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/PubSub/repository/Impl/MessageRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/PubSub/repository/Impl/SubscriberRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/PubSub/repository/Impl/SubscriptionRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/PubSub/repository/Impl/TopicRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/PubSub/repository/MessageDeliveryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/PubSub/repository/MessageRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/PubSub/repository/SubscriberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/PubSub/repository/SubscriptionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/PubSub/repository/TopicRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/PubSub/service/MessageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/PubSub/service/PublisherService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/PubSub/service/SubscriberService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/PubSub/service/SubscriptionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/PubSub/service/TopicService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/TaskManagementSystem/controller/TaskAssignmentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/TaskManagementSystem/controller/TaskController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/TaskManagementSystem/controller/TaskNotificationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/TaskManagementSystem/controller/TaskStateController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/TaskManagementSystem/domain/ChangeType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/TaskManagementSystem/domain/Comment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/TaskManagementSystem/domain/DateRange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/TaskManagementSystem/domain/Priority.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/TaskManagementSystem/domain/Task.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/TaskManagementSystem/domain/TaskChangeLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/TaskManagementSystem/domain/TaskSearchCriteria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/TaskManagementSystem/domain/TaskStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/TaskManagementSystem/domain/TaskSubscription.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/TaskManagementSystem/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/TaskManagementSystem/domain/UserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/TaskManagementSystem/domain/observer/EmailSubscriber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/TaskManagementSystem/domain/observer/MobileAppSubscriber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/TaskManagementSystem/domain/observer/TaskSubject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/TaskManagementSystem/domain/observer/TaskSubscriber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/TaskManagementSystem/domain/state/CancelledState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/TaskManagementSystem/domain/state/CompletedState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/TaskManagementSystem/domain/state/InProgressState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/TaskManagementSystem/domain/state/InvalidStateTransitionException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/TaskManagementSystem/domain/state/ReviewState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/TaskManagementSystem/domain/state/TaskState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/TaskManagementSystem/domain/state/TodoState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/TaskManagementSystem/domain/strategy/CreatedDateSortingStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/TaskManagementSystem/domain/strategy/DueDateSortingStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/TaskManagementSystem/domain/strategy/PrioritySortingStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/TaskManagementSystem/domain/strategy/TaskSortingContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/TaskManagementSystem/domain/strategy/TaskSortingStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/TaskManagementSystem/main/TaskManagementSimulation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/TaskManagementSystem/repository/CommentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/TaskManagementSystem/repository/TaskChangeLogRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/TaskManagementSystem/repository/TaskRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/TaskManagementSystem/repository/TaskRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/TaskManagementSystem/repository/TaskSubscriptionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/TaskManagementSystem/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/TaskManagementSystem/repository/UserRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/TaskManagementSystem/service/TaskAssignmentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/TaskManagementSystem/service/TaskNotificationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/TaskManagementSystem/service/TaskService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/TaskManagementSystem/service/TaskStateService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/VendingMachine/controller/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/VendingMachine/controller/PaymentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/VendingMachine/controller/RecoveryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/VendingMachine/controller/VendingMachineController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/VendingMachine/domain/CashBox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/VendingMachine/domain/Denomination.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/VendingMachine/domain/Inventory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/VendingMachine/domain/PaymentRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/VendingMachine/domain/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/VendingMachine/domain/ProductCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/VendingMachine/domain/Recovery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/VendingMachine/domain/RecoveryStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/VendingMachine/domain/Transaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/VendingMachine/domain/TransactionStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/VendingMachine/domain/VendingMachine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/VendingMachine/domain/state/DispensingState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/VendingMachine/domain/state/IdleState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/VendingMachine/domain/state/InvalidStateTransitionException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/VendingMachine/domain/state/ProcessingPaymentState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/VendingMachine/domain/state/VendingMachineState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/VendingMachine/main/VendingMachineSimulation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/VendingMachine/repository/PaymentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/VendingMachine/repository/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/VendingMachine/repository/RecoveryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/VendingMachine/repository/VendingMachineRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/VendingMachine/service/AdminService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/VendingMachine/service/PaymentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/VendingMachine/service/RecoveryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/VendingMachine/service/VendingMachineService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/atm/controller/ATMController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/atm/controller/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/atm/controller/CardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/atm/controller/SessionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/atm/controller/TransactionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/atm/domain/ATM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/atm/domain/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/atm/domain/AdminUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/atm/domain/Card.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/atm/domain/CashDrawer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/atm/domain/Denomination.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/atm/domain/Session.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/atm/domain/Transaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/atm/domain/TransactionStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/atm/domain/TransactionType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/atm/domain/exception/InvalidATMOperationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/atm/domain/state/ATMState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/atm/domain/state/AbstractATMState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/atm/domain/state/AuthenticatedState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/atm/domain/state/CardInsertedState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/atm/domain/state/IdleState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/atm/domain/state/OutOfServiceState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/atm/domain/state/SupportsNotes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/atm/domain/state/TransactionCompletedState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/atm/domain/state/TransactionSelectedState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/atm/domain/strategy/BalanceInquiryStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/atm/domain/strategy/DepositStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/atm/domain/strategy/TransactionStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/atm/domain/strategy/WithdrawalStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/atm/main/ATMSimulation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/atm/repository/ATMRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/atm/repository/AccountRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/atm/repository/AdminUserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/atm/repository/CardRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/atm/repository/CashDrawerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/atm/repository/Impl/ATMRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/atm/repository/Impl/AccountRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/atm/repository/Impl/AdminUserRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/atm/repository/Impl/CardRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/atm/repository/Impl/CashDrawerRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/atm/repository/Impl/SessionRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/atm/repository/Impl/TransactionRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/atm/repository/SessionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/atm/repository/TransactionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/atm/service/ATMService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/atm/service/AdminService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/atm/service/CardService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/atm/service/SessionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/atm/service/TransactionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/digitalwallet/controller/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/digitalwallet/controller/TransactionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/digitalwallet/controller/WalletController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/digitalwallet/domain/AccountStatement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/digitalwallet/domain/Transaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/digitalwallet/domain/TransactionStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/digitalwallet/domain/TransactionType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/digitalwallet/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/digitalwallet/domain/Wallet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/digitalwallet/domain/WalletStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/digitalwallet/main/DigitalWalletSimulation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/digitalwallet/repository/Impl/TransactionRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/digitalwallet/repository/Impl/UserRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/digitalwallet/repository/Impl/WalletRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/digitalwallet/repository/TransactionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/digitalwallet/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/digitalwallet/repository/WalletRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/digitalwallet/service/LockService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/digitalwallet/service/TransactionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/digitalwallet/service/WalletService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/digitalwallet/service/gateway/MockPaymentGatewayProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/digitalwallet/service/gateway/PaymentGatewayProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/digitalwallet/service/gateway/PaymentGatewayRouter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/digitalwallet/service/notification/EmailNotificationChannel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/digitalwallet/service/notification/NotificationChannel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/digitalwallet/service/notification/NotificationMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/digitalwallet/service/notification/NotificationRouter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/digitalwallet/service/notification/SmsNotificationChannel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/elevatorsystem/controller/ElevatorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/elevatorsystem/controller/ElevatorPanelController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/elevatorsystem/controller/FloorPanelController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/elevatorsystem/domain/Building.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/elevatorsystem/domain/Direction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/elevatorsystem/domain/Elevator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/elevatorsystem/domain/ElevatorState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/elevatorsystem/domain/ExternalRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/elevatorsystem/domain/InternalRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/elevatorsystem/domain/RequestStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/elevatorsystem/domain/SystemState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/elevatorsystem/domain/state/DoorsClosingState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/elevatorsystem/domain/state/DoorsOpeningState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/elevatorsystem/domain/state/ElevatorStateHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/elevatorsystem/domain/state/MaintenanceState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/elevatorsystem/domain/state/MovingState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/elevatorsystem/domain/state/PreMaintenanceState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/elevatorsystem/domain/state/StoppedState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/elevatorsystem/domain/strategy/ElevatorSelectionStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/elevatorsystem/domain/strategy/FCFSStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/elevatorsystem/domain/strategy/LoadBalancingStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/elevatorsystem/domain/strategy/MovementStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/elevatorsystem/domain/strategy/NearestElevatorStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/elevatorsystem/domain/strategy/ScanStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/elevatorsystem/main/ElevatorSystemSimulation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/elevatorsystem/repository/BuildingRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/elevatorsystem/repository/ElevatorRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/elevatorsystem/repository/ExternalRequestRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/elevatorsystem/repository/Impl/BuildingRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/elevatorsystem/repository/Impl/ElevatorRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/elevatorsystem/repository/Impl/ExternalRequestRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/elevatorsystem/repository/Impl/InternalRequestRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/elevatorsystem/repository/InternalRequestRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/elevatorsystem/service/BuildingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/elevatorsystem/service/DispatcherService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/elevatorsystem/service/ElevatorSchedulerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/elevatorsystem/service/ElevatorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/elevatorsystem/service/MovementService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/elevatorsystem/service/RequestService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/hotelmanagementSystem/controller/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/hotelmanagementSystem/controller/BookingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/hotelmanagementSystem/controller/DashboardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/hotelmanagementSystem/controller/SearchController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/hotelmanagementSystem/controller/TransactionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/hotelmanagementSystem/domain/Availability.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/hotelmanagementSystem/domain/Booking.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/hotelmanagementSystem/domain/BookingStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/hotelmanagementSystem/domain/CancellationPolicy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/hotelmanagementSystem/domain/DateRange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/hotelmanagementSystem/domain/Hotel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/hotelmanagementSystem/domain/NightlyPrice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/hotelmanagementSystem/domain/RefundDecision.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/hotelmanagementSystem/domain/Room.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/hotelmanagementSystem/domain/RoomType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/hotelmanagementSystem/domain/RoomTypeAvailability.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/hotelmanagementSystem/domain/SearchFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/hotelmanagementSystem/domain/SeasonalPrice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/hotelmanagementSystem/domain/Transaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/hotelmanagementSystem/domain/TransactionStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/hotelmanagementSystem/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/hotelmanagementSystem/domain/UserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/hotelmanagementSystem/main/HotelManagementSimulation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/hotelmanagementSystem/repository/BookingRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/hotelmanagementSystem/repository/CancellationPolicyRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/hotelmanagementSystem/repository/HotelRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/hotelmanagementSystem/repository/Impl/BookingRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/hotelmanagementSystem/repository/Impl/CancellationPolicyRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/hotelmanagementSystem/repository/Impl/HotelRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/hotelmanagementSystem/repository/Impl/RoomRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/hotelmanagementSystem/repository/Impl/RoomTypeRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/hotelmanagementSystem/repository/Impl/SeasonalPriceRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/hotelmanagementSystem/repository/Impl/TransactionRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/hotelmanagementSystem/repository/Impl/UserRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/hotelmanagementSystem/repository/RoomRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/hotelmanagementSystem/repository/RoomTypeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/hotelmanagementSystem/repository/SeasonalPriceRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/hotelmanagementSystem/repository/TransactionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/hotelmanagementSystem/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/hotelmanagementSystem/service/BookingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/hotelmanagementSystem/service/BookingStateHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/hotelmanagementSystem/service/InventoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/hotelmanagementSystem/service/PolicyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/hotelmanagementSystem/service/PricingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/hotelmanagementSystem/service/SearchService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/hotelmanagementSystem/service/TransactionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/hotelmanagementSystem/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/musicstreaming/controller/DownloadController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/musicstreaming/controller/PlaybackController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/musicstreaming/controller/PlaylistController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/musicstreaming/controller/RecommendationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/musicstreaming/controller/SearchController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/musicstreaming/controller/StreamingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/musicstreaming/domain/Album.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/musicstreaming/domain/Artist.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/musicstreaming/domain/AudioFormat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/musicstreaming/domain/AudioQuality.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/musicstreaming/domain/Download.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/musicstreaming/domain/DownloadStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/musicstreaming/domain/ListeningHistory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/musicstreaming/domain/PlaybackSession.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/musicstreaming/domain/PlaybackSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/musicstreaming/domain/PlaybackStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/musicstreaming/domain/Playlist.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/musicstreaming/domain/RepeatMode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/musicstreaming/domain/Song.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/musicstreaming/domain/SubscriptionTier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/musicstreaming/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/musicstreaming/main/MusicStreamingSimulation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/musicstreaming/repository/AlbumRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/musicstreaming/repository/ArtistRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/musicstreaming/repository/DownloadRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/musicstreaming/repository/Impl/AlbumRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/musicstreaming/repository/Impl/ArtistRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/musicstreaming/repository/Impl/DownloadRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/musicstreaming/repository/Impl/ListeningHistoryRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/musicstreaming/repository/Impl/PlaybackSessionRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/musicstreaming/repository/Impl/PlaylistRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/musicstreaming/repository/Impl/SongRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/musicstreaming/repository/Impl/UserRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/musicstreaming/repository/ListeningHistoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/musicstreaming/repository/PlaybackSessionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/musicstreaming/repository/PlaylistRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/musicstreaming/repository/SongRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/musicstreaming/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/musicstreaming/service/CacheService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/musicstreaming/service/DownloadService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/musicstreaming/service/LockService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/musicstreaming/service/PlaybackService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/musicstreaming/service/PlaylistService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/musicstreaming/service/RecommendationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/musicstreaming/service/SearchService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/musicstreaming/service/StreamingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/musicstreaming/service/strategy/CollaborativeFilteringStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/musicstreaming/service/strategy/GenreBasedStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/musicstreaming/service/strategy/PopularityBasedStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/musicstreaming/service/strategy/RecommendationStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ridebooking/controller/DriverController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ridebooking/controller/PaymentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ridebooking/controller/RideController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ridebooking/domain/Driver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ridebooking/domain/DriverStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ridebooking/domain/FareEstimateResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ridebooking/domain/Location.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ridebooking/domain/NotificationMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ridebooking/domain/PaymentStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ridebooking/domain/PaymentType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ridebooking/domain/Ride.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ridebooking/domain/RideRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ridebooking/domain/RideStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ridebooking/domain/RideStatusResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ridebooking/domain/Rider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ridebooking/domain/state/RideStateMachine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ridebooking/domain/strategy/BasePricingStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ridebooking/domain/strategy/DriverMatchingStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ridebooking/domain/strategy/NearestDriverStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ridebooking/domain/strategy/PricingStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ridebooking/main/RideSharingSimulation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ridebooking/repository/DriverRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ridebooking/repository/LocationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ridebooking/repository/RideRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ridebooking/repository/RiderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ridebooking/repository/impl/InMemoryDriverRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ridebooking/repository/impl/InMemoryLocationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ridebooking/repository/impl/InMemoryRideRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ridebooking/repository/impl/InMemoryRiderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ridebooking/service/DriverService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ridebooking/service/LocationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ridebooking/service/LockService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ridebooking/service/MatchingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ridebooking/service/PaymentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ridebooking/service/PricingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ridebooking/service/RideService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ridebooking/service/notification/NotificationService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -92,152 +456,158 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.BS20MinimiseMaxGasDifference.executor&quot;: &quot;Run&quot;,
-    &quot;Application.BS26FindPeakElement2LC1901.executor&quot;: &quot;Run&quot;,
-    &quot;Application.BS2FloorAndCeil.executor&quot;: &quot;Run&quot;,
-    &quot;Application.BS2InsertPositionLC35.executor&quot;: &quot;Run&quot;,
-    &quot;Application.BS2LowerBound.executor&quot;: &quot;Run&quot;,
-    &quot;Application.BinarySearchTreeMain.executor&quot;: &quot;Run&quot;,
-    &quot;Application.BinaryTreeUsingLinkedListMain.executor&quot;: &quot;Run&quot;,
-    &quot;Application.DeadLock.executor&quot;: &quot;Run&quot;,
-    &quot;Application.FileSystem.executor&quot;: &quot;Run&quot;,
-    &quot;Application.FindAllPeaks.executor&quot;: &quot;Run&quot;,
-    &quot;Application.G10LC994RottenOranges.executor&quot;: &quot;Run&quot;,
-    &quot;Application.G11DetectCycleUGBFS.executor&quot;: &quot;Run&quot;,
-    &quot;Application.G26LC269AlienDictionary.executor&quot;: &quot;Run&quot;,
-    &quot;Application.G27ShortestPathDAG.executor&quot;: &quot;Run&quot;,
-    &quot;Application.G28ShortestPathUGUnitWeights.executor&quot;: &quot;Run&quot;,
-    &quot;Application.G30LC126WordLadder2.executor&quot;: &quot;Run&quot;,
-    &quot;Application.G50LC721AccountsMerge.executor&quot;: &quot;Run&quot;,
-    &quot;Application.G7LC547NumberOfProvince.executor&quot;: &quot;Run&quot;,
-    &quot;Application.G8LC200NumberOfIslands.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC1021RemoveOutermostParentheses.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC125ValidPalindrome.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC1295.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC131PalindromePartitioning.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC1332RemovePalindromicSubsequences.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC1365HowManyNumbers.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC136SingleNumber.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC1389CreateTargetArray.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC1431KidsWithGreatestCandies.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC1456MaximumNumberOfVowelsInASubstring.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC1492KthFactor.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.LC151ReverseWordsInAString.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC159PremiumLongestSubStringWithAtmostTwoDistinctCharacters.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC15ThreeSum.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC1624SubstringBetweenEqualCharacters.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC1657DetermineIfTwoStringsAreClose.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC167TwoSum2.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC16ThreeSumClosest.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC1760MinimumBallsInABag.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC1762.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC1839.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC189RotateArray.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC18FourSum.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC1926NearestExit.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC1929ConcatenationArray.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC1967.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC1991.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC1TwoSum.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC2089FindTargetIndices.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC20ValidParenthesis.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC2149SortSignsUnequal.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC2150.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC2215FindDifferenceOfTwoArrays.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC2288ApplyDiscountsNFA.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC2289MakeArrayNonDecreasing.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC22GenerateParenthesis.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC2352EqualRowAndColumnPairs.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC2461MaximumSumDistinctK.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC2542MaximumSubsequenceScore.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC2553.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC2696MinimumString.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC2778SquaresSpecialElement.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC2785CheckArrayIsGood.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC2799CountCompleteSubarrays.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC283MoveZeroes.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC287FindDuplicateNumber.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC340PremiumLongestSubstringWithAtmostKDistinctCharacters.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC349UnionOfTwoArrays.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC367ValidPerfectSquare.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.LC392IsSubsequence.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC394DecodeString.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC402RemoveKDigits.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC424LongestRepeatingCharacterReplacement.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC48RotateImage.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC49GroupAnagrams.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC503NextGreaterElement2.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC532KDiffPairs.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC560CountSubarraySum.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC581ShortestUnsortedContinuousSubarray.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.LC605CanPlaceFlowers.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC633SumOfSquares.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC645SetMisMatch.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC649Dota2Senate.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC682BaseBallGame.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC695MaxAreaOfIsland.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC713.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC735AsteroidsCollision.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC73SetMatrixZeroes.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC79WordSearch.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC841KeyAndRooms.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Lecture14LC216CombinationSum3.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.MatrixCumulativeSum.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MergeSort.executor&quot;: &quot;Run&quot;,
-    &quot;Application.NewLC204CountPrimes.executor&quot;: &quot;Run&quot;,
-    &quot;Application.NewLC475Heaters.executor&quot;: &quot;Run&quot;,
-    &quot;Application.NewLC621TaskScheduler.executor&quot;: &quot;Run&quot;,
-    &quot;Application.NextSmaller.executor&quot;: &quot;Run&quot;,
-    &quot;Application.PreviousSmaller.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ProducerConsumerProblem.executor&quot;: &quot;Run&quot;,
-    &quot;Application.RatInMaze.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Test2.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Test4.executor&quot;: &quot;Run&quot;,
-    &quot;Application.V12MinimumWindowSubstringLC76.executor&quot;: &quot;Run&quot;,
-    &quot;Application.V19FindPairsInDLL.executor&quot;: &quot;Run&quot;,
-    &quot;Application.V1ConvertArrayToLinkedList.executor&quot;: &quot;Run&quot;,
-    &quot;Application.V21ReverseLinkedListInGroupLC25.executor&quot;: &quot;Run&quot;,
-    &quot;Application.V2DeletionAndInsertion.executor&quot;: &quot;Run&quot;,
-    &quot;Application.V3DoublyLinkedList.executor&quot;: &quot;Run&quot;,
-    &quot;Application.V5FruitIntoBasketsLC904.executor&quot;: &quot;Run&quot;,
-    &quot;Application.V8LongestRepeatingCharacterReplacementLC424.executor&quot;: &quot;Run&quot;,
-    &quot;Application.gfgLeftRotateRightRotateAnArrayByKPlaces.executor&quot;: &quot;Run&quot;,
-    &quot;Application.gfgLongestKUniqueCharactersSubstring.executor&quot;: &quot;Run&quot;,
-    &quot;Application.gfgLongestSubarrayWithSumK.executor&quot;: &quot;Run&quot;,
-    &quot;Application.gfgSecondLargest.executor&quot;: &quot;Run&quot;,
-    &quot;Application.gfgSecondLargestAndSecondSmallest.executor&quot;: &quot;Run&quot;,
-    &quot;Application.lG16LC694NumberOfDistinctIslands.executor&quot;: &quot;Run&quot;,
-    &quot;Application.leetcode.company.leetcode75Remaining.LC649Dota2Senate.executor&quot;: &quot;Run&quot;,
-    &quot;Application.leetcode.designPatterns.behaviourial.state.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.xBS25SearchInSortedMatrix2LC240.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;copilot.chat.legacySessionMetadata.migrated&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/Z00GL32/personal/DSA&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.language&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.BS20MinimiseMaxGasDifference.executor": "Run",
+    "Application.BS26FindPeakElement2LC1901.executor": "Run",
+    "Application.BS2FloorAndCeil.executor": "Run",
+    "Application.BS2InsertPositionLC35.executor": "Run",
+    "Application.BS2LowerBound.executor": "Run",
+    "Application.BinarySearchTreeMain.executor": "Run",
+    "Application.BinaryTreeUsingLinkedListMain.executor": "Run",
+    "Application.DeadLock.executor": "Run",
+    "Application.FileSystem.executor": "Run",
+    "Application.FindAllPeaks.executor": "Run",
+    "Application.G10LC994RottenOranges.executor": "Run",
+    "Application.G11DetectCycleUGBFS.executor": "Run",
+    "Application.G26LC269AlienDictionary.executor": "Run",
+    "Application.G27ShortestPathDAG.executor": "Run",
+    "Application.G28ShortestPathUGUnitWeights.executor": "Run",
+    "Application.G30LC126WordLadder2.executor": "Run",
+    "Application.G50LC721AccountsMerge.executor": "Run",
+    "Application.G7LC547NumberOfProvince.executor": "Run",
+    "Application.G8LC200NumberOfIslands.executor": "Run",
+    "Application.LC1021RemoveOutermostParentheses.executor": "Run",
+    "Application.LC125ValidPalindrome.executor": "Run",
+    "Application.LC1295.executor": "Run",
+    "Application.LC131PalindromePartitioning.executor": "Run",
+    "Application.LC1332RemovePalindromicSubsequences.executor": "Run",
+    "Application.LC1365HowManyNumbers.executor": "Run",
+    "Application.LC136SingleNumber.executor": "Run",
+    "Application.LC1389CreateTargetArray.executor": "Run",
+    "Application.LC1431KidsWithGreatestCandies.executor": "Run",
+    "Application.LC1456MaximumNumberOfVowelsInASubstring.executor": "Run",
+    "Application.LC1492KthFactor.executor": "Debug",
+    "Application.LC151ReverseWordsInAString.executor": "Run",
+    "Application.LC159PremiumLongestSubStringWithAtmostTwoDistinctCharacters.executor": "Run",
+    "Application.LC15ThreeSum.executor": "Run",
+    "Application.LC1624SubstringBetweenEqualCharacters.executor": "Run",
+    "Application.LC1657DetermineIfTwoStringsAreClose.executor": "Run",
+    "Application.LC167TwoSum2.executor": "Run",
+    "Application.LC16ThreeSumClosest.executor": "Run",
+    "Application.LC1760MinimumBallsInABag.executor": "Run",
+    "Application.LC1762.executor": "Run",
+    "Application.LC1839.executor": "Run",
+    "Application.LC189RotateArray.executor": "Run",
+    "Application.LC18FourSum.executor": "Run",
+    "Application.LC1926NearestExit.executor": "Run",
+    "Application.LC1929ConcatenationArray.executor": "Run",
+    "Application.LC1967.executor": "Run",
+    "Application.LC1991.executor": "Run",
+    "Application.LC1TwoSum.executor": "Run",
+    "Application.LC2089FindTargetIndices.executor": "Run",
+    "Application.LC20ValidParenthesis.executor": "Run",
+    "Application.LC2149SortSignsUnequal.executor": "Run",
+    "Application.LC2150.executor": "Run",
+    "Application.LC2215FindDifferenceOfTwoArrays.executor": "Run",
+    "Application.LC2288ApplyDiscountsNFA.executor": "Run",
+    "Application.LC2289MakeArrayNonDecreasing.executor": "Run",
+    "Application.LC22GenerateParenthesis.executor": "Run",
+    "Application.LC2352EqualRowAndColumnPairs.executor": "Run",
+    "Application.LC2461MaximumSumDistinctK.executor": "Run",
+    "Application.LC2542MaximumSubsequenceScore.executor": "Run",
+    "Application.LC2553.executor": "Run",
+    "Application.LC2696MinimumString.executor": "Run",
+    "Application.LC2778SquaresSpecialElement.executor": "Run",
+    "Application.LC2785CheckArrayIsGood.executor": "Run",
+    "Application.LC2799CountCompleteSubarrays.executor": "Run",
+    "Application.LC283MoveZeroes.executor": "Run",
+    "Application.LC287FindDuplicateNumber.executor": "Run",
+    "Application.LC340PremiumLongestSubstringWithAtmostKDistinctCharacters.executor": "Run",
+    "Application.LC349UnionOfTwoArrays.executor": "Run",
+    "Application.LC367ValidPerfectSquare.executor": "Debug",
+    "Application.LC392IsSubsequence.executor": "Run",
+    "Application.LC394DecodeString.executor": "Run",
+    "Application.LC402RemoveKDigits.executor": "Run",
+    "Application.LC424LongestRepeatingCharacterReplacement.executor": "Run",
+    "Application.LC48RotateImage.executor": "Run",
+    "Application.LC49GroupAnagrams.executor": "Run",
+    "Application.LC503NextGreaterElement2.executor": "Run",
+    "Application.LC532KDiffPairs.executor": "Run",
+    "Application.LC560CountSubarraySum.executor": "Run",
+    "Application.LC581ShortestUnsortedContinuousSubarray.executor": "Debug",
+    "Application.LC605CanPlaceFlowers.executor": "Run",
+    "Application.LC633SumOfSquares.executor": "Run",
+    "Application.LC645SetMisMatch.executor": "Run",
+    "Application.LC649Dota2Senate.executor": "Run",
+    "Application.LC682BaseBallGame.executor": "Run",
+    "Application.LC695MaxAreaOfIsland.executor": "Run",
+    "Application.LC713.executor": "Run",
+    "Application.LC735AsteroidsCollision.executor": "Run",
+    "Application.LC73SetMatrixZeroes.executor": "Run",
+    "Application.LC79WordSearch.executor": "Run",
+    "Application.LC841KeyAndRooms.executor": "Run",
+    "Application.Lecture14LC216CombinationSum3.executor": "Run",
+    "Application.LoggingDemo.executor": "Run",
+    "Application.Main.executor": "Debug",
+    "Application.MatrixCumulativeSum.executor": "Run",
+    "Application.MergeSort.executor": "Run",
+    "Application.MusicStreamingSimulation.executor": "Run",
+    "Application.NewLC204CountPrimes.executor": "Run",
+    "Application.NewLC475Heaters.executor": "Run",
+    "Application.NewLC621TaskScheduler.executor": "Run",
+    "Application.NextSmaller.executor": "Run",
+    "Application.ParkingLotSimulation.executor": "Run",
+    "Application.PreviousSmaller.executor": "Run",
+    "Application.ProducerConsumerProblem.executor": "Run",
+    "Application.PubSubSimulation.executor": "Run",
+    "Application.RatInMaze.executor": "Run",
+    "Application.TaskManagementSimulation.executor": "Run",
+    "Application.Test2.executor": "Run",
+    "Application.Test4.executor": "Run",
+    "Application.V12MinimumWindowSubstringLC76.executor": "Run",
+    "Application.V19FindPairsInDLL.executor": "Run",
+    "Application.V1ConvertArrayToLinkedList.executor": "Run",
+    "Application.V21ReverseLinkedListInGroupLC25.executor": "Run",
+    "Application.V2DeletionAndInsertion.executor": "Run",
+    "Application.V3DoublyLinkedList.executor": "Run",
+    "Application.V5FruitIntoBasketsLC904.executor": "Run",
+    "Application.V8LongestRepeatingCharacterReplacementLC424.executor": "Run",
+    "Application.VendingMachineSimulation.executor": "Run",
+    "Application.gfgLeftRotateRightRotateAnArrayByKPlaces.executor": "Run",
+    "Application.gfgLongestKUniqueCharactersSubstring.executor": "Run",
+    "Application.gfgLongestSubarrayWithSumK.executor": "Run",
+    "Application.gfgSecondLargest.executor": "Run",
+    "Application.gfgSecondLargestAndSecondSmallest.executor": "Run",
+    "Application.lG16LC694NumberOfDistinctIslands.executor": "Run",
+    "Application.leetcode.company.leetcode75Remaining.LC649Dota2Senate.executor": "Run",
+    "Application.leetcode.designPatterns.behaviourial.state.Main.executor": "Run",
+    "Application.xBS25SearchInSortedMatrix2LC240.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "copilot.chat.legacySessionMetadata.migrated": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/nikhilthulaseedharan/Nikhil/DSA/src/leetcode/designPatterns/Problems/striver/musicstreaming/controller",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "configurable.group.language",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/leetcode/designPatterns/Problems" />
-      <recent name="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/RecommendationSystem" />
-      <recent name="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/MeetingScheduler" />
-      <recent name="$PROJECT_DIR$/src/leetcode/designPatterns/oopsConcepts/polymorphismWithAbstractClass" />
-      <recent name="$PROJECT_DIR$/src/leetcode/designPatterns/oopsConcepts/multipleinheritance/example2" />
+      <recent name="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/musicstreaming/controller" />
+      <recent name="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ridebooking/controller" />
+      <recent name="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/ridebooking/service" />
+      <recent name="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/digitalwallet/controller" />
+      <recent name="$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/elevatorsystem/controller" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="leetcode.designPatterns.oopsConcepts.polymorphismWithAbstractClass" />
@@ -245,13 +615,13 @@
       <recent name="leetcode.stack.lb" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.leetcode.designPatterns.behaviourial.chainOfResponsibility.example1.Main">
-    <configuration name="LC1762" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.company.meta.LC1762" />
+  <component name="RunManager" selected="Application.VendingMachineSimulation">
+    <configuration name="ParkingLotSimulation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.designPatterns.Problems.striver.ParkingLot.main.ParkingLotSimulation" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.company.meta.*" />
+          <option name="PATTERN" value="leetcode.designPatterns.Problems.striver.ParkingLot.main.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -259,12 +629,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LC2150" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.company.google.LC2150" />
+    <configuration name="PubSubSimulation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.designPatterns.Problems.striver.PubSub.main.PubSubSimulation" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.company.google.*" />
+          <option name="PATTERN" value="leetcode.designPatterns.Problems.striver.PubSub.main.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -272,12 +642,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.designPatterns.behaviourial.state.striver.Main" />
+    <configuration name="RideSharingSimulation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.designPatterns.Problems.striver.ridebooking.main.RideSharingSimulation" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.designPatterns.behaviourial.state.striver.*" />
+          <option name="PATTERN" value="leetcode.designPatterns.Problems.striver.ridebooking.main.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -285,12 +655,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="leetcode.designPatterns.behaviourial.chainOfResponsibility.example1.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.designPatterns.behaviourial.chainOfResponsibility.example1.Main" />
+    <configuration name="TaskManagementSimulation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.designPatterns.Problems.striver.TaskManagementSystem.main.TaskManagementSimulation" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.designPatterns.behaviourial.chainOfResponsibility.example1.*" />
+          <option name="PATTERN" value="leetcode.designPatterns.Problems.striver.TaskManagementSystem.main.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -298,12 +668,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="leetcode.designPatterns.behaviourial.state.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.designPatterns.behaviourial.state.Main" />
+    <configuration name="VendingMachineSimulation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.designPatterns.Problems.striver.VendingMachine.main.VendingMachineSimulation" />
       <module name="DSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.designPatterns.behaviourial.state.*" />
+          <option name="PATTERN" value="leetcode.designPatterns.Problems.striver.VendingMachine.main.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -313,11 +683,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.leetcode.designPatterns.behaviourial.chainOfResponsibility.example1.Main" />
-        <item itemvalue="Application.LC1762" />
-        <item itemvalue="Application.LC2150" />
-        <item itemvalue="Application.leetcode.designPatterns.behaviourial.state.Main" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.VendingMachineSimulation" />
+        <item itemvalue="Application.TaskManagementSimulation" />
+        <item itemvalue="Application.RideSharingSimulation" />
+        <item itemvalue="Application.PubSubSimulation" />
+        <item itemvalue="Application.ParkingLotSimulation" />
       </list>
     </recent_temporary>
   </component>
@@ -1434,6 +1804,16 @@
           <line>18</line>
           <option name="timeStamp" value="508" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/LoggerSystem/appenders/DatabaseAppender.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="509" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/atm/service/SessionService.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="513" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/leetcode/binarytree/Test.java</url>
           <line>5</line>
@@ -1586,6 +1966,15 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="414" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/leetcode/designPatterns/Problems/striver/LoggerSystem/core/Logger.java</url>
+          <line>17</line>
+          <properties class="leetcode.designPatterns.Problems.striver.LoggerSystem.core.Logger" method="log">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="510" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
